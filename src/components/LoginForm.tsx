@@ -29,14 +29,6 @@ export function LoginForm() {
     router.refresh();
   }
 
-  function fillDemo(role: "TEACHER" | "STUDENT") {
-    if (role === "TEACHER") {
-      setEmail("ogretmen@demo.local");
-    } else {
-      setEmail("ogrenci@demo.local");
-    }
-  }
-
   return (
     <form onSubmit={onSubmit}>
       <label htmlFor="email">E-posta Adresi</label>
@@ -76,32 +68,6 @@ export function LoginForm() {
         </button>
       </div>
 
-      <div style={{ marginTop: 20, padding: "10px 12px", borderRadius: "var(--radius-md)", background: "var(--surface-subtle)", border: "1px solid var(--border)", fontSize: "0.85rem" }}>
-        <div className="row" style={{ justifyContent: "space-between", marginBottom: 6 }}>
-          <span className="muted" style={{ fontWeight: 600 }}>Demo Giriş Doldur:</span>
-          <div className="row" style={{ gap: 6 }}>
-            <button
-              type="button"
-              className="ghost"
-              style={{ minHeight: 26, padding: "2px 8px", fontSize: "0.78rem" }}
-              onClick={() => fillDemo("TEACHER")}
-            >
-              Öğretmen
-            </button>
-            <button
-              type="button"
-              className="ghost"
-              style={{ minHeight: 26, padding: "2px 8px", fontSize: "0.78rem" }}
-              onClick={() => fillDemo("STUDENT")}
-            >
-              Öğrenci
-            </button>
-          </div>
-        </div>
-        <p className="muted" style={{ margin: 0, fontSize: "0.8rem" }}>
-          Demo hesaplar: <code style={{ fontSize: "0.8rem" }}>ogretmen@demo.local</code> veya <code style={{ fontSize: "0.8rem" }}>ogrenci@demo.local</code> (şifre: DEMO_PASSWORD).
-        </p>
-      </div>
     </form>
   );
 }
