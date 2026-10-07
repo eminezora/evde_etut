@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# Next.js / build output
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# environment – never commit secrets (.env.example IS committed)
+.env
+.env.*
+!.env.example
+
+# local databases (SQLite dev / test)
+*.db
+*.db-journal
+
+# testing
+coverage/
+
+# Vercel
+.vercel/
+
+# misc
+.DS_Store
+npm-debug.log*
+*.log

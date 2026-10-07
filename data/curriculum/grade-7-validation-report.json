@@ -1,0 +1,800 @@
+{
+  "grade": 7,
+  "generatedAt": "2026-10-07T11:32:37.326Z",
+  "notes": [
+    "duplicates: subject+grade+outcomeCode birden fazla kayıtta geçen kod sayısı. Kayıtlar silinmedi.",
+    "errors: 1,2,3,4,5,8,9,11 numaralı kontrollerde bulunan sorun sayısı (veri/aktarım hatası).",
+    "12: yapılandırılmış ama bu sınıf için tymm.meb.gov.tr'de bulunmayan dersler; bunlar için kayıt üretilmedi.",
+    "13: MEB program sayfasında bağlantısı olan ama içeriği boş sayfalar (tema/ünite sayısına dahil edilmedi).",
+    "14: sayfanın başka bölümünde anılan ama öğrenme çıktısı listesinde olmayan kodlar; metni olmadığı için kayıt üretilmedi.",
+    "15: sayfada dersin önekinden farklı yazılmış kodlar (ör. İTA yerine TA); kod değiştirilmeden REVIEW_REQUIRED işaretlendi.",
+    "6, 7 ve 10 kaynakta (MEB sayfasında) bulunan durumlardır; ilgili kayıtlar silinmedi, 10'dakiler REVIEW_REQUIRED işaretlendi."
+  ],
+  "passed": true,
+  "checks": [
+    {
+      "id": 1,
+      "name": "outcomeCode boş mu?",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 2,
+      "name": "outcomeText boş mu?",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 3,
+      "name": "subject doğru mu?",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 4,
+      "name": "grade gerçekten 7 mi?",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 5,
+      "name": "sourceUrl https://tymm.meb.gov.tr/ ile mi başlıyor?",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 6,
+      "name": "duplicate outcome var mı? (subject + grade + outcomeCode)",
+      "passed": false,
+      "count": 12,
+      "details": [
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.D.7.1",
+          "occurrences": 5,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.D.7.2",
+          "occurrences": 4,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.D.7.27",
+          "occurrences": 6,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.O.7.1",
+          "occurrences": 5,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.O.7.2",
+          "occurrences": 4,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.O.7.28",
+          "occurrences": 6,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.K.7.1",
+          "occurrences": 6,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.K.7.26",
+          "occurrences": 6,
+          "sameText": false,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.Y.7.1",
+          "occurrences": 3,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.Y.7.3",
+          "occurrences": 4,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.Y.7.21",
+          "occurrences": 6,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "grade": 7,
+          "outcomeCode": "T.Y.7.22",
+          "occurrences": 6,
+          "sameText": true,
+          "sameProcessComponents": true,
+          "unitsOrThemes": [
+            "1. Tema: Hayat Boyu Gelişim",
+            "2. Tema: Bir Hilal Uğruna",
+            "3. Tema: İletişim Ve Sosyal İlişkiler",
+            "4. Tema: Türk Sanatı",
+            "5. Tema: Okuma Kültürü",
+            "6. Tema: Hak Ve Sorumluluklar"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "REVIEW_REQUIRED kayıt var mı?",
+      "passed": false,
+      "count": 6,
+      "details": [
+        {
+          "subject": "Türkçe",
+          "unitOrTheme": "1. Tema: Hayat Boyu Gelişim",
+          "outcomeCode": "T.K.7.26",
+          "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+          "reasons": [
+            "Aynı kod (T.K.7.26) başka tema/ünitede farklı metinle geçiyor (2 farklı metin)"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "unitOrTheme": "2. Tema: Bir Hilal Uğruna",
+          "outcomeCode": "T.K.7.26",
+          "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+          "reasons": [
+            "Aynı kod (T.K.7.26) başka tema/ünitede farklı metinle geçiyor (2 farklı metin)"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "unitOrTheme": "3. Tema: İletişim Ve Sosyal İlişkiler",
+          "outcomeCode": "T.K.7.26",
+          "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+          "reasons": [
+            "Aynı kod (T.K.7.26) başka tema/ünitede farklı metinle geçiyor (2 farklı metin)"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "unitOrTheme": "4. Tema: Türk Sanatı",
+          "outcomeCode": "T.K.7.26",
+          "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+          "reasons": [
+            "Aynı kod (T.K.7.26) başka tema/ünitede farklı metinle geçiyor (2 farklı metin)"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "unitOrTheme": "5. Tema: Okuma Kültürü",
+          "outcomeCode": "T.K.7.26",
+          "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+          "reasons": [
+            "Aynı kod (T.K.7.26) başka tema/ünitede farklı metinle geçiyor (2 farklı metin)"
+          ]
+        },
+        {
+          "subject": "Türkçe",
+          "unitOrTheme": "6. Tema: Hak Ve Sorumluluklar",
+          "outcomeCode": "T.K.7.26",
+          "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312",
+          "reasons": [
+            "Aynı kod (T.K.7.26) başka tema/ünitede farklı metinle geçiyor (2 farklı metin)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "tema/ünite bağlantılarının tamamı ziyaret edilip ayrıştırıldı mı? (ulaşılamayan alt sayfa)",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 9,
+      "name": "her öğrenme çıktısının kaynak sayfası kayıtlı mı?",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 10,
+      "name": "aynı outcomeCode farklı metinlerle tekrar ediyor mu?",
+      "passed": false,
+      "count": 1,
+      "details": [
+        {
+          "subject": "Türkçe",
+          "outcomeCode": "T.K.7.26",
+          "texts": [
+            "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme",
+            "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+          ],
+          "sourceUrls": [
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+            "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "öğrenme çıktıları ve bileşenler kaynak sayfada birebir geçiyor mu? (uydurma kontrolü)",
+      "passed": true,
+      "count": 0,
+      "details": []
+    },
+    {
+      "id": 12,
+      "name": "ders bu sınıf için kaynakta bulunuyor mu?",
+      "passed": false,
+      "count": 1,
+      "details": [
+        {
+          "subject": "Din Kültürü ve Ahlak Bilgisi",
+          "sourceStatus": "NOT_FOUND_ON_SOURCE",
+          "problems": [
+            "\"Din Kültürü ve Ahlak Bilgisi Dersi\" tymm.meb.gov.tr ders listesinde (temel-egitim, 60 ders) bulunamadı"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "eksik tema/ünite: MEB'de bağlantısı olan ama içeriği boş sayfa var mı?",
+      "passed": false,
+      "count": 1,
+      "details": [
+        {
+          "subject": "İngilizce",
+          "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/795",
+          "listTitle": "",
+          "meta": [
+            "İngilizce Dersi",
+            "7.Sınıf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "sayfanın başka bölümünde geçip öğrenme çıktısı listesinde olmayan kod var mı?",
+      "passed": false,
+      "count": 2,
+      "details": [
+        {
+          "subject": "Türkçe",
+          "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+          "unitOrTheme": "4. Tema: Türk Sanatı",
+          "codes": [
+            "T.D.7.26"
+          ]
+        },
+        {
+          "subject": "İngilizce",
+          "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/749",
+          "unitOrTheme": "Theme 5: Lıfe In The Neıghbourhood & Cıty And Socıal Lıfe",
+          "codes": [
+            "ENG.7.5.W7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "öğrenme çıktısı kodu dersin önekiyle uyumsuz mu? (kaynaktaki yazım)",
+      "passed": true,
+      "count": 0,
+      "details": []
+    }
+  ],
+  "duplicates": [
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.D.7.1",
+      "occurrences": 5,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Dinlemede/izlemede materyal seçimini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.D.7.2",
+      "occurrences": 4,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.D.7.27",
+      "occurrences": 6,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Dinleme/izleme sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.O.7.1",
+      "occurrences": 5,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Okumada materyal seçimini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.O.7.2",
+      "occurrences": 4,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Okumada strateji ve yöntem seçimlerini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.O.7.28",
+      "occurrences": 6,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Okuma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.K.7.1",
+      "occurrences": 6,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Konuşma sürecini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.K.7.26",
+      "occurrences": 6,
+      "sameText": false,
+      "sameProcessComponents": true,
+      "texts": [
+        "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme",
+        "Konuşma sürecine yönelik öz yansıtma yapabilme/kendini uyarlaya bilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.Y.7.1",
+      "occurrences": 3,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Yazma sürecini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.Y.7.3",
+      "occurrences": 4,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.Y.7.21",
+      "occurrences": 6,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Yazım kuralları ve noktalama işaretlerini uygulayabilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    },
+    {
+      "subject": "Türkçe",
+      "grade": 7,
+      "outcomeCode": "T.Y.7.22",
+      "occurrences": 6,
+      "sameText": true,
+      "sameProcessComponents": true,
+      "texts": [
+        "Yazma sürecine yönelik öz yansıtma yapabilme/kendini uyarlayabilme"
+      ],
+      "unitsOrThemes": [
+        "1. Tema: Hayat Boyu Gelişim",
+        "2. Tema: Bir Hilal Uğruna",
+        "3. Tema: İletişim Ve Sosyal İlişkiler",
+        "4. Tema: Türk Sanatı",
+        "5. Tema: Okuma Kültürü",
+        "6. Tema: Hak Ve Sorumluluklar"
+      ],
+      "sourceUrls": [
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+        "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312"
+      ]
+    }
+  ]
+}

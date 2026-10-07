@@ -1,0 +1,1211 @@
+{
+  "subject": "Matematik",
+  "courseName": "Ortaokul Matematik Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 7,
+    "name": "Ortaokul Matematik Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-matematik-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=2&kademe=temel-egitim",
+    "heading": "Ortaokul Matematik Dersi",
+    "gradeCards": [
+      {
+        "label": "5.Sınıf",
+        "grade": 5,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6"
+      },
+      {
+        "label": "6.Sınıf",
+        "grade": 6,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7"
+      },
+      {
+        "label": "7.Sınıf",
+        "grade": 7,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8"
+      },
+      {
+        "label": "8.Sınıf",
+        "grade": 8,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9",
+    "heading": "Ortaokul Matematik Dersi 8.Sınıf",
+    "headingGrade": 8,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T11:16:57.831Z",
+    "links": [
+      {
+        "href": "/ortaokul-matematik-dersi/unite/472",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/472",
+        "title": "1.Tema: Sayılar Ve Nicelikler"
+      },
+      {
+        "href": "/ortaokul-matematik-dersi/unite/473",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/473",
+        "title": "2.Tema: Cebirsel Düşünme Ve Değişimler"
+      },
+      {
+        "href": "/ortaokul-matematik-dersi/unite/474",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/474",
+        "title": "3.Tema: Geometrik Şekiller"
+      },
+      {
+        "href": "/ortaokul-matematik-dersi/unite/475",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/475",
+        "title": "4.Tema: Geometrik Nicelikler"
+      },
+      {
+        "href": "/ortaokul-matematik-dersi/unite/476",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/476",
+        "title": "5.Tema: Dönüşüm"
+      },
+      {
+        "href": "/ortaokul-matematik-dersi/unite/477",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/477",
+        "title": "6.Tema: İstatistiksel Araştırma Süreci"
+      },
+      {
+        "href": "/ortaokul-matematik-dersi/unite/478",
+        "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/478",
+        "title": "7.Tema: Veriden Olasılığa"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/ortaokul-matematik-dersi/unite/472",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/472",
+      "title": "1.Tema: Sayılar Ve Nicelikler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:16:59.357Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_472.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "1.Tema: Sayılar Ve Nicelikler",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin üslü ifadelere, özelliklerine ve üslü ifadelerle yapılan işlemlere ilişkin çıkarım yapabilmeleri, kareköklü ifadeler ile ilgili muhakeme yapabilmeleri, sayıların rasyonel ya da irrasyonelliğini değerlendirebilmeleri, gerçek sayıları ve aralıklarını sayı doğrusunda yorumlayabilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "38",
+        "Alan Becerileri": "MAB1. Matematiksel Muhakeme",
+        "Kavramsal Beceriler": "KB2.10. Çıkarım Yapma, KB2.14. Yorumlama, KB2.17. Değerlendirme",
+        "Eğilimler": "E1.1. Merak, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.6. Analitiklik",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D5. Duyarlılık",
+        "Okuryazarlık Becerileri": "OB4. Görsel Okuryazarlık, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Fen Bilimleri, Sosyal Bilgiler",
+        "Beceriler Arası İlişkiler": "MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.1.1. Farklı bağlamlardaki üslü ifadelere, özelliklerine ve üslü ifadelerle yapılan işlemlere ilişkin çıkarım yapabilmea) Karşılaştığı bağlamlardaki üslü ifadeler, özellikleri ve üslü ifadelerle yapılan işlemlere yönelik varsayımlarda bulunur.b) Üslü ifadeleri, özelliklerini ve üslü ifadelerle yapılan işlemleri inceleyerek genellemeleri belirler.c) Ulaştığı genellemelerin varsayımını karşılayıp karşılamadığını örnekler ve çeşitli temsiller (şekil ve tablo gibi) ile sınar.ç) Üslü ifadelere, özelliklere ve üslü ifadelerle işlem yapmaya ilişkin önermeleri sözel ve cebirsel olarak ifade eder.d) Sunduğu önermelerin matematiksel süreçlere katkısını sözel olarak açıklar.MAT.8.1.2. Karşılaştığı problem durumlarında kareköklü ifadeler ile ilgili muhakeme yapabilmea) Bir karenin alanı ile kenar uzunluğu arasındaki ilişkiyi belirler.b) Karenin alanından hareketle tam kare pozitif tam sayılar ile kareköklerini ilişkilendirir.c) Tam kare olmayan pozitif bir sayının karekökünün hangi iki doğal sayı arasında olduğunu ve yaklaşık değerini matematiksel temsillerle (sayı doğrusu, şekil, tablo gibi) ifade eder.ç) Bir sayının karekökünü kendi ifadeleri ile açıklar.MAT.8.1.3. Sayıların rasyonel ya da irrasyonelliğini değerlendirebilmea) Sayıların rasyonel ya da irrasyonel sayılar olup olmadığına ilişkin ondalık gösterimlerini ölçüt olarak belirler.b) Sayıların ondalık gösterimlerini bölme işlemi ya da hesap makinesi kullanarak elde eder.c) Elde ettiği ondalık gösterimi ölçütü ile karşılaştırır.ç) Karşılaştırmalarından hareketle bir sayının rasyonel olup olmadığına yönelik yargıda bulunur.MAT.8.1.4. Gerçek sayıları ve aralıklarını sayı doğrusunda yorumlayabilmea) Doğal sayılardan başlamak üzere tüm gerçek sayıları ve sayılar arası ilişkileri inceler.b) Gerçek sayıları sayı doğrusuna yerleştirir.c) Gerçek sayı aralıkları arasındaki ilişkiyi açıklar.",
+        "İçerik Çerçevesi": "Gerçek Sayılar:Üslü İfadeler, Özellikleri ve İşlemlerKareköklü İfadelerİrrasyonel SayılarGerçek Sayılar ve Sayı Aralıkları",
+        "Anahtar Kavramlar": "Genellemeler• Gerçek sayılar rasyonel ve irrasyonel sayıları kapsar.• Sayı doğrusu üzerinde iki farklı nokta arasında yer alan tüm gerçek sayılar bir aralık belirtir. Anahtar Kavramlargerçek sayılar, irrasyonel sayılar, kareköklü ifadeler, üslü ifadeler Sembol ve Gösterimler",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; açık uçlu sorulardan oluşan izleme testi, eşleştirmeli, doğru yanlış testleri ve açık uçlu sorulardan oluşan bir çalışma kâğıdı veya tanılayıcı dallanmış ağaç, performans görevi, öz değerlendirme ve akran değerlendirme formu ile değerlendirilebilir. Öğrencilere üslü ifadelerle ilgili çeşitli gerçek yaşam bağlamlarında hazırlanmış problemlerden oluşan (örneğin yararlı ve zararlı bakterilerin araştırılması ve çoğalması) performans görevi verilebilir. Bu göreve ilişkin öğrencilerin poster hazırlamaları istenebilir. İrrasyonel sayılar ile ilgili ise kök sembolünün tarihsel süreçteki kullanımına ve irrasyonel sayıların keşfinde √2'nin rolüne ilişkin de performans görevi verilebilir. Bu görev sonunda ise öğrencilerden rapor hazırlamaları istenebilir. Verilen ilk görev problem çözme süreç bileşenlerine, ikinci görev ise bilgi toplama, analiz etme ve düzenlemeye yönelik kriterlerden oluşan analitik dereceli puanlama anahtarı yardımıyla değerlendirilebilir.Öğrenme-öğretme uygulamalarında yapılan bireysel veya grup çalışmalarında öğrenciler öz değerlendirme ve akran değerlendirme formları ile kendi ve arkadaşlarının süreçlerini değerlendirebilir. Performans ürünü, çalışma kâğıdı ve izleme testi sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin rasyonel sayıları ve ondalık gösterimlerinin basamak değerlerini yorumlayabildikleri, rasyonel sayılarla toplama, çıkarma, çarpma ve bölme işlemlerini içeren problemleri çözebildikleri, bir doğal sayının karesi ve küpünü ifade edebildikleri, rasyonel sayıların tam sayılar ve doğal sayılarla ilişkisini yorumlayabildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Rasyonel sayıları sayı doğrusunda göstermeye, rasyonel sayıların ondalık gösterimlerini 10’un tam sayı kuvvetlerini kullanarak çözümlemeye, rasyonel sayılarla dört işlem yapmaya ve mutlak değeri yorumlamaya yönelik açık uçlu sorulardan oluşan bir çalışma kâğıdı kullanılabilir.",
+        "Köprü Kurma": "Üslü ifadelere girişte öğrencilerin 4.3=3+3+3+3 çift taraflı sayı cümlesini yorumlamaları istenebilir. Öğrencilerle 3.3.3.3 tekrarlı çarpımın nasıl ifade edilebileceği ve sonucun ne olacağı tartışılabilir. Ardından karşılaşılan bir durum (bir kâğıdın önce ortadan ikiye kesilmesi, sonra her bir parçanın tekrar ikiye kesilmesi ve işlemin benzer şekilde devam etmesi gibi bir durumda kesme sayısı ile oluşan parça sayısının ilişkilendirilmesi gibi) ya da bir gerçek yaşam problemi üzerinden (fen bilimleri kapsamında hücre bölünmesinden yararlanarak zamana bağlı hücre sayısındaki artışın incelenmesi gibi) öğrencilerin üslü ifadenin bir tekrarlı çarpma olduğunu keşfetmeleri sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT.8.1.1Bu sınıf düzeyinde üslü ifadeler tabanı rasyonel sayı ve kuvveti tam sayı olan yapılarla sınırlandırılır. Öğrenme-öğretme sürecinde tabanı tam sayı olan üslü ifadelerden başlanır ve paydası 1 olmayan rasyonel sayıların kuvvetleri hatırlatılır. Öğrencilerin küresel ısınma, nüfus tahmini, radyoaktif atıklar, enflasyon oranları, hücre bölünmesi, bakterilerin çoğalması, teknolojik araçların hafıza kartlarına ait veri boyutları (kilobayt ve megabayt), doğal afetler (depremin şiddetini ölçme) gibi gerçek yaşam problemlerinde üslü ifadeleri incelemeleri sağlanır (SDB2.3). Depremin şiddetinin ele alındığı problemlerde doğal afetlerin her an her yerde gerçekleşebileceğine vurgu yapılarak duyarlılık değeri desteklenebilir (D5.3). Ele alınan bu problemler aracılığıyla fen bilimleri ve sosyal bilgiler dersleri ile ilişkilendirme yapılabilir. Ayrıca üslü ifadeler ile sayıyı 10’un kuvvetlerini kullanarak çözümleme, bir pozitif tam sayının asal çarpanlarını bulma ve bu çarpanlardan tam sayıyı elde etme gibi matematiksel süreçler ile ilişkilendirmeleri sağlanır. Öğrencilerin karşılaştıkları bu durumlarda öncelikle üslü ifadeler ve özelliklerine yönelik varsayımlar oluşturmaları istenir ( ifadesinde n tane a çarpılır.” gibi). Ayrıca öğrencilerin verilen durumlardaki üslü ifadelerin taban ve kuvvetini incelemelerinde ortaya çıkabilecek sonuca ulaştıran ya da ulaştırmayan varsayımları da incelemeleri sağlanır (“Üs büyüdükçe her zaman sayının değeri büyür/büyümez” gibi). Bu süreçte sonuca ulaştıran varsayımlar ile devam edilmesi beklenir. Öğrencilerin gerçek yaşam problemlerini (hücre bölünmesinden yola çıkarak zamana bağlı hücre sayısındaki değişimi inceleme gibi) inceleyerek oluşturdukları varsayımları örnekler üzerinde test etmeleri sağlanarak genellemelere ulaşmaları istenir. Öğrencilerin bu problemler üzerinden genellemelerinin varsayımlarını karşılayıp karşılamadığını örnekler ve çeşitli temsiller (şekil ve tablo gibi) ile incelemeleri ve temsilleri yorumlamaları istenir (MAB3, OB4) (Örneğin başlangıç noktası 0 olan ve her bir saatte 9 kat hücrenin oluştuğunu gösteren zamana bağlı bir değişim tablosunun oluşturulması, zamanın sabit değişiminde ardışık hücre sayısı değerleri arasındaki 9 kat değişim oranının ifade edilmesi). Böylece öğrencilerin varsayımları ile ilgili ulaştıkları sonuçlara yönelik doğrulayabilecekleri matematiksel önermeleri tartışmaları ve sözel ya da cebirsel olarak ( =a.a.….a, n tane a gibi) ifade etmeleri sağlanır. Tartışma sürecinde öğrencilerin duygu ve düşüncelerini açıkça ifade edebilecekleri öğrenme ortamları oluşturulur (SDB1.1). Bu süreçte öğrencilere duygu ve düşüncelerini açıkça ifade etme, arkadaşlarının duygu ve düşüncelerini anlamaya çalışma ve onların sunduğu önermelerdeki yeni bilgilere açık olma imkanı tanınarak eleştirel bakış açısıyla değerlendirebilmelerine (D3.3) fırsat verilebilir. Böylece dostluk ve çalışkanlık değerlerinin kazanılması desteklenmiş olur. Üslü ifadelerle işlemlere geçmeden önce öğrencilerin üslü ifadelerde bir sayının üssünün negatif ve 0 (sıfır) olmasının anlamına yönelik incelemeler gerçekleştirilir. Bunun için örüntülerden yararlanılır. Örneğin, öğrencilerden 3³, 3², 3¹ ve 30 sonuçlarına ait 27, 9, 3 ve 1 örüntüsünden hareketle örüntünün nasıl devam edeceğine yönelik düşüncelerini ifade etmeleri istenerek sonuçlarına ulaşmaları beklenir. Bu incelemelerde bir sayının üssünün 0 (sıfır) ya da 1 olması gibi durumlarda ortaya çıkan değerlere yönelik önermeler oluşturmaları beklenir. Örneğin farklı sayıların ardışık tam sayı kuvvetleri incelenirken, öğrenciler “kuvvetin 0 (sıfır) olması durumunda ortaya çıkan değerlerin 1 olduğu” önermesini ifade edebilir. Ayrıca üslü ifadelerin değerinin hesaplanmasında gibi farklı durumların aynı değerlere sahip olup olmadığına yönelik incelemeler yapmaları sağlanır. Üslü ifadelerle yapılan işlemlere gerçek yaşamdan ilgi çekici problemler ile başlanır (E1.1) ve öğrencilerin işlemlere ilişkin varsayım oluşturmaları istenir (“Aynı tabana ait üslü ifadelerin çarpımında üsler toplanır, bölümünde ise üsler birbirinden çıkarılır; aynı üsse sahip üslü ifadeler ortak üs parantezine alınabilir; bir sayının üssünün üssünü almak üslerin çarpımını gerektirir.” gibi). Öğrencilerin varsayımlarını çeşitli sayı cümleleri üzerinde deneyerek genellemelere ulaşmaları beklenir. Örneğin öğrenciler 3³.3²=(3.3.3).(3.3)=3⁵ gibi örnekleri tekrarlı çarpma yaparak inceleyerek, “aynı tabana ait üslü ifadelerin çarpımında üsler toplanır” genellemesinde bulunabilir. Öğrencilerin genellemelerinin varsayımlarını karşılayıp karşılamadığını farklı rasyonel sayılar (pozitif veya negatif tam sayılar, paydası 1 olmayan rasyonel sayılar gibi) ile işlem yaparak sınar. Bu sürecin sonunda ulaştıkları genellemelere yönelik doğrulayabilecekleri matematiksel önermeleri sözel ya da cebirsel olarak ifade etmeleri sağlanır. Son olarak öğrencilerden sunduğu önermelerin matematiksel süreçlerde sağladığı katkısını (işlem kolaylığı sağlaması, tekrarlı çarpımların yazılmaması gibi) tartışmaları ve açıklamaları beklenir (SDB2.1). Ondalık gösterimi verilen sayıların 10’un tam sayı kuvvetleri kullanılarak çözümlenmesi ya da çözümlenmiş ifadeleri verilen sayıların ondalık gösterim şeklinde yazılmasına yönelik çalışmalar gerçekleştirilir. Bu çalışmalar ondalık gösterimi binde birler basamağına kadar olan sayılarla sınırlıdır ve bilimsel gösterime girilmez. Öğrencilere üslü ifadelerin özelliklerini açıklamalarını ve üslü ifadelerle işlem yapmayı gerektiren açık uçlu sorulardan oluşan bir çalışma kağıdı verilebilir. Öğrencilere yararlı veya zararlı bakterilerin araştırılmasına ve çoğalmasına yönelik bir performans görevi verilebilir. Bu görev kapsamında bakterilerin çoğalma hızının zaman ve sıcaklık derecesine bağlı nasıl değiştiği incelenerek bakterilerin çoğalmasındaki etkili faktörler belirlenerek öğrencilerin sürdürülebilirliği, sürdürülebilir ve sürdürülebilir olmayan sistemleri anlamaları sağlanabilir (OB8). Grup çalışması (SDB2.2) olarak da planlanabilen bu görev sonucunda elde edilen bulguların sınıf içinde sunulması ya da poster (E3.3) olarak sergilenmesi istenebilir. Görev problem çözme süreç bileşenlerine yönelik kriterlerden oluşan analitik dereceli puanlama anahtarı yardımıyla değerlendirilebilir. Öğrencilere bir üslü ifadenin büyüklüğünü tahmin etme ve yaklaşık değerini belirlemeye yönelik açık uçlu sorulardan oluşan çalışma kâğıdı verilerek sayı doğrusundaki yerinin nasıl belirleneceği, hangi üslü ifadeler arasında olduğu sorulabilir. Grup çalışmaları sonunda öğrencilerin kendileri ve akranlarını değerlendirmeleri için öz değerlendirme ve akran değerlendirme formu kullanmaları sağlanabilir (SDB1.2). MAT.8.1.2Kenar uzunlukları verilen karenin alanının cebirsel olarak nasıl ifade edilebileceği tartışılır (SDB2.2). Ardından alanları tam kare olacak şekilde verilen çeşitli karelerin kenar uzunluklarının nasıl bulunacağını tartışmaları istenir. Öğrencilerin gerçek yaşam bağlamları üzerinden de örnekler (alanı verilen kare şeklindeki bir tarlanın bir kenar uzunluğunun bulunması gibi) verilebilir. Farklı karelerin tam sayı kenar uzunluklarını, kenar uzunluklarının karelerini ve alanlarını içeren bir tablo oluşturularak, tablodaki sayılar arasındaki ilişkiler incelenir (MAB3). Böylece öğrencilerin tam kare pozitif tam sayılar ile bu sayıların karekökleri arasındaki iilişkileri ve sayının karekökünün negatif bir sayı olamayacağını fark etmeleri beklenir. Bu örneklerin ardından tam kare olmayan bir sayının karekökü ele alınır, irrasyonel sayılar tanımlanır ve rasyonel sayılardan farkı tartışılır (SDB2.2). Öğrencilerden tam kare olmayan sayıların karekökünün hangi iki doğal sayı arasında olduğunu çeşitli temsillerle örneğin; sayı doğrusu, tablo, şekil (kare) incelenerek en yakın tam kare sayı dikkate alınarak yaklaşık değerini tahmin etmeleri istenir (OB4). İrrasyonel sayıların sayı doğrusu üzerindeki yaklaşık konumunun nasıl belirlenebileceği sorgulanır. Öğrencilerden hesap makinesi yardımıyla (MAB5) ondalık gösterimleri elde edilen irrasyonel sayının yaklaşık değerini kesme ve yuvarlama stratejilerini kullanarak belirlemeleri ve sıralamaları istenir. Bu stratejileri kullanırken irrasyonel sayıların gerçek ve yaklaşık değerlerini ayırt edebilmeleri, yaklaşık değerin sağladığı kolaylıkları açıklamaları beklenir. Öğrencilere kareköklü bir ifadeyi a√b biçimde yazma ve a√b şeklindeki ifadede katsayıyı kök içine almaya yönelik çalışmalara değinilmeden rasyonel sayıların ve ondalık gösterimlerinin kareköklerine ilişkin örneklere yer verilir. Kök sembolünün tarihsel süreçte nasıl kullanıldığına ve irrasyonel sayıların keşfinde √2 ‘nin rolüne ilişkin bir performans görevi verilebilir. Bu göreve ilişkin öğrencilerden rapor hazırlamaları istenebilir. Performans görevi bilgi toplama, analiz etme ve düzenleme gibi kriterlerden oluşan analitik dereceli puanlama anahtarı yardımıyla değerlendirilebilir. Tam kare pozitif tam sayıların kareköklerini belirlemeye ve tam kare olmayan pozitif sayıların karekökünün yaklaşık değerine ilişkin açık uçlu sorulardan oluşan bir izleme testi kullanılabilir. MAT.8.1.3Öğrencilerin verilen sayıların rasyonel ve irrasyonelliğini değerlendirirken sayıların ondalık gösterimlerinden yararlanabileceklerini düşünmeleri önemlidir. Bunun için çeşitli sayıların ondalık gösterimleri bölme işlemi ya da hesap makinesi kullanılarak elde edilir (MAB5). Böylece öğrencilerden bazı ondalık gösterimlerin sonlu, bazılarının devirli sonsuz ve bazılarının ise düzensiz sonsuz biçimde yazılabildiğini fark etmeleri [örneğin 0,25; 0,3333…(0,3); 0,15555...(0,15); 6 ( √36 ); 1,414213562373…(√2 ); 1,7320508075688…(√3 )] ve birbirleri ile karşılaştırmaları istenir. Öğrencilerin bu karşılaştırma sonucunda ondalık gösterimlerinde ondalık kısmı sonlu veya devirli olan sayıların biçiminde yazılabildikleri yani rasyonel olduklarına, ondalık kısmı düzensiz sonsuz olan sayıların ise biçiminde yazılamadıkları yani irrasyonel olduklarına dair bir yargıda bulunmaları beklenir (SDB3.3). Sayıların farklı temsillerinin sayıların değerini değiştirmeyeceğini (örneğin rasyonel sayısının 0,5 ; biçimindeki temsillerinin sunulması) fark etmeye yönelik çalışmalara yer verilir. Verilen sayıların rasyonel veya irrasyonelliğini belirlemeye yönelik eşleştirmeli, doğru yanlış testleri ve açık uçlu sorulardan oluşan bir çalışma kâğıdı veya tanılayıcı dallanmış ağaç gibi araçlar kullanılabilir. MAT.8.1.4Öğrencilerden doğal sayılar, tam sayılar ve rasyonel sayılardan oluşan bir grup sayıyı sayı doğrusuna yerleştirmeleri beklenir. Ardından “Sayı doğrusunun her noktasına bir rasyonel sayı karşılık gelir mi?”, “İrrasyonel sayılar sayı doğrusuna yerleştirilebilir mi?” gibi sorular yöneltilerek öğrencilerin tartışmaları sağlanır (SDB2.2). Bu noktada sayı doğrusu üzerinde bir doğal sayının aynı zamanda bir tam sayı ve rasyonel sayı olduğunu ifade etmeleri beklenir. Öğrencilerden “sayı doğrusunda rasyonel sayıların tüm noktaları dolduramadığı, bu nedenle boşluklar oluştuğu ve bu boşlukların irrasyonel sayılar ile doldurulabileceği” şeklinde açıklama yapması beklenir. İrrasyonel sayıların yaklaşık değerini tahmin eden öğrencilerden bu sayıların sayı doğrusu üzerinde yaklaşık konumunu belirlemeleri istenerek; bir sayının hem rasyonel hem de irrasyonel sayı olamayacağını ve sayı doğrusundaki tüm sayıların rasyonel ve irrasyonel sayılardan oluştuğunu fark etmeleri beklenir. Böylece rasyonel ve irrasyonel sayıların tamamının gerçek sayılar olarak tanımlandığı ifade edilerek öğrencilerin “Sayı doğrusu üzerinde her noktaya bir ve yalnız bir gerçek sayı, her gerçek sayıya bir ve yalnız bir nokta karşılık gelir.” çıkarımına ulaşmaları sağlanır (E3.4). Gerçek sayıları sayı doğrusunda modelleyen öğrencilerin doğru üzerinde farklı iki nokta seçmeleri ve bu noktalar dâhil aralarında yer alan tüm gerçek sayıları nasıl ifade edeceklerini tartışmaları istenir (SDB2.2). Eşitsizlik ile ilgili ön bilgiye sahip öğrencilerden seçtikleri noktalar (örneğin 2 ve 5 gerçek sayı olmak üzere) ile aralarındaki tüm gerçek sayıları hem sayı doğrusu üzerinde modellemeleri hem de sembolik temsil kullanarak (örneğin x gerçek sayı olmak üzere 2 ≤ x ≤ 5) (MAB3) ifade etmeleri beklenir. Ardından sayı doğrusu üzerinde iki farklı nokta arasında yer alan tüm gerçek sayıların bir aralık oluşturduğu açıklanır. Uç noktaların aralığa dâhil olma durumu ise “kapalı aralık” olarak adlandırılır ve [a, b] şeklinde temsil edilir. Bu noktada öğrencilere örneğin “ [2, 5] aralığı içinde farklı bir gerçek sayı aralığı ifade edebilir misiniz?”, ya da “Bu aralıkta bir irrasyonel sayı var mıdır?” soruları sorulabilir. Ayrıca seçilen “İki uç noktadan sadece bir tanesi aralığa dâhil olsa ya da uç noktalar aralığa dâhil olmasa aralarındaki tüm gerçek sayılar nasıl ifade edilir?” sorusu yöneltilerek öğrencilerin tartışmaları sağlanır (SDB2.2). Benzer şekilde öğrencilerin x bir gerçek sayı olmak üzere x ≥ a, x>a, x ≤ a, x<a aralıklarını da sorgulaması beklenir (E3.6). Bu süreçte öğrencilerin aralıkları sayı doğrusunda modellemeleri ve sembolik olarak temsil etmeleri istenir. Süreç sonunda aralıklar “açık ve yarı açık” olarak adlandırılır ve (a, b), [a, b), (-∞, a] gibi temsil edilir. Bu süreçte sonsuzluk kavramı ve sembolü ele alınır. Daha sonra grup çalışması (SDB2.2) yapılarak çeşitli aralık çiftlerinin yer aldığı çalışma kâğıdı gruplara dağıtılabilir ve öğrencilerin aralıkları sayı doğrusunda modellemeleri ve sonuçları tartışmaları istenebilir (SDB2.2). Verilen farklı aralıklardaki ortak sayıların yeni bir sayı aralığı olarak temsil edilebileceği ya da iki aralığın sınırları dikkate alınarak yeni bir aralık olarak ifade edilebileceğini fark etmeleri sağlanır. Grup çalışmalarındaki performanslarına dayalı olarak öğrenciler öz değerlendirme formuyla (SDB1.1) kendilerini, akran değerlendirme formuyla (SDB2.3) arkadaşlarını değerlendirebilirler. Grup çalışmaları yapılırken hata yapan öğrencilere geri bildirim verilebilir. Öğrenme süreci sonunda öğrenciler açık uçlu sorulardan oluşan çalışma kâğıdı ile değerlendirilebilir.",
+        "Zenginleştirme": "Cebir ve sayılar ile ilgili çalışmış, üslü ve köklü ifadeleri kullanan matematikçiler (üslü ifadeler için Ebu Kâmil, Descartes (Dekart) gibi; köklü ifadeler için Ebu Kâmil, Kerecî, Şerefeddin Tûsî, Kaşî gibi) araştırılabilir. Bu bilim insanlarının matematiğin gelişimine katkısı sınıf ortamında tartışılabilir. Öğrencilere üslü ifadelerle işlemler verilerek sonucun büyüklüğünü tahmin etmeye ve yaklaşık değerini belirlemeye yönelik açık uçlu sorular sorulabilir. Ayrıca sosyal medyada gerçek olmayan bilgilerin kısa sürede nasıl yayılabileceğini fark etmeleri için bir senaryo yazılabilir. Örneğin “Sosyal medyada gerçek olmayan bir bilginin doğruluğunu araştırmadan yapılan tüm paylaşımların her 2 dakikada 2 kişi tarafından tekrar paylaşıldığını kabul edelim. Bu şekilde 1 saat sonra yanlış bilginin kaç kişiye ulaşabileceğini bulabilir misiniz?” şeklinde bir soru yöneltilerek hesaplama yapmaları istenebilir. Pi sayısının değerinin ondalık kısmını 16. basamağa kadar hesaplamayı başaran Kâşî’nin çalışmalarından bahsedilerek π sayısının günümüze kadar hesaplanan basamağının araştırılması istenebilir.Öğrencilerin √2 ’nin neden rasyonel olmadığının ispatını araştırmaları istenebilir. Öğrencilerden Theodorus (Teodorus) çarkını araştırmaları ve bu yöntemi kullanarak √7 ’nin sayı doğrusundaki konumunu belirlemeleri istenebilir.Öğrencilerin irrasyonel sayılardan biri olan fi (altın oran) sayısının sanat, mimari ve doğada kullanımı ile ilgili de araştırma yapmaları istenebilir. Öğrencilerden [0,1] aralığı içinde farklı açık, kapalı, yarı açık aralıklar yazmaları istenebilir.",
+        "Destekleme": "Öğrencilerin n’nin pozitif olduğu durumlarda sonucunun negatif olduğunu 0’dan ifadesini çıkararak belirlemeleri sağlanabilir. (Örneğin -2⁴ ifadesi için 0-2⁴ = 0-16 = -16 yazılabilir). Üslü ifadelere, özelliklerine ve üslü ifadelerle yapılan işlemlere ilişkin varsayımların sınanmasında hesap makinesi kullanılabilir. Özellikle “5.5.5=125” ile “3.5=15” işlemlerinin birbirlerinden farklı olduğu vurgulanarak, verilen işlemler ve değerleri incelenebilir. Öğrencilerin her kareköklü ifadeyi irrasyonel sayı olarak görmemeleri için kavram karikatürleri kullanılabilir. İrrasyonel sayıların yaklaşık değerinin tahmin edilmesinde en yakın referans sayıların (tam kare sayılar) karekök değerlerinin sayı doğrusundaki yerlerinin ve sayının bu referans sayılarla ilişkisinin gösterilmesini gerektiren çevrim içi oyunlar kullanılabilir.Öğrencilerden gerçek sayı aralıklarının sayı doğrusunda modellendiği bir pano hazırlamaları istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.1.1. Farklı bağlamlardaki üslü ifadelere, özelliklerine ve üslü ifadelerle yapılan işlemlere ilişkin çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Karşılaştığı bağlamlardaki üslü ifadeler, özellikleri ve üslü ifadelerle yapılan işlemlere yönelik varsayımlarda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Üslü ifadeleri, özelliklerini ve üslü ifadelerle yapılan işlemleri inceleyerek genellemeleri belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Ulaştığı genellemelerin varsayımını karşılayıp karşılamadığını örnekler ve çeşitli temsiller (şekil ve tablo gibi) ile sınar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Üslü ifadelere, özelliklere ve üslü ifadelerle işlem yapmaya ilişkin önermeleri sözel ve cebirsel olarak ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "d) Sunduğu önermelerin matematiksel süreçlere katkısını sözel olarak açıklar.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.1.2. Karşılaştığı problem durumlarında kareköklü ifadeler ile ilgili muhakeme yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir karenin alanı ile kenar uzunluğu arasındaki ilişkiyi belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Karenin alanından hareketle tam kare pozitif tam sayılar ile kareköklerini ilişkilendirir.",
+          "bold": false
+        },
+        {
+          "text": "c) Tam kare olmayan pozitif bir sayının karekökünün hangi iki doğal sayı arasında olduğunu ve yaklaşık değerini matematiksel temsillerle (sayı doğrusu, şekil, tablo gibi) ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "ç) Bir sayının karekökünü kendi ifadeleri ile açıklar.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.1.3. Sayıların rasyonel ya da irrasyonelliğini değerlendirebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Sayıların rasyonel ya da irrasyonel sayılar olup olmadığına ilişkin ondalık gösterimlerini ölçüt olarak belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Sayıların ondalık gösterimlerini bölme işlemi ya da hesap makinesi kullanarak elde eder.",
+          "bold": false
+        },
+        {
+          "text": "c) Elde ettiği ondalık gösterimi ölçütü ile karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Karşılaştırmalarından hareketle bir sayının rasyonel olup olmadığına yönelik yargıda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.1.4. Gerçek sayıları ve aralıklarını sayı doğrusunda yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Doğal sayılardan başlamak üzere tüm gerçek sayıları ve sayılar arası ilişkileri inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Gerçek sayıları sayı doğrusuna yerleştirir.",
+          "bold": false
+        },
+        {
+          "text": "c) Gerçek sayı aralıkları arasındaki ilişkiyi açıklar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.1.1",
+          "codeAsPrinted": "MAT.8.1.1",
+          "text": "Farklı bağlamlardaki üslü ifadelere, özelliklerine ve üslü ifadelerle yapılan işlemlere ilişkin çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Karşılaştığı bağlamlardaki üslü ifadeler, özellikleri ve üslü ifadelerle yapılan işlemlere yönelik varsayımlarda bulunur.",
+            "b) Üslü ifadeleri, özelliklerini ve üslü ifadelerle yapılan işlemleri inceleyerek genellemeleri belirler.",
+            "c) Ulaştığı genellemelerin varsayımını karşılayıp karşılamadığını örnekler ve çeşitli temsiller (şekil ve tablo gibi) ile sınar.",
+            "ç) Üslü ifadelere, özelliklere ve üslü ifadelerle işlem yapmaya ilişkin önermeleri sözel ve cebirsel olarak ifade eder.",
+            "d) Sunduğu önermelerin matematiksel süreçlere katkısını sözel olarak açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.1.2",
+          "codeAsPrinted": "MAT.8.1.2",
+          "text": "Karşılaştığı problem durumlarında kareköklü ifadeler ile ilgili muhakeme yapabilme",
+          "group": null,
+          "components": [
+            "a) Bir karenin alanı ile kenar uzunluğu arasındaki ilişkiyi belirler.",
+            "b) Karenin alanından hareketle tam kare pozitif tam sayılar ile kareköklerini ilişkilendirir.",
+            "c) Tam kare olmayan pozitif bir sayının karekökünün hangi iki doğal sayı arasında olduğunu ve yaklaşık değerini matematiksel temsillerle (sayı doğrusu, şekil, tablo gibi) ifade eder.",
+            "ç) Bir sayının karekökünü kendi ifadeleri ile açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.1.3",
+          "codeAsPrinted": "MAT.8.1.3",
+          "text": "Sayıların rasyonel ya da irrasyonelliğini değerlendirebilme",
+          "group": null,
+          "components": [
+            "a) Sayıların rasyonel ya da irrasyonel sayılar olup olmadığına ilişkin ondalık gösterimlerini ölçüt olarak belirler.",
+            "b) Sayıların ondalık gösterimlerini bölme işlemi ya da hesap makinesi kullanarak elde eder.",
+            "c) Elde ettiği ondalık gösterimi ölçütü ile karşılaştırır.",
+            "ç) Karşılaştırmalarından hareketle bir sayının rasyonel olup olmadığına yönelik yargıda bulunur."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.1.4",
+          "codeAsPrinted": "MAT.8.1.4",
+          "text": "Gerçek sayıları ve aralıklarını sayı doğrusunda yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Doğal sayılardan başlamak üzere tüm gerçek sayıları ve sayılar arası ilişkileri inceler.",
+            "b) Gerçek sayıları sayı doğrusuna yerleştirir.",
+            "c) Gerçek sayı aralıkları arasındaki ilişkiyi açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-matematik-dersi/unite/473",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/473",
+      "title": "2.Tema: Cebirsel Düşünme Ve Değişimler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:00.860Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_473.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "2.Tema: Cebirsel Düşünme Ve Değişimler",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin gerçek yaşam durumlarında dik koordinat sistemini çözümleyebilmeleri, doğrusal fonksiyonları matematiksel olarak temsil edebilmeleri, iki doğrusal fonksiyonun birbirine göre durumuna ilişkin çıkarım yapabilmeleri ve doğrusal fonksiyonlara ilişkin problemlerin çözümlerini algoritma ifade yöntemlerini kullanarak yapılandırabilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "42",
+        "Alan Becerileri": "MAB3. Matematiksel Temsil",
+        "Kavramsal Beceriler": "KB2.4. Çözümleme, KB2.10. Çıkarım Yapma, KB2.13. Yapılandırma",
+        "Eğilimler": "E3.7. Sistematiklik",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D5. Duyarlılık, D13. Sağlıklı Yaşam, D17. Tasarruf, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Fen Bilimleri",
+        "Beceriler Arası İlişkiler": "KB2.9. Genelleme, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.2.1. Gerçek yaşam durumları üzerinden dik koordinat sistemini çözümleyebilmea) Dik koordinat sisteminin bileşenlerini (düzlem, eksenler, sayı ikilileri gibi) belirler.b) Dik koordinat sisteminde bileşenler arasındaki ilişkileri belirler.MAT.8.2.2. Gerçek yaşam durumlarındaki doğrusal ilişkileri doğrusal fonksiyonlarla temsil edebilmea) Doğrusal fonksiyonların cebirsel, tablo ve grafik temsillerini tanır.b) Gerçek yaşam durumlarındaki doğrusal ilişkileri incelemek için doğrusal fonksiyonların temsillerinden uygun olanını belirler. c) Belirlediği temsili gerçek yaşam durumunu modellemek veya problemi çözmek için gerektiğinde temsiller arası geçiş yaparak kullanır. ç) Kullandığı temsilin problem durumuna uygunluğunu değerlendirir. d) Aynı durumda kullanılabilecek farklı temsilleri ekonomiklik ve kullanışlılık açısından karşılaştırır. e) Karşılaştırdığı temsillerin ekonomikliğine ve kullanışlılığına ilişkin karar verir.MAT.8.2.3. Dik koordinat sisteminde iki doğrusal fonksiyonun birbirine göre durumuna ilişkin çıkarım yapabilmea) Dik koordinat sisteminde iki doğrusal fonksiyonun birbirine göre durumuna ilişkin varsayım oluşturur.b) Dik koordinat sisteminde farklı doğrusal fonksiyonların birbirlerine göre durumlarını inceleyerek genellemeler yapar.c) Genellemeleri ile varsayımlarını karşılaştırır.ç) Bulmuş olduğu ilişkilere yönelik önermeler sunar.d) Dik koordinat sisteminde verilen doğruların konumlarını değerlendirir.MAT.8.2.4. Doğrusal fonksiyonlara ilişkin problemlerin çözümlerini algoritma ifade yöntemlerini kullanarak yapılandırabilmea) Doğrusal fonksiyonlara ilişkin problemlerin çözümlerindeki adımları ve ilişkileri açıklar. b) Algoritma ifade yöntemlerini kullanarak incelediği adımlar ve ilişkilerden uyumlu bir bütün oluşturur.",
+        "İçerik Çerçevesi": "Doğrusal Fonksiyonlar:Dik Koordinat SistemiDoğrusal İlişkiden Doğrusal FonksiyonlaraDoğrusal Fonksiyonların GrafikleriDoğrusal Fonksiyonlar ve Algoritma",
+        "Anahtar Kavramlar": "Genellemeler• Düzlemde her noktaya bir gerçek sayı ikilisi, her gerçek sayı ikilisine düzlemin bir noktası karşılık gelir. • Doğrusal fonksiyonlarda değişkenler arasındaki değişim oranı (eğim) sabittir. • Eğimleri eşit iki doğru birbirine paraleldir. • İki doğru birbirine dik ise, eğimlerinin çarpımı -1' dir. Anahtar Kavramlaralgoritma, bağımlı değişken, bağımsız değişken, eğim, fonksiyon Sembol ve Gösterimlerf(x), sıralı ikili: “(x,y)”",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; çalışma kâğıdı, performans görevi ve açık uçlu, doğru-yanlış ya da eşleştirmeli sorulardan oluşan izleme testleri ile değerlendirilebilir.Doğrusal fonksiyonların eğimlerine yönelik örneğin tekerlekli sandalye kullanan bireylerin herhangi birinden yardım almadan merdiven yerine kullandıkları rampaların eğiminin en fazla ne kadar olabileceğinin modellenmesini içeren performans görevi verilebilir. Öğrencilerden problemlerin çözümlerine yönelik sunum hazırlamaları istenebilir. Performans görevi araştırma yapma, rampanın dikey ve yatay değişimlerini inceleme, matematiksel modelini oluşturma kriterlerini içeren analitik dereceli puanlama anahtarı yardımıyla değerlendirilebilir. Performans ürünü, çalışma kâğıdı ve izleme testleri sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin birinci dereceden bir bilinmeyenli denklem ve eşitsizlikleri kullanarak problemleri çözebildikleri, oranı yorumlayabildikleri ve temel aritmetik ve cebirsel ifadelerle işlem içeren durumlardaki süreci algoritma ifade yöntemlerini kullanarak yapılandırabildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Birinci dereceden bir bilinmeyenli denklem ve eşitlikleri çözmelerini gerektiren gerçek yaşam problemlerine yönelik sorular içeren bir çalışma kâğıdı kullanılabilir. Ayrıca oran kavramına yönelik sorular sorularak bu kavrama ilişkin bilgiler değerlendirilebilir. Öğrencilere basit problemler verilerek bir algoritma yazmaları ve bu algoritmaları farklı ifade yöntemleriyle açıklamaları istenebilir.",
+        "Köprü Kurma": "Gerçek yaşam durumlarında karşılaşılan sinema salonundaki koltuk numaraları, haritalardaki şehirlerin enlem ve boylam koordinatları ya da çeşitli oyunlarda konum belirtmek amacıyla kullanılan noktaları içeren örnekler üzerinden eksenler ve nokta dizilimleri üzerine tartışmalar yapılarak başlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT.8.2.1 Öğrencilerin gerçek yaşam durumlarında verilen bir konumu belirlemek için bir eksen sisteminin farkına varmaları sağlanır. Bu süreçte öğrencilerin grup çalışması yapmaları sağlanabilir. Gruplardan örneğin sinema salonunun koltuk dizilimlerinin modelini kareli kâğıt üzerine çizmeleri istenerek eksenleri ve sıralı ikilileri belirlemeleri sağlanır. Bu çalışmanın sonucunda 0 (sıfır) noktasında dik kesişen iki sayı doğrusunun oluşturduğu sistemin dik koordinat sistemi, bu doğruların kesiştiği 0 (sıfır) noktası orijin, sayı doğruları x (apsis) ve y (ordinat) eksenleri olarak tanımlanır. Ayrıca dik koordinat sisteminin bölgeleri tanıtılır. Öğrencilerin gerçek yaşam durumlarında verilen bir konumu belirlemede fark ettikleri ilişkileri dik koordinat sisteminde bir noktanın yerini belirten sıralı ikilileri belirlemede kullanabilmeleri sağlanır. Öğrencilerden sıralı ikilileri dik koordinat sisteminde bir noktayla eşleştirmeleri ya da verilen bir noktanın koordinatlarını sıralı ikili olarak ifade etmeleri istenir. Bu süreçte öğrencilerin matematik yazılımları üzerinde de çalışmaları sağlanabilir (MAB5). Böylece öğrencilerin dik koordinat sisteminde her noktaya bir gerçek sayı ikilisi, her gerçek sayı ikilisinin de dik koordinat sisteminde bir noktaya karşılık geldiğine yönelik genellemeye ulaşmaları beklenir (KB2.9). Bu öğrenme çıktısının değerlendirilmesinde, sıralı ikililerin dik koordinat sisteminde bir noktayla eşleştirilmesini ve verilen bir noktanın koordinatlarının sıralı ikili olarak ifade edilmesini gerektiren açık uçlu, doğru-yanlış ya da eşleştirmeli sorulardan oluşan izleme testleri kullanılabilir. MAT.8.2.2Öğrencilere telefon tarifelerindeki kullanım süresine bağlı ücretlendirme, antrenmanlardaki zamana bağlı yakılan kalori miktarı ve ürün sayısına bağlı toplam maliyet hesapları gibi gerçek yaşam durumları ile hareket eden bir cismin konum-zaman ilişkisi ve elektrik devrelerinde direnç sabit olduğunda oluşan akım-voltaj ilişkisi gibi farklı disiplinlerde (fen bilimleri gibi) karşılaşılan doğrusal ilişki içeren durumlar sunulabilir. Seçilen bağlamlar arasında spor antremanlarıyla ilgili problemler varsa zamana bağlı yakılan kalori miktarının önemi vurgulanarak, öğrencilerle sağlıklı bir yaşam sürmek için spor ve egzersiz yapmanın fiziksel ve psikolojik iyi oluşa katkıları üzerine konuşulabilir (D13.2). Öğrencilerin bu durumlardaki değişkenleri ve değişkenler arasındaki ilişkileri incelemeleri istenir. Bu incelemede öğrencilerin değişkenleri girdi (bağımsız değişken) ve çıktı (bağımlı değişken) olacak şekilde tanımlamaları ve her bir girdi değerinin yalnız bir çıktı değerine karşılık geldiğini fark etmeleri beklenir. Bu sınıf seviyesinde yapılacak çalışmalar, fonksiyon tanımına girilmeden doğrusal fonksiyonun temsilleri üzerinden gerçekleştirilir. Öğrencilerin doğrusal fonksiyonları matematiksel temsillerle ifade etmeleri (sözel, tablo, sembolik ve grafik temsili gibi) ve temsillerin birbirine dönüşümlerini yapmaları beklenir. Örneğin “bir maraton koşusunda dakika başına koşulan mesafe”yi ele alan bir durumda değişkenlerin belirlenmesi, belirlenen değişken değerlerinin tablo temsili üzerinde gösterilmesi, belirli bir zamandaki değişime bağlı olarak mesafedeki değişimin incelenmesi (değişim oranı) yorumlanarak (OB4) zamana bağlı alınan mesafenin cebirsel olarak ifade edilmesi sağlanır. Fonksiyonlar f(x)=mx+n şeklinde ifade edilir. Doğrusal fonksiyonların temsil edilmesinde grafiklerden yararlanılır. Öğrencilerin maraton koşusundaki zamana bağlı mesafe örneğinde olduğu gibi fonksiyon grafiğinde her birim zamanın mesafedeki sabit bir artışa karşılık geldiğini (“1 dakikada 60 metre yol alır.” gibi) ve grafikteki noktaların bir doğru üzerinde olduğunu fark etmeleri sağlanır. Ayrıca öğrencilerin grafik çizimlerinde f(x)=mx+n, f(x)=kx ve f(x)=k gibi çeşitli doğrusal fonksiyonları ele almaları ve bu fonksiyonlardaki bileşenleri incelemeleri de (f(x)=kx için k>0 ve k değeri büyüdükçe fonksiyon grafiğinin nasıl değiştiğinin incelenmesi gibi) istenir. Öğrenciler bu incelemeleri yaparken matematik yazılımlarından ya da elektronik tablolardan yararlanabilir (MAB5). Doğrusal fonksiyonlar tablo veya grafik temsilleri üzerinde incelenirken fonksiyonların eğimlerine de yer verilir. Öğrencilerin değişim oranının fonksiyonun cebirsel temsili f(x)=mx+n ile nasıl ilişkili olduğunu tartışmaları sağlanarak doğrusal fonksiyonlarda değişim oranının sabit olduğunu ve bu değerin eğimi verdiğini yorumlamaları beklenir (SDB2.1). Ayrıca öğrencilerden fonksiyonun kuralında x ve f(x)’in iki değişken olduğunu, m’nin sabit değişim oranı, yani eğim olduğunu keşfetmeleri ve açıklamaları sağlanır. Doğrusal fonksiyonlarda eğimin incelenmesi, sözel temsiller ile yapılabileceği gibi tablodaki değişim değerleri ve grafik üzerinde de yapılır. Grafikte doğruların eğim üçgenlerinin benzer olması durumundan hareketle değişim oranının (dikey değişimin yatay değişime oranı) sabit olduğu tartışılır. Öğrencilerden matematik yazılımlarında verilen doğru döndürüldüğünde eğiminin nasıl değiştiğine yönelik incelemeler yapmaları istenebilir (MAB5). Böylece öğrencilerin negatif eğimi gözlemlemeleri sağlanır. Ayrıca, gerçek yaşam durumlarında eğimin sadece pozitif olacağı da tartışılır. Öğrencilerle tekerlekli sandalye kullanan bireylerin merdiven yerine rampa kullanmalarının önemi tartışılarak hastaların, yaşlıların ve özel gereksinimli bireylerin ihtiyaçlarına öncelik verilmesi gerektiği hakkında konuşulur, böylece yardımseverlik değerinin kazanılması desteklenir (D20.2) ve bu rampaların eğiminin en fazla ne kadar olabileceğinin araştırılması ve modellenmesi bir performans görevi olarak istenebilir. Gerçek yaşam durumlarında verilen matematiksel temsillerin doğrusal fonksiyonu göstermek için uygun olup olmadığı da yorumlanır. İncelenen durumlardan tablo ve grafik temsillerinin hangisinin yorumlanmasının daha işlevsel olduğu tartışılır. Öğrencilerden verilen gerçek yaşam durumları farklı matematiksel temsiller ile gösterilerek belirlenen temsilin ekonomiklik ve kullanışlılık açısından karşılaştırmaları istenir. Bu karşılaştırma sonucunda, fonksiyonu ve durumu yorumlamak için hangi temsilin daha ekonomik ve kullanışlı olduğuna dair (örneğin bazı fonksiyonlarda cebirsel temsil üzerinden yorum yapmak tablo temsiline göre daha kullanışlı olabilir) karar vermeleri beklenir. Performans görevinin değerlendirilmesinde araştırma yapma, rampanın dikey ve yatay değişimlerini inceleme, matematiksel modelini oluşturma kriterlerini içeren analitik dereceli puanlama anahtarı kullanılabilir. Öğrenme çıktısının değerlendirilmesinde ise doğrusal fonksiyonların kullanıldığı gerçek yaşam problemlerinin çözümünü gerektiren açık uçlu sorulardan oluşan izleme testleri ya da çalışma kâğıtları kullanılabilir. MAT.8.2.3Doğrusal fonksiyonların grafiklerini çizebilen öğrencilerden, dik koordinat sisteminde iki doğrunun birbirine göre durumunu karşılaştırmaları beklenir. Bu bağlamda öncelikle öğrencilerden iki doğrunun birbirine göre durumuna ilişkin çeşitli varsayımlarda (paralel gibi) bulunmaları istenir. Bu varsayımlarına ait ilişkileri gözlemlemeleri için matematik yazılımı kullanarak grup çalışmaları eşliğinde (SDB2.2, MAB5) öğrencilerin y=mx+n şeklindeki denklemlerin grafiklerini çizmeleri ve denklemde m değişkenini sabit bir değerde tutup n değişkenine farklı değerler vermeleri sağlanır. Burada m değişkeni için pozitif ve negatif değerler seçilmelidir. Diğer yandan doğru denklemlerinde n=0 ya da m=0 olma durumları da dikkate alınmalıdır. Matematik yazılımı kullanma imkanı olmadığı durumlarda ise grafikler kareli bir düzlemde çizilebilir. Aynı dik koordinat sisteminde çizdikleri grafikleri inceleyen öğrencilerin doğruları karşılaştırmaları istenerek “Grafiklerini çizdiğiniz doğruların birbirine göre konumları hakkında ne söyleyebilirsiniz?” sorusunu yanıtlamaları istenir (SDB3.3). Öğrencilerden doğrular için “paralel ya da kesişir” gibi yanıtlar vermeleri beklenir. Bu noktada öğrencilerin doğruların konumları ve eğimleri arasındaki ilişkiyi fark etmeleri de sağlanır. Öğrencilere “Doğruların eğimleri ile konumları arasında nasıl bir ilişki vardır?” gibi bir soru yöneltilebilir. Ayrıca öğrencilerin kesişen iki doğruyu incelemeleri de istenir. “İki doğrunun kesişim noktasının koordinatları nedir?”, \"Bu nokta yani (a, b) noktası ile iki doğru arasında nasıl bir ilişki vardır?” şeklinde sorular yöneltilerek öğrencilerin tartışmaları sağlanır. Öğrencilerden f(a)=b ve g(a)=b olduğunu keşfetmeleri beklenir. Diğer yandan örneğin “Eğimleri eşit iki doğru birbirine paraleldir.” \"İki doğru birbirine dikse, eğimlerinin çarpımı -1’ dir.\" gibi önermelerde bulunan öğrencilerin “y=mx+n şeklindeki doğru denkleminde m ve n’nin değişimleri doğru grafiğinde değişimlere yol açar.” gibi bir değerlendirme yapmaları beklenir (E3.7). Öğrenme çıktısının sonunda öğrencilere çeşitli doğru denklemlerinin yer aldığı ya da çeşitli gerçek yaşam durumları üzerinden dik koordinat sisteminde iki doğrunun birbirine göre durumunun karşılaştırılmasının istendiği açık uçlu, doğru-yanlış ya da eşleştirmeli sorulardan oluşan çalışma kâğıtları verilebilir. MAT.8.2.4Doğrusal fonksiyonlara ait problemlerin çözümlerini veren algoritmalar ile yapılandırılırken gerçek yaşam durumlarından yararlanılır. Örneğin atık miktarı ile geri dönüştürülen malzeme miktarı, toplu taşıma kullanımı ile karbon emisyonu, enerji tüketimi ve maliyeti, bir aracın kat ettiği mesafe ile tükettiği yakıt miktarı gibi durumlardan oluşturulan ve değişkenler arasındaki ilişkinin doğrusal olarak ele alındığı problemler ile başlanabilir (SDB2.3). Seçilen problemler arasında geri dönüşüm ve karbon emisyonu ile ilgili durumlar varsa, öğrencilerle kullanım ömrünü tamamlamış ürünlerin dönüştürülmesinin (D17.3) ve tüketim tercihlerinin tasarruf değeri ve sürdürülebilirliğe katkıda bulunacak şekilde yapılmasının önemi hakkında konuşulabilir, böylece öğrencilerin geri dönüşüm ve sürdürülebilirlik konularında duyarlılık değerini kazanmaları desteklenebilir (D5.2). Problemlerde bağımlı ve bağımsız değişkenler yani algoritmada kullanılacak girdi ve çıktı değerleri, problemi çözmek için kullanılabilecek stratejiler, seçilen stratejide kullanılacak adımlar ile adımlar ve değişkenler arasındaki ilişkiler belirlenir (SDB3.3). Örneğin Celsius (Selsiyıs) cinsinden verilen bir sıcaklık değerini Fahrenheit (Fahrenhayt) cinsinden sıcaklığa dönüştürme probleminde girdi değeri Celsius cinsinden verilen bir sıcaklık iken çıktı değeri Fahrenheit cinsinden sıcaklıktır . Problem çözme sürecindeki adım ve ilişkilerin açıklanmasının ardından çözüme ait algoritma sözde kod, akış şeması veya doğal dil kullanılarak ifade edilir. Sözde kod yazımında kullanılacak dilin Türkçe olması istenir. Algoritmanın her adımı için kullanılacak işlemler sınıf içi tartışmalar (SDB2.2) aracılığıyla kararlaştırılabilir. Örneğin öğrenciler fonksiyona bağlı olarak önce hangi işlemi yapacaklarına ya da belirli koşula göre hangi seçenekten ilerleyeceklerine yönelik kararlar verebilir. Gerçek yaşam problemlerinin çözümlerini veren algoritmaların farklı ifade yöntemleriyle oluşturulmasını gerektiren ve açık uçlu sorulardan oluşan izleme testleri aracılığıyla öğrenciler değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerin Hooke (Huk) yasasına yönelik araştırma yapmaları istenebilir. Araştırmalarında doğrusal fonksiyonlara ilişkin buldukları bilgileri farklı temsil biçimlerini kullanarak bir poster üzerinde sunmaları beklenebilir. Öğrencilerin dik koordinat sisteminde iki doğrunun dik kesişmesi durumunda eğimleri arasındaki ilişkiyi ispatlamaları istenebilir. Tarihsel süreçte Decartes’in (Dekart) dik koordinat sistemini nasıl keşfettiği, dik koordinat sistemininin hangi alanlarda işe koşulduğu araştırılabilir. Öğrencilerin aynı problemlerin çözümü için farklı algoritmalar geliştirmeleri beklenebilir. Ayrıca geliştirdikleri algoritmaları bilgisayarda kodlama diline dönüştürerek algoritmaların çalışıp çalışmadığını kontrol etmeleri sağlanabilir.",
+        "Destekleme": "Öğrencilerin günlük hayatta sıkça karşılaştıkları bisiklet sürme, kayak yapma, dağ tırmanma, rampa çıkma, yokuş inme gibi faaliyetler eğim kavramı ile ilişkilendirilebilir. Bu süreçte çeşitli eğimlere sahip bir yokuşu tırmanırken farklı bisikletçilerin hangilerinin daha çok zorlanacağı gibi durumlar tartışılabilir. Dik koordinat sistemi üzerinde somut materyal veya oyunla yapılacak çalışmalar aracılığıyla öğrencilerin sıralı ikilileri göstermeleri pekiştirilebilir. Öğrencilerin doğrusal fonksiyonların temsilleri arasında geçiş yaparken kendi hızlarında ilerlemelerine fırsat verilebilir. Öğrencilerle bireysel ya da iş birlikli çalışmalar yapılabilir. Öğrencilerin grup arkadaşları ile çalışarak grafikleri çizmeleri ve doğruların konumlarını yorumlamaları sağlanabilir. Somut materyaller kullanarak bir rampa oluşturmaları ve bu rampa üzerinde çeşitli deneyler yaparak eğimi anlamlandırmaları sağlanabilir. Doğrusal fonksiyonlara ilişkin problemlerin çözümlerine yönelik algoritmaları öğrencilerin kendi hızında ilerlemesine fırsat verilerek yapılandırmaları beklenebilir. Algoritmaların oluşumunda görsel araçlardan yararlanılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.2.1. Gerçek yaşam durumları üzerinden dik koordinat sistemini çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dik koordinat sisteminin bileşenlerini (düzlem, eksenler, sayı ikilileri gibi) belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Dik koordinat sisteminde bileşenler arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.2.2. Gerçek yaşam durumlarındaki doğrusal ilişkileri doğrusal fonksiyonlarla temsil edebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Doğrusal fonksiyonların cebirsel, tablo ve grafik temsillerini tanır.",
+          "bold": false
+        },
+        {
+          "text": "b) Gerçek yaşam durumlarındaki doğrusal ilişkileri incelemek için doğrusal fonksiyonların temsillerinden uygun olanını belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Belirlediği temsili gerçek yaşam durumunu modellemek veya problemi çözmek için gerektiğinde temsiller arası geçiş yaparak kullanır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Kullandığı temsilin problem durumuna uygunluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Aynı durumda kullanılabilecek farklı temsilleri ekonomiklik ve kullanışlılık açısından karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "e) Karşılaştırdığı temsillerin ekonomikliğine ve kullanışlılığına ilişkin karar verir.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.2.3. Dik koordinat sisteminde iki doğrusal fonksiyonun birbirine göre durumuna ilişkin çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dik koordinat sisteminde iki doğrusal fonksiyonun birbirine göre durumuna ilişkin varsayım oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "b) Dik koordinat sisteminde farklı doğrusal fonksiyonların birbirlerine göre durumlarını inceleyerek genellemeler yapar.",
+          "bold": false
+        },
+        {
+          "text": "c) Genellemeleri ile varsayımlarını karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Bulmuş olduğu ilişkilere yönelik önermeler sunar.",
+          "bold": false
+        },
+        {
+          "text": "d) Dik koordinat sisteminde verilen doğruların konumlarını değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.2.4. Doğrusal fonksiyonlara ilişkin problemlerin çözümlerini algoritma ifade yöntemlerini kullanarak yapılandırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Doğrusal fonksiyonlara ilişkin problemlerin çözümlerindeki adımları ve ilişkileri açıklar.",
+          "bold": false
+        },
+        {
+          "text": "b) Algoritma ifade yöntemlerini kullanarak incelediği adımlar ve ilişkilerden uyumlu bir bütün oluşturur.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.2.1",
+          "codeAsPrinted": "MAT.8.2.1",
+          "text": "Gerçek yaşam durumları üzerinden dik koordinat sistemini çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Dik koordinat sisteminin bileşenlerini (düzlem, eksenler, sayı ikilileri gibi) belirler.",
+            "b) Dik koordinat sisteminde bileşenler arasındaki ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.2.2",
+          "codeAsPrinted": "MAT.8.2.2",
+          "text": "Gerçek yaşam durumlarındaki doğrusal ilişkileri doğrusal fonksiyonlarla temsil edebilme",
+          "group": null,
+          "components": [
+            "a) Doğrusal fonksiyonların cebirsel, tablo ve grafik temsillerini tanır.",
+            "b) Gerçek yaşam durumlarındaki doğrusal ilişkileri incelemek için doğrusal fonksiyonların temsillerinden uygun olanını belirler.",
+            "c) Belirlediği temsili gerçek yaşam durumunu modellemek veya problemi çözmek için gerektiğinde temsiller arası geçiş yaparak kullanır.",
+            "ç) Kullandığı temsilin problem durumuna uygunluğunu değerlendirir.",
+            "d) Aynı durumda kullanılabilecek farklı temsilleri ekonomiklik ve kullanışlılık açısından karşılaştırır.",
+            "e) Karşılaştırdığı temsillerin ekonomikliğine ve kullanışlılığına ilişkin karar verir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.2.3",
+          "codeAsPrinted": "MAT.8.2.3",
+          "text": "Dik koordinat sisteminde iki doğrusal fonksiyonun birbirine göre durumuna ilişkin çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Dik koordinat sisteminde iki doğrusal fonksiyonun birbirine göre durumuna ilişkin varsayım oluşturur.",
+            "b) Dik koordinat sisteminde farklı doğrusal fonksiyonların birbirlerine göre durumlarını inceleyerek genellemeler yapar.",
+            "c) Genellemeleri ile varsayımlarını karşılaştırır.",
+            "ç) Bulmuş olduğu ilişkilere yönelik önermeler sunar.",
+            "d) Dik koordinat sisteminde verilen doğruların konumlarını değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.2.4",
+          "codeAsPrinted": "MAT.8.2.4",
+          "text": "Doğrusal fonksiyonlara ilişkin problemlerin çözümlerini algoritma ifade yöntemlerini kullanarak yapılandırabilme",
+          "group": null,
+          "components": [
+            "a) Doğrusal fonksiyonlara ilişkin problemlerin çözümlerindeki adımları ve ilişkileri açıklar.",
+            "b) Algoritma ifade yöntemlerini kullanarak incelediği adımlar ve ilişkilerden uyumlu bir bütün oluşturur."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-matematik-dersi/unite/474",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/474",
+      "title": "3.Tema: Geometrik Şekiller",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:02.355Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_474.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "3.Tema: Geometrik Şekiller",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin üçgenin kenar uzunlukları arasındaki ilişkiyi üçgen eşitsizliği olarak ifade edebilmeleri, üçgenin kenarları ve açıları arasındaki ilişkiyi yorumlayabilmeleri, üçgenlerde eşlik şartlarını ifade edebilmeleri, benzer şekiller arasındaki ilişkiyi yorumlayabilmeleri, benzerlik oranını belirleyerek çokgenlerin benzerliğini ifade edebilmeleri ve dik üçgenin kenar uzunlukları arasındaki ilişkiyi yorumlayabilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "39",
+        "Alan Becerileri": "MAB2. Matematiksel Problem Çözme",
+        "Kavramsal Beceriler": "KB2.10. Çıkarım Yapma, KB2.14.Yorumlama",
+        "Eğilimler": "E2.5. Oyunseverlik, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.3. Kendine Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB2.2. İş Birliği",
+        "Değerler": "D3. Çalışkanlık",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım",
+        "Beceriler Arası İlişkiler": "KB2.12. Mevcut Bilgiye/ Veriye Dayalı Tahmin Etme, MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji İle Çalışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.3.1. Matematiksel araç ve teknoloji yardımıyla üçgenin kenarları ve açıları arasındaki ilişkiyi yorumlayabilmea) Üçgenin kenar ve açı özelliklerini inceler. b) Üçgenin kenar uzunluklarının büyüklüğüne göre açıların ölçülerini, açıların ölçülerinin büyüklüğüne göre kenar uzunluklarını sıralar. c) Üçgenin kenar uzunlukları ve açı ölçüleri arasındaki ilişkiyi ifade eder. MAT.8.3.2. Matematiksel araç ve teknoloji yardımıyla üçgenin kenar uzunlukları arasındaki ilişkiye yönelik çıkarım yapabilmea) Üçgen oluşturabilen üç doğru parçasının uzunluklarına dair varsayımda bulunur. b) Varsayımda bulunduğu doğru parçaları ile oluşturduğu üçgenleri listeler. c) Üçgen oluşturan doğru parçalarının uzunlukları ile varsayımlarını karşılaştırır. ç) Üçgen oluşturan doğru parçalarının uzunlukları arasındaki ilişkiye dair önerme sunar. d) Sunduğu önermenin katkısına yönelik gerekçeler sunar. MAT.8.3.3. Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair çıkarım yapabilmea) Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair varsayımda bulunur. b) Matematiksel araç ve teknoloji yardımıyla varsayımlarına uygun üçgenler oluşturur. c) Oluşturduğu üçgenleri varsayımları ile karşılaştırır. ç) Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önerme sunar. d) Önermesinin iki üçgenin eş olup olmadığını incelemeye yönelik katkısını değerlendirir. MAT.8.3.4. Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair çıkarım yapabilmea) Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair varsayımda bulunur. b) Matematiksel araç ve teknoloji yardımıyla varsayımlarına uygun benzer üçgenler oluşturur. c) Oluşturduğu üçgenleri varsayımları ile karşılaştırır. ç) Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önerme sunar. d) Önermesinin iki üçgenin benzer olup olmadığını incelemeye yönelik katkısını değerlendirir. MAT.8.3.5. Kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgenleri oluşturarak dik üçgen olduklarını; dik üçgenlerde dik kenar uzunluklarının kareleri toplamının hipotenüs uzunluğunun karesine eşit olduğunu yorumlayabilmea) a²+ b²= c² eşitliğini sağlayan rasyonel sayıları inceler. b) Kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgeni oluşturarak dik üçgen olduğunu; dik üçgenlerde hipotenüs uzunluğunun karesinin diğer iki kenarın uzunluklarının kareleri toplamına eşit olduğunu belirler. c) Pisagor bağıntısını üçgende açı-kenar ilişkisi ve üçgen eşitsizliği ile ilişkilendirerek dar açılı ve geniş açılı üçgenlerdeki kenar uzunluklarının ilişkisini ifade eder. MAT.8.3.6. Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısını içeren problemleri çözebilme a) Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısını içeren problemlerde ilgili matematiksel bileşenleri (açıların ölçüsü, kenarların uzunluğu, şekil gibi) belirler. b) Matematiksel bileşenler arasındaki ilişkileri belirler. c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür. ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar. d) Problemin çözümünü gerçekleştirmek için stratejiler geliştirir. e) Belirlenen stratejileri çözüm için uygular. f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir. g) Problemin çözümü için kullandığı stratejileri gözden geçirerek kısa yolları değerlendirir. ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller. h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir.",
+        "İçerik Çerçevesi": "Üçgende Açı-Kenar İlişkisiÜçgen EşitsizliğiÜçgenlerde Eşlik ve BenzerlikPisagor Bağıntısı",
+        "Anahtar Kavramlar": "Genellemeler• Bir üçgende açıların büyüklükleri ile açıların gördükleri kenar uzunlukları ilişkilidir.• Bir üçgende herhangi bir kenarın uzunluğu diğer iki kenarın uzunlukları toplamından küçük, farkının mutlak değerinden büyüktür.• Eş şekiller aynı zamanda benzerdir.• Benzer üçgenlerin karşılıklı kenar uzunluklarının oranı eşittir.• Dik üçgende dik kenarların uzunluklarının kareleri toplamı hipotenüsün uzunluğunun karesine eşittir.Anahtar Kavramlarbenzerlik, benzerlik oranı, eşlik, hipotenüs, Pisagor bağıntısı, üçgen eşitsizliğiSembol ve Gösterimler≅ , ~",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; çalışma kağıdı, izleme testi, performans görevi, öz değerlendirme ve akran değerlendirme formu ile değerlendirilebilir. Pisagor’un hayatının, çalışmalarının ve Pisagor bağıntısının keşfinin araştırıldığı bir performans görevi verilebilir. Öğrencilerin performans görevinde ulaştıkları bilgileri dijital araçlar ile arkadaşlarına sunmaları sağlanabilir. Performans görevi bilgi toplama, bilgiyi analiz etme, sunum hazırlama gibi kriterleri barındıran bütüncül veya analitik dereceli puanlama anahtarı ile, grup çalışmaları da öz değerlendirme ve akran değerlendirme formu ile değerlendirilebilir. Tema boyunca işlenen öğrenme çıktıları/süreç bileşenleri hakkında öğrencilerin eksik öğrenmelerini belirlemek ve gidermek amacıyla izleme testi uygulanabilir.Performans ürünü, çalışma kâğıdı ve izleme testi sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin en az üç doğrunun ikişerli kesişimi ile üçgen oluşturabildikleri, matematiksel araçları (cetvel, ölçüsüz cetvel, pergel, gönye, açıölçer) kullanabildikleri, düzlemde kesişen iki çember ile üçgenler inşa edebildikleri ve üçgenin yardımcı elemanlarını belirleyebildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Üçgen inşası, üçgenin açıları ve yardımcı elemanları ile ilgili ön bilgi ve becerilerin tespit edilmesi amacıyla açık uçlu sorulardan oluşan çalışma kâğıdı kullanılabilir. Öğrencilerin rasyonel sayıların karesini ve tam kare pozitif tam sayıların karekökünü belirlemeye yönelik ön bilgileri doğru/yanlış kartları kullanılarak değerlendirilebilir.",
+        "Köprü Kurma": "İç açılarının ölçüleri ve iki kenarının uzunluğu bilinen bir üçgende üçüncü kenarın uzunluğunun tahmin edilmesine yönelik çalışmalar yapılabilir. İlgili çalışmada açı çeşitlerine göre farklı üçgenlerin incelenmesi sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT.8.3.1Öğrencilerden matematiksel araç ve teknolojiden (cetvel, ölçüsüz cetvel, gönye, açıölçer, pergel, geometri şeritleri, geometri tahtası, matematik yazılımı gibi) yararlanarak kenar uzunlukları farklı üçgenler oluşturmaları istenir (MAB5, OB2). Üçgenlerin kenar uzunluklarını ve iç açılarını ölçerek ölçme sonuçlarını tablo temsili yardımıyla düzenlemeleri ve karşılaştırmaları beklenir (MAB3). Öğrencilerin üçgenlerin iç açılarının ölçüleri ile açıların karşısındaki kenarların uzunlukları arasında bir ilişki olup olmadığını üçgen çeşitleri üzerinden tartışmaları sağlanır. Ölçüsü büyük olan açının karşısında uzun kenar, küçük olanın karşısında kısa kenar olduğuna yönelik ilişkiyi ifade etmeleri beklenir. Ayrıca dik ve geniş açılı üçgenlerde öğrencilerin dik açının ve geniş açının karşısındaki kenarın en uzun kenar olduğunu açıklamaları sağlanır. Öğrencilerin üçgende açı-kenar ilişkisini yorumlamalarına yönelik çalışma kâğıdı uygulanabilir. Çalışma kağıdında farklı soru türleri (açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme soruları) kullanılabilir. MAT.8.3.2Öğrencilerin bir üçgen oluşturabilmek için kenar uzunluklarının ne olması gerektiğine yönelik varsayımlarda bulunmaları (4cm-5cm-6cm, 3cm-3cm-7cm gibi) beklenir. Varsayımda bulundukları kenar uzunluklarından hareketle pergel, cetvel, geometri şeritleri yardımıyla (veya matematik yazılımı aracılığıyla (OB2)) üçgenler oluşturmaları istenir. Üçgen oluşan ve oluşmayan durumlardaki doğru parçalarının uzunluklarını tablo temsili (MAB3) aracılığıyla listelemelerine ve karşılaştırmalarına fırsat verilir. İki kenar uzunluğu verildiğinde, üçgen oluşturabilmek için üçüncü kenar uzunluğunun alabileceği değerlerin öğrenciler tarafından sorgulanması beklenir. Belirli uzunluktaki doğru parçalarının neden üçgen oluşturmadığı üzerine tartışma yapmaları sağlanır (E3.8). Süreçte öğrencilerin somut veya sanal manipülatiflerden yararlanmalarına fırsat verilebilir (MAB5). Üçgende bir kenar uzunluğunun diğer iki kenar uzunluğunun farkı ve toplamı ile ilişkili olduğuna yönelik önerme sunmaları beklenir. Bir üçgende herhangi bir kenar uzunluğunun diğer iki kenarın uzunlukları toplamından küçük; farkının mutlak değerinden büyük olması gerektiğini ifade etmeleri sağlanır. Bu eşitsizliğin “üçgen eşitsizliği” olarak ifade edildiği vurgulanır. Öğrencilerin üçgen eşitsizliğine yönelik çıkarımlarını, üçgende açı-kenar ilişkisi ile birlikte yorumlayarak üçgenlerin kenar uzunluklarının değerlendirilmesinde kullanabileceğini ifade etmeleri beklenir. Örneğin iki kenar uzunluğu ve aralarındaki açının ölçüsü verilen bir üçgen çizildiğinde üçüncü kenar uzunluğunun yorumlanması istenebilir (OB4). Öğrenme çıktısının değerlendirilmesinde üçgenin temel elemanları arasındaki ilişkiye yönelik çalışma kâğıdı uygulanabilir. Çalışma kağıdında farklı soru türleri (açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme soruları) kullanılabilir. MAT.8.3.3Paralelkenarda köşegenin meydana getirdiği iki üçgenin veya bir doğruya göre simetrik üçgenlerin kenar uzunlukları ve açıları arasındaki ilişkilerin öğrenciler tarafından sorgulanması sağlanır. Öğrencilerin öğretmen tarafından gizli tutulan bir üçgene eş bir üçgen oluşturabilmek için üçgene ilişkin hangi elemanların bilinmesinin yeterli olduğunu tartışmaları için uygun öğrenme ortamı oluşturulur. Tartışmalar sonucunda, öğrencilerin öğretmen tarafından gizli tutulan üçgene eş bir üçgeni oluşturabilmek için hangi özelliklerin bilinmesinin yeterli olduğuna dair varsayımlarda (“Bir üçgende üç kenar uzunluğunun bilinmesi eş üçgenler oluşturmak için yeterlidir.” gibi) bulunmalarına fırsat verilir. Varsayımları doğrultusunda öğretmene gizli tuttuğu üçgenin elemanları ile ilgili sorular sormaları, ardından uygun matematiksel araç ve teknolojiler yardımıyla eş üçgenleri oluşturmaları istenir (MAB5). Öğrenciler öğretmen tarafından gizli tutulan üçgenin üç kenar uzunluğuna dair bilgi aldıklarında eş üçgeni oluşturmak için cetvel ve pergel (matematik yazılımında belirli uzunlukta doğru parçası oluşturma ve çember araçları) kullanmaya; iki kenar uzunluğu ve bu kenarların oluşturduğu iç açının ölçüsüne veya bir kenar uzunluğu ve bu kenara ait iki iç açının ölçülerine dair bilgi aldıklarında ise cetvel ve açıölçer (matematik yazılımında belirli uzunlukta doğru parçası ve belirli ölçüye sahip açı oluşturma araçları) kullanmaya teşvik edilirler. Süreçte öğrencilerin başlangıçtaki üçgen (gizli tutulan üçgen) ile ilgili öğretmenden istedikleri bilgilerin üçgen oluşturmak için yeterli olan bilgiden fazlasını (örneğin üç kenarının uzunluğu ve bir iç açısının ölçüsüne dair bilgi) veya azını (örneğin yalnızca iki kenar uzunluğuna dair bilgi) içerip içermediğini tartışmaları için uygun öğrenme ortamı oluşturulur. Öğrencilerin oluşturdukları üçgenlerin başlangıçtaki üçgen (gizli tutulan üçgen) ile eş olup olmadıklarını inceleyerek varsayımlarını değerlendirmeleri beklenir. Bu aşamada, oluşturulan üçgenlerin gizli tutulan üçgeni temsil eden bir model ile çakışıp çakışmadığının incelenmesine fırsat verilir. İncelemeler sonucunda, varsayımlarını gözden geçirmeleri ve verilen bir üçgene eş üçgenler oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önermeler sunmaları ve tartışmaları sağlanır (SDB2.1). Öğrencilerin “Üç kenar uzunluğu ile tek bir üçgen oluşturulur.” gibi önermeler sunmaları beklenir. Eşlik sembolü (≅) tanıtılır ve eş üçgenlerin temsil edilmesinde karşılıklı elemanlarının dikkate alındığı vurgulanır. Öğrencilerin iki üçgenin eş olup olmadığına dair tartışma süreçlerinde önermelerinin rolünü değerlendirmeleri beklenir. Örneğin öğrencilerin bir ikizkenar üçgende farklı uzunluktaki kenara ait kenarortayın neden aynı zamanda yükseklik olduğunu eş üçgenlerden yararlanarak değerlendirmelerine fırsat verilir. Öğrenme çıktısının değerlendirilmesinde çalışma kâğıdı uygulanabilir. Çalışma kağıdında farklı soru türleri (açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme soruları) kullanılabilir. MAT.8.3.4Öğrencilerin günlük hayattan çeşitli örnekleri (fotokopi makinesinde küçültülmüş veya büyütülmüş şekiller gibi) ele alarak benzerlik üzerine tartışmaları ve inceledikleri şekillerin kenar uzunlukları arasındaki orantısal ilişkileri sorgulamaları sağlanır. Özel olarak benzer üçgenlere odaklanılır. Benzer üçgenlerde karşılıklı kenar uzunlukları oranının eşit olduğu ve karşılıklı iç açıların eş olduğunun fark edilmesi beklenir. Söz konusu oran “benzerlik oranı” olarak tanıtılır. Benzerlik oranının 1 (bir) olması durumunda elde edilen üçgenlerin özelliklerini tartışmalarına ve eş üçgenlerin aynı zamanda benzer olduklarının farkına varmalarına fırsat verilir. Öğrencilerin öğretmen tarafından gizli tutulan bir üçgene benzer bir üçgen oluşturabilmeleri için üçgenin hangi elemanlarının bilinmesinin yeterli olduğuna yönelik tartışmaları istenir (SDB2.1). Tartışma sonucunda, öğrencilerin benzer bir üçgeni oluşturabilmek için hangi özelliklerin bilinmesinin yeterli olduğuna yönelik varsayımlarda (“Üçgenin üç kenarının uzunluğunu bilmek benzer üçgen oluşturmak için yeterlidir.” gibi) bulunmaları sağlanır. Varsayımlarından hareketle öğretmene gizli tuttuğu üçgenin elemanları ile ilgili sorular sormaları, ardından uygun matematiksel araç ve teknoloji yardımıyla benzer üçgenleri oluşturmaları istenir (MAB5). Süreçte öğrencilerin öğretmen tarafından gizli tutulan üçgenin kenar uzunluklarına dair bilgi aldıklarında benzer üçgeni oluşturmak için istedikleri bir benzerlik oranını kullanmaları sağlanır. Öğrenciler üç kenar uzunluğuna dair bilgi aldıklarında benzer üçgeni oluşturmak için cetvel ve pergel (matematik yazılımında belirli uzunlukta doğru parçası oluşturma ve çember araçları) kullanmaya, iki kenar uzunluğu ve bu kenarların oluşturduğu iç açının ölçüsüne dair bilgi aldıklarında ise cetvel ve açıölçer (matematik yazılımında belirli uzunlukta doğru parçası ve belirli ölçüye sahip açı oluşturma araçları) kullanmaya teşvik edilirler. Öğretmen tarafından gizli tutulan üçgenin sadece iç açılarının ölçülerine dair bilgi aldıklarında ise ölçüsüz cetvel yardımıyla keyfi bir doğru parçası çizmeleri ve bu doğru parçası bir kenar olacak biçimde benzer üçgenin iç açılarını açıölçer (matematik yazılımında belirli ölçüye sahip açı oluşturma aracı) yardımıyla oluşturmaları beklenir. Açıların oluşturulmasının ardından cetvel (matematik yazılımında doğru veya ışın araçları) yardımıyla üçgenin diğer kenarlarını çizmeleri sağlanır. Öğrencilerin oluşturdukları üçgenlerin başlangıçtaki üçgen (gizli tutulan üçgen) ile benzer olup olmadıklarını inceleyerek varsayımların gözden geçirmeleri sağlanır. Oluşturulan üçgenin kenar uzunluklarının, gizli tutulan üçgenin kenar uzunluklarıyla orantılı olup olmadığı ve karşılıklı açılarının eş olup olmadığı incelenir. Öğrencilerin, başlangıçtaki üçgenin sadece iç açılarının ölçülerine yönelik aldıkları bilgiye dayalı olarak oluşturdukları üçgenin kenar uzunluklarının başlangıçtaki üçgenin kenar uzunlukları ile orantılı olup olmadığını incelerken fiziksel veya çevrim içi hesap makinelerinden yararlanmaları sağlanabilir (MAB5). İncelemeler sonucunda, başlangıçtaki üçgene benzer üçgenler oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önermeler sunmaları hedeflenir. Bu süreçte öğrencilerin “Benzer üçgen oluşturabilmek için üçgenin iki iç açısının ölçüsünü bilmek yeterlidir.”, “İki kenar uzunluğu ve bu kenarların oluşturduğu iç açının ölçüsünü bilmek yeterlidir.” gibi önermeler sunmaları beklenir. Verilen iki üçgenin benzer olup olmadığını incelerken üçgenlerin özellikleriyle ilgili hangi bilgilere sahip olmalarının yeterli olacağına dair tartışma yapmaları için uygun öğrenme ortamı oluşturulur. Tartışma sonunda önermelerinin benzer üçgenlerin karşılıklı elemanlarının incelenmesine yönelik katkısını değerlendirmeleri sağlanır. Örneğin öğrenciler ikişer iç açısı eş olan iki üçgenden birinin tüm kenarlarının uzunluklarını ve diğerinin bir kenar uzunluğunu bilmeleri durumunda ikinci üçgenin diğer kenar uzunluklarını nasıl belirleyeceklerini değerlendirebilirler. Ayrıca iki paralel doğru ve iki kesenle oluşan üçgen çiftinde (iki kesenin paralel olmadığı durumlarda oluşan üçgenler) kenar uzunlukları arasındaki ilişkiyi değerlendirmelerine fırsat verilir. Benzerlik sembolü (∼) tanıtılır ve benzer üçgenlerin sembolik olarak temsil edilmesinde karşılıklı köşe noktalarının dikkate alındığı vurgulanır (MAB3). Üçgenler dışında karşılıklı iç açıları eş ve karşılıklı kenar uzunlukları oranı eşit olan diğer çokgenleri de inceleyerek bu çokgenleri benzer çokgenler olarak ele almalarına fırsat verilir. Benzerlik oranı 1 (bir) olan benzer çokgenleri özel olarak eş çokgenler olarak ifade etmeleri sağlanır. Öğrencilerin bir üçgene benzer üçgenler oluşturmaya yönelik deneyimlerini değerlendirmek için çalışma kâğıdı uygulanabilir. Çalışma kağıdında farklı soru türleri (açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme soruları) kullanılabilir.MAT.8.3.5Sınıfta tartışma ortamı oluşturularak öğrencilerin a²+ b²= c² eşitliğini sağlayan rasyonel sayıları belirlemeye dönük tahmin-kontrol süreçlerini (KB2.12) ve tablo temsillerinin kullanımını (MAB3) içeren çalışmalar yapmalarına fırsat verilir. Bu süreçte çalışmalarını doğal sayılardan rasyonel sayılara doğru genişletmeleri sağlanır. Böylelikle “sayılar ve nicelikler” teması ile disiplin içi ilişkilendirme yapılır. Bu aşamada sınıf mevcuduna bağlı olarak grup çalışmalarından yararlanılabilir (SDB2.2). Belirlenen sayılar tüm öğrenciler tarafından değerlendirilerek doğruluğu test edilir. Yapılan incelemeler sonucunda ortaya çıkan sayı grupları listelenerek kaydedilir. Daha sonra öğrencilerin matematiksel araç (geometri şeritleri, cetvel, pergel gibi) veya teknolojiden (matematik yazılımında çember ve belirli uzunlukta doğru parçası oluşturma araçları gibi (OB2)) yararlanarak a²+ b²= c² eşitliğini sağlayan kenar uzunluklarına sahip üçgenleri oluşturmaları ve açıölçer yardımıyla (veya matematik yazılımında açı ölçme aracını kullanarak (OB2)) üçgenlerin dik açıya sahip olduklarını belirlemeleri sağlanır (MAB5). Öğrencilerin listeledikleri rasyonel sayı gruplarını değerlendirerek kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgenlerin dik üçgenler olduğunu ifade etmeleri beklenir. Dik üçgende dik açının karşısındaki kenar “hipotenüs” olarak tanıtılır. Öğrencilerin gönye yardımıyla dik kenar uzunlukları rasyonel sayılar olan dik üçgen çizmeleri ve hipotenüs uzunluğunun, dik kenar uzunluklarının kareleri toplamının kareköküne eşit olduğunu belirlemeleri sağlanır. Çizilen farklı dik üçgenlerde, dik kenar uzunluklarının kareleri toplamının karekökü irrasyonel sayı olur ise sayının ondalık gösteriminin belirlenmesi için fiziksel veya çevrim içi hesap makinelerinden yararlanılabilir (MAB3, MAB5). Dik üçgenlere ilişkin bubağıntının “Pisagor bağıntısı” olarak isimlendirildiği belirtilir. Öğrencilerin dar ve geniş açılı üçgenlerde kenar uzunlukları arasındaki ilişki üzerine tartışmaları sağlanır. Bu tartışma sürecinde a²+ b²= c² eşitliğini kullanarak nasıl akıl yürütebileceklerini sorgulamalarına fırsat verilir. Tartışma sonunda dar açılı üçgenlerin kenar uzunluklarında a²+ b²> c², geniş açılı üçgenlerin kenar uzunluklarında ise a²+ b²< c² şartının geçerli olduğunu fark etmeleri beklenir. Öğrencilerin öne sürülen kenar uzunluklarına sahip üçgenleri oluşturarak açılarını değerlendirmeleri sağlanır (OB4). Öğrenme çıktısının değerlendirilmesinde farklı soru türlerinden oluşan çalışma kâğıdı uygulanabilir. Çalışma kağıdında farklı soru türleri (açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme soruları) kullanılabilir. Ayrıca öğrencilere grup çalışması (SDB2.1) ile iş birliği içerisinde (SDB2.2) Pisagor’un hayatının, çalışmalarının ve Pisagor bağıntısının keşfinin araştırıldığı bir performans görevi verilebilir. Öğrencilerin performans görevinde ulaştıkları bilgileri dijital araçlar ile arkadaşlarına sunmaları sağlanabilir (E2.5, OB2). Performans görevi bilgi toplama, bilgiyi analiz etme, sunum hazırlama gibi kriterleri barındıran bütüncül veya analitik dereceli puanlama anahtarı ile değerlendirilir. Grup çalışmaları öğrencilerin kendi çalışmaları hakkında yargıda bulunabilecekleri (SDB1.3) öz değerlendirme formu ile arkadaşlarının çalışmaları hakkında görüşlerini belirtebilecekleri (SDB2.2) akran değerlendirme formu ile değerlendirilerek öğrencilerin kişisel ve grup içi etkinliklerdeki sorumluluklarını yerine getirme becerilerinin geliştirilmesi beklenir. Yapılan grup içi etkinliklerle öğrencilerin çalışkanlık değerini kazanmaları desteklenmiş olur (D3.4). MAT.8.3.6Öğrencilerin üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısı ile ilgili problemlerde ilgili matematiksel bileşenleri (iç açıların ölçüsü, kenarların uzunluğu, şekil gibi) ve problemlerin çözümünde matematiksel bileşenler arasındaki ilişkileri belirlemeleri istenir. Bu süreçte öğrencilerin problem bağlamındaki temsilleri farklı temsillere dönüştürmelerine ve problemi kendi ifadeleriyle açıklamalarına fırsat verilir. Ayrıca problemlerin çözümüne yönelik stratejiler geliştirmeleri ve çözüm için stratejileri uygulamaları sağlanır. Bu süreçte problemin çözümünde bir geometrik şekil içerisindeki yapıları fark etme, şekil içinde farklı geometrik şekiller oluşturma veya şekli parçalara ayırma, geometrik şekilleri ilişkilendirmek için ek çizimler yapma ve simetriden yararlanma gibi farklı stratejilerin kullanımı teşvik edilir. Öğrencilerin problem çözümlerinin ardından çözüm yollarını kontrol ederek çözüme ulaştırmayan stratejiyi değiştirmeleri istenir. Ayrıca stratejilerini gözden geçirmeleri de istenerek kısa yollara ilişkin çıkarımlar ve değerlendirmeler yapmaları beklenir. Bu değerlendirmeler esnasında bazı problemlerin birden fazla çözümünün olabileceğini fark etmelerine ve esnek düşünme becerilerini kullanmalarına fırsat veren öğrenme ortamı oluşturulur. Öğrencilerden problemin çözümünde kullandıkları stratejilerin hangi tür problemlerde kullanılabileceğine dair genelleme yapmaları, genelleme yaparken de kullanılan stratejinin ve elde edilen sonuçların diğer şekiller için de geçerli olup olmadığını belirlemeleri sağlanır. Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısına ilişkin problemleri içeren izleme testi kullanılabilir.",
+        "Zenginleştirme": "Okul içerisinde bulunan boş bir alanın üçgensel bir bölge olarak en verimli şekilde kullanılması için nasıl değerlendirilebileceğine yönelik mimari çizim ve ölçme çalışmaları yapılması istenebilir. Böylece öğrencilerin üçgende açı-kenar ilişkisi ve üçgen eşitsizliğine yönelik bir probleme, uygulama odaklı çözümler geliştirmeleri beklenebilir.Öğrencilerin benzer şekillerin oluşturulmasına yönelik bir araç olan pantografın tasarımı ve kullanımı ile ilgili araştırma yaparak kendi pantograflarını tasarlamaları ve kullanmaları istenebilir. Üçgende kenarların orta noktalarının birleştirilmesiyle oluşan üçgenlerin birbirleriyle ve ilk üçgenle ilişkilerini inceleyerek benzerliğe dayalı ilişkiyi fark etmeleri sağlanabilir. Kâğıt kesme ve kaplama çalışmaları yardımıyla diğer benzer çokgenlerin alanları arasındaki ilişkinin öğrenciler tarafından incelenmesi istenebilir.Thales’in piramidin yüksekliğini hesaplamak için kullandığı yöntemi araştırmaları istenebilir. Bu yöntemden faydalanarak bir modelleme problemi kapsamında okul binasının, yakınlardaki bir elektrik direğinin veya bir ağacın yüksekliğini belirlemeleri istenebilir. Öğrencilerin yamuk, paralelkenar, eşkenar dörtgen, dikdörtgen ve karede köşegenlerin meydana getirdiği üçgenler arasından eş, benzer ve köşegene göre simetrik olanları incelemeleri sağlanabilir. Eş üçgenlere dair bilgileri kullanarak pergel ve ölçüsüz cetvel yardımıyla verilen bir açıya eş açı inşa etmeleri istenebilir. İnşa sürecinde matematik yazılımında nokta, doğru ve çember araçlarından yararlanılabilir.Öğrencilerin Pisagor bağıntısına ait farklı ispat yöntemleri hakkında araştırma yapmaları sağlanarak çıkarımlarına dair gerekçeleri sunmaları istenebilir. Bîrûnî’nin, fizik ve astronomi alanında geometriyle ilişkili olarak yürüttüğü çalışmalarını dijital kaynaklardan araştırarak sonuçlarını sınıfta sunmalarına fırsat verilebilir.Öğrencilere açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısına yönelik birden fazla çözümü olan problemler verilerek öğrencilerin farklı çözüm yolları geliştirmeleri istenebilir. Öğrencilerin üçgende açı-kenar ilişkisi, üçgen eşitsizliği, eşlik, benzerlik ve Pisagor bağıntısına yönelik olimpiyat sorularını çözmeleri sağlanabilir.",
+        "Destekleme": "Kenar uzunlukları ve iç açılarının ölçüleri tam sayı olacak şekilde üçgenler verilerek öğrencilerin cetvel ve pergel aracılığıyla kenar uzunluklarını ve iç açılarının ölçülerini belirlemeleri, ölçümlerini üçgende açı-kenar ilişkisi bağlamında tablo temsili ile yorumlamaları sağlanabilir. Kenar uzunlukları tam sayı olan üçgenler verilerek öğrencilerin cetvel yardımı ile kenar uzunluklarını belirlemeleri ve tablo temsili aracılığıyla üçgen eşitsizliği bağlamında yorumlamaları sağlanabilir.Öğrencilerin noktalı kâğıt üzerinde verilen bir üçgene eş üçgenler oluşturmalarına yönelik çalışmalar yapılabilir. Bu çalışmalar tüm elemanları verilen bir üçgen üzerinden yapılabileceği gibi üçgenin yeterli elemanları verilerek üçgeni öğrencilerin oluşturmasına yönelik örneklerle de çeşitlendirilebilir.Kareli veya noktalı kâğıt üzerinde şekilleri belirli oranda büyütme veya küçültme işlemleri yapılabilir. Miniatürk’teki yapıların sanal ortamlarda incelenmesi istenebilir.Basitten karmaşığa, kolaydan zora problemler oluşturularak öğrencinin kendi hızında öğrenmesi sağlanabilir. Pisagor bağıntısını doğrulamaya yönelik basamaklandırılmış somut ve sanal manipülatiflerin kullanılması ve kenarlar üzerindeki karelerin alanları arasındaki ilişkinin görselleştirilmesi sağlanabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.3.1. Matematiksel araç ve teknoloji yardımıyla üçgenin kenarları ve açıları arasındaki ilişkiyi yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Üçgenin kenar ve açı özelliklerini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Üçgenin kenar uzunluklarının büyüklüğüne göre açıların ölçülerini, açıların ölçülerinin büyüklüğüne göre kenar uzunluklarını sıralar.",
+          "bold": false
+        },
+        {
+          "text": "c) Üçgenin kenar uzunlukları ve açı ölçüleri arasındaki ilişkiyi ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.3.2. Matematiksel araç ve teknoloji yardımıyla üçgenin kenar uzunlukları arasındaki ilişkiye yönelik çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Üçgen oluşturabilen üç doğru parçasının uzunluklarına dair varsayımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Varsayımda bulunduğu doğru parçaları ile oluşturduğu üçgenleri listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Üçgen oluşturan doğru parçalarının uzunlukları ile varsayımlarını karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Üçgen oluşturan doğru parçalarının uzunlukları arasındaki ilişkiye dair önerme sunar.",
+          "bold": false
+        },
+        {
+          "text": "d) Sunduğu önermenin katkısına yönelik gerekçeler sunar.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.3.3. Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair varsayımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Matematiksel araç ve teknoloji yardımıyla varsayımlarına uygun üçgenler oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Oluşturduğu üçgenleri varsayımları ile karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önerme sunar.",
+          "bold": false
+        },
+        {
+          "text": "d) Önermesinin iki üçgenin eş olup olmadığını incelemeye yönelik katkısını değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.3.4. Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair varsayımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Matematiksel araç ve teknoloji yardımıyla varsayımlarına uygun benzer üçgenler oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Oluşturduğu üçgenleri varsayımları ile karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önerme sunar.",
+          "bold": false
+        },
+        {
+          "text": "d) Önermesinin iki üçgenin benzer olup olmadığını incelemeye yönelik katkısını değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.3.5. Kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgenleri oluşturarak dik üçgen olduklarını; dik üçgenlerde dik kenar uzunluklarının kareleri toplamının hipotenüs uzunluğunun karesine eşit olduğunu yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) a²+ b²= c² eşitliğini sağlayan rasyonel sayıları inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgeni oluşturarak dik üçgen olduğunu; dik üçgenlerde hipotenüs uzunluğunun karesinin diğer iki kenarın uzunluklarının kareleri toplamına eşit olduğunu belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Pisagor bağıntısını üçgende açı-kenar ilişkisi ve üçgen eşitsizliği ile ilişkilendirerek dar açılı ve geniş açılı üçgenlerdeki kenar uzunluklarının ilişkisini ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.3.6. Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısını içeren problemleri çözebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısını içeren problemlerde ilgili matematiksel bileşenleri (açıların ölçüsü, kenarların uzunluğu, şekil gibi) belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Matematiksel bileşenler arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+          "bold": false
+        },
+        {
+          "text": "d) Problemin çözümünü gerçekleştirmek için stratejiler geliştirir.",
+          "bold": false
+        },
+        {
+          "text": "e) Belirlenen stratejileri çözüm için uygular.",
+          "bold": false
+        },
+        {
+          "text": "f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.",
+          "bold": false
+        },
+        {
+          "text": "g) Problemin çözümü için kullandığı stratejileri gözden geçirerek kısa yolları değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.",
+          "bold": false
+        },
+        {
+          "text": "h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.3.1",
+          "codeAsPrinted": "MAT.8.3.1",
+          "text": "Matematiksel araç ve teknoloji yardımıyla üçgenin kenarları ve açıları arasındaki ilişkiyi yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Üçgenin kenar ve açı özelliklerini inceler.",
+            "b) Üçgenin kenar uzunluklarının büyüklüğüne göre açıların ölçülerini, açıların ölçülerinin büyüklüğüne göre kenar uzunluklarını sıralar.",
+            "c) Üçgenin kenar uzunlukları ve açı ölçüleri arasındaki ilişkiyi ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.3.2",
+          "codeAsPrinted": "MAT.8.3.2",
+          "text": "Matematiksel araç ve teknoloji yardımıyla üçgenin kenar uzunlukları arasındaki ilişkiye yönelik çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Üçgen oluşturabilen üç doğru parçasının uzunluklarına dair varsayımda bulunur.",
+            "b) Varsayımda bulunduğu doğru parçaları ile oluşturduğu üçgenleri listeler.",
+            "c) Üçgen oluşturan doğru parçalarının uzunlukları ile varsayımlarını karşılaştırır.",
+            "ç) Üçgen oluşturan doğru parçalarının uzunlukları arasındaki ilişkiye dair önerme sunar.",
+            "d) Sunduğu önermenin katkısına yönelik gerekçeler sunar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.3.3",
+          "codeAsPrinted": "MAT.8.3.3",
+          "text": "Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair varsayımda bulunur.",
+            "b) Matematiksel araç ve teknoloji yardımıyla varsayımlarına uygun üçgenler oluşturur.",
+            "c) Oluşturduğu üçgenleri varsayımları ile karşılaştırır.",
+            "ç) Bir üçgene eş üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önerme sunar.",
+            "d) Önermesinin iki üçgenin eş olup olmadığını incelemeye yönelik katkısını değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.3.4",
+          "codeAsPrinted": "MAT.8.3.4",
+          "text": "Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair varsayımda bulunur.",
+            "b) Matematiksel araç ve teknoloji yardımıyla varsayımlarına uygun benzer üçgenler oluşturur.",
+            "c) Oluşturduğu üçgenleri varsayımları ile karşılaştırır.",
+            "ç) Bir üçgene benzer üçgen oluşturmak için üçgenle ilgili bilinmesi yeterli olan elemanlara dair önerme sunar.",
+            "d) Önermesinin iki üçgenin benzer olup olmadığını incelemeye yönelik katkısını değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.3.5",
+          "codeAsPrinted": "MAT.8.3.5",
+          "text": "Kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgenleri oluşturarak dik üçgen olduklarını; dik üçgenlerde dik kenar uzunluklarının kareleri toplamının hipotenüs uzunluğunun karesine eşit olduğunu yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) a²+ b²= c² eşitliğini sağlayan rasyonel sayıları inceler.",
+            "b) Kenar uzunlukları a²+ b²= c² eşitliğini sağlayan üçgeni oluşturarak dik üçgen olduğunu; dik üçgenlerde hipotenüs uzunluğunun karesinin diğer iki kenarın uzunluklarının kareleri toplamına eşit olduğunu belirler.",
+            "c) Pisagor bağıntısını üçgende açı-kenar ilişkisi ve üçgen eşitsizliği ile ilişkilendirerek dar açılı ve geniş açılı üçgenlerdeki kenar uzunluklarının ilişkisini ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.3.6",
+          "codeAsPrinted": "MAT.8.3.6",
+          "text": "Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısını içeren problemleri çözebilme",
+          "group": null,
+          "components": [
+            "a) Üçgende açı-kenar ilişkisi, üçgen eşitsizliği ve Pisagor bağıntısını içeren problemlerde ilgili matematiksel bileşenleri (açıların ölçüsü, kenarların uzunluğu, şekil gibi) belirler.",
+            "b) Matematiksel bileşenler arasındaki ilişkileri belirler.",
+            "c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür.",
+            "ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+            "d) Problemin çözümünü gerçekleştirmek için stratejiler geliştirir.",
+            "e) Belirlenen stratejileri çözüm için uygular.",
+            "f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.",
+            "g) Problemin çözümü için kullandığı stratejileri gözden geçirerek kısa yolları değerlendirir.",
+            "ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.",
+            "h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-matematik-dersi/unite/475",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/475",
+      "title": "4.Tema: Geometrik Nicelikler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:03.855Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_475.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "4.Tema: Geometrik Nicelikler",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin dik prizmaların, dikdörtgen dik piramidin, dik dairesel silindirin ve dik dairesel koninin yüzey açınımlarını çözümleyebilmeleri, dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini dik dairesel silindirin yüzey alanına yansıtabilmeleri ve dairenin alan bağıntısının oluşturulma sürecinden hareketle dik dairesel silindirin hacim bağıntısına yönelik analojik akıl yürütme yapabilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "15",
+        "Alan Becerileri": "-",
+        "Kavramsal Beceriler": "KB2.4. Çözümleme, KB2.15. Yansıtma, KB2.16.Muhakeme (Akıl Yürütme) ( KB2.16.3. Analojik Akıl Yürütme)",
+        "Eğilimler": "E3.2. Odaklanma, E3.4. Gerçeği Arama",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık",
+        "Değerler": "D7. Estetik, D14. Saygı",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB9. Sanat Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Sosyal Bilgiler",
+        "Beceriler Arası İlişkiler": "KB2.12. Mevcut Bilgiye/ Veriye Dayalı Tahmin Etme, MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.4.1. Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarını çözümleyebilmea) Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekilleri belirler.b) Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekiller arasındaki ilişkileri belirler. MAT.8.4.2. Dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini dik dairesel silindirin yüzey alanına yansıtabilmea) Dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini gözden geçirir.b) Dik dairesel silindirin yüzey alanına yönelik çıkarım yapar.c) Çıkarımını farklı örnekler üzerinden değerlendirir. MAT.8.4.3. Dairenin alan bağıntısının oluşturulma sürecinden hareketle dik dairesel silindirin hacim bağıntısına yönelik analojik akıl yürütebilmea) Dairenin alan bağıntısının oluşturulma sürecini ve daire ile dik dairesel silindir arasındaki ilişkiyi gözden geçirir. b) Dairenin alan bağıntısının oluşturulma süreci ile dik dairesel silindirin hacim bağıntısının oluşturulma süreci arasındaki ilişkileri belirler.c) İlişkilerden hareketle dik dairesel silindirin hacmine yönelik çıkarım yapar.",
+        "İçerik Çerçevesi": "Dik Prizmalar, Dikdörtgen Dik Piramit, Dik Dairesel Silindir ve Dik Dairesel Koninin Yüzey Açınımları, Dik Dairesel Silindirin Yüzey Alanı ve Hacmi",
+        "Anahtar Kavramlar": "Genellemeler Dik dairesel silindirin hacmi taban alanı ile yüksekliğin çarpımıdır. Anahtar Kavramlarana doğru, cisim yüksekliği, dik dairesel koni, dik dairesel silindir, dik prizmalar, dikdörtgen dik piramit, tepe noktası, yanal yüzeySembol ve Gösterimler-",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; zihin haritası, çalışma kâğıdı ve performans görevi ile değerlendirilebilir.Öğrencilerin dikdörtgenler prizması ve dik dairesel silindir şeklindeki paketli gıdaların paket maliyetini azaltmaya yönelik fikirler ortaya koymak amacıyla aynı hacme sahip, yüzey alanları farklı dikdörtgenler prizmaları tasarlayacakları performans görevi hazırlamaları sağlanabilir. Performans görevi; uygun silindirin seçimi, modellenmesi, yüzey alanının ve hacminin hesaplanması gibi kriterleri barındıran dereceli puanlama anahtarı kullanılarak değerlendirilebilir.Performans ürünü ve çalışma kâğıdı sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin dikdörtgen ve paralelkenarın alanı ile çemberin uzunluğuna ilişkin deneyimleri üzerinden dairenin alan bağıntısını oluşturabildikleri, ayrıca dikdörtgenler prizmasının yüzey alanını ve hacim bağıntısını değerlendirebildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilere dairenin alan bağıntısının kullanımını içeren açık uçlu sorular ya da gerçek yaşam problemleri sorulabilir. Dikdörtgenler prizmalarının açınımlarını, yüzey alanlarını ve hacimlerini belirlemeye yönelik sorulardan oluşan bir çalışma kâğıdı kullanılabilir.",
+        "Köprü Kurma": "Dikdörtgenler prizmasının açınımından hareketle dikdörtgenler dışında farklı çokgenlerin yüz olarak yer aldığı açınımların ne tür geometrik cisimlerin yüzey açınımlarını oluşturabileceğini sorgulamaları sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT.8.4.1Sınıfa çeşitli dik prizma (üçgen dik prizma, yamuk dik prizma, beşgen dik prizma gibi), dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koni modelleri (üç boyutlu cisim takımları, karton rulolar, havlu kâğıt rulosu, kağıt külah gibi) getirilerek öğrencilerin bu modelleri incelemeleri ve sınıf tartışması aracılığıyla temel elemanlarını belirlemeleri sağlanır (SDB2.1). Dik prizma çeşitleri, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koni öğretmen tarafından isimlendirilir. Öğrencilerden verilen modellerin yüzey açınımlarında yer alan geometrik şekilleri tahmin etmeleri (KB2.12) ve modelleri keserek yüzey açınımlarını oluşturmaları beklenir. Yüzey açınımlarında yer alan şekilleri (örneğin üçgen dik prizmanın yüzey açınımının iki üçgen ve üç dikdörtgenden oluştuğunu, dikdörtgen dik piramidin yüzey açınımının bir dikdörtgen ve dört üçgenden oluştuğunu) açıklamalarına fırsat verilir. Özel olarak kare dik piramidin yüzey açınımının da öğrenciler tarafından incelenmesi beklenir. Süreçte öğrencilerin sanal manipülatiflerden yararlanmaları sağlanabilir (MAB5). Dik prizma, dik piramit, dik dairesel silindir ve dik dairesel konide taban ve cisim yüksekliği tanıtılır. Ayrıca dik prizmalarda ve dikdörtgen dik piramitte yan yüzler; dik dairesel silindir ve dik dairesel konide yanal yüzeyler, dik piramit ve dik dairesel konide tepe noktası, dik dairesel konide ana doğru tanıtılır. İncelenen geometrik cisimlerin farklı yüzey açınımlarının oluşturulabileceğinin öğrenciler tarafından fark edilmesi sağlanır. Öğrencilerin özel olarak dik dairesel silindire odaklanarak yanal yüzey açınımının farklı biçimlerde oluşturulabildiğini ancak alan hesaplamasında pratiklik sağladığı için dikdörtgen olarak ele alındığını fark etmelerine olanak verilir (E3.2). Şekil 1. Dik Dairesel Silindirin Alternatif Yüzey Açınımlarına İlişkin Örnekler Öğrencilerin dik dairesel koninin de alternatif yüzey açınımları üzerinde tartışmaları için uygun öğrenme ortamı oluşturulur. Tartışma sürecinde öğrencilerin farklı yüzey açınımlarını tartışarak birbirlerinin bakış açılarını anlamalarına ve saygı göstermelerine fırsat veren uygun öğrenme ortamı oluşturulabilir (SDB2.3). Öğrencilerin dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekiller arasındaki ilişkileri (örneğin dikdörtgen dik piramidin yüzey açınımında ikişer eş ikizkenar üçgenin yer aldığını, dik dairesel koninin yanal yüzeyini oluşturan daire dilimindeki yay uzunluğunun tabanı oluşturan dairenin çevre uzunluğuna eşit olduğunu) tartışarak ifade etmeleri sağlanır. Öğrencilerin dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koni üzerine yaptıkları çözümlemelerin değerlendirilmesine yönelik zihin haritası hazırlamaları istenebilir. Hazırlanan zihin haritası, kontrol listesi kullanılarak değerlendirilebilir. Zihin haritalarının incelenmesi sonucunda dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımları ve yüzey açınımlarında yer alan şekiller arasındaki ilişkiler gibi bağlamlarda öğrencilerin yaşadıkları kavram yanılgıları ortaya çıkarılarak öğretmen tarafından gerekli dönütler verilebilir. Öğretmenin yönlendirmesiyle öğrencilerin hem kendilerinin hem de birbirlerinin kavram yanılgılarını fark etmeleri amacıyla öz değerlendirme ve akran değerlendirme formu kullanılabilir. Bu süreçte öğretmen tarafından kavram yanılgılarının giderilmesine yönelik tartışmalara ve açıklamalara olanak verilebilir (SDB2.2). MAT.8.4.2Öğrencilerin dik dairesel silindirin yüzey açınımını oluşturan şekilleri ve aralarındaki ilişkileri gözden geçirerek ifade etmeleri sağlanır. Süreçte örneğin dikdörtgenin kenar uzunluklarından birinin silindirin yüksekliğine, diğerinin ise dairenin çevre uzunluğuna eşit olduğunun öğrenciler tarafından açıklanması beklenir (OB4). Ardından öğretmen tarafından verilen dik dairesel silindir modelinin yüzey alanının nasıl hesaplanabileceğini tartışmaları için uygun öğrenme ortamı oluşturulur (SDB2.1). Sürecin desteklenmesinde öğrencilerin somut ve sanal manipülatiflerden yararlanmaları sağlanabilir (MAB5). Yürütülen tartışma sürecinde öğrencilerin dik dairesel silindirin yüzey alanı bağıntısına yönelik çıkarım yapmaları beklenir. Öğrencilerin çıkarımlarını farklı dik dairesel silindir örnekleri üzerinden değerlendirmeleri için uygun öğrenme ortamı oluşturulur. Ayrıca bir dik dairesel silindir modelinden (köpük, sünger gibi malzemelerden üretilmiş modelden veya sanal modelden) (MAB5) kesilen parçaların temsil ettiği geometrik cisimlerin (örneğin dikey dilimlenmiş bir dik dairesel silindir modelinden elde edilen dilimlerin temsil ettiği geometrik cisimlerin) yüzey alanlarının nasıl hesaplanabileceğini değerlendirmeye ve sınıf içi tartışmalar içerisinde fikirlerini birbirlerine açıklamaya teşvik edilirler (D14.1). Şekil 2. Dikey Dilimlenmiş Dik Dairesel Silindir Modelinden Elde Edilen Dilimler Dik dairesel silindirin yüzey alanının hesaplanmasında kültürel ve mimari eserlerden örnekler incelenerek saygı değeri çerçevesinde sınıf içi tartışmalar yapılabilir (D14.1,OB9). Örneğin öğrencilerden Türk İslam sanatlarında silindir şeklindeki öğeleri (Erzurum’daki Çifte Minareli Medrese gibi) incelemeleri istenerek bu sanatları tanımaları, silindirin mimaride hem işlevsel hem de estetik açıdan önemli bir rol oynadığını görmeleri sağlanabilir. İşlevsel olarak bu öğelerin yapısal sağlamlığa sahip olduğunu, estetik olarak ise yapılara ve eşyalara zarafet (D7.1) kattığını fark etmeleri beklenir. Tartışma sürecinde öğrencilerin mimari eserlerde yükseklik ve çap uzunluğunu tahmin ederek (KB2.12) yüzey alanını yaklaşık olarak hesaplamaları sağlanabilir. Çeşitli problem durumlarında dik dairesel silindirin yüzey alanının hesaplanmasına yönelik (örneğin silindir sütunları kaplamak için ne kadar malzeme kullanılabileceği) açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme sorularından oluşan bir çalışma kâğıdı kullanılabilir. MAT.8.4.3Öğrencilerin dairenin alan bağıntısının oluşturulma sürecinde eş daire dilimleriyle oluşan dikdörtgenin alanı ile dairenin alanı arasındaki ilişkiyi gözden geçirmeleri istenir. Öğrencilere eş dik dairesel silindir modelleri (köpük, sünger gibi malzemelerden üretilmiş modeller veya sanal manipülatifler) (MAB5) verilerek çeşitli büyüklüklerde (4, 8, 16, 32 gibi çift sayılarda) eş dilimlere ayırmaları ve dilimleri yeniden birleştirerek farklı geometrik cisim modelleri oluşturmaları beklenir. Öğrencilerin dik dairesel silindir modelinin daha küçük eş dilimleri ile oluşan geometrik cisim modelinin dikdörtgenler prizması modeline dönüştüğünü gözlemlemeleri sağlanır (E3.4, OB4). Ardından öğrencilerin dik dairesel silindirin hacmi ve oluşmakta olan dikdörtgenler prizmasının hacmi arasındaki ilişkiyi belirleyebilecekleri tartışma ortamı oluşturulur. Şekil 3. Dik Dairesel Silindir Modelinin 4 ve 32 Eş Dilimi ile Oluşturulan Geometrik Cisim Modeli Örnekleri Öğrencilerin dik dairesel silindirin elemanları ile prizmanın hacmini ilişkilendirmelerine fırsat verilir. Meydana gelen dikdörtgenler prizmasının ayrıt uzunluklarının sırasıyla dik dairesel silindirin yüksekliğine, tabana ait yarıçap uzunluğuna ve tabanının çevre uzunluğunun yarısına eşit olduğuna dair çıkarımlar yapmaları beklenir. Ardından öğrencilerin modelledikleri dik dairesel silindirin hacim bağıntısını matematiksel temsil yolları (MAB3) aracılığıyla farklı stratejiler kullanarak ifade etmelerine fırsat verilir. Öğrencilere dik dairesel silindirin yüzey alanını ve hacmini hesaplamaya ilişkin deneyimlerini kullanabilecekleri performans görevi verilebilir. Öğrencilerin dikdörtgenler prizması ve dik dairesel silindir şeklindeki paketli gıdaların paket maliyetini azaltmaya yönelik fikirler ortaya koymaları için aynı hacme sahip, yüzey alanları farklı dikdörtgenler prizmaları tasarlayacakları performans görevi hazırlamaları istenir. Böylece paketlemede kullanılan malzemenin boyutunun küçültülmesine yönelik fikirler öne çıkarılarak prizmaların yüzey alanları ve hacimleri arasındaki değişimi deneysel çalışmalar yoluyla sorgulamalarına fırsat verilir. Tasarım sürecinde somut materyaller ya da matematik yazılımı kullanılarak silindir modelleri oluşturmaya yönelik çalışmalar yapmaları sağlanır (MAB5, OB2). Performans görevinin değerlendirilmesinde uygun silindirin seçimi, modellenmesi, yüzey alanının ve hacminin hesaplanması gibi kriterleri barındıran bütüncül veya analitik dereceli puanlama anahtarı kullanılabilir.",
+        "Zenginleştirme": "Öğrencilerin dijital araçları kullanarak dik dairesel silindir ve dikdörtgenler prizması biçimindeki sütunlardan oluşan mimari yapıların modellerini somut materyaller veya üç boyutlu modelleme yazılımı ile oluşturmaları ve yapıların yüzey alanlarını ve hacimlerini belirlemeleri istenebilir. Mısır piramitlerinin özelliklerinin araştırıldığı ve belirli oranda küçültülmüş minyatürlerinin tasarlandığı çalışmalar yürütülebilir. Kesik kare dik piramit ve kesik dik dairesel koninin yüzey açınımlarının oluşturulduğu çalışmalar yapmaları sağlanabilir. Öğrencilerin silindirlerin ve diğer geometrik cisimlerin hacimlerinin karşılaştırılmasına yönelik bir yöntem içeren Cavalieri (Kavalyeri) Prensibi’ni araştırarak dijital sunum hazırlamaları sağlanabilir.Öğrencilerle A4 kâğıdına ait farklı iki kenar uzunluğunun yükseklik kabul edilmesi hâlinde oluşturulacak dik dairesel silindirlerin hacmine yönelik çalışmalar yapılabilir. Bu çalışmalara önce tahmin süreci ile başlanabilir. Öğrencilerin oluşan dik dairesel silindirlerin yüksekliklerindeki ve yarıçap uzunluklarındaki değişimin hacim üzerindeki etkisini değerlendirmeleri beklenebilir. Bu çalışmalarda öğrencilerin yüzey alanındaki değişimi incelemeleri de sağlanabilir.Öğrencilerin yaratıcılık becerilerini kullanarak dik dairesel silindirin yüzey alanı ve hacim bağıntısına ilişkin günlük hayat bağlamları içeren problem kurmaları istenebilir. Kurdukları problemleri dijital ortamda (EBA platformu gibi) paylaşarak birbirlerinin problemlerini değerlendirmeleri istenebilir.Öğrencilerin dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımları, dik dairesel silindirin yüzey alanı ve hacmi ile ilgili olimpiyat sorularını çözmeleri sağlanabilir.",
+        "Destekleme": "Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin açınımlarına yönelik sanal manipülatifler aracılığı ile öğrencilerin görsel ve uzamsal becerileri desteklenebilir. Dik dairesel silindir blokları ile çalışmaları sağlanarak konu somutlaştırılabilir. Havlu kâğıt rulosu ve tabanlara uygun kesilmiş iki daire modeli ile silindir yapmaları istenebilir. Dik dairesel silindirin hacim bağıntısı ve yüzey alanının hesaplanmasında iş birlikli öğretim uygulamalarından yararlanılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.4.1. Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarını çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekilleri belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekiller arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.4.2. Dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini dik dairesel silindirin yüzey alanına yansıtabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini gözden geçirir.",
+          "bold": false
+        },
+        {
+          "text": "b) Dik dairesel silindirin yüzey alanına yönelik çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "c) Çıkarımını farklı örnekler üzerinden değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.4.3. Dairenin alan bağıntısının oluşturulma sürecinden hareketle dik dairesel silindirin hacim bağıntısına yönelik analojik akıl yürütebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dairenin alan bağıntısının oluşturulma sürecini ve daire ile dik dairesel silindir arasındaki ilişkiyi gözden geçirir.",
+          "bold": false
+        },
+        {
+          "text": "b) Dairenin alan bağıntısının oluşturulma süreci ile dik dairesel silindirin hacim bağıntısının oluşturulma süreci arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) İlişkilerden hareketle dik dairesel silindirin hacmine yönelik çıkarım yapar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.4.1",
+          "codeAsPrinted": "MAT.8.4.1",
+          "text": "Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarını çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekilleri belirler.",
+            "b) Dik prizmalar, dikdörtgen dik piramit, dik dairesel silindir ve dik dairesel koninin yüzey açınımlarında yer alan şekiller arasındaki ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.4.2",
+          "codeAsPrinted": "MAT.8.4.2",
+          "text": "Dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini dik dairesel silindirin yüzey alanına yansıtabilme",
+          "group": null,
+          "components": [
+            "a) Dik dairesel silindirin yüzey açınımına ilişkin deneyimlerini gözden geçirir.",
+            "b) Dik dairesel silindirin yüzey alanına yönelik çıkarım yapar.",
+            "c) Çıkarımını farklı örnekler üzerinden değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.4.3",
+          "codeAsPrinted": "MAT.8.4.3",
+          "text": "Dairenin alan bağıntısının oluşturulma sürecinden hareketle dik dairesel silindirin hacim bağıntısına yönelik analojik akıl yürütebilme",
+          "group": null,
+          "components": [
+            "a) Dairenin alan bağıntısının oluşturulma sürecini ve daire ile dik dairesel silindir arasındaki ilişkiyi gözden geçirir.",
+            "b) Dairenin alan bağıntısının oluşturulma süreci ile dik dairesel silindirin hacim bağıntısının oluşturulma süreci arasındaki ilişkileri belirler.",
+            "c) İlişkilerden hareketle dik dairesel silindirin hacmine yönelik çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-matematik-dersi/unite/476",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/476",
+      "title": "5.Tema: Dönüşüm",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:05.357Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_476.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "5.Tema: Dönüşüm",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin matematik araç ve teknolojileri yardımıyla öteleme dönüşümünü çözümleyebilmeleri, bir şekle ait noktaların apsis ve ordinatlarının yansıma ve öteleme dönüşümündeki değişimlerine yönelik çıkarım yapabilmeleri ve çıkarımlarını problem durumlarına yansıtabilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "9",
+        "Alan Becerileri": "MAB2. Matematiksel Problem Çözme",
+        "Kavramsal Beceriler": "KB2.4.Çözümleme, KB2.10.Çıkarım Yapma",
+        "Eğilimler": "E3.1. Muhakeme",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.3. Kendine Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.1. Uyum, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D4. Dostluk, D7.Estetik, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı, OB9.Sanat Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Fen Bilimleri, Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Sosyal Bilgiler",
+        "Beceriler Arası İlişkiler": "MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.5.1. Matematiksel araç ve teknoloji yardımıyla öteleme dönüşümünü çözümleyebilmea) Matematiksel araç ve teknoloji yardımıyla düzlemde geometrik şekillerin öteleme dönüşümü altındaki görüntülerinin kenar ve açı özelliklerini belirler.b) Geometrik şekiller ile öteleme dönüşümü altındaki görüntüleri arasındaki ilişkileri belirler. MAT.8.5.2. Dik koordinat sisteminde geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve eksenlere göre yansıma dönüşümündeki değişimlerine ilişkin çıkarım yapabilmea) Geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve eksenlere göre yansıma dönüşümündeki değişimlerine dair varsayımlarda bulunur.b) Geometrik şekillerin öteleme dönüşümü altındaki görüntülerini ve koordinat eksenlerine göre yansıma dönüşümü altındaki görüntülerini oluşturur.c) Oluşturduğu görüntülere ait noktaların apsis ve ordinatlarını varsayımları ile karşılaştırır.ç) Geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve koordinat eksenlerine göre yansıma dönüşümündeki değişimlerine dair önermeler sunar.d) Sundukları önermelerinin dik koordinat sisteminde konumları verilen iki geometrik şekil arasında öteleme veya eksenlere göre yansıma dönüşümüne dayalı bir ilişkinin bulunup bulunmadığını incelemeye sağladığı katkıyı değerlendirir. MAT.8.5.3. Öteleme ve yansıma dönüşümlerini içeren problemleri çözebilmea) Öteleme ve yansıma dönüşümlerine ilişkin problemlerde ilgili matematiksel bileşenleri (eşlik, uzaklık, diklik, paralellik, koordinatlar gibi ) belirler.b) Matematiksel bileşenler arasındaki ilişkileri belirler.c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür.ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.d) Öteleme ve yansıma dönüşümlerini içeren problemlerin sonucuna ilişkin tahminde bulunur ve işlemleri gerçekleştirmek için stratejiler geliştirir.e) Belirlenen stratejileri çözüm için uygular.f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir.",
+        "İçerik Çerçevesi": "Dik Koordinat Sisteminde Öteleme ve Yansıma Dönüşümü",
+        "Anahtar Kavramlar": "Genellemeler• Bir geometrik şekil, öteleme dönüşümü altındaki görüntüsü ile eştir.• Yansıma dönüşümünde bir noktanın görüntüsünün apsis ve ordinatı simetri doğrusuna göre belirlenir. • Öteleme dönüşümünde bir noktanın görüntüsünün apsis ve ordinatı dönüşümde verilen uzaklık ve yöne göre belirlenir. Anahtar Kavramlaröteleme dönüşümü Sembol ve Gösterimler-",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; çalışma kâğıdı, izleme testi, grup değerlendirme formu, performans görevi, öz ve akran değerlendirme, bütüncül dereceli puanlama anahtarı, analitik dereceli puanlama anahtarı ile değerlendirilebilir.Öğrencilere Escher(Eşer)'in eserleri sunularak eserin içerdiği dönüşümleri inceledikleri, kendi orjinal ve estetik tasarımlarını bir desen üzerinden geliştirerek süslemeler yaptıkları bir performans görevi verilebilir. Performans görevinde, akran değerlendirme formu aracılığıyla birbirlerini, öz değerlendirme formu aracılığıyla da kendilerini değerlendirmeleri sağlanabilir. Ayrıca öğrencilerin tasarımları, eserdeki dönüşümleri belirlemeye, Escher (Eşer) tipi bir süsleme oluşturmaya ve yaratıcılığa dayalı kriterleri içeren bütüncül veya analitik dereceli puanlama anahtarı kullanılarak değerlendirilebilir.Dik koordinat sistemine yerleştirilen Türkiye haritası üzerindeki belirli noktaların birleştirilmesiyle meydana gelen çokgenlerin belirli yön ve uzaklığa bağlı öteleme dönüşümü altındaki görüntülerinin oluşturulmasına yönelik performans görevi verilebilir. Bu süreçte Türkiye haritası görselinin matematik yazılımında x=26, x=45, y=36, y=42 doğrularının arasına yerleştirilmesi ve yazılım araçları ile çalışılması sağlanabilir. Öğrencilerin haritada oluşturdukları çokgenlerin iç bölgesinde kalan şehirlerin ve ilçelerin kültürel ve coğrafik özelliklerini açıklamaları istenebilir. Öğrencilerin çalışmalarını dijital sunumlar aracılığıyla sunmaları sağlanarak sunumlar uygun ölçme aracı (öz/akran/grup değerlendirme, kontrol listesi, gözlem formu, derecelendirme ölçeği, bütüncül ya da analitik dereceli puanlama anahtarı) kullanılarak değerlendirilebilir. Tema boyunca işlenen öğrenme çıktıları/süreç bileşenleri hakkında öğrencilerin eksik öğrenmelerini belirlemek ve gidermek amacıyla izleme testi uygulanabilir. Performans ürünleri, izleme testi ve çalışma kâğıdı sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin dik koordinat sistemi üzerinde verilen bir noktanın yerini belirleyebildikleri, geometrik bir şeklin yansıma dönüşümü altındaki görüntüsüne ilişkin çıkarım yapabildikleri ve bir şekil ile yansıma dönüşümü altındaki görüntüsü verildiğinde simetri doğrusunu oluşturabildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin yansıma dönüşümü ile ilgili ön bilgilerinin değerlendirilmesi için kareli (veya noktalı) ve çizgisiz kağıt üzerindeki bir şeklin bir doğruya göre yansıma dönüşümü altındaki görüntüsünü oluşturmaya yönelik çalışmalar yapılabilir. Ayrıca apsis ve ordinat değerleri verilen bir noktanın dik koordinat sistemindeki yerini göstermeye ve verilen bir noktanın apsis ve ordinatını belirlemeye yönelik çalışmalar yapılabilir. Söz konusu çalışmalar için açık uçlu sorulardan oluşan bir çalışma kâğıdı kullanılabilir.",
+        "Köprü Kurma": "Öteleme dönüşümüne ilişkin günlük hayattan (satranç taşları, teleferik gibi) örnekler verilebilir. Sanatçılar, zanaatkârlar, müzisyenler, kareograflar gibi farklı alanlarda uzmanlığı olan kişilerin öteleme dönüşümüne dayalı çalışmalarından örnekler sunulabilir. Ayrıca Türk İslam sanatındaki süsleme çalışmaları (örneğin Anadolu halı ve kilim motifleri, mimari eserlerdeki geometrik süslemeler) arasında çeşitli geometrik dönüşümleri içeren eserlerin öğrenciler tarafından incelenmesi için uygun öğrenme ortamı oluşturulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT 8.5.1Öğrencilerin çeşitli geometrik dönüşümleri içeren sanat eserlerinde inceledikleri (OB9) geometrik şekillerin sahip olduğu ortak ve farklı özellikleri sorgulamalarına ve eserleri yorumlamalarına fırsat verilir. Böylece estetik değerinin kazanılması desteklenir (D7.1). Süreçte öğrencilerin duruşları aynı olan şekilleri fark etmeleri sağlanarak şekillerin elemanlarına ait uzunluk ve açı ölçülerini matematiksel araç ve teknoloji yardımıyla belirlemeleri istenir (MAB5). Ardından öteleme dönüşümüne yönelik şekiller arasındaki eşlik, eşit uzaklık ve yöne dayalı ilişkileri belirlemeleri için uygun öğrenme ortamı oluşturulur. İnceleme sonunda öteleme dönüşümü tanıtılarak şekillere ait noktalar ve görüntüleri arasında bir eşleme yapıldığı, öteleme dönüşümünün belirleyicilerinin aynı yön ve eşit uzaklık olduğu vurgulanır. Öğrencilerin grup çalışması (SDB2.2) yapmaları sağlanarak verilen geometrik şekillerin (üçgen, dörtgen gibi) öteleme dönüşümü altındaki görüntülerini kareli veya noktalı kâğıt üzerinde çizmeleri ve birbirlerinin çizimlerini değerlendirmeleri istenebilir (OB4). Ayrıca öğrencilerin, çizim yaparken izledikleri yöntemleri tartışmaları istenir. Grup çalışmalarının değerlendirilmesinde grup değerlendirme formu kullanılabilir. Çizimlerin değerlendirilmesinde kağıt üzerinde asetat gibi somut materyallerden yararlanılabilir. Ayrıca öğrencilere matematik yazılımında öteleme dönüşümü içeren araçları kullanma fırsatı verilebilir (OB2). Öğrencilerin kareli veya noktalı kâğıt üzerinde verilen geometrik şekillerin istenen yön ve uzaklığa bağlı öteleme dönüşümü altındaki görüntülerini çizmeye, şekil ve görüntüsü verilen bir öteleme dönüşümünde yönün ve uzaklığın belirlenmesine dayalı soruları içeren bir çalışma kâğıdı kullanılabilir. Çalışma kağıdında farklı soru türleri (açık uçlu, kısa cevaplı sorular, doğru yanlış, eşleştirme soruları) kullanılabilir. Öğrenci çizimleri eşlik, eşit uzaklık ve yöne dayalı kriterleri barındıran bütüncül dereceli puanlama anahtarı ile değerlendirilebilir. MAT.8.5.2Öğrencilerin dik koordinat sistemi üzerinde verilen geometrik şekillerin belirli yön ve uzaklığa bağlı öteleme dönüşümü altındaki görüntülerinde ve koordinat eksenlerine göre yansıma dönüşümü altındaki görüntülerinde noktaların (şekle ait köşe noktaları gibi) apsis ve ordinatlarının nasıl değiştiğine yönelik varsayımlarda bulunmaları sağlanır. Bu süreçte doğru parçası, üçgen ve dörtgenler üzerinde çalışmaları sağlanır. Daha sonra dik koordinat sistemi üzerinde verilen şekillerin öteleme ve yansıma dönüşümü altındaki görüntülerini oluşturarak noktaların apsis ve ordinatlarındaki değişimi varsayımları ile karşılaştırmalarına fırsat verilir. Öğrencilerin cetvel ve simetri aynası gibi matematiksel araçlardan ve kâğıt katlama uygulamalarından yararlanmaları istenir. Süreçte matematik yazılımındaki öteleme ve yansıma dönüşümü araçlarının kullanımına da fırsat verilebilir (MAB5, OB2). Ayrıca öğrencilerin tablo temsili aracılığıyla şekillere ait noktaların apsis ve ordinatlarının aşağı, yukarı, sağa ve sola öteleme dönüşümü altındaki değişimlerini, x ve y eksenine göre yansıma dönüşümü altındaki değişimlerini kaydetmeleri sağlanır (MAB3). Ardından öğrencilerin geometrik şekillere ait noktaların apsis ve ordinatlarının belirli yön ve uzaklığa bağlı öteleme dönüşümünde ve koordinat eksenlerine göre yansıma dönüşümünde nasıl değiştiğine yönelik önermeler sunmaları beklenir. Örneğin, öğrencilere “Geometrik şekle ait noktaların apsisleri yukarı veya aşağı yönlü öteleme dönüşümünde değişmezken ordinatları yukarı yönlü öteleme dönüşümünde verilen uzaklık kadar artar ve aşağı yönde ise azalır.” gibi önermeler sunmaları için fırsat verilir. Bunun devamında öğrencilerin iki geometrik şekle ait noktaların apsis ve ordinatları verildiğinde söz konusu şekiller arasında öteleme dönüşümüne veya eksenlere göre yansıma dönüşümüne dayalı ilişkilerin bulunup bulunmadığını değerlendirirken önermelerinden nasıl yararlanabileceklerini ifade etmeleri sağlanır. Dik koordinat sisteminde verilen geometrik şekillerin yansıma ve öteleme dönüşümü altındaki görüntülerini çizme ve ayrıca -çizim yapmadan- bir geometrik şeklin öteleme ve yansıma dönüşümü altındaki görüntülerine ait noktaların apsis ve ordinatlarını açıklamaya yönelik çalışma kâğıdı hazırlanabilir. Ayrıca öğrencilerin uygulama yapabilecekleri bir performans görevi verilebilir. Örneğin, dik koordinat sistemine yerleştirilen Türkiye haritası üzerindeki belirli noktaların birleştirilmesiyle meydana gelen çokgenlerin belirli yön ve uzaklığa bağlı öteleme dönüşümü altındaki görüntülerinin öğrenciler tarafından oluşturulması sağlanır. Bu süreçte Türkiye haritası görselinin matematik yazılımında x=26, x=45, y=36, y=42 doğrularının arasına yerleştirilmesi ve yazılım araçları ile çalışılması sağlanabilir (OB2). Öğrencilerden haritada oluşturdukları çokgenlerin iç bölgesinde kalan şehirlerin ve ilçelerin kültürel ve coğrafik özelliklerini açıklamaları istenebilir. Böylece vatanseverlik değerinin kazanılması desteklenir (D19.2, OB5). Öğrencilerin çalışmalarını dijital araçlar ile sunmaları sağlanarak, sunumları uygun ölçme aracı (öz/akran/grup değerlendirme, kontrol listesi, gözlem formu, derecelendirme ölçeği, bütüncül ya da analitik dereceli puanlama anahtarı) aracılığıyla değerlendirilebilir. MAT.8.5.3Yansıma ve öteleme dönüşümü ile ilgili çeşitli bağlamlardan (örneğin satranç, süslemeler, haritalar) seçilen problemlerden yararlanılır. Dönüşümlerle ilgili problemlerin çözümünde öğrencilerden öncelikle problemle ilgili matematiksel bileşenleri (eşlik, uzaklık, diklik, paralellik, koordinatlar gibi) belirlemeleri beklenir. Ardından öğrencilerin matematiksel bileşenler arasındaki ilişkileri belirleyip problem bağlamındaki temsillerini farklı temsillere dönüştürmeleri ve problemi kendi ifadeleriyle açıklamaları istenir (E3.1). Problemlere yönelik çözümlere geçmeden önce sonuca ilişkin tahminde bulunmaları, kullandıkları tahmin stratejilerini tartışmaları sağlanır. Daha sonra öğrencilerin öteleme ve yansıma dönüşümüne yönelik ilişkileri kullanmak için stratejiler geliştirmeleri ve geliştirdikleri stratejileri uygulamaları istenir. Öğrenciler stratejileri geliştirirken ve uygularken kareli kâğıt, noktalı kâğıt, geometri tahtası gibi somut manipülatifler (MAB3) veya alternatif olarak matematik yazılımından (MAB5) yararlanmaları için teşvik edilebilir (SDB3.3). Ayrıca öğrencilerin stratejiler geliştirirken farklı temsillerden (MAB3) (bir noktanın dik koordinat sistemi üzerindeki yansıma ve öteleme dönüşümü altındaki görüntüsünün koordinatlarına ait tablo oluşturma gibi) yararlanmaları sağlanır. Stratejilerin geliştirilmesinde ve problemin çözümü için stratejilerin uygulanmasında öğrencilerin grup çalışması yapmaları sağlanabilir. Problem çözümlerinin ardından öğrenciler çözüm yollarını kontrol etmeye ve çözüme ulaşamadıkları durumlarda farklı stratejiler kullanmaya teşvik edilir (SDB3.1). Süreçte öğrencilerin görev ve sorumluluklarını çalışkanlık değeriyle yerine getirmeleri (D3.4), kendi öğrenme süreçlerinin farkında olmaları ve arkadaşlarıyla dayanışma içinde ve dostça çalışmaları için uygun öğrenme ortamı oluşturulur. Böylece dostluk değerinin kazanılması desteklenir (D4.4). Öğrencilerin, stratejilerini ve buldukları yolları gözden geçirmeleri, kısa yollara ilişkin çıkarımlar ve değerlendirmeler yapmaları sağlanır. Problem bağlamları da göz önünde bulundurularak öğrencilerin çıkarımları üzerine değerlendirmeler yapmaları istenir. Öğrencilerden problemin çözümünde kullandıkları stratejilerin hangi tür problemlerde kullanılabileceğine dair genelleme yapabilmeleri, bu genellemelerin geçerliliğini matematiksel örneklerle değerlendirebilmeleri beklenir. Kurdukları problemlerin bağlamlarına yönelik yansıtmalar yapılarak öğrencilerin çıkarımlarını değerlendirmeleri ve seçtikleri stratejilere karar verme süreçlerine ait davranışlarının sorumluluğunu kabul etmeleri sağlanır (SDB3.3). Yansıma ve öteleme dönüşümüne yönelik problem durumlarını içeren izleme testi hazırlanabilir. Değerlendirme sonuçlarına göre öğrencilere geri bildirim verilebilir. Escher (Eşer)'in eserlerini inceleyen ve eserin içerdiği dönüşümleri keşfeden öğrencilere, bir desen üzerinden kendi orijinal ve estetik tasarımlarını geliştirerek süslemeler yapmaları için performans görevi verilebilir. Bu çalışma, görsel sanatlar dersi ile ilişkilendirilerek öğrencilerin Escher (Eşer)'in eserlerindeki tarzı matematiksel ve estetik değeri bağlamında yorumlamaları sağlanabilir (D7.1, OB9). Performans görevi grup çalışması (SDB2.1) olarak öğrencilerin iş birliği içerisinde (SDB2.2) tamamlayacakları biçimde tasarlanabilir. Performans görevinde, akran değerlendirme formu ile birbirlerini (SDB2.2), öz değerlendirme formu aracılığıyla da kendilerini (SDB1.3) değerlendirmeleri sağlanabilir. Ayrıca öğrencilerin tasarımları eserdeki dönüşümleri belirlemeye, Escher (Eşer) tipi bir süsleme oluşturmaya ve yaratıcılığa dayalı kriterleri içeren bütüncül veya analitik dereceli puanlama anahtarı kullanılarak değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerin yansıma ve öteleme dönüşümü ile ilişkili doğadan ve sanattan seçilen görselleri matematik yazılımındaki dik koordinat sisteminde incelemeleri sağlanabilir. Yapılan incelemelerden hareketle öğrencilerin matematik yazılımında öteleme ve yansıma dönüşümlerinden biri veya ikisini de içeren özgün görseller ve süslemeler oluşturmaları istenebilir.Yansıma ve öteleme dönüşümü ile ilgili kodlama çalışmaları gerçekleştirilebilir. Kâğıt-kalem ile kodlama çalışmaları gerçekleştirilebileceği gibi öğrencilerin dijital ortamda tasarlayıp geliştirebileceği kodlama programları da kullanılabilir.Öteleme ve yansıma dönüşümlerine ilişkin problem kurmaları ve kurdukları problemleri çözmeleri istenebilir.",
+        "Destekleme": "Öğrencilere, geometrik şekillerin öteleme dönüşümü altındaki görüntülerini oluştururken şekilleri asetat ve poşet dosya gibi şeffaf materyaller üzerine kopyalamaları ve görüntü ile materyaldeki görseli eşleştirmeleri sağlanabilir.Kareli veya noktalı kâğıtta birden fazla paralel katlama (paralel kat izleri meydana getiren katlamalar) yardımıyla şekillerin öteleme dönüşümü altındaki görüntülerini oluşturmaları sağlanabilir.Kareli veya noktalı kağıttaki katlamalar ile birbirine dik olacak biçimde meydana getirilen kat izleri eksen kabul edilerek yansıma dönüşümünde noktaların koordinatlarının değişimi ile ilgili çalışmalara yer verilebilir.Yansıma ve öteleme dönüşümlerine yönelik problemleri içeren çalışma kâğıdında öğrencinin öğrenme hızına uygun ve dönüşümlerin görselleştirildiği uyarlamalar yapılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.5.1. Matematiksel araç ve teknoloji yardımıyla öteleme dönüşümünü çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Matematiksel araç ve teknoloji yardımıyla düzlemde geometrik şekillerin öteleme dönüşümü altındaki görüntülerinin kenar ve açı özelliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Geometrik şekiller ile öteleme dönüşümü altındaki görüntüleri arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.5.2. Dik koordinat sisteminde geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve eksenlere göre yansıma dönüşümündeki değişimlerine ilişkin çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve eksenlere göre yansıma dönüşümündeki değişimlerine dair varsayımlarda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Geometrik şekillerin öteleme dönüşümü altındaki görüntülerini ve koordinat eksenlerine göre yansıma dönüşümü altındaki görüntülerini oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Oluşturduğu görüntülere ait noktaların apsis ve ordinatlarını varsayımları ile karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve koordinat eksenlerine göre yansıma dönüşümündeki değişimlerine dair önermeler sunar.",
+          "bold": false
+        },
+        {
+          "text": "d) Sundukları önermelerinin dik koordinat sisteminde konumları verilen iki geometrik şekil arasında öteleme veya eksenlere göre yansıma dönüşümüne dayalı bir ilişkinin bulunup bulunmadığını incelemeye sağladığı katkıyı değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.5.3. Öteleme ve yansıma dönüşümlerini içeren problemleri çözebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Öteleme ve yansıma dönüşümlerine ilişkin problemlerde ilgili matematiksel bileşenleri (eşlik, uzaklık, diklik, paralellik, koordinatlar gibi ) belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Matematiksel bileşenler arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+          "bold": false
+        },
+        {
+          "text": "d) Öteleme ve yansıma dönüşümlerini içeren problemlerin sonucuna ilişkin tahminde bulunur ve işlemleri gerçekleştirmek için stratejiler geliştirir.",
+          "bold": false
+        },
+        {
+          "text": "e) Belirlenen stratejileri çözüm için uygular.",
+          "bold": false
+        },
+        {
+          "text": "f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.",
+          "bold": false
+        },
+        {
+          "text": "g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.",
+          "bold": false
+        },
+        {
+          "text": "h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.5.1",
+          "codeAsPrinted": "MAT.8.5.1",
+          "text": "Matematiksel araç ve teknoloji yardımıyla öteleme dönüşümünü çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Matematiksel araç ve teknoloji yardımıyla düzlemde geometrik şekillerin öteleme dönüşümü altındaki görüntülerinin kenar ve açı özelliklerini belirler.",
+            "b) Geometrik şekiller ile öteleme dönüşümü altındaki görüntüleri arasındaki ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.5.2",
+          "codeAsPrinted": "MAT.8.5.2",
+          "text": "Dik koordinat sisteminde geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve eksenlere göre yansıma dönüşümündeki değişimlerine ilişkin çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve eksenlere göre yansıma dönüşümündeki değişimlerine dair varsayımlarda bulunur.",
+            "b) Geometrik şekillerin öteleme dönüşümü altındaki görüntülerini ve koordinat eksenlerine göre yansıma dönüşümü altındaki görüntülerini oluşturur.",
+            "c) Oluşturduğu görüntülere ait noktaların apsis ve ordinatlarını varsayımları ile karşılaştırır.",
+            "ç) Geometrik şekillere ait noktaların apsis ve ordinatlarının öteleme dönüşümündeki değişimlerine ve koordinat eksenlerine göre yansıma dönüşümündeki değişimlerine dair önermeler sunar.",
+            "d) Sundukları önermelerinin dik koordinat sisteminde konumları verilen iki geometrik şekil arasında öteleme veya eksenlere göre yansıma dönüşümüne dayalı bir ilişkinin bulunup bulunmadığını incelemeye sağladığı katkıyı değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.5.3",
+          "codeAsPrinted": "MAT.8.5.3",
+          "text": "Öteleme ve yansıma dönüşümlerini içeren problemleri çözebilme",
+          "group": null,
+          "components": [
+            "a) Öteleme ve yansıma dönüşümlerine ilişkin problemlerde ilgili matematiksel bileşenleri (eşlik, uzaklık, diklik, paralellik, koordinatlar gibi ) belirler.",
+            "b) Matematiksel bileşenler arasındaki ilişkileri belirler.",
+            "c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür.",
+            "ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+            "d) Öteleme ve yansıma dönüşümlerini içeren problemlerin sonucuna ilişkin tahminde bulunur ve işlemleri gerçekleştirmek için stratejiler geliştirir.",
+            "e) Belirlenen stratejileri çözüm için uygular.",
+            "f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.",
+            "g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.",
+            "ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.",
+            "h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-matematik-dersi/unite/477",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/477",
+      "title": "6.Tema: İstatistiksel Araştırma Süreci",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:06.859Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_477.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "6.Tema: İstatistiksel Araştırma Süreci",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin farklı veri türleri ile istatistiksel araştırma gerektiren gerçek yaşam durumları bağlamında istatistiksel araştırma sürecini yürütebilmeleri ve başkaları tarafından oluşturulmuş grafik, görsel, rapor, sonuç, yorum, çıkarım veya tahminler hakkında tartışabilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "20",
+        "Alan Becerileri": "MAB4. Veri ile Çalışma ve Veriye Dayalı Karar Verme",
+        "Kavramsal Beceriler": "KB2.18. Tartışma",
+        "Eğilimler": "E1.1. Merak, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.6. Analitiklik, E3.7. Sistematiklik, E3.9. Şüphe Duyma, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D1. Adalet, D3. Çalışkanlık, D6. Dürüstlük, D8. Mahremiyet, D13. Sağlıklı Yaşam, D14. Saygı",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB3. Finansal Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Sosyal Bilgiler, Fen Bilimleri",
+        "Beceriler Arası İlişkiler": "MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji ile Çalışma, KB2.14. Yorumlama, KB3.3. Eleştirel Düşünme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.6.1. Kategorik veya nicel (kesikli-sürekli) veri ile çalışabilme ve veriye dayalı karar verebilmea) Kategorik veya nicel (kesikli-sürekli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder. b) Kategorik veya nicel (kesikli-sürekli) veriye dayanan betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur. c) Kategorik veya nicel (kesikli-sürekli) veriye ulaşmak için plan yapar. ç) Araştırma sorusuna uygun hazırlanan anket sorularını kullanarak veri toplar veya hazır veriye ulaşır. d) Veri görselleştirme (çizgi grafiği, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca, tepe değer, açıklık veya ortalama mutlak sapma) araçlarını seçme gerekçelerini belirtir. e) Toplanan veriyi uygun araçlarla analiz eder. f) Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar. g) Araştırma sonuçlarının araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek araştırma sürecine uygun olmayan adımları yeniden planlar. MAT.8.6.2. Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilmea) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik istatistiksel temellendirme yapar. b) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik hataları ya da yanlılıkları tespit eder. c) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumları çürütür ya da kabul eder.",
+        "İçerik Çerçevesi": "Kategorik ve Nicel (Kesikli-Sürekli) Veri Dağılımları",
+        "Anahtar Kavramlar": "Genellemeler• Veri dağılımları, verinin değişebilirliği hakkında bilgi verir.• Nicel veri dağılımlarında veri özetleme araçlarına ilişkin sonuçlar, dağılımın merkezinin nereye eğilim gösterdiğini ve nasıl yayıldığını belirler. Anahtar Kavramlardağılım, değişebilirlik, evren, örneklem, veri Sembol ve Gösterimler-",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; performans görevi, çalışma kâğıdı (açık uçlu, doğru/yanlış ve eşleştirme gibi sorulardan oluşan), öz değerlendirme ve akran değerlendirme formu ile değerlendirilebilir.Bu temada istatistiksel araştırma gerektiren durumlara yönelik sınıfta gerçekleştirilecek tartışma ortamlarında gözlem formundan yararlanılarak araştırma sorularının oluşturulmasıyla ilgili öğrencilere geri bildirim verilebilir.İki farklı gruba aynı araştırma sorusuna yönelik performans görevi verilebilir. Öğrencilerden araştırma sorusu bağlamında topladıkları veriye dayalı karar vermelerine yönelik araştırma raporu veya infografik oluşturmaları ve sınıf içinde sunum yapmaları istenebilir. İncelenen istatistiksel araştırma süreçlerinde farklı örneklemde çalışmanın araştırma sonuçlarına etkisi sınıf içinde tartışılabilir. Bu görevin değerlendirilmesinde istatistiksel araştırma sürecinin araştırma sorusuna uygunluğu, veri özetleme araçlarının kullanımı ve sonuçların yorumlanması ölçütlerinden oluşan bütüncül veya analitik dereceli puanlama anahtarı kullanılabilir. Grup çalışmaları sonunda öğrencilerin öz değerlendirme ve akran değerlendirme formları aracılığıyla kendilerini ve arkadaşlarını değerlendirmeleri sağlanabilir.Performans ürünleri ve çalışma kâğıtları sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin bir problemin çözümünde istatistiksel araştırma sürecinin adımlarını takip etmeleri gerektiğini fark edebildikleri, veri özetleme araçlarına ilişkin hesaplamaları yapabildikleri, nicel (kesikli-sürekli) veriye dayalı sonuçları yorumlayabildikleri, istatistiksel sonuç ve çıkarımları sorgulayarak veriye dayalı karar verebildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin istatistiksel araştırma süreci kapsamında kategorik veya nicel (kesikli-sürekli) veriye dayalı karar verme ve tartışma becerileri ile ilgili ön bilgilerini değerlendirmeye yönelik sorular sorulabilir. İstatistiksel araştırma sürecinin bütüncül ve döngüsel yapısının farkında olup olmadıklarına ilişkin gözlem formu doldurulabilir. Ele alınacak araştırma problemlerinin öğrencilerin ilgi ve ihtiyaçlarına hitap etmesi amacıyla sınıf içi tartışma ortamı oluşturulur. Veri toplama, özetleme (aritmetik ortalama, ortanca, tepe değer, açıklık ve ortalama mutlak sapma), görselleştirme (çizgi grafiği ve nokta grafiği), sonuçları yorumlayarak karar verme ve tahminleri tartışabilme becerilerine yönelik açık uçlu sorulardan oluşan hazır bulunuşluk testi uygulanabilir.",
+        "Köprü Kurma": "Farklı veri türlerinden seçilmiş merak uyandıran haberlerle öğrencilerin düşünce ve deneyimlerini ifade etmeleri sağlanabilir.Araştırma soruları oluşturulurken kullanılacak veri türü muhtemel bulgular dikkate alınarak sınıf ortamında tartışılabilir. Bu tartışmada veri görselleştirme ve özetleme araçlarının veri türü ile uygunluğu ele alınabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT.8.6.1Sınıf içinde merak uyandıran gerçek bir yaşam durumu üzerinde inceleme yapılırken (E1.1) doğum istatistikleri, besin türleri, parite değişimleri (OB3) gibi farklı veri türlerine yönelik fen bilimleri veya sosyal bilgiler ile ilişkili sosyal farkındalık oluşturacak bağlamlara değinilir (SDB2.3), öğrencilerin sağlıklı beslenmeyi önemsemeleri teşvik edilir (D13.1). Bu incelemelerde ele alınacak veri türünün ne olacağı hakkında tartışmalar yapılarak uygun olan veri türü belirlenir. Öğrencilerden gerçek yaşam bağlamlarında istatistiksel araştırma gerektiren durumları fark ederek betimleme veya karşılaştırma gerektiren araştırma sorularını oluşturmaları beklenir. Araştırma soruları; amacın net olması, değişkenlerin belirlenebilir olması, veri toplanarak cevaplanabilir olması ve verinin değişebilirliği (doğal ortamdan, müdahaleden veya ölçümden kaynaklı) kriterlerini sağlayacak şekilde ele alınır. Bu kriterleri sağlayan ve sağlamayan araştırma sorularına ilişkin örneklerin incelenmesi istenir. Sınıf içinde oluşturulacak tartışma ortamında öğrencilerin arkadaşları tarafından oluşturulmuş araştırma sorularını akran değerlendirme formu ile inceleyerek kriterlere uygun olup olmadığına dair çıkarımda bulunmaları sağlanır (SDB2.2). Öğrencilerin gerçek yaşam problemlerinin çözümü için araştırma soruları oluşturmaları istenerek kendini düzenleme (öz düzenleme) becerileri desteklenir (SDB1.2). Araştırma sorularına yönelik evren ve örneklemin belirlenmesi ile seçilen örneklemin evreni temsil etme durumu tartışılır. Bu tartışmada öncelikle araştırma çerçevesine uygun evrenin belirlenmesi sağlanır. Uygun olan ve olmayan evren tanımlamalarının gerekçeleri ele alınır. Örneğin ortaokul öğrencilerinin telefon kullanma sürelerine yönelik bir araştırmada evrenin, bulundukları okul, ilçe, il ya da ülke genelinde ele alınması tartışılır. Buna uygun olarak evrenin sınırlandırılması gerektiğini fark etmeleri beklenir. İkinci olarak evrenin özelliklerini taşıyan bir örneklemin öğrenciler tarafından belirlenmesi istenir. Ortaokul öğrencilerinin telefon kullanma sürelerine yönelik araştırmada A ili üzerinden sınırlandırılmış evren için, sadece kendi okulundaki sekizinci sınıf öğrencilerinin bir örneklem olarak görülemeyeceğini fark etmeleri ve çeşitliliğin nasıl sağlanabileceğine yönelik tartışmalar gerçekleştirmeleri için uygun öğrenme ortamı oluşturulabilir. Verinin elde edilmesinde araştırma sorularına uygun veriye ulaşma seçenekleri göz önünde bulundurularak bir plan yapılır. Bu süreçte iki alternatif bulunmaktadır: Öğrenci veriyi kendisi toplayabilir veya hazır bir veriye (medya veya resmî kanallardan) ulaşabilir. Veri toplama sürecinde veriyi kendisi toplayacaksa anketi oluşturma, örneklemi seçme, verilerin nerede, ne zaman, nasıl toplanacağını ve verilerin nasıl kaydedileceğini belirleme ölçütlerini dikkate alması beklenir. Anket oluşturma ve veri toplama süreçlerinde öğrenciler grup çalışmalarına yönlendirilir. Anket sorularının açık, anlaşılır ve amaca uygun olması, soruların anket katılımcılarının profiline ve beklenen muhtemel bulgulara göre şekillendirilmesi istenir. Öğrencilerden anket sorularını hazırlarken kişisel verinin gizliliğini korumaları ve mahremiyeti gözetmeleri beklenir. Bu süreçte alınabilecek önlemler (ankette ismin yazılmaması, kurumlardan izin alınması gibi) mahremiyet değeri bağlamında tartışılır (D8.1, SDB3.3). Veri toplama planını oluşturan öğrencilerin veriyi toplama ve analize hazırlama adımlarında çevrim içi uygulamaları ve istatistik yazılımlarını kullanmaları sağlanabilir (OB2, MAB5). Bazı durumlarda her iki veri elde etme yöntemi de değerlendirilir. Veri toplama süreci sınıf içinde, sınıf dışında veya dijital ortamlarda gerçekleştirilir. Öğrenciler veri toplama sürecinde iş birliği veya iş bölümü yaparak veri elde edebilir (SDB2.2). Bu aşamada veri toplama ve topladığı verileri kaydetme adımlarında not defteri ya da dijital araçlardan yararlanmaları sağlanır. Öğrencilerin veri toplama sürecinde gizlilik ve mahremiyet boyutlarını gözeterek süreci tasarlamaları beklenir. Kişisel verinin gizliliğinin ihlali ve olası sonuçları tartışılarak mahremiyet değerine vurgu yapılır (D8.2, OB2). Öğrencilerin veri toplama adımında arkadaşlarından, katılımcılardan ya da kurumlardan izin almaları gerektiğini fark etmeleri beklenir. Veri analizi adımında görselleştirme ve özetleme araçları, araştırma sorusu ile ilişkilendirilerek ele alınır. Bu adımda görselleştirme ve özetleme araçlarının seçilmesi, seçimin gerekçelendirilmesi, oluşturulması/hesaplanması ve kullanılması beklenir. Sınıf ortamında ele alınacak araştırma örneklerinde tercih edilecek veri görselleştirme aracının gerekçeleri (veri türüne uygunluğu, aracın yapısının ve işlevlerinin bilinmesi gibi) öğrencilerden istenir (MAB3). Aynı durumda kullanılabilecek birden fazla görselleştirme aracı varsa araçların birbirlerine göre güçlü ve zayıf yönleri göz önüne alınarak bu araçları seçme nedenlerini gerekçelendirmeleri beklenir (SDB3.3). Veri görselleştirme araçlarının özelleştirilmesi veri analizinin odak noktalarından biridir. Örneğin hava durumuna yönelik bir sütun grafiğinin negatif sıcaklık değerlerini ifade etmesi ve sıcaklık değerlerinin karşılaştırılmasına olanak tanıması için özelleştirilmesi incelenebilir. Bu özelleştirmede elektronik tablo ya da istatistik yazılımlarından yararlanılabilir. Veri görselleştirme araçları, veri özetleme araçları ile ilişkilendirilerek birlikte yorumlanır. Veri özetlemeye yönelik sonuçlar dağılım ve yayılım incelemeleri ile birlikte ele alınır. Öğrencilerin farklı dağılımlara sahip örnekleri incelerken yayılım ölçüleri ve merkezî eğilim ölçülerinin değerleri arasındaki ilişkileri yorumlamaları sağlanır (KB2.14). Öğrencilerin veri özetleme araçlarından hangisinin veri setini daha iyi temsil edeceğini tartışmaları istenir. Veri görselleştirme ve özetleme araçları dağılım, yayılım, merkez ve değişebilirlik kavramları ile ilişkilendirilir. Nitelikleri farklı (veri sayısı çok fazla olan, açıklığı fazla olan gibi) veri setleri kullanılarak veri dağılımları görselleştirme araçları üzerinden incelenir. Diğer taraftan dağılımın incelenmesinde merkezi eğilim ölçülerinin birbirine yakınlığı, veri setini temsil etmesi, veri setinde bulunması, merkezi temsil edebilecek bir bölgede bulunması durumlarının yorumlanması istenir. Veri özetleme araçlarının değerlerinin bulunmasında hesap makinesi kullanımı tercih edilerek öğrencilere yorumlamaları için fırsat ve zaman verilir. Veri setinde bilinmeyen verinin bulunması üzerine merkezî eğilim ya da yayılım ölçülerinin hesaplanmasına ilişkin çalışmalara yer verilmez. Veri setindeki anlık manipülasyonların değişime etkisinin dinamik olarak takip edilmesi ve etkileşimli olarak deneyimlenmesi sürecinde teknolojiden yararlanılabilir (MAB5). Öğrencilerin bu araçlardan yararlanarak veri sürecini düzenli, anlamlı ve sistematik olarak sunmaları teşvik edilir (E3.7). İstatistiksel araştırma sürecinin tüm adımlarını sistematik olarak takip eden öğrencilerin araştırma sonuçlarını yorumlamaları beklenir (KB2.14). Öğrencilerden elde ettikleri araştırma sonuçlarını veri görselleştirme ve özetleme araçlarıyla ilişkilendirirken istatistiksel bir dil kullanarak (örneğin verilerin merkezinin nasıl bir eğilim gösterdiği, verilerin nasıl yayıldığına dair ifadeler) açıklamaları istenir. Öğrencilerin sonuçlar üzerine düşünmelerini teşvik edecek sorular sorularak araştırma sonuçlarından hareketle veriler arası karşılaştırma yapmaları ve veri ötesinin yorumlanması için geleceğe yönelik tahminlerde ve önerilerde bulunmaları sağlanır. Öğrencilerden ulaştıkları araştırma sonuçlarına dair gerekçeler belirtmeleri istenir. Sonuçların araştırma sorusuna ne düzeyde cevap verdiği değerlendirilirken araştırma sorusunun belirlenmesinden başlayan süreç adımlarının her biri öğrenciler tarafından yeniden eleştirel bir gözle incelenir (E3.10). Değerlendirme aşamasında sonuçlardan hareketle öğrencilerin istatistiksel araştırma sürecine uygun olmayan adımları yeniden planlamaları ve uygulamaları beklenir (SDB3.2). Bu süreçte öğrenciler veriye dayalı karar vermeye yönelik kendini düzenleme (öz düzenleme) becerilerini işe koşmaları için desteklenir (SDB1.2). İstatistiksel araştırma sürecine dair döngüsel modelin adımlarının uygulanarak veriye dayalı karar verme aşamasındaki yetkinliklerin öğrenciler arasında tartışılması sağlanır. İstatistiksel araştırma sürecini sistematik olarak takip eden öğrenciler, araştırma süreçlerini ve ulaştıkları sonuçları farklı araçlar kullanarak sınıfta paylaşırlar (E3.7). Araştırma sürecini sunmak için kullanılabilecek araçlardan biri olan infografiğin nasıl tasarlanabileceğine yönelik örnekler incelenerek araştırma çerçevesine uygun şekilde kendi tasarımlarını oluşturmaları istenir. İki farklı gruba aynı araştırma sorusuna yönelik performans görevi verilebilir. Öğrencilerden araştırma sorusu bağlamında topladıkları veriye dayalı karar vermelerine yönelik araştırma raporu veya infografik oluşturmaları ve sınıf içinde sunum yapmaları istenebilir. İncelenen istatistiksel araştırma süreçlerinde farklı örneklemde çalışmanın araştırma sonuçlarına etkisi sınıf içinde öğrenciler tarafından tartışılabilir. Hazırlanan ürünler bütüncül veya analitik dereceli puanlama anahtarı ile değerlendirilebilir. Yapılan sunumlara ilişkin öğrencilerin kendilerini, arkadaşlarını ve grup çalışmalarını öz değerlendirme, akran değerlendirme ve grup değerlendirme formlarıyla ile değerlendirmeleri istenebilir. MAT.8.6.2Öğrencilerin başkaları tarafından oluşturulmuş gerçek veri setlerine yönelik istatistiksel araştırma süreçlerini incelemeleri istenir. Bu süreçte sınıf ortamına uyarlanmış gerçek veri setleri ve arkadaşları tarafından oluşturulmuş veri setlerinin kullanıldığı araştırma süreçlerine yönelik görsel, özet, sonuç, yorum, çıkarım veya tahminler öğrenciler arasında tartışılır. Öğrencilerin bu veri setlerini inceleyerek elde edilen sonuç veya çıkarımlara yönelik temellendirme yapmalarına fırsat sunulur. Öğrencilerin istatistiksel hatalara ya da yanlılıklara yönelik tespitte bulunmaları beklenir. Bu süreçte öğrenci görüşleri ve gerekçeleri ayrıntılı şekilde ele alınır. İstatistiksel araştırma süreci adımlarının hatalı ya da yanlı işlem, bulgu veya yorum içerebileceğine yönelik analitik (E3.6) ve eleştirel bir bakış (E3.10) geliştirmeleri beklenir. Öğrencilerin özellikle sosyal medyada yer alan yanıltıcı haberleri ve dijital bilginin (OB2) yanlılığını gerçeği arama (E3.4) güvenilir ve dürüst olma (D6.2) durumları ile birlikte eleştirel bir gözle değerlendirmeleri beklenir (KB3.3). Yanıltıcı haberlerin eleştirel bir bakış açısıyla incelenmesi öğrencilere hakkaniyetli davranarak adalet değerinin (D1.2), kişisel bilgilerin gizliliğini koruyarak mahremiyet değerinin (D8.2) ve insan haklarına saygı duyarak saygı değerinin (D14.1) kazandırılması desteklenir. İstatistiksel araştırma sürecine ait görsellerin, özetlerin ya da sonuçların hatalı veya yanlı olup olmadığına yönelik tespitler tartışma ortamında savunulur ya da çürütülür (E3.9, SDB3.3). Öğrencilerin fikirlerini belirtirken ön yargısız ve saygılı bir şekilde farklı açılardan bakabilmelerine, farklı fikirlere ve önerilere açık olabilmelerine yönelik uygun ortam oluşturulur (E3.5). Veriyi hatalı veya yanlı işleme ve yorumlamanın yol açabileceği olumsuz durumların sosyal, ekonomik ve ahlaki yansımalarına yönelik tartışmalar yapılması sağlanır (SDB3.3). Öğrencilerin istatistiksel araştırma sürecinin bilimsel katkısını önemsemeleri ve karar verme süreçlerinde istatistikten yararlanma fikrini benimsemeleri çalışkanlık değeri ile ilişkilendirilir (D3.3). İstatistiksel araştırma sürecinde kişisel verinin kullanımına yönelik bilinç kazandırılması için kişisel bilgilerin gerçek ve dijital ortamlarda paylaşılması üzerine tartışma başlatılır. Tüketicilerin tüm izinlere onay vermeye yönlendirilmesi, oyun ya da çevrim içi üyelikler için kayıt işlemlerinde kişisel bilgilerin istenmesi ya da paylaşılmasına yönelik örnekler ele alınır. Bu tartışmada öğrencilerin kişisel verilerin toplanmasına ve kullanılmasına yönelik amacın neler olabileceğini ve bu durumun olumsuz yansımalarını yorumlamaları istenir. Başkalarına ait incelenen verinin yasal olup olmaması kişisel bilgilerin korunmasıyla ilgili yasal düzenlemeler çerçevesinde öğrenciler tarafından değerlendirilir. Öğrencilerin sosyal medya ve diğer dijital ortamlarda sunulan veri setleri, görseller veya özetlerin doğruluğunu kontrol etmeleri (E3.4), doğru bilgiye ulaşma yöntemlerini incelemeleri istenir. Öğrenciler, mahremiyet değeri bağlamında kişisel verilerin gizliliğinin ihlalinin olası sonuçarını araştırmaya (D8.2) yönlendirilir. Bu öğrenme çıktısı öğrencilerin ilgilerini çeken bir konuda hatalı veya yanlı hazır veri setleri ya da raporlar kullanılarak temellendirme yapma, hataları tespit etme ve bunları çürütme veya gerekçelendirmelerini gerektiren açık uçlu, doğru/yanlış ve eşleştirme gibi sorulardan oluşan çalışma kâğıdı ile değerlendirilebilir.",
+        "Zenginleştirme": "Farklı dağılımlara sahip olan veri setlerinin analiz sonuçlarına dair yorum yapmaları sağlanabilir. Bir veri setinin özetlenmesinde ortalama mutlak sapma değerinin açıklık değeri ile ilişkisi matematik yazılımları üzerinden manipülasyonlarla ele alınabilir. Evren-örneklem ilişkisinde örneklem değişebilirliğine yönelik incelemelerde farklı sınıfların ders başarı dağılımları, farklı derslerde aynı sınıfın başarı dağılımları, örneklemin cinsiyet tabanında dağılımının değişebilirliğinin incelenmesi beklenebilir. Farklı dağılımların merkezî eğilim ve yayılım ölçüleri çerçevesinde karşılaştırılması istenebilir. Öğrencilerin istatistiksel araştırma sürecinin adımlarını inceleyen olimpiyat soruları ile ilgilenmeleri sağlanabilir.Öğrencilerin ilgi duydukları toplumsal bir konu hakkında (yatırım ve tasarruf alternatiflerinin değerlendirilmesi, sağlıklı yaşam ve beslenme planlarının oluşturulması gibi) istatistiksel araştırma sürecini ele alınarak bireysel ya da toplumsal fayda veya sosyal farkındalık oluşturacak bir proje oluşturmaları istenir. Proje sonuçlarının dijital ortamda sunulması beklenebilir. Öğrencilerden Türkiye İstatistik Kurumu (TÜİK), Birleşmiş Milletler Eğitim, Bilim ve Kültür Örgütü (UNESCO) veya Birleşmiş Milletler Çocuklara Yardım Fonu (UNICEF) gibi resmî platformlarda yayınlanan gerçek yaşam verilerinin incelenmesi ve karşılaştırılmasına yönelik çalışmalar yapmaları istenebilir. Elde ettikleri sonuçlara yönelik çevrim içi uygulamalar ya da istatistik yazılımları kullanarak rapor sunmaları beklenebilir.",
+        "Destekleme": "Bir veri setini özetlemeye yönelik yapılan merkezî eğilim ve yayılım ölçüleri hesaplamalarının adımlara ayrılarak aşamalar hâlinde gerçekleştirilmesi istenebilir.Arkadaşları tarafından oluşturulmuş veri görselleştirme ve özetleme araçlarını veya infografikleri inceleyerek yorumlamaları beklenebilir. Tasarlanacak öğrenme-öğretme ortamları ile öğrencilerin iş birlikli grup çalışmaları yaparak araştırma süreçlerini birlikte ele almaları sağlanabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.6.1. Kategorik veya nicel (kesikli-sürekli) veri ile çalışabilme ve veriye dayalı karar verebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Kategorik veya nicel (kesikli-sürekli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder.",
+          "bold": false
+        },
+        {
+          "text": "b) Kategorik veya nicel (kesikli-sürekli) veriye dayanan betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Kategorik veya nicel (kesikli-sürekli) veriye ulaşmak için plan yapar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Araştırma sorusuna uygun hazırlanan anket sorularını kullanarak veri toplar veya hazır veriye ulaşır.",
+          "bold": false
+        },
+        {
+          "text": "d) Veri görselleştirme (çizgi grafiği, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca, tepe değer, açıklık veya ortalama mutlak sapma) araçlarını seçme gerekçelerini belirtir.",
+          "bold": false
+        },
+        {
+          "text": "e) Toplanan veriyi uygun araçlarla analiz eder.",
+          "bold": false
+        },
+        {
+          "text": "f) Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar.",
+          "bold": false
+        },
+        {
+          "text": "g) Araştırma sonuçlarının araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek araştırma sürecine uygun olmayan adımları yeniden planlar.",
+          "bold": false
+        },
+        {
+          "text": "MAT.8.6.2. Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik istatistiksel temellendirme yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik hataları ya da yanlılıkları tespit eder.",
+          "bold": false
+        },
+        {
+          "text": "c) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumları çürütür ya da kabul eder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.6.1",
+          "codeAsPrinted": "MAT.8.6.1",
+          "text": "Kategorik veya nicel (kesikli-sürekli) veri ile çalışabilme ve veriye dayalı karar verebilme",
+          "group": null,
+          "components": [
+            "a) Kategorik veya nicel (kesikli-sürekli) veriye dayanan istatistiksel araştırma gerektiren durumları fark eder.",
+            "b) Kategorik veya nicel (kesikli-sürekli) veriye dayanan betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur.",
+            "c) Kategorik veya nicel (kesikli-sürekli) veriye ulaşmak için plan yapar.",
+            "ç) Araştırma sorusuna uygun hazırlanan anket sorularını kullanarak veri toplar veya hazır veriye ulaşır.",
+            "d) Veri görselleştirme (çizgi grafiği, nokta grafiği gibi) ve özetleme (aritmetik ortalama, ortanca, tepe değer, açıklık veya ortalama mutlak sapma) araçlarını seçme gerekçelerini belirtir.",
+            "e) Toplanan veriyi uygun araçlarla analiz eder.",
+            "f) Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar.",
+            "g) Araştırma sonuçlarının araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek araştırma sürecine uygun olmayan adımları yeniden planlar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "MAT.8.6.2",
+          "codeAsPrinted": "MAT.8.6.2",
+          "text": "Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumları tartışabilme",
+          "group": null,
+          "components": [
+            "a) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik istatistiksel temellendirme yapar.",
+            "b) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumlara yönelik hataları ya da yanlılıkları tespit eder.",
+            "c) Başkaları tarafından oluşturulan kategorik veya nicel (kesikli-sürekli) veriye dayalı istatistiksel sonuç veya yorumları çürütür ya da kabul eder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-matematik-dersi/unite/478",
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/478",
+      "title": "7.Tema: Veriden Olasılığa",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:08.365Z",
+      "cacheFile": "html/ortaokul-matematik-dersi_unite_478.html",
+      "meta": [
+        "Ortaokul Matematik Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "7.Tema: Veriden Olasılığa",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin öznel olasılık, deneysel olasılık ve teorik olasılık ilişkisine dayalı bir olayın olasılığı hakkında karar verebilmeleri amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "9",
+        "Alan Becerileri": "-",
+        "Kavramsal Beceriler": "KB3.1.Karar Verme",
+        "Eğilimler": "E3.7. Sistematiklik, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB3.1. Uyum, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Beden Eğitimi, Sosyal Bilgiler",
+        "Beceriler Arası İlişkiler": "MAB3. Matematiksel Temsil, MAB5. Matematiksel Araç ve Teknoloji İle Çalışma, KB2.14. Yorumlama",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "MAT.8.7.1. Gerçek yaşamda karşılaşabileceği bir olayın olasılığına ilişkin farklı olasılık yaklaşımlarından (öznel, deneysel, teorik) uygun olanı belirleyerek karar verebilmea) Bir olayın olasılığına ilişkin karar vermeye yönelik amacı belirler.b) Karara ilişkin bilgi toplar. c) Karara ilişkin olasılık yaklaşımlarına yönelik önermeler oluşturur.ç) Karara ilişkin oluşturduğu önermeleri sorgular.d) Ulaştığı sonuca göre olasılık yaklaşımlarına ilişkin seçim yapar.e) Olasılık yaklaşımına ilişkin seçimini verdiği karara yansıtır.",
+        "İçerik Çerçevesi": "Öznel, Deneysel ve Teorik Olasılık İlişkisi",
+        "Anahtar Kavramlar": "Genellemeler Deneyin tekrar sayısı arttıkça elde edilen deneysel olasılık değeri hesaplanan teorik olasılık değerine yaklaşır. Anahtar Kavramlarbenzetim (simülasyon), deneysel olasılık, öznel olasılık, teorik olasılık Sembol ve Gösterimler-",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktıları; izleme testi, performans görevi, öz, akran ve grup değerlendirme formları ve gözlem formu ile değerlendirilebilir.Öğrencilere çeşitli durumlar üzerinde istatistik yazılımı kullanarak bir deney tasarlamaları ve deneyin simülasyonunu oluşturmalarını gerektiren bir performans görevi verilebilir. Etkinlikler grup çalışması ile yürütülebilir. Örneğin madenî para atma veya sayı küpü atma deneyini istatistik yazılımlarında oluşturmaları ve bu deneyi 20, 50, 100, 200, 500 kez deneyerek elde ettikleri sonuçları resim, afiş gibi görseller kullanarak sunmaları istenebilir. Öğrenciler grup çalışmalarının ve performans görevlerinin ardından öz, akran ve grup değerlendirme formları doldurabilirler. Performans görevini değerlendirebilmek için bütüncül veya analitik dereceli puanlama anahtarı kullanılabilir. Öğrenciler süreçte gösterdikleri performanslara ilişkin görüşlerini yansıtabilirler. Bu temada öğrencilerin süreç değerlendirmelerinde gözlem yapabilmek için bir gözlem formu oluşturulabilir.Performans ürünleri ve izleme testleri sonuç değerlendirme olarak kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin bir olayın olasılığını öznel olarak yorumlayabildikleri, deneysel olasılığı göreli sıklıklarla ilişkilendirebildikleri ve teorik olasılığı hesaplayabildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin belirsizlik içeren örnek durumların olasılıklarını incelemeleri istenebilir. Sayı küpleri, madenî para gibi fiziksel manipulatif getirilerek öğrencilerin seçilen bir deney üzerinde bir olayın (örneğin torbadan çekilen topun kırmızı olması) olasılığına yönelik öznel olarak olasılığı yorumlamaları istenebilir. Öğrencilerin yaptıkları tahminleri bir deney yaparak test etmeleri ve böylece deneysel olarak yorumlamaları sağlanabilir.Benzer şekilde, öğrencilerin seçilen bir olayın olasılığını teorik olarak hesaplamaları, olaya ait çıktıları ve örnek uzayı listelemeleri, olasılığın hesaplanması için olaya ait çıktıların sayısını, olası tüm çıktıların sayısına oranlayarak bulmaları istenebilir. Ön değerlendirme süreci öğrencilerin katılım göstereceği sınıf içi tartışmalarla zenginleştirilebilir ve öğrencilerin grup iletişimine katılmaları sağlanabilir. Öğrencilerin yaptıkları grup çalışmaları öz farkındalık becerilerini geliştirebilir.",
+        "Köprü Kurma": "Öğrencilerden gerçek yaşamda karşılaşabilecekleri belirsizlik içeren bir durumu incelemeleri isteniebilir. Özdeş topların bulunduğu bir torbadan farklı renklerdeki topların seçilmesi olayını (örneğin 5 pembe, 3 mavi özdeş topun olduğu torbadan top çekme deneyi) incelemeleri ve olası tüm çıktıları belirlemeleri beklenebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "MAT.8.7.1Öğrencilerin verilen olayların olasılıklarını öncelikle tahmin edebilmeleri beklenir. Öğrencilere olasılığını tahmin edebilecekleri ve sonrasında deneyini yapabilecekleri bir örnek olay (örneğin torbadan top çekilip belirli bir renkte gelmesi, atılan sayı küpünün üstündeki sayının tek sayı olması gibi) sunulur. Ele alınan örnek üzerinden öğrencilere verilen olayın olasılığına dair beklentileri sorularak, beklentilerini \"çok olası, %50’den fazla, yüksek olası, şansı daha yüksek gibi\" ifadelerle betimlemeleri beklenir. Öğrencilerin tahminlerine gerekçe vermeleri, yargılarına ulaşmak için vardıkları gerekçeleri açıklamaları istenir (SDB3.3). Öğrenciler, kendi yargılarına ve kişisel deneyimlerine dayanarak seçilen olayın olasılık tahminleri hakkında gerekçelendirme yapabilirler. Öğrencilerin bu olaylar için yaptıkları tahminlerinin öznel olasılık olarak değerlendirilebileceğinin farkına varmaları beklenir. Öğrencilerin sundukları gerekçelerin kendi deneyimlerinden yola çıkarak vardıkları kişisel yargılara dayandığını fark etmeleri sağlanır (SDB1.1). İkinci bir yaklaşım olarak verilen örnek olayın deneysel olarak incelenebilmesi, öznel ve deneysel olasılık arasında ilişki kurulabilmesi için sınıf tartışması ile öğrenciler veri toplamaya yönlendirilir. Seçilen olayın olasılığına yönelik öğrencilerin deney sonuçlarını çetele tablosu vb. ile kaydetmeleri, deney sonunda elde ettikleri veriyi uygun bir grafikle görselleştirmeleri ve göreli sıklıkları hesaplamaları istenir (OB7, E3.7). Dolayısıyla, verilen olayın olasılığını deneysel olarak yorumlamaları sağlanır (KB2.14). Sınıf ortamında gerçekleştirilen deney tekrar sayısı toplamının sırasıyla 20, 50, 100, 200, 500 gibi değerlere ulaşması sağlanır. Sanal manipülatifler, genel ağda bulunan hazır simülatörler veya istatistik yazılımları kullanılarak deneylerin simülasyonları oluşturulur ve tekrar sayısı 1000, 2000 gibi daha yüksek tekrar sayılarına çıkarılır. Öğrencilerin sırasıyla her deney sonrası deneysel olasılık değerini hesaplamaları ve bu değerleri birbirleri ile ve üçüncü bir yaklaşım olarak hesapladıkları teorik olasılık değeri ile karşılaştırmaları istenir. Böylece öğrencilerin deneysel ve teorik olasılık arasındaki ilişkiyi fark etmeleri beklenir (MAB3). Sonuç olarak, öğrencilerin yapılan deneyde tekrar sayısı arttıkça deneysel olasılık değerlerinin daha az değiştiğini ve giderek teorik olasılık değerine yaklaştığını fark etmeleri beklenir. Buna benzer etkinlikler grup çalışması ile yürütülerek, öğrencilerin grup çalışmalarında aktif rol oynamaları sağlanır ve grupla çalışma becerisi geliştirilmiş olur. Yapılan bu çalışmalar öğrencilerin çalışkanlık değerini kazanmalarını destekler (D3.4). Öğrencilere istatistik yazılımı kullanarak seçtikleri bir deneyi tasarlama veya simülasyon yapma ile ilgili performans görevi verilebilir (MAB5). Örneğin; öğrencilerden madeni para atma ve sayı küpü atma deneyini istatistik yazılımlarında oluşturmaları ve bu deneyi sırasıyla 20, 50, 100, 200, 500 vb. kez tekrarlamaları istenir. Öğrencilerin bu performans görevinde elde ettikleri sonuçları resim, afiş gibi görseller kullanarak sunmaları istenir. Öğrencilerin sınıf içinde ve dışında yaptıkları grup çalışmaları ile öz farkındalık becerileri geliştirilmiş olur (SDB1.1). Verilen örnek olay üzerinden sınıf içinde tartışma ortamı yaratılarak öğrencilerin bu olayın farklı olasılık yaklaşımlarına göre olasılık yorumları hakkında sorgulama yapmaları sağlanır. Böylece birbirlerinin yorumlarından şüphe duyarak eleştirilerde bulunurlar ve kendi yaklaşımlarını savunma eğiliminde olurlar (E3.10, SDB3.3). Ek olarak, öğrenciler birbirlerini ikna etmeyi denerler ve düşüncelerini başkalarının bakış açılarını göz önünde bulundurarak değerlendirirler, alternatif düşünce sistemlerini/ varsayımlarını/çıkarımların ele alırlar ve gerektiğinde düşüncelerini değiştirirler (SDB3.3). Özellikle öğrencilerin öznel yaklaşımla olasılığı tahmin ederken kişisel yargılarını yeniden incelemeleri önerilir ve değişen durumlar karşısında değişime açık ve istekli olmaları sağlanır (SDB3.1). Bunun üzerine öğrencilerin verilen olayın olasılığına ilişkin olasılık yaklaşımlarını değerlendirmeleri ve seçtikleri yaklaşıma göre bir karar almaları beklenir. Öğrencilerden ulaştıkları karara ilişkin yansıtma yapmaları beklenir. Gerçek yaşam durumlarında öznel, deneysel ve teorik olasılıklara ilişkin olasılık değerlerini inceleyebilecekleri karar verme süreçlerinde yorumlama gerektiren doğru/yanlış soruları ve açık uçlu sorulardan oluşan izleme testi uygulanabilir. Öznel, deneysel ve teorik olasılık ile ilgili öğrencilerden bilgilendirici, açıklayıcı ve tanıtıcı resim, afiş gibi görselleri performans görevi olarak hazırlamaları istenebilir. Bu temada, iki veya daha fazla olaylı (örneğin, iki sayı küpünün üst yüzünde gelen sayıların toplamının 7 gelmesi olayı, bir sayı küpünün üst yüzünde asal sayı olması ve/veya bir paranın tura gelmesi olayı gibi) deneylere girilmez. Bütün bu örnek durumlar üzerinden ele alınan olasılık yaklaşımlarının öğrenciler tarafından önerilmesi beklenir fakat önerilmediği durumda öğrencilerin tahmin etmelerine (beklentilerine) yönelik çeşitli ipuçları vererek olasılığın farklı yaklaşımlarını fark etmeleri sağlanır. Sınıf ortamında bu olasılık yaklaşımlarının üçüne de değinilmesi beklenmektedir. Bunun için karar verme gerektiren gerçek yaşam durumları çeşitlendirilebilir. Gerçek yaşam durumlarından beden eğitimi veya sosyal bilgiler dersleri ile ilişkilendirilebilecek örnekler öğrenciler tarafından sorgulanır. Örneğin bir öğrencinin tercih edeceği seçmeli derse veya katılacağı spor faaliyetine ilişkin kararında olasılık yaklaşımlarının uygunluğuna dair durumlar tartışılır (SDB3.3). Bu temada öne çıkan simülasyonlar çevrim içi uygulamalar ve istatistik yazılımları ile gerçekleştirilir. Öğrenciler dijital bir görev olarak simülasyonları oluşturabilirler. Simülasyonlar için hangi araçları nasıl kullanacaklarını belirler ve karar verirler. Böylece öğrenci seçilen dijital araç doğrultusunda kendi yetkinliğini günceller (OB2). Bu temada öğrencilerin süreç değerlendirmelerini gözlemlemek için, öğretmenin bir gözlem formu oluşturması beklenebilir.",
+        "Zenginleştirme": "Öğrencilerin özel olarak tasarlanmış bir düzgün on iki yüzlünün (örneğin 2 yüzünde 4, 3 yüzünde 2 yazması gibi) atılması deneyini dijital ortamda benzetimini yapmaları ve benzetim sonunda elde ettikleri veriyi tablo, nokta grafiği gibi görselleştirme araçları ile görselleştirmeleri beklenebilir. İncelemeleri sonunda düzgün on iki yüzlü atma deneyinde istenen olayın öznel, deneysel ve teorik olasılığını karşılaştırarak yorumlamaları istenebilir. Özel tasarlanmış fiziksel manipülatiflerle (örneğin, özel sayı küpleri, düzgün çok yüzlüler biçiminde hazırlanmış malzemeler) ya da istatistik yazılımlarında tasarlanan deneyler kullanılarak olasılık yaklaşımlarına dayalı karar vermeye yönelik benzer çalışmalar yapılabilir.",
+        "Destekleme": "Öğretmen öğrencileri heterojen gruplara ayırarak grup çalışması yapmalarını isteyebilir. Grup çalışması sırasında verilen bir deneyi yapmaları ve bu deneye ait olası tüm çıktıları listelemeleri beklenebilir. Verilen deneye bağlı olarak seçilen olayların olasılığını öznel, deneysel ve teorik olarak yorumlamaları ve bu yorumlarına dayanarak hesaplamaları beklenebilir. Bu deneyde ele alınan olasılık yorumları üzerine öğrencilerin grup olarak çalışması istenebilir ve hazırladıkları poster veya afiş üzerinden tartışmaları sağlanabilir.Deneysel ve teorik olasılık ilişkisini görselleştirmek ve yorumlamak için istatistik yazılımlarından ve çevrim içi uygulamalardan yararlanılabilir. Önceden hazırlanmış simülasyonlardan faydalanılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "MAT.8.7.1. Gerçek yaşamda karşılaşabileceği bir olayın olasılığına ilişkin farklı olasılık yaklaşımlarından (öznel, deneysel, teorik) uygun olanı belirleyerek karar verebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir olayın olasılığına ilişkin karar vermeye yönelik amacı belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Karara ilişkin bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "c) Karara ilişkin olasılık yaklaşımlarına yönelik önermeler oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "ç) Karara ilişkin oluşturduğu önermeleri sorgular.",
+          "bold": false
+        },
+        {
+          "text": "d) Ulaştığı sonuca göre olasılık yaklaşımlarına ilişkin seçim yapar.",
+          "bold": false
+        },
+        {
+          "text": "e) Olasılık yaklaşımına ilişkin seçimini verdiği karara yansıtır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "MAT.8.7.1",
+          "codeAsPrinted": "MAT.8.7.1",
+          "text": "Gerçek yaşamda karşılaşabileceği bir olayın olasılığına ilişkin farklı olasılık yaklaşımlarından (öznel, deneysel, teorik) uygun olanı belirleyerek karar verebilme",
+          "group": null,
+          "components": [
+            "a) Bir olayın olasılığına ilişkin karar vermeye yönelik amacı belirler.",
+            "b) Karara ilişkin bilgi toplar.",
+            "c) Karara ilişkin olasılık yaklaşımlarına yönelik önermeler oluşturur.",
+            "ç) Karara ilişkin oluşturduğu önermeleri sorgular.",
+            "d) Ulaştığı sonuca göre olasılık yaklaşımlarına ilişkin seçim yapar.",
+            "e) Olasılık yaklaşımına ilişkin seçimini verdiği karara yansıtır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

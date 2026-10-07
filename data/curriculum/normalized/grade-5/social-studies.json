@@ -1,0 +1,1201 @@
+{
+  "subject": "Sosyal Bilgiler",
+  "grade": 5,
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6",
+  "sourceStatus": "FOUND",
+  "outcomes": [
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.1.1",
+      "outcomeCodeAsPrinted": "SB.5.1.1",
+      "outcomeText": "Dâhil olduğu gruplar ve bu gruplardaki rolleri arasındaki ilişkileri çözümleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Dâhil olduğu grupları ve bu gruplardaki rollerini belirler.",
+        "b) Dâhil olduğu gruplar ile bu gruplardaki rolleri arasındaki ilişkileri belirler."
+      ],
+      "learningArea": "Birlikte Yaşamak",
+      "skills": [
+        "SBAB5. Sosyal Katılım"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E2.1. Empati",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D14. Saygı",
+        "D15. Sevgi",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığ"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Bilişim Teknolojileri ve Yazılım",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.5. Sınıflama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 16,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/379",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 1. Öğrenme Alanı: Birlikte Yaşamak",
+      "sourceFetchedAt": "2026-10-07T10:54:21.163Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.1.2",
+      "outcomeCodeAsPrinted": "SB.5.1.2",
+      "outcomeText": "Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini örnekler üzerinden inceler.",
+        "b) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yazılı, görsel veya dijital ürünlere dönüştürür.",
+        "c) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini ifade eder."
+      ],
+      "learningArea": "Birlikte Yaşamak",
+      "skills": [
+        "SBAB5. Sosyal Katılım"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E2.1. Empati",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D14. Saygı",
+        "D15. Sevgi",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığ"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Bilişim Teknolojileri ve Yazılım",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.5. Sınıflama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 16,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/379",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 1. Öğrenme Alanı: Birlikte Yaşamak",
+      "sourceFetchedAt": "2026-10-07T10:54:21.163Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.1.3",
+      "outcomeCodeAsPrinted": "SB.5.1.3",
+      "outcomeText": "Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine katkı sağlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerini sorgular.",
+        "b) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için sosyal temas oluşturur.",
+        "c) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için grup dinamiğini sağlar.",
+        "ç) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için fikir üretir.",
+        "d) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikirleri müzakere eder.",
+        "e) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikri eyleme dönüştürür."
+      ],
+      "learningArea": "Birlikte Yaşamak",
+      "skills": [
+        "SBAB5. Sosyal Katılım"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E2.1. Empati",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D14. Saygı",
+        "D15. Sevgi",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığ"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Bilişim Teknolojileri ve Yazılım",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.5. Sınıflama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 16,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/379",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 1. Öğrenme Alanı: Birlikte Yaşamak",
+      "sourceFetchedAt": "2026-10-07T10:54:21.163Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "2. Öğrenme Alanı: Evimiz Dünya",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.2.1",
+      "outcomeCodeAsPrinted": "SB.5.2.1",
+      "outcomeText": "Yaşadığı ilin göreceli konum özelliklerini algılayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yaşadığı ilin göreceli konum özelliklerini belirler.",
+        "b) Yaşadığı ilin göreceli konum özelliklerini görselleştirir.",
+        "c) Yaşadığı ilin göreceli konum özelliklerini özetler."
+      ],
+      "learningArea": "Evimiz Dünya",
+      "skills": [
+        "SBAB7. Mekânsal Düşünme (SBAB7.1. Konum Algılama)",
+        "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama)",
+        "SBAB5. Sosyal Katılım (SBAB5.5. Fikri Eyleme Dönüştürme)"
+      ],
+      "conceptualSkills": [
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlılık",
+        "D18. Temizlik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/383",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 2. Öğrenme Alanı: Evimiz Dünya",
+      "sourceFetchedAt": "2026-10-07T10:54:22.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "2. Öğrenme Alanı: Evimiz Dünya",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.2.2",
+      "outcomeCodeAsPrinted": "SB.5.2.2",
+      "outcomeText": "Yaşadığı ilde doğal ve beşerî çevredeki değişimi neden ve sonuçlarıyla yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yaşadığı ilde doğal ve beşerî çevrenin değişimine neden olan unsurları inceler.",
+        "b) Yaşadığı ilde doğal ve beşerî çevrenin değişiminden etkilenen unsurları inceler.",
+        "c) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin etkilerini sorgular.",
+        "ç) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder."
+      ],
+      "learningArea": "Evimiz Dünya",
+      "skills": [
+        "SBAB7. Mekânsal Düşünme (SBAB7.1. Konum Algılama)",
+        "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama)",
+        "SBAB5. Sosyal Katılım (SBAB5.5. Fikri Eyleme Dönüştürme)"
+      ],
+      "conceptualSkills": [
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlılık",
+        "D18. Temizlik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/383",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 2. Öğrenme Alanı: Evimiz Dünya",
+      "sourceFetchedAt": "2026-10-07T10:54:22.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "2. Öğrenme Alanı: Evimiz Dünya",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.2.3",
+      "outcomeCodeAsPrinted": "SB.5.2.3",
+      "outcomeText": "Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği fikrini eyleme dönüştürebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği planı yapar.",
+        "b) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını uygular.",
+        "c) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını değerlendirir."
+      ],
+      "learningArea": "Evimiz Dünya",
+      "skills": [
+        "SBAB7. Mekânsal Düşünme (SBAB7.1. Konum Algılama)",
+        "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama)",
+        "SBAB5. Sosyal Katılım (SBAB5.5. Fikri Eyleme Dönüştürme)"
+      ],
+      "conceptualSkills": [
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlılık",
+        "D18. Temizlik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/383",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 2. Öğrenme Alanı: Evimiz Dünya",
+      "sourceFetchedAt": "2026-10-07T10:54:22.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "2. Öğrenme Alanı: Evimiz Dünya",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.2.4",
+      "outcomeCodeAsPrinted": "SB.5.2.4",
+      "outcomeText": "Ülkemize kara sınırı olan komşu devletler hakkında bilgi toplayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgilere ulaşmak amacıyla kullanacağı kaynakları belirler.",
+        "b) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgileri belirlediği kaynaklardan bulur.",
+        "c) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri doğrular.",
+        "ç) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri kaydeder."
+      ],
+      "learningArea": "Evimiz Dünya",
+      "skills": [
+        "SBAB7. Mekânsal Düşünme (SBAB7.1. Konum Algılama)",
+        "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama)",
+        "SBAB5. Sosyal Katılım (SBAB5.5. Fikri Eyleme Dönüştürme)"
+      ],
+      "conceptualSkills": [
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlılık",
+        "D18. Temizlik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/383",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 2. Öğrenme Alanı: Evimiz Dünya",
+      "sourceFetchedAt": "2026-10-07T10:54:22.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.3.1",
+      "outcomeCodeAsPrinted": "SB.5.3.1",
+      "outcomeText": "Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yaşadığı ildeki somut ve somut olmayan kültürel miras ögelerinden hareketle ortak mirasın önemi hakkında çıkarım yapar.",
+        "b) Yapılan çıkarımlardan hareketle ortak mirasın önemini açıklayan bir ürün oluşturur.",
+        "c) Ortak mirasın önemi hakkında çıkarımlarına dayalı olarak oluşturduğu ürünü paylaşır."
+      ],
+      "learningArea": "Ortak Mirasımız",
+      "skills": [
+        "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)",
+        "SBAB3. Tarihsel Empati"
+      ],
+      "conceptualSkills": [
+        "KB2.7. Karşılaştırma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.1. Empati",
+        "E2.2. Sorumluluk",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB3.1. Uyum",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D15. Sevgi",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/389",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 3. Öğrenme Alanı: Ortak Mirasımız",
+      "sourceFetchedAt": "2026-10-07T10:54:24.195Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.3.2",
+      "outcomeCodeAsPrinted": "SB.5.3.2",
+      "outcomeText": "Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına yönelik bakış açısı geliştirebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarını kaynaklardan edindiği bilgiler doğrultusunda yorumlar.",
+        "b) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin tarihsel bağlam oluşturur.",
+        "c) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin bakış açısını kaynaklar doğrultusunda yapılandırır."
+      ],
+      "learningArea": "Ortak Mirasımız",
+      "skills": [
+        "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)",
+        "SBAB3. Tarihsel Empati"
+      ],
+      "conceptualSkills": [
+        "KB2.7. Karşılaştırma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.1. Empati",
+        "E2.2. Sorumluluk",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB3.1. Uyum",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D15. Sevgi",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/389",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 3. Öğrenme Alanı: Ortak Mirasımız",
+      "sourceFetchedAt": "2026-10-07T10:54:24.195Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.3.3",
+      "outcomeCodeAsPrinted": "SB.5.3.3",
+      "outcomeText": "Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını karşılaştırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını belirler.",
+        "b) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının benzerliklerini listeler.",
+        "c) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının farklılıklarını listeler."
+      ],
+      "learningArea": "Ortak Mirasımız",
+      "skills": [
+        "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)",
+        "SBAB3. Tarihsel Empati"
+      ],
+      "conceptualSkills": [
+        "KB2.7. Karşılaştırma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.1. Empati",
+        "E2.2. Sorumluluk",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB3.1. Uyum",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D15. Sevgi",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/389",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 3. Öğrenme Alanı: Ortak Mirasımız",
+      "sourceFetchedAt": "2026-10-07T10:54:24.195Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.4.1",
+      "outcomeCodeAsPrinted": "SB.5.4.1",
+      "outcomeText": "Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi çözümleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Demokrasi ve cumhuriyet kavramlarının niteliklerini belirler.",
+        "b) Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi belirler."
+      ],
+      "learningArea": "Yaşayan Demokrasimiz",
+      "skills": [
+        "SBAB5. Sosyal Katılım (KB2.8. Sorgulama)"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB6. Vatandaşlık Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 23,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/394",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "sourceFetchedAt": "2026-10-07T10:54:25.669Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.4.2",
+      "outcomeCodeAsPrinted": "SB.5.4.2",
+      "outcomeText": "Toplum düzenine etkisi bakımından etkin vatandaş olmanın önemine yönelik çıkarımda bulunabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Etkin vatandaş olmanın önemine ilişkin varsayımda bulunur.",
+        "b) Etkin vatandaşın sahip olması gereken özellikleri listeler.",
+        "c) Etkin olan ve olmayan vatandaş özelliklerini karşılaştırır.",
+        "ç) Etkin vatandaş davranışlarının toplum düzenine etkisine yönelik önermelerde bulunur.",
+        "d) Etkin vatandaş olmanın önemini toplum düzeni açısından değerlendirir."
+      ],
+      "learningArea": "Yaşayan Demokrasimiz",
+      "skills": [
+        "SBAB5. Sosyal Katılım (KB2.8. Sorgulama)"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB6. Vatandaşlık Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 23,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/394",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "sourceFetchedAt": "2026-10-07T10:54:25.669Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.4.3",
+      "outcomeCodeAsPrinted": "SB.5.4.3",
+      "outcomeText": "Temel insan hak ve sorumluluklarının önemini sorgulayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Temel insan hak ve sorumluluklarının önemine yönelik merak ettiği konuları tanımlar.",
+        "b) Toplumsal hayatta insan hak ve sorumluluklarının önemine yönelik sorular sorar.",
+        "c) Temel insan hak ve sorumluluklarının önemine ilişkin bilgi toplar.",
+        "ç) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgilerin doğruluğunu değerlendirir.",
+        "d) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgiler doğrultusunda çıkarımlar yapar."
+      ],
+      "learningArea": "Yaşayan Demokrasimiz",
+      "skills": [
+        "SBAB5. Sosyal Katılım (KB2.8. Sorgulama)"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB6. Vatandaşlık Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 23,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/394",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "sourceFetchedAt": "2026-10-07T10:54:25.669Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.4.4",
+      "outcomeCodeAsPrinted": "SB.5.4.4",
+      "outcomeText": "Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabileceği kaynakları belirler.",
+        "b) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkındaki bilgileri bulur.",
+        "c) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri doğrular.",
+        "ç) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri kaydeder."
+      ],
+      "learningArea": "Yaşayan Demokrasimiz",
+      "skills": [
+        "SBAB5. Sosyal Katılım (KB2.8. Sorgulama)"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.6. Bilgi Toplama"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB6. Vatandaşlık Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 23,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/394",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "sourceFetchedAt": "2026-10-07T10:54:25.669Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.5.1",
+      "outcomeCodeAsPrinted": "SB.5.5.1",
+      "outcomeText": "Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini farklı kaynaklar üzerinden inceler.",
+        "b) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine ilişkin bilgileri bağlamdan kopmadan dönüştürür.",
+        "c) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder."
+      ],
+      "learningArea": "Hayatımızdaki Ekonomi",
+      "skills": [
+        "SBAB6. Girişimcilik (SBAB6.2. Kaynakları Yönetme)"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.3. Özetleme"
+      ],
+      "dispositions": [
+        "E2.2. Sorumluluk",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D17. Tasarruf",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Bilişim Teknolojileri ve Yazılım",
+        "Türkçe",
+        "Matematik"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/402",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "sourceFetchedAt": "2026-10-07T10:54:27.207Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": [
+        "Sayfada kod ile metin arasında boşluk yok: \"SB.5.5.1.Kaynakları \""
+      ]
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.5.2",
+      "outcomeCodeAsPrinted": "SB.5.5.2",
+      "outcomeText": "İhtiyaç ve isteklerini karşılamak için gerekli bütçe kaynaklarını yönetebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları belirler.",
+        "b) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları temin etme ve etkin kullanmaya ilişkin bir taslak oluşturur."
+      ],
+      "learningArea": "Hayatımızdaki Ekonomi",
+      "skills": [
+        "SBAB6. Girişimcilik (SBAB6.2. Kaynakları Yönetme)"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.3. Özetleme"
+      ],
+      "dispositions": [
+        "E2.2. Sorumluluk",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D17. Tasarruf",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Bilişim Teknolojileri ve Yazılım",
+        "Türkçe",
+        "Matematik"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/402",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "sourceFetchedAt": "2026-10-07T10:54:27.207Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.5.3",
+      "outcomeCodeAsPrinted": "SB.5.5.3",
+      "outcomeText": "Yaşadığı ildeki ekonomik faaliyetleri özetleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yaşadığı ildeki ekonomik faaliyetleri çözümler.",
+        "b) Yaşadığı ildeki ekonomik faaliyetleri alanlarına göre sınıflandırır.",
+        "c) Yaşadığı ildeki ekonomik faaliyetleri yorumlar."
+      ],
+      "learningArea": "Hayatımızdaki Ekonomi",
+      "skills": [
+        "SBAB6. Girişimcilik (SBAB6.2. Kaynakları Yönetme)"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.3. Özetleme"
+      ],
+      "dispositions": [
+        "E2.2. Sorumluluk",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D17. Tasarruf",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Bilişim Teknolojileri ve Yazılım",
+        "Türkçe",
+        "Matematik"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/402",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "sourceFetchedAt": "2026-10-07T10:54:27.207Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.6.1",
+      "outcomeCodeAsPrinted": "SB.5.6.1",
+      "outcomeText": "Teknolojik gelişmelerin toplum hayatına etkilerini tartışabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Teknolojik gelişmelerin toplum hayatına etkileri hakkında mantıksal temellendirmeler yapar.",
+        "b) Teknolojik gelişmelerin toplum hayatına etkileri üzerindeki tartışmalarda tutarsızlıkları tespit eder.",
+        "c) Teknolojik gelişmelerin toplum hayatına etkilerine yönelik görüşleri çürütür veya kabul eder."
+      ],
+      "learningArea": "Teknoloji Ve Sosyal Bilimler",
+      "skills": [
+        "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)"
+      ],
+      "conceptualSkills": [
+        "KB2.18. Tartışma"
+      ],
+      "dispositions": [
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB3.3 Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D8. Mahremiyet",
+        "D11. Özgürlük",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Fen Bilimleri"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 6,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/405",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "sourceFetchedAt": "2026-10-07T10:54:28.654Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": [
+        "Sayfada kod ile metin arasında boşluk yok: \"SB.5.6.1.Teknolojik \""
+      ]
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "grade": 5,
+      "unitOrTheme": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "SB.5.6.2",
+      "outcomeCodeAsPrinted": "SB.5.6.2",
+      "outcomeText": "Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturduğu ürünü paylaşabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kanıtlara dayalı çıkarımda bulunur.",
+        "b) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kendi çıkarımlarına dayalı ürün oluşturur.",
+        "c) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturulan ürünleri paylaşır."
+      ],
+      "learningArea": "Teknoloji Ve Sosyal Bilimler",
+      "skills": [
+        "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)"
+      ],
+      "conceptualSkills": [
+        "KB2.18. Tartışma"
+      ],
+      "dispositions": [
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB3.3 Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D8. Mahremiyet",
+        "D11. Özgürlük",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Bilişim Teknolojileri ve Yazılım",
+        "Fen Bilimleri"
+      ],
+      "interSkillRelations": [],
+      "lessonHours": 6,
+      "sourceUrl": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/405",
+      "sourceTitle": "Sosyal Bilgiler Dersi 5.Sınıf – 6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "sourceFetchedAt": "2026-10-07T10:54:28.654Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    }
+  ]
+}

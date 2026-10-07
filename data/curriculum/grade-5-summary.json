@@ -1,0 +1,67 @@
+{
+  "grade": 5,
+  "generatedAt": "2026-10-07T11:32:36.936Z",
+  "subjectCount": 5,
+  "missingSubjects": [],
+  "subjects": {
+    "İngilizce": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/6",
+      "unitsOrThemes": 8,
+      "emptySourcePages": 0,
+      "outcomes": 184,
+      "uniqueOutcomeCodes": 184,
+      "verified": 160,
+      "reviewRequired": 24
+    },
+    "Fen Bilimleri": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/6",
+      "unitsOrThemes": 7,
+      "emptySourcePages": 0,
+      "outcomes": 27,
+      "uniqueOutcomeCodes": 27,
+      "verified": 27,
+      "reviewRequired": 0
+    },
+    "Matematik": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6",
+      "unitsOrThemes": 7,
+      "emptySourcePages": 0,
+      "outcomes": 23,
+      "uniqueOutcomeCodes": 23,
+      "verified": 23,
+      "reviewRequired": 0
+    },
+    "Türkçe": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/6",
+      "unitsOrThemes": 6,
+      "emptySourcePages": 0,
+      "outcomes": 161,
+      "uniqueOutcomeCodes": 80,
+      "verified": 137,
+      "reviewRequired": 24
+    },
+    "Sosyal Bilgiler": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6",
+      "unitsOrThemes": 6,
+      "emptySourcePages": 0,
+      "outcomes": 19,
+      "uniqueOutcomeCodes": 19,
+      "verified": 19,
+      "reviewRequired": 0
+    }
+  },
+  "totalUnitsOrThemes": 34,
+  "totalOutcomes": 414,
+  "verified": 366,
+  "totalUniqueOutcomeCodes": 333,
+  "duplicates": 30,
+  "duplicateExtraRecords": 81,
+  "duplicatesWithDifferentText": 6,
+  "reviewRequired": 48,
+  "errors": 0
+}

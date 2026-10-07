@@ -1,0 +1,79 @@
+{
+  "grade": 7,
+  "generatedAt": "2026-10-07T11:32:37.326Z",
+  "subjectCount": 5,
+  "missingSubjects": [
+    "Din Kültürü ve Ahlak Bilgisi"
+  ],
+  "subjects": {
+    "Türkçe": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8",
+      "unitsOrThemes": 6,
+      "emptySourcePages": 0,
+      "outcomes": 151,
+      "uniqueOutcomeCodes": 102,
+      "verified": 145,
+      "reviewRequired": 6
+    },
+    "Matematik": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8",
+      "unitsOrThemes": 9,
+      "emptySourcePages": 0,
+      "outcomes": 30,
+      "uniqueOutcomeCodes": 30,
+      "verified": 30,
+      "reviewRequired": 0
+    },
+    "Fen Bilimleri": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8",
+      "unitsOrThemes": 7,
+      "emptySourcePages": 0,
+      "outcomes": 35,
+      "uniqueOutcomeCodes": 35,
+      "verified": 35,
+      "reviewRequired": 0
+    },
+    "İngilizce": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/8",
+      "unitsOrThemes": 8,
+      "emptySourcePages": 1,
+      "outcomes": 191,
+      "uniqueOutcomeCodes": 191,
+      "verified": 191,
+      "reviewRequired": 0
+    },
+    "Sosyal Bilgiler": {
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8",
+      "unitsOrThemes": 6,
+      "emptySourcePages": 0,
+      "outcomes": 17,
+      "uniqueOutcomeCodes": 17,
+      "verified": 17,
+      "reviewRequired": 0
+    },
+    "Din Kültürü ve Ahlak Bilgisi": {
+      "sourceStatus": "NOT_FOUND_ON_SOURCE",
+      "programUrl": null,
+      "unitsOrThemes": 0,
+      "emptySourcePages": 0,
+      "outcomes": 0,
+      "uniqueOutcomeCodes": 0,
+      "verified": 0,
+      "reviewRequired": 0
+    }
+  },
+  "totalUnitsOrThemes": 36,
+  "totalOutcomes": 424,
+  "verified": 418,
+  "totalUniqueOutcomeCodes": 375,
+  "duplicates": 12,
+  "duplicateExtraRecords": 49,
+  "duplicatesWithDifferentText": 1,
+  "reviewRequired": 6,
+  "errors": 0
+}

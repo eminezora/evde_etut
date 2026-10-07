@@ -1,0 +1,2576 @@
+{
+  "subject": "Fen Bilimleri",
+  "grade": 6,
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/7",
+  "sourceStatus": "FOUND",
+  "outcomes": [
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.1.1",
+      "outcomeCodeAsPrinted": "FB.6.1.1",
+      "outcomeText": "Güneş sistemindeki gezegenleri niteliklerine göre sınıflandırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Güneş sistemindeki gezegenlerin niteliklerini belirler.",
+        "b) Güneş sistemindeki gezegenleri niteliklerine göre ayrıştırır.",
+        "c) Güneş sistemindeki gezegenleri niteliklerine göre gruplandırır.",
+        "ç) Güneş sistemindeki gezegenleri niteliklerine göre etiketler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB2. Sınıflandırma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 12,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "sourceFetchedAt": "2026-10-07T11:12:26.983Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.1.2",
+      "outcomeCodeAsPrinted": "FB.6.1.2",
+      "outcomeText": "Güneş sistemi ile ilgili bilimsel model oluşturabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Güneş sistemi ile ilgili model önerir.",
+        "b) Güneş sistemi ile ilgili hazırladığı modelini yeni kanıtlarla yeniler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB2. Sınıflandırma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 12,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "sourceFetchedAt": "2026-10-07T11:12:26.983Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.1.3",
+      "outcomeCodeAsPrinted": "FB.6.1.3",
+      "outcomeText": "Güneş ve Ay tutulması ile ilgili bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Güneş ve Ay tutulmasının niteliklerini tanımlar.",
+        "b) Güneş ve Ay tutulması ile ilgili veri toplar ve kaydeder.",
+        "c) Güneş ve Ay tutulmasını değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB2. Sınıflandırma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 12,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "sourceFetchedAt": "2026-10-07T11:12:26.983Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.1.4",
+      "outcomeCodeAsPrinted": "FB.6.1.4",
+      "outcomeText": "Güneş ve Ay tutulması ile ilgili bilimsel model oluşturabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Güneş ve Ay tutulması ile ilgili model önerir.",
+        "b) Güneş ve Ay tutulması ile ilgili modelini yeni kanıtlarla yeniler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB2. Sınıflandırma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar",
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 12,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "sourceFetchedAt": "2026-10-07T11:12:26.983Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "2. Ünite: Kuvvetin Etkisinde Hareket",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.2.1",
+      "outcomeCodeAsPrinted": "FB.6.2.1",
+      "outcomeText": "Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri açıklayarak bileşke kuvveti yapılandırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Bir cisme etki eden aynı doğrultudaki kuvvetleri inceleyerek aralarındaki mantıksal ilişkileri ortaya koyar.",
+        "b) Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri yapılandırarak bileşke kuvveti açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB7. Deney Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.7. Karşılaştırma",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.2. Bağımsızlık",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D16. Sorumluluk",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 14,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 2. Ünite: Kuvvetin Etkisinde Hareket",
+      "sourceFetchedAt": "2026-10-07T11:12:28.474Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "2. Ünite: Kuvvetin Etkisinde Hareket",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.2.2",
+      "outcomeCodeAsPrinted": "FB.6.2.2",
+      "outcomeText": "Dengelenmiş ve dengelenmemiş kuvvetlerin etkisi altındaki bir cismin hareketine yönelik deney yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Dengelenmiş ve dengelenmemiş kuvvetlerin bir cismin hareketine etkisini gösteren deney düzeneği tasarlar.",
+        "b) Deney ile ilgili ölçme ve veri analizi yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB7. Deney Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.7. Karşılaştırma",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.2. Bağımsızlık",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D16. Sorumluluk",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 14,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 2. Ünite: Kuvvetin Etkisinde Hareket",
+      "sourceFetchedAt": "2026-10-07T11:12:28.474Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "2. Ünite: Kuvvetin Etkisinde Hareket",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.2.3",
+      "outcomeCodeAsPrinted": "FB.6.2.3",
+      "outcomeText": "Sürat ve hız kavramlarını karşılaştırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Sürat ve hız kavramlarına ilişkin özellikleri belirler.",
+        "b) Sürat ve hız kavramlarına ilişkin benzerlikleri listeler.",
+        "c) Sürat ve hız kavramlarına ilişkin farklılıkları listeler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB7. Deney Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.7. Karşılaştırma",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.2. Bağımsızlık",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D16. Sorumluluk",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 14,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 2. Ünite: Kuvvetin Etkisinde Hareket",
+      "sourceFetchedAt": "2026-10-07T11:12:28.474Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.1",
+      "outcomeCodeAsPrinted": "FB.6.3.1",
+      "outcomeText": "Eşeyli ve eşeysiz üremeyi karşılaştırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Eşeyli ve eşeysiz üreme ile ilgili özellikleri belirler.",
+        "b) Eşeyli ve eşeysiz üreme ile benzerlikleri listeler.",
+        "c) Eşeyli ve eşeysiz üreme ile ilgili farklılıkları listeler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.2",
+      "outcomeCodeAsPrinted": "FB.6.3.2",
+      "outcomeText": "Bitkilerde üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.",
+        "b) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.",
+        "c) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.3",
+      "outcomeCodeAsPrinted": "FB.6.3.3",
+      "outcomeText": "Tohumun çimlenmesine etki eden faktörlere ilişkin hipotez oluşturabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Tohumun çimlenmesine etki eden faktörleri tanımlar.",
+        "b) Tohumun çimlenmesine etki eden faktörlerin neden sonuç ilişkilerini belirler.",
+        "c) Tohumun çimlenmesine etki eden faktörlere ait değişkenleri belirler.",
+        "ç) Tohumun çimlenmesine etki eden faktörlere ait belirlediği değişkenleri kontrol eder.",
+        "d) Tohumun çimlenmesine etki eden faktörlere ait önerme sunar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.4",
+      "outcomeCodeAsPrinted": "FB.6.3.4",
+      "outcomeText": "Hayvanlarda üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.",
+        "b) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.",
+        "c) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.5",
+      "outcomeCodeAsPrinted": "FB.6.3.5",
+      "outcomeText": "İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri çözümleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) İnsanda üremeyi sağlayan yapı ve organları poster/şema üzerinde belirler.",
+        "b) İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri belirler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.6",
+      "outcomeCodeAsPrinted": "FB.6.3.6",
+      "outcomeText": "Sinir sisteminin görevlerini model üzerinde bilimsel olarak gözlemleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Sinir sisteminin özelliklerini tanımlar.",
+        "b) Sinir sistemini model üzerinde inceler.",
+        "c) Sinir sisteminin görevlerini açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.7",
+      "outcomeCodeAsPrinted": "FB.6.3.7",
+      "outcomeText": "İç salgı bezlerinin vücut için önemini yapılandırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) İç salgı bezlerini inceleyerek mantıksal ilişkiler ortaya koyar.",
+        "b) İç salgı bezlerinin vücut için önemini uyumlu bir bütün olarak açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.8",
+      "outcomeCodeAsPrinted": "FB.6.3.8",
+      "outcomeText": "Çocukluktan ergenliğe geçişte oluşan bedensel ve ruhsal değişimleri genelleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Çocukluktan ergenliğe geçişte oluşan değişimler hakkında bilgi toplar.",
+        "b) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olanları belirler.",
+        "c) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olmayanları belirler.",
+        "ç) Çocukluktan ergenliğe geçişte oluşan değişimlerle ilgili örüntüler üzerinden genellemede bulunur."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "3. Ünite: Canlılarda Sistemler",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.3.9",
+      "outcomeCodeAsPrinted": "FB.6.3.9",
+      "outcomeText": "Denetleyici ve düzenleyici sistemlerin sağlığı için yapılması gerekenlerle ilgili bilgi toplayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Denetleyici ve düzenleyici sistemlerin sağlığı ile ilgili bilgiye ulaşmak için kullanacağı araçları belirler.",
+        "b) Denetleyici ve düzenleyici sağlığı hakkında bilgiler bulur.",
+        "c) Denetleyici ve düzenleyici sağlığı konusunda bulduğu bilgileri doğrular.",
+        "ç) Denetleyici ve düzenleyici sağlığı konusunda ulaştığı bilgileri kaydeder."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB6. Hipotez Oluşturma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [
+        "KB2.4. Çözümleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma",
+        "KB2.9. Genelleme",
+        "KB2.13. Yapılandırma"
+      ],
+      "dispositions": [
+        "E2.5. Oyunseverlik",
+        "E3.2. Odaklanma",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D2. Aile Bütünlüğü",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D8. Mahremiyet",
+        "D9. Merhamet",
+        "D13. Sağlıklı Yaşam",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D18. Temizlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Görsel Sanatlar",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "interSkillRelations": [
+        "KB2.18. Tartışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 3. Ünite: Canlılarda Sistemler",
+      "sourceFetchedAt": "2026-10-07T11:12:29.989Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.1",
+      "outcomeCodeAsPrinted": "FB.6.4.1",
+      "outcomeText": "Işığın farklı yüzeylerdeki yansıma olaylarına ilişkin bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Işığın farklı yüzeylerdeki yansıma olaylarının niteliklerini tanımlar.",
+        "b) şığın farklı yüzeylerdeki yansıma olayları ile ilgili veri toplar ve kaydeder.",
+        "c) Işığın farklı yüzeylerdeki yansımasını düzgün ve dağınık yansıma olarak yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.2",
+      "outcomeCodeAsPrinted": "FB.6.4.2",
+      "outcomeText": "Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişki ile ilgili kanıt kullanabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Işığın yansımasına ilişkin deneysel verileri kaydeder.",
+        "b) Işığın yansımasına ilişkin veri setleri oluşturur.",
+        "c) Işığın yansımasına dair topladığı verilere dayalı açıklama yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.3",
+      "outcomeCodeAsPrinted": "FB.6.4.3",
+      "outcomeText": "Günlük hayattaki ayna çeşitlerine ilişkin bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Ayna çeşitlerinin niteliklerini deneyerek tanımlar.",
+        "b) Ayna çeşitlerini kullanarak özelliklerine yönelik veri toplar ve kaydeder.",
+        "c) Günlük yaşamdaki aynaları düz, çukur ve tümsek ayna olarak özelliklerine göre yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.4",
+      "outcomeCodeAsPrinted": "FB.6.4.4",
+      "outcomeText": "Işığın madde ile etkileşimi sonucunda soğurulabileceğini bilimsel olarak gözlemleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Işığın madde ile etkileşimine yönelik nitelikleri tanımlar.",
+        "b) Işığın madde ile etkileşimine yönelik topladığı verileri kaydeder.",
+        "c) Işığın madde tarafından soğurulabileceğini elde ettiği veriler doğrultusunda açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.5",
+      "outcomeCodeAsPrinted": "FB.6.4.5",
+      "outcomeText": "Beyaz ışığın tüm ışık renklerinin bileşiminden oluştuğuna ilişkin bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Beyaz ışığı oluşturan nitelikleri tanımlar.",
+        "b) Beyaz ışığın oluşumuna ilişkin topladığı verileri kaydeder.",
+        "c) Beyaz ışığın oluşumuna dair verileri yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.6",
+      "outcomeCodeAsPrinted": "FB.6.4.6",
+      "outcomeText": "Cisimlerin siyah, beyaz ve renkli görünmesinin nedenini gözlem verileriyle açıklayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik nitelikleri tanımlar.",
+        "b) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik veri toplar ve kaydeder.",
+        "c) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik verileri açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.4.7",
+      "outcomeCodeAsPrinted": "FB.6.4.7",
+      "outcomeText": "Güneş enerjisinin günlük hayat ve teknolojideki yenilikçi uygulamalarına ilişkin eleştirel düşünebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin fikirleri sorgular.",
+        "b) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin akıl yürütür.",
+        "c) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin ulaştığı çıkarımları yansıtır."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB1. Bilimsel Gözlem",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB12. Kanıt Kullanma"
+      ],
+      "conceptualSkills": [
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "dispositions": [
+        "E1.1 Merak",
+        "E1.2. Bağımsızlık",
+        "E2.2 Sorumluluk"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D5. Duyarlıklık",
+        "D10. Mütevazılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı",
+        "OB9. Sanat Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.2. Gözlemleme",
+        "KB2.6. Bilgi Toplama",
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.18. Tartışma"
+      ],
+      "lessonHours": 22,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 4. Ünite: Işığın Yansıması Ve Renkler",
+      "sourceFetchedAt": "2026-10-07T11:12:31.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.5.1",
+      "outcomeCodeAsPrinted": "FB.6.5.1",
+      "outcomeText": "Isı etkisiyle maddelerin genleşip büzüleceğine yönelik bilimsel gözleme dayalı tahmin edebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Ön bilgi ve deneyimiyle maddelerin genleşip büzüleceğine yönelik önerme oluşturur.",
+        "b) Gözleme dayalı olan ve olmayan günlük yaşam ile ilişkili önermeleri karşılaştırır.",
+        "c) Tahminlerini temellendirmek için gözlem verilerinden sonuç çıkarır.",
+        "ç) Günlük yaşam ile ilişkili gözlemlenmemiş duruma ilişkin tahminde bulunur.",
+        "d) Tahminlerin geçerliğini sorgular."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB3. Bilimsel Gözleme Dayalı Tahmin",
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma",
+        "FBAB11. Tümdengelimsel Akıl Yürütme"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.3. Azim ve Kararlılık",
+        "E1.4. Kendine İnanma (Öz Yeterlilik)",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D4. Dostluk",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D18. Temizlik",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.4. Çözümleme",
+        "KB2.13. Yapılandırma",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme)",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)"
+      ],
+      "lessonHours": 32,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "sourceFetchedAt": "2026-10-07T11:12:32.994Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.5.2",
+      "outcomeCodeAsPrinted": "FB.6.5.2",
+      "outcomeText": "Maddelerin erime, donma ve kaynama noktasını gösteren deney yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Maddelerin erime, donma ve kaynama noktasını gösteren deney tasarlar.",
+        "b) Deney ile ilgili ölçme ve veri analizi yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB3. Bilimsel Gözleme Dayalı Tahmin",
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma",
+        "FBAB11. Tümdengelimsel Akıl Yürütme"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.3. Azim ve Kararlılık",
+        "E1.4. Kendine İnanma (Öz Yeterlilik)",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D4. Dostluk",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D18. Temizlik",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.4. Çözümleme",
+        "KB2.13. Yapılandırma",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme)",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)"
+      ],
+      "lessonHours": 32,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "sourceFetchedAt": "2026-10-07T11:12:32.994Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.5.3",
+      "outcomeCodeAsPrinted": "FB.6.5.3",
+      "outcomeText": "Yoğunluğa ilişkin hesaplamalar yaparak bilimsel veriye dayalı tahmin edebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yoğunluğa ilişkin verilere veya ön bilgilerine dayalı önerme oluşturur.",
+        "b) Yoğunluğa ilişkin veriye dayalı ve dayalı olmayan önermeleri karşılaştırır.",
+        "c) Yoğunluğa ilişkin hesaplama ve tahmin yapar.",
+        "ç) Tahminlerin geçerliğini sorgular."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB3. Bilimsel Gözleme Dayalı Tahmin",
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma",
+        "FBAB11. Tümdengelimsel Akıl Yürütme"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.3. Azim ve Kararlılık",
+        "E1.4. Kendine İnanma (Öz Yeterlilik)",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D4. Dostluk",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D18. Temizlik",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.4. Çözümleme",
+        "KB2.13. Yapılandırma",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme)",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)"
+      ],
+      "lessonHours": 32,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "sourceFetchedAt": "2026-10-07T11:12:32.994Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.5.4",
+      "outcomeCodeAsPrinted": "FB.6.5.4",
+      "outcomeText": "Deneyler sonucunda çeşitli maddelerin yoğunluklarına ilişkin tümdengelimsel akıl yürütebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Çeşitli maddelerin yoğunluklarına ilişkin hipotezler kurarak test eder.",
+        "b) Geçerli hipotezleri yeni durumları açıklamak için kullanır."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB3. Bilimsel Gözleme Dayalı Tahmin",
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma",
+        "FBAB11. Tümdengelimsel Akıl Yürütme"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.3. Azim ve Kararlılık",
+        "E1.4. Kendine İnanma (Öz Yeterlilik)",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D4. Dostluk",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D18. Temizlik",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.4. Çözümleme",
+        "KB2.13. Yapılandırma",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme)",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)"
+      ],
+      "lessonHours": 32,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "sourceFetchedAt": "2026-10-07T11:12:32.994Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.5.5",
+      "outcomeCodeAsPrinted": "FB.6.5.5",
+      "outcomeText": "Suyun katı ve sıvı hâllerine ait yoğunlukları karşılaştırarak bu durumun canlılar için önemi hakkında bilimsel çıkarımlar yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Suyun katı ve sıvı hâlleri ile ilgili nitelikleri tanımlar.",
+        "b) Suyun katı ve sıvı hâllerine ait yoğunlukları ile ilgili veri toplar ve kaydeder.",
+        "c) Suyun katı ve sıvı hâllerine ait yoğunluk farkının canlılar için önemli olduğunu yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB3. Bilimsel Gözleme Dayalı Tahmin",
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma",
+        "FBAB11. Tümdengelimsel Akıl Yürütme"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.3. Azim ve Kararlılık",
+        "E1.4. Kendine İnanma (Öz Yeterlilik)",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D4. Dostluk",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D18. Temizlik",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.4. Çözümleme",
+        "KB2.13. Yapılandırma",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme)",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)"
+      ],
+      "lessonHours": 32,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "sourceFetchedAt": "2026-10-07T11:12:32.994Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.5.6",
+      "outcomeCodeAsPrinted": "FB.6.5.6",
+      "outcomeText": "Yoğunluk ile ilgili bilimsel model oluşturabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yoğunluk ile ilgili model önerir.",
+        "b) Yeni kanıtlarla modeli yeniler."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB3. Bilimsel Gözleme Dayalı Tahmin",
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma",
+        "FBAB9. Bilimsel Model Oluşturma",
+        "FBAB11. Tümdengelimsel Akıl Yürütme"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.3. Azim ve Kararlılık",
+        "E1.4. Kendine İnanma (Öz Yeterlilik)",
+        "E2.2. Sorumluluk",
+        "E2.3. Girişkenlik",
+        "E2.5. Oyunseverlik",
+        "E3.3. Yaratıcılık",
+        "E3.4. Gerçeği Arama",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D4. Dostluk",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D18. Temizlik",
+        "D19. Vatanseverlik",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Matematik"
+      ],
+      "interSkillRelations": [
+        "KB2.4. Çözümleme",
+        "KB2.13. Yapılandırma",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme)",
+        "KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)"
+      ],
+      "lessonHours": 32,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "sourceFetchedAt": "2026-10-07T11:12:32.994Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "6. Ünite: Elektriğin İletimi Ve Direnç",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.6.1",
+      "outcomeCodeAsPrinted": "FB.6.6.1",
+      "outcomeText": "Maddelerin elektriği iletme durumlarını gösteren deney yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Maddelerin iletme durumlarını test etmek için elektrik devresi tasarlar.",
+        "b) Deney ile ilgili ölçme ve veri analizi yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.2. Sorumluluk",
+        "E3.1. Muhakeme",
+        "E3.2. Odaklanma",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D6. Dürüstlük",
+        "D10. Mütevazılık",
+        "D16. Sorumluluk",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 6. Ünite: Elektriğin İletimi Ve Direnç",
+      "sourceFetchedAt": "2026-10-07T11:12:34.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "6. Ünite: Elektriğin İletimi Ve Direnç",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.6.2",
+      "outcomeCodeAsPrinted": "FB.6.6.2",
+      "outcomeText": "Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirlemeye yönelik deney yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirleyebilecek bir deney tasarlar.",
+        "b) Deney ile ilgili ölçme ve veri analizi yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.2. Sorumluluk",
+        "E3.1. Muhakeme",
+        "E3.2. Odaklanma",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D6. Dürüstlük",
+        "D10. Mütevazılık",
+        "D16. Sorumluluk",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 6. Ünite: Elektriğin İletimi Ve Direnç",
+      "sourceFetchedAt": "2026-10-07T11:12:34.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "6. Ünite: Elektriğin İletimi Ve Direnç",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.6.3",
+      "outcomeCodeAsPrinted": "FB.6.6.3",
+      "outcomeText": "Ayarlanabilir direncin ampulün parlaklığına etkilerine yönelik bilimsel çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Reosta kullanarak elektriksel dirence ait nitelikleri tanımlar.",
+        "b) Direncin değişkenliğini dikkate alarak toplar ve kaydeder.",
+        "c) Ampulün parlaklığı üzerinde elektriksel direncin etkili olduğunu yorumlar ve değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB7. Deney Yapma",
+        "FBAB8. Bilimsel Çıkarım Yapma"
+      ],
+      "conceptualSkills": [],
+      "dispositions": [
+        "E2.2. Sorumluluk",
+        "E3.1. Muhakeme",
+        "E3.2. Odaklanma",
+        "E3.4. Gerçeği Arama",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D6. Dürüstlük",
+        "D10. Mütevazılık",
+        "D16. Sorumluluk",
+        "D20. Yardımseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe"
+      ],
+      "interSkillRelations": [
+        "KB2.6. Bilgi Toplama",
+        "KB2.7. Karşılaştırma"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 6. Ünite: Elektriğin İletimi Ve Direnç",
+      "sourceFetchedAt": "2026-10-07T11:12:34.495Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "unitOrThemeCode": "7",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.7.1",
+      "outcomeCodeAsPrinted": "FB.6.7.1",
+      "outcomeText": "Biyoçeşitliliğin doğal yaşam için önemini sorgulayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Biyoçeşitliliğin doğal yaşam için önemini tanımlar.",
+        "b) Biyoçeşitliliğin doğal yaşam için önemine ilişkin sorular sorar.",
+        "c) Biyoçeşitliliğin doğal yaşam için önemi konusunda bilgi toplar.",
+        "ç) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgilerin doğruluğunu değerlendirir.",
+        "d) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgiler üzerinde çıkarım yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin"
+      ],
+      "conceptualSkills": [
+        "KB2.8. Sorgulama",
+        "KB2.18. Tartışma",
+        "KB3.2. Problem Çözme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.6. Seçicilik",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D9. Merhamet",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Okul Temelli Sosyal Sorumluluk Çalışmaları"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB3.1. Karar Verme",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/415",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "sourceFetchedAt": "2026-10-07T11:12:35.998Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "unitOrThemeCode": "7",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.7.2",
+      "outcomeCodeAsPrinted": "FB.6.7.2",
+      "outcomeText": "Biyoçeşitliliği tehdit eden faktörleri araştırma verilerine dayalı tahmin edebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Biyoçeşitliliği tehdit eden faktörler konusunda ön bilgilere dayalı önerme oluşturur.",
+        "b) Biyoçeşitliliği tehdit eden faktörler konusunda veriye dayalı olan ve dayalı olmayan önermeleri karşılaştırır.",
+        "c) Biyoçeşitliliği tehdit eden faktörler konusunda tahminde bulunur.",
+        "ç) Biyoçeşitliliği tehdit eden faktörler konusunda tahminlerin geçerliğini sorgular."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin"
+      ],
+      "conceptualSkills": [
+        "KB2.8. Sorgulama",
+        "KB2.18. Tartışma",
+        "KB3.2. Problem Çözme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.6. Seçicilik",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D9. Merhamet",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Okul Temelli Sosyal Sorumluluk Çalışmaları"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB3.1. Karar Verme",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/415",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "sourceFetchedAt": "2026-10-07T11:12:35.998Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "unitOrThemeCode": "7",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.7.3",
+      "outcomeCodeAsPrinted": "FB.6.7.3",
+      "outcomeText": "Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkilerini tartışabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal temellendirme yapar.",
+        "b) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal çelişkileri tespit eder.",
+        "c) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisi konusunda geçerli fikirleri kabul eder."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin"
+      ],
+      "conceptualSkills": [
+        "KB2.8. Sorgulama",
+        "KB2.18. Tartışma",
+        "KB3.2. Problem Çözme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.6. Seçicilik",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D9. Merhamet",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Okul Temelli Sosyal Sorumluluk Çalışmaları"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB3.1. Karar Verme",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/415",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "sourceFetchedAt": "2026-10-07T11:12:35.998Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "grade": 6,
+      "unitOrTheme": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "unitOrThemeCode": "7",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "FB.6.7.4",
+      "outcomeCodeAsPrinted": "FB.6.7.4",
+      "outcomeText": "Yakın çevresindeki veya ülkemizdeki bir çevre problemini çözebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu yapılandırır.",
+        "b) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu özetler.",
+        "c) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne yönelik veriye dayalı tahmin eder.",
+        "ç) Yakın çevresindeki veya ülkemizdeki bir çevre sorununa yönelik önermeler üzerinden akıl yürütür.",
+        "d) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne ilişkin değerlendirme yapar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "FBAB4. Bilimsel Veriye Dayalı Tahmin"
+      ],
+      "conceptualSkills": [
+        "KB2.8. Sorgulama",
+        "KB2.18. Tartışma",
+        "KB3.2. Problem Çözme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E1.6. Seçicilik",
+        "E2.2. Sorumluluk",
+        "E2.5. Oyunseverlik",
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.8. Soru Sorma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D3. Çalışkanlık",
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D9. Merhamet",
+        "D12. Sabır",
+        "D14. Saygı",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB5. Kültür Okuryazarlığı",
+        "OB6. Vatandaşlık Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Türkçe",
+        "Okul Temelli Sosyal Sorumluluk Çalışmaları"
+      ],
+      "interSkillRelations": [
+        "KB2.7. Karşılaştırma",
+        "KB3.1. Karar Verme",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 18,
+      "sourceUrl": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/415",
+      "sourceTitle": "Fen Bilimleri Dersi 6.Sınıf – 7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "sourceFetchedAt": "2026-10-07T11:12:35.998Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    }
+  ]
+}

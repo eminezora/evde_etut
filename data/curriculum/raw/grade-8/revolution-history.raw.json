@@ -1,0 +1,721 @@
+{
+  "subject": "T.C. İnkılap Tarihi ve Atatürkçülük",
+  "courseName": "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 9,
+    "name": "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/tc-inkilap-tarihi-ve-ataturkculuk-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim",
+    "heading": "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+    "gradeCards": [
+      {
+        "label": "8.Sınıf",
+        "grade": 8,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/tc-inkilap-tarihi-ve-ataturkculuk-dersi/9"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/tc-inkilap-tarihi-ve-ataturkculuk-dersi/9",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/tc-inkilap-tarihi-ve-ataturkculuk-dersi/9",
+    "heading": "T.C. İnkılap Tarihi ve Atatürkçülük Dersi 8.Sınıf",
+    "headingGrade": 8,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T11:17:39.867Z",
+    "links": [
+      {
+        "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/372",
+        "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/372",
+        "title": "1. Ünite: Mustafa Kemal’in Hayatı"
+      },
+      {
+        "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/377",
+        "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/377",
+        "title": "2. Ünite: Birinci Dünya Savaşı"
+      },
+      {
+        "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/384",
+        "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/384",
+        "title": "3. Ünite: Millî Mücadele"
+      },
+      {
+        "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/386",
+        "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/386",
+        "title": "4. Ünite: Türkiye Cumhuriyeti’nin Kuruluşu Ve İnkılaplar"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/372",
+      "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/372",
+      "title": "1. Ünite: Mustafa Kemal’in Hayatı",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:41.383Z",
+      "cacheFile": "html/tc-inkilap-tarihi-ve-ataturkculuk-dersi_unite_372.html",
+      "meta": [
+        "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "1. Ünite: Mustafa Kemal’in Hayatı",
+      "subtitle": null,
+      "intro": "Bu ünitede öğrencilerin XIX. yüzyıl sonu ve XX. yüzyıl başında Osmanlı Devleti’nin içinde bulunduğu duruma etki eden siyasi, sosyal ve ekonomik gelişmeleri inceleyerek Millî Mücadele’ye kadar uzanan sürecin temelleri hakkında bilgi edinmeleri hedeflenmiştir. Mustafa Kemal Atatürk’ün hayatının dönüm noktalarına, kişiliğini etkileyen olaylara ve kişilik özelliklerine yer verilerek bir çocuk, öğrenci, asker, lider ve insan olarak bütüncül bir şekilde onu tanıtmak, onun örnek şahsiyetini öğrencilerin kavramalarını sağlamak bu ünitenin temel amacıdır.",
+      "fields": {
+        "Ders Saati": "14",
+        "Alan Becerileri": "SBAB3. Tarihsel Empati (KB2.14. Yorumlama) (İTA.8.1.1) SBAB2. Kanıta Dayalı Sorgulama ve Araştırma(İTA.8.1.2)",
+        "Kavramsal Beceriler": "KB2.3. Özetleme (İTA.8.1.3)",
+        "Eğilimler": "E2.1. Empati, E3.2. Odaklanma, E3.4. Gerçeği Arama, E3.6. Analitik Düşünme, E3.7. Sistematik Olma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D11. Özgürlük, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "SBAB1.2. Sıralama, SBAB10.1. Harita Okuma, SBAB10.3. Haritadan Çıkarım Yapma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "İTA.8.1.1. Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik durumu neden ve sonuçlarıyla yorumlayabilmea) Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik duruma ilişkin koşulları inceler.b) Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik durumu kendi cümleleriyle yeniden ifade eder.İTA.8.1.2. Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturduğu özgün ürünleri paylaşabilmea) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin merak ettiği konular hakkında sorular sorar.b) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için belirlediği kaynaklardan bilgi toplar.c) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için topladığı bilgileri araştırma konusuna uygunluğu açısından inceler.ç) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için kullanacağı kaynakların sınırlılığını sorgular.d) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için kullanacağı kaynaklardaki bilgileri yorumlar.e) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatı hakkında kanıta dayalı oluşturduğu ürünleri paylaşır.İTA.8.1.3. Mustafa Kemal’in kişilik özelliklerini özetleyebilmea) Mustafa Kemal’in kişilik özelliklerini çözümler.b) Mustafa Kemal’in kişilik özelliklerini kendi cümleleri ile ifade eder.",
+        "İçerik Çerçevesi": "XIX. Yüzyıl Sonu ve XX. Yüzyıl Başlarında Osmanlı Devleti ve DünyaMustafa Kemal’in HayatıMustafa Kemal’in Kişilik Özellikleri",
+        "Anahtar Kavramlar": "cephe, diplomasi, eğitim, ihtilal, kapitülasyon, milliyetçilik, modernleşme, sanayileşme, savaş",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu ünitede yer alan öğrenme çıktıları; çalışma yaprağı, karşılaştırma tablosu, derecelendirme ölçeği, dereceli puanlama anahtarı, kavram ağı, 10 şeyi listeleme ve performans görevi kullanılarak değerlendirebilir.Performans görevi: Mustafa Kemal Atatürk’ün hayatına ilişkin sınıf dergisi veya z-kitap hazırlama görevidir.",
+        "Temel Kabuller": "Öğrencilerin, XVIII. ve XIX. yüzyıllarda dünyada yaşanan gelişmeler ve Osmanlı modernleşmesi konularında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, Mustafa Kemal Atatürk’ün hayatına ilişkin ön bilgilere sahip oldukları kabul edilmektedir.Öğrencilerin, Mustafa Kemal Atatürk’ün kişiliğine ilişkin ön bilgilere sahip oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "XVIII. ve XIX. yüzyıllarda dünyada yaşanan gelişmeler ve bu gelişmelerin Osmanlı Devleti’ne etkileri hakkında açık uçlu sorular sorulur.Öğrencilerin, Mustafa Kemal Atatürk’ün hayatına ilişkin bilgi düzeyleri açık uçlu sorular kullanılarak değerlendirilir.Öğrencilerin, Mustafa Kemal Atatürk’ün kişiliğine ilişkin bilgi düzeyleri açık uçlu sorular kullanılarak değerlendirilir.",
+        "Köprü Kurma": "Sanayi İnkılabı ve Fransız İhtilali’nin Osmanlı Devleti’ne etkilerine ilişkin örnek olaylar (yaşanan ekonomik zorluklar, kaybedilen topraklar) üzerinden açık uçlu sorular sorulur.Öğrencilere Mustafa Kemal’in hayatından yola çıkarak ülkemizde ve dünyada yaşanan gelişmelerin bireyin kendi yaşamına doğrudan veya dolaylı olarak etkide bulunduğunu fark etmelerine yönelik açık uçlu sorular sorulur.Mustafa Kemal’in kişilik özelliklerinden hareketle kişilik özelliklerinin insanın hayatına nasıl etkilerde bulunabileceğine yönelik açık uçlu sorular sorulur.",
+        "Öğrenme-Öğretme Uygulamaları": "İTA.8.1.1.Öğrencilerin Osmanlı Devleti’nin XIX-XX. yüzyıllardaki sınırlarını haritalar üzerinden incelemeleri istenir (SBAB10.1) (OB4). İnceledikleri haritalarda Osmanlı Devleti’nin sınırlarında meydana gelen değişime odaklanmaları (E3.2) ve bu durumun nedenlerine ilişkin çıkarımlarını sözlü olarak ifade etmeleri beklenir. Sanayi İnkılabı ve Fransız İhtilali’nin etkileri ile XIX-XX. yüzyıllarda Osmanlı Devleti’nde meydana gelen siyasi, ekonomik ve toplumsal gelişmeler (demokratikleşme çabaları, fikir akımları, milliyetçilik hareketleri ve toprak kayıpları, Balkan savaşlarında Rumeli Türklerine yapılan baskılar, kapitülasyonların yarattığı ekonomik sıkıntılar) verilen yazılı ve görsel kaynaklar üzerinden incelenir. Ayrıca dijital kaynaklardan yararlanılabilir (OB2).Öğrencilerin XVIII. yüzyılda gerçekleşen Sanayi İnkılabı ve Fransız İhtilali’nin dünya geneli ve Osmanlı Devleti açısından yarattığı etkileri açıklamalı tarih şeridi veya infografik (SBAB1.2) üzerinden (OB1, OB2, OB4) incelemeleri sağlanır. Öğrencilerden inceledikleri kaynaklar doğrultusunda dönemin koşullarını dikkate alarak “Ben Mustafa Kemal’in doğduğu dönemde doğsaydım neler düşünürdüm/hissederdim/yapardım?” temalı bir metin oluşturmaları istenir. Bu bağlamda millî bilinç sahibi olmanın (D19.1) ve ülkenin menfaati için dayanışma ve fedakârlık göstermenin (D20.2) önemine vurgu yapılır. Öğrencilerin, Mustafa Kemal’in doğduğu dönemde yaşayan insanlarla empati kurması (E2.1) desteklenerek olayları dönemin koşullarına göre değerlendirmeye yönelik bakış açısı (SDB2.3) geliştirmesi sağlanır. Öğrenciler tarafından oluşturulan metinlerin değerlendirilmesi için dereceli puanlama anahtarı kullanılabilir. İTA.8.1.2.Öğrenciler gruplara ayrılır. Gruplara “Mustafa Kemal’in çocukluk ve aile hayatı, eğitim hayatı ve arkadaşları, askerî hayatı, diplomatik tecrübeleri ve devlet adamlığı, hayatının son dönemi, vefatı ve dünyaya yansımaları” konuları dağıtılır. Öğrencilerin paylaştırılan konularla ilgili merak ettikleri temel hususları grup çalışmasıyla belirlemeleri (D3.4) ve araştıracakları konunun hangi sorulara cevap vereceğini sözlü olarak açıklamaları istenir. Gruplara bilgi toplama, kaynak inceleme ve kaynakları sorgulama süreçlerinin tüm basamaklarını kapsayan bir takip listesi dağıtılır. Bu listenin gruplar tarafından doldurulması sürecinde öğrencilerin ekip hâlinde ve yardımlaşma (SDB2.2) içinde çalışmalarına özen gösterilir. Grupların, araştırma konularıyla ilgili hangi kaynaklardan yararlanacakları ve bu kaynaklara nereden ve nasıl ulaşacakları öğretmen rehberliğinde belirlenir.Gruplardan, Mustafa Kemal Atatürk’ün hayatıyla ilgili yazılı (askerî arşivler, anılar vb.) ve görsel kaynaklardan (hayatının çeşitli dönemlerine ait fotoğraflar; Selanik, Manastır, İstanbul, Sofya ve Şam şehirlerinin haritaları) çalışma konusuna yönelik bilgi toplamaları (SBAB10.3) (OB1, OB4) istenir (E3.7). Ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Kaynaklardan bilgi toplama sürecinde, öğ rencilerin karar verme (SDB3.3) ve iş birliği (SDB2.2) becerilerinin gelişimine destek verilir. Araştırmada yer vermek için uygun ve güncel nitelikte olan kaynaklar, öğ renciler tarafından kaydedilir.Mustafa Kemal Atatürk’ün hayatıyla ilgili ulaşılan kaynaklar, belirlenen ölçü tlerin (kaynağın türü, yazarı, tarihi, geçerliliği, tutarlılığı vb.) yer aldığı bir liste yardımıyla gruplar tarafından değerlendirilerek bilimsel araştırma süreci (E3.2) işletilir.Öğrencilerin, Mustafa Kemal Atatürk’ün hayatına ilişkin kaynakların (askerî arşivler, anılar vb.) kimler tarafından nasıl oluşturulduğunu sorgulamaları istenir (OB1). Öğrenciler daha nitelikli bir çalışma oluşturmak için araştırmalarını farklı kaynaklarla desteklemenin önemine dair çıkarımlarda bulunur (E3.4).Mustafa Kemal Atatürk’ün hayatına ilişkin araştırmada kullanılacak kaynakların ana fikri, kaynaklardaki temel kişiler ve kurumlar, öğ renciler tarafından belirlenir. Öğrencilerin araştırmalarında kullanacakları kaynaklardaki ilgili ve ilgisiz bilgileri, farklı görüş leri belirlemeleri istenir. Bu amaçla öğrencilere grup tartışması yaptırılır. Bu tartışmalar sırasında öğrencilerin inceledikleri kaynakları kendi cümleleriyle “bence/bana göre/çü nkü/kanıtlara dayanarak” gibi ifadelerle yorumlamaları istenir.Araştırmalardan elde edilen bilgiler, öğ renciler tarafından bir performans görevi niteliğinde hazırlanarak sınıf dergisi veya z-kitap ürününde kullanılmak üzere tarih şeridi, infografik (OB2), deneme şeklinde görsel ve yazılı metinlere dönüştürülür. Gruplar tarafından oluşturulan çalışmalar “Çocuk Mustafa, komutan Mustafa Kemal ve devlet adamı olarak Atatürk’ün hayatı” şeklinde sınıf dergisi veya z-kitap formatında (OB1, OB2) birleştirilir (SDB2.2). Ülkemizin bağımsızlığı için hiçbir fedakârlıktan kaçınmayan (D11.1) ve “Vatanını en çok seven, görevini en iyi yapandır.” ilkesiyle hareket eden (D19.1) Mustafa Kemal Atatürk’ün örnek hayatı ve kişiliği açıklanır. Tüm araştırma süreci dereceli puanlama anahtarı ile değerlendirilebilir. Oluşturulan sınıf dergisi veya z-kitap, okulda/ genel ağda paylaşılarak tüm öğ rencilerin erişimine sunulur. Öğrencilerin Atatürk’ün hayatıyla ilgili bilgileri edinme durumu sınıf dergisi veya z-kitapta yer alan bilgilerden oluşturulan “10 şeyi listeleyin.” formu ile değerlendirilebilir. Ürün oluşturma ile ilgili tüm sürecin değerlendirilebilmesi için dereceli puanlama anahtarı kullanılabilir. İTA.8.1.3.Öğrenciler gruplara ayrılarak Mustafa Kemal Atatürk’ün çocukluk ve aile hayatı, eğitim hayatı ve arkadaşları ile ilişkileri, askerî hayatı, diplomatik tecrübeleri ve devlet adamlığı ile ilgili verilen örnek olayları (hatıralar, anekdotlar vb.) ve bu olaylarla ilgili Mustafa Kemal’in yaklaşımını/sözlerini (OB1, OB2) inceler. Gruplardan iş birliği içerisinde (SDB2.2) verilen örnek olaylarda tespit ettikleri kişilik özelliklerini (E3.2, E3.6) listelemeleri istenir.Grupların oluşturduğu listelerde ortak olarak tespit edilen kişilik özelliklerine ilişkin sayılar belirlenerek fedakârlık (D20.2), azimli (D3.1) ve kararlı olmak (D11.2), vatanseverlik (D19.1), sorumluluk (D16.2), cesaret (D11.1), teşkilatçılık, liderlik ve kahramanlık özellikleri tahtaya yazılır. Bu sayılar üzerinden kelime bulutları oluşturulur (E3.6). Öğrencilerden bu kelime bulutlarından yola çıkarak Mustafa Kemal’in kişilik özelliklerini vurgulayan “Benim Gözümden Atatürk” konulu bir kompozisyon yazmaları (E3.7) istenir. Öğrencilerin yazdığı kompozisyonların değerlendirilmesi için derecelendirme ölçeği kullanılabilir.",
+        "Zenginleştirme": "Öğrenciler tarafından XIX. yüzyıl içerisinde ve XX. yüzyılın başlarında gerçekleşen bilimsel gelişmeler ve dünyaya etkileri ile ilgili dijital içerik üretilip sunulabilir.Öğrencilerden XIX. yüzyılın sonu ve XX. yüzyılın başında Osmanlı Devleti’nde yaşanan önemli bir sorunu belirlemeleri ve dönemin şartlarına göre bu soruna çözüm önerileri geliştirmeleri istenebilir.Öğrencilere Mustafa Kemal’in yaşadığı şehirlerdeki ekonomik ve kültürel faaliyetler ile ilgili bir sunu hazırlatılabilir.Öğrencilerden Mustafa Kemal Paşa’nın savaştığı cephelerle ilgili interaktif bir harita hazırlanması istenebilir.Öğrencilerden Mustafa Kemal’in Çanakkale Cephesi’ndeki rolü ve 19. Tümen’in hikâyesi hakkında araştırma yapmaları istenebilir.Öğrencilerden Çanakkale cephesinde görev yapan bir askerin gözünden günümüze bir mektup yazmaları istenebilir.Öğrencilerden Mustafa Kemal Paşa’nın dönemin öne çıkan diğer şahsiyetlerine nazaran Millî Mücadele’de lider olarak ön plana çıkmasının nedenlerini araştırması istenebilir.Öğrencilerden Atatürk’ün denizciliğe bakışı ve bunun sonucunda Atatürk döneminde Türk denizciğinde meydana gelen gelişmeleri araştırıp görsellerle desteklenmiş bir sunum yapmalı istenebilir.Öğrencilerden Atatürk dönemi savunma sanayi alanındaki yatırım ve gelişmeleri araştırıp sınıfta sunmaları istenebilir.",
+        "Destekleme": "Birinci Dünya Savaşı öncesinde Osmanlı Devleti’nin yaşadığı siyasi, sosyal ve ekonomik gelişmeler somutlaştırıcı görsel-işitsel materyaller üzerinden incelenebilir.Mustafa Kemal Atatürk’ün hayatı alternatif (görsel-işitsel) kaynaklar kullanılarak araştırılabilir.Mustafa Kemal Atatürk’ün askerî ve diplomatik başarılarına ilişkin afişler akranları ile beraber tasarlatılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "İTA.8.1.1. Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik durumu neden ve sonuçlarıyla yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik duruma ilişkin koşulları inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik durumu kendi cümleleriyle yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.1.2. Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturduğu özgün ürünleri paylaşabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin merak ettiği konular hakkında sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "b) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için belirlediği kaynaklardan bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "c) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için topladığı bilgileri araştırma konusuna uygunluğu açısından inceler.",
+          "bold": false
+        },
+        {
+          "text": "ç) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için kullanacağı kaynakların sınırlılığını sorgular.",
+          "bold": false
+        },
+        {
+          "text": "d) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için kullanacağı kaynaklardaki bilgileri yorumlar.",
+          "bold": false
+        },
+        {
+          "text": "e) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatı hakkında kanıta dayalı oluşturduğu ürünleri paylaşır.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.1.3. Mustafa Kemal’in kişilik özelliklerini özetleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Mustafa Kemal’in kişilik özelliklerini çözümler.",
+          "bold": false
+        },
+        {
+          "text": "b) Mustafa Kemal’in kişilik özelliklerini kendi cümleleri ile ifade eder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "İTA.8.1.1",
+          "codeAsPrinted": "İTA.8.1.1",
+          "text": "Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik durumu neden ve sonuçlarıyla yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik duruma ilişkin koşulları inceler.",
+            "b) Mustafa Kemal’in doğduğu dönemde Osmanlı Devleti’nin içinde bulunduğu siyasi, sosyal ve ekonomik durumu kendi cümleleriyle yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.1.2",
+          "codeAsPrinted": "İTA.8.1.2",
+          "text": "Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturduğu özgün ürünleri paylaşabilme",
+          "group": null,
+          "components": [
+            "a) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin merak ettiği konular hakkında sorular sorar.",
+            "b) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için belirlediği kaynaklardan bilgi toplar.",
+            "c) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için topladığı bilgileri araştırma konusuna uygunluğu açısından inceler.",
+            "ç) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için kullanacağı kaynakların sınırlılığını sorgular.",
+            "d) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatına ilişkin oluşturacağı ürün için kullanacağı kaynaklardaki bilgileri yorumlar.",
+            "e) Çocuk, komutan ve devlet adamı olarak Atatürk’ün hayatı hakkında kanıta dayalı oluşturduğu ürünleri paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.1.3",
+          "codeAsPrinted": "İTA.8.1.3",
+          "text": "Mustafa Kemal’in kişilik özelliklerini özetleyebilme",
+          "group": null,
+          "components": [
+            "a) Mustafa Kemal’in kişilik özelliklerini çözümler.",
+            "b) Mustafa Kemal’in kişilik özelliklerini kendi cümleleri ile ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/377",
+      "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/377",
+      "title": "2. Ünite: Birinci Dünya Savaşı",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:42.886Z",
+      "cacheFile": "html/tc-inkilap-tarihi-ve-ataturkculuk-dersi_unite_377.html",
+      "meta": [
+        "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "2. Ünite: Birinci Dünya Savaşı",
+      "subtitle": null,
+      "intro": "Bu ünitede öğrencilerin Birinci Dünya Savaşı’nı farklı açılardan incelemeleri, savaşın sebepleri ve sonuçlarını kavramaları, Osmanlı Devleti’nin bu süreçte savaşa katılmasının neden ve nasıl gerçekleştiğini anlamaları hedeflenmektedir. Ayrıca öğrencilerin Birinci Dünya Savaşı’nın insan hayatına dokunan yönlerine odaklanmaları, savaşın yaşandığı dönemin koşullarına dair farkındalık kazanmaları, Türk milletinin vatanı için gösterdiği fedakârlığı ve vatanseverliği anlayarak dönemin insanlarıyla empati kurmaları amaçlanmaktadır. Öğrenciler tarafından, Osmanlı Devleti’nin savaştığı cephelerin özelliklerinin öğrenilmesi, bu cephelerin savaşın gidişatına etkilerinin sorgulanması da ünitenin amaçları arasındadır.",
+      "fields": {
+        "Ders Saati": "16",
+        "Alan Becerileri": "SBAB3. Tarihsel Empati (SBAB3.1. Tarihsel Bağlamsallaştırma (İTA.8.2.1) SBAB17. Tarihsel Sorun Analizi ve Karar Verme Becerisi (İTA.8.2.2) SBAB3. Tarihsel Empati (İTA.8.2.5) SBAB11. Tablo, Grafik, Şekil ve Diyagram (SBAB11.1. Tablo, Grafik, Şekil ve Diyagram Okuma ve Yorumlama) (İTA.8.2.4)",
+        "Kavramsal Beceriler": "KB2.8. Sorgulama (İTA.8.2.3)",
+        "Eğilimler": "E1.1. Merak, E2.1. Empati, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.6. Analitik Düşünme, E3.7. Sistematik Olma, E3.11. Özgün Düşünme",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.1. Uyum, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D4. Dostluk, D5. Duyarlılık, D11. Özgürlük, D12. Sabır, D15. Sevgi, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB3. Finansal Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "SBAB10.3. Haritadan Çıkarım Yapma, KB3.1. Karar Verme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "İTA.8.2.1. Birinci Dünya Savaşı’nın nedenlerini tarihsel bağlamına uygun olarak açıklayabilmea) Birinci Dünya Savaşı’nın nedenlerini kanıtlara dayalı olarak analiz eder.b) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları belirler.c) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları günümüz koşullarıyla karşılaştırır.ç) Birinci Dünya Savaşı’nın nedenlerini dönemin koşulları içerisinde açıklar.İTA.8.2.2. Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin alternatif fikirler üretebilmea) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel bir sorunu tanımlar.b) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorun hakkında tarafların bakış açılarını çözümler.c) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunun çözümüne yönelik yapılan uygulamaları ve alınan kararları değerlendirir.ç) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunun çözümüne yönelik yapılan uygulamaların ve alınan kararların güncel sorunların meydana gelmesine etkilerini belirler.d) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunu çözmeye yönelik alternatif öneriler geliştirir.e) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunu çözmeye yönelik geliştirdiği alternatif önerilerin olası sonuçlarını yetkililerin yaptıkları uygulamalar ve aldıkları kararların sonuçlarıyla karşılaştırarak değerlendirir.İTA.8.2.3. Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisini sorgulayabilmea) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisi hakkında merak ettiği konuları belirler.b) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında sorular sorar (5N1K).c) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında farklı kaynaklar üzerinden bilgi toplar.ç) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında topladığı bilgilerin doğruluğunu değerlendirir.d) Topladığı bilgiler üzerinden Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisine ilişkin çıkarım yapar.İTA.8.2.4. Birinci Dünya Savaşı’nın sonuçlarını tablo, grafik, şekil ve diyagram üzerinden yorumlayabilmea) Birinci Dünya Savaşı’nın sonuçlarıyla ilgili görsellerden anlam çıkarır.b) İlgili görsellerden yola çıkarak Birinci Dünya Savaşı’nın siyasi ve ekonomik etkilerini çözümler.c) Belirlediği etkilerden hareketle Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçları hakkında çıkarım yapar.ç) Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçlarıyla ilgili yapmış olduğu çıkarımları karşılaştırır.TA.8.2.5. Birinci Dünya Savaşı’nın Türk toplumuna etkilerine yönelik bakış açısı geliştirebilmea) Birinci Dünya Savaşı’nın toplumsal etkilerini kaynaklar üzerinden inceler.b) Birinci Dünya Savaşı’nın toplumsal etkilerine dair kaynaklardan elde ettiği bilgileri kendi cümleleriyle ifade eder.c) Birinci Dünya Savaşı’nın Türk toplumuna etkilerini kaynaklara dayalı olarak analiz eder.ç) Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizleri belirler.d) Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizler ile günümüzdeki insani krizleri karşılaştırır.e) Birinci Dünya Savaşı’nın Türk toplumuna etkileri hakkında çıkarım yapar.",
+        "İçerik Çerçevesi": "Birinci Dünya Savaşı’nın NedenleriOsmanlı Devleti’nin Savaşa KatılmasıOsmanlı Devleti’nin Savaştığı CephelerBirinci Dünya Savaşı’nın SonuçlarıBirinci Dünya Savaşı’nın Türk Toplumuna Etkileri",
+        "Anahtar Kavramlar": "antlaşma, imparatorluk, İspanyol gribi, itilaf, ittifak, konferans, mütareke, Wilson İlkeleri",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu ünitede yer alan öğrenme çıktıları; sınıflandırma tablosu, gözlem formu, anekdot kaydı, kontrol listesi, derecelendirme ölçeği, soru kartları, çalışma yaprağı, kavram ağı ve performans görevi kullanılarak değerlendirilebilir.Performans görevi: “Ben o dönemde bir devlet yöneticisi olsaydım...” cümlesini ihtiva eden, Birinci Dünya Savaşı konulu bir deneme yazısı yazma görevidir. Performans görevi: Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine yönelik sunum hazırlama görevidir.Performans görevi: Öğrencilerin dönem şartlarını anlatan bir mektup yazmaları görevidir.",
+        "Temel Kabuller": "Öğrencilerin sanayi inkılabı, sömürgecilik, milliyetçilik kavramlarına ilişkin temel bilgilere sahip oldukları kabul edilmektedir.Öğrencilerin, XX. yüzyıl başında Osmanlı Devleti’nin içinde bulunduğu ekonomik durum ve siyasi parçalanmanın önüne geçmek adına yaptığı çalışmalar hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, Osmanlı Devleti’ne komşu devletler ve Osmanlı coğrafyasını jeopolitik açıdan daha önemli hâle getiren boğazlar, deniz ve kara bağlantıları vb. özellikleri hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, Osmanlı Devleti’nin XIX - XX. yüzyıllar içerisinde girdiği savaşların etkisiyle değişen siyasi ve toplumsal yapısı hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, Birinci Dünya Savaşı’nın Osmanlı Devleti açısından yarattığı siyasi ve ekonomik sonuçlar hakkında bilgi sahibi olduğu kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin sanayi inkılabı, sömürgecilik, milliyetçilik kavramları ile ilgili bilgi düzeyleri açık uçlu sorular yoluyla değerlendirilir.Öğrencilere, XX. yüzyıl başında Osmanlı Devleti’nin içinde bulunduğu siyasi ve ekonomik durumun Osmanlı Devleti’ni nasıl çözümler aramaya yönelttiğine yönelik açık uçlu sorular sorulur.Öğrencilere Osmanlı Devleti’ne komşu devletler ve Osmanlı coğrafyasınının kara ve deniz sınırları hakkında haritalar üzerinden açık uçlu sorular sorulur.Öğrencilere, Birinci Dünya Savaşı sırasında Osmanlı Devleti’nin durumunu gösteren görseller üzerinden değişen siyasi, ekonomik veya toplumsal yapısı hakkında açık uçlu sorular sorulur.Birinci Dünya Savaşı’nın yarattığı siyasi ve ekonomik sonuçların Türk toplumuna ne gibi zararlar vermiş olabileceğine yönelik açık uçlu sorular sorulur.",
+        "Köprü Kurma": "Sanayi İnkılabı sonrasında ortaya çıkan sömürgecilik yarışı ve çıkar çatışmalarının devletler arası ilişkileri nasıl etkilemiş olabileceğine yönelik açık uçlu sorular sorulur.Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılmadan önceki siyasi ve ekonomik durumunu gösteren haritalar üzerinden savaşın Osmanlı Devleti açısından zorunlu bir durum olup olmadığı tartışılır.Öğrencilerin, Osmanlı Devleti’nin Birinci Dünya Savaşı’na girdiğinde hangi noktalarda cepheler açmış veya nerelerden saldırıya uğramış olabileceğine dair varsayımlarını haritalar üzerinden açıklamaları istenir.Birinci Dünya Savaşı örneği üzerinden devletler/toplumlar arasındaki sorunların ve çıkar çatışmalarının ülkeler için nasıl sonuçlar yaratabileceği hakkında açık uçlu sorular sorulur. Öğrencilerin, Osmanlı Devleti açısından Birinci Dünya Savaşı’nın nasıl sonuçlar yaratmış olabileceğine dair varsayımlarını açıklamaları istenir.Türk kültürüne ve toplumsal yaşamına dair izler taşıyan Osmanlı şehirlerinden günümüze ulaşan örnekler öğrencilere gösterilerek Birinci Dünya Savaşı’nın Türk toplumsal yaşamına ne gibi zararlar verdiği hakkında öğrencilerin varsayımlarda bulunmaları istenir.",
+        "Öğrenme-Öğretme Uygulamaları": "İTA.8.2.1.Öğrenciler, grup çalışması yoluyla (SDB2.2) verilen farklı türden kaynaklar üzerinden (OB1, OB2, OB4) Birinci Dünya Savaşı’nın nedenlerine ilişkin bilgileri inceler (E3.2).Birinci Dünya Savaşı’nın nedenlerini eleştirel bir bakış açısıyla (D3.4) inceleyen öğrenciler, beyin fırtınası tekniğiyle (SDB3.1) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları belirler.Öğrenciler, tartışma yöntemiyle Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşullar ile günümüz koşullarını karşılaştırır. Tartışmalar anekdot kaydı, gözlem formu, kontrol listesi ile takip edilir.Ulaşılan çıkarımlardan hareketle öğrencilerin performans görevi kapsamında “Ben o dönemde bir devlet yöneticisi olsaydım … yapardım.” (SDB2.3) cümlesini içeren bir deneme yazısı yazarak dönemin kişileri ile empati kurmaları (E2.1, D16.3) sağlanır. Deneme yazısında öğrencilerin Birinci Dünya Savaşı’nın nedenlerini dönemin koşulları içerisinde (E3.11) açıklamaları (OB1) istenir. Hazırlanan metinlerin değerlendirilmesi için dereceli puanlama anahtarı kullanılabilir. İTA.8.2.2.Grup çalışması yoluyla (D3.4) öğrencilerin Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin merak ettikleri tarihsel bir sorunu belirlemeleri sağlanır (E1.1, SDB2.2). Öğrencilerden 5N1K tekniği aracılığıyla merak ettikleri soruna ilişkin sorgulama yapmaları ve bu sorunu tanımlamaları istenir.Öğrenciler yazılı ve görsel kaynaklar üzerinden Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma süreci hakkında belirledikleri tarihsel soruna ilişkin tarafların çıkarlarını ve bakış açılarını analiz eder (OB1, OB4). Analiz sürecinde dijital kaynaklardan da yararlanılabilir (OB4). Öğrenciler, örnek olaylardan hareketle ülkenin bağımsızlığı için gerektiğinde fedakârlık yapmanın önemini açıklar (D11.1).Tarihsel sorunun çözümü için yapılan uygulamaları ve alınan kararları değerlendiren öğrenciler, bunların güncel sorunların meydana gelmesine etkilerini ifade eder.Öğrenciler tarihsel sorunu çözmeye yönelik alternatif öneriler üretir (SDB3.2).Öğrenciler bu önerilerinin olası sonuçlarını, Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecinde yetkililerin yaptıkları uygulamalar ve aldıkları kararların sonuçlarıyla karşılaştırarak değerlendirir. Yapılan çıkarımlar doğrultusunda öğrencilere sunum hazırlamaya ve sunumlarını paylaşmaya yönelik performans görevi verilir (SDB3.3). Sunumlar dereceli puanlama anahtarı ile değerlendirilebilir. İTA.8.2.3.Grup çalışması yoluyla (D3.4) öğrencilerin Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisine ilişkin merak ettikleri konuları belirlemeleri sağlanır (E1.1, SDB2.2).Öğrencilerden 5N1K tekniği aracılığıyla merak ettikleri konulara ilişkin sorgulama yapmaları istenir.Öğrenciler yazılı ve görsel kaynaklar (Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelere ilişkin fotoğraflar, cephelerin tamamını ile Çanakkale, Kafkas, Kanal ve Hicaz-Yemen cephelerini gösteren haritalar) üzerinden Osmanlı Devleti’nin savaştığı cepheler hakkında merak ettikleri konulara ilişkin bilgiler toplar (OB1, OB4) ve kaydeder (SBAB10.3). Ayrıca dijital kaynaklardan da yararlanılabilir. Bu süreçte öğrenciler, dijital kaynaklardan edindikleri bilgileri kullanırken kaynağın dijital kimliği ve uzantısının güvenilirliğini dikkate alır (OB2).Öğrenciler verilen farklı kaynaklar üzerinden Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin genel özelliklerini analiz eder. Öğrencilerden verilen örnek olayları inceleyerek millî bilince sahip (D19.1) ve cesaretli olmanın (D11.1) önemini açıklamaları istenir. Öğrenciler araştırma yaparak ulaştıkları bilgilerle derste öğrendiklerini karşılaştırır ve bu bilgilerin doğruluğunu değerlendirir.Öğrenciler elde ettikleri bilgilerden hareketle Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisine ilişkin çıkarım yapar (KB3.1, SDB3.3). Öğrencilerden, Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerde ortaya çıkan sonuçları ve bu sonuçların savaşın gidişatına etkisine yönelik çıkarımlarını bir çalışma yaprağı aracılığıyla açıklamaları istenir (OB4, SDB3.3, E3.3, E3.11). İTA.8.2.4.Öğrencilere Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçlarıyla ilgili tablo, grafik, harita (SBAB10.3), şekil ve diyagram gibi görseller verilir (E3.2, OB1, OB4). Öğrencilerden ilgili görsellerin başlığından yola çıkılarak hangi bilgilerin edinilebileceğine yönelik (OB1, OB4, OB7) açıklamalar yapmaları istenir.Öğrenciler verilen görselleri inceleyerek Birinci Dünya Savaşı’nın siyasi ve ekonomik etkilerini belirler (E3.6, OB4, OB7). Birinci Dünya Savaşı’nın sonucunda dünyada ortaya çıkan genel durum, savaşın sonunda devletler arasında imzalanan antlaşmalar, Paris Barış Konferansı ve yarattığı uluslararası etkiler hakkında kaynaklar üzerinden genel değerlendirmeler yapılarak incelenen görsellerdeki bilgilerin yazılı kaynaklarla desteklenmesi sağlanır. Paris Barış Konferansı’nın bir sonucu olarak barışı korumak için oluşturulan Milletler Cemiyeti’ne sonraki yıllarda Türkiye’nin dâhil oluşu, savaşın toplumlara nasıl zararlar verdiğine bizzat şahit olan ve ülkesinin menfaatini her şeyin üzerinde gören Atatürk’ün “Yurtta sulh, cihanda sulh” anlayışı (D4.5, D19.1) doğrultusunda yorumlanır.Öğrencilerden, belirlenen etkilerden hareketle Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçları hakkında çıkarımlarda bulunmaları (OB1) istenir. Tartışma yöntemi ile bireysel çıkarımlar paylaşılmak suretiyle Birinci Dünya Savaşı’nın sonuçları belirlenir.Öğrenciler gruplara ayrılır. Gruplardan Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçlarına ilişkin değerlendirmelerini kavram ağıyla listelemesi istenir (E3.2, E3.7). Grupların oluşturduğu kavram ağları üzerinden öğrenciler, Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçlarına ilişkin yapmış oldukları çıkarımları karşılaştırır. İTA.8.2.5.Öğrenciler Birinci Dünya Savaşı’nın toplumsal etkilerine ilişkin yazılı ve görsel kaynakları inceler (E3.2, E3.6, OB1, OB2). Ayrıca dijital kaynaklardan da yararlanılabilir (OB2, OB4). Soru cevap tekniği ile öğrencilere incelenen kaynaklardaki kişilerle ilişkili olarak “Siz bu durumda olsaydınız ne düşünürdünüz/hissederdiniz?” gibi sorular yöneltilir (SDB2.3, E2.1). Kaynaklara dayanarak Birinci Dünya Savaşı’nın Türk toplumuna etkilerinin neler olduğu ve özellikleri öğrenciler tarafından çalışma yaprağı aracılığıyla çözümlenir (OB3, OB8, E2.1). Çalışma yaprağında kültürel miras (D15.2), millî kimlik (D19.2) ve ülke varlıkları (D19.3) kavramlarına yer verilerek öğrencilerin bu alanla ilgili inceleme yapmaları sağlanır. Öğrencilerin inceledikleri kaynaklar üzerinden Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizleri (fakirlik, kıtlık, salgınlar, üretimin azalması, erkek nüfusun azalması) belirleyerek örnekler vermesi istenir (SDB2.3, E3.6, OB3).Birinci Dünya Savaşı sürecinde Türk toplumunun yaşadığı insani krizlerin etkileriyle günümüzde yaşanan insani krizlerin etkileri, öğrenciler tarafından uzun cevaplı maddeler içeren çalışma yaprakları üzerinden karşılaştırılarak o dönemde yaşamış insanların ülkesi için gösterdikleri dayanışma ve fedakârlık (D20.2) ile sabır dolu mücadeleleri (D12.3) vurgulanır. Öğrencilerin bu karşılaştırmalarından hareketle Birinci Dünya Savaşı sürecinde Türk toplumunun yaşadığı insani krizlerin etkileri hakkında dönemin koşulları göz önünde bulundurularak çıkarım yapmaları istenir (SDB2.3, E2.1, E3.6).Performans görevi olarak öğrencilerden Birinci Dünya Savaşı yıllarında ekonomik zorluklar yaşayan bir esnaf, savaş şartları altında eğitime devam etmeye çalışan bir öğretmen veya Çanakkale Savaşı’nda gazi olan bir askerin gözünden dönemin şartlarını anlatan bir mektup yazmaları istenir (E3.3, E3.11). Bu mektuplarda öğrencilerin duyarlılık (D5.1) ve vatanseverlik (D19.3) değerlerini işe koşarak dönemin acılarını ve mücadelelerini yansıtmaları beklenir. Yazılan mektupların değerlendirilmesi için dereceli puanlama anahtarı kullanılabilir.",
+        "Zenginleştirme": "Öğrencilerden Osmanlı Devleti’nin Birinci Dünya Savaşı’nda yer aldığı cephelerin jeopolitik önemini araştırıp sunmaları istenebilir.Öğrencilere Osmanlı Devleti’nin savaştığı cepheler dışında Birinci Dünya Savaşı’nın kaderine etki eden cephelerle ilgili araştırma yaptırılabilir.Öğrencilerden Fahrettin Paşa ve Medine Müdafaası hakkında araştırma yapmaları istenebilir.Öğrencilerden Kût’ül Amâre zaferi hakkında araştırma yapması istenebilir.Öğrencilerden Birinci Dünya Savaşı kahramanlarından biri hakkında biyografik çalışma yaparak sunmaları istenebilir.Öğrencilerden Birinci Dünya Savaşı’nın sanata ve edebiyata yansımaları hakkında araştırma yapmaları istenebilir.Öğrencilerden Osmanlı Devleti’nin Birinci Dünya Savaşı’nda yer aldığı cephelerden Kafkas Cephesi, Kafkas İslam Ordusu ve Bakü’nün Ermeni işgalinden kurtarılması konusunu araştırıp sunmaları istenebilir.Öğrencilerden dönemin teknolojik gelişmeleri ve savaşta kullanılan teknolojiler hakkında bir sunum yapmaları istenebilir.Öğrencilerden Birinci Dünya Savaşı sürecini anlatan kitap, dergi, hatırat gibi kaynakları araştırarak bir kaynakça denemesi hazırlamaları istenebilir.",
+        "Destekleme": "Birinci Dünya Savaşı’nda yaşanan siyasi, sosyal ve ekonomik gelişmeler görsel-işitsel materyaller kullanılarak incelenebilir.Öğrencilerden Birinci Dünya Savaşı’nın insani boyutuyla ilişkili bir resim çizmeleri istenebilir.Birinci Dünya Savaşı’nın toplumsal etkilerinin sınıflandırıldığı bir kavram ağını akranlarından yardım alarak hazırlamaları istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "İTA.8.2.1. Birinci Dünya Savaşı’nın nedenlerini tarihsel bağlamına uygun olarak açıklayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Birinci Dünya Savaşı’nın nedenlerini kanıtlara dayalı olarak analiz eder.",
+          "bold": false
+        },
+        {
+          "text": "b) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları günümüz koşullarıyla karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Birinci Dünya Savaşı’nın nedenlerini dönemin koşulları içerisinde açıklar.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.2.2. Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin alternatif fikirler üretebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel bir sorunu tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorun hakkında tarafların bakış açılarını çözümler.",
+          "bold": false
+        },
+        {
+          "text": "c) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunun çözümüne yönelik yapılan uygulamaları ve alınan kararları değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "ç) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunun çözümüne yönelik yapılan uygulamaların ve alınan kararların güncel sorunların meydana gelmesine etkilerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "d) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunu çözmeye yönelik alternatif öneriler geliştirir.",
+          "bold": false
+        },
+        {
+          "text": "e) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunu çözmeye yönelik geliştirdiği alternatif önerilerin olası sonuçlarını yetkililerin yaptıkları uygulamalar ve aldıkları kararların sonuçlarıyla karşılaştırarak değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.2.3. Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisini sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisi hakkında merak ettiği konuları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında sorular sorar (5N1K).",
+          "bold": false
+        },
+        {
+          "text": "c) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında farklı kaynaklar üzerinden bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Topladığı bilgiler üzerinden Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisine ilişkin çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.2.4. Birinci Dünya Savaşı’nın sonuçlarını tablo, grafik, şekil ve diyagram üzerinden yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Birinci Dünya Savaşı’nın sonuçlarıyla ilgili görsellerden anlam çıkarır.",
+          "bold": false
+        },
+        {
+          "text": "b) İlgili görsellerden yola çıkarak Birinci Dünya Savaşı’nın siyasi ve ekonomik etkilerini çözümler.",
+          "bold": false
+        },
+        {
+          "text": "c) Belirlediği etkilerden hareketle Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçları hakkında çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçlarıyla ilgili yapmış olduğu çıkarımları karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "TA.8.2.5. Birinci Dünya Savaşı’nın Türk toplumuna etkilerine yönelik bakış açısı geliştirebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Birinci Dünya Savaşı’nın toplumsal etkilerini kaynaklar üzerinden inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Birinci Dünya Savaşı’nın toplumsal etkilerine dair kaynaklardan elde ettiği bilgileri kendi cümleleriyle ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "c) Birinci Dünya Savaşı’nın Türk toplumuna etkilerini kaynaklara dayalı olarak analiz eder.",
+          "bold": false
+        },
+        {
+          "text": "ç) Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizleri belirler.",
+          "bold": false
+        },
+        {
+          "text": "d) Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizler ile günümüzdeki insani krizleri karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "e) Birinci Dünya Savaşı’nın Türk toplumuna etkileri hakkında çıkarım yapar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "İTA.8.2.1",
+          "codeAsPrinted": "İTA.8.2.1",
+          "text": "Birinci Dünya Savaşı’nın nedenlerini tarihsel bağlamına uygun olarak açıklayabilme",
+          "group": null,
+          "components": [
+            "a) Birinci Dünya Savaşı’nın nedenlerini kanıtlara dayalı olarak analiz eder.",
+            "b) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları belirler.",
+            "c) Birinci Dünya Savaşı’nın nedenlerini ortaya çıkaran koşulları günümüz koşullarıyla karşılaştırır.",
+            "ç) Birinci Dünya Savaşı’nın nedenlerini dönemin koşulları içerisinde açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.2.2",
+          "codeAsPrinted": "İTA.8.2.2",
+          "text": "Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin alternatif fikirler üretebilme",
+          "group": null,
+          "components": [
+            "a) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel bir sorunu tanımlar.",
+            "b) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorun hakkında tarafların bakış açılarını çözümler.",
+            "c) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunun çözümüne yönelik yapılan uygulamaları ve alınan kararları değerlendirir.",
+            "ç) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunun çözümüne yönelik yapılan uygulamaların ve alınan kararların güncel sorunların meydana gelmesine etkilerini belirler.",
+            "d) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunu çözmeye yönelik alternatif öneriler geliştirir.",
+            "e) Osmanlı Devleti’nin Birinci Dünya Savaşı’na katılma sürecine ilişkin tarihsel sorunu çözmeye yönelik geliştirdiği alternatif önerilerin olası sonuçlarını yetkililerin yaptıkları uygulamalar ve aldıkları kararların sonuçlarıyla karşılaştırarak değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.2.3",
+          "codeAsPrinted": "İTA.8.2.3",
+          "text": "Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisini sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisi hakkında merak ettiği konuları belirler.",
+            "b) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında sorular sorar (5N1K).",
+            "c) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında farklı kaynaklar üzerinden bilgi toplar.",
+            "ç) Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cepheler hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+            "d) Topladığı bilgiler üzerinden Osmanlı Devleti’nin Birinci Dünya Savaşı’nda savaştığı cephelerin savaşın gidişatına etkisine ilişkin çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.2.4",
+          "codeAsPrinted": "İTA.8.2.4",
+          "text": "Birinci Dünya Savaşı’nın sonuçlarını tablo, grafik, şekil ve diyagram üzerinden yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Birinci Dünya Savaşı’nın sonuçlarıyla ilgili görsellerden anlam çıkarır.",
+            "b) İlgili görsellerden yola çıkarak Birinci Dünya Savaşı’nın siyasi ve ekonomik etkilerini çözümler.",
+            "c) Belirlediği etkilerden hareketle Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçları hakkında çıkarım yapar.",
+            "ç) Birinci Dünya Savaşı’nın siyasi ve ekonomik sonuçlarıyla ilgili yapmış olduğu çıkarımları karşılaştırır."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "TA.8.2.5",
+          "codeAsPrinted": "TA.8.2.5",
+          "text": "Birinci Dünya Savaşı’nın Türk toplumuna etkilerine yönelik bakış açısı geliştirebilme",
+          "group": null,
+          "components": [
+            "a) Birinci Dünya Savaşı’nın toplumsal etkilerini kaynaklar üzerinden inceler.",
+            "b) Birinci Dünya Savaşı’nın toplumsal etkilerine dair kaynaklardan elde ettiği bilgileri kendi cümleleriyle ifade eder.",
+            "c) Birinci Dünya Savaşı’nın Türk toplumuna etkilerini kaynaklara dayalı olarak analiz eder.",
+            "ç) Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizleri belirler.",
+            "d) Birinci Dünya Savaşı’nın Türk toplumunda meydana getirdiği insani krizler ile günümüzdeki insani krizleri karşılaştırır.",
+            "e) Birinci Dünya Savaşı’nın Türk toplumuna etkileri hakkında çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/384",
+      "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/384",
+      "title": "3. Ünite: Millî Mücadele",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:44.388Z",
+      "cacheFile": "html/tc-inkilap-tarihi-ve-ataturkculuk-dersi_unite_384.html",
+      "meta": [
+        "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "3. Ünite: Millî Mücadele",
+      "subtitle": null,
+      "intro": "Bu ünitede öğrencilerin Mondros Mütarekesi’nin imzalanması sonrasında meydana gelen işgaller ve bu işgallere karşı Anadolu’da Mustafa Kemal’in liderliğinde ortaya çıkan Millî Mücadele fikri, Millî Mücadele’nin hazırlık ve teşkilatlanma süreci, Millî Mücadele dönemindeki siyasi ve askerî gelişmeler, Türk milletinin Millî Mücadele sürecindeki vatanseverliği ve fedakârlığı hakkında bilgi ve duyarlılık kazanmaları amaçlanmıştır.",
+      "fields": {
+        "Ders Saati": "20",
+        "Alan Becerileri": "SBAB1. Zamanı Algılama ve Kronolojik Düşünme (KB2.7. Karşılaştırma) (İTA.8.3.1) SBAB1. Zamanı Algılama ve Kronolojik Düşünme (KB2.17. Değerlendirme) (İTA.8.3.2) SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama) (İTA.8.3.3) SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (İTA.8.3.4)",
+        "Kavramsal Beceriler": "-",
+        "Eğilimler": "E2.1. Empati, E2.2. Sorumluluk, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.6. Analitik Düşünme, E3.7. Sistematik Olma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D11. Özgürlük, D12. Sabır, D14. Saygı, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "SBAB10.1. Harita Okuma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "İTA.8.3.1. Mondros Mütarekesi’ne karşı Osmanlı yönetiminin, Mustafa Kemal’in, aydınların ve halkın tutumunu karşılaştırabilmea) Mondros Mütarekesi’ne karşı Osmanlı yönetimi, Mustafa Kemal, aydınlar ve halkın tutumunu kaynaklar üzerinden belirler.b) Mondros Mütarekesi’ne karşı Osmanlı yönetimi, Mustafa Kemal, aydınlar ve halkın tutumuna ilişkin benzerlik ve farklılıkları kaynaklar üzerinden belirler.İTA.8.3.2. Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaların etkilerini değerlendirebilmea) Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları etkileri bakımından karşılaştırır.b) Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları etkileri bakımından değerlendirir.İTA.8.3.3. Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmeleri neden ve sonuçlarıyla birlikte yorumlayabilmea) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini inceler.b) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin etkilediği unsurları inceler.c) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin bireye, topluma ve kurumlara etkilerini sorgular.ç) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini ve sonuçlarını özetler.İTA.8.3.4. Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin oluşturduğu özgün ürünleri paylaşabilmea) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin merak ettiği konular hakkında sorular sorar.b) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynaklardan bilgi toplar.c) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin araştırması için topladığı bilgilerin araştırma konusu açısından uygunluğunu inceler.ç) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kullanacağı kaynakların sınırlılığını sorgular.d) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynaklardan elde ettiği bilgileri yorumlar.e) Türk milletinin Millî Mücadele sürecindeki rolü hakkında kanıta dayalı oluşturduğu ürünleri paylaşır.",
+        "İçerik Çerçevesi": "Mondros Mütarekesi’ne Karşı TepkilerMillî Mücadele Hazırlık SüreciMillî Mücadele Döneminde Siyasi ve Askerî GelişmelerTürk Milletinin Millî Mücadele Sürecindeki Rolü",
+        "Anahtar Kavramlar": "başkomutan, düzenli ordu, genelge, İstiklâl Marşı, işgal, kongre, Kuvâ-yı Milliye, Maarif Kongresi, mebusan, meclis, Mîsâk-ı Millî, Müdafa-i Hukuk Cemiyeti, Tekâlif-i Milliye",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu ünitede yer alan öğrenme çıktıları; karşılaştırma tablosu, kavram ağı, sınıflandırma tablosu, balık kılçığı, dereceli puanlama anahtarı ve performans görevi kullanılarak değerlendirilebilir.Performans görevi: Türk milletinin Millî Mücadele’deki rolü hakkında okul gazetesi hazırlama görevidir.",
+        "Temel Kabuller": "Öğrencilerin; Birinci Dünya Savaşı’nı kaybeden ülkelerden biri olan Osmanlı Devleti’nin siyasi, sosyal ve ekonomik açıdan yaşadığı zorluklar hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, Mondros Mütarekesi’nin şartları hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, Türk milletinin millî meseleler karşısında gösterdiği tutum ve davranışlar hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin; bağımsızlık sembolleri, ekonomi, Türkiye’nin kaynakları ve günümüzde halkın sosyal ve ekonomik durumu konularında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilere Osmanlı Devleti’nin Birinci Dünya Savaşı sonundaki siyasi, sosyal ve ekonomik durumu hakkında açık uçlu sorular sorulur.Öğrencilere, Mondros Mütarekesi’nin şartları doğrultusunda Millî Mücadele’nin gerekçelerine yönelik açık uçlu sorular sorulur.Öğrencilere, Türk milletinin millî meseleler karşısında gösterdiği tutum ve davranışlar hakkında açık uçlu sorular sorulur.Öğrencilerin bağımsızlık sembollerine hâkimiyet düzeyleri görseller üzerinden değerlendirilir.Öğrencilerin ekonomi ve Türkiye’nin kaynakları konularındaki kavramlara hâkimiyetleri ve bilgi düzeyleri anlam çözümleme tablosu kullanılarak değerlendirilir.",
+        "Köprü Kurma": "Osmanlı Devleti’nin Birinci Dünya Savaşı sonrasındaki siyasi ve ekonomik durumundan yola çıkılarak “Osmanlı Devleti’nin savaşın sonunda imzaladığı ateşkes antlaşması sizce nasıl şartlar içeriyordu?” sorusu yöneltilir.Öğrencilere, Osmanlı Devleti’nin Birinci Dünya Savaşı sonunda yaşadığı siyasi, sosyal ve ekonomik zorluklar hatırlatılarak “Sizce Türk milleti böyle bir durumda nasıl bir tutum göstermiştir?” sorusu yöneltilir.İstiklâl Marşı’nın dizeleri üzerinden Millî Mücadele sürecinde Türk milletinin yaşadığı zorluklara, vatanseverliğine ve bağımsızlığı için mücadele etmesine yönelik açık uçlu sorular sorulur.Yerel, ulusal ve küresel olayların çözümünde teşkilatlanma, sorumluluk alma, öncü (lider) rol oynamanın gerekliliği; çatışma ve savaşların ekonomi, toplumsal hayat ve çevreye etkileri; karar alma süreçlerinin demokratikleştirilmesi ve birlikte hareket etmenin önemi üzerinden güncel hayat ile bağlantı kurulabilir.Birinci Dünya Savaşı ve Millî Mücadele dönemlerini kapsayan müzeler, tarihî mekânlar, kütüphaneler ve arşivler ziyaret edilerek geçmiş ile günümüz arasında köprü kurulması sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "İTA.8.3.1.Öğrencilere Mondros Mütarekesi’nin öne çıkan maddelerinden birkaçı Osmanlı Devleti ifadesi gizlenerek sunulur. “Sizin ülkeniz böyle bir antlaşma imzalasaydı nasıl bir tepki verirdiniz?”, “Sizce, bu mütarekeyi imzalayan bir ülkede halk nasıl bir tepki vermiştir?” (SDB2.1,SDB2.3) soruları yöneltilir (E2.1). Öğrencilerin kendilerine yöneltilen sorular üzerinden cesaretli olma (D11.1) ve ülke varlıklarına sahip çıkma (D19.3) değerlerine dikkat etmeleri sağlanır. Öğrencilerin fikirleri soru cevap tekniğiyle alındıktan sonra mütarekenin Osmanlı Devleti tarafından imzalanması, uygulanmaya başlanması süreci ve Osmanlı yönetimi, Mustafa Kemal, aydınlar ile halkın antlaşmaya yönelik tutumuna ilişkin yazılı ve görsel kaynaklar (OB1, OB4) öğrenciler tarafından incelenir. Ayrıca dijital kaynaklardan (OB2) yararlanılabilir.İncelenen kaynaklardan hareketle; Mondros Mütarekesi’ne karşı Osmanlı yönetiminin, Mustafa Kemal’in, aydınların ve halkın tutumu belirlenir (E3.2). Mustafa Kemal’in ve halkın, ülke menfaatini her şeyin üzerinde tutan yaklaşımları (D19.1) ve ülkenin düşman işgalinden kurtarılması için sorumluluk almaya yönelik tutumları (D19.4) hakkında açıklamalar yapılır.Öğrencilerden Mondros Mütarekesi’ne karşı Osmanlı yönetiminin, Mustafa Kemal’in, aydınların ve halkın tutumuna ilişkin benzerlik ve farklılıkları bir karşılaştırma tablosu üzerinde açıklamaları istenir. İTA.8.3.2.1908 Reval Görüşmeleri’nden seçilen maddeler öğrencilere sunularak devletin parçalanma planı karşısında halkın tepkisinin neler olabileceği sorulur. Öğrencilerin “Millî Mücadele’nin hazırlık sürecinde Kuvâ-yı Millîye’nin oluşumu, millî ve millî varlığa düşman cemiyetlerin kurulması, Pontus-Rum meselesi, Sevk ve İskân Kanunu’yla ilişkili olarak asılsız Ermeni iddiaları, Mustafa Kemal’in liderliğinde genelgelerin ilanı ve kongrelerin yapılması, Mîsâk-ı Millî’nin kabulü, İstanbul’un İtilaf devletlerince işgali, Büyük Millet Meclisinin açılışı, Hıyanet-i Vataniye Kanunu ve Büyük Millet Meclisinin otoritesini artırma çalışmaları, Büyük Millet Meclisi lehine kamuoyu oluşturma çabaları, İstanbul Hükûmeti’nin Sevr Antlaşması’nı imzalaması, Mustafa Kemal’in ve Türk milletinin Sevr Antlaşması’nın imzalanmasına tepkileri” konularını yazılı ve görsel kaynaklar (OB1, OB4) üzerinden incelemeleri istenir. Ayrıca dijital kaynaklardan (OB4) yararlanılabilir (E3.2). Öğrencilerin döneme ait bir örnek olay üzerinden işgal girimine karşı millet olma duygusu, düşüncesi ve inancıyla (D19.1, D11.2) harekete geçmenin önemini özgürlük ve vatanseverlik değerleri bağlamında incelemeleri sağlanır. Öğrenciler verilen bir tarih şeridi üzerinden Millî Mücadele’nin hazırlık sürecini inceler. Öğrenciler Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları, Millî Mücadele’nin başarıya ulaşmasına etkileri bakımından karşılaştırır (E3.2). Öğrencilerden Millî Mücadele’nin hazırlık sürecinde Mustafa Kemal’in liderliğinde yapılan çalışmalar ile bu çalışmaların siyasi ve sosyal etkilerini gösteren bir kavram ağı hazırlamaları (OB1, OB7) istenir (E2.2).Öğrencilerden karşılaştırmalarından hareketle Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaların başarıya giden yolda etkilerini değerlendirmeleri (SDB3.3) istenir (E3.4). İTA.8.3.3.Mondros Mütarekesi sonrası işgal edilen bölgeler ve Millî Mücadele sonrası Türkiye haritaları öğrenciler tarafından incelenir (SBAB10.1) (E3.2). “Millî Mücadele sizce neden başlamış olabilir?”, “Millî Mücadele’nin siyasi ve askerî süreci sizce toplumda nasıl etkiler yaratmıştır?” soruları yöneltilerek tartışma ortamı (SDB2.2) sağlanır (E2.1). Böylece Milli Mücadele’nin askerî ve siyasi sürecinde halkın rolüne ilişkin vatanseverlik değerine vurgu yapılır (D19.1). Millî Mücadele sürecinde meydana gelen siyasi ve askeri gelişmelerin (Doğu Cephesi, Gümrü Antlaşması, Güney Cephesi, Ankara Antlaşması, Batı Cephesi, İstiklâl Marşı’nın Kabulü, Maarif Kongresi, Tekâlif-i Millîye Emirleri, Kars Antlaşması ve Mudanya Ateşkes Antlaşması) nedenlerine ilişkin yazılı ve görsel kaynakların öğrenciler tarafından incelenmesi (OB1, OB4) istenir. Ayrıca dijital kaynaklardan (OB2) yararlanılabilir. Öğrenciler kaynaklardan hareketle bir çalışma yaprağı üzerinde Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini (SDB3.3) belirler (E3.2).Öğrencilerden gruplara ayrılmaları ve verilen kaynaklar üzerinden Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin etkilediği ekonomik ve sosyal unsurları belirlemeleri istenir (E2.2, SDB2.1). Grupların kendi alanlarıyla ilgili derlediği bilgiler tüm sınıfın katılımıyla hazırlanacak ortak bir sınıflandırma tablosu (OB1, OB7) ile birleştirilir (SDB2.2). Beyin fırtınası tekniğiyle Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin bireye, topluma ve kurumlara etkileri sorgulanır (SDB2.2). Sorgulamalar sınıf tartışmasıyla değerlendirilirken Mustafa Kemal’in ve Türk milletinin Millî Mücadele sürecinde yaşanan olaylara karşı gösterdiği tutum ve vatanı kurtarmak adına üzerine düşen görevi fedakârlıkla yerine getirmesi sorumluluk (D16.3), özgürlük (D11.1) ve vatanseverlik (D19.1) değerleri bağlamında yorumlanır (E3.6).Öğrencilerden Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini ve sonuçlarını bir balık kılçığı diyagramı ile (OB1) özetlemeleri istenir (E3.6). İTA.8.3.4.Öğrenciler gruplara ayrılır ve “Millî Mücadele’de vatandaşların rolü, sosyo-ekonomik durum ve vatan için yapılan fedakârlıklar, cephe gerisinde yaşananlar, Millî Mücadele’nin kahramanları, Millî Mücadele Dönemi’nde edebiyat ve sanat, Millî Mücadele sürecinde kamuoyu oluşturma çabaları” konuları gruplara paylaştırılır. Paylaştırılan konularla ilgili öğrencilerin merak ettikleri temel hususları grup çalışmasıyla belirlemeleri ve araştıracakları konunun hangi sorulara cevap vereceğini sözlü olarak açıklamaları istenir.Gruplara bilgi toplama, kaynak inceleme ve kaynakları sorgulama süreçlerinin tüm basamaklarını kapsayan bir takip listesi dağıtılır. Bu listenin gruplar tarafından doldurulması sürecinde öğrencilerin ekip hâlinde ve yardımlaşma (SDB2.2) içinde çalışmalarına özen gösterilir. Grupların, araştırma konularıyla ilgili hangi kaynaklardan yararlanacakları ve bu kaynaklara nereden ve nasıl ulaşacakları öğ retmen rehberliğinde belirlenir.Gruplardan, Türk milletinin Millî Mücadele sürecindeki rolüyle ilgili yazılı ve görsel kaynaklardan bilgi toplamaları (OB1, OB4) istenir (E3.7). Ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Kaynaklardan bilgi toplama sürecinde, öğ rencilerin karar verme (SDB3.3) ve iş birliği becerilerinin gelişimine destek verilir. Araştırmada yer vermek için uygun ve güncel nitelikte olan kaynaklar, öğrenciler tarafından kaydedilir.Türk milletinin Millî Mücadele sürecindeki rolüyle ilgili ulaşılan kaynaklar, belirlenen ölçütlerin (kaynağın türü, yazarı, tarihi, geçerliliği, tutarlılığı vb.) yer aldığı bir liste yardımıyla gruplar tarafından değerlendirilerek bilimsel araştırma süreci (E3.2) işletilir.Öğrencilerin, Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynakların kimler tarafından nasıl oluşturulduğunu sorgulamaları istenir (OB1). Öğrenciler daha nitelikli bir çalışma oluşturmak için araştırmalarını farklı kaynaklarla desteklemenin önemine dair çıkarımlarda bulunur (E3.4).Araştırma sürecinde elde edilen bilgiler, gruplar tarafından tablo, resim ve örnek olaylarla desteklenen köş e yazılarına dönüş türülür (OB1, OB4, E3.3). Köş e yazıları hazırlanırken uygun başlıklar bulunur. Hazırlanan görseller metnin içeriğine uygun biçimde kullanılır. Öğrencilerin kanıta dayalı çıkarımlarından hareketle Türk milletinin Millî Mücadele sürecindeki fedakârlıklarına (D11.1) ilişkin yazdıkları köş e yazıları ortak bir çalışma ile bir araya getirilerek (SDB2.2) bir performans görevi niteliğinde hazırlanıp basılı veya dijital okul gazetesi formatında paylaşılır (OB4). Millî Mücadele sürecinde yaşanmış örnek olaylar ve görseller üzerinden (OB4) dönem insanının ailesi ve toplumu için gösterdiği dayanışma ve fedakârlığı (D20.2), Millî Mücadele’nin haklılığına olan inancı (D12.1), millî ve manevi değerlere sahip çıkması (D14.3) vurgulanır (E3.7). Tüm araştırma süreci dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerden Millî Mücadele Dönemi’ni anlatan romanlar okumaları ve okudukları romanlarla ilgili sunum yapmaları istenebilir.Öğrencilere Millî Mücadele Dönemi ile ilgili filmler izletilerek bu filmlerin tarihsel gerçekliklerle ne derece uyuştuğuna dair inceleme yaptırılabilir.Öğrencilerden seçecekleri bir Millî Mücadele kahramanı hakkında biyografik çalışma yapmaları istenebilir.Günümüz Türkçesine çevrilmiş dönem gazetelerinden haberler ve görseller kullanılarak öğrenciler tarafından dijital bir gazete çıkarılabilir.",
+        "Destekleme": "Dönemle ilgili film, belgesel ve animasyonlar yoluyla konu somutlaştırılabilir.Millî Mücadele Dönemi’ne ait çocuk hikâyeleri okutulabilir.Millî Mücadele Dönemi yazılı kaynakları dışında alternatif görsel-işitsel kaynaklarla konu somutlaştırılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "İTA.8.3.1. Mondros Mütarekesi’ne karşı Osmanlı yönetiminin, Mustafa Kemal’in, aydınların ve halkın tutumunu karşılaştırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Mondros Mütarekesi’ne karşı Osmanlı yönetimi, Mustafa Kemal, aydınlar ve halkın tutumunu kaynaklar üzerinden belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Mondros Mütarekesi’ne karşı Osmanlı yönetimi, Mustafa Kemal, aydınlar ve halkın tutumuna ilişkin benzerlik ve farklılıkları kaynaklar üzerinden belirler.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.3.2. Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaların etkilerini değerlendirebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları etkileri bakımından karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "b) Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları etkileri bakımından değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.3.3. Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmeleri neden ve sonuçlarıyla birlikte yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin etkilediği unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin bireye, topluma ve kurumlara etkilerini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini ve sonuçlarını özetler.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.3.4. Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin oluşturduğu özgün ürünleri paylaşabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin merak ettiği konular hakkında sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "b) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynaklardan bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "c) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin araştırması için topladığı bilgilerin araştırma konusu açısından uygunluğunu inceler.",
+          "bold": false
+        },
+        {
+          "text": "ç) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kullanacağı kaynakların sınırlılığını sorgular.",
+          "bold": false
+        },
+        {
+          "text": "d) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynaklardan elde ettiği bilgileri yorumlar.",
+          "bold": false
+        },
+        {
+          "text": "e) Türk milletinin Millî Mücadele sürecindeki rolü hakkında kanıta dayalı oluşturduğu ürünleri paylaşır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "İTA.8.3.1",
+          "codeAsPrinted": "İTA.8.3.1",
+          "text": "Mondros Mütarekesi’ne karşı Osmanlı yönetiminin, Mustafa Kemal’in, aydınların ve halkın tutumunu karşılaştırabilme",
+          "group": null,
+          "components": [
+            "a) Mondros Mütarekesi’ne karşı Osmanlı yönetimi, Mustafa Kemal, aydınlar ve halkın tutumunu kaynaklar üzerinden belirler.",
+            "b) Mondros Mütarekesi’ne karşı Osmanlı yönetimi, Mustafa Kemal, aydınlar ve halkın tutumuna ilişkin benzerlik ve farklılıkları kaynaklar üzerinden belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.3.2",
+          "codeAsPrinted": "İTA.8.3.2",
+          "text": "Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaların etkilerini değerlendirebilme",
+          "group": null,
+          "components": [
+            "a) Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları etkileri bakımından karşılaştırır.",
+            "b) Millî Mücadele’nin hazırlık sürecinde yapılan çalışmaları etkileri bakımından değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.3.3",
+          "codeAsPrinted": "İTA.8.3.3",
+          "text": "Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmeleri neden ve sonuçlarıyla birlikte yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini inceler.",
+            "b) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin etkilediği unsurları inceler.",
+            "c) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin bireye, topluma ve kurumlara etkilerini sorgular.",
+            "ç) Millî Mücadele sürecinde meydana gelen siyasi ve askerî gelişmelerin nedenlerini ve sonuçlarını özetler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.3.4",
+          "codeAsPrinted": "İTA.8.3.4",
+          "text": "Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin oluşturduğu özgün ürünleri paylaşabilme",
+          "group": null,
+          "components": [
+            "a) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin merak ettiği konular hakkında sorular sorar.",
+            "b) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynaklardan bilgi toplar.",
+            "c) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin araştırması için topladığı bilgilerin araştırma konusu açısından uygunluğunu inceler.",
+            "ç) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kullanacağı kaynakların sınırlılığını sorgular.",
+            "d) Türk milletinin Millî Mücadele sürecindeki rolüne ilişkin kaynaklardan elde ettiği bilgileri yorumlar.",
+            "e) Türk milletinin Millî Mücadele sürecindeki rolü hakkında kanıta dayalı oluşturduğu ürünleri paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/386",
+      "url": "https://tymm.meb.gov.tr/tc-inkilap-tarihi-ve-ataturkculuk-dersi/unite/386",
+      "title": "4. Ünite: Türkiye Cumhuriyeti’nin Kuruluşu Ve İnkılaplar",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:17:45.891Z",
+      "cacheFile": "html/tc-inkilap-tarihi-ve-ataturkculuk-dersi_unite_386.html",
+      "meta": [
+        "T.C. İnkılap Tarihi ve Atatürkçülük Dersi",
+        "8.Sınıf"
+      ],
+      "pageTitle": "4. Ünite: Türkiye Cumhuriyeti’nin Kuruluşu Ve İnkılaplar",
+      "subtitle": null,
+      "intro": "Bu ünitede Cumhuriyet’in İlanı’na kadar yaşanan siyasi ve diplomatik gelişmelere yer verilerek halk egemenliğine dayalı bir yönetim biçiminin hazırlık sürecinin ortaya konulması, Türk modernleşme süreci bağlamında Mustafa Kemal Atatürk liderliğinde yapılan inkılaplara, bu inkılapların yapılma gerekçelerine, Türkiye’nin modern bir devlet olması yolunda inkılapların sağladığı katkılara ve Atatürk ilkeleriyle ilişkilerine yer verilerek Atatürk’ün Türk milletini ve Türkiye Cumhuriyeti’ni muasır medeniyetler seviyesine çıkarma idealinin anlaşılması amaçlanmıştır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama) (İTA.8.4.2)",
+        "Kavramsal Beceriler": "KB2.3. Özetleme (İTA.8.4.1) KB2.20. Sentezleme (İTA.8.4.3)",
+        "Eğilimler": "E3.2. Odaklanma, E3.3. Yaratıcılık, E3.6. Analitik Düşünme, E3.7. Sistematik Olma, E3.11. Özgün Düşünme",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D1. Adalet, D7. Estetik, D8. Mahremiyet, D14. Saygı, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.18. Tartışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "İTA.8.4.1. Cumhuriyet’in ilanına kadar geçen süreçte meydana gelen siyasi ve diplomatik gelişmeleri özetleyebilmea) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları çözümler.b) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları sınıflandırır.c) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları anlamı değişmeyecek şekilde kendi ifadeleri ile yeniden yorumlar.İTA.8.4.2. Türk modernleşmesi çerçevesinde Atatürk’ün yaptığı inkılapları neden ve sonuçlarıyla yorumlayabilmea) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılapların nedenlerini inceler.b) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılaplardan etkilenen unsurları inceler.c) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılapların etkilerinin niteliğini sorgular.ç) Türk modernleşmesi ç erçevesinde Atatürk Dönemi’nde yapılan inkılapların nedenlerini ve sonuçlarını bağlamından kopmadan ifade eder.İTA.8.4.3. Atatürk ilke ve inkılapları arasındaki ilişkiyi ortaya koyan özgün bir ürün oluşturabilmea) Atatürk ilkelerinin temel özellikleri ile demokrasinin ilkeleri arasındaki ilişkiyi belirler.b) Cumhuriyet Dönemi’nde gerçekleştirilen inkılapları Atatürk ilkeleriyle ilişkilendirir.c) Cumhuriyet Dönemi’nde gerçekleştirilen inkılapların Atatürk ilkeleriyle ilişkisi hakkında oluşturduğu ürünü paylaşır.",
+        "İçerik Çerçevesi": "Cumhuriyet’in İlanına Kadar Yaşanan Siyasi ve Diplomatik GelişmelerTürk Modernleşmesi ve Atatürk İnkılaplarıAtatürk İlke ve İnkılapları Arasındaki İlişki",
+        "Anahtar Kavramlar": "akılcılık, anayasa, bağımsızlık, bilimsellik, cumhuriyetçilik, çağdaşlık, devletçilik, Gençliğe Hitabe, halkçılık, inkılapçılık, laiklik, millî kültür, millî tarih bilinci, milliyetçilik, Mîsâk-ı İktisadi, Nutuk, özgürlük, Türk modernleşmesi",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu ünitede yer alan öğrenme çıktıları; balık kılçığı, dereceli puanlama anahtarı, performans görevi, çalışma yaprağı, sınıflandırma tablosu, kart eşleştirme ve performans görevi kullanılarak değerlendirebilir.Performans görevi: Cumhuriyete giden yolda halkın bilinçlendirilmesine yönelik afiş veya tarih şeridi (dijital) hazırlama görevidir.Performans görevi: Atatürk ilke ve inkılapları arasındaki ilişkiyi yansıtan bir kavram haritası, infografik veya broşür hazırlama görevidir.",
+        "Temel Kabuller": "Öğrencilerin Osmanlı Devleti’nin son döneminde gerçekleşen demokratikleşme çabaları ve yapılan yenilikler hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin Millî Mücadele sürecinin askerî aşamasının başarıyla sonuçlanması ve ülkenin düşman işgalinden kurtarılması hakkında bilgi sahibi oldukları kabul edilmektedir.Öğrencilerin, cumhuriyet ve demokrasi kavramları, ülkemizde demokrasinin gelişimi ve cumhuriyetimizin nitelikleri konularında temel bilgileri edindikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilere Osmanlı Devleti’nin son döneminde gerçekleşen demokratikleşme çabaları ve yenilikler hakkında açık uçlu sorular sorulur.Öğrencilerin, Millî Mücadele sürecinin askerî aşamasının başarıyla sonuçlanması ve ülkenin düşman işgalinden kurtarılması hakkında ön bilgileri açık uçlu sorular aracılığıyla değerlendirilir.Öğrencilerin “cumhuriyet” ve “demokrasi” kavramları ile cumhuriyetimizin temel nitelikleri konusundaki hazırbulunuşluk düzeyleri soru-cevap tekniği ve anlam çözümleme tablosu ile değerlendirilir.",
+        "Köprü Kurma": "Öğrencilere günümüzde ülkemizi yöneten yöneticileri nasıl seçtiğimize yönelik sorular yöneltilerek bu sistemin Osmanlı Devleti’ndeki saltanat sistemiyle farkları sorgulatılır.Öğrencilere Millî Mücadele sürecinde askerî alanda sağlanan başarının yeni bir devletin temellerini sağlam bir şekilde atmak açısından tek başına yeterli olmayacağı fikrinden hareketle “Sizce Osmanlı Devleti’nin son döneminde yaşanan sorunların bir daha yaşanmaması adına Türkiye Cumhuriyeti Dönemi’nde hangi alanlarda yeniliğe ihtiyaç duyulmuştur?” sorusu yöneltilir.Yönetim biçimimiz, cumhuriyetin temel nitelikleri, Atatürk ilke ve inkılaplarının günümüze etkileri, vatandaş olarak hak ve sorumluluklarımız, bağımsızlığımızın simgeleri, zamanın ruhuna ve ihtiyaçlarına uygun olarak değişime açık olma konularına vurgu yapılarak güncel hayat ile bağlantı kurulur.",
+        "Öğrenme-Öğretme Uygulamaları": "İTA.8.4.1.Cumhuriyete giden yolda gerçekleşen siyasi ve diplomatik olaylarla ilgili yazılı ve görsel kaynaklar verilerek öğrencilerin “saltanatın kaldırılması, Lozan Barış Antlaşması’nın imzalanması ve Cumhuriyet’in İlanı” gelişmelerini incelemeleri sağlanır (E3.2). Ayrıca dijital kaynaklardan da yararlanılabilir. Bu aşamada Lozan Barış Antlaşması’nın kazanımları, Misâk-ı Millî sınırlarındaki değişim karşılaştırmalı haritalar üzerinden vurgulanır. Panel tekniği kullanılarak cumhuriyete giden yolda gerçekleşen siyasi ve diplomatik gelişmelerin sebepleri ve sonuçları öğrenciler tarafından tartışılır (SDB2.2). Lozan Barış Antlaşması’nda çözüme kavuşturulamayan Musul meselesinin sonraki yıllarda nasıl sonuçlandığından bahsedilir. Ayrıca Lozan Barış Konferansı’nda gündeme gelen ve Lozan Barış Antlaşması’nın imzalanmasından sonra Atatürk dönemi Türk dış politikasına yön veren meselelerden; “yabancı okullar sorununun çö zümlenmesi, Türk-Yunan nüfus mübadelesininyapılması, Osmanlı’dan kalan dış borçlar sorununun çözümlenmesi, Türk Boğazları sorunu ve Montrö Boğazlar Sözleşmesi`nin imzalanması, Hatay’ın Türkiye’ye katılması” gelişmelerine kısaca yer verilir. Bu gelişmeler kapsamında Atatürk’ün “Yurtta sulh, cihanda sulh” anlayışına ve Misâk-ı Millî’ye uygun olarak millî egemenliğimizi geliştirmek ve bağımsızlığımızı korumak için Lozan Barış Antlaşması ile uyumlu bir şekilde hayatının sonuna dek sürdürdüğü politikaların vurgusu yapılır (KB2.18). Cumhuriyete giden yolda gerçekleşen siyasi ve diplomatik gelişmelerin sebepleri ve sonuçları öğrenciler tarafından balık kılçığı üzerinde gösterilir (E3.7, OB1).Öğrencilerden gruplara ayrılarak vızıltı grupları tekniği ile cumhuriyete giden yolda gerçekleşen olaylara yönelik sloganlar oluşturmaları istenir. Oluşturulan sloganlar bir performans görevi olarak (SDB2.2) cumhuriyete giden yolda gerçekleşen olaylar konusunda halkın bilinçlendirilmesine yönelik hazırlanan afiş veya tarih şeridi üzerinde kullanılır (E3.2, E3.6, E3.7, E3.11, OB4). Bu süreçte öğrencilerin estetik bakış açısıyla özgün eserler ortaya koymaları beklenir (D7.2). Bu ürünlerde öğrencilerin; saltanatın kaldırılmasının cumhuriyet rejimine geçişe sağladığı katkı, Lozan Barış Antlaşması’nın Türk milletinin ve Türkiye Cumhuriyeti’nin bağımsızlığı açısından önemi (D19.4), Atatürk’ün ilan ettiği cumhuriyet sisteminin topluma kazandırdıkları gibi unsurlara yer vermeleri istenir. Performans görevi kapsamında oluşturulan afiş ve tarih şeridi dereceli puanlama anahtarı ile değerlendirilebilir. İTA.8.4.2.Osmanlı Devleti’nde yenileşmeye yönelik tartışmalar ile yenileşme hareketleri ve Atatürk inkılapları ile ilgili yazılı ve görsel kaynaklar sınıfa getirilir. Ayrıca dijital kaynaklar da kullanılabilir. Öğrencilerin verilen kaynaklar üzerinden Osmanlı Devleti’nin son döneminde aydınlar tarafından tartışılan farklı alanlardaki (alfabe, kılık-kıyafet, kadın hakları, hukuk, meşrutiyet, eğitim) modernleşme önerilerini incelemeleri istenir (E3.2, OB1). Öğrencilere “Bu öneriler ile Cumhuriyet Dönemi’nde Atatürk tarafından gerçekleştirilen inkılaplar arasında ne gibi benzerlik ve farklılıklar vardır?” sorusu yöneltilerek Osmanlı Devleti’nin son dönemi ve Cumhuriyet’in ilk yıllarındaki modernleşme çabalarının günümüze etkisi millî ve manevi değerler (D14.3) ve millî kimlik değerleri (D19.2) kapsamında tartışılır (KB2.18) (E3.11). Öğrencilerden beş gruba ayrılarak Atatürk Dönemi’nde siyasi, hukuki ve toplumsal alanlarda; ekonomi, eğitim ve kültür alanlarında yapılan inkılaplara ilişkin yazılı ve görsel kaynakları incelemeleri (OB1, OB4) istenir. Ayrıca dijital kaynaklardan da (OB2) yararlanılabilir.Gruplar, kaynaklardan hareketle bir çalışma yaprağı üzerinde Atatürk inkılaplarının gerekçelerini ve Osmanlı Dönemi yenileşme tartışmaları ile ilişkisini belirler. Gruplardan kendi çalışma alanları ile ilgili gerekçeleri sözlü olarak ifade etmeleri (SDB2.1, SDB3.3) istenir (E3.7). Öğrencilerin kaynaklardan hareketle Atatürk Dönemi’nde yapılan inkılapların etkilediği unsurları (siyasi, hukuki, toplumsal, ekonomi, kültür ve eğitim) incelemeleri istenir. Atatürk inkılapları ile bu inkılapların etkilediği unsurlar öğrenciler tarafından bir sınıflandırma tablosunda gösterilir (OB1, OB7).Sınıf tartışması yöntemiyle Atatürk Dönemi’nde yapılan inkılapların siyasi, hukuki, toplumsal, ekonomik ve kültürel etkileri sorgulanır (SDB2.2).Öğrenciler Atatürk Dönemi’nde yapılan inkılapların nedenlerini ve sonuçlarını balık kılçığı kullanarak (OB1, OB4) ifade eder (E3.3, E3.7, E3.11). İTA. 8.4.3.Beyin fırtınası yöntemiyle demokratik bir toplumun ne gibi özelliklere sahip olması gerektiğine dair öğrencilerin fikirleri (SDB2.2) açığa çıkarılır. Bu aşamada özellikle hak ve özgürlükler (D1.1), kişisel özgürlük (D8.1), millî ve manevi değerlere saygı (D14.3) değerlerine vurgu yapılır. Öğrencilerin Atatürk ilkeleri ile ilgili verilen farklı türden kaynakları inceleyerek Atatürk ilkelerinin temel özelliklerinin demokrasinin hangi ilkeleri ile ilişkilendirilebileceğini belirlemeleri istenir (E3.6). Bu ilişkilerin belirlenmesinde kart eşleştirme tekniğine başvurulur.Siyasi, hukuki, toplumsal ve ekonomik alanlarda; eğitim ve kültür alanlarında gerçekleştirilen Atatürk inkılapları ve bu inkılapların düşünsel temelini özetleyen Atatürk ilkelerinin yer aldığı bir eşleştirme tablosu öğrencilere sunulur. Eşleştirme tablosu üzerinde Atatürk ilkeleri ile Atatürk inkılaplarının ilişkilendirilmesi (OB1) istenir (E3.2, E3.6, E3.7).Öğrencilerin altı gruba ayrılması sağlanır. Gruplar tarafından Atatürk ilkelerinden biri seçilerek performans görevi kapsamında Atatürk ilke ve inkılapları arasındaki ilişkiyi yansıtan bir kavram haritası, infografik veya broşür (OB1, OB2, OB4) oluşturulur (E3.11, SDB2.1). Gruplar tarafından geliştirilen ürünler sınıf veya okul panosunda sergilenir. Bu ürünler dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerden Osmanlı Dönemi’nde yapılan ıslahatlar ile Cumhuriyet Dönemi’nde gerçekleştirilen inkılaplar arasındaki benzerlik ve farklılıkları ortaya koyan bir çalışma yapıp sınıfta sunmaları istenebilir.Öğrenciler tarafından, Millî Mücadele’yi ve Atatürk inkılaplarını örnek alan devletler hakkında bir araştırma yapılıp sınıfta sunulabilir.Öğrencilerden Mustafa Kemal Atatürk’ün düşünce hayatını ve fikirlerini etkileyen kitapları araştırmaları ve seçtikleri bir kitabı özetlemeleri istenebilir.Öğrenciler tarafından Türk İnkılabı’nın Fransız ve Rus inkılapları ile benzerlik ve farklılıkları üzerine bir araştırma yapılıp sunulabilir.",
+        "Destekleme": "Öğrencilerden inkılaplar ile ilgili dönemin gazete haberlerini toplayıp sunmaları istenebilir.Yazılı kaynaklar dışında görsel kaynaklarla konu somutlaştırılabilir.Öğrencilerden cumhuriyetin hayatımız için önemini anlatan bir resim çizmeleri istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "İTA.8.4.1. Cumhuriyet’in ilanına kadar geçen süreçte meydana gelen siyasi ve diplomatik gelişmeleri özetleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları çözümler.",
+          "bold": false
+        },
+        {
+          "text": "b) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları sınıflandırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları anlamı değişmeyecek şekilde kendi ifadeleri ile yeniden yorumlar.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.4.2. Türk modernleşmesi çerçevesinde Atatürk’ün yaptığı inkılapları neden ve sonuçlarıyla yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılapların nedenlerini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılaplardan etkilenen unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılapların etkilerinin niteliğini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Türk modernleşmesi ç erçevesinde Atatürk Dönemi’nde yapılan inkılapların nedenlerini ve sonuçlarını bağlamından kopmadan ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "İTA.8.4.3. Atatürk ilke ve inkılapları arasındaki ilişkiyi ortaya koyan özgün bir ürün oluşturabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Atatürk ilkelerinin temel özellikleri ile demokrasinin ilkeleri arasındaki ilişkiyi belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Cumhuriyet Dönemi’nde gerçekleştirilen inkılapları Atatürk ilkeleriyle ilişkilendirir.",
+          "bold": false
+        },
+        {
+          "text": "c) Cumhuriyet Dönemi’nde gerçekleştirilen inkılapların Atatürk ilkeleriyle ilişkisi hakkında oluşturduğu ürünü paylaşır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "İTA.8.4.1",
+          "codeAsPrinted": "İTA.8.4.1",
+          "text": "Cumhuriyet’in ilanına kadar geçen süreçte meydana gelen siyasi ve diplomatik gelişmeleri özetleyebilme",
+          "group": null,
+          "components": [
+            "a) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları çözümler.",
+            "b) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları sınıflandırır.",
+            "c) Cumhuriyet’e giden yolda gerçekleşen siyasi ve diplomatik olayları anlamı değişmeyecek şekilde kendi ifadeleri ile yeniden yorumlar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.4.2",
+          "codeAsPrinted": "İTA.8.4.2",
+          "text": "Türk modernleşmesi çerçevesinde Atatürk’ün yaptığı inkılapları neden ve sonuçlarıyla yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılapların nedenlerini inceler.",
+            "b) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılaplardan etkilenen unsurları inceler.",
+            "c) Türk modernleşmesi çerçevesinde Atatürk Dönemi’nde yapılan inkılapların etkilerinin niteliğini sorgular.",
+            "ç) Türk modernleşmesi ç erçevesinde Atatürk Dönemi’nde yapılan inkılapların nedenlerini ve sonuçlarını bağlamından kopmadan ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "İTA.8.4.3",
+          "codeAsPrinted": "İTA.8.4.3",
+          "text": "Atatürk ilke ve inkılapları arasındaki ilişkiyi ortaya koyan özgün bir ürün oluşturabilme",
+          "group": null,
+          "components": [
+            "a) Atatürk ilkelerinin temel özellikleri ile demokrasinin ilkeleri arasındaki ilişkiyi belirler.",
+            "b) Cumhuriyet Dönemi’nde gerçekleştirilen inkılapları Atatürk ilkeleriyle ilişkilendirir.",
+            "c) Cumhuriyet Dönemi’nde gerçekleştirilen inkılapların Atatürk ilkeleriyle ilişkisi hakkında oluşturduğu ürünü paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

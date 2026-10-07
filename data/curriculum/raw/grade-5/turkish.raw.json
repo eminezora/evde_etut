@@ -1,0 +1,2508 @@
+{
+  "subject": "Türkçe",
+  "courseName": "Ortaokul Türkçe Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 6,
+    "name": "Ortaokul Türkçe Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-turkce-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=2&kademe=temel-egitim",
+    "heading": "Ortaokul Türkçe Dersi",
+    "gradeCards": [
+      {
+        "label": "5.Sınıf",
+        "grade": 5,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/6"
+      },
+      {
+        "label": "6.Sınıf",
+        "grade": 6,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/7"
+      },
+      {
+        "label": "7.Sınıf",
+        "grade": 7,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8"
+      },
+      {
+        "label": "8.Sınıf",
+        "grade": 8,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/9"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/6",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/6",
+    "heading": "Ortaokul Türkçe Dersi 5.Sınıf",
+    "headingGrade": 5,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T10:54:09.142Z",
+    "links": [
+      {
+        "href": "/ortaokul-turkce-dersi/unite/54",
+        "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/54",
+        "title": "1. Tema: Oyun Dünyası"
+      },
+      {
+        "href": "/ortaokul-turkce-dersi/unite/61",
+        "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/61",
+        "title": "2. Tema: Atatürk’ü Tanımak"
+      },
+      {
+        "href": "/ortaokul-turkce-dersi/unite/67",
+        "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/67",
+        "title": "3. Tema: Duygularımı Tanıyorum"
+      },
+      {
+        "href": "/ortaokul-turkce-dersi/unite/74",
+        "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/74",
+        "title": "4. Tema: Geleneklerimiz"
+      },
+      {
+        "href": "/ortaokul-turkce-dersi/unite/78",
+        "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/78",
+        "title": "5. Tema: İletişim Ve Sosyal İlişkiler"
+      },
+      {
+        "href": "/ortaokul-turkce-dersi/unite/87",
+        "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/87",
+        "title": "6. Tema: Sağlıklı Yaşıyorum"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/ortaokul-turkce-dersi/unite/54",
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/54",
+      "title": "1. Tema: Oyun Dünyası",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:10.725Z",
+      "cacheFile": "html/ortaokul-turkce-dersi_unite_54.html",
+      "meta": [
+        "Ortaokul Türkçe Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "1. Tema: Oyun Dünyası",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin tahmin edebilme, yüzey anlamı ve anahtar kelimeleri belirleyebilme, söz varlığını geliştirebilme ve kullanabilme, akıcı okuyabilme, görselle iletilen anlamı belirleyebilme, süreci yönetebilme, beden dilini kullanabilme, hazırlıksız konuşma yapabilme, sesini uygun şekilde kullanabilme; strateji, yöntem ve teknik seçimlerini yönetebilme; içeriğe ve yapıya yönelik seçimlerini yönetebilme; yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmelerine yetkinlik düzeyinde ulaşmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "34",
+        "Alan Becerileri": "Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma , TAB4. Yazma",
+        "Kavramsal Beceriler": "KB1. Temel Beceriler, KB2.4. Çözümleme, KB2.12. Mevcut Bilgiye/Veriye Dayalı Tahmin Etme",
+        "Eğilimler": "E1.1. Merak, E2.1. Empati, E2.4. Güven, E2.5. Oyunseverlik, E3.2. Odaklanma, E3.3. Yaratıcılık",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği",
+        "Değerler": "D1. Adalet, D4. Dostluk, D8. Mahremiyet, D14. Saygı",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Beden Eğitimi ve Spor, Bilişim Teknolojileri ve Yazılım",
+        "Beceriler Arası İlişkiler": "KB2.6. Bilgi Toplama, KB2.13. Yapılandırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "Dinleme/İzlemeT.D.5.3. Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.D.5.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme T.D.5.13. Dinlediğinin/izlediğinin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeOkumaT.O.5.2. Akıcı okuyabilme T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme T.O.5.4. Okuyacağı metnin içeriğine yönelik tahminde bulunabilme T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.O.5.6. Metnin yüzey anlamını belirleyebilme T.O.5.7. Görselle iletilen anlamı belirleyebilme T.O.5.15. Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeKonuşmaT.K.5.1. Konuşma sürecini yönetebilme T.K.5.7. Hazırlıksız konuşma yapabilme T.K.5.8. Konuşmasında sesini uygun şekilde kullanabilme T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme T.K.5.20. Konuşmasında beden dilini kullanabilmeYazmaT.Y.5.1. Yazma sürecini yönetebilme T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme T.Y.5.6. Yazılı üretim ve yazılı etkileşiminde tahminlerinden yararlanabilme T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+        "Anahtar Kavramlar": "Genellemeler Temadaki metinlerin işlenmesi sürecinde (hazırlık bölümü de dâhil) öncelik-sonralık ilişkisi gözetilmeksizin dinleme/izleme, okuma, konuşma ve yazma etkinliklerine birbirini destekleyecek, tamamlayacak ve güçlendirecek biçimde yer verilir. Konuşma ve yazma becerilerindeki etkinliklerle ortaya çıkan ürünler, farklı alan becerileri ve kavramsal becerilerin bir araya gelmesiyle oluşturulur. Bu becerilerden hareketle hazırlanan öğrenme çıktısına, “Temalara Yönelik Süreç Detaylı Öğretim Programı”nda ilk kez yer verildiğinde bu öğrenme çıktısına yönelik bağımsız etkinlik yapılır. İlgili öğrenme çıktısına ilerleyen temalarda yeniden yer verildiğinde öğrenme çıktısıyla ilgili bağımsız etkinlik yapılabileceği gibi öğrenme çıktısı, o temada yer verilen diğer öğrenme çıktılarıyla birlikte, onları destekleyecek ve tamamlayacak şekilde aynı etkinlikte de kullanılabilir. Anahtar Kavramlar Strateji, yöntem ve teknik; konuşma süreci; söz varlığı; yüzey anlam; görsel unsurlar; akıcı okuma; metnin anahtar kelimeleri; hazırlıksız konuşma, yazıda içerik ve yapı, beden dili, yazım kuralları, noktalama işaretleri, dil yapıları ve söz varlığı.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Dinleme/izleme, okuma, konuşma ve yazma dil becerilerine yönelik öğrenme çıktıları ile ifade edilen becerilere ulaşılıp ulaşılmadığını belirlemek amacıyla ölçme değerlendirme çalışmaları yapılır. Bu süreçte kullanılabilecek ölçme araçları örnek olarak verilmiştir. Öğrenme ortamının özellikleri, öğrenci sayısı ve mevcut imkânlar dikkate alınarak aşağıda yer verilen araçların tamamı ya da bir kısmı kullanılabilir ve gerekli görülen durumlarda farklı ölçme değerlendirme araçlarından da yararlanılabilir. Konuşma ve yazmaya yönelik değerlendirme sürecinde öğrenci ürün dosyalarından (portfolyolardan) yararlanılabilir. Her temada en az bir tane performans görevinin verilmesi esastır. Performans görevi temanın en az bir öğrenme çıktısını ölçme ve değerlendirmeye yönelik olmalıdır. Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilmesi ve dinlediğinde/ izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilmesi için boşluk doldurma, açık uçlu soru, cümle tamamlama vb. çalışmalar yapılabilir. Öğrencinin akıcı ve doğru okuma gelişimini takip ederek öğrenciye geri bildirim verebilmek için akıcı ve doğru okumaya yönelik ölçütler içeren gelişim çizelgesi ve akran değerlendirme ölçme araçları kullanılabilir. Görselle iletilen anlamı belirleyebilmesi için çoktan seçmeli, açık uçlu soru ve iki bileşenli maddeler (doğru-yanlış, evet-hayır vb.) gibi çalışmalardan faydalanılabilir. Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilmesi için kavram haritası çalışması verilebilir. Konuşmasında sesini, beden dilini uygun şekilde kullanabilmesi ve hazırlıksız konuşma yapabilmesi için karşılıklı konuşma, canlandırma vb. çalışmalar yapılabilir. Yazılı üretim ve yazılı etkileşiminde tahminlerinden yararlanabilmesi için eşleştirme, boşluk doldurma vb. çalışmalar kullanılabilir.",
+        "Temel Kabuller": "Akıcı okuyabilme öğrenme çıktısı için dördüncü sınıftaki okuma sürecini yönetebilme öğrenme çıktısı ön öğrenme olarak kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Temaya ilişkin temel kabule yönelik beceri; gözlem formu, kontrol listesi, dereceli puanlama anahtarı ile belirlenebilir. Ön değerlendirmeden hareketle varsa öğrencilerin gelişmeye açık yönlerini güçlendirmek için gerekli çalışmalar yapılır.",
+        "Köprü Kurma": "Konuşma sürecini yönetebilme öğrenme çıktısı, dördüncü sınıftaki konuşmalarını yönetebilme öğrenme çıktısıyla ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "Temanın başlangıcında ön değerlendirmeye yönelik çalışma yapılır. Metin işleme sürecinde metnin içeriğine yönelik hazırlık çalışmaları (soru-cevap, ön araştırma vb.) yapılarak öğrencilerin ön bilgilerinden yararlanmaları, motive ve derse dâhil olmaları sağlanır. İlgili öğrenme çıktısına yönelik etkinlik yapılırken strateji, yöntem ve teknik; metnin anahtar kelimeleri, yazıda içerik ve yapı, akıcı okuma, yüzey anlam, görsel unsurlar, hazırlıksız konuşma anahtar kavramları ile dil yapıları ve söz varlığı (DYS) kavramlarına yönelik tanımlayıcı nitelikte ve bu kavramların bileşenlerini, özelliklerini vb. belirten kısa bilgilere ve/veya uyarılara yer verilir. Öğrencilerin sesli okuma çalışmalarında akıcı bir şekilde okuyup okumadıkları izlenir; sesli ve sessiz olarak akıcı bir şekilde okuyabilmelerini ve okumada strateji, yöntem ve teknik seçimlerini yönetebilmelerini sağlayacak çalışmalar yapılır (T.O.5.2., T.O.5.3.). Dinleyecekleri/izleyecekleri ve okuyacakları metnin içeriğine yönelik tahminde bulunabilmelerine (T.D.5.3., T.O.5.4.), dinlediklerinde/izlediklerinde ve okuduklarında geçen anlamını bilmedikleri söz varlığı unsurlarının anlamlarını tahmin edebilmelerine (T.D.5.4., T.O.5.5.), dinlediklerinin/izlediklerinin ve okuduklarının yüzey anlamı (T.D.5.5., T.O.5.6.) ile görselle iletilen anlamı belirleyebilmelerine (T.O.5.7.) yönelik çalışmalara yer verilir. Dinlediklerinin/izlediklerinin ve okuduklarının anahtar kelimelerini belirlemeye (T.D.5.13., T.O.5.15.) ve dinledik lerinden/izlediklerinden, okudukları metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmelerini sağlayacak çalışmalar yapılır (T.D.5.17., T.O.5.20.). Söz varlığını geliştirmeye yönelik eş, yakın, zıt anlamlı ve eş sesli kelimelerin öğretimi T.O.5.20. kapsamında yapılır. Öğrencilerin konuşma ve yazma sürecini yönetebilmelerini (T.K.5.1., T.Y.5.1.), konuşma ve yazılarını zenginleştirecek biçimde söz varlığını kullanabilmelerini (T.K.5.17., T.Y.5.13.), hazırlıksız konuşabilmelerini (T.K.5.7.), yazılı üretim ve etkileşimlerinde tahminlerinden yararlanabilmelerini (T.Y.5.6.); konuşmalarında sesini uygun şekilde kullanabilmelerini (T.K.5.8.) ve konuşmalarında beden dilini kullanabilmelerini (T.K.5.20.) sağlayacak çalışmalar yapılır. Öğrencilerin yazmada strateji, yöntem ve tekniklerine yönelik seçimlerini; içerik ve yapıya yönelik seçimlerini yönetebilmelerini sağlayacak çalışmalar yapılır (T.Y.5.2., T.Y.5.3.). Öğrencilerin Türkçeyi doğru, güzel ve etkili kullandığı cümleler kurmaları sağlanır (T.K.5.17., T.Y.5.13.). Yazım kurallarını (hece yapısı, satır sonunda kelimelerin bölünmesi) uygulamayla ilgili çalışmalar yapılır. Noktalama işaretleriyle ilgili kuralları (noktanın cümle bitirme, kısaltma ve sayılardan sonra sıra bildirme, tarihlerin yazılışında gün, ay ve yılı gösteren sayıları birbirinden ayırma ile saat ve dakika gösteren sayıları birbirinden ayırma, dört ve dörtten çok rakamlı sayılar sondan sayılmak üzere üçlü gruplara ayırma, genel ağ adreslerinde ve matematikte çarpma işareti olarak kullanma; kısa çizginin satıra sığmayan kelimeler bölünürken satır sonuna konma ve heceleri gösterme) uygulamaya yönelik çalışmalar yapılır (T.Y.5.16.). Öğrencilerin okuduklarında isim ve fiili ayırt etmeleri sağlanır (DYS.DO.5.1.). Öğrencilerin tahmin ifade etme işlevli dil yapıları ve söz varlığını (-Abil-, -mIştIr, -mIş olmalı, belki, belki de, sanki, galiba, tahminim, muhtemelen, bence, güya, acaba, dediğine bakılırsa, gördüğüm kadarıyla, umarım, herhâlde vb.) belirlemeleri, işlevine uygun kullanmaları sağlanır (DYS.DO.5.8.; DYS.KY.5.8.). Tema sürecinde öğrenme çıktılarına yönelik yapılacak çalışmalarda kavramsal becerilerden Bilgi Toplama (KB2.6.), Yapılandırma (KB2.13.); eğilimlerden Merak (E1.1.), Empati (E2.1.), Güven (E2.4.), Oyunseverlik (E2.5.), Odaklanma (E3.2.), Yaratıcılık (E3.3.); sosyal-duygusal öğrenme becerilerinden İletişim (SDB2.1.), İş Birliği (SDB2.2.); değerlerden Hakkaniyetli Davranmak (D1.2.), Arkadaşlarını ve Onlarla Vakit Geçirmeyi Önemsemek (D4.4.), Kişisel Bilgilerin Gizliliğini Korumak (D8.2.), Nezaketli Olmak (D14.1.); okuryazarlık becerilerinden Dijital Okuryazarlık (OB2.), Görsel Okuryazarlık (OB4.), Kültür Okuryazarlığı (OB5.) uygun bir şekilde işe koşulur. * Temalara yönelik öğrenme-öğretme uygulamaları bölümlerinde D ile başlayan desimaller (ör. D14.1) değerleri, OB ile başlayan desimaller (ör. OB4) okurya zarlık becerilerini, E ile başlayan desimaller (ör. E1.1) eğilimleri, SDB ile başlayan desimaller (ör. SDB2.1) sosyal duygusal öğrenme becerilerini ifade etmektedir. Atölye Çalışmaları Dinleme/İzleme Atölyesi Dinleme/izleme atölyesi uygulama esaslarına uygun olarak belirlenen dinleme/izleme materyalinin öğrenciler tarafından dinlenerek/izlenerek çözümlenmesi çalışmalarına başlanır. Okuma Atölyesi Okuma atölyesi uygulama esaslarına uygun olarak belirlenen iki kitabın öğrenciler tarafından okunması ve çözümlenmesi çalışmalarına başlanır. Üretim Atölyesi Üretim atölyesi uygulama esasları doğrultusunda öğrencilerin tema içeriği ile temadaki öğrenme çıktılarına uygun ürünler (ses kaydı, konuşma metni, sunum videosu; afiş, kolaj, sınıf panosu, dijital albüm vb.) hazırlamaları sağlanır. Bu etkinlikler, öğrencilerin yaratıcılığını ve özgün düşünme becerilerini destekleyecek nitelikte olmalıdır.",
+        "Zenginleştirme": "Temadan hareketle özgün bir oyun (kutu oyunu, kâğıt kalem oyunları, sokak oyunu, temel kodlamaya dayalı dijital oyunlar vb.) tasarlanması ve tasarlanan oyunun sınıfta ya da uygun ortamlarda tanıtılması istenebilir. Aile büyükleri birincil kaynak olmak üzere “geleneksel çocuk oyunları” üzerine bir araştırma yapılması; eskiden oynanan çocuk oyunları ile günümüzde oynanan çocuk oyunlarının karşılaştırılması, bu karşılaştırmayla birlikte araştırmada ulaşılan oyunlardan oluşan bir tanıtım içeriğinin hazırlanıp sınıfta ya da uygun dijital ortamlarda sunulması istenebilir. “Geleneksel çocuk oyunları” üzerine alanında uzman kişiler, öğretmen, ebeveyn vb. ile röportaj yapılması ve bu röportajın ses dosyası ya da video kaydının dijital araçlar kullanılarak içerik hâline getirilmesi ve bu içeriğin paylaşılması istenir. Film, kısa film ya da animasyonlarda yer alan “geleneksel çocuk oyunlarına” ilişkin örneklerin tespit edilmesi ve bu örneklerin eleştirel bir gözle değerlendirilerek tespitlerin sınıfta ya da uygun dijital ortamlarda sunulması istenebilir.",
+        "Destekleme": "Dinleme/izleme ya da okuma etkinliği öncesinde, metni yansıtan ve metnin anlaşılmasını sağlayacak kelimeler listelenebilir ve bu kelimelerin bağlamdaki anlamları görsel araçlar ve şematik düzenleyiciler yardımıyla verilebilir. Dinleme/izleme ya da okuma etkinliği öncesinde bilgilendirici metinlerdeki kavram, bilgi; öyküleyici metinlerdeki kişi, yer, zaman vb. yapılara ilişkin unsurların yer aldığı kavram ya da hikâye haritası gibi şemalar oluşturulup sunulabilir. Tema kapsamındaki öğrenme çıktılarına yönelik çalışmalar yapılırken iş birlikli öğrenme ortamlarının oluşturulması sağlanabilir. Dinleme/izleme, okuma metni ya da tema içerisinde yer alan “dijital eğitici oyunlar”, “geleneksel çocuk oyunları”, “eğitici kutu oyunları\" vb. kavramlar; görsel işitsel araçların sunumu ve şematik düzenleyicilerin kullanımı ile somutlaştırılabilir. Okuma ve yazma çalışmalarında işleyişin nasıl olması gerektiği bire bir anlatılarak süreç öğrenci ile yürütülebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "Dinleme/İzleme",
+          "bold": true
+        },
+        {
+          "text": "T.D.5.3. Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.13. Dinlediğinin/izlediğinin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "Okuma",
+          "bold": true
+        },
+        {
+          "text": "T.O.5.2. Akıcı okuyabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.4. Okuyacağı metnin içeriğine yönelik tahminde bulunabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.6. Metnin yüzey anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.7. Görselle iletilen anlamı belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.15. Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "Konuşma",
+          "bold": true
+        },
+        {
+          "text": "T.K.5.1. Konuşma sürecini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.7. Hazırlıksız konuşma yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.8. Konuşmasında sesini uygun şekilde kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.20. Konuşmasında beden dilini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "Yazma",
+          "bold": true
+        },
+        {
+          "text": "T.Y.5.1. Yazma sürecini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.6. Yazılı üretim ve yazılı etkileşiminde tahminlerinden yararlanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "T.D.5.3",
+          "codeAsPrinted": "T.D.5.3",
+          "text": "Dinleyeceğinin/izleyeceğinin içeriğine yönelik tahminde bulunabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.4",
+          "codeAsPrinted": "T.D.5.4",
+          "text": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.5",
+          "codeAsPrinted": "T.D.5.5",
+          "text": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.13",
+          "codeAsPrinted": "T.D.5.13",
+          "text": "Dinlediğinin/izlediğinin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.17",
+          "codeAsPrinted": "T.D.5.17",
+          "text": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.2",
+          "codeAsPrinted": "T.O.5.2",
+          "text": "Akıcı okuyabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.3",
+          "codeAsPrinted": "T.O.5.3",
+          "text": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.4",
+          "codeAsPrinted": "T.O.5.4",
+          "text": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5",
+          "codeAsPrinted": "T.O.5.5",
+          "text": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.6",
+          "codeAsPrinted": "T.O.5.6",
+          "text": "Metnin yüzey anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.7",
+          "codeAsPrinted": "T.O.5.7",
+          "text": "Görselle iletilen anlamı belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.15",
+          "codeAsPrinted": "T.O.5.15",
+          "text": "Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.20",
+          "codeAsPrinted": "T.O.5.20",
+          "text": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.1",
+          "codeAsPrinted": "T.K.5.1",
+          "text": "Konuşma sürecini yönetebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.7",
+          "codeAsPrinted": "T.K.5.7",
+          "text": "Hazırlıksız konuşma yapabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.8",
+          "codeAsPrinted": "T.K.5.8",
+          "text": "Konuşmasında sesini uygun şekilde kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.17",
+          "codeAsPrinted": "T.K.5.17",
+          "text": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.20",
+          "codeAsPrinted": "T.K.5.20",
+          "text": "Konuşmasında beden dilini kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.1",
+          "codeAsPrinted": "T.Y.5.1",
+          "text": "Yazma sürecini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.2",
+          "codeAsPrinted": "T.Y.5.2",
+          "text": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.3",
+          "codeAsPrinted": "T.Y.5.3",
+          "text": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.6",
+          "codeAsPrinted": "T.Y.5.6",
+          "text": "Yazılı üretim ve yazılı etkileşiminde tahminlerinden yararlanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.13",
+          "codeAsPrinted": "T.Y.5.13",
+          "text": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.16",
+          "codeAsPrinted": "T.Y.5.16",
+          "text": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-turkce-dersi/unite/61",
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/61",
+      "title": "2. Tema: Atatürk’ü Tanımak",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:12.181Z",
+      "cacheFile": "html/ortaokul-turkce-dersi_unite_61.html",
+      "meta": [
+        "Ortaokul Türkçe Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "2. Tema: Atatürk’ü Tanımak",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin materyal seçimini yönetebilme, tahmin edebilme, yüzey anlamı belirleyebilme, akıcı okuyabilme; dinlediğinin/izlediğinin bölümlerini, şiirin biçim özelliklerini belirleyebilme; hikâye unsurlarını, söz sanatlarını belirleyebilme; söz varlığını geliştirebilme ve kullanabilme, süreci yönetebilme ve değerlendirebilme; strateji, yöntem ve teknik seçimlerini yönetebilme; amaca, içeriğe ve yapıya yönelik seçimlerini yönetebilme; uygun bağlantı ifadelerini kullanabilme, yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmelerine yetkinlik düzeyinde ulaşmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "35",
+        "Alan Becerileri": "Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma",
+        "Kavramsal Beceriler": "KB1. Temel Beceriler, KB2.4. Çözümleme, KB2.12. Mevcut Bilgiye/Veriye Dayalı Tahmin Etme",
+        "Eğilimler": "E1.2. Bağımsızlık, E2.2. Sorumluluk, E3.3. Yaratıcılık, E3.7. Sistematiklik",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.3. Kendine Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB3.2. Esneklik",
+        "Değerler": "D11. Özgürlük, D16. Sorumluluk, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB5. Kültür Okuryazarlığı, OB6. Vatandaşlık Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Sosyal Bilgiler",
+        "Beceriler Arası İlişkiler": "KB2.13. Yapılandırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "Dinleme/İzlemeT.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilmeT.D.5.2. Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilmeT.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.D.5.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme T.D.5.11. Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme T.D.5.14. Dinlediğinin/izlediğinin bölümlerini belirlemeye yönelik çözümleme yapabilme T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeOkumaT.O.5.1. Okumada materyal seçimini yönetebilmeT.O.5.2. Sesli ve sessiz okurken akıcı okuma unsurlarını yönetebilmeT.O.5.3. Okumada strateji ve yöntem seçimlerini yönetebilmeT.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilmeT.O.5.6. Metnin yüzey anlamını belirleyebilme T.O.5.17. Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme T.O.5.19. Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme T.O.5.22. Okuma sürecini değerlendirebilmeKonuşmaT.K.5.1. Konuşma sürecini yönetebilme T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme T.K.5.3. Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme T.K.5.9. Konuşmasında tahminlerinden yararlanabilme T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme T.K.5.19. Uygun bağlantı ifadelerini kullanabilmeYazmaT.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme T.Y.5.15. Uygun bağlantı ifadelerini kullanabilme T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme T.Y.5.17. Yazma sürecini değerlendirebilme",
+        "Anahtar Kavramlar": "Genellemeler Temadaki metinlerin işlenmesi sürecinde (hazırlık bölümü de dâhil) öncelik-sonralık ilişkisi gözetilmeksizin dinleme/izleme, okuma, konuşma ve yazma etkinliklerine birbirini destekleyecek, tamamlayacak ve güçlendirecek biçimde yer verilir. Konuşma ve yazma becerilerindeki etkinliklerle ortaya çıkan ürünler, farklı alan becerileri ve kavramsal becerilerin bir araya gelmesiyle oluşturulur. Bu becerilerden hareketle hazırlanan öğrenme çıktısına, “Temalara Yönelik Süreç Detaylı Öğretim Programı”nda ilk kez yer verildiğinde bu öğrenme çıktısına yönelik bağımsız etkinlik yapılır. İlgili öğrenme çıktısına ilerleyen temalarda yeniden yer verildiğinde öğrenme çıktısıyla ilgili bağımsız etkinlik yapılabileceği gibi öğrenme çıktısı, o temada yer verilen diğer öğrenme çıktılarıyla birlikte, onları destekleyecek ve tamamlayacak şekilde aynı etkinlikte de kullanılabilir. Anahtar Kavramlar Materyal seçimi, strateji, yöntem ve teknik; söz varlığı, yüzey anlam, şiir, söz sanatları; öyküleyici metin, metnin bölümleri, akıcı okuma, yazıda içerik ve yapı, konuşmada amaç ve içerik, bağlantı ifadeleri, yazım kuralları, noktalama işaretleri, dil yapıları ve söz varlığı.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Dinleme/izleme, okuma, konuşma ve yazma dil becerilerine yönelik öğrenme çıktıları ile ifade edilen becerilere ulaşılıp ulaşılmadığını belirlemek amacıyla ölçme değerlendirme çalışmaları yapılır. Bu süreçte kullanılabilecek ölçme araçları örnek olarak verilmiştir. Öğrenme ortamının özellikleri, öğrenci sayısı ve mevcut imkânlar dikkate alınarak aşağıda yer verilen araçların tamamı ya da bir kısmı kullanılabilir ve gerekli görülen durumlarda farklı ölçme değerlendirme araçlarından da yararlanılabilir. Her temada en az bir tane performans görevinin verilmesi esastır. Performans görevi temanın en az bir öğrenme çıktısını ölçme ve değerlendirmeye yönelik olmalıdır. Öyküleyici metindeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilmesi için kavram haritası çalışması yapılabilir. Dinlediğinin/izlediğinin bölümlerini veya metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilmesi için eşleştirme, paragraf yazma vb. çalışmalardan faydalanılabilir. Metnin yüzey anlamını belirleyebilmesi için boşluk doldurma, açık uçlu soru, cümle tamamlama vb. kullanılabilir. Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilmesi için çoktan seçmeli soru, boşluk doldurma vb. çalışmalar verilebilir. Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilmesinde dereceli puanlama anahtarı kullanılabilir. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilmesi için sorulardan, kavramlardan, görsellerden hareketle sözlü metin oluşturma çalışması yapılabilir. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilmesinde öz bildirimden faydalanılabilir. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmesi için cümle, paragraf, not, kısa ileti yazma ve dikte gibi çalışmalar kullanılabilir.",
+        "Temel Kabuller": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme öğrenme çıktısı için birinci temadaki metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme öğrenme çıktısı ön öğrenme olarak kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Temaya ilişkin temel kabule yönelik beceri; boşluk doldurma, açık uçlu soru, cümle tamamlama, kelime defteri oluşturma vb. çalışmalar ile belirlenebilir. Ön değerlendirmeden hareketle varsa öğrencilerin gelişmeye açık yönlerini güçlendirmek için gerekli çalışmalar yapılır.",
+        "Köprü Kurma": "Konuşmasında tahminlerinden yararlanabilme öğrenme çıktısı, birinci temadaki yazılı üretim ve yazılı etkileşiminde tahminlerinden yararlanabilme öğrenme çıktısıyla ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "Temanın başlangıcında ön değerlendirmeye yönelik çalışma yapılır. Metin işleme sürecinde metnin içeriğine yönelik hazırlık çalışmaları (soru-cevap, ön araştırma vb.) yapılarak öğrencilerin ön bilgilerinden yararlanmaları, motive ve derse dâhil olmaları sağlanır. İlgili öğrenme çıktısına yönelik etkinlik yapılırken strateji, yöntem ve teknik; yazıda içerik ve yapı, konuşmada amaç ve içerik, şiir, söz sanatları, bağlantı ifadeleri anahtar kavramları ile dil yapıları ve söz varlığı kavramlarına yönelik tanımlayıcı nitelikte, bu kavramların bileşenlerini, özelliklerini vb. belirten kısa bilgilere ve/veya uyarılara yer verilir. Öğrencilerin dinleme/izleme ve okumada materyal seçimlerini (T.D.5.1., T.O.5.1.) ve strateji, yöntem ve teknik seçimlerini yönetebilmelerini (T.D.5.2., T.O.5.3.) sağlayacak çalışmalar yapılır. Öğrencilerin sesli okuma çalışmalarında akıcı bir şekilde okuyup okumadıkları izlenerek sesli ve sessiz akıcı bir şekilde okuyabilmelerini sağlayacak çalışmalar yapılır (T.O.5.2.). Dinlediklerinde/izlediklerinde ve okuduklarında geçen anlamını bilmedikleri söz varlığı unsurlarının anlamlarını tahmin edebilmelerine (T.D.5.4., T.O.5.5.) ve dinlediklerinin/izlediklerinin, okuduklarının yüzey anlamını belirleyebilmelerine (T.D.5.5., T.O.5.6.) yönelik çalışmalara yer verilir. Öğrencilerin okudukları şiirin biçim özelliklerini (T.O.5.17.) ve okudukları metindeki söz sanatlarını (T.O.5.19.) belirlemeye yönelik çözümlemeler yapabilmelerini sağlayacak çalışmalara yer verilir. Dinledikleri/izledikleri ve okudukları metinden hareketle söz varlığını geliştirmeye (T.D.5.17., T.O.5.20.), dinlediklerinin/izlediklerinin bölümlerini (T.D.5.14.) ve dinledikleri/izledikleri öyküleyici metindeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilmelerini (T.D.5.11.) sağlayacak çalışmalar yapılır. Okuma sürecini değerlendirebilmeleri (T.O.5.22.) sağlanır. Söz varlığını geliştirmeye yönelik çalışmalar, çağrışım alanına giren kelimeler, ikileme ve pekiştirmenin öğretimi T.O.5.20. kapsamında yapılır. Öğrencilerin konuşmalarında yöntem ve teknik seçimlerini; yazmada strateji, yöntem ve teknik seçimlerini (T.K.5.2., T.Y.5.2.); konuşmalarında amaç ve içeriğe yönelik seçimlerini yönetebilmeleri (T.K.5.3.) sağlanır. Konuşma sürecini yönetebilmelerine (T.K.5.1.), yazılarında içerik ve yapıya yönelik seçimlerini yönetebilmelerine (T.Y.5.3.) yönelik çalışmalar yapılır. Öğrencilerin konuşma ve yazılarını zenginleştirecek biçimde söz varlığını kullanabilmelerini (T.K.5.17., T.Y.5.13.) ve konuşmalarında tahminlerinden yararlanabilmelerini (T.K.5.9.) sağlayacak çalışmalar yapılır. Yazma sürecini değerlendirebilmelerini (T.Y.5.17.) sağlayacak çalışmalara yer verilir. Öğrencilerin konuşma ve yazılarında uygun bağlantı ifadelerinden; ekleme ifade edenlerden (ayrıca, bir de, bundan başka, bunun dışında, hatta, hem ... hem ..., ile, üstelik, ve, ek olarak vb.) yararlanmaları sağlanır (T.K.5.19., T.Y.5.15.). Öğrencilerin Türkçeyi doğru, güzel ve etkili kullandığı cümleler kurmaları sağlanır (T.K.5.17., T.Y.5.13.). Yazım kurallarını (büyük harflerin yazımıyla ilgili Ek 4’teki A, B, C. 1-5. maddelerinde belirtilen kurallar) uygulamayla ilgili çalışmalar yapılır. Noktalama işaretleriyle ilgili kuralları (virgülün eş görevli kelime ve kelime gruplarını ayırma, tekrarlanan kelimeleri ayırma, hitap ifadelerinden sonra, sayıların yazılışında kesirleri ayırma; soru işaretinin soru eki, soru sözü içeren cümle veya sözlerden sonra kullanımı, soru bildiren ancak soru eki veya sözü içermeyen cümlelerde kullanımı) uygulamaya yönelik çalışmalar yapılır (T.Y.5.16.). Öğrencilerin isimleri çeşitli özellikleri bakımından niteleyen ve belirten dil yapıları ve söz varlığını belirlemeleri, bu dil yapıları ve söz varlığını işlevine uygun olarak kullanmaları sağlanır (DYS.DO.5.3.; DYS.KY.5.2.). Öğrencilerin betimleme işlevli fiilimsi dil yapılarını belirlemeleri ve işlevine uygun kullanmaları sağlanır (DYS.DO.5.4.; DYS.KY.5.3.). Tema sürecinde öğrenme çıktılarına yönelik yapılacak çalışmalarda kavramsal becerilerden Yapılandırma (KB2.13.); eğilimlerden Bağımsızlık (E1.2.), Sorumluluk (E2.2.), Yaratıcılık (E3.3.), Sistematiklik (E3.7.); sosyal-duygusal öğrenme becerilerinden Kendine Uyarlama (Öz Yansıtma) (SDB1.3.), İletişim (SDB2.1.), Esneklik (SDB3.2.); değerlerden Cesaretli ve Girişimci Olmak (D11.1.), Görev Bilincine Sahip Olmak (D16.3.), Bağımsızlığı Korumak (D19.4.); okuryazarlık becerilerinden Bilgi Okuryazarlığı (OB1.), Kültür Okuryazarlığı (OB5.), Vatandaşlık Okuryazarlığı (OB6.) uygun bir şekilde işe koşulur. Atölye Çalışmaları Dinleme/İzleme Atölyesi Belirlenen dinleme/izleme materyalinin öğrenciler tarafından dinlenerek/izlenerek çözümlenmesi çalışmaları sürdürülür. Okuma Atölyesi Belirlenen iki kitabın öğrenciler tarafından okunması ve birinin sınıf içerisinde çözümlenmesi çalışmalarına devam edilir. Üretim Atölyesi Üretim atölyesi uygulama esasları doğrultusunda öğrencilerin tema içeriği ile temadaki öğrenme çıktılarına uygun ürünler (ses kaydı, konuşma metni, sunum videosu; afiş, kolaj, sınıf panosu, dijital albüm vb.) hazırlamaları sağlanır. Bu etkinlikler, öğrencilerin yaratıcılığını ve özgün düşünme becerilerini destekleyecek nitelikte olmalıdır.",
+        "Zenginleştirme": "Atatürk’ün insani yönlerine yönelik araştırma yapılması ve edinilen bilgilerin dijital içerik hâline getirilip sınıfta ya da uygun dijital ortamlarda sunulması istenebilir. Bulunulan yerdeki -varsa- “Atatürk Müze Evleri ve Köşkleri”, “Çanakkale Zaferi”, “Millî Mücadele” ve “Cumhuriyet”e ilişkin müzeler ya da konuya ilişkin sanal müzeler gezilir. Bu geziler sonucunda elde edilen bilgilerle daha önce okunan kaynaklardan edinilen bilgilerin eleştirel bir bakış açısıyla karşılaştırıldığı bir değerlendirme yazısı yazılması istenebilir. Atatürk’ün yazdığı kitapların görsellerinden oluşan bir duvar panosu hazırlanarak “Gençliğe Hitabe bu kitaplardan hangisindedir?” gibi araştırmaya yönelik merak uyandırıcı sorularla kitaplar hakkında araştırma yapılması ve Gençliğe Hitabe’nin bulunduğu “Nutuk” adlı eserin sınıf kütüphanesine dâhil edilmesi istenebilir. Öğrencilerden temada işlenen konuya yönelik dijital öyküleme aşamalarına göre özgün öykü yazmaları, yazdıkları öyküyü senaryolaştırarak canlandırmaları istenebilir.",
+        "Destekleme": "Dinleme/izleme ya da okuma etkinliği öncesinde, metni yansıtan ve metnin anlaşılmasını sağlayacak kelimeler listelenebilir ve bu kelimelerin bağlamdaki anlamları görsel araçlar ve şematik düzenleyiciler yardımıyla verilebilir. Dinleme/izleme ya da okuma etkinliği öncesinde bilgilendirici metinlerdeki kavram, bilgi; öyküleyici metinlerdeki kişi, yer, zaman vb. yapılara ilişkin unsurların yer aldığı kavram ya da hikâye haritası gibi şemalar oluşturulup sunulabilir. Dinleme/izleme, okuma metni ya da tema içerisinde yer alan “Millî Mücadele” ile ilişkili kavramlar görsel işitsel araçların sunumu ve uygun şematik düzenleyicilerin kullanımı ile somutlaştırılabilir. Tema kapsamındaki öğrenme çıktılarına yönelik çalışmalar yapılırken iş birlikli öğrenme ortamlarının oluşturulması sağlanabilir. Okuma ve yazma çalışmalarında işleyişin nasıl olması gerektiği bire bir anlatılarak süreç öğrenci ile yürütülebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "Dinleme/İzleme",
+          "bold": true
+        },
+        {
+          "text": "T.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.2. Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.11. Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.14. Dinlediğinin/izlediğinin bölümlerini belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "Okuma",
+          "bold": true
+        },
+        {
+          "text": "T.O.5.1. Okumada materyal seçimini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.2. Sesli ve sessiz okurken akıcı okuma unsurlarını yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.3. Okumada strateji ve yöntem seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.6. Metnin yüzey anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.17. Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.19. Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.22. Okuma sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Konuşma",
+          "bold": true
+        },
+        {
+          "text": "T.K.5.1. Konuşma sürecini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.3. Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.9. Konuşmasında tahminlerinden yararlanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.19. Uygun bağlantı ifadelerini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "Yazma",
+          "bold": true
+        },
+        {
+          "text": "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.15. Uygun bağlantı ifadelerini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.17. Yazma sürecini değerlendirebilme",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "T.D.5.1",
+          "codeAsPrinted": "T.D.5.1",
+          "text": "Dinlemede/izlemede materyal seçimini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.2",
+          "codeAsPrinted": "T.D.5.2",
+          "text": "Dinlemede/izlemede strateji ve yöntem seçimlerini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.4",
+          "codeAsPrinted": "T.D.5.4",
+          "text": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.5",
+          "codeAsPrinted": "T.D.5.5",
+          "text": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.11",
+          "codeAsPrinted": "T.D.5.11",
+          "text": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.14",
+          "codeAsPrinted": "T.D.5.14",
+          "text": "Dinlediğinin/izlediğinin bölümlerini belirlemeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.17",
+          "codeAsPrinted": "T.D.5.17",
+          "text": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.1",
+          "codeAsPrinted": "T.O.5.1",
+          "text": "Okumada materyal seçimini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.2",
+          "codeAsPrinted": "T.O.5.2",
+          "text": "Sesli ve sessiz okurken akıcı okuma unsurlarını yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.3",
+          "codeAsPrinted": "T.O.5.3",
+          "text": "Okumada strateji ve yöntem seçimlerini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5",
+          "codeAsPrinted": "T.O.5.5",
+          "text": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.6",
+          "codeAsPrinted": "T.O.5.6",
+          "text": "Metnin yüzey anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.17",
+          "codeAsPrinted": "T.O.5.17",
+          "text": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.19",
+          "codeAsPrinted": "T.O.5.19",
+          "text": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.20",
+          "codeAsPrinted": "T.O.5.20",
+          "text": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.22",
+          "codeAsPrinted": "T.O.5.22",
+          "text": "Okuma sürecini değerlendirebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.1",
+          "codeAsPrinted": "T.K.5.1",
+          "text": "Konuşma sürecini yönetebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.2",
+          "codeAsPrinted": "T.K.5.2",
+          "text": "Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.3",
+          "codeAsPrinted": "T.K.5.3",
+          "text": "Konuşmasında amaç ve içeriğe yönelik seçimlerini yönetebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.9",
+          "codeAsPrinted": "T.K.5.9",
+          "text": "Konuşmasında tahminlerinden yararlanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.17",
+          "codeAsPrinted": "T.K.5.17",
+          "text": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.19",
+          "codeAsPrinted": "T.K.5.19",
+          "text": "Uygun bağlantı ifadelerini kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.2",
+          "codeAsPrinted": "T.Y.5.2",
+          "text": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.3",
+          "codeAsPrinted": "T.Y.5.3",
+          "text": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.13",
+          "codeAsPrinted": "T.Y.5.13",
+          "text": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.15",
+          "codeAsPrinted": "T.Y.5.15",
+          "text": "Uygun bağlantı ifadelerini kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.16",
+          "codeAsPrinted": "T.Y.5.16",
+          "text": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.17",
+          "codeAsPrinted": "T.Y.5.17",
+          "text": "Yazma sürecini değerlendirebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-turkce-dersi/unite/67",
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/67",
+      "title": "3. Tema: Duygularımı Tanıyorum",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:13.669Z",
+      "cacheFile": "html/ortaokul-turkce-dersi_unite_67.html",
+      "meta": [
+        "Ortaokul Türkçe Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "3. Tema: Duygularımı Tanıyorum",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin materyal seçimini yönetebilme; hikâye unsurlarını belirleyebilme, tahmin edebilme; sınıflandırabilme; metnin bölümlerini ve çoklu ortam ögelerini belirleyebilme, söz varlığını geliştirebilme ve kullanabilme; yüzey anlamı, derin anlamı belirleyebilme; çoklu ortam ögeleriyle içerik oluşturabilme, süreci değerlendirebilme, düşünceyi geliştirme yollarını belirleyebilme ve kullanabilme, soru sorabilme, yaratıcı konuşabilme, yaratıcı yazı yazabilme, strateji, yöntem ve teknik seçimlerini yönetebilme; içeriğe ve yapıya yönelik seçimlerini yönetebilme; uygun bağlantı ifadelerini kullanabilme, yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmelerine yetkinlik düzeyinde ulaşmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "35",
+        "Alan Becerileri": "Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma , TAB4. Yazma",
+        "Kavramsal Beceriler": "KB1. Temel Beceriler, KB2.4. Çözümleme, KB2.5. Sınıflandırma, KB2.10. Çıkarım Yapma",
+        "Eğilimler": "E1.2. Bağımsızlık, E1.3. Azim ve Kararlılık, E2.1. Empati, E2.2. Sorumluluk, E3.3. Yaratıcılık",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB1.3. Kendine Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB2.3. Sosyal Farkındalık",
+        "Değerler": "D3. Çalışkanlık, D6. Dürüstlük, D9. Merhamet, D12. Sabır, D15. Sevgi, D16. Sorumluluk",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Müzik",
+        "Beceriler Arası İlişkiler": "KB2.2. Gözlemleme, KB2.13. Yapılandırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "Dinleme/İzlemeT.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.D.5.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme T.D.5.18. Çoklu ortam ögelerine yönelik çözümleme yapabilme T.D.5.20. Dinleme/izleme sürecini değerlendirebilmeOkumaT.O.5.1. Okumada materyal seçimini yönetebilme T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.O.5.6. Metnin yüzey anlamını belirleyebilme T.O.5.11. Metindeki unsurları sınıflandırabilme T.O.5.13. Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme T.O.5.16. Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme T.O.5.18. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeKonuşmaT.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme T.K.5.4. İletişimi sürdürmek amacıyla soru sorabilme T.K.5.6. Yaratıcı konuşma yapabilme T.K.5.16. Düşünceyi geliştirme yollarını kullanarak konuşmasını yapılandırabilme T.K.5.19. Uygun bağlantı ifadelerini kullanabilme T.K.5.21. Konuşma sürecini değerlendirebilmeYazmaT.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme T.Y.5.4. Yazısında çoklu ortam ögeleriyle içerik oluşturabilme T.Y.5.5. Yaratıcı yazı yazabilme T.Y.5.8. Yazısında sınıflandırma yapabilme T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme T.Y.5.15. Uygun bağlantı ifadelerini kullanabilme T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+        "Anahtar Kavramlar": "Genellemeler Temadaki metinlerin işlenmesi sürecinde (hazırlık bölümü de dâhil) öncelik-sonralık ilişkisi gözetilmeksizin dinleme/izleme, okuma, konuşma ve yazma etkinliklerine birbirini destekleyecek, tamamlayacak ve güçlendirecek biçimde yer verilir. Konuşma ve yazma becerilerindeki etkinliklerle ortaya çıkan ürünler, farklı alan becerileri ve kavramsal becerilerin bir araya gelmesiyle oluşturulur. Bu becerilerden hareketle hazırlanan öğrenme çıktısına, “Temalara Yönelik Süreç Detaylı Öğretim Programı”nda ilk kez yer verildiğinde bu öğrenme çıktısına yönelik bağımsız etkinlik yapılır. İlgili öğrenme çıktısına ilerleyen temalarda yeniden yer verildiğinde öğrenme çıktısıyla ilgili bağımsız etkinlik yapılabileceği gibi öğrenme çıktısı, o temada yer verilen diğer öğrenme çıktılarıyla birlikte, onları destekleyecek ve tamamlayacak şekilde aynı etkinlikte de kullanılabilir. Anahtar Kavramlar Materyal seçimi; strateji, yöntem ve teknik; söz varlığı, yüzey anlam, derin anlam, hikâye unsurları, metnin bölümleri, düşünceyi geliştirme yolları, çoklu ortam ögeleri, yaratıcı konuşma ve yazma, yazıda içerik ve yapı, soru sorma, bağlantı ifadeleri, yazım kuralları, noktalama işaretleri, dil yapıları ve söz varlığı.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Dinleme/izleme, okuma, konuşma ve yazma dil becerilerine yönelik öğrenme çıktıları ile ifade edilen becerilere ulaşılıp ulaşılmadığını belirlemek amacıyla ölçme değerlendirme çalışmaları yapılır. Bu süreçte kullanılabilecek ölçme araçları örnek olarak verilmiştir. Öğrenme ortamının özellikleri, öğrenci sayısı ve mevcut imkânlar dikkate alınarak aşağıda yer verilen araçların tamamı ya da bir kısmı kullanılabilir ve gerekli görülen durumlarda farklı ölçme değerlendirme araçlarından da yararlanılabilir. Her temada en az bir tane performans görevinin verilmesi esastır. Performans görevi temanın en az bir öğrenme çıktısını ölçme ve değerlendirmeye yönelik olmalıdır. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilmesi için boşluk doldurma, açık uçlu ve çoktan seçmeli soru gibi çalışmalar yapılabilir. Çoklu ortam ögeleri ne yönelik çözümleme yapabilmesi için açık uçlu, çoktan seçmeli soru vb. çalışmalar verilebilir. Okumada materyal seçimini yönetebilmesi için kontrol listesi kullanılabilir. Metindeki unsurları sınıflandırabilmesi için kavram haritası çalışması yapılabilir. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilmesi için eşleştirme, paragraf yazma vb. çalışmalardan faydalanılabilir. İletişimi sürdürmek amacıyla soru sorabilmesi için karşılıklı konuşma çalışması yapılabilir. Konuşma sürecini değerlendirebilme ve kendini uyarlayabilmesi için öz değerlendirme araçları kullanılabilir. Yazısında çoklu ortam ögeleriyle içerik oluşturabilmesi için çoklu ortam tasarımı çalışması verilebilir. Yaratıcı yazı yazabilme becerisini geliştirmeye yönelik kelime ve kavram havuzundan seçerek yazma çalışmasından faydalanılabilir. Yazısında sınıflandırma yapabilmesi için cümle, paragraf, not, kısa ileti yazma gibi çalışmalar yapılabilir.",
+        "Temel Kabuller": "Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme öğrenme çıktısı için ikinci temadaki dinlediğinin/izlediğinin yüzey anlamını belirleyebilme öğrenme çıktısı ön öğrenme kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Temaya ilişkin temel kabule yönelik beceri; boşluk doldurma, açık uçlu soru, cümle tamamlama vb. çalışmalar ile belirlenebilir. Ön değerlendirmeden hareketle varsa öğrencilerin gelişmeye açık yönlerini güçlendirmek için gerekli çalışmalar yapılır.",
+        "Köprü Kurma": "Yaratıcı yazı yazabilme öğrenme çıktısı, ikinci temadaki yazısını zenginleştirecek biçimde söz varlığını kullanabilme öğrenme çıktısıyla ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "Temanın başlangıcında ön değerlendirmeye yönelik çalışma yapılır. Metin işleme sürecinde metnin içeriğine yönelik hazırlık çalışmaları (soru-cevap, ön araştırma vb.) yapılarak öğrencilerin ön bilgilerinden yararlanmaları, motive ve derse dâhil olmaları sağlanır. İlgili öğrenme çıktısına yönelik etkinlik yapılırken strateji, yöntem ve teknik, derin anlam, hikâye unsurları, metnin bölümleri, düşünceyi geliştirme yolları, çoklu ortam ögeleri, yaratıcı konuşma ve yazma, soru sorma, yazıda içerik ve yapı, bağlantı ifadeleri anahtar kavramları ile dil yapıları ve söz varlığı kavramlarına yönelik tanımlayıcı nitelikte, bu kavramların bileşenlerini, özelliklerini vb. belirten kısa bilgilere ve/veya uyarılara yer verilir. Öğrencilerin okumada materyal seçimini (T.O.5.1.), dinleme/izleme ve okumada strateji, yöntem, teknik seçimlerini yönetebilmelerini (T.D.5.2., T.O.5.3.) sağlayacak çalışmalar yapılır. Dinlediklerinde/izlediklerinde ve okuduklarında geçen anlamını bilmedikleri söz varlığı unsurlarının anlamlarını tahmin edebilmelerine (T.D.5.4., T.O.5.5.) ve dinlediklerinin/ izlediklerinin, okuduklarının yüzey anlamını belirleyebilmelerine (T.D.5.5., T.O.5.6.) yönelik çalışmalara yer verilir. Basit çıkarımlar yoluyla dinlediklerinin/izlediklerinin derin anlamını belirleyebilmeleri (T.D.5.6.) sağlanır. Öğrencilerin metindeki unsurları sınıflandırmaya (T.O.5.11.), metnin bölümlerini belirlemeye (T.O.5.16.) ve öyküleyici metinde hikâye unsurlarını belirlemeye (T.O.5.13.) yönelik çalışmalar yapılır. Bilgilendirici metinde düşünceyi geliştirme yollarını belirleyebilmelerini (T.O.5.18.) ve çoklu ortam ögelerini çözümleyebilmelerini (T.D.5.18.) sağlayacak etkinliklere yer verilir. Dinledikleri/izledikleri ve okudukları metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeleri (T.D.5.17., T.O.5.20.) ve dinleme/izleme sürecini değerlendirebilmeleri (T.D.5.20.) sağlanır. Söz varlığını geliştirmeye yönelik çalışmalar atasözü, deyim ve kalıp sözlerin öğretimi T.O.5.20. kapsamında yapılır. Öğrencilerin konuşmalarında yöntem ve teknik seçimlerini; yazmada strateji, yöntem ve teknik seçimlerini (T.K.5.2., T.Y.5.2.); yazılarında içerik ve yapıya yönelik seçimlerini yönetebilmeleri (T.Y.5.3.) sağlanır. Yaratıcı konuşma yapabilmelerini (T.K.5.6.) ve yaratıcı yazı yazabilmelerini (T.Y.5.5.) sağlayacak çalışmalar yapılır. Konuşmalarında iletişimi sürdürmek amacıyla soru sorabilmeleri (T.K.5.4.) ve düşünceyi geliştirme yollarını kullanarak konuşmalarını yapılandırabilmelerine yönelik çalışmalar yapılır (T.K.5.16.). Yazılarında sınıflandırma yapabilmelerini (T.Y.5.8.) ve çoklu ortam ögeleriyle içerik oluşturabilmelerini (T.Y.5.4.) sağlayacak çalışmalara yer verilir. Yazılarını zenginleştirecek biçimde söz varlığını kullanabilmelerini (T.Y.5.13.) ve konuşma sürecini değerlendirebilmelerini (T.K.5.21.) sağlayacak çalışmalar yapılır. Yazım kurallarını (büyük harflerin yazımıyla ilgili Ek 4’teki C. 6-12. maddelerinde belirtilen kurallar) uygulamayla ilgili çalışmalar yapılır. Noktalama işaretleriyle ilgili kuralları (ünlemin duyguları anlatan cümle veya ibareleri ile seslenme, hitap ve uyarı sözlerini belirtme; uzun çizginin konuşmaları gösterme) uygulamaya yönelik çalışmalar yapılır (T.Y.5.16.). Öğrencilerin Türkçeyi doğru, güzel ve etkili kullandığı cümleler kurmaları sağlanır (T.Y.5.13.). Öğrencilerin konuşma ve yazılarında uygun bağlantı ifadelerinden; duygu ifade edenlerden [istek (en azından, keşke vb.), küçümseme (güya, sanki vb.), memnuniyet (iyi ki, neyse ki vb.), pişmanlık (keşke, bari vb.), şaşırma (işe bak ki, nasıl olmuşsa, ne hikmetse vb.), şüphe ve/veya merak (acaba, ya, yoksa vb.), üzüntü (maalesef, ne çare, ne fayda, yazık ki vb.) vb.] yararlanmaları sağlanır (T.K.5.19., T.Y.5.15.). Öğrencilerin isimlerin tür özelliklerini ayırt etmeleri ve isimleri tür özelliklerine uygun kullanmaları sağlanır (DYS.DO.5.2.; DYS.KY.5.1.). Amaç ifade etme işlevli dil yapıları ve söz varlığını belirlemeleri, işlevlerine uygun kullanmaları sağlanır (DYS.DO.5.7.; DYS.KY.5.7.). Tema sürecinde öğrenme çıktılarına yönelik yapılacak çalışmalarda kavramsal becerilerden Gözlemleme (KB2.2.), Yapılandırma (KB2.13.); eğilimlerden Bağımsızlık (E1.2.), Azim ve Kararlılık (E1.3.), Empati (E2.1.), Sorumluluk (E2.2.), Yaratıcılık (E3.3.); sosyal-duygusal öğrenme becerilerinden Kendini Tanıma (Öz Farkındalık) (SDB1.1.), Kendine Uyarlama (Öz Yansıtma) (SDB1.3.), İletişim (SDB2.1.), Sosyal Farkındalık (SDB2.3.); değerlerden Araştırmacı ve Sorgulayıcı Olmak (D3.3.), Samimi Olmak (D6.1.), İnsanı ve Doğayı Sevmek (D9.3.), Düşünce, Duygu ve Davranışlarında Kontrollü Olmak (D12.2.), Anlayışlı ve Barışçıl Olmak (D15.1.), Görev Bilincine Sahip Olmak (D16.3.); okuryazarlık becerilerinden Dijital Okuryazarlık (OB2.), Görsel Okuryazarlık (OB4.) uygun bir şekilde işe koşulur. Atölye Çalışmaları Dinleme/İzleme Atölyesi Belirlenen dinleme/izleme materyalinin öğrenciler tarafından dinlenmesi/izlenmesi ve çözümlenmesi sürdürülerek sonlandırılır. Okuma Atölyesi Belirlenen iki kitabın öğrenciler tarafından okunması ve birinin sınıf içerisinde çözümlenmesi sürdürülerek tamamlanır. Diğer kitaba yönelik çözümleme rapor hâlinde sunulur. Üretim Atölyesi Üretim atölyesi uygulama esasları doğrultusunda öğrencilerin tema içeriği ile temadaki öğrenme çıktılarına uygun ürünler (ses kaydı, konuşma metni, sunum videosu; afiş, kolaj, sınıf panosu, dijital albüm vb.) hazırlamaları sağlanır. Bu etkinlikler, öğrencilerin yaratıcılığını ve özgün düşünme becerilerini destekleyecek nitelikte olmalıdır.",
+        "Zenginleştirme": "İzlenen bir film, kısa film ya da videodaki derin anlamların belirlenmesi, belirlenen derin anlamların sınıfta ya da uygun dijital ortamlarda paylaşılması istenebilir. Duygu kartları hazırlanarak iletişimde duyguların dramatize edilmesi istenebilir. Şiirlerdeki tematik unsurların duygu haritalarının çıkarılması ve bu duyguların ifade edildiği masal, hikâye gibi metinlerin yazılması istenebilir.",
+        "Destekleme": "Dinleme/izleme ya da okuma etkinliği öncesinde, metni yansıtan ve metnin anlaşılmasını sağlayacak kelimeler listelenebilir ve bu kelimelerin bağlamdaki anlamları görsel araçlar ve şematik düzenleyiciler yardımıyla verilebilir. Dinleme/izleme ya da okuma etkinliği öncesinde bilgilendirici metinlerdeki kavram, bilgi; öyküleyici metinlerdeki kişi, yer, zaman vb. yapılara ilişkin unsurların yer aldığı kavram ya da hikâye haritası gibi şemalar oluşturulup sunulabilir. Kuklalar ile duygular konulu bir oyun sergilenmesi veya izletilmesi ve bu çalışmalar yapılırken iş birlikli öğrenme ortamlarının oluşturulması sağlanabilir. Duyguların anlatıldığı bir bilmece etkinliği hazırlanabilir. Okuma ve yazma çalışmalarında işleyişin nasıl olması gerektiği bire bir anlatılarak süreç öğ renci ile yürütülebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "Dinleme/İzleme",
+          "bold": true
+        },
+        {
+          "text": "T.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.5. Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.18. Çoklu ortam ögelerine yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.20. Dinleme/izleme sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Okuma",
+          "bold": true
+        },
+        {
+          "text": "T.O.5.1. Okumada materyal seçimini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.6. Metnin yüzey anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.11. Metindeki unsurları sınıflandırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.13. Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.16. Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.18. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "Konuşma",
+          "bold": true
+        },
+        {
+          "text": "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.4. İletişimi sürdürmek amacıyla soru sorabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.6. Yaratıcı konuşma yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.16. Düşünceyi geliştirme yollarını kullanarak konuşmasını yapılandırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.19. Uygun bağlantı ifadelerini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.21. Konuşma sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Yazma",
+          "bold": true
+        },
+        {
+          "text": "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.4. Yazısında çoklu ortam ögeleriyle içerik oluşturabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.5. Yaratıcı yazı yazabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.8. Yazısında sınıflandırma yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.15. Uygun bağlantı ifadelerini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "T.D.5.2",
+          "codeAsPrinted": "T.D.5.2",
+          "text": "Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.4",
+          "codeAsPrinted": "T.D.5.4",
+          "text": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.5",
+          "codeAsPrinted": "T.D.5.5",
+          "text": "Dinlediğinin/izlediğinin yüzey anlamını belirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.6",
+          "codeAsPrinted": "T.D.5.6",
+          "text": "Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.17",
+          "codeAsPrinted": "T.D.5.17",
+          "text": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.18",
+          "codeAsPrinted": "T.D.5.18",
+          "text": "Çoklu ortam ögelerine yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.20",
+          "codeAsPrinted": "T.D.5.20",
+          "text": "Dinleme/izleme sürecini değerlendirebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.1",
+          "codeAsPrinted": "T.O.5.1",
+          "text": "Okumada materyal seçimini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.3",
+          "codeAsPrinted": "T.O.5.3",
+          "text": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5",
+          "codeAsPrinted": "T.O.5.5",
+          "text": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.6",
+          "codeAsPrinted": "T.O.5.6",
+          "text": "Metnin yüzey anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.11",
+          "codeAsPrinted": "T.O.5.11",
+          "text": "Metindeki unsurları sınıflandırabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.13",
+          "codeAsPrinted": "T.O.5.13",
+          "text": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.16",
+          "codeAsPrinted": "T.O.5.16",
+          "text": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.18",
+          "codeAsPrinted": "T.O.5.18",
+          "text": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.20",
+          "codeAsPrinted": "T.O.5.20",
+          "text": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.2",
+          "codeAsPrinted": "T.K.5.2",
+          "text": "Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.4",
+          "codeAsPrinted": "T.K.5.4",
+          "text": "İletişimi sürdürmek amacıyla soru sorabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.6",
+          "codeAsPrinted": "T.K.5.6",
+          "text": "Yaratıcı konuşma yapabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.16",
+          "codeAsPrinted": "T.K.5.16",
+          "text": "Düşünceyi geliştirme yollarını kullanarak konuşmasını yapılandırabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.19",
+          "codeAsPrinted": "T.K.5.19",
+          "text": "Uygun bağlantı ifadelerini kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.21",
+          "codeAsPrinted": "T.K.5.21",
+          "text": "Konuşma sürecini değerlendirebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.2",
+          "codeAsPrinted": "T.Y.5.2",
+          "text": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.3",
+          "codeAsPrinted": "T.Y.5.3",
+          "text": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.4",
+          "codeAsPrinted": "T.Y.5.4",
+          "text": "Yazısında çoklu ortam ögeleriyle içerik oluşturabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.5",
+          "codeAsPrinted": "T.Y.5.5",
+          "text": "Yaratıcı yazı yazabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.8",
+          "codeAsPrinted": "T.Y.5.8",
+          "text": "Yazısında sınıflandırma yapabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.13",
+          "codeAsPrinted": "T.Y.5.13",
+          "text": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.15",
+          "codeAsPrinted": "T.Y.5.15",
+          "text": "Uygun bağlantı ifadelerini kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.16",
+          "codeAsPrinted": "T.Y.5.16",
+          "text": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-turkce-dersi/unite/74",
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/74",
+      "title": "4. Tema: Geleneklerimiz",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:15.169Z",
+      "cacheFile": "html/ortaokul-turkce-dersi_unite_74.html",
+      "meta": [
+        "Ortaokul Türkçe Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "4. Tema: Geleneklerimiz",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin materyal seçimini yönetebilme, düşünceyi geliştirme yollarını belirleyebilme ve kullanabilme, söz varlığını geliştirebilme ve kullanabilme, tahmin edebilme; sınıflandırabilme; özetleyebilme, yorumlayabilme, karşılaştırabilme, derin anlamı belirleyebilme; çoklu ortam ögeleriyle içerik oluşturabilme, süreci değerlendirebilme; strateji, yöntem ve teknik seçimlerini yönetebilme; içeriğe ve yapıya yönelik seçimlerini yönetebilme; yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmelerine yetkinlik düzeyin de ulaşmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "34",
+        "Alan Becerileri": "Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma",
+        "Kavramsal Beceriler": "KB1. Temel Beceriler, KB2.3. Özetleme, KB2.4. Çözümleme, KB2.5. Sınıflandırma, KB2.7. Karşılaştırma, KB2.10. Çıkarım Yapma",
+        "Eğilimler": "E1.1. Merak, E2.2. Sorumluluk, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.3. Sosyal Farkındalık",
+        "Değerler": "D2. Aile Bütünlüğü, D14. Saygı, D16. Sorumluluk, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı, OB9. Sanat Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Sosyal Bilgiler, Din Kültürü ve Ahlak Bilgisi",
+        "Beceriler Arası İlişkiler": "KB2.6. Bilgi Toplama, KB2.9. Genelleme, KB2.11. Gözleme Dayalı Tahmin Etme, KB2.13. Yapılandırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "Dinleme/İzlemeT.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme T.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurları nın anlamını tahmin edebilme T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleye bilme T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını be lirleyebilme T.D.5.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme T.D.5.10. Dinlediğini/izlediğini yorumlayabilme T.D.5.15. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeOkumaT.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme T.O.5.10. Okuduklarını karşılaştırabilme T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme T.O.5.21. Okuduğunu özetleyebilme T.O.5.22. Okuma sürecini değerlendirebilmeKonuşmaT.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme T.K.5.5. Konuşmasında çoklu ortam ögeleriyle içerik oluşturabilme T.K.5.11. Konuşmasında sınıflandırma yapabilme T.K.5.12. Yorumunu sözlü olarak ifade edebilme T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilmeYazmaT.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme T.Y.5.7. Yazısında karşılaştırma yapabilme T.Y.5.10. Yazılı olarak özetleyebilme T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme T.Y.5.17. Yazma sürecini değerlendirebilme",
+        "Anahtar Kavramlar": "Genellemeler Temadaki metinlerin işlenmesi sürecinde (hazırlık bölümü de dâhil) öncelik-sonralık ilişkisi gözetilmeksizin dinleme/izleme, okuma, konuşma ve yazma etkinliklerine birbirini destekleyecek, tamamlayacak ve güçlendirecek biçimde yer verilir. Konuşma ve yazma becerilerindeki etkinliklerle ortaya çıkan ürünler, farklı alan becerileri ve kavramsal becerilerin bir araya gelmesiyle oluşturulur. Bu becerilerden hareketle hazırlanan öğrenme çıktısına, “Temalara Yönelik Süreç Detaylı Öğretim Programı”nda ilk kez yer verildiğinde bu öğrenme çıktısına yönelik bağımsız etkinlik yapılır. İlgili öğrenme çıktısına ilerleyen temalarda yeniden yer verildiğinde öğrenme çıktısıyla ilgili bağımsız etkinlik yapılabileceği gibi öğrenme çıktısı, o temada yer verilen diğer öğrenme çıktılarıyla birlikte, onları destekleyecek ve tamamlayacak şekilde aynı etkinlikte de kullanılabilir. Anahtar Kavramlar Materyal seçimi; strateji, yöntem ve teknik; söz varlığı; derin anlam; düşünceyi geliştirme yolları; özetleme, çoklu ortam ögeleri; yazıda içerik ve yapı, yazım kuralları, noktalama işaretleri; dil yapıları ve söz varlığı.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Dinleme/izleme, okuma, konuşma ve yazma dil becerilerine yönelik öğrenme çıktıları ile ifade edilen becerilere ulaşılıp ulaşılmadığını belirlemek amacıyla ölçme değerlendirme çalışmaları yapılır. Bu süreçte kullanılabilecek ölçme araçları örnek olarak verilmiştir. Öğrenme ortamının özellikleri, öğrenci sayısı ve mevcut imkânlar dikkate alınarak aşağıda yer verilen araçların tamamı ya da bir kısmı kullanılabilir ve gerekli görülen durumlarda farklı ölçme değerlendirme araçlarından da yararlanılabilir. Her temada en az bir tane performans görevinin verilmesi esastır. Performans görevi temanın en az bir öğrenme çıktısını ölçme ve değerlendirmeye yönelik olmalıdır. Dinlediğini/izlediğini yorumlayabilmesi veya üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilmesi için boşluk doldurma, açık uçlu ve çoktan seçmeli soru gibi çalışmalar kullanılabilir. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmesi için boşluk doldurma, açık uçlu soru, cümle tamamlama, kelime defteri oluşturma vb. çalışmalar yapılabilir. Okuduğunu özetleyebilmesi için yapılandırılmış özetleme çalışmasından faydalanılabilir. Konuşmada yöntem ve teknik seçimlerini yönetebilmesi için öz bildirim kullanılabilir. Yorumunu sözlü olarak ifade edebilmesi için sorulardan, kavramlardan, görsellerden hareketle sözlü metin oluşturma çalışması yapılabilir. Yazılı olarak özetleyebilmesi için yapılandırılmış özetleme çalışması verilebilir. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilmesi için paragraf yazma, açık uçlu soru vb. çalışmalardan yararlanılabilir. Yazma sürecini değerlendirebilme ve kendini uyarlayabilmesi için öz değerlendirme araçları kullanılabilir.",
+        "Temel Kabuller": "Okuduğunu özetleyebilme öğrenme çıktısı için üçüncü temadaki metindeki unsurları sınıflandırabilme öğrenme çıktısı ön öğrenme kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Temaya ilişkin temel kabule yönelik beceri; kavram haritası ile belirlenebilir. Ön değerlendirmeden hareketle varsa öğrencilerin gelişmeye açık yönlerini güçlendirmek için gerekli çalışmalar yapılır.",
+        "Köprü Kurma": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme öğrenme çıktısı, üçüncü temadaki metindeki unsurları sınıflandırabilme öğrenme çıktısıyla ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "Temanın başlangıcında ön değerlendirmeye yönelik çalışma yapılır. Metin işleme sürecinde metnin içeriğine yönelik hazırlık çalışmaları (soru-cevap, ön araştırma vb.) yapılarak öğrencilerin ön bilgilerinden yararlanmaları, motive ve derse dâhil olmaları sağlanır. İlgili öğrenme çıktısına yönelik etkinlik yapılırken strateji, yöntem ve teknik; düşünceyi geliştirme yolları, yazıda içerik ve yapı, çoklu ortam ögeleri, özetleme anahtar kavramları ile dil yapıları ve söz varlığı kavramlarına yönelik tanımlayıcı nitelikte, bu kavramların bileşenlerini, özelliklerini vb. belirten kısa bilgilere ve/veya uyarılara yer verilir. Öğrencilerin dinleme/izleme sürecinde materyal seçimini (T.D.5.1.), dinleme/izleme ve okuma sürecinde strateji, yöntem ve teknik seçimlerini yönetebilmelerini (T.D.5.2, T.O.5.3.) sağlayacak çalışmalar yapılır. Dinlediklerinde/izlediklerinde ve okudukların da geçen anlamını bilmediği söz varlığı unsurlarının anlamlarını tahmin edebilmelerine (T.D.5.4., T.O.5.5.) yönelik çalışmalara yer verilir. Derin anlamı belirleme çalışmaları kapsamında basit (T.D.5.6., T.O.5.8.) ve üst düzey çıkarımlar (T.D.5.7., T.O.5.9.) yoluyla metnin derin anlamını belirleyebilmeleri, dinlediklerini/izlediklerini yorumlayabilmeleri (T.D.5.10.) sağlanır. Okuduklarını karşılaştırabilmelerini (T.O.5.10.) ve okuduklarını özetleyebilmelerini (T.O.5.21.) sağlayacak etkinlikler yapılır. Öğrencilerin dinlediklerindeki/izlediklerindeki unsurları sınıflandırmaya (T.D.5.9.) ve bilgilendirici metinlerde düşünceyi geliştirme yollarını belirlemeye (T.D.5.15.) yönelik çalışmalar yapılır. Dinledikleri/izledikleri ve okudukları metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeleri (T.D.5.17., T.O.5.20.) ve okuma sürecini değerlendirebilmeleri (T.O.5.22.) sağlanır. Öğrencilerin konuşmalarında yöntem ve teknik ile yazmada strateji, yöntem ve teknik seçimlerini yönetebilmeleri (T.K.5.2., T.Y.5.2.); yazılarında içerik ve yapıya yönelik seçimlerini yönetebilmeleri (T.Y.5.3.) sağlanır. Konuşmalarında sınıflandırma yapabilmelerini (T.K.5.11.), yorumunu sözlü olarak ifade edebilmelerini (T.K.5.12.), çoklu ortam ögeleriyle içerik oluşturabilmelerini (T.K.5.5.) sağlayacak çalışmalar yapılır. Yazma çalışmaları kapsamında düşünceyi geliştirme yollarını kullanarak metni yapılandırabilmelerine (T.Y.5.12.), yazılarında karşılaştırma yapabilmelerine (T.Y.5.7.) ve yazılı olarak özetleyebilmelerine (T.Y.5.10.) yönelik çalışmalara yer verilir. Konuşmalarını zenginleştirecek biçimde söz varlığını kullanabilmelerini (T.K.5.17.), yazma sürecini değerlendirebilmelerini (T.Y.5.17.) sağlayacak çalışmalar yapılır. Öğrencilerin Türkçeyi doğru, güzel ve etkili kullandığı cümleler kurmaları (gereksiz söz cükleri kullanmamaları) sağlanır (T.K.5.17). Yazım kurallarını (sayıların yazımı) uygulamayla ilgili çalışmalar yapılır. Noktalama işaretleriyle ilgili kuralları (üç noktanın anlatım olarak tamamlanmamış cümlelerin sonuna konma; kesme işaretinin özel adlara getirilen iyelik, durum, bildirme eklerini, kişi adlarından sonra gelen saygı ve ünvan sözlerine getirilen ekleri ayırma, sayılara getirilen ekleri ayırma, belirli bir tarih bildiren ay ve gün adlarına gelen ekleri ayırma, bir ek veya harften sonra gelen ekleri ayırma) uygulamaya yönelik çalışmalar yapılır (T.Y.5.16.). Öğrencilerin karşılaştırma, benzerlik ve farklılık ifade etme işlevli dil yapıları ve söz varlığını belirlemeleri; bunları işlevlerine uygun kullanmaları sağlanır (DYS.DO.5.6.; DYS.KY.5.5.). Öğrencilerin özet ifade etme işlevli söz varlığını (açıkçası, yani, özetle, kısacası, özet olarak, uzun lafın kısası, sonuç olarak vb.) işlevine uygun kullanmaları sağlanır (DYS.KY.5.6.). Öğrencilerin ismin yerine tercih edilen söz varlığını ve bunların işlevlerini belirlemeleri, ismin yerine tercih edilen söz varlığını anlatımı zenginleştirecek şekilde işlevine uygun kullanmaları sağlanır (DYS.DO.5.5.; DYS.KY.5.4.). Tema sürecinde öğrenme çıktılarına yönelik yapılacak çalışmalarda kavramsal becerilerden Bilgi Toplama (KB2.6.), Genelleme (KB2.9.), Gözleme Dayalı Tahmin Etme (KB2.11.), Yapılandırma (KB2.13.); eğilimlerden Merak (E1.1.), Sorumluluk (E2.2.), Soru Sorma (E3.8.); sosyal-duygusal öğrenme becerilerinden İletişim (SDB2.1.), Sosyal Farkındalık (SDB2.3.); değerlerden Aile İçi Sorumlulukları Yerine Getirmek (D2.4.), Çevresine, Millî ve Manevi Değerlerine Saygı Duymak (D14.3.), Topluma Karşı Görevlerini Yerine Getirmek (D16.2.), Gönüllü Olmak (D20.4.); okuryazarlık becerilerinden Görsel Okuryazarlık (OB4.), Kültür Okur yazarlığı (OB5.), Sanat Okuryazarlığı (OB9.) uygun bir şekilde işe koşulur. Atölye Çalışmaları Dinleme/İzleme Atölyesi Belirlenen ikinci dinleme/izleme materyalini öğrencinin ailesiyle dinleyerek/izleyerek çö zümlemesi sürecine başlanır. Okuma Atölyesi Okuma atölyesi uygulama esaslarına uygun olarak belirlenen iki kitabın öğrenciler tarafın dan okunması ve çözümlenmesi çalışmalarına başlanır. Üretim Atölyesi Üretim atölyesi uygulama esasları doğrultusunda öğrencilerin tema içeriği ile temadaki öğ renme çıktılarına uygun ürünler (ses kaydı, konuşma metni, sunum videosu; afiş, kolaj, sınıf panosu, dijital albüm vb.) hazırlamaları sağlanır. Bu etkinlikler, öğrencilerin yaratıcılığını ve özgün düşünme becerilerini destekleyecek nitelikte olmalıdır.",
+        "Zenginleştirme": "Aile büyükleri birincil kaynak olmak üzere; geleneklerin zaman içerisindeki farklılaşmasına yönelik bir araştırma yapılması, araştırma sonuçlarının eleştirel bir metin hâline getirilmesi ve elde edilen bulguların karşılaştırmalı şekilde sınıfta ya da uygun ortamlarda sunulması istenebilir. Kaybolan geleneklerin kaybolma sebeplerinin araştırılması ve araştırma sonuçlarının “Nerede O Eski Bayramlar?” başlığıyla bir bilgi görseli hâline getirilip sınıfta paylaşılması istenebilir. Misafirperverlik konulu atasözü, deyim ve mânilerle ilgili araştırma yapılması ve ulaşılan bilgilerden hareketle bir skeç hazırlanması, sınıfta bu skecin sunulması istenebilir.",
+        "Destekleme": "Dinleme/izleme, okuma metni ya da tema içerisinde yer alan “komşuluk”, “bayramlar”, “kutlama” vb. kavramlar görsel, işitsel araçların sunumu ve şematik düzenleyicilerin kullanımı ile somutlaştırılabilir. Dinleme/izleme ya da okuma etkinliği öncesinde, metni yansıtan ve metnin anlaşılmasını sağlayacak kelimeler listelenebilir ve bu kelimelerin bağlamdaki anlamları görsel araçlar ve şematik düzenleyiciler yardımıyla verilebilir. “Geleneklerimiz” temasıyla ilgili görüşme soruları hazırlanarak öğrencinin aile büyükleriyle görüşme yapıp bu görüşmeyi sınıfta paylaşması sağlanabilir. Öğrenciye; metinde yer alan anahtar kelimeleri içeren bir özet planı, çalışma kâğıdı veya görsellerden oluşan bir grafik organize edici sunularak öğrenciden metni özetlemesi istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "Dinleme/İzleme",
+          "bold": true
+        },
+        {
+          "text": "T.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurları nın anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.6. Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleye bilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını be lirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.9. Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.10. Dinlediğini/izlediğini yorumlayabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.15. Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "Okuma",
+          "bold": true
+        },
+        {
+          "text": "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.10. Okuduklarını karşılaştırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.21. Okuduğunu özetleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.22. Okuma sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Konuşma",
+          "bold": true
+        },
+        {
+          "text": "T.K.5.2. Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.5. Konuşmasında çoklu ortam ögeleriyle içerik oluşturabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.11. Konuşmasında sınıflandırma yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.12. Yorumunu sözlü olarak ifade edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "Yazma",
+          "bold": true
+        },
+        {
+          "text": "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.7. Yazısında karşılaştırma yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.10. Yazılı olarak özetleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.12. Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.17. Yazma sürecini değerlendirebilme",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "T.D.5.1",
+          "codeAsPrinted": "T.D.5.1",
+          "text": "Dinlemede/izlemede materyal seçimini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.2",
+          "codeAsPrinted": "T.D.5.2",
+          "text": "Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.4",
+          "codeAsPrinted": "T.D.5.4",
+          "text": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurları nın anlamını tahmin edebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.6",
+          "codeAsPrinted": "T.D.5.6",
+          "text": "Basit çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleye bilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.7",
+          "codeAsPrinted": "T.D.5.7",
+          "text": "Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını be lirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.9",
+          "codeAsPrinted": "T.D.5.9",
+          "text": "Dinlediğindeki/izlediğindeki unsurları sınıflandırabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.10",
+          "codeAsPrinted": "T.D.5.10",
+          "text": "Dinlediğini/izlediğini yorumlayabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.15",
+          "codeAsPrinted": "T.D.5.15",
+          "text": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.17",
+          "codeAsPrinted": "T.D.5.17",
+          "text": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.3",
+          "codeAsPrinted": "T.O.5.3",
+          "text": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5",
+          "codeAsPrinted": "T.O.5.5",
+          "text": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.8",
+          "codeAsPrinted": "T.O.5.8",
+          "text": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.9",
+          "codeAsPrinted": "T.O.5.9",
+          "text": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.10",
+          "codeAsPrinted": "T.O.5.10",
+          "text": "Okuduklarını karşılaştırabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.20",
+          "codeAsPrinted": "T.O.5.20",
+          "text": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.21",
+          "codeAsPrinted": "T.O.5.21",
+          "text": "Okuduğunu özetleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.22",
+          "codeAsPrinted": "T.O.5.22",
+          "text": "Okuma sürecini değerlendirebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.2",
+          "codeAsPrinted": "T.K.5.2",
+          "text": "Konuşmada yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.5",
+          "codeAsPrinted": "T.K.5.5",
+          "text": "Konuşmasında çoklu ortam ögeleriyle içerik oluşturabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.11",
+          "codeAsPrinted": "T.K.5.11",
+          "text": "Konuşmasında sınıflandırma yapabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.12",
+          "codeAsPrinted": "T.K.5.12",
+          "text": "Yorumunu sözlü olarak ifade edebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.17",
+          "codeAsPrinted": "T.K.5.17",
+          "text": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.2",
+          "codeAsPrinted": "T.Y.5.2",
+          "text": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.3",
+          "codeAsPrinted": "T.Y.5.3",
+          "text": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.7",
+          "codeAsPrinted": "T.Y.5.7",
+          "text": "Yazısında karşılaştırma yapabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.10",
+          "codeAsPrinted": "T.Y.5.10",
+          "text": "Yazılı olarak özetleyebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.12",
+          "codeAsPrinted": "T.Y.5.12",
+          "text": "Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.16",
+          "codeAsPrinted": "T.Y.5.16",
+          "text": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.17",
+          "codeAsPrinted": "T.Y.5.17",
+          "text": "Yazma sürecini değerlendirebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-turkce-dersi/unite/78",
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/78",
+      "title": "5. Tema: İletişim Ve Sosyal İlişkiler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:16.664Z",
+      "cacheFile": "html/ortaokul-turkce-dersi_unite_78.html",
+      "meta": [
+        "Ortaokul Türkçe Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "5. Tema: İletişim Ve Sosyal İlişkiler",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin materyal seçimini yönetebilme, söz sanatlarını belirleyebilme, söz varlığını geliştirebilme ve kullanabilme, tahmin edebilme; özetleyebilme, yorumlayabilme, karşılaştırabilme, soru sorabilme; derin anlamı, açık ve örtük ifadeleri belirleyebilme; süreci değerlendirebilme; strateji, yöntem ve teknik seçimlerini yönetebilme; içeriğe ve yapıya yönelik seçimlerini yönetebilme; uygun bağlantı ifadelerini kullanabilme, yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmelerine yetkinlik düzeyinde ulaşmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "34",
+        "Alan Becerileri": "Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma",
+        "Kavramsal Beceriler": "KB1. Temel Beceriler, KB2.3. Özetleme, KB2.4. Çözümleme, KB2.7. Karşılaştırma, KB2.10. Çıkarım Yapma, KB2.14. Yorumlama",
+        "Eğilimler": "E1.4. Kendine İnanma (Öz Yeterlilik), E1.5. Kendine Güvenme (Öz Güven), E2.2. Sorumluluk, E2.3. Girişkenlik",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.3. Kendine Uyarlama (Öz Yansıtma), SDB2.1. İletişim, SDB3.1. Uyum, SDB3.2. Esneklik",
+        "Değerler": "D8. Mahremiyet, D10. Mütevazılık, D14. Saygı, D16. Sorumluluk",
+        "Okuryazarlık Becerileri": "OB2. Dijital Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Sosyal Bilgiler, Din Kültürü ve Ahlak Bilgisi",
+        "Beceriler Arası İlişkiler": "KB2.1. Çelişki Giderme, KB2.13. Yapılandırma, KB3.1. Karar Verme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "Dinleme/İzlemeT.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme T.D.5.8. Dinlediklerini/izlediklerini karşılaştırabilme T.D.5.16. Dinlediğindeki/izlediğindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme T.D.5.19. Dinlediğini/izlediğini özetleyebilme T.D.5.20. Dinleme/izleme sürecini değerlendirebilmeOkumaT.O.5.1. Okumada materyal seçimini yönetebilme T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme T.O.5.12. Metni yorumlayabilme T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeKonuşmaT.K.5.4. İletişimi sürdürmek amacıyla soru sorabilme T.K.5.10. Konuşmasında karşılaştırma yapabilme T.K.5.13. Sözlü olarak özetleyebilme T.K.5.18. Konuşmasında açık ve örtük ifadeleri kullanabilme T.K.5.19. Uygun bağlantı ifadelerini kullanabilme T.K.5.21. Konuşma sürecini değerlendirebilmeYazmaT.Y.5.2.Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme T.Y.5.9. Yorumunu yazılı olarak ifade edebilme T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme T.Y.5.14. Yazısında açık ve örtük ifadeleri kullanabilme T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+        "Anahtar Kavramlar": "Genellemeler Temadaki metinlerin işlenmesi sürecinde (hazırlık bölümü de dâhil) öncelik-sonralık ilişkisi gözetilmeksizin dinleme/izleme, okuma, konuşma ve yazma etkinliklerine birbirini destekleyecek, tamamlayacak ve güçlendirecek biçimde yer verilir. Konuşma ve yazma becerilerindeki etkinliklerle ortaya çıkan ürünler, farklı alan becerileri ve kavramsal becerilerin bir araya gelmesiyle oluşturulur. Bu becerilerden hareketle hazırlanan öğrenme çıktısına, “Temalara Yönelik Süreç Detaylı Öğretim Programı”nda ilk kez yer verildiğinde bu öğrenme çıktısına yönelik bağımsız etkinlik yapılır. İlgili öğrenme çıktısına ilerleyen temalarda yeniden yer verildiğinde öğrenme çıktısıyla ilgili bağımsız etkinlik yapılabileceği gibi öğrenme çıktısı, o temada yer verilen diğer öğrenme çıktılarıyla birlikte, onları destekleyecek ve tamamlayacak şekilde aynı etkinlikte de kullanılabilir. Anahtar Kavramlar Materyal seçimi; strateji, yöntem ve teknik; söz varlığı, söz sanatları, derin anlam, soru sorma, yazıda içerik ve yapı, açık ve örtük ifade, özetleme, bağlantı ifadeleri, yazım kuralları, noktalama işaretleri, dil yapıları ve söz varlığı.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Dinleme/izleme, okuma, konuşma ve yazma dil becerilerine yönelik öğrenme çıktıları ile ifade edilen becerilere ulaşılıp ulaşılmadığını belirlemek amacıyla ölçme değerlendirme çalışmaları yapılır. Bu süreçte kullanılabilecek ölçme araçları örnek olarak verilmiştir. Öğrenme ortamının özellikleri, öğrenci sayısı ve mevcut imkânlar dikkate alınarak aşağıda yer verilen araçların tamamı ya da bir kısmı kullanılabilir ve gerekli görülen durumlarda farklı ölçme değerlendirme araçlarından da yararlanılabilir. Her temada en az bir tane performans görevinin verilmesi esastır. Performans görevi temanın en az bir öğrenme çıktısını ölçme ve değerlendirmeye yönelik olmalıdır. Dinleme/izleme strateji ve yöntem seçimlerini yönetebilmesi için öz bildirim kullanılabilir. Dinlediklerini/izlediklerini karşılaştırabilmesi için iki bileşenli maddeler (doğru-yanlış, evet-hayır vb.), eşleştirme vb. çalışmalar yapılabilir. Dinleme/izleme sürecini değerlendirebilme ve kendini uyarlayabilmesi için öz değerlendirme araçlarından yararlanılabilir. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilmesi için boşluk doldurma, açık uçlu soru, cümle tamamlama vb. çalışmalar yapılabilir. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmesi için boşluk doldurma, açık uçlu soru, cümle tamamlama, kelime defteri oluşturma vb. çalışmalardan faydalanılabilir. Konuşmasında karşılaştırma yapabilmesi için betimleme, karşılıklı konuşma, sunum yapma vb. çalışmalardan yararlanılabilir. Konuşmasında açık ve örtük ifadeleri uygun biçimde kullanabilmesi için tartışma çalışması yapılabilir. Yazısını zenginleştirecek biçimde söz varlığını kullanabilmesi için kelime ve kavram havuzundan seçerek yazma çalışması verilebilir.",
+        "Temel Kabuller": "Sözlü olarak özetleyebilme öğrenme çıktısı için dördüncü temadaki okuduğunu özetleyebilme öğrenme çıktısı ön öğrenme kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Temaya ilişkin temel kabule yönelik beceri; yapılandırılmış özetleme ile belirlenebilir. Ön değerlendirmeden hareketle varsa öğrencilerin gelişmeye açık yönlerini güçlendirmek için gerekli çalışmalar yapılır.",
+        "Köprü Kurma": "Dinlediklerini/izlediklerini karşılaştırabilme öğrenme çıktısı, dördüncü temadaki okuduklarını karşılaştırabilme öğrenme çıktısıyla ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "Temanın başlangıcında ön değerlendirmeye yönelik çalışma yapılır. Metin işleme sürecinde metnin içeriğine yönelik hazırlık çalışmaları (soru-cevap, ön araştırma vb.) yapılarak öğrencilerin ön bilgilerinden yararlanmaları, motive ve derse dâhil olmaları sağlanır. İlgili öğrenme çıktısına yönelik etkinlik yapılırken strateji, yöntem ve teknik; yazıda içerik ve yapı, soru sorma, bağlantı ifadeleri anahtar kavramları ile dil yapıları ve söz varlığı kavramlarına yönelik tanımlayıcı nitelikte, bu kavramların bileşenlerini, özelliklerini vb. belirten kısa bilgilere ve/veya uyarılara yer verilir. Öğrencilerin okumada materyal seçimini (T.O.5.1.), okuma ve dinleme/izlemede strateji, yöntem ve teknik seçimlerini yönetebilmelerini (T.D.5.2., T.O.5.3.) sağlayacak çalışmalar yapılır. Dinlediklerinde/izlediklerinde ve okuduklarında geçen anlamını bilmedikleri söz varlığı unsurlarının anlamlarını tahmin edebilmelerine (T.D.5.4., T.O.5.5.) yönelik çalışmalara yer verilir. Derin anlamı belirleyebilme çalışmaları kapsamında basit (T.O.5.8.) ve üst düzey çıkarımlar (T.D.5.7., T.O.5.9.) yoluyla metnin derin anlamını belirleyebilmeleri, okuduklarını yorumlayabilmeleri (T.O.5.12.) sağlanır. Dinlediklerini/izlediklerini karşılaştırabilmelerini (T.D.5.8.) ve dinlediklerini/izlediklerini özetleyebilmelerini (T.D.5.19.) sağlayacak etkinlikler yapılır. Öğrencilerin dinlediklerindeki/izlediklerindeki söz sanatlarını belirlemeye (T.D.5.16.) yönelik çalışmalar yapılır. Dinledikleri/izledikleri ve okudukları metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeleri (T.D.5.17., T.O.5.20.) ve dinleme/izleme sürecini değerlendirebilmeleri (T.D.5.20.) sağlanır. Öğrencilerin yazmada strateji, yöntem ve teknik seçimlerini (T.Y.5.2.); yazılarında içerik ve yapıya yönelik seçimlerini yönetebilmeleri (T.Y.5.3.) sağlanır. Konuşmalarında karşılaştırma yapabilmelerini (T.K.5.10.) ve sözlü olarak özetleyebilmelerini (T.K.5.13.) sağlayacak çalışmalar yapılır. Konuşmalarında iletişimi sürdürmek amacıyla soru sorabilmeleri (T.K.5.4.) sağlanır. Konuşma ve yazılarında açık ve örtük ifadeleri kullanabilmelerini (T.K.5.18., T.Y.5.14.) ve yorumunu yazılı olarak ifade edebilmelerini (T.Y.5.9.) sağlayacak çalışmalara yer verilir. Yazılarını zenginleştirecek biçimde söz varlığını kullanabilmelerini (T.Y.5.13.), uygun bağlantı ifadelerinden yararlanabilmelerini (T.K.5.19.) ve konuşma sürecini değerlendirebilmelerini (T.K.5.21.) sağlayacak çalışmalar yapılır. Öğrencilerin Türkçeyi doğru, güzel ve etkili kullandığı cümleler kurmaları (anlamca çelişen sözcükleri bir arada kullanmamaları) sağlanır (T.Y.5.13.). Öğrencilerin konuşmalarında uygun bağlantı ifadelerinden; zaman (öncelik-sonralık, eş zamanlılık) ifade edenlerden (ilk olarak, ilk önce, önce, öncelikle; ardından, sonra, son olarak, sonunda; aynı anda, aynı zamanda, bu sırada, bir yandan … bir yandan ..., derken, hem … hem ... vb.) yararlanmaları sağlanır (T.K.5.19.). Yazım kurallarını (büyük harflerin yazımıyla ilgili Ek 4’teki Ç, D, E, F maddelerinde belirtilen kurallar) uygulamayla ilgili çalışmalar yapılır. Noktalama işaretleriyle ilgili kuralları (tırnak işaretinin başka bir kimseden veya yazıdan olduğu gibi aktarılan sözleri gösterme, özel olarak vurgulanmak istenen sözleri belirtme) uygulamaya yönelik çalışmalar yapılır (T.Y.5.16.). Öğrencilerin cümleleri kendi ifadeleriyle yeniden kurmaları sağlanır (DYS.KY.5.9.). Tema sürecinde öğrenme çıktılarına yönelik yapılacak çalışmalarda kavramsal becerilerden Çelişki Giderme (KB2.1.), Yapılandırma (KB2.13.), Karar Verme (KB3.1.); eğilimlerden Kendine İnanma (Öz Yeterlilik) (E1.4.), Kendine Güvenme (Öz Güven) (E1.5.), Sorumluluk (E2.2.), Girişkenlik (E2.3.); sosyal-duygusal öğrenme becerilerinden Kendine Uyarlama (Öz Yansıtma) (SDB1.3.), İletişim (SDB2.1.), Uyum (SDB3.1.), Esneklik (SDB3.2.); değerlerden Sosyal İlişkilerde Kişisel Alanları Korumak (D8.4.), İnsan İlişkilerinde Yapıcı Olmak (D10.3.), Çevresine, Millî ve Manevi Değerlerine Saygı Duymak (D14.3.), Görev Bilincine Sahip Olmak (D16.3.); okuryazarlık becerilerinden Dijital Okuryazarlık (OB2.) uygun bir şekilde işe koşulur. Atölye Çalışmaları Dinleme/İzleme Atölyesi Belirlenen ikinci dinleme/izleme materyalini öğrencinin ailesiyle dinleyerek/izleyerek çözümlemesi çalışması sürdürülür. Okuma Atölyesi Belirlenen iki kitabın öğrenciler tarafından okunması ve birinin sınıf içerisinde çözümlenmesi çalışmalarına devam edilir. Üretim Atölyesi Üretim atölyesi uygulama esasları doğrultusunda öğrencilerin tema içeriği ile temadaki öğrenme çıktılarına uygun ürünler (ses kaydı, konuşma metni, sunum videosu; afiş, kolaj, sınıf panosu, dijital albüm vb.) hazırlamaları sağlanır. Bu etkinlikler, öğrencilerin yaratıcılığını ve özgün düşünme becerilerini destekleyecek nitelikte olmalıdır.",
+        "Zenginleştirme": "Türk kültüründe “komşuluk” ile ilgili bir araştırma yapılması ve bu araştırmanın sınıfta ya da uygun dijital ortamlarda sunulması istenebilir. “Arkadaşlarla iletişim”, “iletişimde sevgi dili”, “empati”, “iletişim sorunları” vb. konularda özgün bir oyun yazılıp canlandırılması istenebilir.",
+        "Destekleme": "Dinleme/izleme ya da okuma etkinliği öncesinde, metni yansıtan ve metnin anlaşılmasını sağlayacak kelimeler listelenebilir ve bu kelimelerin bağlamdaki anlamları görsel araçlar ve şematik düzenleyiciler yardımıyla verilebilir. Kuklalar ile “iletişimde sevgi dili, iletişimde empati vb.” konulara ilişkin oyun sergilenmesi ve bu çalışmalar yapılırken iş birlikli öğrenme ortamlarının oluşturulması sağlanabilir. Dinleme/izleme ya da okuma etkinliği öncesinde bilgilendirici metinlerdeki kavram, bilgi; öyküleyici metinlerdeki kişi, yer, zaman vb. yapılara ilişkin unsurların yer aldığı kavram ya da hikâye haritası gibi şemalar oluşturulup sunulabilir. Okuma ve yazma çalışmalarında işleyişin nasıl olması gerektiği bire bir anlatılarak süreç öğrenci ile yürütülebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "Dinleme/İzleme",
+          "bold": true
+        },
+        {
+          "text": "T.D.5.2. Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.8. Dinlediklerini/izlediklerini karşılaştırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.16. Dinlediğindeki/izlediğindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.19. Dinlediğini/izlediğini özetleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.20. Dinleme/izleme sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Okuma",
+          "bold": true
+        },
+        {
+          "text": "T.O.5.1. Okumada materyal seçimini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.8. Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.9. Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.12. Metni yorumlayabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "Konuşma",
+          "bold": true
+        },
+        {
+          "text": "T.K.5.4. İletişimi sürdürmek amacıyla soru sorabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.10. Konuşmasında karşılaştırma yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.13. Sözlü olarak özetleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.18. Konuşmasında açık ve örtük ifadeleri kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.19. Uygun bağlantı ifadelerini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.21. Konuşma sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Yazma",
+          "bold": true
+        },
+        {
+          "text": "T.Y.5.2.Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.9. Yorumunu yazılı olarak ifade edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.14. Yazısında açık ve örtük ifadeleri kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "T.D.5.2",
+          "codeAsPrinted": "T.D.5.2",
+          "text": "Dinlemede/izlemede strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.4",
+          "codeAsPrinted": "T.D.5.4",
+          "text": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.7",
+          "codeAsPrinted": "T.D.5.7",
+          "text": "Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.8",
+          "codeAsPrinted": "T.D.5.8",
+          "text": "Dinlediklerini/izlediklerini karşılaştırabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.16",
+          "codeAsPrinted": "T.D.5.16",
+          "text": "Dinlediğindeki/izlediğindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.17",
+          "codeAsPrinted": "T.D.5.17",
+          "text": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.19",
+          "codeAsPrinted": "T.D.5.19",
+          "text": "Dinlediğini/izlediğini özetleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.20",
+          "codeAsPrinted": "T.D.5.20",
+          "text": "Dinleme/izleme sürecini değerlendirebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.1",
+          "codeAsPrinted": "T.O.5.1",
+          "text": "Okumada materyal seçimini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.3",
+          "codeAsPrinted": "T.O.5.3",
+          "text": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5",
+          "codeAsPrinted": "T.O.5.5",
+          "text": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.8",
+          "codeAsPrinted": "T.O.5.8",
+          "text": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.9",
+          "codeAsPrinted": "T.O.5.9",
+          "text": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.12",
+          "codeAsPrinted": "T.O.5.12",
+          "text": "Metni yorumlayabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.20",
+          "codeAsPrinted": "T.O.5.20",
+          "text": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.4",
+          "codeAsPrinted": "T.K.5.4",
+          "text": "İletişimi sürdürmek amacıyla soru sorabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.10",
+          "codeAsPrinted": "T.K.5.10",
+          "text": "Konuşmasında karşılaştırma yapabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.13",
+          "codeAsPrinted": "T.K.5.13",
+          "text": "Sözlü olarak özetleyebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.18",
+          "codeAsPrinted": "T.K.5.18",
+          "text": "Konuşmasında açık ve örtük ifadeleri kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.19",
+          "codeAsPrinted": "T.K.5.19",
+          "text": "Uygun bağlantı ifadelerini kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.21",
+          "codeAsPrinted": "T.K.5.21",
+          "text": "Konuşma sürecini değerlendirebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.2",
+          "codeAsPrinted": "T.Y.5.2",
+          "text": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": [
+            "Sayfada kod ile metin arasında boşluk yok: \"T.Y.5.2.Yazmada str\""
+          ]
+        },
+        {
+          "code": "T.Y.5.3",
+          "codeAsPrinted": "T.Y.5.3",
+          "text": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.9",
+          "codeAsPrinted": "T.Y.5.9",
+          "text": "Yorumunu yazılı olarak ifade edebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.13",
+          "codeAsPrinted": "T.Y.5.13",
+          "text": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.14",
+          "codeAsPrinted": "T.Y.5.14",
+          "text": "Yazısında açık ve örtük ifadeleri kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.16",
+          "codeAsPrinted": "T.Y.5.16",
+          "text": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/ortaokul-turkce-dersi/unite/87",
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/87",
+      "title": "6. Tema: Sağlıklı Yaşıyorum",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:18.165Z",
+      "cacheFile": "html/ortaokul-turkce-dersi_unite_87.html",
+      "meta": [
+        "Ortaokul Türkçe Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "6. Tema: Sağlıklı Yaşıyorum",
+      "subtitle": null,
+      "intro": "Bu temada öğrencilerin materyal seçimini yönetebilme, söz varlığını geliştirebilme ve kullanabilme, tahmin edebilme, derin anlamı belirleyebilme, süreci yönetebilme ve değerlendirebilme, hazırlıklı konuşma yapabilme, önemli bilgileri belirleyebilme, tartışabilme; strateji, yöntem ve teknik seçimlerini yönetebilme, içerik ve yapıya yönelik seçimlerini yönetebilme, uygun bağlantı ifadelerini kullanabilme, yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilmelerine yetkinlik düzeyinde ulaşmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "34",
+        "Alan Becerileri": "Anlama TAB1. Dinleme/İzleme, TAB2. Okuma Anlatma TAB3. Konuşma, TAB4. Yazma",
+        "Kavramsal Beceriler": "KB1. Temel Beceriler, KB2.4. Çözümleme, KB2.11. Gözleme Dayalı Tahmin Etme, KB2.17. Değerlendirme",
+        "Eğilimler": "E1.6. Seçicilik, E2.2. Sorumluluk",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme Becerisi), SDB2.1. İletişim",
+        "Değerler": "D5. Duyarlılık, D13. Sağlıklı Yaşam, D16. Sorumluluk, D17. Tasarruf, D18. Temizlik",
+        "Okuryazarlık Becerileri": "OB7. Veri Okuryazarlığı, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Fen Bilimleri, Beden Eğitimi ve Spor",
+        "Beceriler Arası İlişkiler": "KB2.13. Yapılandırma, KB2.15. Yansıtma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "Dinleme/İzlemeT.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme T.D.5.12. Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme T.D.5.20. Dinleme/izleme sürecini değerlendirebilmeOkumaT.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme T.O.5.5.14. Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme T.O.5.22. Okuma sürecini değerlendirebilmeKonuşmaT.K.5.14. Sözlü olarak tartışabilme T.K.5.15. Hazırlıklı konuşmasını yapılandırabilme T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme T.K.5.21. Konuşma sürecini değerlendirebilmeYazma T.Y.5.1. Yazma sürecini yönetebilme T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme T.Y.5.11. Yazılı üretiminde ve yazılı etkileşiminde tartışabilme T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme T.Y.5.15. Uygun bağlantı ifadelerini kullanabilme T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme T.Y.5.17. Yazma sürecini değerlendirebilme",
+        "Anahtar Kavramlar": "Genellemeler Temadaki metinlerin işlenmesi sürecinde (hazırlık bölümü de dâhil) öncelik-sonralık ilişkisi gözetilmeksizin dinleme/izleme, okuma, konuşma ve yazma etkinliklerine birbirini destekleyecek, tamamlayacak ve güçlendirecek biçimde yer verilir. Konuşma ve yazma becerilerindeki etkinliklerle ortaya çıkan ürünler, farklı alan becerileri ve kavramsal becerilerin bir araya gelmesiyle oluşturulur. Bu becerilerden hareketle hazırlanan öğrenme çıktısına, “Temalara Yönelik Süreç Detaylı Öğretim Programı”nda ilk kez yer verildiğinde bu öğrenme çıktısına yönelik bağımsız etkinlik yapılır. İlgili öğrenme çıktısına ilerleyen temalarda yeniden yer verildiğinde öğrenme çıktısıyla ilgili bağımsız etkinlik yapılabileceği gibi öğrenme çıktısı, o temada yer verilen diğer öğrenme çıktılarıyla birlikte, onları destekleyecek ve tamamlayacak şekilde aynı etkinlikte de kullanılabilir. Anahtar Kavramlar Materyal seçimi; strateji, yöntem ve teknik; bilgilendirici metin; önemli bilgi; söz varlığı; derin anlam; yazıda içerik ve yapı; tartışma; hazırlıklı konuşma, bağlantı ifadeleri, yazım kuralları, noktalama işaretleri; dil yapıları ve söz varlığı.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Dinleme/izleme, okuma, konuşma ve yazma dil becerilerine yönelik öğrenme çıktıları ile ifade edilen becerilere ulaşılıp ulaşılmadığını belirlemek amacıyla ölçme değerlendirme çalışmaları yapılır. Bu süreçte kullanılabilecek ölçme araçları örnek olarak verilmiştir. Öğrenme ortamının özellikleri, öğrenci sayısı ve mevcut imkânlar dikkate alınarak aşağıda yer verilen araçların tamamı ya da bir kısmı kullanılabilir ve gerekli görülen durumlarda farklı ölçme değerlendirme araçlarından da yararlanılabilir. Her temada en az bir tane performans görevinin verilmesi esastır. Performans görevi temanın en az bir öğrenme çıktısını ölçme ve değerlendirmeye yönelik olmalıdır. Öğrencinin dinlemede/izlemede materyal seçimini yönetebilmesi için kontrol listesi verilebilir. Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilmesi için kavram haritası çalışması yapılabilir. Okumada strateji, yöntem ve teknik seçimlerini yönetebilmesi için öz bildirim kullanılabilir. Okuma sürecini değerlendirebilme ve kendini uyarlayabilmesi için öz değerlendirme araçlarından faydalanılabilir. Sözlü olarak tartışabilme becerisinin değerlendirilmesinde sayısal dereceleme ölçeği kullanılabilir. Hazırlıklı konuşmasını yapılandırabilmesi için drama, karşılıklı konuşma vb. çalışmalardan yararlanılabilir. Yazma sürecini yönetebilmesine ilişkin öz bildirim verilebilir. Uygun bağlantı ifadelerini kullanabilmesi için kolaydan zora ilkesiyle önce cümle sonra paragraf yazma gibi çalışmalar yapılabilir.",
+        "Temel Kabuller": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme öğrenme çıktısı için beşinci temadaki basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme öğrenme çıktısı ön öğrenme kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Temaya ilişkin temel kabule yönelik beceri; boşluk doldurma, açık uçlu ve çoktan seçmeli soru gibi çalışmalarla belirlenebilir. Ön değerlendirmeden hareketle varsa öğrencilerin gelişmeye açık yönlerini güçlendirmek için gerekli çalışmalar yapılır.",
+        "Köprü Kurma": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme öğrenme çıktısı, beşinci temadaki yorumunu yazılı olarak ifade edebilme öğrenme çıktısıyla ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "Temanın başlangıcında ön değerlendirmeye yönelik çalışma yapılır. Metin işleme sürecinde metnin içeriğine yönelik hazırlık çalışmaları (soru-cevap, ön araştırma vb.) yapılarak öğrencilerin ön bilgilerinden yararlanmaları, motive ve derse dâhil olmaları sağlanır. İlgili öğrenme çıktısına yönelik etkinlik yapılırken strateji, yöntem ve teknik; hazırlıklı konuşma, tartışma, bilgilendirici metin, önemli bilgi, bağlantı ifadeleri anahtar kavramları ile dil yapıları ve söz varlığı kavramlarına yönelik tanımlayıcı nitelikte ve bu kavramların bileşenlerini, özelliklerini vb. belirten kısa bilgilere ve/veya uyarılara yer verilir. Öğrencilerin dinleme/izleme sürecinde materyal seçimini (T.D.5.1.), okuma sürecinde strateji, yöntem ve teknik seçimlerini (T.O.5.3.) yönetebilmelerini sağlayacak çalışmalar yapılır. Dinlediklerinde/izlediklerinde ve okuduklarında geçen anlamını bilmedikleri söz varlığı unsurlarının anlamlarını tahmin edebilmelerine (T.D.5.4., T.O.5.5.) yönelik çalışmalara yer verilir. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin ve metnin derin anlamını belirleyebilmeleri (T.D.5.7., T.O.5.9.) sağlanır. Öğrencilerin bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye (T.D.5.12., T.O.5.14.), dinlediğinden/izlediğinden ve metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilmeleri (T.D.5.17., T.O.5.20.), dinleme/izleme (T.D.5.20.) ve okuma süreçlerini (T.O.5.22.) değerlendirmeleri sağlanır. Öğrencilerin yazma sürecini yönetebilmeleri; yazmada strateji, yöntem ve teknik seçimlerini yönetebilmeleri (T.Y.5.1., T.Y.5.2.); yazılarında içerik ve yapıya yönelik seçimlerini yönetebilmeleri (T.Y.5.3.) sağlanır. Hazırlıklı konuşmalarını yapılandırabilmelerini (T.K.5.15.) sağlayacak çalışmalar yapılır. Öğrencilerin sözlü olarak tartışmaya katılabilmelerine (T.K.5.14.), yazılı üretim ve yazılı etkileşimlerinde tartışabilmelerine (T.Y.5.11.) yönelik etkinlikler yapılır. Öğrencilerin konuşmalarını ve yazılarını zenginleştirecek biçimde söz varlığını kullanabilmelerini (T.K.5.17., T.Y.5.13.), konuşma ve yazma süreçlerini değerlendirebilmelerini (T.K.5.21., T.Y.5.17.) sağlayacak çalışmalara yer verilir. Öğrencilerin yazılarında uygun bağlantı ifadelerinden; örnek ifade edenlerden (örneğin, örnek olarak, örnek verecek olursak, mesela, söz gelimi, gibi vb.) yararlanmaları sağlanır (T.Y.5.15.). Öğrencilerin Türkçeyi doğru, güzel ve etkili kullandığı cümleler kurmaları sağlanır (T.K.5.17., T.Y.5.13.). Tema içeriğine uygun yazma çalışmalarında öğrencinin daha önce üzerinde durulan noktalama işaretleri ve yazım kurallarını uygulaması sağlanır (T.Y.5.16.). Öğrencilerin önceki temalarda üzerinde durulan dil yapıları ve söz varlığını belirlemelerine, bunları işlevlerine uygun olarak konuşmalarında ve yazılarında kullanmalarına yönelik çalışmalar yapılır. Tema sürecinde öğrenme çıktılarına yönelik yapılacak çalışmalarda kavramsal becerilerden Yapılandırma (KB2.13.), Yansıtma (KB2.15.); eğilimlerden Seçicilik (E1.6.), Sorumluluk (E2.2.); sosyal-duygusal öğrenme becerilerinden Kendini Düzenleme (Öz Düzenleme Becerisi) (SDB1.2.), İletişim (SDB2.1.); değerlerden Çevreye ve Canlılara Değer Vermek (D5.2.), Yeterli, Dengeli ve Sağlıklı Beslenmek (D13.1.), İnsan Sağlığını Önemsemek (D13.4.), Görev Bilincine Sahip Olmak (D16.3.), Bilinçli Tüketici Olmak (D17.1.), Kişisel Temizlik ve Bakımına Önem Vermek (D18.1.); okuryazarlık becerilerinden Veri Okuryazarlığı (OB7.), Sürdürülebilirlik Okuryazarlığı (OB8.) uygun bir şekilde işe koşulur. Atölye Çalışmaları Dinleme/İzleme Atölyesi Belirlenen ikinci dinleme/izleme materyalini öğrencinin ailesiyle dinlemesi/izlemesi ve çözümlemesi sürdürülerek sonlandırılır. Okuma Atölyesi Belirlenen iki kitabın öğrenciler tarafından okunması ve birinin sınıf içerisinde çözümlenmesi sürdürülerek tamamlanır. Diğer kitaba yönelik çözümleme rapor hâlinde sunulur. Okuma atölyesi uygulama esaslarına uygun olarak öğrenci ve ailesi tarafından yaz tatilinde okunacak bir kitap belirlenerek süreç planlanır. Üretim Atölyesi Üretim atölyesi uygulama esasları doğrultusunda öğrencilerin tema içeriği ile temadaki öğrenme çıktılarına uygun ürünler (ses kaydı, konuşma metni, sunum videosu; afiş, kolaj, sınıf panosu, dijital albüm vb.) hazırlamaları sağlanır. Bu etkinlikler, öğrencilerin yaratıcılığını ve özgün düşünme becerilerini destekleyecek nitelikte olmalıdır.",
+        "Zenginleştirme": "Geleneksel ve tamamlayıcı tıp uygulamaları ile modern tıp uygulamalarının araştırılarak karşılaştırılması ve sonuçların metin ya da dijital içerik hâline getirilerek sınıfta ya da uygun dijital ortamlarda sunulması istenebilir. Beslenme ve insan sağlığı arasındaki ilişki üzerine toplum sağlığı merkezi/sağlıklı hayat merkezindeki bir diyetisyenle röportaj yapılması ve bu röportajın sınıfta ya da uygun dijital ortamlarda sunulması istenebilir. Beslenme, spor ve insan sağlığı arasındaki ilişki üzerine bir bilgi görseli hazırlanması ve bu içeriğin uygun dijital ortamlarda sunulması istenebilir.",
+        "Destekleme": "Dinleme/izleme ya da okuma etkinliği öncesinde, metni yansıtan ve metnin anlaşılmasını sağlayacak kelimeler listelenebilir ve bu kelimelerin bağlamdaki anlamları görsel araçlar ve şematik düzenleyiciler yardımıyla verilebilir. Dinleme/izleme ya da okuma etkinliği öncesinde bilgilendirici metinlerdeki kavram, bilgi; öyküleyici metinlerdeki kişi, yer, zaman vb. yapılara ilişkin unsurların yer aldığı kavram ya da hikâye haritası gibi şemalar oluşturulup sunulabilir. Okuma ve yazma çalışmalarında işleyişin nasıl olması gerektiği bire bir anlatılarak süreç öğrenci ile yürütülebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "Dinleme/İzleme",
+          "bold": true
+        },
+        {
+          "text": "T.D.5.1. Dinlemede/izlemede materyal seçimini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.4. Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.7. Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.12. Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.17. Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.D.5.20. Dinleme/izleme sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Okuma",
+          "bold": true
+        },
+        {
+          "text": "T.O.5.3. Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5. Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.5.14. Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.20. Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "bold": false
+        },
+        {
+          "text": "T.O.5.22. Okuma sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Konuşma",
+          "bold": true
+        },
+        {
+          "text": "T.K.5.14. Sözlü olarak tartışabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.15. Hazırlıklı konuşmasını yapılandırabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.17. Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.K.5.21. Konuşma sürecini değerlendirebilme",
+          "bold": false
+        },
+        {
+          "text": "Yazma",
+          "bold": true
+        },
+        {
+          "text": "T.Y.5.1. Yazma sürecini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.2. Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.3. Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.11. Yazılı üretiminde ve yazılı etkileşiminde tartışabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.13. Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.15. Uygun bağlantı ifadelerini kullanabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.16. Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "bold": false
+        },
+        {
+          "text": "T.Y.5.17. Yazma sürecini değerlendirebilme",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "T.D.5.1",
+          "codeAsPrinted": "T.D.5.1",
+          "text": "Dinlemede/izlemede materyal seçimini yönetebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.4",
+          "codeAsPrinted": "T.D.5.4",
+          "text": "Dinlediğinde/izlediğinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.7",
+          "codeAsPrinted": "T.D.5.7",
+          "text": "Üst düzey çıkarımlar yoluyla dinlediğinin/izlediğinin derin anlamını belirleyebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.12",
+          "codeAsPrinted": "T.D.5.12",
+          "text": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.17",
+          "codeAsPrinted": "T.D.5.17",
+          "text": "Dinlediğinden/izlediğinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.D.5.20",
+          "codeAsPrinted": "T.D.5.20",
+          "text": "Dinleme/izleme sürecini değerlendirebilme",
+          "group": "Dinleme/İzleme",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.3",
+          "codeAsPrinted": "T.O.5.3",
+          "text": "Okumada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5",
+          "codeAsPrinted": "T.O.5.5",
+          "text": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.5.14",
+          "codeAsPrinted": "T.O.5.5.14",
+          "text": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.20",
+          "codeAsPrinted": "T.O.5.20",
+          "text": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.O.5.22",
+          "codeAsPrinted": "T.O.5.22",
+          "text": "Okuma sürecini değerlendirebilme",
+          "group": "Okuma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.14",
+          "codeAsPrinted": "T.K.5.14",
+          "text": "Sözlü olarak tartışabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.15",
+          "codeAsPrinted": "T.K.5.15",
+          "text": "Hazırlıklı konuşmasını yapılandırabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.17",
+          "codeAsPrinted": "T.K.5.17",
+          "text": "Konuşmasını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.K.5.21",
+          "codeAsPrinted": "T.K.5.21",
+          "text": "Konuşma sürecini değerlendirebilme",
+          "group": "Konuşma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.1",
+          "codeAsPrinted": "T.Y.5.1",
+          "text": "Yazma sürecini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.2",
+          "codeAsPrinted": "T.Y.5.2",
+          "text": "Yazmada strateji, yöntem ve teknik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.3",
+          "codeAsPrinted": "T.Y.5.3",
+          "text": "Yazısında içerik ve yapıya yönelik seçimlerini yönetebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.11",
+          "codeAsPrinted": "T.Y.5.11",
+          "text": "Yazılı üretiminde ve yazılı etkileşiminde tartışabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.13",
+          "codeAsPrinted": "T.Y.5.13",
+          "text": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.15",
+          "codeAsPrinted": "T.Y.5.15",
+          "text": "Uygun bağlantı ifadelerini kullanabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.16",
+          "codeAsPrinted": "T.Y.5.16",
+          "text": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "T.Y.5.17",
+          "codeAsPrinted": "T.Y.5.17",
+          "text": "Yazma sürecini değerlendirebilme",
+          "group": "Yazma",
+          "components": [],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

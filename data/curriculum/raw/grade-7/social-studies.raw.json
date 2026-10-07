@@ -1,0 +1,856 @@
+{
+  "subject": "Sosyal Bilgiler",
+  "courseName": "Sosyal Bilgiler Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 8,
+    "name": "Sosyal Bilgiler Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim",
+    "heading": "Sosyal Bilgiler Dersi",
+    "gradeCards": [
+      {
+        "label": "4.Sınıf",
+        "grade": 4,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/5"
+      },
+      {
+        "label": "5.Sınıf",
+        "grade": 5,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6"
+      },
+      {
+        "label": "6.Sınıf",
+        "grade": 6,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/7"
+      },
+      {
+        "label": "7.Sınıf",
+        "grade": 7,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8",
+    "heading": "Sosyal Bilgiler Dersi 7.Sınıf",
+    "headingGrade": 7,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T11:14:30.856Z",
+    "links": [
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/423",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/423",
+        "title": "1. Öğrenme Alanı: Birlikte Yaşamak"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/424",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/424",
+        "title": "2. Öğrenme Alanı: Evimiz Dünya"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/425",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/425",
+        "title": "3. Öğrenme Alanı: Ortak Mirasımız"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/426",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/426",
+        "title": "4. Öğrenme Alanı: Yaşayan Demokrasimiz"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/427",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/427",
+        "title": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/428",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/428",
+        "title": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/423",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/423",
+      "title": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:14:32.440Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_423.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "7.Sınıf"
+      ],
+      "pageTitle": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin dâhil oldukları gruplarda etkili iletişimin önemine, özel gereksinimli bireylere fırsat eşitliği sunmak amacıyla yapılabilecek faaliyetlere ve Türk toplumunun millî meseleler karşısında göstermiş olduğu tutum ve davranışlarına ilişkin beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "16",
+        "Alan Becerileri": "SBAB5 Sosyal Katılım (KB2.8 Sorgulama) SBAB5 Sosyal Katılım (SBAB5.3 Fikir Üretme)",
+        "Kavramsal Beceriler": "KB2.10. Çıkarım Yapma",
+        "Eğilimler": "E1.1. Merak, E1.4. Kendine İnanma (Öz Yeterlilik), E1.5. Kendine Güvenme (Özgüven), E2.2. Sorumluluk, E2.3. Girişkenlik, E3.3. Yaratıcılık, E3.5. Açık Fikirlilik, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.1. Uyum, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D4 Dostluk, D5 Duyarlılık, D9 Merhamet, D14. Saygı, D15. Sevgi, D16. Sorumluluk, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Bilişim Teknolojileri ve Yazılım, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.7. Karşılaştırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.7.1.1. Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemini sorgulayabilme a) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili merak ettiği konuları tanımlar. b) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili sorular sorar. c) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili bilgi toplar. ç) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili topladığı bilgilerin doğruluğunu değerlendirir. d) Yapmış olduğu değerlendirmelerden hareketle olumlu iletişimin önemine yönelik çıkarım yapar. SB.7.1.2. Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik fikir üretebilme a) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmenin önemini fark eder. b) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik benzer girişimleri inceler. c) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik yeni fikirler üretir. SB.7.1.3. Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin çıkarım yapabilme a) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin varsayımlarda bulunur. b) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin örnekleri listeler. c) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışları karşılaştırır. ç) Türk toplumunun oluşabilecek farklı millî meseleler karşısında gösterebileceği tutum ve davranışlara ilişkin önermelerde bulunur. d) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışları top lumsal birlikteliğe etkisi açısından değerlendirir.",
+        "İçerik Çerçevesi": "Gruplarda ve Sosyal Hayatta İletişimin ÖnemiÖzel Gereksinimli Bireyler İçin Fırsat EşitliğiMillî Meseleler Karşısında Türk Toplumunun Tutum ve Davranışları",
+        "Anahtar Kavramlar": "davranış, etkili iletişim, fırsat eşitliği, grup, iletişim, kitle iletişim, özel gereksinim, sosyal hayat, toplum, tutum",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; 5N1K, balık kılçığı, gözlem formu, kontrol listesi, anekdot kaydı, derecelendirme ölçeği, açık uçlu sorular, karşılaştırma tabloları, dereceli puanlama anahtarı ve performans görevi teknikleri kullanılarak değerlendirilebilir. Performans görevi: Millî meseleler karşısında Türk milletinin gösterdiği tutum ve davra nışların toplumsal birlikteliğe etkisi konulu bir kompozisyon yazmaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin birlikte yaşama kültürü, temel insan hakları, eşitlik, bireylerin farklı özelliklere sahip olabileceği, millî birlik ve beraberlik konuları hakkında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden birlikte yaşama kültürüne etki eden unsurlara örnek vermeleri istenebilir. Öğrencilerden temel insan haklarına örnekler vermeleri istenebilir. Öğrencilerden eşitlik kavramına ilişkin kavram haritası hazırlamaları istenebilir. Öğrencilere toplumun hangi durumlarda millî birlik ve beraberlik gösterdiğine ilişkin açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilerden dâhil oldukları gruplarda veya sosyal hayatta karşılaştıkları iletişim problemlerine örnekler vermeleri ve bu problemlere çözüm önerileri sunmaları istenebilir. Öğrencilerden günlük yaşamda özel gereksinimli bireylere yönelik fırsat eşitliğini sürdürmek için yapılmış çalışmalara çevresinden örnekler vermeleri istenebilir. Öğrencilerden Türk toplumunun ortak tepki verdiği, ortak hareket ettiği veya ortak duygu ve düşünceleri yansıttığı olaylara örnekler vermeleri istenebilir. Öğrencilerden 23 Nisan, 19 Mayıs, 30 Ağustos, 29 Ekim, 10 Kasım gibi günlerde ev, iş yeri veya kurumlara bayrak asılmasının nedenlerini sorgulamaları istenebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.7.1.1 Yazılı ve görsel kaynaklar üzerinden grup içinde veya toplumsal hayatta olumlu ve olumsuz iletişime ait örnekler öğrencilere sunulur (OB1, OB4). Süreç dijital kaynaklarla da desteklenebilir (OB2). Bu örnekler öğrencilerin dâhil olduğu gruplardan (aile ve okul), sosyal çevreden (sokak, trafik, alışveriş gibi) veya dijital iletişim unsurları arasından seçilir. İncelenen kaynaklardaki iletişim örneklerinde dikkatlerini çeken ve merak ettikleri konular belirlenerek listelenir. Listede yer alan konular ve etkili iletişimin önemi ile ilgili sorular hazırlanır (E1.1, E3.8). Bu süreçte 5N1K tekniği kullanılabilir. Öğrenciler tarafından kaynaklara dayanarak hazırlanan sorularla ilgili bilgiler toplanır (OB1). Toplanan bilgiler kayıt altına alınır (OB1). Özellikle empati, sen dili, ben dili, farklılıklara saygı, etkin dinleme ve beden dili gibi kavramlar ele alınır. Öğrencilerden bu kavramları kullanarak iletişim durumlarını canlandırmaları, örnek olayları değerlendirmeleri istenir (D14.1). Daha sonra günlük hayatta ve dijital ortamlarda karşılaşılan, etkili iletişime engel olan durumlar üzerinde durulur. Bu süreçte beyin fırtınası yapılabilir. Öğrenciler iletişim problemlerinin ne denlerini belirler. Bu süreçte balık kılçığı tekniği kullanılabilir. Yapılan çalışma ile sınıf için de öğrencilerin arkadaşlarını etkin bir şekilde dinlemeleri ve onlarla etkili iletişim kurmaları desteklenir (D4.2). Beyin fırtınası süreci gözlem formu, kontrol listesi veya anekdot kaydı ile değerlendirilebilir. İletişime engel olan durumlarda neler yapılması gerektiğine ilişkin bir örnek olay sunulur. Örnek olay iletişim çatışmasının başladığı noktada sonlandırılır. Bundan sonra neler olabileceği öğrencilere sorulur (SDB2.2). Bu süreçte arkası yarın tekniği kullanılabilir. Gelen cevaplar sırasıyla tahtaya yazılarak olumlu ve olumsuz davranışlar olarak gruplanır. Söylenen davranışlara göre örnek olayın sonuçları tahmin edilir (SDB2.3). Örnek olayın devamı öğrencilere sunulur ve öğrenci tahminleri ile karşılaştırılır. Karşılaştırma sonucunda çatışmayı uzlaşmaya dönüştüren davranışlar kaydedilir (OB1, SDB3.2). İletişimde anlayışlı ve barışçıl olmanın önemi üzerinde durulur. Öğrencilere, örnek olaylar ve canlandırmalar aracılığıyla sevgi ve şefkat temelli iletişim davranışlarını uygulama fırsatı sunulur (D15.1). Dersin başında öğrencilerin hazırladığı sorular, elde edilen bilgilerden yola çıkılarak cevaplandırılır. Ailede, dâhil olabilecekleri gruplarda ve sosyal hayatta iletişimin önemi ile ilgili yazılı ve görsel kaynaklar incelenerek süreçte ulaşılan bilgilerin ve sorulara verilen cevapların doğruluğu değerlendirilir (OB1, OB4). Burada konuya uygun dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerin yapmış olduğu değerlendirmelerden hareketle olumlu iletişimin önemi ile ilgili çıkarımlar yapmaları sağlanır ve öğrencilerden bu çıkarımlarla ilgili bir şiir, slogan, özlü söz veya hikâye yazmaları istenir (E2.3, E3.3, E3.5). Öğrenci ürünleri dereceli puanlama anahtarı ile değerlendirilebilir. SB.7.1.2 Öğrencilere özel gereksinimli bireylerin başarılarını ele alan yazılı ve görsel kaynaklar sunulur (OB1, OB4). Süreçte dijital kaynaklardan da yararlanılabilir (OB2). Kaynaklardaki özel gereksinimli bireylerin başarılarına ilişkin durumlar tartışılır (SDB2.1, SDB2.2). Bu süreçte konuşma halkası tekniği kullanılabilir. Tartışma sonunda elde edilen görüşlerden yola çıkılarak özel gereksinimli bireyler için fırsat eşitliğini sürdürmenin önemi fark edilerek ortak bir yargıya varılır (E1.4, E1.5, E2.3, E3.3). Böylece öğrencilerin kendilerini özel gereksinimli bireylerin yerine koyarak onların duygu ve düşüncelerini algılamaları sağlanır (D14.1). Aynı zamanda öğrencilerin insana değer vererek karşısındaki kişiyle empati kurmaları, toplumsal ilişkilerinde başkalarının duygu ve düşüncelerini anlamaya yönelik duyarlı davranmaları beklenir (D5.2, SDB2.3). Özel gereksinimli bireylere yönelik fırsat eşitliğini sürdürmek için yapılmış günlük hayatta karşılaşılan girişimlere ilişkin görseller (özel gereksinimli birey rampası, kaldırımlarda hissedilebilir kılavuz yüzey, sesli veya kabartmalı cihazlar gibi) ve devlet kurumları tarafından yapılan proje örnekleri incelenir. İncelemelerden sonra örneklerde yer alan unsurların ne olduğu ve amacı ile ilgili açık uçlu sorular yöneltilir. Bu çalışmaların özel gereksinimli bireyler için ne ifade ettiği sınıfta tartışılır. Öğrencilerden günlük hayatlarından ve çevrelerinden benzer örnekler vermeleri istenir. Özel gereksinimli bireylere yönelik yapılan çalışmalar üzerinden fırsat eşitliğini sürdürmenin birey ve toplum açısından önemi vurgulanır. Bu bağlamda öğrencilerden özel gereksinimli bireylerin duygularına önem vermeleri, anlayışlı olmaları ve destekleyici davranışlar sergilemeleri beklenir (D9.2, D15.1). Öğrencilerden bireysel veya grup çalışması yoluyla özel gereksinimli bireylere yönelik fırsat eşitliğini sürdürmek için fikir önerileri hazırlamaları istenir (SDB2.1, SDB2.2). Bu amaç la bireylerin ihtiyaç duyduğu farklı özel gereksinim alanları belirlenir. Bu alanlara yönelik geçmişte yapılan çalışmalar incelenir ve bu çalışmalardan yola çıkarak farklı fikirler gelişti rilir. Fikir oluşturma sürecinde beyin eseri (ürünü) tekniği kullanılabilir. Ortaya çıkan fikirler üzerinde tüm sınıfın tartışması sağlanır (SDB2.2). En özgün öneriler belirlenir (SDB2.3). Beyin eseri tekniğinin uygulanma süreçleri kontrol listeleri ile değerlendirilebilir. Dersin sonunda sosyal medya panosu veya belirlenen fikirlerin uygulamaya geçirilebilmesi için bir proje tasarısı hazırlanır (E1.4, E1.5, E2.2, E2.3, E3.3, E3.5). Hazırlanan tasarı okul mü dürlüğüne sunulur. Öğrenci ürünleri dereceli puanlama anahtarı ile değerlendirilebilir. SB.7.1.3 Öğrencilere Millî Mücadele, terör, darbe, afet, bilim, sanat, spor gibi konularda yaşananlara yönelik yazılı ve görsel kaynaklardan örnekler sunulur (OB1, OB4). Süreçte dijital kaynak lardan da yararlanılabilir (OB2). Soru cevap tekniği ile bu durumlar karşısında Türk toplumunun gösterdiği tutum ve davranışlara ilişkin tahminler yapılır ve bu tahminler listelenir (OB1). Bu çalışma ile öğrencilerin topluma karşı görevlerini yerine getirmelerine yönelik farkındalık geliştirmeleri ve görev bilinci kazanmaları desteklenir (D16.2). Öğrencilerden başlangıçta verilen durumlara somut örnekler vermeleri istenir. Bu ör nekler içerisinde 15 Temmuz Darbe Girişimi, Türkiye Kadın Millî Voleybol Takımı’nın dünya şampiyonluğu, Erkek Ampute Futbol Millî Takımı’nın dünya şampiyonluğu, Mete Gazoz’un okçulukta olimpiyat ve dünya şampiyonluğu, Sümeyye Boyacı’nın yüzmede dünya şampi yonluğu, DNA onarımı alanındaki çalışmalarıyla Nobel Kimya Ödülü alan Aziz Sancar, uza ya giden ilk Türkiye Cumhuriyeti vatandaşı Alper Gezeravcı, Millî Kalkınma Projeleri (İHA, SİHA), 6 Şubat depremi yer alabilir. Örneklerden yola çıkarak öğrencilerin millî kimliklerini tanımaları ve milletlerine karşı vefalı olmaları desteklenir (D15.2, D19.2). Karşılaştırma tabloları oluşturularak örneklerde verilen millî meselelere yönelik Türk milletinin gösterdiği tutum ve davranışlar önce tarihsel olarak sonra da ortaya çıkardığı duygular bağlamında karşılaştırılır (KB2.7, OB1, SDB3.3). Millî Mücadele Dönemi’nde Türk milletinin millî birlik ve beraberlik ruhu ile 15 Temmuz darbe girişiminde Türk milletinin millî birlik ve beraberlik ruhu karşılaştırılarak bu dönemdeki tutum ve davranışlardaki benzerlik ve farklılıklar tespit edilir. Aynı karşılaştırma süreci, ortaya çıkan duygular bağlamında da gerçekleştirilir (OB1). Öğrencilerden yapmış oldukları karşılaştırmalardan yola çıkarak farklı millî meseleler kar şısında Türk toplumunun göstermiş olduğu tutum ve davranışları yorumlamaları istenir (SDB2.3). Öğrenciler gelecekte meydana gelebilecek olası millî meseleler ve bu meseleler karşısında Türk milletinin gösterebileceği tutum ve davranışlara yönelik önermelerini sözel olarak ifade ederler (SDB2.1, SDB3.1). Süreç içerisinde elde edilen bilgiler ve ortaya çıkan önermelerden yola çıkarak Türk top lumunun millî meseleler karşısında gösterdiği tutum ve davranışların toplumsal birlikteliğe etkisi konulu panel düzenlenir (SDB2.3). Panel sonucunda performans görevi olarak öğrencilerin millî meseleler karşısında Türk milletinin gösterdiği tutum ve davranışların toplumsal birlikteliğe etkisi konulu bir kompozisyon yazmaları ve yazdıklarını sınıfta pay laşmaları sağlanabilir (OB1, E1.4, E1.5, E2.2, E2.3, E3.3, E3.5). Değerlendirme amacıyla derecelendirme ölçeği kullanılabilir.",
+        "Zenginleştirme": "Öğrencilerin dâhil oldukları akran gruplarında arkadaşları ile iş birliği yaparak grup içinde iletişimi güçlendirme konusunda kısa bir film çekmeleri sağlanabilir. Öğrencilerden yakın çevrelerinde bulunan özel gereksinimli bir bireyle bir gün geçirmeleri ve geçirdikleri günün sonunda özel gereksinimli bireyin gün içinde karşılaştığı zorlukları yansıtan bir rapor hazırlamaları istenebilir. Özel gereksinimli bireyler ile empati kurmaya yönlendirecek drama, rol oynama etkinlikleri yapılabilir. Etkinlik sonunda öğrencilerden duygu ve düşüncelerini sözlü olarak ifade etmeleri istenebilir. Özel gereksinimli bir bireyin yerine kendini koyarak bir hafta boyunca günlük tutması istenebilir. Öğrencilerden spor, sanat, teknoloji alanlarında Türk toplumunun aynı tutum ve davra nışları gösterdiği konuları genel ağda araştırarak bunların Türk milleti üzerindeki etkilerini anlatan bir mektup yazmaları istenebilir.",
+        "Destekleme": "Öğrenciler tarafından iletişim konusunda kavram veya zihin haritası hazırlanabilir. Özel gereksinimli bireylerin ihtiyaçları listelenebilir. Öğrencilerden Türk toplumunun aynı tutum ve davranışları gösterdiği millî bir konuya örnek vermeleri istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.7.1.1. Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemini sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili merak ettiği konuları tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "c) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili topladığı bilgilerin doğruluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Yapmış olduğu değerlendirmelerden hareketle olumlu iletişimin önemine yönelik çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.1.2. Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik fikir üretebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmenin önemini fark eder.",
+          "bold": false
+        },
+        {
+          "text": "b) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik benzer girişimleri inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik yeni fikirler üretir.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.1.3. Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin varsayımlarda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin örnekleri listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışları karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Türk toplumunun oluşabilecek farklı millî meseleler karşısında gösterebileceği tutum ve davranışlara ilişkin önermelerde bulunur.",
+          "bold": false
+        },
+        {
+          "text": "d) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışları top lumsal birlikteliğe etkisi açısından değerlendirir.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.7.1.1",
+          "codeAsPrinted": "SB.7.1.1",
+          "text": "Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemini sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili merak ettiği konuları tanımlar.",
+            "b) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili sorular sorar.",
+            "c) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili bilgi toplar.",
+            "ç) Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemi ile ilgili topladığı bilgilerin doğruluğunu değerlendirir.",
+            "d) Yapmış olduğu değerlendirmelerden hareketle olumlu iletişimin önemine yönelik çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.1.2",
+          "codeAsPrinted": "SB.7.1.2",
+          "text": "Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik fikir üretebilme",
+          "group": null,
+          "components": [
+            "a) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmenin önemini fark eder.",
+            "b) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik benzer girişimleri inceler.",
+            "c) Özel gereksinimli bireyler için fırsat eşitliğini sürdürmeye yönelik yeni fikirler üretir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.1.3",
+          "codeAsPrinted": "SB.7.1.3",
+          "text": "Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin varsayımlarda bulunur.",
+            "b) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışlara ilişkin örnekleri listeler.",
+            "c) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışları karşılaştırır.",
+            "ç) Türk toplumunun oluşabilecek farklı millî meseleler karşısında gösterebileceği tutum ve davranışlara ilişkin önermelerde bulunur.",
+            "d) Türk toplumunun millî meseleler karşısında gösterdiği tutum ve davranışları top lumsal birlikteliğe etkisi açısından değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/424",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/424",
+      "title": "2. Öğrenme Alanı: Evimiz Dünya",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:14:33.974Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_424.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "7.Sınıf"
+      ],
+      "pageTitle": "2. Öğrenme Alanı: Evimiz Dünya",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi, bölgesel ve küresel sorunların çözümünde ülkemizin rolünü girişimci ve insani dış politika ekseninde ifade edebilmelerine yönelik bilgi ve becerileri kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "10",
+        "Alan Becerileri": "-",
+        "Kavramsal Beceriler": "KB2.14. Yorumlama KB2.3. Özetleme",
+        "Eğilimler": "E1.1. Merak, E3.3. Yaratıcılık",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık",
+        "Değerler": "D4. Dostluk, D11. Özgürlük, D15. Sevgi, D16.Sorumluluk, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.7.2.1. Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi yorumlayabilme a) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi inceler. b) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi bağlam dan kopmadan dönüştürür. c) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder. SB.7.2.2. Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü özetleyebilme a) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin çözümleme yapar. b) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin sınıflandırma yapar. c) Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü yorumlar",
+        "İçerik Çerçevesi": "Küreselleşmenin İnsan ve Toplum Hayatına Etkisi Bölgesel ve Küresel Sorunların Çözümünde Ülkemizin Rolü",
+        "Anahtar Kavramlar": "değişim, dış politika, girişimcilik, küreselleşme, küresel sorunlar",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; kavram haritası, zihin haritası, sınıflama tablosu, kontrol listesi, derecelendirme ölçeği ve performans görevi teknikleri kullanılarak değerlendirilebilir. Performans görevi: Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne yönelik yorumlarını yansıtan sunum yapmaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin ülkemizin sınır komşularını bildiği ve ülkemizin Türk dünyası ile kültürel iş bir liklerine dair temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden, görseller üzerinden küreselleşmenin günlük yaşama etkilerini analiz et meleri ve bu kavramın ne olduğu hakkındaki düşüncelerini ifade etmeleri istenebilir. Öğrencilerden ülkemizin kara sınır komşuları ve Türk dünyası ile kültürel iş birliklerine ilişkin verilen örneklerden hareketle bu iş birliklerinin önemini açıklayarak benzer örnekler vermeleri istenebilir.",
+        "Köprü Kurma": "Uluslararası kültürel, sanatsal ve sportif faaliyetlerden örnekler verilerek öğrencilerin küreselleşmenin etkilerine yönelik soru cevap etkinliğiyle düşüncelerini ifade etmeleri sağlanabilir. Kendi hayatlarında karşılaştıkları bir sorunun çözümünde başkaları ile iş birliği içinde olmaları ile benzetim yapılarak bölgesel ve küresel sorunların çözümünde de ülkelerin iş birliği içerisinde olmalarının önemine değinilebilir. Ülkemizin bu anlamdaki girişimlerine örnekler verilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.7.2.1 Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişim; ekonomi, ulaşım, iletişim sistemleri, kültür, sağlık ve çevre sorunları bağlamında yazılı ve görsel kaynaklar dan incelenir (OB1, OB4). Bu amaçla ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerden küreselleşmenin insan ve toplum hayatında meydana getirdiği değişime ilişkin ulaşım ve iletişim sistemlerinin hızlı bir şekilde yaygınlaşması, ülkeler arası ticaret hacminin gelişmesi, kültürel etkileşimin artması, çevresel sorunların yaygınlaşması bağ lamında örnekler vermeleri istenir (SDB2.3). Bu süreçte beyin fırtınası veya büyük grup tartışmasından yararlanılabilir (SDB2.2). Küreselleşmenin olumsuz etkileri ele alınırken öğrencilerin özgürlük sınırlarının farkında olarak toplumsal sorumluluk üstlenmeleri ve millî, manevi değerleri koruyacak tutumlar geliştirmeleri sağlanır (D11.2, D16.2). Öğrencilerin sunulan örneklerden yola çıkarak küreselleşmenin insan ve toplum üzerinde ki etkisini ifade etmeleri istenir (E3.3). Bu süreçte kavram haritası kullanılabilir. SB.7.2.2 Öğrencilerden barışla ilgili atasözü veya vecizelerden yola çıkarak ülkemizin günümüzde bu düşüncelerle ilişkili uygulamalarının neler olduğunu belirtmeleri istenir (E1.1). Dünya barışının dostça ilişkiler kurma ve uzlaşma yoluyla tesis edilebileceği ile insana ve topluma değer vermenin bu doğrultudaki önemi vurgulanır (D4.5, D15.1). Bu aşamada savaş, göç, mülteciler ve küresel iklim krizinin çözümünde ülkemizin girişimci ve insani dış politika ilkelerinden hareketle öğrencilerin verilen yazılı ve görsel kaynakları incelemeleri sağlanır (OB1, OB4). Bu amaçla ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerden; ülkemizin bölgesel ve küresel çatışmalarda arabulucu konumu ile insani yardım faaliyetle rini ve girişimlerini ele alarak çözümleme yapmaları istenir. Ülkemizin insani yardım faaliyetleri ele alınırken öğrencilerin yardıma muhtaç insanların duygularını anlamaya çalışarak empati kurmaları, toplumsal hayatlarında dayanışma, fedakârlık ve ihtiyaç sahiplerine öncelik verme gibi yardımsever davranışlar sergilemeleri sağlanır (D20.2). Ülkemizin göç, mülteciler ve küresel iklim krizi sorunlarının çözümü kapsamındaki uygulamalarına ilişkin sınıflama tablosu oluşturmaları istenir. Oluşturulan tablolar ülkemizin, küresel ve bölgesel sorunların çözümüne yönelik girişimleri doğrultusunda yorumlanır. Bu süreçte ayrılıp birleşme tekniği kullanılabilir. Öğrenciler bölgesel ve küresel sorunların çözümünde ülkemizin rolünü sözlü, yazılı veya görsel olarak yorumlar. Öğrenciler, performans görevi kapsamında ülkemizin rolüne ilişkin görüş ve yorumlarını kısa sunumlarla sınıf içinde paylaşabilir (SDB2.1). Öğrencilerin sunumları kontrol listesi veya derecelendirme ölçekleri ile değerlendirilebilir.",
+        "Zenginleştirme": "Küresel çevre sorunları ile küresel iklim değişikliğinin etkilerini azaltmak adına ülkemizin ve farklı ülkelerin faaliyetleri öğrenciler tarafından araştırılabilir. Araştırma sonuçları doğrultusunda öğrenciler tarafından yazılı, görsel veya dijital bir ürün oluşturulabilir. Ayrıca öğrencilerden konuyla ilgili yazdıkları senaryolar üzerinden dijital bir çizgi roman tasarlamaları istenebilir. Öğrencilerden Türkiye’nin girişimci ve insani dış politikası eksenindeki ulusal ve uluslararası faaliyetlerine ilişkin siyasi iş birlikleri, yapılan insani yardımlar, eğitim, sağlık hizmetleri gibi konularda araştırma yapmaları istenebilir. Araştırma sonuçlarına ilişkin bir sunum, afiş veya poster tasarlanabilir.",
+        "Destekleme": "Öğrencilerden ulaşım ve iletişimdeki teknolojik gelişmelerin günlük yaşamdaki örnekleri ne ilişkin eşleştirmeler yapmaları istenebilir. Öğrenciler tarafından küresel çevre sorunlarına ve bu sorunların çözümüne yönelik bir resim çizilebilir. Türkiye’nin girişimci ve insani dış politika eksenindeki faaliyetleri öğrenciler tarafından gazete haberlerinden yararlanılarak incelenebilir. İlgili haberlere yönelik 5N1K sorularının yer aldığı çalışma kâğıtları kullanılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.7.2.1. Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi bağlam dan kopmadan dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "c) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.2.2. Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü özetleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin çözümleme yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin sınıflandırma yapar.",
+          "bold": false
+        },
+        {
+          "text": "c) Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü yorumlar",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.7.2.1",
+          "codeAsPrinted": "SB.7.2.1",
+          "text": "Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi inceler.",
+            "b) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi bağlam dan kopmadan dönüştürür.",
+            "c) Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.2.2",
+          "codeAsPrinted": "SB.7.2.2",
+          "text": "Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü özetleyebilme",
+          "group": null,
+          "components": [
+            "a) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin çözümleme yapar.",
+            "b) Bölgesel ve küresel sorunların çözümünde ülkemizin rolüne ilişkin sınıflandırma yapar.",
+            "c) Bölgesel ve küresel sorunların çözümünde ülkemizin rolünü yorumlar"
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/425",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/425",
+      "title": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:14:35.382Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_425.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "7.Sınıf"
+      ],
+      "pageTitle": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin Osmanlı Devleti’nin bir siyasi güç olarak ortaya çıkışından cihan devleti hâline gelmesinde etkili olan politikalar, Avrupa merkezli gelişmeler sonucu değişen dünya dengeleri karşısında Osmanlı Devleti’nin uygulamaya koyduğu yenilikler ve Osmanlı kültür ve medeniyetini oluşturan çeşitli unsurlara ilişkin bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "25",
+        "Alan Becerileri": "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama) SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)",
+        "Kavramsal Beceriler": "KB2.8. Sorgulama",
+        "Eğilimler": "E1.1. Merak,E1.5. Kendine Güvenme (Öz Güven), E2.1. Empati, E2.2. Sorumluluk, E2.3. Girişkenlik, E3.1. Muhakeme, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.6. Analitiklik, E3.8. Soru Sorma, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB1.3. Kendine Uyarlama (Öz Yansıtma) SDB2.1. İletişim, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D14. Saygı, D15. Sevgi, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "SBAB10. Harita (SBAB10.1. Harita Okuma)",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.7.3.1. Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikaları sorgulayabilme a) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında merak ettiği konuyu tanımlar. b) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında verilen kaynaklara dayanarak sorular sorar. c) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında verilen kaynaklardan bilgi toplar. ç) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında topladığı bilgilerin doğruluğunu değerlendirir. d) Edindiği bilgilerden hareketle Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında çıkarım yapar. SB.7.3.2. Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yenilikleri neden ve sonuçlarıyla yorumlayabilme a) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin nedenlerini inceler. b) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilediği unsurları inceler. c) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilerini sorgular. ç) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder. SB.7.3.3. Osmanlı kültür ve medeniyet unsurlarına ilişkin oluşturduğu ürünü paylaşabilme a) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlara dayanarak çıkarım yapar. b) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlardaki bilgilerden hareketle görüşünü yansıtan ürün oluşturur. c) Osmanlı kültür ve medeniyet unsurlarının özelliklerine ilişkin görüşlerine dayalı olarak oluşturduğu ürünü paylaşır.",
+        "İçerik Çerçevesi": "Osmanlı Devleti’nin Cihan Devleti Hâline Gelmesini Sağlayan Politikalar Osmanlı Devleti’nin Uygulamaya Koyduğu Yenilikler Osmanlı Kültür ve Medeniyeti",
+        "Anahtar Kavramlar": "cihad, fetih, gaza, iskân, istimalet",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; açık uçlu sorular içeren çalışma yaprağı, balık kılçığı, sınıflama tablosu, gözlem formu, kontrol listesi, anekdot kaydı, öz-akran değerlendirme formları, puanlama anahtarı ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Osmanlı Devleti’nin uygulamaya koyduğu yeniliklerin nedenleri ve sonuçlarının öğrencilerin yorumlarını içeren yazılı bir metin hâlinde oluşturulması veya sanal bültenle ifade edilmesine yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin XI. yüzyıldan itibaren Türklerin Anadolu’ya yerleşmesi, Anadolu’nun Türkleş me ve İslamlaşma süreci ile alakalı bilgi sahibi oldukları kabul edilmektedir. Öğrencilerin, bir devletin gelişmesinde, kalıcı olmasında ve büyümesinde siyasi güç ile ekonomik gücün temel belirleyici unsurlar olarak önemli bir rol oynadığını bildikleri kabul edilmektedir. Anadolu’daki ilk Türk devletlerinde görülen kültürel özellikler hakkında bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "XI. yüzyıldan itibaren Anadolu’ya yerleşen Türk toplulukları hakkında haritalar öğrencilere gösterilerek öğrencilere Anadolu’da Türkleşme ve İslamlaşma sürecinin nasıl ilerlemiş ol duğu hakkında sorular sorulabilir. Öğrencilere Osmanlı Devleti’nin XVI. yüzyıldaki siyasi ve ekonomik üstünlüğünü gösteren harita üzerinden izlenen politikalara ilişkin sorular sorulabilir. Öğrencilerden Anadolu’daki ilk Türk devletlerinde görülen ve Osmanlı kültüründe de olan kültürel unsurlara örnekler vermeleri istenebilir.",
+        "Köprü Kurma": "XIII. yüzyılda Anadolu beylikleri haritası öğrencilere gösterilerek “Osmanlı Beyliği diğer beyliklerden avantajlı bir konumda mı?” sorusu yöneltilebilir. Öğrencilere, XVI. yüzyıl sonrası Osmanlı Devleti’nde yaşanan toprak kayıplarını gösteren bir harita inceletilerek devletin siyasi ve ekonomik üstünlüğünü neden koruyamadığına ilişkin sorular yöneltilebilir. Öğrencilere Balkanlar, KKTC, Kuzey Afrika ve Orta Doğu’da bulunan; günümüzde varlığını koruyan Osmanlı eserlerine ait görseller ve bu kültüre dair yaşatılan unsurlar üzerinden açık uçlu sorular yöneltilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.7.3.1 Öğrencilerden Osman Bey ve I. Süleyman (Kanuni) dönemlerine ait haritalar üzerinde Osman Bey, Orhan Bey, I. Murad, II. Mehmed (Fatih), I. Selim (Yavuz) ve I. Süleyman (Kanuni) Dönemlerinde Osmanlı sınırlarının nasıl genişlediğini incelemeleri istenir. (SBAB10.1). Öğ rencilere “Osmanlı Devleti sınırlarında kısa süre içerisinde bu kadar genişlemeyi nasıl sağlamış olabilir?”, “Sizce Osmanlı Devleti’nin sınırlarının genişlemesi sadece askerî faaliyetlerin ve fetihlerin sonucu mudur?” gibi açık uçlu sorular yöneltilerek tartışma ortamı sağlanır. Öğrencilerden Osmanlı Devleti’nin genişlemesini ve cihan devleti hâline gelmesini sağlayan politikalara ilişkin merak ettikleri konuları yazılı olarak tanımlamaları istenir. Öğrencilerden merak ettikleri konulara ilişkin soru kartları hazırlamaları istenir (E3.8). Bu süreçte 5N1K tekniği kullanılabilir. Öğrenciler tarafından hazırlanan soru kartlarına göre yazılı ve görsel kaynaklardan bilgiler toplanır (OB1, OB4). Ayrıca dijital kaynaklardan da yararlanılabilir (E3.10, OB2). Öğrenciler den araştırmaları sonucunda ulaştıkları bilgileri paylaşmaları, Türk tarihinin ve millî kimliğin oluşumuna katkı sağlayan unsurlara ilişkin değerlendirmelerde bulunmaları ve bu konudaki görüşlerini ifade etmeleri istenir (D19.2, OB1, E1.1). Öğrencilere, Osmanlı Devleti’nin cihan devleti hâline gelmesinde etkili olan fetihler ve gelişmelerden İstanbul’un Fethi, Mısır Sefe ri, Preveze Deniz Zaferi örnekleri sunulur. Bu gelişmelerin Osmanlı Devleti’nin cihan devleti olma sürecine etkisine ilişkin tartışma yapılabilir. Örnek olayların düşünsel, ahlaki ve empatik sorularla değerlendirilmesi sağlanır. Bu aşamada öğrencilerin örnek olayları çok yönlü bir bakış açısıyla değerlendirmeleri, dönemin kişileriyle empati kurmaları desteklenir (D14.1, E2.1, E3.6, E3.10). Örnek olayların analizi için öğrencilere bir yönerge verilir. Öğrencilerin daha önce inceledikleri kaynaklar ve örnek olaylardan edindikleri bilgileri karşılaştırarak topladıkları bilgilerin doğruluğu açık uçlu sorular içeren çalışma yaprağı aracılığıyla değerlendirilebilir. (SDB3.3, E3.1). Öğrencilerden edindikleri bilgilerden hareketle Osmanlı Devleti’nin cihan devleti olmasını sağlayan politikalara ilişkin çıkarımlarda bulunmaları istenir. Bu politikaların başarıya ulaşmasında vatan sevgisi ile görevini iyi yapmanın etkisi vurgulanarak öğrencilerin bu konuda duyarlı olmaları sağlanır (D19.1, E3.6, E3.10). Yapılan çıkarımlar doğrultusunda Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalara ilişkin balık kılçığı oluşturulur. SB.7.3.2 Avrupa merkezli gelişmelerden Avrupa’nın sömürgecilik faaliyetleri, Rönesans, Reform, Aydınlanma Çağı, Sanayi İnkılabı, Fransız İhtilali ile bu gelişmelere bağlı olarak XVIII. yüzyıldan itibaren Osmanlı Devleti’nde meydana gelen gelişmelerin yer aldığı tarih şeridi öğrencilere sunulur. Öğrenciler Avrupa’nın Sömürgecilik Faaliyetleri, Rönesans, Reform, Aydınlanma Çağı, Fransız İhtilali, Sanayi İnkılabı’nın dünyada yarattığı etkiler ve bu gelişmelere bağlı olarak Osmanlı Devleti’nde yapılan yenilikler hakkında yazılı ve görsel kaynakları inceler (OB1, OB4). Ayrıca dijital kaynaklar da kullanılabilir (OB2). Kaynaklar üzerinden Avrupa merkezli gelişmelerin dünya dengelerini nasıl etkilemiş olabileceği tartışılır. Öğrencilerin inceledikleri kaynaklardan hareketle Osmanlı Devleti’nin değişen dünya dengeleri karşısında XVIII. yüzyıl dan itibaren uygulamaya koyduğu askerî, sosyal, kültürel ve ekonomik alanlardaki yeniliklerin nedenlerini belirlemeleri sağlanır. (E3.6, E3.10). Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uygulamaya koyduğu yeniliklerin etkilediği askerî, sosyal, kültürel ve ekonomik unsurların neler olduğu öğrenciler tarafından belirlenir ve sınıflama tablosu oluşturularak kaydedilir (E3.6, E3.10). Osmanlı Devleti’nin uyguladığı yeniliklerin askerî, sosyal, kültürel ve ekonomik alanlarda etkileri sorgulanır (E3.6, E3.10). Bu süreçte büyük grup tartışması yapılabilir. Osmanlı Devleti’nin yenilikleri uygulama sürecinde kurulan Osmanlı-Avrupa ilişkileri aracılığıyla millî ve mane vi değerlerimizin Avrupa ülkelerine nasıl etkilerde bulunduğuna yönelik açıklamalar yapılır. Tartışma süreçleri gözlem formu, kontrol listesi veya anekdot kaydı ile takip edilebilir. Performans görevi olarak Osmanlı Devleti’nin uygulamaya koyduğu yeniliklerin nedenleri ve sonuçlarının öğrencilerin yorumlarını içeren yazılı bir metin hâlinde oluşturulması veya sanal bültenle ifade edilmesi sağlanabilir (E2.2, E3.3). Öğrencilerden çalışmalarında “Ben devlet yöneticisi olsaydım o dönemde şöyle bir yenilik de yapardım.” şeklinde bir bölüm oluşturmaları istenir. Bu aşamada öğrencilerin yapılan yenilikleri çok yönlü bakış açısıyla değerlendirmeleri ve incelenen dönemin padişahlarıyla empati kurmaları desteklenir (D14.1, E2.1, SDB2.3). Öğrenci ürünleri dereceli puanlama anahtarı kullanılarak değerlendirilebilir. SB.7.3.3 Osmanlı kültür ve medeniyetini oluşturan unsurlardan yönetim, eğitim, hukuk, sanat, günlük hayat, vakıflar, ahi kültürü ve loncalara ilişkin yazılı, görsel veya dijital kaynaklar gruplar oluşturularak incelenir (OB1, OB2, OB4, SDB2.1, E3.6, E3.10). Bu süreçte ayrılıp birleşme tekniği kullanılabilir. Kaynaklardan elde edilen bilgiler doğrultusunda öğrencilerin Osmanlı kültür ve medeniyetini oluşturan unsurların toplum hayatına etkisine dair çıkarımlarda bulunmaları sağlanır. Aynı zamanda İslam kültür ve medeniyetinin Osmanlı kültür ve medeni yetine etkisine ilişkin açıklamalar da yapılabilir. Gruplardan inceledikleri kaynaklardan yola çıkarak bir Osmanlı ailesinin hayatından kesitleri yansıtacakları bir hikâye oluşturmaları istenir. Bu hikâyede Osmanlı kültür ve medeniyet unsurlarının temel özelliklerinden birini veya birkaçını yansıtan içeriğe yer verilir (E3.2). Hazırlanan hikâyeler sınıfta okunarak paylaşılır. Drama etkinlikleri ile hikâyeler canlandırılabilir. Drama etkinlikleri ile canlandırılan hikâyeler üzerinden öğrencilerin Türk milletinin kültürel zenginliğini fark etmeleri, Türk kültürel mirasını tanımaları ve bu mirasın gelecek nesillere aktarılmasının önemini anlamaları sağlanır (D15.2, D19.3, E1.5, E2.2, E2.3, E3.2, E3.3). Grupların ürünleri bütüncül dereceli puanlama anahtarıyla, grup çalışmaları ise akran değerlendirme formları ile değerlendirilebilir (SDB1.2, SDB1.3).",
+        "Zenginleştirme": "Müze kitleri ve sanal müze uygulamalarından yararlanılarak öğrencilerin Topkapı Sarayı’ndaki Osmanlı medeniyetine ait unsurları incelemeleri sağlanabilir. Osmanlı Dönemi’ne ait minyatürler öğrenciler tarafından incelenir. Minyatürlerdeki karakterler incelenip bu karakterler üzerinden “hikâye yazma” etkinliği gerçekleştirilir. Bunun için dijital hikâye oluşturma programları kullanılabilir. Bilimsel gerçekliğe ve pedagojiye uygun olan, Osmanlı kültürüne ait belgeseller ve filmler öğrencilere izletilebilir. Karakter konuşturma programları kullanılarak Osmanlı Devleti’nde siyasi ve toplumsal alanda ön plana çıkan kişilerin fikirleri sunum hâline getirilir. Mehter Marşı’nın, Osmanlı Dönemi giyim tarzının Avrupa’ya etkilerine yönelik bir araştırma yapmaları istenebilir. Lale Devri veya II. Mahmut Dönemi yenilikleri hikâyeleştirilerek sınıfta canlandırılabilir. Çiçek veya kuduz aşısının öyküsü hakkında bilimsel gerçekliğe ve pedagojiye uygun belgeseller izletilebilir. Yeniçeri Ocağını tanıtan bir sunum hazırlanabilir. Divan-ı Hümâyun üyelerinin görevlerini yansıtan bir canlandırma yapılabilir.",
+        "Destekleme": "Osmanlı Devleti’nin XVI. yüzyıl haritaları üzerinde Balkan, Anadolu, Orta Doğu ve Afrika topraklarının gösterilmesi istenebilir. Osmanlı Devleti’nin uygulamaya koyduğu yeniliklerden birinin döneme ait görsellerden yararlanılarak sunulması istenebilir. Osmanlı medeniyetindeki yardımlaşma kültürü ile ilişkili öğrencilerden resim çizmeleri istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.7.3.1. Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikaları sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında merak ettiği konuyu tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında verilen kaynaklara dayanarak sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "c) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında verilen kaynaklardan bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Edindiği bilgilerden hareketle Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.3.2. Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yenilikleri neden ve sonuçlarıyla yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin nedenlerini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilediği unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilerini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.3.3. Osmanlı kültür ve medeniyet unsurlarına ilişkin oluşturduğu ürünü paylaşabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlara dayanarak çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlardaki bilgilerden hareketle görüşünü yansıtan ürün oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Osmanlı kültür ve medeniyet unsurlarının özelliklerine ilişkin görüşlerine dayalı olarak oluşturduğu ürünü paylaşır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.7.3.1",
+          "codeAsPrinted": "SB.7.3.1",
+          "text": "Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikaları sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında merak ettiği konuyu tanımlar.",
+            "b) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında verilen kaynaklara dayanarak sorular sorar.",
+            "c) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında verilen kaynaklardan bilgi toplar.",
+            "ç) Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+            "d) Edindiği bilgilerden hareketle Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikalar hakkında çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.3.2",
+          "codeAsPrinted": "SB.7.3.2",
+          "text": "Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yenilikleri neden ve sonuçlarıyla yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin nedenlerini inceler.",
+            "b) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilediği unsurları inceler.",
+            "c) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin etkilerini sorgular.",
+            "ç) Değişen dünya dengeleri karşısında Osmanlı Devleti’nin uyguladığı yeniliklerin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.3.3",
+          "codeAsPrinted": "SB.7.3.3",
+          "text": "Osmanlı kültür ve medeniyet unsurlarına ilişkin oluşturduğu ürünü paylaşabilme",
+          "group": null,
+          "components": [
+            "a) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlara dayanarak çıkarım yapar.",
+            "b) Osmanlı kültür ve medeniyet unsurlarının temel özelliklerine ilişkin kanıtlardaki bilgilerden hareketle görüşünü yansıtan ürün oluşturur.",
+            "c) Osmanlı kültür ve medeniyet unsurlarının özelliklerine ilişkin görüşlerine dayalı olarak oluşturduğu ürünü paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/426",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/426",
+      "title": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:14:36.888Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_426.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "7.Sınıf"
+      ],
+      "pageTitle": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin Türkiye Cumhuriyeti’nin temel niteliklerini özetleyebilmeleri, Türkiye Cumhuriyeti Devleti’nin yönetim yapısını çözümleyebilmeleri, ülkemizde demokrasinin geçmişten günümüze gelişimini demokrasinin temel ilkeleri açısından yorumlayabilmeleri, demokrasinin uygulama sürecinde karşılaşılan sorunları özetleyebilmelerine yönelik bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "22",
+        "Alan Becerileri": "SBAB3. Tarihsel Empati Becerisi (KB2.14. Yorumlama)",
+        "Kavramsal Beceriler": "KB2.3. Özetleme KB2.4. Çözümleme",
+        "Eğilimler": "E1.2. Bağımsızlık, E2.5. Oyunseverlik, E3.1. Muhakeme, E3.2. Odaklanma, E3.3 Yaratıcılık, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D1. Adalet, D2. Aile Bütünlüğü, D5. Duyarlılık, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB6. Vatandaşlık Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.7.4.1. Türkiye Cumhuriyeti’nin temel niteliklerini özetleyebilmea) Türkiye Cumhuriyeti’nin temel niteliklerini çözümler.b) Türkiye Cumhuriyeti’nin temel niteliklerini sınıflandırır.c) Türkiye Cumhuriyeti’nin temel niteliklerini yorumlar. SB.7.4.2. Türkiye Cumhuriyeti Devleti’nin yönetim yapısını çözümleyebilmea) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını belirler.b) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını oluşturan unsurlar arası ilişkileri belirler. SB.7.4.3. Ülkemizdeki demokrasinin gelişimini, demokrasinin temel ilkeleri açısından yorumlayabilmea) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi görsel/işitsel/dijital tarihî kaynaklardan inceler.b) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi nesnel, doğru anlamı değiştirmeyecek bir şekilde yeniden ifade eder. SB.7.4.4. Demokrasinin uygulama sürecinde karşılaşılan sorunları özetleyebilmea) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları çözümler.b) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları sınıflandırır.c) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları yorumlar.",
+        "İçerik Çerçevesi": "Türkiye Cumhuriyeti’nin NitelikleriTürkiye Cumhuriyeti’nin Yönetim YapısıÜlkemizde Demokrasinin GelişimiDemokrasinin Uygulanma Sürecinde Karşılaşılan Sorunlar",
+        "Anahtar Kavramlar": "demokratik devlet, genel oy ilkesi, hukuk devleti, kuvvetler ayrılığı, kuvvetler birliği, laik devlet, siyasi parti, sosyal devlet, yargı, yasama, yürütme.",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; kavram haritası, kontrol listesi, gözlem formu, anekdot kaydı, bütüncül dereceli puanlama anahtarı, öz ve akran değerlendirme formu ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasın daki ilişkiyi yazılı, sözlü veya görsel olarak ifade etmeleri için resim, afiş, poster tasarlama veya sunum hazırlama gibi performans görevleri verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin cumhuriyet ve demokrasi kavramları, demokrasinin ve cumhuriyetin temel nitelikleri, anayasa, temel hak ve sorumlulukların önemi hakkında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden cumhuriyetin nitelikleriyle ilgili zihin haritası hazırlamaları istenebilir. Öğrencilere toplumsal hayatı düzenleyen kurallar ve bu kurallara uyulmadığında yaşanabilecek sorunlar ile ilgili açık uçlu sorular sorulabilir. Öğrencilere demokrasinin nitelikleriyle ilgili açık uçlu sorular sorulabilir. Öğrencilere temel hak ve sorumlulukların önemi hakkında açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilerden Cumhuriyetin nitelikleri çerçevesinde, verilen kaynakları inceleyerek devletin temel özelliklerini belirlemeleri ve bu özelliklerin günümüzdeki uygulamalarına örnekler vermeleri istenebilir. 23 Nisan Ulusal Egemenlik ve Çocuk Bayramı kutlamaları ile yasama ve yürütme yetkileri ilişkilendirilir. Genel seçim, yerel seçim, meclis, referandum ile ilgili gazete haberleri incelenir. Öğrencilerden demokrasi tarihi ile ilgili tarih şeridini incelemeleri istenebilir. Tarih şeridi ile ilgili açık uçlu sorular sorulabilir. Öğrencilerden günlük hayatta karşılaştıkları demokratik olmayan davranışlara örnekler vermeleri ve bu davranış problemlerine çözüm önerileri sunmaları istenebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.7.4.1 T.C. Anayasa’nın II. maddesi incelenerek öğrencilerden Türkiye Cumhuriyeti’nin temel niteliklerini belirlemeleri ve bir liste oluşturmaları istenir (OB1, OB6). Bireysel olarak oluşturulan listeler diğer öğrencilerle paylaşılır (SDB2.2). Bu süreçte kartopu tekniği kullanılabilir. Verilen yazılı ve görsel kaynaklardan temel nitelikler ve uygulama örneklerini incelemeleri, bu niteliklerin günlük yaşama yansımalarına ilişkin çözümlemeler yaparak örnekler vermeleri istenir (OB1, OB4).Cumhuriyetin nitelikleri ve ilişkili ifadeler öğrencilerle belirlenerek anlam çözümleme tablosu oluşturulur. Bu süreçte öğrencilerin cumhuriyetin temel niteliklerini “demokratik devlet, laik devlet, sosyal devlet, hukuk devleti” olarak sınıflandırmaları sağlanır (OB6). Sınıf dört gruba ayrılır ve her bir gruba “Katıldığınız bir toplantıda ülkenizin demokratik bir devlet olduğuna yönelik kanıtlar sunmanız bekleniyor. Kanıtlarınız neler olur?” sorusu yöneltilerek öğrencilerden kendi ifadeleri ile Türkiye Cumhuriyeti’nin temel niteliklerini Atatürk milliyetçiliğine bağlı, demokratik, laik, sosyal, hukuk devleti kavramları ile açıklamaları istenir (E3.3, SDB3.3). Cumhuriyetin temel nitelikleri ile bunların hak ve özgürlüklerin kullanılması ve korunmasına katkılarını yorumlamaya yönelik metin yazma etkinliği yapılır. (D1.1, OB6). Öğrencilerin oluşturduğu metinler kontrol listesi veya dereceli puanlama anahtarı ile değerlendirilebilir. SB.7.4.2 Öğrencilerin verilen yazılı ve görsel kaynaklar üzerinde kuvvetler ayrılığı ve kuvvetler birli ğini yasama, yürütme ve yargı organları ve işlevlerini inceleyerek Türkiye Cumhuriyeti Devleti’nin yönetim yapısını belirlemeleri sağlanır (OB1, OB4). Bu aşamada dijital kaynaklardan da konuya ilişkin bilgiler incelenebilir (OB2, OB6, E3.2). Cumhuriyet’in ilk yıllarında, yasama ve yürütme yetkilerinin mecliste toplanmasının nedenlerine yönelik görüşler sunmaları istenir (E3.10). Günümüzde yürütme yetkisinin kullanımına ilişkin yazılı ve görsel kaynakları inceleyerek cumhurbaşkanlığı hükûmet sisteminin özelliklerini ifade etmeleri istenir, teknolojik imkânlar dâhilinde dijital kaynaklara da başvurulabilir (OB1, OB2, OB4). Kuvvetler ayrılığı ve kuvvetler birliği uygulamalarını karşılaş tırarak avantaj ve dezavantajlarını ifade etmeleri sağlanır (E3.10). Grup çalışması yoluyla Anayasa’nın yasama, yürütme ve yargı ile ilgili bölümleri incelenerek yasama, yürütme ve yargı arasındaki ilişkiyi belirlemeleri istenir (OB1, OB6, SDB2.2). Ayrıca öğrencilerin kendi hak ve özgürlüklerini uygun şekilde kullanmalarına yönelik olarak yasama, yürütme ve yargı organlarının görevleri çerçevesinde açıklamalar yapılır (D1.1). Yasama, yürütme ve yargı organlarının yetkisine ilişkin “Ben kimim?” ve “Nesi var?” gibi eğitsel oyunlar oynanabilir (E2.5). Etkinlik öz değerlendirme formları ile değerlendirilebilir. SB.7.4.3 Öğrencilerden; demokrasinin temel niteliklerinden olan insan haklarına saygı, özgürlük, eşitlik, seçme ve seçilme hakkı, millî egemenlik, çoğulculuk, katılımcılık ve hukukun üstünlüğü kavramlarını, verilen yazılı, görsel veya dijital kaynaklar üzerinden incelemeleri istenir (OB1, OB4). Ülkemizde demokrasinin gelişimine ilişkin TBMM’nin açılması, Cumhuriyet’in ilanı, 1924 Anayasası, çok partili hayata geçiş denemeleri, kadınlara seçme ve seçilme hakkının verilmesi, 1946 seçimleri ile ilgili yazılı, görsel veya dijital kaynaklar incelenir (OB1, OB4). Öğrenciler ülkesinin tarihini araştırıp öğrenmeye teşvik edilerek millî kimlik bilinci geliştirmeleri desteklenir (D19.2). Öğrenciler, demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiye dair görüşlerini ifade eder (SDB2.1). Bu süreçte konuşma halkası tekniği kullanılabilir. Verilen kaynaklardan elde edilen bilgiler doğrultusunda öğrencilerden ülkemizin demokrasi tarihindeki önemli olaylara ilişkin tarih şeridi oluşturmaları ve bu olayların demokrasinin hangi temel ilkeleri ile ilişkili olduğunu tarih şeridinde göstermeleri istenir (OB1, OB4). Öğrencilerden demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi yazılı, sözlü veya görsel olarak ifade etmeleri istenir (E3.1). Öğrenciler tarafından bu amaçla performans görevi kapsamında resim çizme, afiş, poster tasarlama veya bir sunum oluşturma etkinliklerinden en az biri yapmaları istenebilir. Öğrenci ürünleri dereceli puanlama anahtarı ile değerlendirilebilir. SB.7.4.4 Öğrencilerden ailede, okulda, yakın çevrede gözlemledikleri demokratik olan ve olma yan davranışlar ile ilgili örnekler vermeleri istenir (E1.2). Aileyi ilgilendiren kararlarda tüm fertlerin söz hakkına sahip olması ve aile içi sevgi/saygıya dayalı iletişim süreçleri ele alınır. Böylece öğrencilerin demokratik değerleri aile ortamında bizzat sergilemeleri ve aile bütünlüğünü koruyup güçlendirecek tutumlar geliştirmeleri sağlanır (D2.3). Verilen yazılı ve görsel kaynaklardan demokrasinin uygulama sürecinde karşılaşılabilecek sorunları ve nedenlerini çözümlemeleri sağlanır (OB1, OB4). Bu aşamada dijital kaynaklarda yer alan örnekler de incelenebilir (OB2). Öğrencilerin toplumsal sorunlara duyarlı olmaları sağlanır (D5.1). Bu süreçte 27 Mayıs 1960 ve 12 Eylül 1980 darbeleri örnek olarak verilir. Dünyanın farklı bölgelerinde yaşanan antidemokratik uygulamalara örnekler verilerek öğrenciler tarafından incelenmesi sağlanır. Bu süreçte öğrenciler, hak ve özgürlüklerin kullanımına ilişkin örnek olayları inceleyerek hak ihlallerine yol açan tutum ve davranışları belirler; hak ihlallerinin önlenmesine yönelik çözüm önerileri geliştirir ve bunları sınıf ortamında paylaşırlar (D1.1). Demokrasi tarihinde geçmişten günümüze dünyanın farklı böl gelerinde yaşanan antidemokratik uygulamaları darbeler, ırkçılık, ayrımcılık, savaş, şiddet konuları kapsamında sınıflandırmaları sağlanır. Öğrencilerden yakın çevresinde karşılaştığı demokratik uygulamalardan yola çıkarak anti demokratik uygulamaların, ülkesinde ve dünyada barış ve birlikte yaşama kültürüne etki sini yorumlamaları istenir (SDB2.3, OB6). Antidemokratik davranışları önlemek amacıyla özgün fikirler öne sürebilmeleri için küçük grup tartışma teknikleri uygulanabilir (SDB2.2). Sınıf gruplara ayrılır. Demokrasinin uygulanma sürecinde karşılaşılan sorunlara ilişkin öğrenilen bilgiler panoda sergilenir. Bu süreçte öğrenme galerisi tekniği kullanılabilir. Her gruptan galeriyi inceleyerek kendi yazdıkları ile diğer grupların yazdıklarını karşılaştırma ları istenir. Süreç boyunca gözlem formu, kontrol listesi veya anekdot kaydı ile değerlendirme yapılabilir.",
+        "Zenginleştirme": "Yasama, yürütme ve yargı organlarının işleyişine yönelik dijital pano hazırlayabilir. Meclisin yaptığı çalışmalara yönelik güncel haberler incelenebilir. Öğrencilerden, https://www.kulturportali.gov.tr/medya/video adresindeki Gazi Mustafa Kemal Atatürk’ün TBMM açılış konuşmalarını içeren videoları veya ilgili belgeselleri izle meleri istenebilir. Ankara-Kurtuluş Savaşı Müzesi (I. TBMM Binası) ve Ankara-Cumhuriyet Müzesi (II. TBMM Binası) https://sanalmuze.gov.tr/ adresinden sanal olarak gezilebilir. Adalet sarayına, muhtarlığa veya belediye meclislerine imkânlar dâhilinde gezi düzenlenebilir. Okulun bulunduğu yerde varsa Cumhuriyet Müzesi, Atatürk Evi gibi tarihî mekânlar ziyaret edilebilir. Öğrenciler tarafından demokrasi tarihi ile ilgili canlı zaman şeridi oluşturulabilir. Zaman şeritleri dijital olarak da yapılabilir. “Tarihte bugün ne olmuş?” adlı bir televizyon programı hazırlanabilir. Öğrencilere demokrasi tarihinin önemli olayları paylaştırılarak program sunucusu gibi tarihî olaylarla ilgili yap tıkları araştırmaları sunmaları istenebilir. Demokrasinin uygulama sürecinde karşılaşılabilecek sorunlar öğrenciler tarafından yazılan şiirle ifade edilir. Demokratik olan ve olmayan tutuma sahip aile konusuna dair öğrenciler tarafından hikâye yazılabilir.",
+        "Destekleme": "Cumhuriyetin temel niteliklerine ilişkin bilgi/görsel eşleştirme kartları hazırlanıp oynana bilir. Kuvvetler ayrılığını gösteren akış şemaları öğretmen veya akran desteği ile hazırlanabilir. Okulda karşılaşılabilecek demokratik olmayan davranışları önlemeye yönelik resim veya afişler hazırlanabilir, sergi yapılabilir. Demokratik davranışların toplum huzuru için önemine yönelik drama etkinlikleri yapılabilir. Anayasa’nın 10. maddesi incelenerek dezavantajlı gruplar için gerçekleştirilecek demok ratik uygulamalara örnekler verilebilir. Demokrasi tarihinin önemli noktalarını gösteren görsel tarih şeridi oluşturulabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.7.4.1. Türkiye Cumhuriyeti’nin temel niteliklerini özetleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Türkiye Cumhuriyeti’nin temel niteliklerini çözümler.",
+          "bold": false
+        },
+        {
+          "text": "b) Türkiye Cumhuriyeti’nin temel niteliklerini sınıflandırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Türkiye Cumhuriyeti’nin temel niteliklerini yorumlar.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.4.2. Türkiye Cumhuriyeti Devleti’nin yönetim yapısını çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını oluşturan unsurlar arası ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.4.3. Ülkemizdeki demokrasinin gelişimini, demokrasinin temel ilkeleri açısından yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi görsel/işitsel/dijital tarihî kaynaklardan inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi nesnel, doğru anlamı değiştirmeyecek bir şekilde yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.4.4. Demokrasinin uygulama sürecinde karşılaşılan sorunları özetleyebilme",
+          "bold": false
+        },
+        {
+          "text": "a) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları çözümler.",
+          "bold": false
+        },
+        {
+          "text": "b) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları sınıflandırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları yorumlar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.7.4.1",
+          "codeAsPrinted": "SB.7.4.1",
+          "text": "Türkiye Cumhuriyeti’nin temel niteliklerini özetleyebilme",
+          "group": null,
+          "components": [
+            "a) Türkiye Cumhuriyeti’nin temel niteliklerini çözümler.",
+            "b) Türkiye Cumhuriyeti’nin temel niteliklerini sınıflandırır.",
+            "c) Türkiye Cumhuriyeti’nin temel niteliklerini yorumlar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.4.2",
+          "codeAsPrinted": "SB.7.4.2",
+          "text": "Türkiye Cumhuriyeti Devleti’nin yönetim yapısını çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını belirler.",
+            "b) Türkiye Cumhuriyeti Devleti’nin yönetim yapısını oluşturan unsurlar arası ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.4.3",
+          "codeAsPrinted": "SB.7.4.3",
+          "text": "Ülkemizdeki demokrasinin gelişimini, demokrasinin temel ilkeleri açısından yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi görsel/işitsel/dijital tarihî kaynaklardan inceler.",
+            "b) Demokrasinin temel nitelikleri ile ülkemizin demokrasi tarihi arasındaki ilişkiyi nesnel, doğru anlamı değiştirmeyecek bir şekilde yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.4.4",
+          "codeAsPrinted": "SB.7.4.4",
+          "text": "Demokrasinin uygulama sürecinde karşılaşılan sorunları özetleyebilme",
+          "group": null,
+          "components": [
+            "a) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları çözümler.",
+            "b) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları sınıflandırır.",
+            "c) Demokrasinin uygulama sürecinde karşılaşılabilecek sorunları yorumlar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/427",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/427",
+      "title": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:14:38.379Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_427.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "7.Sınıf"
+      ],
+      "pageTitle": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin millî kalkınma hamlelerine, ekonomik gelişmişlik ile üretim, dağıtım ve tüketim arasındaki döngüye ilişkin bilgi ve beceri kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "12",
+        "Alan Becerileri": "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama) SBAB8. Coğrafi Sorgulama (SBAB8.4 Coğrafi Bilgileri Çözümleme)",
+        "Kavramsal Beceriler": "-",
+        "Eğilimler": "E3.3. Yaratıcılık,",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Bilişim Teknolojileri ve Yazılım, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.7. Karşılaştırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.7.5.1. Millî kalkınma hamlelerini neden ve sonuçlarıyla yorumlayabilmea) Millî kalkınma hamlelerine neden olan unsurları inceler.b) Millî kalkınma hamlelerinin etkilediği unsurları inceler.c) Millî kalkınma hamlelerinin etkilerinin niteliğini sorgular.ç) Millî kalkınma hamlelerinin neden ve sonuçlarını bağlamından kopmadan yeniden ifade eder. SB.7.5.2. Ekonomik gelişmişlik ile üretim, dağıtım ve tüketim döngüsü arasındaki ilişkiyi çözümleyebilmea) Ekonomik gelişmişlik unsurları ile üretim, dağıtım ve tüketim döngüsünü belirler.b) Ekonomik gelişmişlik unsurları ile üretim dağıtım ve tüketim arasındaki ilişkiyi belirler.",
+        "İçerik Çerçevesi": "Millî Kalkınma HamleleriEkonomik Gelişmişlik ile Üretim, Dağıtım ve Tüketim Arasındaki Döngü",
+        "Anahtar Kavramlar": "ekonomi, kalkınma, üretim-dağıtım-tüketim, yatırım",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; kontrol listesi, gözlem formu, anekdot kaydı, bütüncül dereceli puanlama anahtarı, açık uçlu sorular ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Millî kalkınma hamlelerinin neden ve sonuçlarına ilişkin metin, resim, poster veya afiş hazırlamaya yönelik performans görevi verilebilir. Performans görevi de receli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin ülkemizin kaynakları, yatırım ve pazarlama süreçleri, ekonomik faaliyetler ve bir ürünün üretim, dağıtım ve tüketim süreciyle ilgili temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden ülkemizin kaynakları, ekonomik faaliyetler ile ilgili örnekler vermeleri istenir. Yatırım ve pazarlama, bir ürünün üretim, dağıtım ve tüketim süreçleri ile ilgi soru cevap etkinlikleri yapılır.",
+        "Köprü Kurma": "Öğrencilerden millî kalkınma hamlelerinin hayatlarında sebep olduğu değişimlere örnek vermeleri istenir. Ülkemizde millî kalkınma hamlelerini destekleyen uygulamalara örnek vermeleri istenir. Öğrencilerden çevrelerindeki ekonomik gelişmişliğe bağlı olarak var olan üretim, dağıtım ve tüketim süreçlerine örnek vermeleri istenir. Yaşadıkları çevrede yürütülen üretim, tüketim ve dağıtım süreçlerinin geliştirdiği ekonomik faaliyetlere örnekler vermeleri istenir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.7.5.1 Yazılı ve görsel kaynaklar üzerinden Atatürk Dönemi’nde gerçekleştirilen Türkiye İktisat Kongresi’nde (17 Şubat 1923) belirlenen ve millî kalkınma hamlelerinin temeli olan Misak-ı İktisadi kararlarının 4. maddesini, Türkiye’nin farklı dönemlerindeki önemli kalkınma çalışmalarından 1925 silah fabrikası (Şakir Zümre), 1930 mühimmat ve silah fabrikası (Nuri Killigil) 1936 kâğıt fabrikası (Mehmet Ali Kağıtçı), 1941 uçak fabrikası (Nuri Demirağ), 1946 ilk çay tarımı (Zihni Derin), 1961 devrim arabası incelenir (OB1, OB4). Bu süreçte dijital kaynaklardan da yararlanılabilir (OB2). Ayrıca yakın zamanda hayata geçirilen millî kalkınma hamlelerin den İnsansız Hava Aracı (İHA), Millî Gemi (MİLGEM), Silahlı İnsansız Hava Aracı (SİHA), Türkiye Uzay Ajansı (TUA), Bilişim Vadisi, Türkovak (TURKOVAC), ilk yerli otomobil, Türkiye Cumhuriyeti Gemisi (TCG Anadolu), Millî Muharip Uçak (KAAN) ve millî kalkınmada etkili olan araştırma geliştirme (AR-GE) çalışmaları ile inovasyon süreçlerinden örnekler verilir. Verilen örneklerden hareketle öğrencilerden bilim, sanayi ve teknoloji alanındaki güncel gelişmeleri takip etmeleri, bu gelişmelerin millî kalkınmaya katkılarına ilişkin görüşlerini paylaşmaları istenir (D3.3). Örnekler incelenirken bu millî kalkınma hamlelerinin devletimizin bölgesel ve küresel güç olmasındaki etkisi ve önemine de değinilir. Öğrencilerden millî kalkınma hamlelerimizin ortaya çıkmasında rol oynayan unsurları gerekçeleri ile belirlemeleri istenir (SDB3.3). Sunulan kaynaklardan Misak-ı İktisadi kararlarının 4. maddesinde yer alan ifade incelenerek millî kalkınma hamlelerine neden olan unsurlar öğrenciler tarafından listelenir. Cumhuriyetin ilk yıllarından itibaren yapılan kalkınma hamleleri açıklamalı tarih şeridi üzerinde gösterilir. Kalkınma hamlelerinin kesintiye uğradığı dönemler ve bu kesintilerin sebepleri belirlenir. Bu süreçte sınıf tartışması yapılabilir. Açıklamalı tarih şeridi üzerinde boş bırakılan zaman aralıkları görüşlerim ve kanıtlar başlıklı iki sütuna bölünür. Tartışmadan elde edilen fikirler görüşlerim bölümüne yazılır. Kaynaklardan elde edilen bilgilerden yola çıkarak kanıtlar bölümü doldurulur. Öğrencilerin verilen kaynaklar üzerinden önemli kalkınma hamlelerinin ve çalışmalarının etkilediği toplumsal ve ekonomik unsurları tespit etmeleri sağlanır. Tespitlerden hareketle öğrencilere ülkesinin kalkınmasını ve gelişmesini desteklemenin önemi kavratılarak ülkemizin kalkınma hamlelerinin desteklenmesi gerektiği bilinci kazandırılır (D19.4). Öğrenciler millî kalkınma hamlelerinin etkilediği unsurları belirler. Bu süreçte beyin fırtınası tekniği kullanılabilir (SDB2.1). Millî kalkınma hamlelerinin toplumsal ve ekonomik etkilerinin niteliği, yeni kalkınma ham lelerini harekete geçirmesi açısından değerlendirilmesi sağlanır. Bu süreçte TEKNOFEST örneği verilir. Öğrenciler yaptıkları değerlendirmeden hareketle Türkiye’nin kalkınma hamlelerinin neden ve sonuçlarını açıklar (SDB3.3). Bu süreçte performans görevi kapsamında öğrencilerden millî kalkınma hamlelerinin neden ve sonuçlarına ilişkin metin, resim, poster veya afiş hazırlamaları istenebilir (OB4, E3.3). Bu ürünler dereceli puanlama anahtarı ile değerlendirilebilir. SB.7.5.2 Yazılı ve görsel kaynaklar üzerinden yapılan incelemelerden hareketle ekonomik gelişmişliğin mali, kültürel ve demografik unsurları ile üretim, dağıtım ve tüketim döngüsünün unsurları öğrenciler tarafından belirlenir (OB1, OB4). Bu süreçte dijital kaynaklardan yararlanılabilir (OB2). Öğrenciler tarafından farklı ülkelerin ekonomik gelişmişlik verileri yukarıda belirtilen ekonomik gelişmişlik unsurları ile karşılaştırılır (KB2.7). Karşılaştırmaya dayalı olarak ülkeler, ekonomik açıdan gelişmekte olan ve gelişmiş ülkeler şeklinde sınıflandırılır (OB1). Belirti len ülkelerin üretim, dağıtım ve tüketim verileri kaynaklara dayalı olarak incelenir ve elde edilen veriler tablolaştırılır (OB7). Tablodaki verilerden yararlanarak ülkelerin ekonomik gelişmişlik seviyeleri ile üretim, dağıtım ve tüketim döngüleri arasında ilişkiler belirlenir. Öğrencilerin ülkesinin ekonomik değerlerini bilip korumalarının önemini kavramaları, ekonomik gelişmişlik ile üretim, dağıtım ve tüketim arasındaki ilişkilerin ülke ekonomisine katkılarını fark etmeleri sağlanır (D19.3). Konuya ilişkin açık uçlu sorular yöneltilebilir ve öğrencilerden gelen cevaplar değerlendirilebilir (SDB2.1).",
+        "Zenginleştirme": "Öğrencilere millî kalkınma hamleleri ile ilgili görsellerle desteklenmiş kısa bir e-kitap veya dijital pano hazırlatılabilir. Öğrencilerden yapılması planlanan millî kalkınma hamleleri ile ilgili araştırma yapmaları ve sunum hazırlamaları istenebilir. Çevredeki bir üretim alanı ziyaret edilerek öğrencilerden oradaki üretim, dağıtım, tüketim faaliyetlerinin bölgenin ekonomik gelişimine katkısı hakkında bilgi toplamaları ve bir rapor hazırlamaları istenebilir. Refah seviyesi yüksek olan ülkelerdeki üretim, dağıtım ve tüketim süreçleri ile ilgili öğrenciler tarafından araştırma yapılarak sınıfta sunulabilir.",
+        "Destekleme": "Öğretmen desteği ile öğrencilerden millî kalkınma hamleleri ile ilgili kelime bulutu, sınıflama haritası hazırlamaları istenebilir. Öğrencilere millî kalkınma hamleleri ve bu hamlelerin neden sonuçlarına ilişkin televizyon ve gazete haberleri sunularak süreç desteklenebilir. Öğretmen tarafından gelişmiş ve gelişmekte olan ülkelerdeki üretim, dağıtım ve tüketim süreçlerini gösteren görsellerle süreç desteklenebilir. Ekonomik gelişmişlik ile üretim, dağıtım ve tüketim süreçlerine yönelik eşleştirme kartı etkinliği yapılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.7.5.1. Millî kalkınma hamlelerini neden ve sonuçlarıyla yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Millî kalkınma hamlelerine neden olan unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Millî kalkınma hamlelerinin etkilediği unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Millî kalkınma hamlelerinin etkilerinin niteliğini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Millî kalkınma hamlelerinin neden ve sonuçlarını bağlamından kopmadan yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.5.2. Ekonomik gelişmişlik ile üretim, dağıtım ve tüketim döngüsü arasındaki ilişkiyi çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ekonomik gelişmişlik unsurları ile üretim, dağıtım ve tüketim döngüsünü belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Ekonomik gelişmişlik unsurları ile üretim dağıtım ve tüketim arasındaki ilişkiyi belirler.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.7.5.1",
+          "codeAsPrinted": "SB.7.5.1",
+          "text": "Millî kalkınma hamlelerini neden ve sonuçlarıyla yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Millî kalkınma hamlelerine neden olan unsurları inceler.",
+            "b) Millî kalkınma hamlelerinin etkilediği unsurları inceler.",
+            "c) Millî kalkınma hamlelerinin etkilerinin niteliğini sorgular.",
+            "ç) Millî kalkınma hamlelerinin neden ve sonuçlarını bağlamından kopmadan yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.5.2",
+          "codeAsPrinted": "SB.7.5.2",
+          "text": "Ekonomik gelişmişlik ile üretim, dağıtım ve tüketim döngüsü arasındaki ilişkiyi çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Ekonomik gelişmişlik unsurları ile üretim, dağıtım ve tüketim döngüsünü belirler.",
+            "b) Ekonomik gelişmişlik unsurları ile üretim dağıtım ve tüketim arasındaki ilişkiyi belirler."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/428",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/428",
+      "title": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:14:39.892Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_428.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "7.Sınıf"
+      ],
+      "pageTitle": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin bilimsel ve teknolojik gelişmelerin günümüz ve gelecekte toplumsal hayata etkilerine, sosyal bilimlerin çalışma alanlarına ve toplumsal hayatta karşılaşılabilecek problemlere çözüm üretmeye ilişkin bilgi ve becerilerinin geliştirilmesi amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.3. Değişim ve Sürekliliğe Dair Kanıta Dayalı Öngörüde Bulunma) FBAB13. Bilimsel Sorgulama",
+        "Kavramsal Beceriler": "KB2.9. Genelleme",
+        "Eğilimler": "E1.4. Kendine İnanma (Öz Yeterlilik), E1.5. Kendine Güvenme (Öz Güven), E3.3. Yaratıcılık, E3.6. Analitiklik, E3.7. Sistematiklik, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D4. Dostluk, D5. Duyarlılık, D11. Özgürlük",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Fen Bilimleri",
+        "Beceriler Arası İlişkiler": "KB3.2 Problem Çözme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.7.6.1. Bilimsel ve teknolojik gelişmelerin gelecekteki toplum hayatına etkilerine ilişkin öngörüde bulunabilme a) Bilimsel ve teknolojik gelişmelerin günümüzdeki toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirir. b) Bilimsel ve teknolojik gelişmelerin toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirerek geleceğe yönelik çıkarımda bulunur. SB.7.6.2. Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair genelleme yapabilme a) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair bilgi toplar. b) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının ortak özelliklerini belirler. c) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının farklılıklarını belirler. ç) Örnek metinler doğrultusunda sosyal bilimlerin çalışma alanlarına dair örüntüler üzerinden önermelerde bulunur. SB.7.6.3. Toplumsal hayatta karşılaşabileceği bir probleme yönelik bilimsel sorgulama yapabilme a) Toplumsal hayatta karşılaşabileceği bir problemi tanımlar. b) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kullanabile ceği bir model geliştirir. c) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik araştırmayı planlar ve gerçekleştirir. ç) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik verileri analiz eder ve yorumlar. d) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kanıta dayalı açıklama yapar ve probleme çözüm üretir. e) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair bilgiyi değerlendirir ve paylaşır.",
+        "İçerik Çerçevesi": "Bilimsel ve Teknolojik Gelişmelerin Gelecekteki Hayata EtkisiSosyal Bilimlerin Çalışma AlanlarıToplumsal Hayatta Karşılaşılabilecek Problemlere Çözüm Üretme",
+        "Anahtar Kavramlar": "bilimsel etik, gelecek, problem, sosyal bilimler, önerme, toplum",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; kontrol listesi, gözlem formu, anekdot kaydı, öz-akran değerlendirme formları, açık uçlu sorular içeren çalışma yaprakları, analitik dereceli puanlama anahtarı ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Toplumsal hayatta karşılaşılabilecek problemlerle bunların çözüm yollarına ilişkin poster hazırlamaya ve posteri sunmaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin bilim, ulaşım ve bilişim teknolojileri, sosyal bilimler kavramları ile bir problemi tanımlama ve çözme konularında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Önemli buluşlara ait görseller kullanılarak öğrencilerden bunları bilim insanı veya toplum ile eşleştirmeleri istenebilir. Bilişim ve ulaşım araçları konusundaki olası kavram yanılgılarını belirlemek amacıyla kavram ağı etkinliği düzenlenebilir. Farklı disiplinlerin yer aldığı bir liste üzerinden öğrencilerden sosyal bilimler kapsamında yer alan disiplinleri belirlemeleri istenebilir. Öğrencilerin problemi tanımlama ve çözme konusundaki bilgilerini değerlendirmek amacıyla açık uçlu sorular kullanılabilir.",
+        "Köprü Kurma": "Öğrencilere günlük hayatta hangi ulaşım ve iletişim araçlarını kullandıkları, sahip olmak istedikleri araçlar ve bu araçlara neden sahip olmak istedikleri sorulabilir. Yeni teknolojileri takip edip etmedikleri ve bunlardan hangisinin onları heyecanlandırdığı sorulup nedenlerini açıklamaları istenebilir. Öğrencilerden sınıfta bir sosyal bilimler ağacı oluşturmaları ve bu ağacın yapraklarına sosyal bilimlerin çalışma alanlarına yönelik günlük hayattan örnekler yazmaları istenebilir. Öğrencilere günlük hayatta yakın çevrelerinde tanık oldukları sorunlar ve bu sorunların neden kaynaklandığı sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.7.6.1 Yazılı ve görsel kaynaklar üzerinden bilimsel ve teknolojik gelişmelerin toplumsal hayata etkileri incelenir (OB1, OB4). Bu süreçte dijital kaynaklardan yararlanılabilir (OB2). Öğrencilerden yapmış oldukları incelemeler sonucunda elde ettikleri kanıtlar ile kendi gözlem ve deneyimlerini ilişkilendirmeleri istenir. Bunun yanı sıra Türk-İslam bilim insanlarının bilimsel ve teknolojik gelişmelere yapmış oldukları katkılara ilişkin örnekler de verilir. Bilimsel ve teknolojik gelişmelerin “iletişim, eğitim, sağlık ve ulaşım” alanlarına nasıl yansıdığına ilişkin örnekler vermeleri istenir. Bu süreçte günümüzdeki bilimsel ve teknolojik gelişmelerin toplum hayatına etkilerine ilişkin tartışmalar yapılır (E3.10, SDB2.1). Tartışma sırasında çember tekniğinden yararlanılabilir. Öğrencilerin tartışma sürecinde özgürlüklerini kullanırken arkadaşlarına karşı sorumluluklarının farkında olmaları, arkadaşlarının özgürlük alanlarını ihlal etmeden nazik ve saygılı davranmaları sağlanır (D11.3). Öğrencilerin görüşlerini açıklama ve tartışma süreçleri kontrol listesi, gözlem formu, anekdot kaydı ile değerlendirilebilir. Buna ek olarak açık uçlu sorularla oluşturulmuş çalışma yaprakları değerlendirme için kullanılabilir. Öğrencilerin farklı ülkelerdeki yeni uygulamalara yönelik gazete haberleri veya örnek olaylardan, kendi gözlem ve deneyimlerinden hareketle bilim ve teknolojinin gelecekte “iletişim, eğitim, sağlık, ulaşım” alanlarında toplumsal hayatı nasıl etkileyebileceğine dair çıkarımlarda bulunmaları sağlanır (SDB2.3). Bu süreçte fikir taraması tekniği kullanılabilir. Öğrencilerin geleceğe yönelik yaptıkları çıkarımları akranları ile paylaşmalarını sağlamak üzere öğrenme galerisi tekniği uygulanabilir. Öğrencilerden geleceğe yönelik öngörülerini yazılı veya görsel olarak sınıf duvarına asmaları ve diğer öğrencilerin hazırladığı galerileri gezerek incelemeleri istenir (E3.3, OB1, OB4). Öğrencilere galerileri gezerken o konu hakkında kendi öngörülerini ekleyebilecekleri söylenir. Bu şekilde öngörüler geliştirilir ve zenginleştirilir. Bu etkinlik öğretmen tarafından kontrol listesi veya gözlem formu kullanılarak değerlendirilebilir. Buna ek olarak öz ve akran değerlendirme formları değerlendirme sürecinde kullanılabilir. SB.7.6.2 Öğrencilerin örnek metinler üzerinden farklı sosyal bilim dallarına (arkeoloji, coğrafya, ekonomi, felsefe, hukuk, sosyoloji, tarih) ait tanıtıcı bilgileri toplamaları sağlanır (OB1). Bu aşamada konuşma halkası kullanılabilir (E1.5, SDB2.1). Öğrencilerin çalışma alanlarından yola çıkarak ilgili disiplini tanımlamaları sağlanır. Bu süreç kontrol listesi, gözlem formu veya anekdot kaydı ile değerlendirilebilir. Verilen örnek metinler incelenerek öğrencilerin sosyal bilim dallarının (tarih, coğrafya, arkeoloji, hukuk, ekonomi, felsefe ve sosyoloji) ortak özelliklerini belirlemeleri istenir (E3.7, OB1). Aynı kaynaklarların incelenmesine devam edilerek sosyal bilim dallarının (arkeoloji, coğrafya, ekonomi, felsefe, hukuk, sosyoloji, tarih) farklı özelliklerini belirlemeleri istenir. Öğrencilerden belirledikleri ortak özellikleri ve farklılıkları tüm sınıfa açıklamaları istenir. Bu süreçte çember tekniği kullanılabilir. Bu aşamada öğrencilerin sosyal bilimlerin ortak ve farklı özel lerini belirlerken edindikleri bilgileri eleştirel bakış açısı ile değerlendirmeleri sağlanır (D3.3). Öğrenciler tarafından sosyal bilimlerin genel çalışma alanlarına dair önermeler yazılır. Bu süreçte servis altlığı tekniği kullanılabilir. Her gruba bir sayfa kâğıt verilerek sosyal bilimlerin genel çalışma alanlarına dair önermeler yazmaları istenir. Öğrencilerden kâğıdı, her birinin yazabileceği bir bölüm ve ortada cevaplarını özetleyebilecekleri bir yer olacak şekilde bölmeleri istenir. Öğrencilerin, servis altlığı üzerine kendi alanlarındaki konuyu veya hedef soruyu anladıklarını göstermek için bireysel olarak yazıları yazmaları veya çizimleri yapmaları sağlanır. Daha sonra yazdıklarını veya çizdiklerini diğer grup üyeleriyle paylaşmaları istenir. Öğrencilerden paylaşımda verilen bilgileri tartışarak iki veya üç ana fikir ortaya koyması istenir (KB3.2). Bu fikirler kâğıdın ortasına yazılır ve sınıfın geri kalanıyla paylaşılır. Bu süreçte ortaya çıkan fikirler tartışılır (SDB2.1, E1.4). Süreç, kontrol listesi, gözlem formu veya anekdot kaydı ile değerlendirilebilir. SB.7.6.3 Öğrencilere toplumsal hayatta karşılaşılabilecek problemlerin neler olabileceği sorulur. Bu süreçte beyin fırtınası tekniğinden yararlanılabilir. Bu aşamada öğrencilerden arkadaşlarıyla etkili iletişim kurarak duygu ve düşüncelerini açık ve uygun bir şekilde paylaşmaları beklenir (D4.2). Problemler belirlendikten sonra öğrenciler gruplara ayrılarak her grubun bu problemlerden birini seçip bir cümle ile ifade etmesi istenir. Bu süreçte beyin fırtınası yapılabilir. Gruplar dan beyin fırtınası tekniğiyle belirledikleri problemin çözümünde kullanılabilecek bir model geliştirmeleri istenir (SDB3.3). Bu süreçte çalışma gruplarından ilgili sorunun çözümüne yönelik model önerilerini not etmeleri istenir. Grupların kendi aralarında sorunun çözümüne yönelik yapacakları araştırmayı planlamaları sağlanır (SDB2.1). Bu süreçte küçük grup tartışması tekniği uygulanabilir. Gruplardan bu plan dâhilinde farklı kaynakları inceleyerek veya çevrelerindeki insanlarla görüşmeler yaparak probleme ve çözüm önerilerine ilişkin veri toplamaları istenir (OB7). Bu süreçte öğretmen, öğrencilerin araştırmacı ve sorgulayıcı bir yaklaşımla doğru ve güvenilir bilgiyi ayırt etmeleri, güvenilir bilgiye ulaşma yollarını öğrenmeleri konusunda rehberlik eder (D3.3). Bu bağlamda bilimsel etiğin önemi vurgulanır. Grupların araştırmalarından elde ettikleri verileri analiz etmeleri ve yorumlamaları istenir. Bu süreçte küçük grup tartışması uygulanabilir. Gruplardan belirlenen problemin olası çözüm yollarını, avantajları ve dezavantajlarını bir diyagram üzerinde listelemeleri istenir (E3.6). Gruplar; hazırladıkları diyagramlar üzerinden belirledikleri problemin olası çözüm yollarını, avantajları ve dezavantajlarıyla birlikte kaynaklara dayandırarak sınıfa sunarlar. Bu sunumda öğrencilerden topladıkları veriye dayalı olarak kendilerince en ideal çözüm yolunu belirlemeleri istenir. Gruplardan araştırmalarından elde ettikleri veriler doğrultusunda olası çözüm önerilerini “ekonomiklik, güvenilirlik, verimlilik, yararlılık, sürdürülebilirlik” ölçütlerinde değerlendirmeleri ve insana ve doğaya duyarlı en doğru çözüm önerisinin hangisi olduğuna karar vermeleri istenir (D5.2). Gruplardan üzerinde karar kıldıkları çözüm önerisini, gerekçeleriyle sınıfta açıklayarak diğer öğrencilerle paylaşmaları istenir. Gruplar tüm araştırma sürecini performans görevi kapsamında poster formatında raporlaştırabilir (SDB3.3). Gruplar tarafından hazırlanan posterler okulda panolara asılarak diğer öğrencilerle paylaşılır. Öğrencilerin araştırma süreçleri dereceli puanlama anahtarları ile değerlendirilebilir. Buna ek olarak süreç sonunda yapılacak sunumlar için kontrol listelerine veya derecelendirme ölçeklerine başvurulabilir.",
+        "Zenginleştirme": "Öğrencilerden geçmiş dönemlere ait gelecek temalı (fütüristik) film ve animasyonları inceleyerek bu filmlerde yer verilen teknolojik araç ve gereçten bugün kullanımda olanları tespit etmeleri, yıllar önce senarist ve yönetmenlerin bu durumu nasıl tahmin edebildiklerine yönelik çıkarımda bulunmaları istenebilir. Öğrencilerden kendilerini bir senaristin yerine koyarak gelecekte toplumsal hayatı etkileyen hangi teknolojik gelişmelerin olabileceğini hayal edip bununla ilgili bir çizgi film/animasyon senaryosu yazmaları istenebilir. Öğrencilerden “bilimsel ve teknolojik gelişmelerin gelecekteki toplumsal hayata etkilerine ilişkin” etkileşimli sunum hazırlamaları, drama senaryoları oluşturup oynamaları, kompozisyon yazmaları istenebilir. Öğrencilerden ilgi ve yetenekleri doğrultusunda sosyal bilim dallarından bir tanesini seçip çalışma alanları ile ilgili görsel materyaller hazırlayarak okul panosunda tüm öğrencilere sergilemeleri istenebilir. Öğrencilerden okulda temsilî bir sivil toplum kuruluşu kurmaları istenerek toplumsal hayatta karşılaşılan bir probleme yönelik çözüm üretmeleri istenebilir.",
+        "Destekleme": "Bilimsel ve teknolojik gelişmelerin gelecekteki toplumsal hayata etkilerine ilişkin belgesel, animasyon, video ve film gibi eğitici dijital etkinliklerle öğrenme desteklenebilir. Öğrencilerden ilgi ve yetenekleri doğrultusunda sosyal bilim dallarından bir tanesini seçmeleri istenir. Bu bilim dallarının özelliklerini ve çalışma alanlarını gösteren grafikler, resimler, zihin haritaları gibi görseller aracılığıyla öğrenme desteklenebilir. Öğrencilere toplumsal hayatta karşılaşılan problemlerin çözümüne yönelik videolar izletilebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.7.6.1. Bilimsel ve teknolojik gelişmelerin gelecekteki toplum hayatına etkilerine ilişkin öngörüde bulunabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bilimsel ve teknolojik gelişmelerin günümüzdeki toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirir.",
+          "bold": false
+        },
+        {
+          "text": "b) Bilimsel ve teknolojik gelişmelerin toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirerek geleceğe yönelik çıkarımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.6.2. Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair genelleme yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "b) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının ortak özelliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının farklılıklarını belirler.",
+          "bold": false
+        },
+        {
+          "text": "ç) Örnek metinler doğrultusunda sosyal bilimlerin çalışma alanlarına dair örüntüler üzerinden önermelerde bulunur.",
+          "bold": false
+        },
+        {
+          "text": "SB.7.6.3. Toplumsal hayatta karşılaşabileceği bir probleme yönelik bilimsel sorgulama yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Toplumsal hayatta karşılaşabileceği bir problemi tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kullanabile ceği bir model geliştirir.",
+          "bold": false
+        },
+        {
+          "text": "c) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik araştırmayı planlar ve gerçekleştirir.",
+          "bold": false
+        },
+        {
+          "text": "ç) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik verileri analiz eder ve yorumlar.",
+          "bold": false
+        },
+        {
+          "text": "d) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kanıta dayalı açıklama yapar ve probleme çözüm üretir.",
+          "bold": false
+        },
+        {
+          "text": "e) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair bilgiyi değerlendirir ve paylaşır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.7.6.1",
+          "codeAsPrinted": "SB.7.6.1",
+          "text": "Bilimsel ve teknolojik gelişmelerin gelecekteki toplum hayatına etkilerine ilişkin öngörüde bulunabilme",
+          "group": null,
+          "components": [
+            "a) Bilimsel ve teknolojik gelişmelerin günümüzdeki toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirir.",
+            "b) Bilimsel ve teknolojik gelişmelerin toplumsal hayata etkilerine ilişkin kanıt, gözlem ve deneyimleri ilişkilendirerek geleceğe yönelik çıkarımda bulunur."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.6.2",
+          "codeAsPrinted": "SB.7.6.2",
+          "text": "Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair genelleme yapabilme",
+          "group": null,
+          "components": [
+            "a) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarına dair bilgi toplar.",
+            "b) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının ortak özelliklerini belirler.",
+            "c) Örnek metinler üzerinden sosyal bilimlerin çalışma alanlarının farklılıklarını belirler.",
+            "ç) Örnek metinler doğrultusunda sosyal bilimlerin çalışma alanlarına dair örüntüler üzerinden önermelerde bulunur."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.7.6.3",
+          "codeAsPrinted": "SB.7.6.3",
+          "text": "Toplumsal hayatta karşılaşabileceği bir probleme yönelik bilimsel sorgulama yapabilme",
+          "group": null,
+          "components": [
+            "a) Toplumsal hayatta karşılaşabileceği bir problemi tanımlar.",
+            "b) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kullanabile ceği bir model geliştirir.",
+            "c) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik araştırmayı planlar ve gerçekleştirir.",
+            "ç) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne yönelik verileri analiz eder ve yorumlar.",
+            "d) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair kanıta dayalı açıklama yapar ve probleme çözüm üretir.",
+            "e) Toplumsal hayatta karşılaşabileceği bir problemin çözümüne dair bilgiyi değerlendirir ve paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

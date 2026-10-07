@@ -1,0 +1,53 @@
+{
+  "name": "odev-claude",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "curriculum:fetch": "tsx scripts/curriculum-fetch.ts",
+    "curriculum:fetch:5": "tsx scripts/curriculum-fetch.ts --grade 5",
+    "curriculum:fetch:6": "tsx scripts/curriculum-fetch.ts --grade 6",
+    "curriculum:fetch:7": "tsx scripts/curriculum-fetch.ts --grade 7",
+    "curriculum:fetch:8": "tsx scripts/curriculum-fetch.ts --grade 8",
+    "curriculum:validate": "tsx scripts/curriculum-validate.ts",
+    "dev": "node scripts/db.mjs generate && next dev",
+    "build": "node scripts/db.mjs generate && next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/db.mjs --sqlite generate && vitest run",
+    "curriculum": "node scripts/db.mjs generate && tsx scripts/seed-curriculum.ts",
+    "db:migrate": "node scripts/db.mjs migrate dev",
+    "postinstall": "prisma generate",
+    "test:postgres": "node scripts/db.mjs --postgres generate && vitest run",
+    "db:deploy": "node scripts/db.mjs migrate deploy",
+    "demo": "node scripts/db.mjs generate && tsx scripts/seed-demo.ts",
+    "test:evren": "node scripts/db.mjs --sqlite generate && EVREN_LIVE=1 vitest run tests/evren-live.test.ts"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "cheerio": "^1.2.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "@prisma/client": "^6.19.3",
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
+    "next": "^16.4.0",
+    "prisma": "^6.19.3",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}

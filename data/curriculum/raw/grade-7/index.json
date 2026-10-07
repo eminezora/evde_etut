@@ -1,0 +1,314 @@
+{
+  "grade": 7,
+  "source": "https://tymm.meb.gov.tr",
+  "generatedAt": "2026-10-07T11:32:37.274Z",
+  "courseList": {
+    "kademe": "temel-egitim",
+    "courses": 60,
+    "problems": []
+  },
+  "subjects": [
+    {
+      "subject": "Türkçe",
+      "file": "turkish.raw.json",
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8",
+      "units": 6,
+      "problems": []
+    },
+    {
+      "subject": "Matematik",
+      "file": "mathematics.raw.json",
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8",
+      "units": 9,
+      "problems": []
+    },
+    {
+      "subject": "Fen Bilimleri",
+      "file": "science.raw.json",
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8",
+      "units": 7,
+      "problems": []
+    },
+    {
+      "subject": "İngilizce",
+      "file": "english.raw.json",
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/8",
+      "units": 9,
+      "problems": []
+    },
+    {
+      "subject": "Sosyal Bilgiler",
+      "file": "social-studies.raw.json",
+      "sourceStatus": "FOUND",
+      "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8",
+      "units": 6,
+      "problems": []
+    },
+    {
+      "subject": "Din Kültürü ve Ahlak Bilgisi",
+      "file": "religious-culture.raw.json",
+      "sourceStatus": "NOT_FOUND_ON_SOURCE",
+      "programUrl": null,
+      "units": 0,
+      "problems": [
+        "\"Din Kültürü ve Ahlak Bilgisi Dersi\" tymm.meb.gov.tr ders listesinde (temel-egitim, 60 ders) bulunamadı"
+      ]
+    }
+  ],
+  "visited": [
+    {
+      "url": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=1&kademe=temel-egitim",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=2&kademe=temel-egitim",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-turkce-dersi",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-matematik-dersi",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/463",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/464",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/465",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/466",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/467",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/468",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/469",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/470",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/471",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/fen-bilimleri-dersi",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/416",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/429",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/430",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/431",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/432",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/433",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/434",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ingilizce-dersi-temel-egitim",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/8",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/795",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/717",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/722",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/730",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/745",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/749",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/754",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/761",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/778",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/423",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/424",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/425",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/426",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/427",
+      "fromCache": true,
+      "ok": true
+    },
+    {
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/428",
+      "fromCache": true,
+      "ok": true
+    }
+  ]
+}

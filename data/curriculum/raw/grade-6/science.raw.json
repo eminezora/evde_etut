@@ -1,0 +1,1433 @@
+{
+  "subject": "Fen Bilimleri",
+  "courseName": "Fen Bilimleri Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 3,
+    "name": "Fen Bilimleri Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/fen-bilimleri-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=1&kademe=temel-egitim",
+    "heading": "Fen Bilimleri Dersi",
+    "gradeCards": [
+      {
+        "label": "3.Sınıf",
+        "grade": 3,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/4"
+      },
+      {
+        "label": "4.Sınıf",
+        "grade": 4,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/5"
+      },
+      {
+        "label": "5.Sınıf",
+        "grade": 5,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/6"
+      },
+      {
+        "label": "6.Sınıf",
+        "grade": 6,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/7"
+      },
+      {
+        "label": "7.Sınıf",
+        "grade": 7,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8"
+      },
+      {
+        "label": "8.Sınıf",
+        "grade": 8,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/9"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/7",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/7",
+    "heading": "Fen Bilimleri Dersi 6.Sınıf",
+    "headingGrade": 6,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T11:12:25.460Z",
+    "links": [
+      {
+        "href": "/fen-bilimleri-dersi/unite/409",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409",
+        "title": "1. Ünite: Güneş Sistemi Ve Tutulmalar"
+      },
+      {
+        "href": "/fen-bilimleri-dersi/unite/410",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410",
+        "title": "2. Ünite: Kuvvetin Etkisinde Hareket"
+      },
+      {
+        "href": "/fen-bilimleri-dersi/unite/411",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+        "title": "3. Ünite: Canlılarda Sistemler"
+      },
+      {
+        "href": "/fen-bilimleri-dersi/unite/412",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+        "title": "4. Ünite: Işığın Yansıması Ve Renkler"
+      },
+      {
+        "href": "/fen-bilimleri-dersi/unite/413",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+        "title": "5. Ünite: Maddenin Ayırt Edici Özellikleri"
+      },
+      {
+        "href": "/fen-bilimleri-dersi/unite/414",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414",
+        "title": "6. Ünite: Elektriğin İletimi Ve Direnç"
+      },
+      {
+        "href": "/fen-bilimleri-dersi/unite/415",
+        "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/415",
+        "title": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/fen-bilimleri-dersi/unite/409",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/409",
+      "title": "1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:26.983Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_409.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "1. Ünite: Güneş Sistemi Ve Tutulmalar",
+      "subtitle": null,
+      "intro": "Bu ünitede Güneş sistemindeki gezegenlerin sınıflandırılması, Güneş sistemi ile ilgili model oluşturulup Güneş ve Ay tutulmalarına yönelik çıkarım yapılarak tutulma modeli geliştirilmesi amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "12",
+        "Alan Becerileri": "FBAB2. Sınıflandırma, FBAB8. Bilimsel Çıkarım Yapma, FBAB9. Bilimsel Model Oluşturma",
+        "Kavramsal Beceriler": "-",
+        "Eğilimler": "E2.5. Oyunseverlik, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB2.1. İletişim, SDB2.2. İş Birliği",
+        "Değerler": "D3. Çalışkanlık, D5. Duyarlılık, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.7. Karşılaştırma, KB2.18. Tartışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.1.1. Güneş sistemindeki gezegenleri niteliklerine göre sınıflandırabilmea) Güneş sistemindeki gezegenlerin niteliklerini belirler.b) Güneş sistemindeki gezegenleri niteliklerine göre ayrıştırır.c) Güneş sistemindeki gezegenleri niteliklerine göre gruplandırır.ç) Güneş sistemindeki gezegenleri niteliklerine göre etiketler. FB.6.1.2. Güneş sistemi ile ilgili bilimsel model oluşturabilmea) Güneş sistemi ile ilgili model önerir.b) Güneş sistemi ile ilgili hazırladığı modelini yeni kanıtlarla yeniler. FB.6.1.3. Güneş ve Ay tutulması ile ilgili bilimsel çıkarım yapabilmea) Güneş ve Ay tutulmasının niteliklerini tanımlar.b) Güneş ve Ay tutulması ile ilgili veri toplar ve kaydeder.c) Güneş ve Ay tutulmasını değerlendirir. FB.6.1.4. Güneş ve Ay tutulması ile ilgili bilimsel model oluşturabilmea) Güneş ve Ay tutulması ile ilgili model önerir.b) Güneş ve Ay tutulması ile ilgili modelini yeni kanıtlarla yeniler.",
+        "İçerik Çerçevesi": "Güneş Sistemi Güneş ve Ay Tutulmaları",
+        "Anahtar Kavramlar": "Güneş sistemi, gezegenler, asteroit, gök taşı, meteor, meteorit, Güneş tutulması, Ay tutulması",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktılarının değerlendirilmesinde kısa cevaplı testler, anlam çözümleme tablosu, eşleştirme testleri, yapılandırılmış grid, dallanmış ağaç, boşluk doldurma, açık uçlu sorular ve performans görevleri kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri değerlendirme amaçlı kullanılabilir. Model tasarımları performans görevi verilebilir. Öğrencilerin tasarladıkları modeller analitik dereceli puanlama anahtarı kullanılarak değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin Güneş, Dünya ve Ay’ın yapı ve özelliklerini bildikleri kabul edilmektedir. Güneş, Dünya ve Ay’ın hacimsel büyüklük ilişkisi ve birbirlerine göre hareketleri ile ilgili ön bilgilere sahip oldukları kabul edilmektedir. Dünya ve Ay’ın dönme, dolanma hareketini bildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Güneş, Dünya ve Ay’ın yapı ve özellikleri, dönme ve dolanma hareketi ile ilgili temel kabullere sahip olma durumları açık uçlu sorular yoluyla belirlenebilir. Güneş, Dünya ve Ay’ın hacimsel büyüklük ilişkisi ve birbirlerine göre hareketleri ile ilgili temel kabullerin durumu eşleştirme testleri ile belirlenebilir.",
+        "Köprü Kurma": "Meteor çukurlarının oluşumu, meteor ve meteoritlerin büyüklükleri ile yeryüzüne ulaşma durumları arasında ilişki kurulabilir. Günlük hayatta karşılaştıkları Güneş ve Ay tutulmaları ile ilgili haberlerle konu arasında ilişki kurulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.1.1Öğrencilerden Güneş sistemindeki gezegenler ile ilgili merak ettikleri soruları sormaları istenir (E3.8). Gezegenlerle ilgili dijital içerikler, yazılı ve görsel kaynaklar vb. öğrencilerle paylaşılır. Öğrencilerin Güneş sistemindeki gezegenlerin niteliklerini belirlemeleri sağlanır (OB1). Bu süreçte gezegenlerin uydu sayılarına girilmeden Güneş’e yakınlıkları, uydu ve halkalarının olup olmama durumu, birbirlerine göre hacimsel büyüklükleri, karasal ve gazsal olmaları gibi temel özelliklerine değinilir. Öğrencilerin belirlenen özellikleri açıklayarak gerekçeleriyle birlikte gezegenleri ayrıştırmaları sağlanır (KB2.7). Ayrıştırdıkları özellikleri kendi içinde gruplayarak bu grupları adlandırmaları öğrencilerden istenir (OB1). Jüpiter ve Mars gezegenlerinin arasında bulunan asteroit kuşağına değinilir. Güneş sistemindeki asteroitlerin parçalarına gök taşları, Dünya atmosferine giren gök taşlarına meteor, yeryüzüne ulaşanların ise meteorit olarak isimlendirildiği ifade edilir. Meteoritlerin oluşturduğu çukurlara meteor çukuru denildiği belirtilir. Bu kavramlarla ilgili görseller araştırılabilir. Türk-İslam bilim insanı Biruni’nin; Güneş’in Dünya’nın etrafında değil, Dünya ve diğer gezegenlerin Güneş etrafında dolanma hareketi yaptığını vurgulayan çalışmalarına değinilir (D19.2). Ayrıca Güneş sistemindeki gezegen veya uyduların hangilerinde canlıların yaşayabileceğine dair araştırma verilip öğrencilerin gruplar hâlinde tartışmaları sağlanır (SDB2.2). Tartışma etkinliği sırasında öğrencilerin sözlü iletişim becerilerini kullanabilmeleri, etkin dinlemeyi sağlayabilmeleri, ifade ve düşüncelerini karşı tarafa net bir şekilde sunmaları teşvik edilir (E3.5). Tartışma etkinliği sürecinde Türkçe dersi ile ilişki kurulabilir. Güneş sistemindeki gezegenlerin belirlenen özelliklerini karşılaştırmak için anlam çözümleme tablosu, eşleştirme testleri, yapılandırılmış grid, tanılayıcı dallanmış ağaç vb. kullanılabilir. FB.6.1.2.Öğrencilerin Güneş sistemi ile ilgili Güneş’e yakınlık sıralamasını içeren tekerleme, kodlama vb. oluşturmaları sağlanabilir. Konu ile ilgili açık uçlu sorular kullanılarak öğrencilerin konuya dikkatleri çekilebilir. Öğrencilerin Güneş sistemi ile ilgili bir model önermeleri sağlanır. Modeli hazırlama sürecinde yardımlaşarak arkadaşlarına gerekli durumlarda destek olmaları teşvik edilir (D20.2). Oyun hamurları ile Güneş ve gezegenler, farklı büyüklükteki taş parçaları ile asteroit kuşağı temsil edilebilir. Modeller yeniden kullanılabilen atık malzemeler ile de oluşturulur (D5.2, OB8). Öğrencilerin gruplar hâlinde iletişim kurarak fikir alışverişi yapmaları sağlanır (SDB2.1, SDB2.2). Modellerini bilimsel kaynaklardan yapılan araştırma sonuçları ve diğer modeller ile karşılaştırarak geliştirmeleri ve yenilemeleri sağlanır (SDB1.1, OB7, OB1, KB2.7). Öğrencilerden arkadaşlarını etkin şekilde dinlemeleri, duygu ve düşüncelerini ifade etmeleri beklenir (SDB2.1, KB2.18). Modeli tasarlama sürecinde öğrencilerden planları doğrultusunda istikrarlı bir şekilde ilerlemeleri beklenir (D3.2, D16.3). Model tasarım sürecinde görsel sanatlar dersi ile ilişki kurulabilir. Güneş sistemi modelini değerlendirmek için analitik dereceli puanlama anahtarı kullanılabilir. FB.6.1.3.Öğrencilerden Güneş ve Ay tutulması ile ilgili merak ettikleri soruları sormaları istenir (E3.8). Güneş tutulmasını gözlemleyebilen öğrenci olup olmadığı sınıfa sorulup öğrencilerden deneyimlerini açıklamaları istenebilir. Öğrencilerden Güneş ve Ay tutulması ile ilgili bilgileri dijital içerikler, yazılı ve görsel kaynaklar yardımıyla bilimsel gerçeğe ulaşarak tanımlamaları beklenir (OB4, E3.4). Öğrencilerden Güneş ve Ay tutulması hakkında bilgi toplamaları ve çizimler oluşturarak çalışma yapraklarına kaydetmeleri istenir (OB1). Öğrencilerden Güneş ve Ay tutulmaları ile ilgili sonuçları yorumlayarak değerlendirmeleri beklenir. Öğrencilerin ulaştığı bilgiler V diyagramı ile özetlenebilir. Öğrencilere konuyu pekiştirmeleri için rol oynama, gösteri deneyleri gibi tekniklerle Güneş ve Ay tutulmaları eğlenceli bir şekilde verilir (E2.5). Güneş ve Ay tutulmaları ile ilgili dijital içeriklerden yararlanılabilir. Güneş ve Ay tutulmalarının en son ne zaman gerçekleştiği ve gelecekte en yakın hangi tarihte gerçekleşeceği hakkında öğrencilerden araştırma yapmaları istenebilir. Türk-İslam bilim insanı Fergani’nin 800’lü yıllarda Güneş ve Ay tutulma zamanlarının tespit edilmesine yönelik yöntem bulduğuna dair yaptığı çalışmalara değinilir (D19.2). Öğrencilerin Güneş ve Ay tutulmalarını karşılaştırmalarını sağlayan açık uçlu sorular, eşleştirme testi, boşluk doldurma soruları vb. kullanılabilir. FB.6.1.4.Öğrencilerin Güneş ve Ay tutulmaları ile ilgili bir model önermeleri sağlanır. Model hazırlama sürecinde yardımlaşarak arkadaşlarına destek olmaları beklenilir (D20.2). Modeller yeniden kullanılabilen atık malzemeler ile de oluşturulur (D5.2). Öğrencilerin gruplar hâlinde iletişim kurarak fikir alışverişi yapmaları sağlanır (SDB2.1, SDB2.2). Bu süreçte oyun hamurları vb. malzemeler ile Dünya ve Ay, el feneri vb. ışık kaynakları ile Güneş temsil edilebilir. Modellerini bilimsel kaynaklardan yapılan araştırma sonuçları ve diğer modeller ile karşılaştırarak geliştirmeleri ve yenilemeleri sağlanır (SDB1.1, OB1, KB2.7). Öğrencilerden arkadaşlarını etkin şekilde dinlemeleri, duygu ve düşüncelerini ifade etmeleri beklenir (SDB2.1, KB2.18). Modeli tasarlama sürecinde planları doğrultusunda istikrarlı bir şekilde ilerlemeleri öğrencilerden beklenir (D3.2). Model tasarım sürecinde görsel sanatlar dersi ile ilişki kurulabilir. Güneş ve Ay tutulmaları modelini değerlendirmek için analitik dereceli puanlama anahtarı kullanılabilir.",
+        "Zenginleştirme": "Güneş sistemi modelinde gezegenlerin hacimsel büyüklüklerini ölçeklendirilmiş şekilde oluşturmaları sağlanabilir. Basit 3B çizim programları kullanılarak Güneş sistemi modelinde gezegenlerin büyüklüklerine yönelik modeller tasarlanabilir. İmkânları olan okullar için yapılan çizimlere yönelik 3B yazıcıdan modeller ürün olarak alınabilir. Güneş sisteminde hangi gök cisminde canlıların yaşayabileceğine yönelik araştırma görevi verilebilir. Uluğ Bey’in Ay ve Güneş tutulmaları ile ilgili hesaplama yöntemleri araştırılarak sunum hazırlatılabilir. Kanlı Ay ve Süper Kanlı Ay tutulması durumuyla ilgili araştırma görevi verilerek sunum yaptırılabilir. Araştırma görevinde kavramsal yanılgılara da yer verilmesi sağlanabilir.",
+        "Destekleme": "Güneş sistemi ve gezegenlerin özellikleri ile ilgili eşleştirme oyunu oynatılabilir. Güneş ve Ay tutulması sürecinde rol oynama etkinliği yapılabilir. Model tasarım sürecinde ek yönergeler verilebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.1.1. Güneş sistemindeki gezegenleri niteliklerine göre sınıflandırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Güneş sistemindeki gezegenlerin niteliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Güneş sistemindeki gezegenleri niteliklerine göre ayrıştırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Güneş sistemindeki gezegenleri niteliklerine göre gruplandırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Güneş sistemindeki gezegenleri niteliklerine göre etiketler.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.1.2. Güneş sistemi ile ilgili bilimsel model oluşturabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Güneş sistemi ile ilgili model önerir.",
+          "bold": false
+        },
+        {
+          "text": "b) Güneş sistemi ile ilgili hazırladığı modelini yeni kanıtlarla yeniler.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.1.3. Güneş ve Ay tutulması ile ilgili bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Güneş ve Ay tutulmasının niteliklerini tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Güneş ve Ay tutulması ile ilgili veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Güneş ve Ay tutulmasını değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.1.4. Güneş ve Ay tutulması ile ilgili bilimsel model oluşturabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Güneş ve Ay tutulması ile ilgili model önerir.",
+          "bold": false
+        },
+        {
+          "text": "b) Güneş ve Ay tutulması ile ilgili modelini yeni kanıtlarla yeniler.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.1.1",
+          "codeAsPrinted": "FB.6.1.1",
+          "text": "Güneş sistemindeki gezegenleri niteliklerine göre sınıflandırabilme",
+          "group": null,
+          "components": [
+            "a) Güneş sistemindeki gezegenlerin niteliklerini belirler.",
+            "b) Güneş sistemindeki gezegenleri niteliklerine göre ayrıştırır.",
+            "c) Güneş sistemindeki gezegenleri niteliklerine göre gruplandırır.",
+            "ç) Güneş sistemindeki gezegenleri niteliklerine göre etiketler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.1.2",
+          "codeAsPrinted": "FB.6.1.2",
+          "text": "Güneş sistemi ile ilgili bilimsel model oluşturabilme",
+          "group": null,
+          "components": [
+            "a) Güneş sistemi ile ilgili model önerir.",
+            "b) Güneş sistemi ile ilgili hazırladığı modelini yeni kanıtlarla yeniler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.1.3",
+          "codeAsPrinted": "FB.6.1.3",
+          "text": "Güneş ve Ay tutulması ile ilgili bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Güneş ve Ay tutulmasının niteliklerini tanımlar.",
+            "b) Güneş ve Ay tutulması ile ilgili veri toplar ve kaydeder.",
+            "c) Güneş ve Ay tutulmasını değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.1.4",
+          "codeAsPrinted": "FB.6.1.4",
+          "text": "Güneş ve Ay tutulması ile ilgili bilimsel model oluşturabilme",
+          "group": null,
+          "components": [
+            "a) Güneş ve Ay tutulması ile ilgili model önerir.",
+            "b) Güneş ve Ay tutulması ile ilgili modelini yeni kanıtlarla yeniler."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/fen-bilimleri-dersi/unite/410",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/410",
+      "title": "2. Ünite: Kuvvetin Etkisinde Hareket",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:28.474Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_410.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "2. Ünite: Kuvvetin Etkisinde Hareket",
+      "subtitle": null,
+      "intro": "Bu ünitede bir cisme etki eden kuvvetlerin yönü, doğrultusu ve büyüklüğü gözlemlenerek veriler toplanması, toplanan verilerin analiz edilerek bileşke kuvvetin yönünün, doğrultusunun ve büyüklüğünün hesaplanıp tanımlanması, bir cisme etki eden bileşke kuvvetin büyüklüğüne göre dengelenmiş ya da dengelenmemiş olma durumunun belirlenmesi, dengelenmiş ve dengelenmemiş kuvvetlerin bir cismin hareketine olan etkisinin yorumlanması, bir cismin sürati ve hızının karşılaştırılıp niteliklerinin belirlenmesi amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "14",
+        "Alan Becerileri": "FBAB7. Deney Yapma",
+        "Kavramsal Beceriler": "KB2.7. Karşılaştırma, KB2.13. Yapılandırma",
+        "Eğilimler": "E1.1. Merak, E1.2. Bağımsızlık, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği",
+        "Değerler": "D3. Çalışkanlık, D16. Sorumluluk, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Matematik",
+        "Beceriler Arası İlişkiler": "KB3.3. Eleştirel Düşünme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.2.1. Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri açıklayarak bileşke kuvveti yapılandırabilmea) Bir cisme etki eden aynı doğrultudaki kuvvetleri inceleyerek aralarındaki mantıksal ilişkileri ortaya koyar.b) Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri yapılandırarak bileşke kuvveti açıklar. FB.6.2.2. Dengelenmiş ve dengelenmemiş kuvvetlerin etkisi altındaki bir cismin hareketine yönelik deney yapabilmea) Dengelenmiş ve dengelenmemiş kuvvetlerin bir cismin hareketine etkisini gösteren deney düzeneği tasarlar.b) Deney ile ilgili ölçme ve veri analizi yapar. FB.6.2.3. Sürat ve hız kavramlarını karşılaştırabilmea) Sürat ve hız kavramlarına ilişkin özellikleri belirler.b) Sürat ve hız kavramlarına ilişkin benzerlikleri listeler.c) Sürat ve hız kavramlarına ilişkin farklılıkları listeler.",
+        "İçerik Çerçevesi": "Bileşke KuvvetSabit Süratli ve Sabit Hızlı Hareket",
+        "Anahtar Kavramlar": "büyüklük, yön, doğrultu, uygulama noktası, bileşke kuvvet, dengelenmiş ve dengelenmemiş kuvvet, dengeleyici kuvvet, sürat-hız, alınan yol-yer değiştirme, zaman",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktısının değerlendirilmesinde çalışma kâğıdı, V diyagramı ve performans görevleri kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri değerlendirme amaçlı kullanılabilir. Günlük yaşamda dengelenmiş ve dengelenmemiş kuvvetlere ait örnekleri tanıtan bir poster hazırlama performans görevi verilebilir. Bu görevin değerlendirilmesinde analitik dereceli puanlama anahtarı kullanılabilir.",
+        "Temel Kabuller": "Öğrencilerin kuvvet kavramını ve kuvvetin cisimler üzerindeki etkisini bildikleri kabul edilmektedir. Kuvvetin dinamometre ile ölçüldüğünü ve biriminin Newton olduğunu bildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Kuvvet ve kuvvetin cisim üzerindeki etkilerine yönelik temel kabullere sahip olma durumları açık uçlu sorularla sorgulanabilir. Kuvvetin ne ile ölçüldüğü ve birimi açık uçlu sorularla sorgulanabilir.",
+        "Köprü Kurma": "“Kuvvetin cisimler üzerindeki etkileri nelerdir?“ vb. sorular sorularak uygulanan kuvvetin yönü ve doğrultusu ile hareketi arasında bağlantı kurulabilir. Öğrencilerin günlük yaşamlarında cisimlerin hareketini bileşke kuvvet ile ilişkilendirmeleri sağlanabilir. Öğrencilerin günlük yaşamlarındaki hız ve sürat örnekleri ile derste öğrenilen kavramlar arasında ilişki kurulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.2.1 Bir cisme uygulanan kuvvetin uygulama noktası, yönü, doğrultusu ve büyüklüğü dijital ortamdaki örnekler üzerinden incelenerek kuvvet tanımı yapılır (OB4). Bu kuvvet tanımına dayanarak öğrencilere, bir cisme etki eden aynı doğrultu içerisinde yön ve büyüklüğe sahip birden fazla kuvvet örnekleri verilerek incelemeleri öğrencilerden istenir (E1.1). Bu örnekler üzerinden cisme etki eden kuvvetler arasındaki mantıksal ilişkileri ortaya koymaları öğrencilerden istenir (KB3.3). Cisme uygulanan aynı doğrultudaki farklı kuvvetlerin örnek çizimleri öğrencilere inceletilir (OB4). Öğrencilerin örnekleri analiz etmesi ve cisim üzerine uygulanan kuvvetlerin cismin hareketine etkisini yorumlamaları sağlanır (OB1, SDB2.1). Öğrencilerin bir cisme uygulanan birden fazla kuvvet ile bileşke kuvvet arasında ilişki kurarak bileşke kuvveti açıklamaları sağlanır. Öğrencilerden bileşke kuvvetin yönünü, doğrultusunu ve büyüklüğünü çizmeleri beklenir (OB4). Sürecin pekiştirilmesi için deney, dijital içerikler vb. kullanılabilir. Öğrenme kanıtı için çalışma kâğıdı kullanılabilir. FB.6.2.2 Öğrencilere bileşke kuvvetin sıfır ve sıfırdan farklı olduğu durumlara yönelik örnekler üzerinden sorular sorulabilir. Verilen cevaplar doğrultusunda değişkenlerin belirlenmesi öğrencilerden istenebilir. Bileşke kuvvetin sıfır olması durumunda kuvvetin dengelenmiş, sıfırdan farklı olması durumunda ise dengelenmemiş olduğu açıklanır. Ardından dengeleyici kuvvetin bileşke kuvvet üzerindeki etkisi vurgulanır. Daha sonra öğrenciler gruplara ayrılır. Bu değişkenler çerçevesinde duran bir cismin, dengelenmiş ve dengelenmemiş kuvvetlerin etkisi ile hareketine yönelik öğrencilerden hipotez geliştirmeleri istenir (SDB1.2). Gruptaki öğrencilerden hipotezi test etmek için deney düzeneğine uygun araç gereci belirlemeleri istenir (OB1). Öğrencilerden grup içinde özgür seçimler yaparak yardımlaşmaları istenir (SDB2.2, E1.2, D20,2). Süreç içerisinde planlarını zamanında, eksiksiz yürütmeleri sağlanır (D3.3, D16.3). Öğrencilere seçtikleri yönteme uygun deney düzeneği tasarlatılır. Gözlemleri sonucunda öğrencilerden dengelenmiş ve dengelenmemiş kuvvetlerin bir cismin hareketine etkisine ilişkin ölçümler yaparak verileri kaydetmeleri ve topladıkları bu verileri analiz etmeleri istenir (OB7). Öğrencilerin dengelenmiş ve dengelenmemiş kuvvetlerin cismin hareketine yönelik toplanan verileri, gruplar arasında karşılaştırarak hipotez sonucuna yönelik çıkarımda bulunmaları sağlanır (SDB1.2, SDB2.1, SDB2.2, OB1). Deney raporunun V diyagramı şeklinde hazırlanması öğrencilerden istenebilir. Pekiştirme amacıyla performans görevi olarak günlük yaşamda dengelenmiş ve dengelenmemiş kuvvetlere ait örnekleri tanıtan bir poster hazırlamaları öğrencilerden istenebilir. Performans görevlerinin değerlendirilmesinde analitik dereceli puanlama anahtarı kullanılabilir. FB.6.2.3 Öğrencilere günlük yaşamda kullandıkları alınan yol ve yer değiştirme kavramları hakkında sorular sorulur (SDB2.1). Alınan cevaplar özetlenerek ve kavramlara örnekler verilerek açıklanabilir. Öğrencilere hız ve süratin özelliklerini tanımlamak için alınan yol, yer değiştirme ve zaman kavramlarıyla ilgili örnekleri basılı kaynak, dijital içerik vb. materyallerle incelemeleri sağlanır (OB4). Ardından bu özellikleri içeren örneklerin olduğu video/animasyonlar, materyaller inceletilerek bir cismin veya nesnenin iki konum arasında izlediği hareketi, alınan yol ve yer değiştirmesini matris tabloya kaydetmeleri öğrencilerden istenir (OB1). Tabloya göre öğrencilerden görsel verilerden akıl yürütüp birim zamanda alınan yol ve yer değiştirme çıkarımları yapmaları, sürat ve hız kavramlarına ilişkin özellikleri belirlemeleri istenir (OB4). Grafik okumaya ve matematiksel hesaplamalara girilmez. Birimler arası dönüştürmeye girilmeden uluslararası sistemde yer alan “km/h“ ve “m/s“ birimleri kullanılır. Öğrencilere sürat ve hız kavramları arasındaki benzerlik ve farklılıklar sorulur. Öğrencilerden elde edilen veri ve çıkarımlardan hareketle benzerlik ve farklılıkları kendi cümleleriyle listelemeleri beklenir (OB1, KB3.3). Öğrenciler süreç içerisinde merak ettiği soruları sorar (E1.1, E3.8). Sürecin pekiştirilmesi için rol oynama, dijital içerikler vb. kullanılabilir. Çalışma kâğıdı kullanılarak öğrenilenler değerlendirilebilir.",
+        "Zenginleştirme": "Mühendislik ve tasarım süreci kullanarak bileşke kuvvete yönelik kodlama ve FeTeMM eğitim anlayışına uygun mühendislik ve tasarım tabanlı etkinlikleri içeren araç tasarımları ya da modelleri oluşturmaları öğrencilerden istenebilir. Öğrencilerin bileşke kuvvete yönelik dijital ortamda etkileşimli içerik/simülasyon/video tasarlamaları sağlanabilir. İbni Sina, Aristoteles’e bağlı kalarak “Fazla kuvvet daha fazla hızlanma demektir.“ ifadesini kullanmıştır. Benzer şekilde Newton öncesi hareket anlayışını yansıtan “Kuvvetsiz hareket olamaz.“ ilkesi açısından bakıldığında doğal bir durum olan “hareket ettirici“ gereksinimi, İbni Sina tarafından hareket ilkesi olarak kabul edilmiştir. İbni Sina’nın bu konudaki tespitlerinden hareketle bilimin doğası anlayışı kapsamında kuvvet ve hareket konularında tarihsel yaklaşımı dikkate alan performans görevi verilebilir.",
+        "Destekleme": "Eğitsel dijital içeriklerden video, animasyon, simülasyon vb. etkinlikler ile soyut kavramların somutlaştırılmasında, kavramsal anlayışının kolaylaştırılmasında ve pekiştirilmesinde kullanılabilir. Araştırma problemlerine yönelik çalışma süreçlerinde öğrenci seviyelerine uygun problemler hazırlanarak tüm bireylerin ilgili çalışmalara katılımı sağlanabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.2.1. Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri açıklayarak bileşke kuvveti yapılandırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir cisme etki eden aynı doğrultudaki kuvvetleri inceleyerek aralarındaki mantıksal ilişkileri ortaya koyar.",
+          "bold": false
+        },
+        {
+          "text": "b) Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri yapılandırarak bileşke kuvveti açıklar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.2.2. Dengelenmiş ve dengelenmemiş kuvvetlerin etkisi altındaki bir cismin hareketine yönelik deney yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dengelenmiş ve dengelenmemiş kuvvetlerin bir cismin hareketine etkisini gösteren deney düzeneği tasarlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Deney ile ilgili ölçme ve veri analizi yapar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.2.3. Sürat ve hız kavramlarını karşılaştırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Sürat ve hız kavramlarına ilişkin özellikleri belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Sürat ve hız kavramlarına ilişkin benzerlikleri listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Sürat ve hız kavramlarına ilişkin farklılıkları listeler.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.2.1",
+          "codeAsPrinted": "FB.6.2.1",
+          "text": "Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri açıklayarak bileşke kuvveti yapılandırabilme",
+          "group": null,
+          "components": [
+            "a) Bir cisme etki eden aynı doğrultudaki kuvvetleri inceleyerek aralarındaki mantıksal ilişkileri ortaya koyar.",
+            "b) Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri yapılandırarak bileşke kuvveti açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.2.2",
+          "codeAsPrinted": "FB.6.2.2",
+          "text": "Dengelenmiş ve dengelenmemiş kuvvetlerin etkisi altındaki bir cismin hareketine yönelik deney yapabilme",
+          "group": null,
+          "components": [
+            "a) Dengelenmiş ve dengelenmemiş kuvvetlerin bir cismin hareketine etkisini gösteren deney düzeneği tasarlar.",
+            "b) Deney ile ilgili ölçme ve veri analizi yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.2.3",
+          "codeAsPrinted": "FB.6.2.3",
+          "text": "Sürat ve hız kavramlarını karşılaştırabilme",
+          "group": null,
+          "components": [
+            "a) Sürat ve hız kavramlarına ilişkin özellikleri belirler.",
+            "b) Sürat ve hız kavramlarına ilişkin benzerlikleri listeler.",
+            "c) Sürat ve hız kavramlarına ilişkin farklılıkları listeler."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/fen-bilimleri-dersi/unite/411",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/411",
+      "title": "3. Ünite: Canlılarda Sistemler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:29.989Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_411.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "3. Ünite: Canlılarda Sistemler",
+      "subtitle": null,
+      "intro": "Bu ünitede eşeyli ve eşeysiz üreme ile bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlerin açıklanması, tohumun çimlenmesine etki eden faktörlerin deneyler yapılarak keşfedilmesi, hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlerin yorumlanması amaçlanmaktadır. Bununla beraber, insanda üremeyi sağlayan yapı ve organlar arasındaki ilişkilerin modeller üzerinde açıklanması, sinir sisteminin model üzerinde incelenmesi, iç salgı bezlerinin vücut için öneminin açıklanması, ergenliğe geçişte oluşan bedensel ve ruhsal değişimleri genelleyebilmesi, denetleyici ve düzenleyici sistemlerin sağlığı için yapılması gerekenlerle ilgili bilgi toplanması amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "22",
+        "Alan Becerileri": "FBAB1. Bilimsel Gözlem, FBAB6. Hipotez Oluşturma, FBAB8. Bilimsel Çıkarım Yapma",
+        "Kavramsal Beceriler": "KB2.4. Çözümleme, KB2.6. Bilgi Toplama, KB2.7. Karşılaştırma, KB2.9. Genelleme, KB2.13. Yapılandırma",
+        "Eğilimler": "E2.5. Oyunseverlik, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.7. Sistematiklik, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D2. Aile Bütünlüğü, D3. Çalışkanlık, D5. Duyarlılık, D8. Mahremiyet, D9. Merhamet, D13. Sağlıklı Yaşam, D14. Saygı, D16. Sorumluluk, D18. Temizlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Türkçe, Görsel Sanatlar, Din Kültürü ve Ahlak Bilgisi",
+        "Beceriler Arası İlişkiler": "KB2.18. Tartışma, KB3.3. Eleştirel Düşünme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.3.1. Eşeyli ve eşeysiz üremeyi karşılaştırabilmea) Eşeyli ve eşeysiz üreme ile ilgili özellikleri belirler.b) Eşeyli ve eşeysiz üreme ile benzerlikleri listeler.c) Eşeyli ve eşeysiz üreme ile ilgili farklılıkları listeler. FB.6.3.2. Bitkilerde üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilmea) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.b) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.c) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir. FB.6.3.3. Tohumun çimlenmesine etki eden faktörlere ilişkin hipotez oluşturabilmea) Tohumun çimlenmesine etki eden faktörleri tanımlar.b) Tohumun çimlenmesine etki eden faktörlerin neden sonuç ilişkilerini belirler.c) Tohumun çimlenmesine etki eden faktörlere ait değişkenleri belirler.ç) Tohumun çimlenmesine etki eden faktörlere ait belirlediği değişkenleri kontrol eder.d) Tohumun çimlenmesine etki eden faktörlere ait önerme sunar. FB.6.3.4. Hayvanlarda üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilmea) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.b) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.c) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir. FB.6.3.5. İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri çözümleyebilmea) İnsanda üremeyi sağlayan yapı ve organları poster/şema üzerinde belirler.b) İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri belirler. FB.6.3.6. Sinir sisteminin görevlerini model üzerinde bilimsel olarak gözlemleyebilmea) Sinir sisteminin özelliklerini tanımlar.b) Sinir sistemini model üzerinde inceler.c) Sinir sisteminin görevlerini açıklar. FB.6.3.7. İç salgı bezlerinin vücut için önemini yapılandırabilmea) İç salgı bezlerini inceleyerek mantıksal ilişkiler ortaya koyar.b) İç salgı bezlerinin vücut için önemini uyumlu bir bütün olarak açıklar. FB.6.3.8. Çocukluktan ergenliğe geçişte oluşan bedensel ve ruhsal değişimleri genelleyebilmea) Çocukluktan ergenliğe geçişte oluşan değişimler hakkında bilgi toplar.b) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olanları belirler.c) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olmayanları belirler.ç) Çocukluktan ergenliğe geçişte oluşan değişimlerle ilgili örüntüler üzerinden genellemede bulunur. FB.6.3.9. Denetleyici ve düzenleyici sistemlerin sağlığı için yapılması gerekenlerle ilgili bilgi toplayabilmea) Denetleyici ve düzenleyici sistemlerin sağlığı ile ilgili bilgiye ulaşmak için kullanacağı araçları belirler.b) Denetleyici ve düzenleyici sağlığı hakkında bilgiler bulur.c) Denetleyici ve düzenleyici sağlığı konusunda bulduğu bilgileri doğrular.ç) Denetleyici ve düzenleyici sağlığı konusunda ulaştığı bilgileri kaydeder.",
+        "İçerik Çerçevesi": "Bitki ve Hayvanlarda Üreme, Büyüme ve GelişmeDenetleyici ve Düzenleyici Sistemler",
+        "Anahtar Kavramlar": "eşeysiz üreme (vejetatif, bölünme, tomurcuklanma ve rejenerasyonla üreme), eşeyli üreme, başkalaşım, tozlaşma, çimlenme, yaşam döngüsü, insanda üremeyi sağlayan yapı ve organlar, âdet döngüsü, sperm, yumurta, zigot, embriyo, fetüs, büyüme ve gelişme, sinir sistemi, sinir sisteminin bölümleri, merkezî ve çevresel sinir sistemi, refleks, iç salgı bezleri, hormon, iç salgı bezlerinin görevleri, ergenlik, ergen sağlığı, denetleyici ve düzenleyici sistemlerin sağlığı",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktılarının değerlendirilmesinde çalışma kâğıdı, tanılayıcı dallanmış ağaç, yapılandırılmış grid, açık uçlu sorular ve performans görevleri kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri değerlendirme amaçlı kullanılabilir. Tohumun çimlendirilmesi deneyi performans görevi olarak verilebilir. Deney raporunu değerlendirmek için dereceli puanlama anahtarı kullanılabilir. Süreçte öğrenci performanslarını yapılandırmada V diyagramı kullanılabilir. Diyagramın değerlendirilmesinde analitik dereceli puanlama anahtarı kullanılabilir. Öğrencilerin sinir sistemi ve yapılarını özetleyen poster hazırlamalarını içeren performans görevi verilebilir. Performans görevini değerlendirmek için analitik dereceli puanlama anahtarı kullanılabilir. Ergenlik döneminin sağlıklı bir şekilde geçirilebilmesi için nelerin yapılabileceğine ilişkin poster hazırlamaları performans görevi verilebilir. Performans görevini değerlendirmek için analitik dereceli puanlama anahtarı kullanılabilir. Öğrencilerin denetleyici ve düzenleyici sistemlerin sağlığı için nelerin yapılabileceği konusunda rapor hazırlama performans görevi verilebilir. Performans görevi süreci kontrol listesi ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin bitki ve hayvan hücrelerinin yapısal olarak birbirinden farklı olduğunu bildikleri kabul edilmektedir. Sağlığın önemi konusunda ön bilgilere sahip oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Bitki ve hayvan hücresine, bu hücrelerin yapısal özelliklerine yönelik temel kabullere sahip olma durumları eşleştirme, açık uçlu sorular vb. sorularla sorgulanabilir. Sağlığın önemine ilişkin temel kabullere sahip olma durumları açık uçlu sorularla belirlenebilir.",
+        "Köprü Kurma": "Çevresindeki bitkilerin gelişimine yönelik gözlem sonuçlarıyla ilişki kurulabilir. Bebekliğinden itibaren kendi gelişimine ait süreçler ile öğrendiği bilgiler arasında öğrencilerin bağlantı kurmaları sağlanabilir. Ergenlik döneminin başlangıcında oldukları için bu dönemde hayatlarında ve bedenlerinde meydana gelen değişimler ile ilişki kurulabilir. Öğrencilerin günlük yaşamda karşılaştığı felçlik durumu, omurilik zedelenmesi gibi konularla derste öğrendikleri bilgiler arasında ilişki kurmaları sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.3.1 Eşeyli ve eşeysiz üreme kavramlarına yönelik açık fikirlilikle beyin fırtınası vb. tekniklerle bu kavramlara ait özellikler belirlenir (E3.5). Vızıltı grupları oluşturularak öğrencilerin eşeyli ve eşeysiz üreme özelliklerini tartışmaları sağlanır (KB2.18). Tartışma sürecinde her bir öğrencinin fikir belirtme ve karar alma hakkının olduğu belirtilir (D8.1). Öğrencilerden grup çalışması sırasında görev bilinciyle hareket etmeleri, farklı görüşlere saygı çerçevesinde davranmaları beklenir (SDB2.1, SDB2.2, D16.3). Tartışma sırasında Türkçe dersinde yer alan iletişim becerilerinden faydalanılabilir. Öğrencilerden eşeyli ve eşeysiz üremenin benzerlik ve farklılıklarını belirlemeleri istenir. Belirlenen benzerlik ve farklılıkları karşılaştırıp liste oluşturmaları sağlanabilir. Tartışma sürecinde olumlu iletişim ve nezaket çerçevesinde süreci yönetmeleri teşvik edilir (SDB2.1, D14.1). Eşeyli üremenin ayrıntısına değinilmeden eşeysiz üreme konusunda vejetatif üreme, bölünme ile üreme, tomurcuklanma ile üreme ve rejenerasyon ile üreme kavramlarına değinilir. Bu kavramlara ait örneklere yönelik çıkarımlar yapmaları için dijital ortam, basılı kaynak vb. materyallerle inceletilir (OB4). Ayrıca kavramlara yönelik video/animasyonlar, dijital hikâye vb. araçlarla öğrenilenlerin pekiştirilmesi sağlanır (OB2). Süreç içinde kavram ağı, tanılayıcı dallanmış ağaç vb. ölçme araçları ile izleme amaçlı değerlendirme yapılabilir. FB.6.3.2 Öğrencilerin bitkileri çiçekli ve çiçeksiz bitkiler olarak sınıflandırmaları sağlanır. Çiçeksiz bitkilerin özelliklerine değinilmeden örnek verilir. Çiçekli bitkilerin temel kısımlarını model, poster vb. üzerinden incelemeleri sağlanır. Çiçeğin kısımlarını sınıfa getirilen bir çiçek, model, poster vb. üzerinden incelemeleri öğrencilerden istenir (OB4, E3.2). Bu süreçte, öğrencilerin iletişim kurarak birlikte çalışmaları ve merak ettiği soruları sormaları sağlanır (SDB2.1, SDB2.2, E3.8). Tozlaşmanın nasıl olduğu çiçeğe ait kısımlar gösterilerek açıklanır. Bir bitkinin yaşam döngüsüne ait süreçler görsel, poster, animasyon vb. materyaller üzerinden çıkarımlar yapmaları için inceletilir (OB2). Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin nitelikleri tanımlamaları öğrencilerden istenir. Bu aşamada sorgulama yöntemi kullanılarak düşünmelerine rehberlik edilir (SDB2.1). Süreçte öğrencilerin araştırmacı ve sorgulayıcı bakış açısıyla düşünmeleri sağlanır (D3.3). Açık uçlu sorularla ve araştırma yaparak öğrencilerden bitkilerde üreme, büyüme ve gelişme hakkında yorum yapmaları ve bu aşamalara etki eden faktörlere ait veri toplamaları ve kaydetmeleri istenir. İnsanların bitkilerde üreme, büyüme ve gelişmedeki olumsuz etkilerine dikkat çekilerek çevre konusunda duyarlı davranılmasının gerekliliğine değinilir (SDB1.2, D5.2). Ardından tüm sürece ilişkin elde ettikleri bilgileri yorumlamaları ve değerlendirmeleri öğrencilerden istenir (KB3.3). Süreç içindeki aşamalar çalışma kâğıdı vb. araçlarla değerlendirilebilir. FB.6.3.3 Öğrencilere tohumun çimlenmesine etki eden faktörlerin neler olabileceğine yönelik açık uçlu sorular sorulur. Öğrencilerden tohumun çimlenmesine etki eden faktörlere ait nitelikleri tanımlamaları istenir (OB1). Süreç yapılandırılırken öğrencilerden bireysel ya da grup çalışması yaparak çimlenme deney düzeneği hazırlamaları istenir (SDB2.2). Süreçte öğrenci performanslarını yapılandırmada TGA tekniği kullanılabilir. Öğrencilerin tohumun çimlenmesindeki faktörler arasındaki neden sonuç ilişkilerini belirlemeleri sağlanır (OB1). Deneye ait bağımlı, bağımsız ve kontrol değişkenlerini öğrencilerden belirlemeleri istenir. Bu süreçte ısı, ışık, nem, tohumun cinsi, tohumun bulunduğu ortam gibi değişkenler dikkate alınarak neden sonuç ilişkisi bağlamında deney tekrarlanabilir. Öğrencilerden değişkenleri kontrol edebilecekleri düzenekleri hazırlamaları ve bu düzenekleri çimlenme gerçekleşene kadar gözlemlemeleri ve kaydetmeleri beklenir (OB1). Bu süreçte sistematik olarak ve planlı bir şekilde gözlem yapmaları sağlanır (E3.7, D3.2). Oksijensiz ortamı sağlayamayacağı için oksijen değişkeninin etkisi deney düzeneğine dâhil edilmeyip öğretmen tarafından açıklanır. Bu verileri kaydederken gözlemlerini çizmeleri istenerek görsel sanatlar dersiyle ilişki kurulur. Öğrencilerden elde ettikleri verilere dayanarak grup olarak önerme oluşturmaları beklenir (SDB2.1). Bu deney düzeneği için dijital ortamda sanal laboratuvarlar da kullanılabilir. Bu süreçte sanal laboratuvarlara erişmeleri, deneye ilişkin uygulamaları yürütmeleri ve sonuçları yorumlamaları sağlanır (OB7, OB2). Öğrencilerden deneyi hazırlayıp önermeye ulaşmalarını içeren süreçleri gözlemleyebilmek için V diyagramı hazırlamaları istenebilir. Diyagramın değerlendirilmesinde analitik dereceli puanlama anahtarı kullanılabilir. FB.6.3.4 Öğrencilerin beyin fırtınası tekniği ile hayvanlarda üreme, büyüme ve gelişmeye ilişkin nitelikleri tanımlamaları sağlanır. Sorgulama sonucunda eşeyli ve eşeysiz üreyen canlılar olduğu fark ettirilir (OB1). Doğurarak ve yumurtayla çoğalma konularına kısaca değinilirken metagenez, iç ve dış döllenme ile iç ve dış gelişmeye değinilmez. Öğrenciler iş birlikli öğrenme gruplarına ayrılabilir. Öğrencilerin gruplarda görev bilinciyle birlikte çalışmaları sağlanır (SDB2.1, SDB2.2, D16.3). Hayvanlarda başkalaşım konusunu video, poster vb. görsellere odaklanarak incelemeleri ve açıklamaları sağlanır (E3.2). Bunun yanında bir hayvanın yaşam döngüsüne ait süreçlerle ilgili dijital veya basılı materyaller incelenip bilgi toplamaları ve topladıkları bilgileri kaydetmeleri sağlanır (OB4, OB2). Bu görsellere ilişkin merak ettiği soruları sormaları öğrencilerden beklenir (E3.8). Ayrıca günlük hayattaki yaşantılar ve gözlemler sorgulanabilir. Açık uçlu sorularla öğrencilerin süreç hakkında yorum yapmaları ve bu aşamalara etki eden faktörleri belirlemeleri sağlanır. Ardından tüm sürece ilişkin elde ettikleri bilgileri yorumlayarak değerlendirmeleri öğrencilerden istenir (KB3.3). Bu süreçte planlı olmaları ve bilimsel bakış açısıyla yaklaşmaları öğrencilerden beklenir (D3.3). Süreç boyunca hayvan sevgisi ve hayvanları koruma konusuna vurgu yapılarak öğrencilerin bu konulara olumlu bakış açısıyla odaklanmaları sağlanır (D9.3, E3.2). Öğrencilerin öğrenme durumları çalışma kâğıtları vb. araçlarla değerlendirilebilir. FB.6.3.5 İnsanda üreme konusunda eşeyli üreme, eşey hücreleri (yumurta ve sperm) ve döllenme kavramları kısaca açıklanır. Bu konuda bilgi haritasından faydalanılabilir. Öğrencilerden insanda üremeyi sağlayan yapı ve organları poster üzerinde inceleyerek bu yapı ve organların özelliklerini belirlemeleri istenir (OB4, OB2). Süreçte öğrencilerin araştırmacı ve sorgulayıcı bakış açısıyla merak ettiği soruları sormaları sağlanır (E3.8, D3.3). Kendini ifade ederken olumlu iletişim kurmaları öğrencilerden beklenir (SDB2.1). Âdet döngüsü kavramı açıklanır. Ardından insanda sperm, yumurta, zigot, embriyo, fetüs ve bebek kavramlarını poster, video vb. üzerinden incelemeleri sağlanır (OB2, OB1). Öğrencilerden ulaştıkları bilgileri kendi ifadeleriyle görseller aracılığıyla özetleyerek kavramlar arası ilişkileri belirlemeleri istenir (OB4). Değerlendirme için eşleştirme testleri, tanılayıcı dallanmış ağaç vb. kullanılabilir. FB.6.3.6 Sinir sistemi ve yapılarını gösteren model, poster, video/animasyon vb. araçlar sınıf ortamına getirilerek öğrencilerin gözlemleyerek analiz etmeleri sağlanır (OB4, OB2). Sinir sistemi ile merkezî ve çevresel sinir sistemi tanıtılarak öğrencilerden bu yapı ve organlara ait nitelikleri tanımlamaları istenir. Öğrencilerin sinir sisteminin özelliklerini belirleyerek kaydetmeleri sağlanır. Ayrıca öğrencilerden süreçte odaklanmaları ve merak ettiği soruları sormaları beklenir (E3.2, E3.8). Öğrencilerin merkezî ve çevresel sinir sisteminin görevlerini açıklamaları beklenir. Merkezi sinir sisteminde bulunan yapılardan beyin, beyincik, omurilik soğanı ve omurilik ile bu yapıların görevlerine değinilir. Beynin ayrıntılı yapısına girilmez. Refleksler konusu ayrıntıya girilmeden verilir. Performans görevi olarak analojilerle sinir sistemini özetleyen poster tasarlamaları ve bu tasarımlarını sunmaları sağlanır (OB4). Süreçte grup olarak çalışmaları, sunma aşamasında yaratıcı fikirler üretmeleri sağlanır (SDB2.1, SDB2.2, E3.3). Bu tasarımlar analitik dereceli puanlama anahtarı ile değerlendirilebilir. Poster tasarlanmasında görsel sanatlar dersinden faydalanılabilir. Süreci değerlendirmede kısa cevaplı testler, açık uçlu sorular vb. kullanılabilir. FB.6.3.7 İç salgı bezleri kavram karikatürü, kavram haritası vb. yöntemlerle tanıtılır. Öğrencilerin bu süreçte merak ettikleri soruları sormaları sağlanır (E3.8). Hormonların tanımı yapılarak iç salgı bezlerinin yapılarına girilmeden büyüme, tiroksin, adrenalin, glukagon, insülin ve eşeysel hormonlara değinilir. Öğrencilerin iç salgı bezlerine ait model, poster vb. inceleyerek nedensel ilişkileri ortaya koymaları sağlanır (OB4). Bu süreçte analoji yöntemi kullanılarak öğrencilerin eğlenerek öğrenmeleri sağlanabilir (E2.5). Elde ettikleri bilgilerle var olan bilgilerini bütünleştirerek iç salgı bezlerinin uyumlu bir bütün oluşturduğu sonucuna ulaştırılır. Aile bireylerinin görevleri ve iç salgı bezleri arasında analoji yapılarak iç salgı bezlerinin uyumlu bir bütün oluşturduğu çıkarımı yaptırılır (D2.4). Öğrencilerin öğrenme durumları çalışma kâğıdı, açık uçlu sorular vb. araçlarla değerlendirilebilir. FB.6.3.8 Çocukluktan ergenliğe geçişte kavram karikatürü, rol yapma vb. yöntemlerle öğrencilerin oluşan değişimleri fark etmeleri sağlanır (SDB2.1, SDB2.2, E2.5). Ergenliğe geçişte gerçekleşen değişimlere yönelik tahminlerde bulunmaları öğrencilerden istenir (E3.5, OB1). Bu yöntemlerle öğrencilerin çocukluktan ergenliğe geçişte oluşan değişimler hakkında bilgi toplamaları sağlanır (OB7). Bu değişimlerdeki ortak ve ortak olmayan özellikleri belirlemeleri sağlanır. Belirledikleri özellikler arasında örüntüler oluşturarak değişimlere ilişkin kızlarda ve erkeklerde meydana gelen duygusal, bedensel vb. değişimler olarak önermeler oluşturmaları sağlanır. Bu süreçte grup çalışmasıyla yürütülüp belirlenen değişimler poster şeklinde özetlenir (SDB2.1, SDB2.2, OB1). Hazırlanan posterler analitik dereceli puanlama anahtarları ile değerlendirilebilir. Süreçte etkili iletişimle empati kurarak ve nezaketli davranarak bireysel farkları dikkate almaları sağlanır (D14.1). Öğrencilerden ergenlik döneminin sağlıklı bir şekilde geçirilebilmesi için nelerin yapılabileceğine ilişkin geçerli fikir oluşturmaları beklenir (SDB3.3). Bu süreçte öğrencilerin açık fikirli davranmaları, araştırmacı ve sorgulayıcı bakış açısıyla fikirlerini savunmaları sağlanır (E3.5, D3.3). Öğrencilerden ergenlik dönemiyle ilgili yanlış bilgilerinin farkına varıp öğrendiklerini uygulamaya özen göstermeleri, kişisel temizlik ve bakımında sorumlu davranmaları beklenir (D13.4, D18.1, SDB1.2). FB.6.3.9 Öğrenciler, denetleyici ve düzenleyici sistemlerin sağlığı için nelerin yapılabileceği konusunda bireysel araştırmalara ya da grup araştırmalarına yönlendirilir (SDB2.1, SDB2.2). Bilgiye ulaşırken kullanacakları araçları belirlemeleri sağlanır. Bilgiye ulaşmak için güvenilir genel ağlar, basılı kaynaklar, alan uzmanlarıyla görüşme vb. farklı araçlar ile bilgi toplayarak analiz etmeleri sağlanır (OB1, OB7). Bu süreçte gerçeği arama isteğiyle merak ettikleri soruları sorarak güvenilir genel ağ adreslerini belirlemeleri desteklenir (OB2, E3.4, E3.8). Ulaştıkları bilgilerin doğruluğunu sorgulamaları sağlanır. Bu doğrulamaları arkadaşlarıyla karşılaştırarak, öğretmenine danışarak ya da güvenilir kaynaklara başvurarak yapmaları sağlanabilir. Araştırma sürecinde öğrencilerden planlı olmaları ve bilimsel bakış açısıyla yaklaşmaları beklenir (D3.2). Öğrencilerden doğruladıkları bilgileri kaydetmeleri istenir. Bu aşamada raporlaştırmaları istenebilir. Öğrenci raporları performans görevi olarak ele alınıp kontrol listesi ile değerlendirilebilir.",
+        "Zenginleştirme": "Ergenlik döneminde yapılması gerekenlere ilişkin bir uzmanla röportaj yapıp arkadaşlarıyla paylaşmaları sağlanabilir. Denetleyici ve düzenleyici sisteme ait organlar ve iç salgı bezlerinin görevlerine ilişkin rol oynamayı gerektiren bir oyun yazdırılabilir. Oyunu sınıfta canlandırmaları teşvik edilebilir. Tohumun çimlenmesi konusunda dijital ortamda bir etkileşimli içerik/simülasyon/video tasarlamaları öğrencilerden istenebilir. Tohumların çimlenme süreleri ile ilgili poster oluşturmaları öğrencilerden istenebilir. Tohum gelişimini etkileyen çevresel faktörlerin neler olduğu ile ilgili araştırma raporu hazırlatılabilir. Bir ipek böceğinin bakımı üstlenilerek başkalaşım süreçlerini gözlemlemeleri sağlanabilir.",
+        "Destekleme": "Bitki ve hayvanlarda üreme, büyüme, gelişmeye ait dijital ortamda video/animasyon ya da etkileşimli içeriklerle bağımsız öğrenme fırsatı sağlanabilir. Denetleyici ve düzenleyici sistemlere ait yapılara ilişkin dijital ortamda videolar izletilebilir. Sistemlere ait yapıları ve özelliklerini inceleyebilecekleri simülasyonlar gösterilebilir. Görsele dayalı çalışma yaprakları hazırlanarak yapı ve organları, iç salgı bezlerini ve hormonları tekrar etmeleri sağlanabilir. Denetleyici ve düzenleyici sistemler ile ilgili 3B modeller gösterilebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.3.1. Eşeyli ve eşeysiz üremeyi karşılaştırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Eşeyli ve eşeysiz üreme ile ilgili özellikleri belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Eşeyli ve eşeysiz üreme ile benzerlikleri listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Eşeyli ve eşeysiz üreme ile ilgili farklılıkları listeler.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.2. Bitkilerde üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.3. Tohumun çimlenmesine etki eden faktörlere ilişkin hipotez oluşturabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Tohumun çimlenmesine etki eden faktörleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Tohumun çimlenmesine etki eden faktörlerin neden sonuç ilişkilerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Tohumun çimlenmesine etki eden faktörlere ait değişkenleri belirler.",
+          "bold": false
+        },
+        {
+          "text": "ç) Tohumun çimlenmesine etki eden faktörlere ait belirlediği değişkenleri kontrol eder.",
+          "bold": false
+        },
+        {
+          "text": "d) Tohumun çimlenmesine etki eden faktörlere ait önerme sunar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.4. Hayvanlarda üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.5. İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) İnsanda üremeyi sağlayan yapı ve organları poster/şema üzerinde belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.6. Sinir sisteminin görevlerini model üzerinde bilimsel olarak gözlemleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Sinir sisteminin özelliklerini tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Sinir sistemini model üzerinde inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Sinir sisteminin görevlerini açıklar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.7. İç salgı bezlerinin vücut için önemini yapılandırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) İç salgı bezlerini inceleyerek mantıksal ilişkiler ortaya koyar.",
+          "bold": false
+        },
+        {
+          "text": "b) İç salgı bezlerinin vücut için önemini uyumlu bir bütün olarak açıklar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.8. Çocukluktan ergenliğe geçişte oluşan bedensel ve ruhsal değişimleri genelleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Çocukluktan ergenliğe geçişte oluşan değişimler hakkında bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "b) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olanları belirler.",
+          "bold": false
+        },
+        {
+          "text": "c) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olmayanları belirler.",
+          "bold": false
+        },
+        {
+          "text": "ç) Çocukluktan ergenliğe geçişte oluşan değişimlerle ilgili örüntüler üzerinden genellemede bulunur.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.3.9. Denetleyici ve düzenleyici sistemlerin sağlığı için yapılması gerekenlerle ilgili bilgi toplayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Denetleyici ve düzenleyici sistemlerin sağlığı ile ilgili bilgiye ulaşmak için kullanacağı araçları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Denetleyici ve düzenleyici sağlığı hakkında bilgiler bulur.",
+          "bold": false
+        },
+        {
+          "text": "c) Denetleyici ve düzenleyici sağlığı konusunda bulduğu bilgileri doğrular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Denetleyici ve düzenleyici sağlığı konusunda ulaştığı bilgileri kaydeder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.3.1",
+          "codeAsPrinted": "FB.6.3.1",
+          "text": "Eşeyli ve eşeysiz üremeyi karşılaştırabilme",
+          "group": null,
+          "components": [
+            "a) Eşeyli ve eşeysiz üreme ile ilgili özellikleri belirler.",
+            "b) Eşeyli ve eşeysiz üreme ile benzerlikleri listeler.",
+            "c) Eşeyli ve eşeysiz üreme ile ilgili farklılıkları listeler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.2",
+          "codeAsPrinted": "FB.6.3.2",
+          "text": "Bitkilerde üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.",
+            "b) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.",
+            "c) Bitkilerde üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.3",
+          "codeAsPrinted": "FB.6.3.3",
+          "text": "Tohumun çimlenmesine etki eden faktörlere ilişkin hipotez oluşturabilme",
+          "group": null,
+          "components": [
+            "a) Tohumun çimlenmesine etki eden faktörleri tanımlar.",
+            "b) Tohumun çimlenmesine etki eden faktörlerin neden sonuç ilişkilerini belirler.",
+            "c) Tohumun çimlenmesine etki eden faktörlere ait değişkenleri belirler.",
+            "ç) Tohumun çimlenmesine etki eden faktörlere ait belirlediği değişkenleri kontrol eder.",
+            "d) Tohumun çimlenmesine etki eden faktörlere ait önerme sunar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.4",
+          "codeAsPrinted": "FB.6.3.4",
+          "text": "Hayvanlarda üreme, büyüme ve gelişme hakkında bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ait nitelikleri tanımlar.",
+            "b) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin veri toplar ve kaydeder.",
+            "c) Hayvanlarda üreme, büyüme ve gelişmeye etki eden temel faktörlere ilişkin verileri yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.5",
+          "codeAsPrinted": "FB.6.3.5",
+          "text": "İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) İnsanda üremeyi sağlayan yapı ve organları poster/şema üzerinde belirler.",
+            "b) İnsanda üremeyi sağlayan yapı ve organlar arasındaki ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.6",
+          "codeAsPrinted": "FB.6.3.6",
+          "text": "Sinir sisteminin görevlerini model üzerinde bilimsel olarak gözlemleyebilme",
+          "group": null,
+          "components": [
+            "a) Sinir sisteminin özelliklerini tanımlar.",
+            "b) Sinir sistemini model üzerinde inceler.",
+            "c) Sinir sisteminin görevlerini açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.7",
+          "codeAsPrinted": "FB.6.3.7",
+          "text": "İç salgı bezlerinin vücut için önemini yapılandırabilme",
+          "group": null,
+          "components": [
+            "a) İç salgı bezlerini inceleyerek mantıksal ilişkiler ortaya koyar.",
+            "b) İç salgı bezlerinin vücut için önemini uyumlu bir bütün olarak açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.8",
+          "codeAsPrinted": "FB.6.3.8",
+          "text": "Çocukluktan ergenliğe geçişte oluşan bedensel ve ruhsal değişimleri genelleyebilme",
+          "group": null,
+          "components": [
+            "a) Çocukluktan ergenliğe geçişte oluşan değişimler hakkında bilgi toplar.",
+            "b) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olanları belirler.",
+            "c) Çocukluktan ergenliğe geçişte oluşan değişimlerden ortak olmayanları belirler.",
+            "ç) Çocukluktan ergenliğe geçişte oluşan değişimlerle ilgili örüntüler üzerinden genellemede bulunur."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.3.9",
+          "codeAsPrinted": "FB.6.3.9",
+          "text": "Denetleyici ve düzenleyici sistemlerin sağlığı için yapılması gerekenlerle ilgili bilgi toplayabilme",
+          "group": null,
+          "components": [
+            "a) Denetleyici ve düzenleyici sistemlerin sağlığı ile ilgili bilgiye ulaşmak için kullanacağı araçları belirler.",
+            "b) Denetleyici ve düzenleyici sağlığı hakkında bilgiler bulur.",
+            "c) Denetleyici ve düzenleyici sağlığı konusunda bulduğu bilgileri doğrular.",
+            "ç) Denetleyici ve düzenleyici sağlığı konusunda ulaştığı bilgileri kaydeder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/fen-bilimleri-dersi/unite/412",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/412",
+      "title": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:31.495Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_412.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "4. Ünite: Işığın Yansıması Ve Renkler",
+      "subtitle": null,
+      "intro": "Bu ünitede ışığın yansımasını gözlemleme, düzgün ve pürüzlü yüzeylerden ışığın yansımasını sınıflandırma, ışığın yansımasında gelen ışın, yansıyan ışın, yüzey normali, gelme ve yansıma açısı arasındaki ilişkinin açıklanması amaçlanmaktadır. Bununla beraber, ayna çeşitlerinin gözlemlenerek görüntü özelliklerinin karşılaştırılması, düz, çukur ve tümsek aynanın kullanım alanlarına günlük yaşamdan örneklerin verilmesi, ışığın cisimler tarafından soğurulmasının açıklanması, gözlemler sonucunda beyaz ışığı oluşturan renklerin neler olduğu çıkarımının yapılması, cisimlerin farklı renkte görülebilmesi için ışığın yansıma ve soğurulma olaylarının açıklanması, günümüzde ve gelecekte güneş enerjisinden yararlanma yolları hakkında yorum yapılması amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "22",
+        "Alan Becerileri": "FBAB1. Bilimsel Gözlem, FBAB8. Bilimsel Çıkarım Yapma, FBAB12. Kanıt Kullanma",
+        "Kavramsal Beceriler": "KB3.3. Eleştirel Düşünme",
+        "Eğilimler": "E1.1 Merak, E1.2. Bağımsızlık, E2.2 Sorumluluk",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D5. Duyarlıklık, D10. Mütevazılık, D14. Saygı, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB7. Veri Okuryazarlığı, OB8. Sürdürülebilirlik Okuryazarlığı, OB9. Sanat Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Matematik",
+        "Beceriler Arası İlişkiler": "KB2.2. Gözlemleme, KB2.6. Bilgi Toplama, KB2.10. Çıkarım Yapma, KB2.14. Yorumlama, KB2.18. Tartışma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.4.1. Işığın farklı yüzeylerdeki yansıma olaylarına ilişkin bilimsel çıkarım yapabilmea) Işığın farklı yüzeylerdeki yansıma olaylarının niteliklerini tanımlar.b) şığın farklı yüzeylerdeki yansıma olayları ile ilgili veri toplar ve kaydeder.c) Işığın farklı yüzeylerdeki yansımasını düzgün ve dağınık yansıma olarak yorumlar ve değerlendirir. FB.6.4.2. Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişki ile ilgili kanıt kullanabilmea) Işığın yansımasına ilişkin deneysel verileri kaydeder.b) Işığın yansımasına ilişkin veri setleri oluşturur.c) Işığın yansımasına dair topladığı verilere dayalı açıklama yapar. FB.6.4.3. Günlük hayattaki ayna çeşitlerine ilişkin bilimsel çıkarım yapabilmea) Ayna çeşitlerinin niteliklerini deneyerek tanımlar.b) Ayna çeşitlerini kullanarak özelliklerine yönelik veri toplar ve kaydeder.c) Günlük yaşamdaki aynaları düz, çukur ve tümsek ayna olarak özelliklerine göre yorumlar ve değerlendirir. FB.6.4.4. Işığın madde ile etkileşimi sonucunda soğurulabileceğini bilimsel olarak gözlemleyebilmea) Işığın madde ile etkileşimine yönelik nitelikleri tanımlar.b) Işığın madde ile etkileşimine yönelik topladığı verileri kaydeder.c) Işığın madde tarafından soğurulabileceğini elde ettiği veriler doğrultusunda açıklar. FB.6.4.5. Beyaz ışığın tüm ışık renklerinin bileşiminden oluştuğuna ilişkin bilimsel çıkarım yapabilmea) Beyaz ışığı oluşturan nitelikleri tanımlar.b) Beyaz ışığın oluşumuna ilişkin topladığı verileri kaydeder.c) Beyaz ışığın oluşumuna dair verileri yorumlar ve değerlendirir. FB.6.4.6. Cisimlerin siyah, beyaz ve renkli görünmesinin nedenini gözlem verileriyle açıklayabilme a) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik nitelikleri tanımlar.b) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik veri toplar ve kaydeder.c) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik verileri açıklar. FB.6.4.7. Güneş enerjisinin günlük hayat ve teknolojideki yenilikçi uygulamalarına ilişkin eleştirel düşünebilmea) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin fikirleri sorgular.b) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin akıl yürütür.c) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin ulaştığı çıkarımları yansıtır.",
+        "İçerik Çerçevesi": "Işığın Yansıması Aynalar Işığın Soğurulması",
+        "Anahtar Kavramlar": "yansıma, gelen ışın, yansıyan ışın, yüzey normali, gelme açısı, yansıma açısı, düz ayna, çukur ayna, tümsek ayna, soğurma, cisimlerin siyah, beyaz ve renkli görünmesi",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktısının değerlendirilmesinde çalışma kâğıdı, yapılandırılmış grid, kontrol listesi, doğru-yanlış testleri ve açık uçlu sorular, tanılayıcı dallanmış ağaç, eşleştirme, dereceli puanlama anahtarı ve performans görevi kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri değerlendirme amaçlı kullanılabilir. Güneş enerjisinin gelecekte kullanımına ilişkin fikir üretmeleri ve sunmalarını içeren performans görevi verilebilir. Performans görevi analitik dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin ışığın doğrusal yolla yayıldığını, ışığın saydam olmayan cisimlerle etkileşimini bildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Işığın doğrusal yolla yayılmasına ilişkin temel kabullere sahip olma durumları açık uçlu sorularla açığa çıkarılabilir. Işığın saydam olmayan cisimlerle etkileşimi hakkındaki temel kabullere sahip olma durumları, görsel tamamlama, açık uçlu vb. sorularla sorgulanabilir.",
+        "Köprü Kurma": "Öğrencilere “Güneşli bir günde kolunuzdaki saate gelen güneş ışığının saat camından duvara yansımasını görmüşsünüzdür. Duvardaki ışıklı bölgenin yeri saatinizi hareket ettirdiğinizde değişir. Bu durumun nedeni ne olabilir?“ sorusu yöneltilerek ışığın yansıması arasında ilişki kurulabilir. Öğrencilere “Çaydanlık yüzeyindeki kendi görüntünüzü hiç gördünüz mü? Çaydanlıktaki görüntünüz ile boy aynasındaki görüntünüz arasındaki farklar nelerdir? Bu durumun nedeni ne olabilir?“ soruları yöneltilerek ayna çeşitlerine dikkat çekilebilir. Öğrencilere itfaiye ve ambulans yazılarının araçlarda neden ters yazıldığının sebebi sorularak bu durum aynalardaki görüntü oluşumu ile ilişkilendirilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.4.1 “Ay bir ışık kaynağı mıdır?“ vb. sorular ile tartışma ortamı yaratılarak yansıma kavramına dikkat çekilir (KB2.18, SDB2.1). Sınıfa getirilen düzgün ve buruşturulmuş alüminyum folyo öğrencilere verilir ve öğrencilerden folyoda oluşan görüntülerini gözlemleyerek ifade etmeleri beklenir (OB1, E1.2). Gözlemleri sonucunda öğrencilerden ışığın farklı yüzeylerdeki yansıma niteliğini tanımlamaları öğrencilerden istenir (KB2.2). Gruplara ayrılan öğrencilerden grup içinde görev bilinciyle yardımlaşmaları istenir (D16.3, D20.2). Öğrencilerin grup içinde birbirleriyle uyumlu bir şekilde davranmaları sağlanır (D10.3). Öğrencilerden düzgün ve buruşturulmuş alüminyum folyoya ışık tutulduğunda izlediği yolu gözlemleyerek veri toplamaları ve kaydetmeleri istenir (OB7, KB2.6). Öğrencilerden topladıkları verileri yorumlayıp değerlendirerek ışığın farklı yüzeylerde düzgün ve dağınık şekilde yansıdığı çıkarımını yapmaları beklenir (KB2.10). Düzgün ve dağınık yansıma konusu işlenirken özel ışınlarla görüntü çizimine ve matematiksel bağıntılara girilmez. Işığın yansıması konusu bağlamında ışığın madde üzerindeki etkisini anlamlandırmak için öğrencilere fotoğraf sanatında ışığın kullanımına verilen önem anlatılabilir ya da örnek sanatsal fotoğraf çekimleri gösterilir (OB9). Sürece ilişkin değerlendirmede TGA, yapılandırılmış grid vb. kullanılabilir. FB.6.4.2 Öğrenciler gruplara ayrılır. Her gruba ışık kaynağı ve ayna verilir. Işık kaynağından çıkan ışınların aynadan yansıdıktan sonra izledikleri yolu gözlemleyerek elde ettikleri veriler doğrultusunda çizmeleri öğrencilerden istenir (D16.3, OB7, KB2.2). Oluşturulan çizimler sınıfla paylaşılarak çizimlerin ortak ve farklı yönleri tartışmaya açılır (SDB2.1, SDB2.2, KB2.14). Öğrenci gruplarının aynaya gönderilen ışığın açısını değiştirerek gelme açısı, yansıma açısı değişimini tabloya kaydetmeleri ve arkadaşlarıyla karşılaştırarak paylaşımda bulunmaları sağlanır (OB7, OB1, SDB2.1, KB2.10). Elde ettikleri veriler sonucunda gelen ışın, yansıyan ışın, yüzey normali, gelme ve yansıma açıları arasındaki ilişkiyi açıklamaları öğrencilerden beklenir (OB1, KB2.10). Aynalarda özel ışınlarla görüntü çizimine ve matematiksel bağıntılara girilmez. Gözlem süreci kontrol listesiyle değerlendirilebilir. Tüm sürece ilişkin değerlendirmede çalışma kâğıdı kullanılabilir. FB.6.4.3 Sınıfa çeşitli aynalar getirilerek öğrenciler gruplara ayrılır ve öğrencilerden grup içinde yardımlaşmaları istenir (D20.1, SDB2.2). Ayna çeşitlerini inceleyerek niteliklerini tanımlamaları öğrencilerden istenir. Her gruba üç ayna çeşidi de verilerek aynalardaki görüntülerini gözlemlemeleri ve gözlem sonuçlarını kaydetmeleri öğrencilerden istenir (OB1,OB7, KB2.6). Gözlem sonuçlarını grup içerisinde tartışmaları öğrencilerden istenir (SDB2.1, KB2.18). Daha sonra öğrencilerden aynaları kendilerine yaklaştırıp uzaklaştırarak kendi görüntülerinin değişimini gözlemlemeleri ve gözlem verilerini tekrar kaydetmeleri istenir (D16.3,OB7). Gözlemleri sonucunda günlük hayatta kullanılan aynaları düz, tümsek ve çukur ayna olarak yorumlayıp değerlendirmeleri sağlanır (OB7, KB2.10). Düz ve Tümsek aynada görüntü özellikleri belirtilir. Çukur aynada cismin görüntüsünün özelliklerinin (büyük/küçük, ters/düz) cismin aynaya olan uzaklığına göre değişebileceği belirtilir. İbnülheysem’in ışık kaynaklarının yaydığı ışıkların düz ve küresel aynalarda nasıl yansıdıklarını deneysel olarak inceleyen ve yansıma kanununu geometrik yöntemlerle kanıtlayan Türk-İslam bilim insanlarından olduğu bilgisi öğrencilerle paylaşılır (D19.2). Değerlendirmede tanılayıcı dallanmış ağaç vb. ölçme araçları kullanılabilir. FB.6.4.4 “Yaz aylarında açık renkli kıyafetler tercih edilmesinin nedeni ne olabilir?“ vb. sorular ile ışığın soğurulması bağlamında sınıf içinde tartışılır (SDB2.1, KB2.18). Tartışma sonucunda öğrencilerden ışığın soğurulmasına yönelik nitelikleri tanımlamaları istenir (KB2.10). Öğrenciler gruplara ayrılarak ve grup içi görev paylaşımı yapılarak sorumluluk bilinciyle çalışmaları öğrencilerden beklenir (SDB2.1, SDB2.2, E2.2). Her grubun bu konu ile ilgili yaptırılacak etkinlik sonucunda sıcaklık değişimlerini tabloya kaydetmeleri öğrencilerden istenir (KB2.6). Öğrencilerden topladıkları verileri değerlendirerek ışığın madde tarafından soğurulabileceği çıkarımını yapmaları beklenir (OB1, OB7, KB2.10). Değerlendirmede eşleştirme, doğru-yanlış, açık uçlu sorular vb. kullanılabilir. FB.6.4.5 “Çevrenizde bulunan cisimleri renkli görmenizin nedeni sizce ne olabilir?“ vb. sorular ile beyaz ışığın tüm ışık renklerinden oluşumu bağlamında sınıf içinde tartışılır (SDB2.1, KB2.18). Günlük hayatta karşılaşılan benzer durumlardan verilen örnekler ile öğrencilerden beyaz ışığı oluşturan nitelikleri tanımlamaları beklenir (KB2.10). Öğrencilerden gruplara ayrılarak Newton çarkı yapmaları istenir. Newton çarkını döndürerek gözlemlerini kaydetmeleri istenir (OB7, KB2.2). Öğrencilerden topladıkları verileri yorumlayıp değerlendirerek beyaz ışığın tüm ışık renklerinin bileşiminden oluştuğu çıkarımını yapmaları beklenir (KB2.10). Işık spektrumuna ve ışık filtrelerine girilmeden ışığın ana ve ara renklerinden bahsedilir. Değerlendirmede eşleştirme, doğru-yanlış, açık uçlu soru vb. ölçme araçları kullanılabilir. FB.6.4.6 “Bazı zamanlarda satın aldığınız giysinin renginin evde mağazadakinden farklı olduğunu görebilirsiniz. Sizce bu durumun nedeni nedir?“ vb. sorular ile tartışma sağlanır (E1.1, SDB2.1, KB2.18). Öğrencilerden sınıfa getirilen beyaz renkli bir cisim Güneş ışığı ve kırmızı ışık altında gözlemleyerek cismin rengini ifade etmeleri beklenir (OB1, E1.2). Gözlemleri sonucunda öğrencilerden cisimlerin siyah, beyaz ve renkli görünmesine yönelik nitelikleri tanımlamaları istenir. Ali Kuşçu ve İbnülheysem’in renk-ışık ilişkisini yorumladıkları ve cisimlerin neden renkli görüldüğünü açıklayan Türk-İslam bilim insanları olduğu öğrencilere anlatılır (D19.2). Öğrenciler gruplara ayrılır. Öğrencilerden grup içi görev paylaşımı yaparak sorumluluk bilinciyle çalışmaları beklenir (SDB2.1, SDB2.2, E2.2). Öğrencilerden farklı renklerdeki cisimlere farklı renkte ışık tutmaları istenir. Renk filtrelerine girilmeden cisimlerin beyaz ışık ve renkli ışık altında hangi renkte gördüğünü gözlemleyerek tabloda kaydetmeleri öğrencilerden istenir ( OB7, KB2.6). Öğrencilerden topladıkları verileri değerlendirerek cisimlerin siyah, beyaz ve renkli görünmesinin nedenini ışığın yansıması ve soğurulmasıyla ilişkilendirerek açıklamaları beklenir (KB2.10). Tüm süreç değerlendirmesinde TGA, eşleştirme vb. ölçme araçları kullanılabilir. FB.6.4.7 “Kışın güneşli günlerde evinizin güneş ışığı alan odalarının güneş ışığı almayan diğer odalara göre daha sıcak olduğunu fark etmişsinizdir. Evin güneş ışığı alan odalarının almayan odalara göre daha sıcak olmasının nedeni nedir?“ vb. sorular ile sınıfta tartışma ortamı sağlanır (SDB2.1). Daha sonra öğrencilerden günlük yaşamda güneş enerjisinin kullanıldığı alanlara örnekler vermeleri istenir (OB1). Performans görevi olarak güneş enerjisinin gelecekte kullanımına ilişkin fikir üretmeleri ve sunmaları öğrencilerden istenebilir. Güneş enerjisi kullanımının yaygınlaşmasının insanlara ve doğaya sağladığı faydaları sorgulamaları öğrencilerden istenir (OB8, D5.2, KB2.14). Gelecekte güneş enerjisinden nasıl yararlanabileceğine ilişkin özgün fikir üretmeleri sağlanır. Öğrencilerden güneş enerjisinden gelecekte nasıl faydalanılabileceğine dair ürettiği özgün fikirleri arkadaşlarına sunmaları istenir (SDB3.3). Bu ortamın olumlu iletişim ve saygı çerçevesinde yürütülmesi sağlanır (SDB2.1, D14.1). Performans görevi analitik dereceli puanlama anahtarı ile değerlendirilebilir. Süreci değerlendirmek için tanılayıcı dallanmış ağaç, yapılandırılmış grid vb. ölçme araçları kullanılabilir.",
+        "Zenginleştirme": "Öğrencilerden ışığın yansımasında teknolojik gelişmeleri fiber optik kablo vb. araştırılması istenebilir. Öğrencilerden güneş fırını tasarlamaları istenebilir. Fotoğrafçıların kullandıkları spot lambaların monte edildiği çanağın parlak ve pürüzlü yapılmasının sebebine ilişkin araştırma görevi verilebilir. Öğrencilerden periskop modeli tasarlamaları istenebilir. Kahkaha aynalarının nasıl yapıldığına dair araştırma görevi verilebilir. Yakıt tanklarının beyaz, kar yağışının fazla olduğu yerlerde yol çizgilerinin sarı, araçlarda kedigözlerinin de sarı ve uzun olmasının nedeninin araştırılması öğrencilerden istenebilir.",
+        "Destekleme": "Öğrencilerin bireysel ilerlemelerine olanak tanıyan animasyon, simülasyon gibi dijital öğrenme araçları kullanılabilir. İçerikte anlamayı kolaylaştırmak için görsel ipuçları kullanılabilir. Günlük yaşamdan kolay ulaşılabilir çeşitli malzemelerle öğrencilerin ek etkinlikler yapmaları sağlanarak konu somutlaştırılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.4.1. Işığın farklı yüzeylerdeki yansıma olaylarına ilişkin bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Işığın farklı yüzeylerdeki yansıma olaylarının niteliklerini tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) şığın farklı yüzeylerdeki yansıma olayları ile ilgili veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Işığın farklı yüzeylerdeki yansımasını düzgün ve dağınık yansıma olarak yorumlar ve değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.4.2. Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişki ile ilgili kanıt kullanabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Işığın yansımasına ilişkin deneysel verileri kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "b) Işığın yansımasına ilişkin veri setleri oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Işığın yansımasına dair topladığı verilere dayalı açıklama yapar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.4.3. Günlük hayattaki ayna çeşitlerine ilişkin bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ayna çeşitlerinin niteliklerini deneyerek tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Ayna çeşitlerini kullanarak özelliklerine yönelik veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Günlük yaşamdaki aynaları düz, çukur ve tümsek ayna olarak özelliklerine göre yorumlar ve değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.4.4. Işığın madde ile etkileşimi sonucunda soğurulabileceğini bilimsel olarak gözlemleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Işığın madde ile etkileşimine yönelik nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Işığın madde ile etkileşimine yönelik topladığı verileri kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Işığın madde tarafından soğurulabileceğini elde ettiği veriler doğrultusunda açıklar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.4.5. Beyaz ışığın tüm ışık renklerinin bileşiminden oluştuğuna ilişkin bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Beyaz ışığı oluşturan nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Beyaz ışığın oluşumuna ilişkin topladığı verileri kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Beyaz ışığın oluşumuna dair verileri yorumlar ve değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.4.6. Cisimlerin siyah, beyaz ve renkli görünmesinin nedenini gözlem verileriyle açıklayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik verileri açıklar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.4.7. Güneş enerjisinin günlük hayat ve teknolojideki yenilikçi uygulamalarına ilişkin eleştirel düşünebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin fikirleri sorgular.",
+          "bold": false
+        },
+        {
+          "text": "b) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin akıl yürütür.",
+          "bold": false
+        },
+        {
+          "text": "c) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin ulaştığı çıkarımları yansıtır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.4.1",
+          "codeAsPrinted": "FB.6.4.1",
+          "text": "Işığın farklı yüzeylerdeki yansıma olaylarına ilişkin bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Işığın farklı yüzeylerdeki yansıma olaylarının niteliklerini tanımlar.",
+            "b) şığın farklı yüzeylerdeki yansıma olayları ile ilgili veri toplar ve kaydeder.",
+            "c) Işığın farklı yüzeylerdeki yansımasını düzgün ve dağınık yansıma olarak yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.4.2",
+          "codeAsPrinted": "FB.6.4.2",
+          "text": "Işığın yansımasında gelen ışın, yansıyan ışın ve yüzeyin normali arasındaki ilişki ile ilgili kanıt kullanabilme",
+          "group": null,
+          "components": [
+            "a) Işığın yansımasına ilişkin deneysel verileri kaydeder.",
+            "b) Işığın yansımasına ilişkin veri setleri oluşturur.",
+            "c) Işığın yansımasına dair topladığı verilere dayalı açıklama yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.4.3",
+          "codeAsPrinted": "FB.6.4.3",
+          "text": "Günlük hayattaki ayna çeşitlerine ilişkin bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Ayna çeşitlerinin niteliklerini deneyerek tanımlar.",
+            "b) Ayna çeşitlerini kullanarak özelliklerine yönelik veri toplar ve kaydeder.",
+            "c) Günlük yaşamdaki aynaları düz, çukur ve tümsek ayna olarak özelliklerine göre yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.4.4",
+          "codeAsPrinted": "FB.6.4.4",
+          "text": "Işığın madde ile etkileşimi sonucunda soğurulabileceğini bilimsel olarak gözlemleyebilme",
+          "group": null,
+          "components": [
+            "a) Işığın madde ile etkileşimine yönelik nitelikleri tanımlar.",
+            "b) Işığın madde ile etkileşimine yönelik topladığı verileri kaydeder.",
+            "c) Işığın madde tarafından soğurulabileceğini elde ettiği veriler doğrultusunda açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.4.5",
+          "codeAsPrinted": "FB.6.4.5",
+          "text": "Beyaz ışığın tüm ışık renklerinin bileşiminden oluştuğuna ilişkin bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Beyaz ışığı oluşturan nitelikleri tanımlar.",
+            "b) Beyaz ışığın oluşumuna ilişkin topladığı verileri kaydeder.",
+            "c) Beyaz ışığın oluşumuna dair verileri yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.4.6",
+          "codeAsPrinted": "FB.6.4.6",
+          "text": "Cisimlerin siyah, beyaz ve renkli görünmesinin nedenini gözlem verileriyle açıklayabilme",
+          "group": null,
+          "components": [
+            "a) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik nitelikleri tanımlar.",
+            "b) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik veri toplar ve kaydeder.",
+            "c) Cisimlerin siyah, beyaz ve renkli görünmesine yönelik verileri açıklar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.4.7",
+          "codeAsPrinted": "FB.6.4.7",
+          "text": "Güneş enerjisinin günlük hayat ve teknolojideki yenilikçi uygulamalarına ilişkin eleştirel düşünebilme",
+          "group": null,
+          "components": [
+            "a) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin fikirleri sorgular.",
+            "b) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin akıl yürütür.",
+            "c) Güneş enerjisinin günlük yaşam ve teknolojideki yenilikçi uygulamalarına ilişkin ulaştığı çıkarımları yansıtır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/fen-bilimleri-dersi/unite/413",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/413",
+      "title": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:32.994Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_413.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "5. Ünite: Maddenin Ayırt Edici Özellikleri",
+      "subtitle": null,
+      "intro": "Bu ünitede maddenin ayırt edici özelliklerinden genleşme ve büzülme ile erime, donma ve kaynama noktasına yönelik deneyler yapılması amaçlanmaktadır. Ayrıca tümdengelimsel akıl yürütülerek maddelerin yoğunluklarının hesaplanması ve maddenin hâllerine göre yoğunluklarının karşılaştırılarak bu durumun canlılar için önemi hakkında çıkarımlarda bulunulması amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "32",
+        "Alan Becerileri": "FBAB3. Bilimsel Gözleme Dayalı Tahmin, FBAB4. Bilimsel Veriye Dayalı Tahmin, FBAB7. Deney Yapma, FBAB8. Bilimsel Çıkarım Yapma, FBAB9. Bilimsel Model Oluşturma, FBAB11. Tümdengelimsel Akıl Yürütme",
+        "Kavramsal Beceriler": "-",
+        "Eğilimler": "E1.1. Merak, E1.3. Azim ve Kararlılık, E1.4. Kendine İnanma (Öz Yeterlilik), E2.2. Sorumluluk, E2.3. Girişkenlik, E2.5. Oyunseverlik, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.6. Analitiklik, E3.7. Sistematiklik, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.1. Uyum, SDB3.2. Esneklik",
+        "Değerler": "D1. Adalet, D3. Çalışkanlık, D4. Dostluk, D5. Duyarlılık, D6. Dürüstlük, D12. Sabır, D14. Saygı, D18. Temizlik, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Matematik",
+        "Beceriler Arası İlişkiler": "KB2.4. Çözümleme, KB2.13. Yapılandırma, KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.1. Tümevarımsal Akıl Yürütme), KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme)",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.5.1. Isı etkisiyle maddelerin genleşip büzüleceğine yönelik bilimsel gözleme dayalı tahmin edebilmea) Ön bilgi ve deneyimiyle maddelerin genleşip büzüleceğine yönelik önerme oluşturur.b) Gözleme dayalı olan ve olmayan günlük yaşam ile ilişkili önermeleri karşılaştırır.c) Tahminlerini temellendirmek için gözlem verilerinden sonuç çıkarır.ç) Günlük yaşam ile ilişkili gözlemlenmemiş duruma ilişkin tahminde bulunur.d) Tahminlerin geçerliğini sorgular. FB.6.5.2. Maddelerin erime, donma ve kaynama noktasını gösteren deney yapabilmea) Maddelerin erime, donma ve kaynama noktasını gösteren deney tasarlar.b) Deney ile ilgili ölçme ve veri analizi yapar. FB.6.5.3. Yoğunluğa ilişkin hesaplamalar yaparak bilimsel veriye dayalı tahmin edebilmea) Yoğunluğa ilişkin verilere veya ön bilgilerine dayalı önerme oluşturur.b) Yoğunluğa ilişkin veriye dayalı ve dayalı olmayan önermeleri karşılaştırır.c) Yoğunluğa ilişkin hesaplama ve tahmin yapar.ç) Tahminlerin geçerliğini sorgular. FB.6.5.4. Deneyler sonucunda çeşitli maddelerin yoğunluklarına ilişkin tümdengelimsel akıl yürütebilmea) Çeşitli maddelerin yoğunluklarına ilişkin hipotezler kurarak test eder.b) Geçerli hipotezleri yeni durumları açıklamak için kullanır. FB.6.5.5. Suyun katı ve sıvı hâllerine ait yoğunlukları karşılaştırarak bu durumun canlılar için önemi hakkında bilimsel çıkarımlar yapabilmea) Suyun katı ve sıvı hâlleri ile ilgili nitelikleri tanımlar.b) Suyun katı ve sıvı hâllerine ait yoğunlukları ile ilgili veri toplar ve kaydeder.c) Suyun katı ve sıvı hâllerine ait yoğunluk farkının canlılar için önemli olduğunu yorumlar ve değerlendirir. FB.6.5.6. Yoğunluk ile ilgili bilimsel model oluşturabilmea) Yoğunluk ile ilgili model önerir.b) Yeni kanıtlarla modeli yeniler.",
+        "İçerik Çerçevesi": "Genleşme ve Büzülme Maddenin Hâl Değişim Noktaları Yoğunluk",
+        "Anahtar Kavramlar": "genleşme, büzülme, erime noktası, donma noktası, kaynama noktası, yoğunluk",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktılarının değerlendirilmesinde kısa cevaplı test, doğru-yanlış testi, yazılı yoklama ve eşleştirme testi kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri değerlendirme amaçlı kullanılabilir. Farklı saf maddelerin erime, donma ve kaynama noktalarının birbirinden farklı olduğunu gösterme üzerine performans görevi olarak deneyler verilebilir. Performans görevi bütüncül dereceli puanlama anahtarları yoluyla değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin kütle ve hacim konularını öğrendikleri kabul edilmektedir. Kütlenin nasıl ölçülebileceği konusunda öğrencilerin ön öğrenmelere sahip oldukları kabul edilmektedir. Öğrencilerin katı, sıvı, gaz, erime, donma, kavramlarını bildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Kütle ve hacim ile kütlenin nasıl ölçülebileceğine ilişkin temel kabul düzeylerini belirlemek için açık uçlu sorular yöneltilebilir. Öğrencilerin katı, sıvı, gaz, erime, donma, kavramlarına ilişkin temel kabullere sahip olma durumları kısa cevaplı, eşleştirme, boşluk doldurma veya açık uçlu sorularla belirlenebilir.",
+        "Köprü Kurma": "Günlük yaşamdan ortam sıcaklığının değişmesine bağlı olarak elektrik tellerinin veya tren raylarının uzayıp kısalması, kavanoz kapağının sıkışması, termometrenin içindeki sıvının yükselip alçalması gibi gözlenebilen örnekler verilebilir. Suyun katı ve sıvı hâldeki yoğunluğunun karşılaştırılabileceği örnekler sunularak öğrencilerin günlük hayatla ilişki kurmaları sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.5.1 Öğrencilere maddelerin ısı alışverişi sonucu hâl değiştirerek tanecikleri arasındaki mesafenin değiştiği hatırlatılır (SDB1.1). Maddelerin ısı etkisiyle her zaman hâl değiştirip değiştirmedikleri sorulur (E3.8). Hâl değiştirmediği durumlarda tanecikler arasındaki mesafe hakkında tahminlerde bulunmaları öğrencilerden istenir (OB1, E3.4). Maddelerin ısı alışverişi sonucu tanecikler arasındaki mesafenin az da olsa değişebileceği, buna bağlı olarak hacimsel büyüklüklerinde de değişiklikler olabileceğine değinilir. Öğrencilere maddenin ortak özelliklerinden birinin hacim olduğu ve hacmin maddenin boşlukta kapladığı yer olduğu hatırlatılır. Öğrencilerden bilimsel gözleme dayalı tahmin etmelerine yönelik etkinliklerde maddelerin ısınıp soğuması sonucu genleşip büzüleceğine ilişkin önermeler oluşturmaları beklenir (OB1). Günlük yaşamdan ortam sıcaklığının değişmesine bağlı olarak çeşitli örnekler verilir. Sıcak ve soğuk su dolu kaplara ağız kısmına balon takılmış boş cam şişeleri daldırılabilir. Balonlardaki hacim değişiklikleri karşılaştırılabilir. Balonların üzerine gülen yüz çizilerek öğrenme süreci eğlenceli hâle getirilebilir (E2.5). Gravzant halkası deneyi ile kürenin halkadan geçiş durumları incelenebilir. Öğrencilerden örnekler ve etkinliklerden elde ettikleri gözlemlere göre ısı alan maddelerin genleşebileceği, ısı veren maddelerin ise büzülebileceği sonucunu çıkarmaları beklenir (OB1, OB4). Kalabalık sınıflarda öğrenciler gruplara ayrılabilir. Bu süreçte, iş birlikli öğrenme teknikleri kullanılarak sorumluluklar verilen öğrencilerin birlikte çalışmaları sağlanabilir. Öğrencilerden etkinliğin yapılması sürecinde karşılaştıkları her türlü olumsuzluk, engel ve zorluğu yılmaksızın aşmaları beklenir (E1.3, D12.1, SDB3.2). Grup içinde aktif rol almaları ve ekip arkadaşları ile yardımlaşmaları öğrencilerden istenir (D20.2, SDB2.2). Öğrencilerden sınıfta yapılan etkinlikler sonunda duygu ve düşüncelerini paylaşmaları istenir (SDB2.1). Günlük yaşamdan gözlemlenmemiş durumlara ilişkin kayaların günlük sıcaklık farkından kaynaklanan etkiler sonucunda ufalanarak çöl kumlarına dönüşmesi, rayların bozulmaması için aralarına boşluk bırakılması, termostatlarda sıcaklık kontrolünün sağlanması, binaların metal iskeletlerinde esneme payı bırakılması vb. örnekler verilir. Örneklerden yola çıkarak ısı etkisiyle maddelerin genleşip büzülebileceğine yönelik tahminlerde bulunması öğrencilerden istenir (OB1). Maddelerin diğer maddelerden farklı olduğunu anlamaya yarayan özelliklerin maddenin ayırt edici özellikleri olduğu vurgulanır. Eşit uzunluktaki farklı saf katı çubukların eşit süre özdeş ısıtıcılarla ısıtılması durumunda genleşme miktarlarının farklı olacağından bahsedilerek genleşmenin saf maddeler için ayırt edici bir özellik olduğuna değinilir. Örnek olarak farklı cinslerde metal çiftlerine ısı verilerek genleşme miktarlarını gözlemeleri öğrencilerden istenir (SDB1.2). Deney sonunda öğrencilerden oluşturdukları ölçütlere göre sorgulama yapmaları ve ulaştıkları çıkarımları yansıtmaları beklenir (OB1, OB4). Yazılı yoklama, eşleştirme soruları ile öğrencilerin genleşme ve büzülmeyle ilgili öğrenmeleri yoklanabilir. FB.6.5.2 Öğrencilere maddenin tanecikli yapısı ile ilgili açık uçlu sorular yöneltilebilir. Maddenin tanecikli yapısını farklı materyaller kullanarak modellemeleri sağlanır (OB1). Aynı ya da farklı renkteki toplar vb. materyaller kullanılarak element, bileşik ve karışım kavramlarına girilmeden saf ve saf olmayan maddeler açıklanır. Saf ve saf olmayan maddelerin her ikisinin de taneciklerden oluştuğunu keşfetmeleri sağlanır (OB1). Öğrencilerden suyun erime, donma ve kaynama noktasını gösteren doğrulama deneyi yapabilmeleri istenir. Performans görevi olarak öğrencilerden farklı saf maddelerin erime, donma ve kaynama noktalarının birbirinden farklı olduğunu gösterecek deney düzeneği kurmaları beklenir (SDB1.2). Alternatif bir uygulama olarak konu ile ilgili dijital içerik ve videolar ile birlikte sanal laboratuvarlardan faydalanılabilir (OB2). Bu süreçte, iş birlikli öğrenme tekniklerinden takım-oyun-turnuva, öğrenci takımları başarı bölümleri vb. kullanılarak öğrencilere sorumluluklar verilip birlikte çalışmaları sağlanır (SDB2.2, D4.2). Deney düzeneği kurarken öğrencilerin farklı saf maddeleri (saf su, laurik asit, stearik asit vb.) kullanmaları sağlanabilir. Katı maddelere ısı verildiğinde erimeye başladıkları anda oluşan sıvının sıcaklığı termometre ile ölçülerek not etmeleri öğrencilerden istenir. Farklı saf maddelerin ısı aldığında farklı sıcaklıklarda eridiği çıkarımına ulaştırılır ve farklı saf maddelere ait erime noktası örnekleri de verilerek tablo oluşturmaları öğrencilerden istenir (OB7). Eriyen bu maddeler soğutularak donma noktaları da karşılaştırılır ve aynı saf maddenin erime ve donma noktalarının birbirine eşit olduğu vurgulanır. Benzer deneyde, sıvılara uygulanan ısıtma işlemine devam edilerek kaynama noktalarına ulaşmaları sağlanır. Öğrencilerden kaynama noktasının da ayırt edici bir özellik olduğunu fark etmeleri beklenir (E1.4, E3.6, E3.7). Elde edilen veriler, TGA, V diyagramı gibi teknikler kullanılarak raporlaştırılabilir. Deney boyunca birbirlerinin performanslarını değerlendirmede akran değerlendirme formu kullanılabilir. Bu süreçte öğrencilerin tarafsız davranmaları sağlanır (D6.2, D1.2). Deney sürecinde öğrenci raporları analitik dereceli puanlama anahtarı yoluyla değerlendirilebilir. Sonuç değerlendirme için doğru-yanlış testleri, kısa cevaplı testler vb. kullanılabilir. FB.6.5.3 Kütle ve hacim ile ilgili hazırbulunuşluk düzeylerini belirlemek için açık uçlu sorular yöneltilebilir (SDB2.1). Bu süreçte cisimlerin kütle ve hacimlerini ölçebilecekleri araçlar tanıtılır ve ölçüm birimleri belirtilir. Öğrenciler gruplara ayrılır. Gruplara malzemeler dağıtılır (SDB2.2). Silgi, anahtarlık, misket, koni, silindir, küp, taş vb. maddelerin eşit kollu terazide kütlesi ölçülerek kaydedilir. Kütle birimi olarak gram (g) kullanılır. Hacim ölçümünde sıvı maddeler için dereceli silindir ve birim olarak santimetreküp (cm3) kullanılır. İçi su dolu dereceli silindire suda çözünmeyen silgi, anahtarlık, misket, koni, silindir, küp, taş vb. cisimler atılarak yükselen sıvı seviyesinin cismin hacmi olduğu belirtilir. Suda çözünmeyen katıların hacmi bulunurken katı cismin dereceli silindire sığabilmesine ve su seviyesinin taşmayacak şekilde olmasına dikkat edilir. Hacim hesaplamasında basit bir deney yaptırılabilir. Öğrencilerin dereceli silindiri belirli seviyeye kadar su doldurması sağlanır. İçerisine bırakılan katı cisim sonrası sıvı seviyesinde yükselme olduğunu gözlemlemeleri sağlanır. Son hacim ile ilk hacim farkını almaları sağlanarak bu hacmin katı cisme ait olduğu belirtilir. Bu konuda taşırma kabı da kullanılabilir. Öğrencilerin taşırma kabını tamamen suyla doldurması sağlanır. Kabın içerisine bırakılan katı cisim sonrası taşan suyun başka bir kapta toplanması sağlanır. Taşan su dereceli silindire boşaltılarak hacmini gözlemeleri sağlanır. Elde edilen hacmin katı cismin hacmine ait olduğu belirtilir (KB2.16.1). Saf bir maddenin kütlesi arttıkça hacminin de aynı oranda artacağı belirtilerek yoğunluk kavramı açıklanır. Farklı saf maddelerin yoğunlukları ile ilgili önermeler oluşturmaları öğrencilerden istenir. Farklı maddelerin yoğunluğuna ilişkin veriye dayalı önermeleri karşılaştırmaları sağlanır (OB1). Eşit kollu terazi ve dereceli silindirden elde edilen verileri kullanarak öğrencilerden farklı maddelerin yoğunluklarını hesaplamaları istenir. Bu süreçte maddenin yoğunluğunun hesaplanmasında kütlenin hacim ile oranlanması tümdengelimsel olarak verilir. Farklı maddelerin yoğunlukları hesaplatılarak kütle-hacim-yoğunluk tabloları oluşturarak analiz etmeleri öğrencilerden istenir (OB7). Aynı sıvıların farklı miktarları alınarak öğrencilere yoğunluk karşılaştırması yaptırılır. Öğrencilerden aynı cins saf maddelerin yoğunluklarının birbiri ile aynı olduğunu tahmin etmeleri istenir. Farklı saf maddelerin yoğunluklarının farklı olduğu önermesi ile yoğunluğun maddenin ayırt edici özelliklerinden biri olduğuna değinilir. Tahminlerinin geçerliğini elde ettiği sonuçlarla karşılaştırarak sorgular. Etkinlik bitiminde kullandıkları malzemeleri ve ortamı düzenli ve temiz tutmaları öğrencilerden istenir (D18.2). Öğrencilerin çalışma yaprakları dereceli puanlama anahtarları ile değerlendirilebilir. FB.6.5.4 Gruplara ayrılan öğrencilerden çeşitli maddelerin yoğunluklarına ilişkin hipotezler kurmaları istenir (SDB2.2). Bu süreçte buluş yoluyla öğretim stratejisi kullanılarak öğrencilerin farklı maddelerin birbiri ile etkileşimlerini keşfetmeleri sağlanabilir. Bu süreçte sıvı-sıvı, sıvı-katı maddelerin kullanıldığı yoğunluk kıyaslamaları ile öğrencilerden betimleme yapmaları istenebilir. Öğrencilerden farklı örneklerle karşılaştırma yapmaları beklenir (OB1). Örneğin “Farklı cins maddelerin yoğunlukları da farklıdır.“ hipotezini test etmek için eşit hacimdeki farklı cins sıvıların kütleleri ölçülerek sıvıların yoğunluklarını karşılaştırmaları öğrencilerden istenir (KB2.16.2). Birbiri içinde karışmayan su, zeytinyağı gibi sıvıları aynı kaba koyarak hesaplamalarının doğruluğunun somut olarak görülmesi sağlanır (OB7). Deneyde kullanılan sıvı yağların lavaboya dökülmemesi konusunda öğrenciler uyarılır (D5.2). Kullanılmış sıvı yağların çevre kirliliğine neden olmaması için ilgili kuruluşlara verilerek geri dönüşümün sağlanabileceğine değinilir (SDB2.3, E2.2). Suyun kaldırma kuvvetine girilmeden öğrencilerden suda çözünmeyen farklı katı maddelerin suya atılması durumunda nasıl konumlanacaklarını tahmin etmeleri istenir (E3.4). Örneğin tahta parçası, silgi, taş, misket vb. maddeler su içerisine atılarak batma, askıda kalma, yüzme durumları gözlenir. Öğrencilerden katı maddelerin sıvı içerisindeki konumları göz önünde bulundurularak yoğunluklarını karşılaştırmaları beklenir. Farklı saf maddelere ait bilimsel olarak hesaplanmış yoğunluk tabloları kullanılarak öğrencilerden geliştirdikleri hipotezleri açıklamaları istenir (OB1, D3.3). Öğrencilerden yoğunluk konusu ile ilgili kavram haritası vb. çizmeleri istenebilir. Öğrenci çizimleri analitik dereceli puanlama anahtarları kullanılarak değerlendirilebilir. FB.6.5.5 Öğrencilere günlük yaşamdan kışın hava sıcaklığının çok düşmesi durumunda su borusunun neden patladığı, dondurucuya konulan maden suyu şişesinin donduğunda neden patladığı vb. sorular yöneltilir (E1.1). Suyun katı ve sıvı hâllerine ait niteliklerin gözlemlenerek algılanması için deney yaptırılabilir (OB4). Bir bardağa belli bir seviyeye kadar su doldurularak su seviyesi işaretlenir ve derin dondurucuya konulur. Su tamamen donduğunda su seviyesi yeniden gözlenir ve suyun katı hâlinin belirlenen çizginin üstüne çıktığını gözlemlemeleri sağlanır (SDB3.1). Öğrencilerden daha önce öğrendikleri yoğunluk hesaplamasından yararlanarak buzun ve suyun yoğunluklarını hesaplamaları ve verileri kaydetmeleri beklenir (KB2.4, OB1). Öğrencilerden bir bardak içerisine atılan buzun yüzdüğü gözletilerek buzun yoğunluğunun suyun yoğunluğundan az olduğu sonucuna ulaşmaları beklenebilir. Suyun yüzeyinden donmaya başladığı dijital içeriklerden yararlanılarak öğrencilere gösterilebilir (OB2). Dünya’nın büyük bir kısmının göl, deniz, okyanus gibi sulardan oluştuğu ve buralarda çok sayıda canlı çeşidinin yaşadığı vurgulanır. Buz ile suyun yoğunluklarının farklı olmasının sularda yaşayan canlıları nasıl etkileyebileceği sorulabilir ve öğrencilerin beyin fırtınası tekniği yapmaları sağlanabilir (E3.4). Öğrencilerden verileri yorumlayarak “Buzlanmanın su yüzeyinde olmasının su derinliklerinde sıcaklığın belli bir düzeyde kalmasını sağladığı ve böylece canlıların yaşamlarını sürdürebildiği değerlendirmesine ulaşmaları beklenir (OB1).Öğrencilerden çalışma yapraklarında suyun katı ve sıvı hâllerine ait yoğunluk farkının canlılar için önemini kendi cümleleri ile açıklamaları istenebilir veya vızıltı grupları oluşturularak küçük öğrenci gruplarının konu üzerinde belirli bir süre tartışmaları sağlanabilir (D14.1). Öğrencilerin çalışma yaprakları dereceli puanlama anahtarları ile değerlendirilebilir. FB.6.5.6 Bir mühendislik ve tasarım uygulaması olarak öğrencilerden suda yüzen bir taka (tekne) yapmaları beklenebilir. Taka yapımı etkinliği ile sadece eğlenceli bir etkinlik değil aynı zamanda günlük yaşamda karşılaştıkları olaylara yönelik öğrencilerin yaratıcı çözümler üretmeleri sağlanır (E2.3, OB1). Bu etkinlikte aynı zamanda öğrenciler Karadeniz’in fırtınalı coğrafyasına dayanıklı bir tasarım olarak “taka“yı keşfedeceklerdir. “Üç Tarafı Denizlerle Çevrili Türkiye’m“ adlı bir metin üzerinden Türkiye’nin coğrafi konumundan dolayı üç tarafının denizlerle çevrili olduğu vurgulanırken Piri Reis, Çaka Bey, Barbaros Hayrettin Paşa gibi birçok Türk denizcisinin olduğu açıklanır. Bunun yanında “Mavi Vatan“ vurgusu yapılabilir. Kültürümüzde önemli bir yer tutan ve kendinden sonraki araştırmalara öncü olan “Piri Reis’in dünya haritası“ndan kısaca bahsedilir (D19.2, OB5). Bu etkinlikte kolayca temin edilebilecek malzemelerle teknenin taşıyabileceği yük miktarı ile teknenin şekli ve hacmi arasında bağlantı kurmaları öğrencilerden istenir. Günlük yaşamdan kolay ulaşılabilir maddeler sağlanarak öğrenciler iş birlikli öğrenme gruplarına ayrılır. Mühendislik ve tasarım süreci boyunca öğrencilerden yaratıcı model oluşturmaları için hayal kurmaları, hipotezler üretmeleri, plan yapmaları, tasarım oluşturmaları, tasarımlarını deneyip yeniden geliştirmeleri ve tasarımlarını sunmaları beklenir (E3.3, D3.2). Öğrencilerin süreci bilimsel olarak yürütmelerine yönelik yoğunluk kavramının nelere bağlı olduğu ile ilgili yönlendirmeler yapılır (D3.3). Bu süreçte bir madenî paranın batarken metalden yapılan devasa bir geminin nasıl yüzebildiği gibi sorular sorulur (KB2.13). Aynı amaç için geliştirilmiş diğer öğrenci modelleri ile geliştirilen modeli karşılaştırarak alınan geri bildirimlere göre tasarımlarını yeniden geliştirmeleri sağlanır (OB7). Geliştirilen tasarımları, öğrencilerden birbirleriyle paylaşmaları istenir (SDB2.1). Geliştirilen öğrenci modelleri analitik dereceli puanlama anahtarı yoluyla değerlendirilebilir.",
+        "Zenginleştirme": "Yaz ve kış mevsimlerinde ısı etkisinden kaynaklanan boyut değişikliklerinin köprüler, kuleler vb. yapılara zarar vermesinin önüne geçmek için mimarların ne tür unsurlara dikkat ettikleri ile ilgili okuma etkinlikleri verilebilir. Gemilerin insanlık için önemi, yeni kıtaların keşfi gibi tarihte yaşanan ilginç olaylara yönelik bir araştırma ödevi verilebilir. Ulaşılan bilgiler sınıf ile paylaşılabilir. Termometre çeşitleri ve çalışma prensibi ile ilgili araştırma çalışması yapılabilir. Sıvılı termometrelerin kullanılamadığı durumlarda diğer termometre çeşitlerinin hangi amaçla kullanıldığına dair grupların birlikte araştırma yapmaları ve bir sıvılı termometre tasarlamaları öğrencilerden istenebilir.",
+        "Destekleme": "Öğrencilerin maddelerin erime, donma ve kaynama noktasını gösteren bireysel öğrenmelerine olanak tanıyan animasyon, simülasyon gibi dijital öğrenme araçları uygulanabilir. Deney aşamaları için ek açıklamalar ve yönlendirmeler yapılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.5.1. Isı etkisiyle maddelerin genleşip büzüleceğine yönelik bilimsel gözleme dayalı tahmin edebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ön bilgi ve deneyimiyle maddelerin genleşip büzüleceğine yönelik önerme oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "b) Gözleme dayalı olan ve olmayan günlük yaşam ile ilişkili önermeleri karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Tahminlerini temellendirmek için gözlem verilerinden sonuç çıkarır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Günlük yaşam ile ilişkili gözlemlenmemiş duruma ilişkin tahminde bulunur.",
+          "bold": false
+        },
+        {
+          "text": "d) Tahminlerin geçerliğini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.5.2. Maddelerin erime, donma ve kaynama noktasını gösteren deney yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Maddelerin erime, donma ve kaynama noktasını gösteren deney tasarlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Deney ile ilgili ölçme ve veri analizi yapar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.5.3. Yoğunluğa ilişkin hesaplamalar yaparak bilimsel veriye dayalı tahmin edebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yoğunluğa ilişkin verilere veya ön bilgilerine dayalı önerme oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "b) Yoğunluğa ilişkin veriye dayalı ve dayalı olmayan önermeleri karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Yoğunluğa ilişkin hesaplama ve tahmin yapar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Tahminlerin geçerliğini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.5.4. Deneyler sonucunda çeşitli maddelerin yoğunluklarına ilişkin tümdengelimsel akıl yürütebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Çeşitli maddelerin yoğunluklarına ilişkin hipotezler kurarak test eder.",
+          "bold": false
+        },
+        {
+          "text": "b) Geçerli hipotezleri yeni durumları açıklamak için kullanır.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.5.5. Suyun katı ve sıvı hâllerine ait yoğunlukları karşılaştırarak bu durumun canlılar için önemi hakkında bilimsel çıkarımlar yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Suyun katı ve sıvı hâlleri ile ilgili nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Suyun katı ve sıvı hâllerine ait yoğunlukları ile ilgili veri toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Suyun katı ve sıvı hâllerine ait yoğunluk farkının canlılar için önemli olduğunu yorumlar ve değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.5.6. Yoğunluk ile ilgili bilimsel model oluşturabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yoğunluk ile ilgili model önerir.",
+          "bold": false
+        },
+        {
+          "text": "b) Yeni kanıtlarla modeli yeniler.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.5.1",
+          "codeAsPrinted": "FB.6.5.1",
+          "text": "Isı etkisiyle maddelerin genleşip büzüleceğine yönelik bilimsel gözleme dayalı tahmin edebilme",
+          "group": null,
+          "components": [
+            "a) Ön bilgi ve deneyimiyle maddelerin genleşip büzüleceğine yönelik önerme oluşturur.",
+            "b) Gözleme dayalı olan ve olmayan günlük yaşam ile ilişkili önermeleri karşılaştırır.",
+            "c) Tahminlerini temellendirmek için gözlem verilerinden sonuç çıkarır.",
+            "ç) Günlük yaşam ile ilişkili gözlemlenmemiş duruma ilişkin tahminde bulunur.",
+            "d) Tahminlerin geçerliğini sorgular."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.5.2",
+          "codeAsPrinted": "FB.6.5.2",
+          "text": "Maddelerin erime, donma ve kaynama noktasını gösteren deney yapabilme",
+          "group": null,
+          "components": [
+            "a) Maddelerin erime, donma ve kaynama noktasını gösteren deney tasarlar.",
+            "b) Deney ile ilgili ölçme ve veri analizi yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.5.3",
+          "codeAsPrinted": "FB.6.5.3",
+          "text": "Yoğunluğa ilişkin hesaplamalar yaparak bilimsel veriye dayalı tahmin edebilme",
+          "group": null,
+          "components": [
+            "a) Yoğunluğa ilişkin verilere veya ön bilgilerine dayalı önerme oluşturur.",
+            "b) Yoğunluğa ilişkin veriye dayalı ve dayalı olmayan önermeleri karşılaştırır.",
+            "c) Yoğunluğa ilişkin hesaplama ve tahmin yapar.",
+            "ç) Tahminlerin geçerliğini sorgular."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.5.4",
+          "codeAsPrinted": "FB.6.5.4",
+          "text": "Deneyler sonucunda çeşitli maddelerin yoğunluklarına ilişkin tümdengelimsel akıl yürütebilme",
+          "group": null,
+          "components": [
+            "a) Çeşitli maddelerin yoğunluklarına ilişkin hipotezler kurarak test eder.",
+            "b) Geçerli hipotezleri yeni durumları açıklamak için kullanır."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.5.5",
+          "codeAsPrinted": "FB.6.5.5",
+          "text": "Suyun katı ve sıvı hâllerine ait yoğunlukları karşılaştırarak bu durumun canlılar için önemi hakkında bilimsel çıkarımlar yapabilme",
+          "group": null,
+          "components": [
+            "a) Suyun katı ve sıvı hâlleri ile ilgili nitelikleri tanımlar.",
+            "b) Suyun katı ve sıvı hâllerine ait yoğunlukları ile ilgili veri toplar ve kaydeder.",
+            "c) Suyun katı ve sıvı hâllerine ait yoğunluk farkının canlılar için önemli olduğunu yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.5.6",
+          "codeAsPrinted": "FB.6.5.6",
+          "text": "Yoğunluk ile ilgili bilimsel model oluşturabilme",
+          "group": null,
+          "components": [
+            "a) Yoğunluk ile ilgili model önerir.",
+            "b) Yeni kanıtlarla modeli yeniler."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/fen-bilimleri-dersi/unite/414",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/414",
+      "title": "6. Ünite: Elektriğin İletimi Ve Direnç",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:34.495Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_414.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "6. Ünite: Elektriğin İletimi Ve Direnç",
+      "subtitle": null,
+      "intro": "Bu ünitede; maddelerin elektriği iletme durumlarını gösteren deneyler yapılarak günlük yaşamdaki maddeleri iletkenlik ve yalıtkanlık durumlarına göre sınıflandırılması, bir elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenlerin test edilmesi, ayarlanabilir direncin ampul parlaklığına etkisine yönelik çıkarım yapılması amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "FBAB7. Deney Yapma, FBAB8. Bilimsel Çıkarım Yapma",
+        "Kavramsal Beceriler": "-",
+        "Eğilimler": "E2.2. Sorumluluk, E3.1. Muhakeme, E3.2. Odaklanma, E3.4. Gerçeği Arama, E3.7. Sistematiklik, E3.8. Soru Sorma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği",
+        "Değerler": "D1. Adalet, D3. Çalışkanlık, D6. Dürüstlük, D10. Mütevazılık, D16. Sorumluluk, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.6. Bilgi Toplama, KB2.7. Karşılaştırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.6.1. Maddelerin elektriği iletme durumlarını gösteren deney yapabilmea) Maddelerin iletme durumlarını test etmek için elektrik devresi tasarlar.b) Deney ile ilgili ölçme ve veri analizi yapar. FB.6.6.2. Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirlemeye yönelik deney yapabilmea) Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirleyebilecek bir deney tasarlar.b) Deney ile ilgili ölçme ve veri analizi yapar. FB.6.6.3. Ayarlanabilir direncin ampulün parlaklığına etkilerine yönelik bilimsel çıkarım yapabilmea) Reosta kullanarak elektriksel dirence ait nitelikleri tanımlar.b) Direncin değişkenliğini dikkate alarak toplar ve kaydeder.c) Ampulün parlaklığı üzerinde elektriksel direncin etkili olduğunu yorumlar ve değerlendirir.",
+        "İçerik Çerçevesi": "Elektriğin İletimiElektriksel Direnç ve Bağlı Olduğu Faktörler",
+        "Anahtar Kavramlar": "iletken maddeler, yalıtkan maddeler, elektriksel direnç, reosta, elektriksel direncin bağlı olduğu faktörler (kesit alanı, uzunluk ve iletkenin cinsi)",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktının değerlendirilmesinde eşleştirme testi, çalışma kâğıdı, açık uçlu sorular ve performans görevleri kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri değerlendirme amaçlı kullanılabilir. Performans görevi olarak maddelerin elektriği iletme durumlarını gösteren poster, afiş vb. kullanılabilir. Hazırlanan poster, afiş kontrol listesi ile değerlendirilebilir. Performans görevi olarak elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenler ile ilgili deneyleri TGA gibi teknikler kullanılarak raporlaştırmaları öğrencilerden istenebilir. Bu performans görevi analitik dereceli puanlama anahtarı ile değerlendirilebilir. Performans görevi olarak ayarlanabilir direncin ampulün parlaklığına etkilerine yönelik hazırlanan V diyagramı analitik dereceli puanlama anahtarı ile değerlendirilebilir. Ayrıca öz, akran değerlendirme formları ile ölçme araçlarında çeşitlilik sağlanabilir.",
+        "Temel Kabuller": "Öğrencilerin çalışan basit bir elektrik de vresi kurabildikleri kabul edilmektedir. Pil ve ampul sayısındaki değişikliğin devredeki ampul parlaklığını değiştirdiğini bildikleri kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin elektrik devrelerinin kurulması hakkındaki temel kabullere sahip olma durumları açık uçlu sorularla açığa çıkarılabilir. Öğrencilere bir elektrik devresindeki ampul parlaklığının nasıl değişebileceği yönünde açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Pil sayısı ve ampul sayısına bağlı olarak değişebilen ampul parlaklığının iletken tel, kesit alanı ve iletkenin cinsi değişkenleriyle de değişebileceğine değinilebilir. Elektrik yalıtımını sağlamak için günlük yaşamda prizler, anahtarlar ve kabloların plastikle kaplanması vb. örnekler elektrik yalıtkanlığı ile ilişkilendirilebilir. Elektrikle ilgili alanlarda çalışan işçilerin iş güvenliği açısından kullandıkları elektrik yalıtım malzemeleri ile ilişki kurulabilir. Günlük yaşamda ısıtma amaçlı kullanılan aletlerdeki düğmelerin dirençle ilişkili olduğuna değinilebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.6.1 Öğrencilerin elektrik devrelerinin kurulması hakkındaki ön bilgi ve becerileri açık uçlu sorularla açığa çıkarılabilir. Öğrenciler gruplara ayrılır ve öğrencilerden grup içinde uyumlu bir şekilde görev bilincine sahip olarak yardımlaşmaları istenir (D10.3, D16.3, D20.2, SDB2.2). Öğrencilerden bilimsel bir yaklaşımla grup üyelerinin kendi aralarında sorumluluklarını üstlenmeleri beklenir (D3.3, E2.2, SDB2.1). Daha sonra aktif bir rol sergileyerek öğrencilerden maddelerin elektriği iletme durumlarını test edebilecek elektrik devre düzeneğini tasarlamaları ve kurmaları istenir (SDB1.2). Deney için uygun ortam ve malzemeler sağlanır. Öğrencilerden sistematik bir şekilde maddelerin iletkenlik durumlarını test etmeleri beklenir (E3.2, E3.4, E3.7). Deney düzeneğini kurarken öğrencilerin çalışmalarını planlı bir şekilde yürütmeleri sağlanır (D3.2). Öğrencilerden kurdukları devrede maddelerin iletkenlik durumlarını gözlemlemeleri ve gözlem sonuçlarını iletken ve yalıtkan olarak kaydetmeleri beklenir (OB7, KB2.7). Kaydettikleri verileri analiz etmeleri öğrencilerden Ayrıca elektriksel iletkenlik ve yalıtkanlık konusuyla ilgili öğrenmeleri zenginleştirmek için öğrenciler dijital ortamlara yönlendirilir (E3.1, OB2, KB2.6). Güvenilir genel ağ adresleri yoluyla sanal deneyler yaparak öğrencilerin bilgiyi özetlemeleri sağlanır (OB1). Performans görevi olarak öğrencilerin hazırladıkları poster, afiş kontrol listeleri ile değerlendirilebilir. Ayrıca yapılandırılmış grid, doğru-yanlış testleri, kısa cevaplı testler, eşleştirme testleri vb. kullanılabilir. FB.6.6.2 Öğrencilere bir elektrik devresindeki ampul parlaklığının nasıl değişebileceği yönünde açık uçlu sorular sorulur (E3.1,E3.8). Bu süreçte, ampul parlaklığının iletkenin uzunluğuna, dik kesit alanına ve cinsine bağlı olarak değişebileceğine yönelik bilimsel sorgulamalar yapmaları öğrencilerden istenir (D3.3). Öğrencilerin aynı sayıda aracın uzun yol ve kısa yol, tek şeritli yol ve çift şeritli yol, çakıllı yol ve asfalt yolda hedefe ulaşma zorluğu gibi benzetmeleri dikkate alarak analoji tekniği ile elektriksel direncin bağlı olduğu değişkenler arasında ilişki kurmaları sağlanır (OB1). Öğrenciler gruplara ayrılır ve öğrencilerden grup içinde görev bilinciyle yardımlaşmaları istenir (D16.3, D20.1, SDB2.2). Bilimsel bir yaklaşımla grup üyelerinden kendi aralarında sorumluluklarını üstlenmeleri beklenir (D3.3, E2.2). Performans görevi olarak ampul parlaklığının değişimini göstermeye yönelik deney düzeneği tasarlamaları ve kurmaları öğrencilerden istenir. Öğrencilerden deney düzeneğini kurarken planlı bir şekilde deneyi yürütmeleri beklenir (D3.2). Deneyler için uygun ortam ve malzemeler sağlanır. Verilen performans görevleri çerçevesinde öğrencilerden devredeki iletkenin uzunluğu, dik kesit alanı ve cinsi değişkenlerini sistematik bir şekilde kullanarak devredeki ampul parlaklığını gözlemlemeleri istenir (E3.7, SDB1.2). Gözlem sonuçları ile elde ettiği verileri tabloya kaydederek etkin bir şekilde yorumlamaları sağlanır (OB7). Öğrencilerden elektriksel direncin bağlı olduğu faktörlerle ilgili olarak matematiksel bağlantıya girilmemesi istenir. Öğrencilerden deney verilerini raporlaştırmaları istenir. Raporlaştırma sürecinde TGA gibi teknikler kullanılabilir. Öğrenmeleri zenginleştirmek için öğrenciler dijital ortamlara yönlendirilir (KB2.6). Güvenilir genel ağ adresleri yoluyla öğrencilerin sanal deneyler yaparak bilgiyi özetlemeleri sağlanır (OB1, OB2). Öğrencilerin bilgileri özetlemeleri Türkçe dersi ile ilişkilendirilebilir. Performans görevi analitik dereceli puanlama anahtarı ile değerlendirilebilir. Ampul parlaklığındaki değişimi göstermek için görsel tamamlama testleri kullanılabilir. Tüm sürece ilişkin öğrencilerin öğrenme durumlarını sınamak için tanılayıcı dallanmış ağaç, yapılandırılmış grid vb. ölçme araçları kullanılabilir. FB.6.6.3 Öğrencilere elektriksel direnç ile ilgili açık uçlu sorular sorulur (E3.8). Günlük yaşamdan elektriksel direncin kullanıldığı alanlar örneklendirilebilir. Daha sonra öğrencilerden performans görevi olarak araştırmacı ve sorgulayıcı bir yaklaşımla reostayı kullanarak ampul parlaklığının değiştiği ile ilgili deney düzeneği kurmaları istenir (D3.3). Reosta bulunmadığı durumlarda basit bir reosta yapmaları sağlanır. Öğrencilerden devredeki reostayı kullanarak ampul parlaklığının değiştiğini gözlemlemeleri beklenir. Öğrencilerden reosta kullanarak elektriksel direncin bağlı olduğu nitelikleri tanımlamaları istenir. Daha sonra, gözlem sonuçlarından elde ettikleri verileri toplamaları ve tablolara kaydetmeleri öğrencilerden istenir (OB7). Öğrencilerden kaydettiği verileri yorumlayıp değerlendirmeleri istenir (OB7, KB2.6). Öğrencilerden gözlemleri sonucunda topladıkları bilgiyi özetleyerek reostanın değiştirilebilir bir direnç olduğu çıkarımına ulaşmaları beklenir (OB1, SDB1.2). Ohm Yasası’na girilmeden direncin birimi verilir. Bu bağlamda, öğrencilerden planlı ve sorumluluk bilinciyle elektriksel direnci kapsayan çalışma yaprağı hazırlamaları istenir (D3.2, E2.2). Öğrenciler verileri V diyagramı yoluyla raporlaştırabilir. V diyagramı analitik dereceli puanlama anahtarı yoluyla değerlendirilebilir. Ayrıca öz/akran değerlendirme formları ile ölçme araçlarında çeşitlilik sağlanabilir. Bu süreçte öğrencilerden tarafsız davranmaları istenir (D6.2, D1.2). Tüm sürece ilişkin öğrencilerin öğrenme durumlarını sınamak için çalışma kâğıdı, yazılı sınavlar, eşleştirme testleri vb. kullanılabilir.",
+        "Zenginleştirme": "İletken-yalıtkan maddeler ve günlük yaşamdaki kullanım alanları ile ilgili uzman olan kişiler (meslek grupları, üniversitelerin ilgili bölümlerinden araştırmacılar vb.) sınıfa davet edilebilir veya çevrim içi toplantılar planlanabilir. Uzman görüşmesi öncesinde öğrencilerden öncül araştırmalarını yapmaları istenebilir ve sormak istediği soruları belirlemeleri istenebilir. Öğrenciler, elektronik devreler hakkında sahip oldukları bilgiler dâhilinde internetten araştırma yaparak programlar üzerinden sanal devre kurabilirler.",
+        "Destekleme": "İletken ve yalıtkan maddeler hakkında animasyonlardan yararlanılabilir"
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.6.1. Maddelerin elektriği iletme durumlarını gösteren deney yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Maddelerin iletme durumlarını test etmek için elektrik devresi tasarlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Deney ile ilgili ölçme ve veri analizi yapar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.6.2. Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirlemeye yönelik deney yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirleyebilecek bir deney tasarlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Deney ile ilgili ölçme ve veri analizi yapar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.6.3. Ayarlanabilir direncin ampulün parlaklığına etkilerine yönelik bilimsel çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Reosta kullanarak elektriksel dirence ait nitelikleri tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Direncin değişkenliğini dikkate alarak toplar ve kaydeder.",
+          "bold": false
+        },
+        {
+          "text": "c) Ampulün parlaklığı üzerinde elektriksel direncin etkili olduğunu yorumlar ve değerlendirir.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.6.1",
+          "codeAsPrinted": "FB.6.6.1",
+          "text": "Maddelerin elektriği iletme durumlarını gösteren deney yapabilme",
+          "group": null,
+          "components": [
+            "a) Maddelerin iletme durumlarını test etmek için elektrik devresi tasarlar.",
+            "b) Deney ile ilgili ölçme ve veri analizi yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.6.2",
+          "codeAsPrinted": "FB.6.6.2",
+          "text": "Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirlemeye yönelik deney yapabilme",
+          "group": null,
+          "components": [
+            "a) Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirleyebilecek bir deney tasarlar.",
+            "b) Deney ile ilgili ölçme ve veri analizi yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.6.3",
+          "codeAsPrinted": "FB.6.6.3",
+          "text": "Ayarlanabilir direncin ampulün parlaklığına etkilerine yönelik bilimsel çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Reosta kullanarak elektriksel dirence ait nitelikleri tanımlar.",
+            "b) Direncin değişkenliğini dikkate alarak toplar ve kaydeder.",
+            "c) Ampulün parlaklığı üzerinde elektriksel direncin etkili olduğunu yorumlar ve değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/fen-bilimleri-dersi/unite/415",
+      "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/415",
+      "title": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:35.998Z",
+      "cacheFile": "html/fen-bilimleri-dersi_unite_415.html",
+      "meta": [
+        "Fen Bilimleri Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "7. Ünite: Sürdürülebilir Yaşam Ve Etkileşim",
+      "subtitle": null,
+      "intro": "Bu ünitede biyoçeşitliliğin doğal yaşam için öneminin sorgulanıp biyoçeşitliliği tehdit eden faktörlerin araştırma verilerine dayalı olarak tahmin edilebilmesi, ısınma amaçlı yakıt kullanımının insan ve çevre üzerine etkilerinin tartışılarak geçerli fikirler oluşturulabilmesi amaçlanmaktadır. Bunun yanı sıra yakın çevredeki veya ülkemizdeki bir çevre sorununun çözümüne ilişkin önerilerin değerlendirilip insan faaliyetleri sonucunda oluşabilecek çevre sorunlarına yönelik çıkarımlarda bulunabilmesi amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "FBAB4. Bilimsel Veriye Dayalı Tahmin",
+        "Kavramsal Beceriler": "KB2.8. Sorgulama, KB2.18. Tartışma, KB3.2. Problem Çözme",
+        "Eğilimler": "E1.1. Merak, E1.6. Seçicilik, E2.2. Sorumluluk, E2.5. Oyunseverlik, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.8. Soru Sorma, E3.10. Eleştirel Bakma,",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.1. Kendini Tanıma (Öz Farkındalık), SDB1.2. Kendini Düzenleme (Öz Düzenleme) SDB2.1. İletişim, SDB2.3. Sosyal Farkındalık, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D1. Adalet, D3. Çalışkanlık, D5. Duyarlılık, D6. Dürüstlük, D9. Merhamet, D12. Sabır, D14. Saygı, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB3. Finansal Okuryazarlık, OB5. Kültür Okuryazarlığı, OB6. Vatandaşlık Okuryazarlığı, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Türkçe, Okul Temelli Sosyal Sorumluluk Çalışmaları",
+        "Beceriler Arası İlişkiler": "KB2.7. Karşılaştırma, KB3.1. Karar Verme, KB3.3. Eleştirel Düşünme",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "FB.6.7.1. Biyoçeşitliliğin doğal yaşam için önemini sorgulayabilmea) Biyoçeşitliliğin doğal yaşam için önemini tanımlar.b) Biyoçeşitliliğin doğal yaşam için önemine ilişkin sorular sorar.c) Biyoçeşitliliğin doğal yaşam için önemi konusunda bilgi toplar.ç) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgilerin doğruluğunu değerlendirir.d) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgiler üzerinde çıkarım yapar. FB.6.7.2. Biyoçeşitliliği tehdit eden faktörleri araştırma verilerine dayalı tahmin edebilmea) Biyoçeşitliliği tehdit eden faktörler konusunda ön bilgilere dayalı önerme oluşturur.b) Biyoçeşitliliği tehdit eden faktörler konusunda veriye dayalı olan ve dayalı olmayan önermeleri karşılaştırır.c) Biyoçeşitliliği tehdit eden faktörler konusunda tahminde bulunur.ç) Biyoçeşitliliği tehdit eden faktörler konusunda tahminlerin geçerliğini sorgular.FB.6.7.3. Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkilerini tartışabilmea) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal temellendirme yapar.b) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal çelişkileri tespit eder. c) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisi konusunda geçerli fikirleri kabul eder. FB.6.7.4. Yakın çevresindeki veya ülkemizdeki bir çevre problemini çözebilmea) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu yapılandırır.b) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu özetler.c) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne yönelik veriye dayalı tahmin eder.ç) Yakın çevresindeki veya ülkemizdeki bir çevre sorununa yönelik önermeler üzerinden akıl yürütür.d) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne ilişkin değerlendirme yapar.",
+        "İçerik Çerçevesi": "Biyoçeşitlilikİnsan ve Çevre Etkileşimi",
+        "Anahtar Kavramlar": "biyoçeşitlilik, doğal yaşam, nesli tükenen canlılar, habitat, ekosistem, ısınma amaçlı kullanılan yakıtlar, çevre kirliliği, insan-çevre etkileşimi, deniz ve tatlı su kirliliği, toprak kirliliği, orman yangınları, ormansızlaşma",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Öğrenme çıktılarının değerlendirilmesinde çalışma kâğıdı, açık uçlu sorular, doğru-yanlış testleri, bilgi testi ve performans görevleri kullanılabilir. Ayrıca ünite sürecinde ortaya çıkan öğrenci ürünleri, bir ürün dosyasında toplanarak değerlendirme amaçlı kullanılabilir. Biyoçeşitliliğin doğal yaşam için önemine ilişkin rapor hazırlamayı içeren performans görevi verilebilir. Değerlendirmede kontrol listesi kullanılabilir. Ayrıca öz/akran değerlendirme formları ile ölçme araçlarında çeşitlilik sağlanabilir. Biyoçeşitliliği tehdit eden faktörlerle ilgili poster hazırlama performans görevi verilebilir. Değerlendirme aracı olarak dereceli puanlama anahtarları kullanılabilir. Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne yönelik sosyal sorumluluk projesi verilebilir. Görev analitik dereceli puanlama anahtarları ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin canlıların sınıflandırılması konusunda canlı türlerini bildiği kabul edilmektedir. Katı, sıvı ve gaz kavramlarını bildiği kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Canlı türleri ve maddenin hâllerine ilişkin temel kabullere sahip olma durumları açık uçlu sorularla belirlenebilir. Çevrelerindeki canlı çeşitleri hakkında öğrencilere açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilerin yakın çevrelerinde rastladıkları canlı çeşitleri ile biyoçeşitlilik arasında ilişki kurulabilir. Katı, sıvı, gaz kavramlarına ilişkin öğrenmeleriyle yakıt türleri arasında ilişki kurulabilir. Bölgelerindeki çevre sorunlarına yönelik gerçekleştirilen sosyal sorumluluk projeleri ile öğrencilerin çevre-insan ilişkileri arasında bağ kurmaları sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "FB.6.7.1 Habitat, ekosistem, biyoçeşitlilik gibi kavramlar okul dışı ortamda yerinde gözlem ve tartışma vb. yöntem ve tekniklerle tanıtılır. Biyoçeşitliliğin doğal yaşamdaki önemini fark ettirebilmek için beyin fırtınası, örnek olay vb. tekniklerden yararlanılabilir. Öğrencilerden biyoçeşitliliğin doğal yaşam için önemini tanımlamaları beklenir. Öğrencilerden merak duygusunu artırmak adına verilen örnekler yazılarak benzer türdeki canlıları gruplandırmaları istenir (E1.1). Gruplandırma sırasında hangi ölçütlerin kullanılabileceği sorulur. Türkiye’de bulunan canlı çeşitliliği ve endemik türlerden bahsedilir (D19.3). Öğrencilerden çevresindeki canlıların çeşitliliğinin önemi ile ilgili sorular sormaları beklenir (E3.8). Doğayı ve canlıları korumanın öneminden bahsedilir (D9.3). Kanuni Sultan Süleyman’ın 1539 yılında Edirne’de yayınlanan Dünyanın ilk “Çevre Koruma/Düzenleme Kanunu“na değinilir. Biyoçeşitliliğin doğal yaşam için önemini sorgulamalarına ilişkin bir performans görevi verilebilir. Öğrencilerden biyoçeşitliliğin önemine ilişkin sorular sormaları istenir (SDB3.3). Farklı kaynaklardan biyoçeşitlilik ile ilgili belgesel örnekleri izletilerek öğrenme süreci keyifli ve eğlenceli hâle getirilebilir (E2.5). Biyoçeşitlilik, habitat, ekosistem, doğal yaşam kavramlarına ilişkin öğrencilerden dijital platformlar, görsel ve basılı kaynaklar vb. yardımıyla bilgi toplamaları istenir (OB2, E3.4). Öğrencilere araştırdığı konular hakkında açık uçlu sorular sorularak nasıl öğrendikleri yoklanır (SDB1.1). Öğrencilerden topladıkları bilgilerin doğruluğunu değerlendirmeleri beklenir. Bu aşamada sınıfta çember tekniğini kullanarak etkin bir tartışma ortamında eleştirel bakış açısı ile sorgulamaları sağlanabilir (KB3.3, SDB2.1, E3.10). Tartışma sonuçlarına göre öğrencilerden biyoçeşitliliğin doğal yaşam için ne derece önemli olduğuna dair çıkarım yapmaları beklenir (OB1). Performans görevi olarak öğrencilerden süreçte edindikleri bilgileri raporlaştımaları veya afiş olarak sunmaları istenebilir. Verilen performans görevi kontrol listesi ile değerlendirilebilir. Ayrıca öz/akran değerlendirme formları ile ölçme araçlarında çeşitlilik sağlanabilir. Bu süreçte öğrencilerden adil ve tarafsız davranmaları beklenebilir (D6.2, D1.2). Biçimlendirici değerlendirme amacıyla çalışma kâğıdı kullanılabilir. FB.6.7.2 Öğrencilerden biyoçeşitliliği tehdit eden faktörler konusunda var olan bilgilerinin yanı sıra dijital platformlar, basılı ve görsel kaynaklar vb. yardımıyla araştırma yaparak bilimsel bilgilere ulaşmaları beklenir (E3.4). Ulaşılan bilgilere dayalı olarak biyoçeşitliliği tehdit eden faktörlere yönelik önermeler oluşturmaları öğrencilerden istenir. Bu konuda önermelerini karşılaştırmak ve güçlendirmek için basılı ve dijital içerik vb. güvenilir kaynaklardan ek bilgiler toplamaları sağlanır (KB2.7, OB2). Öğrencilerden incelediği kaynaklardan edindiği verilerle biyoçeşitliliği tehdit eden faktörleri ortaya koymaları istenir. Edindiği bilgileri yorumlayarak biyoçeşitliliği tehdit etme potansiyeli olan faktörlerle ilgili tahminlerde bulunmaları sağlanır. Biyoçeşitliliği tehdit eden faktörlerde mera alanlarının sürülmesi, aşırı otlatma, anız yakılması, aşırı gübre ve tarımsal ilaç kullanımı, yerel ürün çeşitlerinin yerini yüksek verimli yerel olmayan ürün çeşitlerinin alması, şehirleşme, endüstrileşme, ormanların tahrip edilmesi ve orman yangınları, ihtiyaç fazlası konut edinimi, turizm sektöründeki hızlı gelişmeler ve yetişmiş insan eksikliği vb. konular ele alınır (KB3.3, OB8, SDB3.3, E2.2). Bir vatandaş olarak bu konudaki sorumluluklar tartışılır (KB3.3, OB6). Ülkemizde ve dünyada nesli tükenen veya tükenme tehlikesi ile karşı karşıya olan bitki ve hayvanlara değinilir (D19.3). Öğrencilerin tahminlerinin doğruluğunu sorgulamaları sağlanır. Bu aşamada elde ettiği bilgiler ve arkadaşlarının verileriyle öğretmen rehberliğinde doğrulamaları sağlanır. 22 Mayıs Dünya Biyolojik Çeşitlilik Günü’nden bahsedilerek insan faaliyetlerinin dünyadaki canlı çeşitliliği üzerinde yarattığı olumlu ve olumsuz etkilere dikkat çekilir. Bu tür etkinliklerin insanlar arası etkileşimleri artırarak ortak bir kültür oluşturduğuna değinilir (OB5). Performans görevi olarak öğrencilerin çevresini bilinçlendirmek için farklı sorumluluk çalışmaları yapmaları sağlanır (D5.2, SDB3.3, SDB2.3, E2.2, E1.6). Bu çalışmalarda poster, kısa film, el broşürü, sunum, dijital içerikler vb. hazırlanabilir. Performans görevi analitik dereceli puanlama anahtarıyla değerlendirilebilir. Ayrıca çıktılar açık uçlu sorular, doğru-yanlış testleri vb. ile değerlendirilebilir. FB.6.7.3 Yakın çevrelerinde ısınma amaçlı kullanılan yakıtların neler olduğuna dair beyin fırtınası vb. teknikler kullanılarak öğrencilerin yakıt türlerini belirlemeleri sağlanır. Belirlenen yakıt türleri katı, sıvı, gaz olarak kısaca sınıflandırılır. Yakıtların kullanımının insan ve çevre üzerindeki etkileri konusunda öğrencilerin dijital platformlar, basılı ve görsel kaynaklar vb. araştırma yapmaları sağlanır (SDB3.2, OB1). Öğrencilerin konu ile ilgili mantıksal temellendirmeler yapmaları sağlanır. Bu aşamada sınıfta gruplara ayrılarak takım çalışması içinde münazara, altı şapkalı düşünme vb. yöntemler kullanılır (SDB2.1). Öğrencilerden tartışma sırasında sabırlı ve olgun davranabilmeleri ve grup içinde tartışmalarda liderlik becerilerinin gelişmesi beklenir (D12.2). Özellikle soba ve doğal gaz zehirlenmelerine değinilir. Öğrencilerden bu temellerde mantıksal çelişkileri tespit etmeleri beklenir (SDB3.3). Bu süreçte öğrencilerin açık fikirli davranmaları, saygı çerçevesinde fikir üretmeleri, nezaketle fikirlerini savunmaları sağlanır (D14.1,E3.5). Öğrencilerden tartışma sonunda ısınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisi konusunda geçerli fikirler oluşturmaları beklenir. Öğrencilerin bireysel veya aileye ait yakıt kullanımını ekonomik açıdan da ele almaları ve tüketimin üzerinde düşünmeleri sağlanır (OB3). Süreç analitik dereceli puanlama anahtarı ile öğrencilerin öğrenme durumları ise çalışma kâğıdı ile değerlendirilebilir. FB.6.7.4 Öğrencilere deniz ve tatlı su kirliliği, toprak kirliliği, orman yangınları, ormansızlaşma vb. yerel ve küresel çevre sorunlarını konu alan belgesel vb. izlettirilerek çevre sorunları vurgulanır. Öğrencilerden çevre sorunları ile ilgili merak ettikleri soruları sormaları istenir (E3.8). Dijital içerik, sosyal platformlar, yazılı ve görsel kaynaklar vb. yardımıyla çevre sorunlarına yol açan insan faaliyetlerine dikkat çekilir. Buradan hareketle öğrencilerden yakın çevresindeki veya ülkemizdeki bir çevre sorununu belirlemeleri ve çevre sorununu yapılandırmaları beklenir. Bu aşamada öğrencilerin kendi seçtiği çevre sorununu istedikleri yöntemlerle yapılandırmaları teşvik edilir (OB1, SDB1.2, SDB2.3). Çevre sorunlarının insan sağlığı üzerindeki olumsuz etkilerine değinilir (D5.1). Öğrencilerden yapılandırdıkları problemi özetlemeleri istenir. Sorunun çözümüne yönelik geçmiş yaşantılarından yararlanarak ve araştırma verilerine dayanarak tahmin yürütmeleri öğrencilerden beklenir (SDB3.3). Öğrencilerden araştırma sonucunda hazırladıkları rapor, kısa not vb. çalışmaları ile çözüm önerilerini sınıf ortamında diğer arkadaşlarıyla paylaşmaları istenir (SDB2.1). Öğrencilerden seçilen problem durumunun çözümüne yönelik öneriler üzerinden akıl yürütmeleri beklenir. Bu süreçte düşüncelerini uygun bir dille ifade ederek birbirlerinin çözüm önerilerini dinledikleri münazara, çember vb. tartışma tekniklerinden biri kullanılır (OB1, E3.5, SDB3.3, SDB3.2). Öğrencilerden problem durumuna yönelik oluşturdukları önerilerini değerlendirmeleri beklenir (KB3.1). 5 Haziran Dünya Çevre Günü’nden bahsedilerek öğrencilerin farkındalıkları artırılabilir. İnsan sağlığı, doğaya değer verilmesi ve doğa sevgisinin önemi vurgulanır (D9.3). Değerlendirmelerden sonra öğrencilerden gruplara ayrılarak çevre sorunlarıyla ilgili bir sosyal sorumluluk projesi hazırlamaları istenir (SDB2.3, SDB3.2, OB5,D3.4). Bu proje, seçmeli okul temelli sosyal sorumluluk çalışmaları dersi ile ilişkilendirilebilir. Çevre sorunlarının çözüm süreci ve yapılacak olan sosyal sorumluluk projesi analitik dereceli puanlama anahtarıyla değerlendirilebilir.",
+        "Zenginleştirme": "“Kuzey Kıbrıs Türk Cumhuriyeti’nde biyoçeşitlilik“ konusunda araştırma yapıp sunmaları öğrencilerden istenebilir. Biyoçeşitlilik konusunda dijital içerikler hazırlamaları sağlanabilir. Canlıların ortamlarla eşleştirilmesini, nesli tükenen veya tükenme tehlikesindeki canlıların sürüklenip bırakılmasını içeren etkinlikler hazırlatılabilir. Ülkemizde ve dünyada nesli tükenen veya tükenme tehlikesi altında olan bitki ve hayvanlarla ilgili kart oyunları tasarlamaları öğrencilerden istenebilir. Öğrencilerden seçilen bir çevre sorunuyla ilgili yapılan çalışmaların derlendiği makale, rapor yazmaları istenebilir.",
+        "Destekleme": "Biyoçeşitlilik konusu küçük parçalara bölünerek sunulur ve her bir süreç adım adım açıklanabilir. İnsan-çevre etkileşimi konusunda kısa cümlelerle yorumlarını açıklayacakları özetler hazırlatılılabilir. Ülkemizde ve dünyada nesli tükenen veya tükenme tehlikesi altında olan bitki ve hayvanlarla ilgili kart oyunları oynatılabilir. Biyoçeşitlilik konusunda animasyon, simülasyon ve eğitici videolardan yararlanılarak öğrenme süreci kolaylaştırılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "FB.6.7.1. Biyoçeşitliliğin doğal yaşam için önemini sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Biyoçeşitliliğin doğal yaşam için önemini tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Biyoçeşitliliğin doğal yaşam için önemine ilişkin sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "c) Biyoçeşitliliğin doğal yaşam için önemi konusunda bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgilerin doğruluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgiler üzerinde çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.7.2. Biyoçeşitliliği tehdit eden faktörleri araştırma verilerine dayalı tahmin edebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Biyoçeşitliliği tehdit eden faktörler konusunda ön bilgilere dayalı önerme oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "b) Biyoçeşitliliği tehdit eden faktörler konusunda veriye dayalı olan ve dayalı olmayan önermeleri karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Biyoçeşitliliği tehdit eden faktörler konusunda tahminde bulunur.",
+          "bold": false
+        },
+        {
+          "text": "ç) Biyoçeşitliliği tehdit eden faktörler konusunda tahminlerin geçerliğini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.7.3. Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkilerini tartışabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal temellendirme yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal çelişkileri tespit eder.",
+          "bold": false
+        },
+        {
+          "text": "c) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisi konusunda geçerli fikirleri kabul eder.",
+          "bold": false
+        },
+        {
+          "text": "FB.6.7.4. Yakın çevresindeki veya ülkemizdeki bir çevre problemini çözebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu yapılandırır.",
+          "bold": false
+        },
+        {
+          "text": "b) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu özetler.",
+          "bold": false
+        },
+        {
+          "text": "c) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne yönelik veriye dayalı tahmin eder.",
+          "bold": false
+        },
+        {
+          "text": "ç) Yakın çevresindeki veya ülkemizdeki bir çevre sorununa yönelik önermeler üzerinden akıl yürütür.",
+          "bold": false
+        },
+        {
+          "text": "d) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne ilişkin değerlendirme yapar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "FB.6.7.1",
+          "codeAsPrinted": "FB.6.7.1",
+          "text": "Biyoçeşitliliğin doğal yaşam için önemini sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Biyoçeşitliliğin doğal yaşam için önemini tanımlar.",
+            "b) Biyoçeşitliliğin doğal yaşam için önemine ilişkin sorular sorar.",
+            "c) Biyoçeşitliliğin doğal yaşam için önemi konusunda bilgi toplar.",
+            "ç) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgilerin doğruluğunu değerlendirir.",
+            "d) Biyoçeşitliliğin doğal yaşam için önemi konusunda toplanan bilgiler üzerinde çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.7.2",
+          "codeAsPrinted": "FB.6.7.2",
+          "text": "Biyoçeşitliliği tehdit eden faktörleri araştırma verilerine dayalı tahmin edebilme",
+          "group": null,
+          "components": [
+            "a) Biyoçeşitliliği tehdit eden faktörler konusunda ön bilgilere dayalı önerme oluşturur.",
+            "b) Biyoçeşitliliği tehdit eden faktörler konusunda veriye dayalı olan ve dayalı olmayan önermeleri karşılaştırır.",
+            "c) Biyoçeşitliliği tehdit eden faktörler konusunda tahminde bulunur.",
+            "ç) Biyoçeşitliliği tehdit eden faktörler konusunda tahminlerin geçerliğini sorgular."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.7.3",
+          "codeAsPrinted": "FB.6.7.3",
+          "text": "Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkilerini tartışabilme",
+          "group": null,
+          "components": [
+            "a) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal temellendirme yapar.",
+            "b) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisine yönelik mantıksal çelişkileri tespit eder.",
+            "c) Isınma amaçlı yakıt kullanımının insan ve çevre üzerine etkisi konusunda geçerli fikirleri kabul eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "FB.6.7.4",
+          "codeAsPrinted": "FB.6.7.4",
+          "text": "Yakın çevresindeki veya ülkemizdeki bir çevre problemini çözebilme",
+          "group": null,
+          "components": [
+            "a) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu yapılandırır.",
+            "b) Yakın çevresindeki veya ülkemizdeki bir çevre sorununu özetler.",
+            "c) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne yönelik veriye dayalı tahmin eder.",
+            "ç) Yakın çevresindeki veya ülkemizdeki bir çevre sorununa yönelik önermeler üzerinden akıl yürütür.",
+            "d) Yakın çevresindeki veya ülkemizdeki bir çevre sorununun çözümüne ilişkin değerlendirme yapar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

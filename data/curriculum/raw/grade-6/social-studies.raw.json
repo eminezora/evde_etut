@@ -1,0 +1,881 @@
+{
+  "subject": "Sosyal Bilgiler",
+  "courseName": "Sosyal Bilgiler Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 8,
+    "name": "Sosyal Bilgiler Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim",
+    "heading": "Sosyal Bilgiler Dersi",
+    "gradeCards": [
+      {
+        "label": "4.Sınıf",
+        "grade": 4,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/5"
+      },
+      {
+        "label": "5.Sınıf",
+        "grade": 5,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6"
+      },
+      {
+        "label": "6.Sınıf",
+        "grade": 6,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/7"
+      },
+      {
+        "label": "7.Sınıf",
+        "grade": 7,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/7",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/7",
+    "heading": "Sosyal Bilgiler Dersi 6.Sınıf",
+    "headingGrade": 6,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T11:12:54.014Z",
+    "links": [
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/417",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/417",
+        "title": "1. Öğrenme Alanı: Birlikte Yaşamak"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/418",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/418",
+        "title": "2. Öğrenme Alanı: Evimiz Dünya"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/419",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/419",
+        "title": "3. Öğrenme Alanı: Ortak Mirasımız"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/420",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/420",
+        "title": "4. Öğrenme Alanı: Yaşayan Demokrasimiz"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/421",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/421",
+        "title": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/422",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/422",
+        "title": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/417",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/417",
+      "title": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:55.520Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_417.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içerisinde değişebileceğini algılamak, kültürel bağların önemini kavramak ve toplumsal sorunların çözümüne yönelik öneriler geliştirebilmek için bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "16",
+        "Alan Becerileri": "SBAB5 Sosyal Katılım (SBAB5.4 Müzakere Etme)",
+        "Kavramsal Beceriler": "KB2.10. Çıkarım Yapma KB2.14. Yorumlama",
+        "Eğilimler": "E1.4. Kendine İnanma (Öz Yeterlilik), E2.2. Sorumluluk, E2.3. Girişkenlik, E3.3. Yaratıcılık, E3.5. Açık Fikirlilik",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.1. Uyum, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D2. Aile Bütünlüğü, D5. Duyarlılık, D16. Sorumluluk, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı,OB7. Veri Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Bilişim Teknolojileri ve Yazılım, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.5. Sınıflandırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.6.1.1. Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin çıkarım yapabilme a) Dâhil olduğu gruplar ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin varsayımda bulunur. b) Farklı grupları ve bu gruplardaki rolleri listeler. c) Farklı grupları ve bu gruplardaki rolleri karşılaştırır. ç) Gelecekte dâhil olabileceği gruplar ve roller ile ilgili önermede bulunur. d) Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içinde değişebileceğini değerlendirir. SB.6.1.2. Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini yorumlayabilme a) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini inceler. b) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisine ilişkin edindiği bilgileri bağlamdan kopmadan dönüştürür. c) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder. SB.6.1.3. Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini müzakere edebilme a) Toplumsal hayatta karşılaşılan sorunları fark eder. b) Toplumsal hayatta karşılaşılan sorunların nedenlerine yönelik farklı bakış açılarını karşılaştırır. c) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerileri geliştirir. ç) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini farklı görüş ve düşünceleri dikkate alarak düzenler. d) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini savunur.",
+        "İçerik Çerçevesi": "Zaman İçinde Değişen Gruplar ve RollerKültürel Bağlarımızın ve Millî Değerlerimizin Toplumsal Birlikteliğe EtkisiToplumsal Sorunlar ve Çözümler Önerileri",
+        "Anahtar Kavramlar": "birlik ve beraberlik, dil, din, gelenek ve görenek, grup, hak, kültür, millî değer, rol, sanat, sorumluluk, tarih, toplum",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktılarının değerlendirilmesinde; karşılaştırma tablosu, bütüncül dereceli puanlama anahtarı, balık kılçığı, açık uçlu sorulardan oluşan çalışma yaprakları ve performans görevleri kullanılabilir. Performans görevi: Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini anlatan şiir, slogan, hikâye yazma veya resim, afiş, poster hazırlamaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilere dâhil olduğu gruplar ve bu gruplardaki rolleri hakkında açık uçlu sorular sorulabilir. Öğrencilerden çevrelerindeki kültürel özelliklere örnekler vermeleri istenebilir. Öğrencilere etkin vatandaş olarak toplumsal bir sorunun çözümüne ne gibi katkılarda bulunabileceğine ilişkin açık uçlu sorular sorulabilir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden gelecekte dâhil olabilecekleri gruplara ve bu gruplardaki olası rollerine örnekler vermeleri istenebilir. Öğrencilerden kültürel bağları oluşturan unsurlara yönelik kendi hayatlarından ve yakın çevrelerinden örnekler vermeleri istenebilir. Öğrencilerden toplumsal sorun olarak görülen durumlara örnekler vermeleri istenebilir. Bu sorunların nasıl çözüme kavuşabileceğine ilişkin öğrenci görüşleri alınabilir.",
+        "Köprü Kurma": "Öğrencilerden gelecekte dâhil olabilecekleri gruplara ve bu gruplardaki olası rollerine örnekler vermeleri istenir. Öğrencilerden kültürel bağları oluşturan unsurlara yönelik kendi hayatlarından ve yakın çevrelerinden örnekler vermeleri istenir. Toplumsal birliği etkileyen aile bütünlüğü, duyarlılık, saygı, sevgi gibi değerlere yönelik kendi hayatlarından ve yakın çevrelerinden örnekler vermeleri istenir. Öğrencilerin toplumsal birliğe örnek teşkil eden olay ve durumlara yönelik çevrelerinden ya da bilgi sahibi oldukları diğer kaynaklardan örnekler vererek bu durumların ortaya çıkmasında etkili olan kültürel bağları tespit etmeleri sağlanır. Toplumsal sorun olarak görülen durumlara örnekler vermeleri istenir. Bu sorunların nasılçözüme kavuşabileceğine ilişkin öğrenci görüşleri alınır.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.6.1.1 Öğrencilere yazılı ve görsel kaynaklarda verilen rollere geçmiş yaşantılarında sahip olup olmadıkları sorulur (OB1, OB4). Bu süreçte uygun olan dijital kaynaklar da kullanılabilir (OB2). Daha sonra bugün sahip oldukları roller hakkında konuşularak gelecekte sahip olabilecekleri rollere ilişkin kartlar gösterilir. İleriki yaşamlarında dâhil olabilecekleri gruplara ve üstlenebilecekleri rollere yönelik düşüncelerini ifade etmeleri istenir. Bu çalışmadan hareketle öğrencilerden bireylerin dâhil oldukları grupların ve bu gruplardaki rollerinin zaman içinde değişebileceğine ilişkin varsayımlarda bulunmaları sağlanır (SDB3.1). Aile üyelerinden anne, baba veya bir akrabasının geçmişten günümüze dâhil olduğu grupları ve bu gruplardaki rolleri öğrenciler tarafından listelenir. Bu süreçte aile birliğinin önemi de fark ettirilir (D2.1). Listelenen gruplar ve gruplardaki rollerin değişimi zaman, hak ve sorumlulukları açısından karşılaştırılır. Bu amaçla bir karşılaştırma tablosu hazırlanır (KB2.7, OB7). Öğrencilerden gelecekte hangi meslekte faaliyet göstereceklerini hayal etmeleri istenir. Gönüllü öğrenciler hayallerini anlatır. Öğrencilerden gelecekte hangi gruplara dâhil olmayı hayal ettikleri ve bu gruplarda hangi rollere sahip olabilecekleri hakkında önermede bulunmaları istenir. Önermelerinden yararlanarak öğrencilerin gelecekte yer alabilecekleri gruplara ait rol, hak ve sorumluluk tablosunu doldurmaları sağlanır. Süreç sonunda öğrenme galerisi tekniğinden faydalanılabilir. Yapılan çalışmalarla öğrencilerin görev bilinciyle hareket etmeleri, görevlerini zamanında ve eksiksiz yerine getirmeleri desteklenir (D16.3). Öğrencilerden dâhil olduğu grupları ve bu gruplardaki rollerinin zaman içindeki değişimini, hak ve sorumluluklarını da göz önünde bulundurarak açıklamalı bir tarih şeridi ile sunmaları istenir (E1.4,E2.3, E3.3). Sürecin sonunda öğrenciler; dâhil oldukları grupların ve bu gruplardaki rollerinin zaman içinde değişebileceğini, bunun doğal bir süreç olduğunu ifade eden bir değerlendirme raporu yazarlar (SDB3.3). SB.6.1.2 Yazılı ve görsel kaynaklar üzerinden kültürel bağlarımızı ve millî değerlerimizi oluşturan dil, din, tarih, sanat ve gelenek-göreneklere ait özellikler belirlenir (OB1, OB4, OB5). Süreçte uygun olan dijital içeriklere de yer verilebilir (OB2). Belirlenen kültürel bağlarımıza ve millî değerlerimize ilişkin kavram haritaları öğrenciler tarafından oluşturulur. Türk milletinin, millî ve dinî bayramlar ile bayrağımıza ve ülkemize yönelik tehditler ve ülkemizde meydana gelen afetler karşısında sergilediği toplumsal birlik, örnek olaylar üzerinden incelenir. Yapılan çalışmada öğrencilere millî bilinç kazandırılırken toplumsal birliğe ihtiyaç duyulan zamanlarda öğrencilerin millî birlik ve beraberlik ruhuyla dayanışma içinde hareket etmeleri ve vatanseverlik bilinciyle üzerlerine düşen görevleri yerine getirmeleri sağlanır (D16.2, D19.1). İncelenen kaynaklar ve oluşturulan kavram haritalarından yola çıkılarak performans görevi olarak kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini anlatan şiir, slogan, hikâye, resim, afiş veya poster hazırlanabilir (E1.4, E3.3, E3.5, SDB2.3). Hazırlanan ürünler dereceli puanlama anahtarı ile değerlendirilebilir. Sürecin sonunda öğrenciler tarafından kültürel bağlarımızın ve millî değerlerimizin toplumsal birlikteliğe etkisini özetleyen bir paragraf veya diyalog yazılır veya bir konuşma yapılır (SDB2.1). SB.6.1.3 Yazılı, görsel veya dijital kaynaklar üzerinden toplumsal sorunlara yönelik verilen örnek olaylar incelenir (OB1, OB2, OB4). İncelenen kaynaklardan toplumsal sorunların tespit edilmesi sağlanır. Öğrencilerden toplumsal sorunlarla ilgili günlük yaşamdan örnekler vermeleri istenir. Sınıf gruplara ayrılır. Her grup verilen toplumsal sorun örneklerinden birini seçer. Aynı toplumsal sorunun en az iki farklı grup tarafından seçilmesine dikkat edilir. Gruplar seçtikleri bu toplumsal sorunun nedenlerini listeler (SDB2.1, OB1). Her grubun toplumsal soruna ait listelediği nedenler sınıfla paylaşılır. Toplumsal sorunların nedenleri ile ilgili ortaya çıkan görüşler karşılaştırılarak benzerlikler ve farklılıklar tablosuna kaydedilir (KB2.7, OB7). Gruplar belirledikleri toplumsal sorunun çözümüne ilişkin özgün, uygulanabilir, sürdürülebilir ve toplumsal fayda sağlayabilecek çözüm önerileri geliştirir (SDB2.2). Gruplar tarafından geliştirilen çözüm önerileri yazılı metne dönüştürülür. Gruplar tarafından toplumsal sorunların çözümüne ilişkin hazırlanan yazılı metinler diğer gruplar ile paylaşılır. Her grup başka bir grup tarafından hazırlanan çözüm önerilerini inceleyerek bu çözüm önerilerinin güçlü ve zayıf yönlerini belirler ve aldığı gruba verir. Bu süreçte tüm grupların çözüm önerilerinin diğer gruplar tarafından incelenmesine dikkat edilir. Her grup çözüm önerileri ile ilgili diğer gruplar tarafından belirlenen güçlü ve zayıf yönleri dikkate alarak çözüm önerilerini yeniden düzenler (SDB2.2,E1.6). Gruplar, düzenledikleri çözüm önerilerini savunarak sınıfta paylaşır (SDB2.1, SDB2.3). Süreç dereceli puanlama anahtarı ile değerlendirilebilir. Yapılan çalışmaların sonunda öğrencilerin toplumsal sorunlara duyarlılık göstererek insana ve topluma değer vermeleri; kendilerine ve çevrelerine karşı görevlerini tam ve zamanında yerine getirerek sorumlu davranmaları sağlanır (D5.1,D16.2)",
+        "Zenginleştirme": "Öğrencilerden tarihimizin millî ve manevi değerlerimizi temsil eden örnek bir kişinin veya bir bilim insanının biyografisini inceleyerek bu kişinin hayatı boyunca dâhil olduğu gruplar ve bu gruplardaki rollerini belirlemeleri istenebilir. Dâhil olduğu grup ve rollerin örnek kişilerin başarılarına etkisini değerlendirdikleri yazılı bir metin oluşturmaları sağlanabilir. 6 Şubat Kahramanmaraş merkezli depremde Türk milletinin göstermiş olduğu toplumsal birliğe etki eden kültürel bağların önemine ilişkin bir sunum, kompozisyon veya deneme yazısı hazırlamaları istenebilir. Yakın çevrelerinden hareketle toplumsal bir sorunun çözümüne yönelik okul gazetesi veya dijital pano hazırlamaları istenebilir.",
+        "Destekleme": "Öğrencilerden gelecekte dâhil olabilecekleri grupları ve bu gruplardaki rollerini listelemeleri ve bunlara yönelik canlandırmalar yapmaları istenebilir. Genel ağdan toplumsal birlikteliğe etki eden kültürel bağlarımıza ilişkin bilgi toplamaları istenebilir. Toplumsal sorunların çözümüne ilişkin önerilerini kısa cümlelerle ifade etmeleri istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.6.1.1. Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin çıkarım yapabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dâhil olduğu gruplar ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin varsayımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Farklı grupları ve bu gruplardaki rolleri listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Farklı grupları ve bu gruplardaki rolleri karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Gelecekte dâhil olabileceği gruplar ve roller ile ilgili önermede bulunur.",
+          "bold": false
+        },
+        {
+          "text": "d) Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içinde değişebileceğini değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.1.2. Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisine ilişkin edindiği bilgileri bağlamdan kopmadan dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "c) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.1.3. Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini müzakere edebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Toplumsal hayatta karşılaşılan sorunları fark eder.",
+          "bold": false
+        },
+        {
+          "text": "b) Toplumsal hayatta karşılaşılan sorunların nedenlerine yönelik farklı bakış açılarını karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerileri geliştirir.",
+          "bold": false
+        },
+        {
+          "text": "ç) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini farklı görüş ve düşünceleri dikkate alarak düzenler.",
+          "bold": false
+        },
+        {
+          "text": "d) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini savunur.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.6.1.1",
+          "codeAsPrinted": "SB.6.1.1",
+          "text": "Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin çıkarım yapabilme",
+          "group": null,
+          "components": [
+            "a) Dâhil olduğu gruplar ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin varsayımda bulunur.",
+            "b) Farklı grupları ve bu gruplardaki rolleri listeler.",
+            "c) Farklı grupları ve bu gruplardaki rolleri karşılaştırır.",
+            "ç) Gelecekte dâhil olabileceği gruplar ve roller ile ilgili önermede bulunur.",
+            "d) Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içinde değişebileceğini değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.1.2",
+          "codeAsPrinted": "SB.6.1.2",
+          "text": "Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini inceler.",
+            "b) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisine ilişkin edindiği bilgileri bağlamdan kopmadan dönüştürür.",
+            "c) Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.1.3",
+          "codeAsPrinted": "SB.6.1.3",
+          "text": "Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini müzakere edebilme",
+          "group": null,
+          "components": [
+            "a) Toplumsal hayatta karşılaşılan sorunları fark eder.",
+            "b) Toplumsal hayatta karşılaşılan sorunların nedenlerine yönelik farklı bakış açılarını karşılaştırır.",
+            "c) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerileri geliştirir.",
+            "ç) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini farklı görüş ve düşünceleri dikkate alarak düzenler.",
+            "d) Toplumsal hayatta karşılaşılan sorunlara yönelik çözüm önerilerini savunur."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/418",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/418",
+      "title": "2. Öğrenme Alanı: Evimiz Dünya",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:57.031Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_418.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "2. Öğrenme Alanı: Evimiz Dünya",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin ülkemizin, kıtaların ve okyanusların konum özellikleri, doğal ve beşerî çevre özellikleri arasındaki ilişkileri ve ülkemizin Türk dünyasıyla kültürel iş birlikleri ile ilgili bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "SBAB.7. Mekânsal Düşünme (SBAB.7.1.Konum Algılama) SBAB.7. Mekânsal Düşünme (SBAB.7.3.) Mekânsal Bağlantıları Çözümleme)",
+        "Kavramsal Beceriler": "KB2.14. Yorumlama",
+        "Eğilimler": "E1.5. Kendine Güvenme (Öz Güven), E3.2. Odaklanma, E3.3. Yaratıcılık",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme,",
+        "Değerler": "D5. Duyarlılık, D18. Temizlik, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "SBAB10. Harita (SBAB10.1. Harita Okuma)",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.6.2.1. Ülkemizin, kıtaların ve okyanusların konum özelliklerini algılayabilme a) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini belirler. b) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini görselleştirir. c) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini özetler. SB.6.2.2. Ülkemizin doğal ve beşerî çevre özellikleri arasındaki ilişkiyi çözümleyebilme a) Ülkemizdeki doğal ve beşerî çevre özelliklerini belirler. b) Ülkemizdeki doğal ve beşerî çevre özellikleri arasındaki ilişkiyi belirler. SB.6.2.3. Ülkemizin Türk dünyasıyla kültürel iş birliklerini yorumlayabilme a) Ülkemizin Türk dünyası ile kültürel iş birliklerini inceler. b) Ülkemizin Türk dünyası ile kültürel iş birliklerini bağlamdan kopmadan dönüştürür. c) Ülkemizin Türk dünyasıyla kültürel iş birliklerini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder.",
+        "İçerik Çerçevesi": "Ülkemizin, Kıtaların ve Okyanusların Konum ÖzellikleriDoğal ve Beşerî Çevre Özellikleri Arasındaki İlişkiÜlkemizin Türk Dünyasıyla Kültürel İş birlikleri",
+        "Anahtar Kavramlar": "beşerî çevre, doğal çevre, göç, göreceli konum, iklim, kültürel iş birliği, mutlak konum, nüfus, Türk Dünyası",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; sınıflama tablosu, çalışma yaprakları, derecelendirme ölçekleri, gözlem formu, kontrol listeleri kullanılarak değerlendirilebilir. Performans görevi: Ülkemizin Türk dünyası ile eğitim, sanat, spor ve turizm alanlarından biri ile ilgili kültürel iş birliğimizi geliştirecek bir proje örneği hazırlamaları istenebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin yaşadıkları ilin göreceli konum özellikleri ile bu ildeki doğal ve beşerî çevredeki değişimi açıklayabildikleri, ülkemize komşu devletler hakkında temel bilgilere sahip oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilere göreceli konum özellikleri ile ilgili açık uçlu sorular sorulabilir. Öğrencilerden doğal ve beşerî çevrede gözlemlediği değişimlere örnekler vermeleri istenebilir. Öğrencilerden iş birliği kavramı ile ilgili örnekler vermeleri istenebilir.",
+        "Köprü Kurma": "Öğrencilerden ön bilgilerini kullanarak okullarının göreceli konumunu tarif etmeleri istenebilir. Öğrencilerden yaşadıkları ildeki doğal çevre özellikleri (iklim ve yer şekilleri) ile beşerî çevre özellikleri (nüfus) arasındaki ilişkiye, kendi gözlem ve deneyimlerinden yola çıkarak örnekler vermeleri istenebilir. Öğrencilerin günlük yaşamda ortak gaye ve hedeflerimiz olan insanlarla iş birliği içinde olmanın katkılarından yola çıkarak devletler arası iş birliğinin önemini yorumlamaları istenebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB. 6.2.1 Öğrencilerin verilen haritalar üzerinden ülkemizin, kıtaların ve okyanusların göreceli konum özelliklerini belirlemeleri sağlanır (OB1, OB4). Dijital kaynak olarak Harita Genel Müdürlüğünün atlas ve küre uygulamasından da yararlanılabilir (OB2). Süreç içerisinde deniz ve okyanus arasındaki farka da değinilir. Ülkemizin göreceli konumu kapsamında deniz komşularımızdan KKTC, Lübnan, Filistin, Mısır, Libya, Rusya, Ukrayna ve Romanya’ya değinilir ve öğrencilerden belirtilen haritalar üzerinde bu komşularımızı göstermeleri istenir. Ülkemizin deniz yetki alanlarındaki hak ve menfaatlerini koruma ve savunma noktasında Mavi Vatan’ın Ege Denizi, Karadeniz, Akdeniz ve Marmara Denizi sınırları açısından ülkemizin jeopolitik önemine vurgu yapılır. Mavi Vatan ve ülke sınırları ele alınırken öğrencilerin vatanseverlik bilinciyle ülke varlıklarını korumaları ve bağımsızlığa sahip çıkacak tutumlar sergilemeleri sağlanır (D19.3). Öğrencilerden oturduğu sıranın konumunu sayı ve harflerden yararlanarak belirlemeleri istenir. Cevaplardan hareketle dünyada herhangi bir yerin konumunu belirlemek için de uluslararası bir sayı sistemine gereksinim duyulduğu açıklanır. Öğrencilerden verilen yazılı ve görsel kaynakları inceleyerek paralel ve meridyen kavramlarının tanımı ve temel özelliklerini belirlemeleri istenir. Bu bilgilerden hareketle verilen haritalar üzerinden ülkemizin mutlak konum özelliklerini belirlemeleri sağlanır (OB1, OB4). Öğrenciler tarafından ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özellikleri Türkiye ve Dünya dilsiz haritaları aracılığıyla görselleştirilir (OB4, E1.5). Görselleştirme amacıyla dijital haritalardan da faydalanılabilir (OB2). Bu haritalar üzerinde boyama, yazma, çizme gibi etkinlikler yapılabilir. Hazırlanan görseller derecelendirme ölçekleri ile değerlendirilebilir ve sınıf panosunda sergilenebilir. Öğrenciler tarafından ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özellikleri sözlü olarak özetlenir. Öğrencilerin sözlü sunumları kontrol listeleri ile değerlendirilebilir. SB.6.2.2 Ülkemizdeki doğal çevre özelliklerinden iklim ve yer şekilleri ile beşerî çevre özelliklerinden nüfus, göç ve yerleşme alanları ile yoğun ve seyrek nüfuslu yerler, verilen yazılı ve görsel kaynaklar üzerinden incelenir (OB1, OB4). Bu amaçla ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Bu özellikler sınıflama tablosuyla belirlenir ve kaydedilir. Ülkemizin iklim özellikleri açıklanırken hava durumu ve hava olayı kavramlarına da değinilir. Verilen kaynaklar aracılığıyla insanın doğal çevre koşullarından nasıl etkilendiği ve bu koşulları ne şekilde etkilediği belirlenir (SDB3.3,E3.3.). Bu süreçte beyin fırtınası veya büyük grup tartışması kullanılabilir. Tartışma sırasında öğrencilerin çevresel temizliğe ve sürdürülebilirliğe önem vermeleri sağlanır; çevresel sürdürülebilirliğe katkı sağlayacak uygulamalar geliştirmeleri ve yürütmeleri desteklenir (D18.3). Bu süreçte kontrol listesi, gözlem formu veya anekdot kaydı kullanılabilir. Örnek olaylardan yola çıkarak iklim ve yer şekillerinin nüfusun dağılışı üzerindeki etkisi ile yerleşme faaliyetlerinin doğal çevreye etkisi belirlenir. Bu aşamada öğrencilerin doğal çevreye değer vermeleri ve çevre sorunlarına yol açabilecek davranışlardan kaçınmaları sağlanır (D5.2). Bu süreçte açık uçlu sorular içeren çalışma yaprağı kullanılabilir. SB.6.2.3 Verilen görsel veya dijital kaynaklardan Türk dünyası haritası incelenerek öğrencilerin Türk kültürünün yaşadığı geniş coğrafya hakkında fikir edinmeleri sağlanır (SBAB10.1, E3.2). Verilen yazılı ve görsel kaynaklardan (Türk Devletleri Teşkilatı, Türk İş Birliği ve Koordinasyon Ajansı Başkanlığı, Yunus Emre Enstitüsü, Yurt Dışı Türkler ve Akraba Topluluklar Başkanlığı) yararlanılarak ülkemizin Türk devlet ve topluluklarıyla yaptığı kültürel iş birlikleri incelenir (OB1, OB4). Bu amaçlarla dijital kaynaklardan da yararlanılabilir (OB2).İncelenen kaynaklardan hareketle, öğrencilerden ülkemizin Türk devlet ve topluluklarıyla yaptığı kültürel iş birliklerini eğitim, sanat, spor ve turizm alanları kapsamında, bağlamdan kopmadan yazılı olarak örneklendirmeleri istenir. “TÜRKSOY Ressamlar Buluşması” programı kapsamında “Kuzey Makedonya’dan Ressamlar Sergisi”nin Ankara’da açılmasının sanat alanında yapılan kültürel iş birliğine örnek olduğundan söz edilebilir (OB5). Türk toplumunun kültürel zenginliği, bu zenginliğin tanıtılması, korunması ve geliştirilmesinin gerekliliği vurgulanarak öğrencilere bu konuda duyarlılık kazandırılır (D19.3). Bilim, sanat, spor ve kültür alanında ülkemizi temsil eden kişi ve kurumların önemi üzerinde durularak öğrencilerin bu alanlarda ülkesini temsil edenleri tanımaları ve takdir etmeleri sağlanır (D19.2, SDB2.3). Bu aşamada “kültür ve gönül coğrafyası” kavramına da değinilir. Tarihsel süreçte Türklerin “kültür ve gönül bağı” kurduğu, karşılıklı destek verdiği milletler ve önemli olaylar ele alınarak bu bağlara dair gazete haberleri incelenebilir. Ülkemizin Türk dünyası ile kültürel iş birliklerinin devletlere ve topluluklara eğitim, sanat, spor ve turizm alanlarında nasıl katkıda bulunduğu örnekler ve incelenen kaynaklardan hareketle ifade edilir (OB5). Performans görevi kapsamında öğrencilerden ülkemizin Türk dünyası ile eğitim, sanat, spor ve turizm alanlarından biri ile ilgili kültürel iş birliğimizi geliştirecek bir proje örneği hazırlamaları istenebilir. Hazırlanan proje dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Zenginleştirme": "Ülkemizin, kıtaların ve okyanusların konum özelliklerine dair kelime oyunları veya bulmaca tasarlamaları istenebilir. Ülkemizin doğal ve beşerî çevre özelliklerine ve bunların birbiriyle ilişkisine yönelik bilgi kartları, afiş, poster, bir kutu oyunu veya dijital bir sunum hazırlanabilir. Öğrenciler Türk dünyası ülkelerinden merak ettikleri bir ülkeyi; nüfus, iklim, ekonomik faaliyetler, yer şekilleri, tarihî yapıları gibi farklı özellikleriyle tanıtacakları yazılı, görsel veya dijital bir ürün oluşturabilir.",
+        "Destekleme": "Öğrencilerin kâğıt üzerine daire çizmeleri sağlanır. Öğrencilerden çizdikleri daire üzerinde ekvator ve başlangıç meridyenini göstermeleri istenir. Oluşan dört eşit parçadan ülkemizin olduğu çeyreği tarayarak göstermeleri istenebilir. Dünya dilsiz haritası üzerinde kıtaları farklı renklere boyamaları ve bu harita üzerinde Türkiye’nin yerini belirlemeleri istenebilir. Doğal ve beşerî çevre özellikleri arasındaki ilişki kapsamında öğrencilerden, yakın çevrelerinde gözlemlenen hava olaylarının günlük yaşama etkilerine dair deneyimlerine dayanarak örnekler vermeleri istenebilir. Türk dünyası haritası üzerinde ilgili ülkelerden ülkemize en yakın olanları harita üzerinde ana ve ara yönleri kullanarak göstermeleri istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.6.2.1. Ülkemizin, kıtaların ve okyanusların konum özelliklerini algılayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini görselleştirir.",
+          "bold": false
+        },
+        {
+          "text": "c) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini özetler.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.2.2. Ülkemizin doğal ve beşerî çevre özellikleri arasındaki ilişkiyi çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ülkemizdeki doğal ve beşerî çevre özelliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Ülkemizdeki doğal ve beşerî çevre özellikleri arasındaki ilişkiyi belirler.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.2.3. Ülkemizin Türk dünyasıyla kültürel iş birliklerini yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ülkemizin Türk dünyası ile kültürel iş birliklerini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Ülkemizin Türk dünyası ile kültürel iş birliklerini bağlamdan kopmadan dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "c) Ülkemizin Türk dünyasıyla kültürel iş birliklerini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.6.2.1",
+          "codeAsPrinted": "SB.6.2.1",
+          "text": "Ülkemizin, kıtaların ve okyanusların konum özelliklerini algılayabilme",
+          "group": null,
+          "components": [
+            "a) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini belirler.",
+            "b) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini görselleştirir.",
+            "c) Ülkemizin, kıtaların ve okyanusların göreceli konum özellikleri ile ülkemizin mutlak konum özelliklerini özetler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.2.2",
+          "codeAsPrinted": "SB.6.2.2",
+          "text": "Ülkemizin doğal ve beşerî çevre özellikleri arasındaki ilişkiyi çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Ülkemizdeki doğal ve beşerî çevre özelliklerini belirler.",
+            "b) Ülkemizdeki doğal ve beşerî çevre özellikleri arasındaki ilişkiyi belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.2.3",
+          "codeAsPrinted": "SB.6.2.3",
+          "text": "Ülkemizin Türk dünyasıyla kültürel iş birliklerini yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Ülkemizin Türk dünyası ile kültürel iş birliklerini inceler.",
+            "b) Ülkemizin Türk dünyası ile kültürel iş birliklerini bağlamdan kopmadan dönüştürür.",
+            "c) Ülkemizin Türk dünyasıyla kültürel iş birliklerini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/419",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/419",
+      "title": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:12:58.529Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_419.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin Türkistan coğrafyasında kurulan ilk Türk devletlerinin medeniyetimize katkıları, VII-XIII. yüzyıllar arasında İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına katkıları, İslamiyet’in kabulüyle Türk sosyal ve kültürel hayatında yaşanan değişimler, Anadolu’nun Türkleşmesi ve İslamlaşması sürecinde meydana gelen siyasi mücadeleler ile ilgili bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "22",
+        "Alan Becerileri": "SBAB.3. Tarihsel Empati Becerisi (SBAB3.1.Tarihsel Bağlamsallaştırma)",
+        "Kavramsal Beceriler": "KB2.8. Sorgulama KB2.16. Muhakeme (Akıl Yürütme) (KB2.16.2. Tümdengelimsel Akıl Yürütme) KB2.3. Özetleme",
+        "Eğilimler": "E1.1. Merak, E2.1. Empati, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.6. Analitiklik, E3.9. Şüphe Duyma, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.1. Uyum, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D14. Saygı, D15. Sevgi, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı, OB7. Veri Okuryazarlığı, OB9. Sanat Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "işim Teknolojileri ve Yazılım, Din Kültürü ve Ahlak Bilgisi, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "SBAB1. Zamanı Algılama ve Kronolojik Düşünme (SBAB1.2. Sıralama)",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.6.3.1.Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulayabilme a) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında merak ettiği konuyu tanımlar. b) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında verilen kaynaklara dayanarak sorular sorar. c) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında verilen kaynaklardan bilgi toplar. ç) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında topladığı bilgilerin doğruluğunu değerlendirir. d) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında toplanan bilgiler üzerinden çıkarım yapar. SB.6.3.2. VII-XIII. yüzyıllar arasında İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına katkılarına dair akıl yürütebilme a) İslam medeniyetinin insanlığın ortak mirasına katkılarını belirler. b) İslam medeniyetinin insanlığın ortak mirasına yaptığı katkıları eğitim, bilim, hukuk, kültür, sanat ve mimari alanları ile ilişkilendirir. c) İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına yaptığı katkılar hakkında çıkarım yapar. SB.6.3.3.İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişime tarihsel bağlam oluşturabilme a) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimi kaynaklara dayanarak analiz eder. b) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişime ilişkin dönemin koşullarını fark eder. c) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını günümüz koşullarıyla karşılaştırır. ç) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını dönemin koşulları içinde açıklar. SB.6.3.4. XI-XIII. yüzyıllar arasında meydana gelen siyasi faaliyetler ve askerî mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkisini özetleyebilme a) XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan siyasi faaliyetler ve askerî mücadeleleri çözümler. b) XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan siyasi faaliyetler ve askerî mücadeleleri sınıflandırır. c) XI-XIII. yüzyıllar arasında meydana gelen siyasi faaliyetler ve askerî mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkisini yorumlar.",
+        "İçerik Çerçevesi": "Türkistan’da Kurulan İlk Türk Devletlerinin Medeniyetimize Katkıları VII-XIII. Yüzyıllar Arasında İslam Medeniyetinin İnsanlığın Ortak Mirasına Katkılarıİslamiyet’in Kabulüyle Türklerin Sosyal ve Kültürel Hayatlarında Meydana Gelen Değişimler XI- XIII. Yüzyıllar Arasında Meydana Gelen Askerî Mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına Katkıları",
+        "Anahtar Kavramlar": "balbal, destan, Gök Tengri, Hicret, İslamiyet, kâğıt, konargöçer, töre",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; soru kartları (5N1K), açık uçlu sorular içeren çalışma yaprağı, kontrol listesi, gözlem formu, anekdot kaydı, derecelendirme ölçeği, karşılaştırma tablosu, bütüncül dereceli puanlama anahtarı, kavram ağı ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: İslamiyet’in kabulü ile sosyal ve kültürel yaşamlarında meydana gelen değişime ilişkin bir hikâye yazmaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin medeniyet, ortak miras, İslam’ın eğitime verdiği önem, dinî inancın sosyal hayata etkileri, göç ve yerleşme kavramları hakkında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilere medeniyet kavramına ilişkin açık uçlu sorular sorulabilir. Öğrencilerden yakın çevrelerinden hareketle ortak miras ögeleri ile ilgili örnekler vermeleri istenebilir. Öğrencilere İslam’ın eğitime verdiği öneme ilişkin beyin fırtınası yaptırılabilir. Öğrencilere dinî inançların insanların sosyal hayatına nasıl etkilerde bulunabileceğine yönelik açık uçlu sorular sorulabilir. Öğrencilere Türklerin Anadolu’ya göç ve yerleşmeleri sonucunda meydana getirdikleri eserlerin görselleri üzerinden Anadolu’da nasıl bir kültürel değişim yaşanmış olabileceğine ilişkin açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilerden “Günlük hayatımızda belirli aralıklarla yer değiştiriyor olsaydık bu bizim sosyal hayatımızı nasıl etkilerdi?”, “Böyle bir sosyal hayatta yerleşik hayatı istemek için hangi sebeplerimiz olurdu?” gibi soruları cevaplamaları istenebilir. Öğrencilerden İslam medeniyetine ait ortak kültürel miras kapsamındaki eğitim, kültür ve sanat alanları ile mimari eserlere çevrelerinden örnekler vermeleri istenebilir. Öğrencilerden sosyal hayatımızda İslamiyet’in etkilerine günlük hayatlarından örnekler vermeleri istenebilir. Öğrencilere Anadolu Türk kültürüne ilişkin yazılar ve görseller üzerinden günlük hayatımızda devam eden kültürel özelliklerimize yönelik açık uçlu sorular sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.6.3.1 Öğrencilerden harita üzerinde Türkistan’ın doğal çevre özelliklerini belirlemeleri istenir (OB7). Türkistan’da kurulan ilk Türk devletleri ile ilgili verilen yazılı ve görsel kaynaklar incelenir (OB1, OB4). Ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Bu devletlerden Asya Hun Devleti, Göktürkler ve Uygurlar’ın medeniyetimize katkıları hakkında öğrenciler merak ettiği konuları tanımlar (E1.1). Öğrencilerin Türk tarihini araştırarak millî kimliklerini tanımaları desteklenir (D19.2). Öğrencilerden seçtikleri konularla ilgili sorular oluşturmaları istenir ve belirledikleri soruları soru kartlarına dönüştürmeleri sağlanır. Bu süreçte 5N1K tekniği kullanılabilir. Öğrencilerin merak ettikleri konulardan ve hazırladıkları sorulardan hareketle Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkılarına ilişkin verilen kaynaklardan bilgi toplaması sağlanır (OB5). Asya Hun Devleti, Göktürkler ve Uygurlar’ın yönetim, askerî, sosyal hayat, sanat, hukuk ve ekonomi alanlarında medeniyetimize katkıları kaynaklar üzerinden incelenir (OB5). Kaynak incelemesi sırasında öğrencilerin millî kimliklerini tanımaları ve milletine karşı vefalı, duyarlı bireyler olarak yetişmeleri desteklenir (D19.2).Toplanan bilgilerin doğruluğunu değerlendirmek amacıyla öğrencilerden kaynaklardaki benzer ve farklı bilgileri belirlemeleri istenir. Bu süreçte açık uçlu sorular içeren çalışma yaprağı kullanılır (E3.6, E3.9, E3.10). Dijital kaynaklardan elde edilen bilgilerin doğruluğunu değerlendirmek için kaynağın dijital kimliğinin veya uzantısının güvenilirliği dikkate alınır (OB2). Kaynaklardan edinilen bilgilerden hareketle Asya Hun Devleti, Göktürkler ve Uygurlar’ın yönetim, hukuk, askerî, sosyal hayat, sanat, ekonomi gibi alanlarda medeniyetimize katkıları hakkında çıkarımlar yapılır (OB5, SDB2.2). Bu süreçte sınıf tartışması (beyin fırtınası, büyük grup tartışması vb.) uygulanabilir. Çıkarımların sözlü olarak ifade edilmesi sürecinde kontrol listesi, gözlem formu veya anekdot kaydına başvurulabilir. Medeniyetimizin oluşumunda ilk Türk devletlerinin rolü hakkında ulaşılan çıkarımların yansıtıldığı bir afiş, poster veya broşür hazırlayarak sınıfta arkadaşlarına sunmaları istenir (OB4, E3.2, E3.3, SDB3.3). SB.6.3.2 İslam medeniyetinin VII-XIII. yüzyıllar arasında Hz. Muhammed (sav), Dört Halife, Emevi ve Abbasi Dönemleri’nde insanlığın ortak mirasına yapılan katkılar, verilen yazılı ve görsel kaynaklar üzerinden incelenir (OB1, OB4). Ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerden yapılan inceleme sonucunda İslam medeniyetinin insanlığın ortak mirasına katkılarını belirlemeleri istenir (SDB2.3). Ortak mirasın korunup gelecek nesillere aktarılması sürecinde öğrencilerin çevresine, millî ve manevi değerlerine saygılı davranmaları ve bu değerleri koruma noktasında istekli eylemler sergilemeleri sağlanır (D14.3). Ayrılıp birleşme tekniği ile sınıf gruplara ayrılabilir. İslam medeniyetinin insanlığın ortak mirasına katkıları; eğitim, bilim, hukuk, kültür, sanat ve mimari konu alanları olacak şekilde grup üyeleri tarafından paylaşılır. Aynı konuları alan grup üyelerinin uzmanlık grubu adı altında bir araya gelerek ilgili konu alanında derinlemesine çalışmaları sağlanır. Grup çalışmaları sırasında öğrencilerin İslam medeniyetinin oluşturduğu ortak mirasa sahip çıkmaları, bu mirası koruma noktasında duyarlı ve saygılı eylemler sergilemeleri sağlanır (D14.3, D15.2). Uzmanlaşan grup üyelerinden asıl gruplarına dönerek edindiği bilgileri grup üyeleri ile paylaşmaları istenir. Grup sözcüleri tarafından İslam medeniyetinin insanlığın ortak mirasına yaptığı katkılar; eğitim, bilim, hukuk, kültür, sanat ve mimari alanları ile ilişkilendirilerek açıklanır. Sunum süreçleri gözlem formu, kontrol listeleri veya derecelendirme ölçeği ile takip edilebilir (SDB2.1, OB5). Öğrencilerin Hz. Muhammed (sav), Dört Halife, Emevi ve Abbasi Dönemleri’nde, İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında yaptığı katkılar hakkında çıkarımlarda bulunmaları sağlanır (OB9, SDB2.3). SB.6.3.3 Öğrenciler iki gruba ayrılarak birinci gruptaki öğrencilere Türklerin İslamiyet öncesi sosyal ve kültürel hayatlarını yansıtan yazılı, görsel ve varsa dijital kaynaklar sunulur (OB1, OB2, OB4). İkinci gruptaki öğrencilere de Türklerin İslamiyet’i kabulüyle sosyal ve kültürel hayatlarında gerçekleşen değişimi yansıtan yazılı, görsel ve varsa dijital kaynaklar sunulur (OB1, OB2, OB4). Gruplar İslamiyet öncesi ve İslamiyet’in kabulünden sonraki dönemde Türklerin sosyal ve kültürel hayatlarının temel özelliklerini hayat biçimi, yazı, dil ve edebiyat, sanat, mimari alanlarına ilişkin kaynaklar üzerinden analiz eder (SDB2.2, OB5, E3.6, E3.10). Grupların yaptıkları analizler doğrultusunda Türklerin İslamiyet’i kabulüyle sosyal ve kültürel hayatlarında meydana gelen değişimi sözlü olarak ifade etmeleri istenir. Öğrenciler, Karahanlılar, Gazneliler ve Büyük Selçuklular’a ait verilen yazılı ve görsel kaynakları inceleyerek dönemin koşullarını fark eder. Türklerin İslamiyet’i kabulü ile sosyal ve kültürel hayatlarında meydana gelen değişimin günümüze yansımasına örnekler verilir. Türklerin İslamiyet’i kabulüyle beraber sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçları ile günümüz koşulları karşılaştırılır (SDB2.3). Öğrencilerden elde ettiği bilgileri karşılaştırma tablosunda göstermeleri istenir (OB7).Performans görevi kapsamında öğrencilerden edindikleri bilgilerden yola çıkarak kendilerini İslamiyet Öncesi Dönem’den İslamiyet’in kabulüne geçiş aşamasında yaşayan biri olarak hayal etmeleri ve İslamiyet’in kabulü ile sosyal ve kültürel hayatlarında meydana gelen değişime ilişkin bir hikâye tasarlamaları istenebilir (SBD3.1). Öğrencilerden tasarladıkları hikâyenin bir ögesi olarak İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını dönemin koşulları içinde açıklamaları istenir. Bu açıdan öğrencilerin Türklerin sosyal hayatlarında meydana gelen değişimi çok yönlü bakış açısıyla değerlendirmeleri ve millî, manevi değerlere duyarlı davranmaları amacıyla çalışmalar yapılır (D14.1, D14.3, SDB3.3, OB5, E2.1). Oluşturulan hikâyeler derecelendirme ölçekleri kullanılarak değerlendirilebilir. SB.6.3.4 XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşması sürecinde meydana gelen askerî ve siyasi faaliyetler ile ilgili yazılı, görsel kaynaklar öğrencilere sunulur (OB1, OB4). Ayrıca dijital kaynaklardan yararlanılabilir (OB2). Öğrenciler askerî mücadelelerden Malazgirt Savaşı, Haçlı Saldırıları (I, II ve III.), Miryokefalon Savaşı’nın sebep ve sonuçlarını, siyasi faaliyetlerden Anadolu’daki imar ve iskân çalışmalarını kaynaklar üzerinden inceler. Öğrencilerden XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşması sürecinde meydana gelen askerî mücadeleleri açıklamalı tarih şeridinde sıralamaları istenir (SBAB1.2). Bu aşamada Türklerin askerî ve siyasi başarıları üzerinden millî kimliğimizi tanımanın önemine yönelik açıklamalarda bulunulur (D19.2). XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etki eden askerî mücadeleler ile sonrasında gerçekleşen imar ve iskân çalışmaları arasında öğrencilerin ilişki kurmaları sağlanır (OB1, E3.6, E3.10). Öğrencilerin XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan askerî ve siyasi faaliyetleri sınıflandırmaları sağlanır. Bu süreçte kavram ağı ku llanılabilir. Öğrenciler tarafından XI-XIII. yüzyıllar arasında meydana gelen askerî ve siyasi faaliyetlerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkilerine ilişkin yorumlarını içeren bir metin hazırlanır. Bu metinde dönemin mimari eserlerine ait görseller içeren afiş veya posterlere de yer verilir. Hazırlanan ürünler sınıfla paylaşılır ve dereceli puanlama anahtarı ile değerlendirilebilir (E3.2, E3.3, OB1).",
+        "Zenginleştirme": "Öğrencilerden Türk kültürüne ait unsurları araştırarak bu unsurlardan hareketle dijital bir çizgi roman veya animasyon hazırlaması istenebilir. Bu çalışmalar kapsamında incelenen kültürel unsurları barındıran bir Türk ezgisi oluşturmaları da istenebilir. İslamiyet’in kabulüyle birlikte Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimlerle ilgili dijital ortamda resimlerle anlatılan ve öğrenciler tarafından interaktif olarak katkıda bulunulan etkileşimli “Görsel Değişim Haritası” hazırlanması istenebilir. Dede Korkut Hikâyeleri’nden birinin incelenmesi ve bu hikâyedeki İslam öncesi ile İslam sonrası kültür unsurlarının karşılaştırılarak bir sunum yapılması istenebilir. İslam medeniyetinin coğrafya, matematik, tıp, astronomi, kimya alanlarına katkılarının günümüze etkisini gösteren bilgi görseli hazırlaması istenebilir. İslam medeniyetinin bilim, kültür, ticaret, sanat gibi alanlarda gerçekleştirdiği çalışmaların hangi coğrafyalarda gerçekleştiğini belirten simge, sembol ve açıklamalar eklenerek interaktif haritalar oluşturması istenebilir. Horasan Erenleri ve Anadolu’nun Türkleşmesi faaliyetleri konusuna ilişkin olarak genel ağda yer alan kaynakların taranması istenebilir",
+        "Destekleme": "Türkistan coğrafyası ve kurulan ilk Türk devletleriyle ilgili somutlaştırıcı görsel-işitsel materyaller kullanılabilir. İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında ortak kültürel mirasa katkılarını ana hatlarıyla ortaya koyan bilgi kartları ile konular sunulabilir. İslamiyet öncesi Türkler ile ilgili çizgi film, belgesel izlenebilir. Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan iskân faaliyetlerine ilişkin görsellerden oluşan bir albüm oluşturulabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.6.3.1.Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında merak ettiği konuyu tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında verilen kaynaklara dayanarak sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "c) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında verilen kaynaklardan bilgi toplar. ç) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında toplanan bilgiler üzerinden çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.3.2. VII-XIII. yüzyıllar arasında İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına katkılarına dair akıl yürütebilme",
+          "bold": true
+        },
+        {
+          "text": "a) İslam medeniyetinin insanlığın ortak mirasına katkılarını belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) İslam medeniyetinin insanlığın ortak mirasına yaptığı katkıları eğitim, bilim, hukuk, kültür, sanat ve mimari alanları ile ilişkilendirir.",
+          "bold": false
+        },
+        {
+          "text": "c) İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına yaptığı katkılar hakkında çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.3.3.İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişime tarihsel bağlam oluşturabilme",
+          "bold": true
+        },
+        {
+          "text": "a) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimi kaynaklara dayanarak analiz eder.",
+          "bold": false
+        },
+        {
+          "text": "b) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişime ilişkin dönemin koşullarını fark eder.",
+          "bold": false
+        },
+        {
+          "text": "c) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını günümüz koşullarıyla karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını dönemin koşulları içinde açıklar.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.3.4. XI-XIII. yüzyıllar arasında meydana gelen siyasi faaliyetler ve askerî mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkisini özetleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan siyasi faaliyetler ve askerî mücadeleleri çözümler.",
+          "bold": false
+        },
+        {
+          "text": "b) XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan siyasi faaliyetler ve askerî mücadeleleri sınıflandırır.",
+          "bold": false
+        },
+        {
+          "text": "c) XI-XIII. yüzyıllar arasında meydana gelen siyasi faaliyetler ve askerî mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkisini yorumlar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.6.3.1",
+          "codeAsPrinted": "SB.6.3.1",
+          "text": "Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında merak ettiği konuyu tanımlar.",
+            "b) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında verilen kaynaklara dayanarak sorular sorar.",
+            "c) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında verilen kaynaklardan bilgi toplar.",
+            "ç) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında topladığı bilgilerin doğruluğunu değerlendirir.",
+            "d) Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkıları hakkında toplanan bilgiler üzerinden çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": [
+            "Sayfada kod ile metin arasında boşluk yok: \"SB.6.3.1.Türkistan’d\"",
+            "\"c)\" bileşeni sayfada önceki öğe ile aynı satırda yazılmış; ayrıldı",
+            "\"ç)\" bileşeni sayfada önceki öğe ile aynı satırda yazılmış; ayrıldı"
+          ]
+        },
+        {
+          "code": "SB.6.3.2",
+          "codeAsPrinted": "SB.6.3.2",
+          "text": "VII-XIII. yüzyıllar arasında İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına katkılarına dair akıl yürütebilme",
+          "group": null,
+          "components": [
+            "a) İslam medeniyetinin insanlığın ortak mirasına katkılarını belirler.",
+            "b) İslam medeniyetinin insanlığın ortak mirasına yaptığı katkıları eğitim, bilim, hukuk, kültür, sanat ve mimari alanları ile ilişkilendirir.",
+            "c) İslam medeniyetinin eğitim, bilim, hukuk, kültür, sanat ve mimari alanlarında insanlığın ortak mirasına yaptığı katkılar hakkında çıkarım yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.3.3",
+          "codeAsPrinted": "SB.6.3.3",
+          "text": "İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişime tarihsel bağlam oluşturabilme",
+          "group": null,
+          "components": [
+            "a) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimi kaynaklara dayanarak analiz eder.",
+            "b) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişime ilişkin dönemin koşullarını fark eder.",
+            "c) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını günümüz koşullarıyla karşılaştırır.",
+            "ç) İslamiyet’in kabulüyle Türklerin sosyal ve kültürel hayatlarında meydana gelen değişimin sonuçlarını dönemin koşulları içinde açıklar."
+          ],
+          "issues": [],
+          "notes": [
+            "Sayfada kod ile metin arasında boşluk yok: \"SB.6.3.3.İslamiyet’i\""
+          ]
+        },
+        {
+          "code": "SB.6.3.4",
+          "codeAsPrinted": "SB.6.3.4",
+          "text": "XI-XIII. yüzyıllar arasında meydana gelen siyasi faaliyetler ve askerî mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkisini özetleyebilme",
+          "group": null,
+          "components": [
+            "a) XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan siyasi faaliyetler ve askerî mücadeleleri çözümler.",
+            "b) XI-XIII. yüzyıllar arasında Anadolu’nun Türkleşmesi ve İslamlaşmasına etkide bulunan siyasi faaliyetler ve askerî mücadeleleri sınıflandırır.",
+            "c) XI-XIII. yüzyıllar arasında meydana gelen siyasi faaliyetler ve askerî mücadelelerin Anadolu’nun Türkleşmesi ve İslamlaşmasına etkisini yorumlar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/420",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/420",
+      "title": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:13:00.039Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_420.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin; bireylerin yönetimin karar alma sürecine etkisi, toplumsal hayattaki düzenin sürdürülmesinde hakların ve sorumlulukların önemi, dijitalleşme ve teknolojik gelişmelerin vatandaşlık haklarının kullanımına etkileri ile ilgili bilgi ve beceri kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "-",
+        "Kavramsal Beceriler": "KB2.4. Çözümleme KB2.14. Yorumlama KB2.8. Sorgulama",
+        "Eğilimler": "E1.3. Azim ve Kararlılık, E2.2. Sorumluluk, E3.2. Odaklanma, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D1. Adalet, D2. Aile Bütünlüğü, D8. Mahremiyet, D11. Özgürlük, D13. Sağlıklı Yaşam, D16. Sorumluluk",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB6. Vatandaşlık Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.6.4.1. Yönetimin karar alma sürecini etkileyen unsurları çözümleyebilme a) Yönetimin karar alma sürecini etkileyen unsurları belirler. b) Yönetimin karar alma sürecini etkileyen unsurlar arasındaki ilişkiyi belirler. SB.6.4.2. Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini yorumlayabilme a) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini inceler. b) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini bağlamdan kopmadan dönüştürür. c) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder. SB.6.4.3. Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkilerini sorgulayabilme a) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkilerini tanımlar. b) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında sorular sorar. c) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında bilgi toplar. ç) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında topladığı bilgileri güncellik ve bilimsellik açısından değerlendirir. d) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında doğruluğunu değerlendirdiği bilgilerden hareketle çıkarımlar yapar.",
+        "İçerik Çerçevesi": "Yönetimin Karar Alma Sürecini Etkileyen UnsurlarTemel Hak ve Sorumlulukların Toplumsal Düzenin Sürdürülmesindeki ÖnemiDijitalleşme ve Teknolojik Gelişmelerin Vatandaşlık Hak ve Sorumluluklarına Etkileri",
+        "Anahtar Kavramlar": "dijital vatandaşlık, hukuk, kamuoyu, medya, sivil toplum kuruluşu (STK), siyasi parti",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; kavram ağları, zihin haritaları, gözlem formu, kontrol listesi, derecelendirme ölçeği, bütüncül dereceli puanlama anahtarı, öz-akran değerlendirme formları ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Yakın çevrede yaşanan veya yaşanması muhtemel bir sorunun veya ihtiyacın çözümüne yönelik ilgili kuruma göndermek üzere dilekçe yazmaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin demokrasi, demokrasinin temel nitelikleri, vatandaş, etkin vatandaşlık, toplumsal düzeni, eşitlik ve hak kavramı ile temel hak ve özgürlükler hakkında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden demokrasinin nitelikleriyle ilgili kavram haritasında boş bırakılan alanları doldurmaları istenebilir. Öğrencilere toplumsal düzen, eşitlik, hak, vatandaşlık kavramları ile temel hak ve sorumluluklara dair açık uçlu sorular sorulabilir. Etkin ve pasif vatandaşın özellikleri konusunda kart gösterme tekniği uygulanabilir.",
+        "Köprü Kurma": "Öğrencilere millî bayramlarda yapılan kutlamaların nedenleri ile demokrasi arasındaki ilişkiyi kurmaya yönelik sorular sorulabilir. Öğrenciler tarafından sivil toplum kuruluşlarının MEB tarafından desteklenen proje örnekleri incelenebilir. Öğrenciler tarafından medyanın kamuoyu oluşturmadaki etkisini somutlaştıran örnek haberler incelenebilir. Öğrenciler tarafından sorumlulukların yerine getirilmediği durumda toplumsal düzenin bozulabileceğine yönelik gazete haberleri incelenebilir. Öğrenciler tarafından dijitalleşme ve teknolojik gelişmelerin insan hayatına etkisi ile ilgili kamu spotu veya video izlenebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.6.4.1 Öğrencilerin ailede ve okulda alınan kararlara katılım düzeylerine ve öğrenci katılımlarına ilişkin izlenebilecek süreçlere yönelik sınıf tartışması yapılır. Tartışma sürecinde öğrenciler, fikirlerini savunmada azim ve kararlılık göstermeleri yönünde teşvik edilir (E1.3). Aile içi iletişimin önemi ve tüm aile üyelerinin söz hakkına sahip olmasının demokratik bir ailenin vazgeçilmez özellikleri olduğu vurgulanır. Böylece öğrencilerin aile içi etkili iletişimin sağlayacağı yararları fark etmeleri ve aile bireylerinin görüşlerine önem vermeleri desteklenir (D2.3). Anayasa’nın “Siyasi Haklar ve Ödevler” bölümü incelenerek 18 yaşına gelmiş her bireyin düzenli aralıklarla yapılan seçimler aracılığı ile yönetime katıldığı ve karar alma süreçlerinde etkili olduğu çıkarımını yapmaları sağlanır. Öğrencilerin, seçmen yaşına geldiğinde seçimlere katılmanın topluma karşı bir görev/sorumluluk olduğunu anlamaları beklenir (D16.2,E2.2, OB6). Bireylerin seçimler dışında yönetimin karar alma süreçlerini nasıl etkileyebileceğine dair öğrenci görüşleri alınır. Bu süreçte fikir taraması yapılabilir. Demokratik hayatta katılım hakkına vurgu yapılarak öğrencilerin hem kendi haklarını hem de başkalarının haklarını koruyacak adil tutumlar sergilemeleri beklenir (D1.1). Verilen yazılı ve görsel kaynaklardan yönetimin karar alma süreçlerini etkileyen unsurlar ile ilgili bilgiler öğrenciler tarafından incelenir (OB1, OB4). Ayrıca dijital kaynaklar da kullanılabilir (OB2). İnsanların yönetimin karar alma süreçlerini hangi unsurlar aracılığıyla etkileyebildiklerini fark etmeleri sağlanarak bu sürece etki eden unsurların siyasi partiler, STK, medya, kamuoyu olduğunu öğrencilerin ifade etmesi sağlanır, ilgili kavramlar açıklanır. Bu unsurlardan hangilerinin yönetimin karar alma süreçlerini daha güçlü bir şekilde etkilediği tartışılır. Bu süreçte vızıltı grupları tartışma teknikleri uygulanabilir (SDB2.1, SDB2.2). Kamuoyu, STK, siyasi partiler ve medyanın aynı konuya ilişkin birbirlerini ve yönetimin karar alma sürecini etkileyebilme gücü ve izledikleri yollar arasındaki benzerlikler ve farklılıklar karşılaştırılır (E3.10). Bu unsurların yönetimin karar alma sürecine etkisini öğrencilerin doğrudan ve dolaylı etki olarak açıklamaları sağlanır. Öğrencilerden yönetimin karar alma süreci ile bu süreci etkileyen unsurlar arasındaki ilişkiyi değerlendirmeleri istenebilir. Bu süreçte kavram haritası kullanılabilir. SB.6.4.2 Öğrencilerden ailede, okulda ve yakın çevrede sahip olunan hak ve sorumluluklara örnekler vermeleri istenir. Öğrencilerin; Anayasa’nın ‘Temel Haklar ve Ödevler’ bölümünü incelemeleri ve birer vatandaş olarak sahip oldukları hak ile sorumlulukları ifade etmeleri sağlanır. (OB6, OB1). Hak ve sorumluluk bilincinin toplumsal düzeni sürdürmedeki önemine yönelik öğrenci görüşleri alınır. Bu süreçte küçük grup tartışma teknikleri uygulanabilir. Öğrencilerin yakın çevresinde yaşanan durumlara odaklanarak günlük yaşamdan örnekler vermeleri sağlanır (E3.2, SDB2.1, SDB2.2). Bu bağlamda öğrencilerin kendi özgürlüklerini kullanırken diğer insanların haklarına özen göstermeleri ve toplumsal düzenin sağlanması amacıyla kurallara uymaları sağlanır (D11.3).İnsanların haklarını bilmeleri, haklarına sahip çıkmaları ve sorumluluklarını yerine getirmelerinin toplumsal düzeni sürdürmedeki önemi ile ilgili öğrencilerden yazılı, görsel veya dijital bir ürün oluşturarak sınıf içinde sunmaları istenir (E2.2, OB2, OB4). Bu sayede temel hak ve sorumlulukların toplumsal hayattaki önemini ifade etmeleri sağlanır (SDB2.3). Bu süreçte performans görevi olarak yakın çevrede yaşanan veya yaşanması muhtemel bir sorunun ve taleplerin ilgili yönetim birimine bildirilmesine yönelik dilekçe yazma etkinliği yapılabilir. Dilekçe hakkının önemi ve kullanımı açıklanır. İnsanların vatandaşlık haklarını bilmeleri ve üzerilerine düşen sorumlulukları yerine getirmelerinin önemi açıklanarak öğrencilerin bu konuda duyarlı olması sağlanır (D16.2, OB6). Ortaya çıkan dilekçeler dereceli puanlama anahtarı kullanılarak değerlendirilebilir. Öğrencilerden insan hak ve özgürlüklerinin toplumsal düzenin sürdürülmesindeki önemine yönelik verilen bilimsel kaynaklardan hareketle bir rapor hazırlamaları istenir (OB1). Rapor hazırlama sürecinde hak, eşitlik ve adalet kavramlarına vurgu yapılabilir. Öğrencilerin hazırladığı raporlarda toplumsal düzenin sürdürülmesini, temel hak ve sorumlulukların önemi açısından ifade etmeleri sağlanır (SDB2.3). Hazırlanan öğrenci raporları derecelendirme ölçeği ile değerlendirilebilir. SB.6.4.3 Öğrenciler, verilen yazılı ve görsel kaynaklardan yola çıkılarak vatandaşlık haklarının kullanımında teknolojik gelişmelerin etkisini açıklar (OB1, OB4). Bu aşamada dijital kaynaklara da başvurulabilir (OB2). E-devlet, e-nabız, e-okul, EBA uygulamalarının bireylere sunduğu hizmetler ile ilgili haberler dijital kaynaklardan incelenerek haklar ile ilişkilendirilir. Teknolojinin insan hayatına etkisi ile ilgili örnek olay veya hikâyeler 5N1K soruları doğrultusunda incelenir. Öğrencilerin örnek olaylardan ve kamu hizmeti sunan dijital uygulamalara yönelik incelemelerden hareketle dijitalleşme ve teknolojik gelişmelerin hakların kullanımına etkileri hakkında sorular sormaları sağlanır (E3.5, OB6). Dijitalleşme ve teknolojik gelişmelerin e-devlet, e-nabız, CİMER (T.C. Cumhurbaşkanlığı İletişim Merkezi) hizmetleri gibi olumlu etkilerine ve siber zorbalık, kişisel verilerin güvenlik ve gizliliğinin tehlikeye girmesi gibi olumsuz etkilerine dair verilen kaynaklar grup çalışması ile incelenerek konuya ilişkin bilgi toplamaları sağlanır (OB1). Bu aşamada öğrencilerin kişisel bilgilerin gizliliğini korumalarının önemi üzerinde durulur. Sosyal medyada kişisel bilgi, belge ve fotoğraflarının erişilebilirliğini sınırlandırmaları ile kişisel bilgilerinin yer aldığı dijital araçları bilinçli ve güvenli bir şekilde kullanmalarının önemi örnek olaylar üzerinden açıklanır (OB2, SDB3.3, D8.2). Ayrıca teknoloji kullanımının bağımlılığa dönüşmemesi amacıyla öğrencilerin dijital araçları kontrollü kullanmaları desteklenir (D13.3). Öğrencilerin vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin olumlu ve olumsuz yönlerini, güncellik ve bilimsellik açısından değerlendirmeleri sağlanır (SDB2.2). Bu süreçte münazara tekniği kullanılabilir. Münazara sürecinde sunulan bilgilerin güncellik ve bilimselliği değerlendirilerek dijital ve teknolojik gelişmelerle bunların haklar üzerindeki olumlu ve olumsuz etkilerinden hangisinin daha fazla öne çıktığına yönelik çıkarımlar yapmaları sağlanır (E3.4). Münazara süreci öğretmen tarafından kontrol listesi veya derecelendirme ölçeği ile değerlendirilebilir.",
+        "Zenginleştirme": "Yönetimin karar alma süreçlerini etkileyen “siyasi partiler, STK, medya” kavramlarını tanıtan dijital pano hazırlayabilir. Yüksek Seçim Kurulunun yayınladığı “seçime ilişkin görseller ve kamu spotları” incelenebilir. Kendi sivil toplum kuruluşlarını tasarlamaları (hizmet verecekleri alan, amaçları, yapacakları etkinlikler ve logoları) istenebilir. Sosyal medyanın vatandaşlık haklarını kullanma ve haklar üzerindeki olumlu veya olumsuz etkisi konusunda sunum hazırlayabilir. Günlük yaşamında karşılaştığı bir sorunun çözümünde kamuoyu oluşturmak isteyen bir vatandaş olarak medyayı bu amaçla nasıl kullanabileceğine dair literatür taraması yapabilir. Bir hakkın kullanılması, sınırlandırılması veya ihlalinin, bir sorumluluğun yerine getirilmesi veya getirilmemesinin toplumsal düzen üzerindeki etkisine yönelik seminer verebilir. Dijitalleşme ve teknolojik gelişmelerin vatandaşlık haklarına etkilerine yönelik farklı bakış açılarını yansıtan çizgi roman tasarlayabilir.",
+        "Destekleme": "Yönetimin karar alma sürecini etkileyen unsurlarla ilgili kavram karikatürleri incelenebilir. Toplumsal düzeni sağlayan temel hak ve sorumluluklar ile ilgili görsel boyama, eşleştirme çalışmaları yapılabilir. Kamu hizmeti veren dijital uygulamaların kullanım aşamaları şemalar üzerinde gösterilebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.6.4.1. Yönetimin karar alma sürecini etkileyen unsurları çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yönetimin karar alma sürecini etkileyen unsurları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Yönetimin karar alma sürecini etkileyen unsurlar arasındaki ilişkiyi belirler.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.4.2. Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini bağlamdan kopmadan dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "c) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.4.3. Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkilerini sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkilerini tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "c) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında topladığı bilgileri güncellik ve bilimsellik açısından değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında doğruluğunu değerlendirdiği bilgilerden hareketle çıkarımlar yapar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.6.4.1",
+          "codeAsPrinted": "SB.6.4.1",
+          "text": "Yönetimin karar alma sürecini etkileyen unsurları çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Yönetimin karar alma sürecini etkileyen unsurları belirler.",
+            "b) Yönetimin karar alma sürecini etkileyen unsurlar arasındaki ilişkiyi belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.4.2",
+          "codeAsPrinted": "SB.6.4.2",
+          "text": "Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini inceler.",
+            "b) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini bağlamdan kopmadan dönüştürür.",
+            "c) Toplumsal düzenin sürdürülmesinde temel hak ve sorumlulukların önemini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.4.3",
+          "codeAsPrinted": "SB.6.4.3",
+          "text": "Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkilerini sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkilerini tanımlar.",
+            "b) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında sorular sorar.",
+            "c) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında bilgi toplar.",
+            "ç) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında topladığı bilgileri güncellik ve bilimsellik açısından değerlendirir.",
+            "d) Vatandaşlık haklarının kullanımında dijitalleşme ve teknolojik gelişmelerin etkileri hakkında doğruluğunu değerlendirdiği bilgilerden hareketle çıkarımlar yapar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/421",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/421",
+      "title": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:13:01.534Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_421.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin ülkemizin kaynakları ile ekonomik faaliyetler arasındaki ilişkiyi çözümleyebilme, ekonomik faaliyetler ile meslekler arasındaki ilişkiye yönelik çıkarımda bulunabilme, tasarlanan bir ürünün yatırım ve pazarlama sürecine ilişkin proje hazırlayabilmelerine yönelik bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.3. Değişim ve Sürekliliğe Dair Kanıta Dayalı Öngörüde Bulunma) SBAB6. Girişimcilik",
+        "Kavramsal Beceriler": "KB.2.4. Çözümleme",
+        "Eğilimler": "E1.4. Kendine İnanma (Öz Yeterlilik), E1.5. Kendine Güvenme (Öz Güven), E2.3. Girişkenlik, E2.5. Oyunseverlik, E3.3. Yaratıcılık",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.1. Uyum, SDB3.2. Esneklik, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D3. Çalışkanlık, D6. Dürüstlük, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Bilişim Teknolojileri ve Yazılım, Teknoloji ve Tasarım",
+        "Beceriler Arası İlişkiler": "SBAB11. Coğrafi İçerikli Tablo, Grafik, Şekil ve Diyagram SBAB10. Harita (SBAB10.1. Harita Okuma), SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.6.5.1. Ülkemizin kaynakları ile ekonomik faaliyetler arasındaki ilişkiyi çözümleyebilmea) Ülkemizin kaynakları ve ekonomik faaliyetlerin özelliklerini belirler.b) Ülkemizin kaynakları ve ekonomik faaliyetler arasındaki ilişkileri belirler. SB.6.5.2. Ekonomik faaliyetler ve meslekler arasındaki ilişki hakkında çıkarımda bulunabilmea) Gözlem ve deneyimlerinden yola çıkarak ekonomik faaliyetler ve meslekleri ilişkilendirir.b) Ekonomik faaliyetlerdeki değişime bağlı olarak gelecekte ortaya çıkabilecek meslekler hakkında çıkarımda bulunur. SB.6.5.3. Tasarladığı bir ürün için yatırım ve pazarlama proje önerisi hazırlayabilmea) Tasarladığı bir ürün için yatırım ve pazarlama projelerini sorgular.b) Tasarladığı ürünün yatırım ve pazarlama alanlarına ilişkin gözlemlerine dayalı tahminlerde bulunur.c) Olası riskleri değerlendirerek tasarladığı ürünün yatırım ve pazarlama alanlarının belirlenmesine gerekçe sunarak karar verir.ç) Tasarladığı ürünün yatırım ve pazarlama aşaması için gerekli kaynakları yönetir.d) Tasarladığı ürün için yatırım ve pazarlama proje öneri raporu oluşturur.",
+        "İçerik Çerçevesi": "Ülkemizin Kaynakları ve Ekonomik FaaliyetlerEkonomik Faaliyetler ve MesleklerTasarlanan Bir Ürünün Yatırım ve Pazarlama Süreci",
+        "Anahtar Kavramlar": "doğal kaynak, ekonomik faaliyet, meslek, pazarlama, tasarım, üretim-dağıtım-tüketim, yatırım",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktılarının değerlendirilmesi için kontrol listesi, gözlem formu, anekdot kaydı, derecelendirme ölçeği, kavram haritası, zihin haritası, performans görevi, analitik ve bütüncül dereceli puanlama anahtarı kullanılabilir. Performans görevi: Gelecekte ortaya çıkabilecek mesleklerle ilgili olarak gelecekten bugüne bir mektup veya kartpostal hazırlamaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin doğal kaynaklar, ekonomik faaliyetler, meslekler ve bir ürünün üretim, dağıtım ve tüketim süreci ile ilgili temel düzeyde bilgilere sahip oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden doğal kaynaklara örnek vermeleri veya sunulan görsellerde hangi doğal kaynakların yer aldığını açıklamaları istenebilir. Öğrencilerden ekonomik faaliyetlere örnekler vermeleri istenebilir. Ekonomik faaliyetlerle ilişkili meslekleri eşleştirme etkinlikleri yapılabilir. Öğrencilerden üretim, dağıtım ve tüketim aşamalarına örnekler vermeleri istenebilir. Örnek bir ürün üzerinden üretim, dağıtım ve tüketim ağını anlatmaları istenebilir.",
+        "Köprü Kurma": "Öğrencilerden çevrelerindeki toprak, su, orman ve maden kaynaklarına dayalı ekonomik faaliyetlere örnek vermeleri istenebilir. Öğrencilere ailelerinde çalışan bireylerin hangi ekonomik faaliyet alanıyla ilgilendikleri sorulabilir. Öğrencilere ülke ekonomisine katkıda bulunmak için çevrelerinde geliştirilmesini düşündükleri ekonomik faaliyet alanları ve bunların ilgili olduğu doğal kaynaklarla ilgili sorular sorulabilir.Öğrencilerden yakın çevrelerinde çalışan kişilerin meslekleri ve bu mesleklerin bulunduğu ekonomik faaliyetlere örnekler vermeleri istenebilir. Gelecekte yapmayı düşündükleri meslekler ve bu mesleklerin ilgili olduğu ekonomik faaliyetler sorulabilir. Gelecekte ortaya çıkabilecek ekonomik faaliyet alanları ve bu faaliyetlere dayalı ortaya çıkabilecek mesleklerle ilgili tahminde bulunmaları istenebilir. Öğrencilerden yakın çevrelerinde üretilen bir ürünün yatırım ve pazarlama süreçlerine ilişkin örnek vermeleri istenebilir. Satın aldıkları bir ürünün geçtiği yatırım ve pazarlama sürecine ilişkin açıklamalar yapmaları sağlanabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.6.5.1 Yazılı ve görsel kaynaklar üzerinden ülkemizin doğal kaynakları ve bu kaynaklara dayalı olarak yapılan ekonomik faaliyetler incelenir (OB1, OB4). İncelemeler yapılırken dijital kaynaklardan da faydalanılabilir (OB2). Kaynaklar üzerinden öğrencilerden toprak, su, orman, maden kaynakları ile tarım, balıkçılık, mobilyacılık, madencilik, turizm gibi ekonomik faaliyetleri belirlemeleri istenir. Bu süreçte tablo, şekil veya grafiklerden yararlanılabilir (SBAB11). Öğrencilerin ülkemizdeki doğal kaynaklar ve bu kaynaklarla ilgili öne çıkan ekonomik faaliyetleri gösteren bir harita çizmeleri veya dijital harita oluşturmaları sağlanır (E3.3, SBAB10.1). Oluşturulan haritalar derecelendirme ölçekleri ile değerlendirilir. Verilen kaynaklar üzerinden bir ekonomik faaliyetin doğal kaynakları nasıl etkilediğine ilişkin öğrenci görüşleri alınır. Bu süreçte tartışma teknikleri uygulanabilir (SDB2.1). Öğrencilerin ülke varlıklarına sahip çıkmaları ve ülkesinin ekonomik değerlerini koruma bilinci geliştirmeleri sağlanır (D19.3). Tartışma süreçleri kontrol listesi, gözlem formu veya anekdot kaydı ile değerlendirilebilir. Öğrencilerden ülkemizdeki kaynaklar ve ekonomik faaliyetler arasındaki ilişkileri belirleyen kavram haritası oluşturmaları istenebilir. SB.6.5.2 Öğrencilerden gözlemleri ve daha önce öğrendikleri bilgiler doğrultusunda bildikleri meslekleri paylaşmaları istenir (SDB2.1). Bu mesleklerin ilgili olabileceği ekonomik faaliyetleri tahmin etmeleri sağlanır. Yazılı ve görsel kaynaklar üzerinden ekonomik faaliyetleri ve bu faaliyetlerle bağlantılı olan meslekleri belirlemeleri istenir (OB1, OB4). Öğrencilerin ekonomik faaliyetler ve bu faaliyetlere dayalı mesleklerin korunarak geliştirilmesinin ülkemiz için önemini fark etmeleri sağlanır (D19.3). Bu süreçte dijital kaynaklardan da yararlanılabilir (OB2). Ekonomik faaliyetler ile meslekler ilişkilendirilir (E2.5). Bu süreçte eğitsel oyunlar kullanılabilir. Geçmişten günümüze ekonomik faaliyetler ve mesleklerde yaşanan değişimlere değinilir. Öğrencilerin ekonomik faaliyetlerde yaşanan değişim ve bu değişimler sonucunda ortaya çıkan yeni mesleklerle ilgili görüşleri alınır. Bu süreçte fikir taraması tekniği kullanılabilir. Öğrencilerin ekonomik faaliyetlerdeki değişimin mesleklere etkisini çoklu bakış açısıyla değerlendirmeleri sağlanır. Öğrencilerin ekonomik faaliyetlerdeki değişime bağlı olarak gelecekte ortaya çıkabilecek meslekler hakkında çıkarımda bulunmaları sağlanır (SDB3.1). Bu süreçte beyin fırtınası tekniği kullanılabilir. Beyin fırtınası sırasında teknolojik gelişmeler, yapay zekâ ve dijitalleşmenin gelecekte ortaya çıkabilecek mesleklere etkisi göz önünde bulundurulur (OB2). Öğrencilerden performans görevi kapsamında gelecekte ortaya çıkabilecek mesleklerle ilgili olarak gelecekten bugüne bir mektup veya kartpostal hazırlamaları istenebilir (E3.3, SDB2.1). Bu ürünler dereceli puanlama anahtarıyla değerlendirilebilir. SB.6.5.3 Öğrencilerin, çevrelerindeki kaynak ve faaliyet alanlarını dikkate alarak ekonomiye katkıda bulunacak bir ürün tasarlamaları için gruplara ayrılmaları sağlanır (SDB2.2). Gruplara yazılı ve görsel kaynaklar sunularak öğrencilerin bir ürünün tasarlanma sürecine yönelik bilgi edinmeleri sağlanır (OB1, OB4). Bu süreçte dijital kaynaklardan yararlanılabilir (OB2). Ürünün tasarlanması, yatırım ve pazarlanmasına ilişkin örnek araştırma geliştirme (ARGE) çalışmalarına ve yenileşme süreçlerine değinilir.Gruplardan edindikleri bilgiler doğrultusunda ürünü tasarlamaları, tasarladıkları ürünü ekonomiye kazandırmak amacıyla performans görevi kapsamında bir yatırım ve pazarlama projesi hazırlamaları istenebilir (E2.3, E3.3, SBAB2.6). Bu süreçte öğrencilerin çalışmalarda aktif rol almaları ve grup içi etkinliklerde sorumluluklarını yerine getirmeleri sağlanır (D3.4). Verilen kaynaklar üzerinden örnek yatırım ve pazarlama projeleri incelenir. Öğrencilerden inceledikleri kaynaklardan ve gözlemlerinden yola çıkarak tasarladıkları ürün için yatırım ve pazarlama alanlarını tahmin etmeleri istenir. Tasarladıkları ürünün yatırım ve pazarlama sürecine ilişkin çevrelerindeki deneyimli girişimciler okula davet edilir veya öğrencilerden deneyimli girişimciler ile röportaj yapmaları istenir (SDB2.1). Kaynaklardan ve girişimcilerin deneyimlerinden edindikleri bilgiler doğrultusunda yatırım ve pazarlama projelerinin olası risk durumları belirlenir. Güçlü-zayıf yönler-fırsatlar-tehditler (GZFT) formu ile olası riskler ve fırsatlar değerlendirilerek yatırım ve pazarlama alanlarına karar verilir (SDB3.3). Öğrenci grupları tarafından tasarlanan ürünün yatırım ve pazarlaması için gerekli olan araç gereç, malzeme, sermaye, iş gücü gibi kaynaklar, incelenen örnek projeler üzerinden belirlenir. Öğrencilerin drama, rol oynama gibi teknikler ile bütçe sorumlusu, malzeme yöneticisi, insan kaynağı uzmanı gibi roller almaları sağlanarak iş birliği, liderlik ve iletişim becerilerini geliştirmeleri sağlanabilir (SDB3.2). Gruplardan tasarladıkları ürünün yatırım ve pazarlama sürecini yansıtan bir proje raporu hazırlamaları ve sunmaları istenir (E1.4, E1.5). Bu süreçte pazarlama stratejilerine yer verilebilir. Ürünün pazarlama sürecinde tüketiciyi yanıltıcı tutum ve davranışlardan kaçınılmasına dikkat edilerek ürün her yönüyle tanıtılır. Bu süreçte öğrencilerin söz ve davranışlarında doğru ve güvenilir olmaları desteklenir (D6.2). Grupların yürüttükleri proje süreçleri dereceli puanlama anahtarı ile sunum süreçleri ise kontrol listeleri ile değerlendirilebilir.",
+        "Zenginleştirme": "Ülkemizin kaynakları ile ilgili gelecekte ortaya çıkabilecek ekonomik faaliyetlere yönelik araştırma yapmaları ve sunum hazırlamaları istenebilir. Ekonomik faaliyetlerle ilgili gelecekte ortaya çıkabilecek mesleklere yönelik araştırma yapmaları ve sunmaları sağlanabilir. “Unutulmaya yüz tutmuş meslekler” ile “Geleceğin meslekleri” nin karşılaştırıldığı bir bilgi görseli hazırlamaları istenebilir. Yatırım ve pazarlamaya ilişkin tasarlanan ürünün prototip olarak ortaya konması sağlanabilir. Çevrelerindeki yatırım ve pazarlama faaliyetlerinin yürütüldüğü bir üretim alanını ziyaret edip yatırım ve pazarlama ağı hakkında bilgi toplayarak bir rapor hazırlamaları istenebilir.",
+        "Destekleme": "Ülkemizin kaynakları ile ekonomik faaliyetler arasındaki ilişkiyi gösteren görseller aracılığıyla öğrenme desteklenebilir. Ülkemize ait bir kaynak ve o kaynağa dayalı yapılan ekonomik faaliyete yönelik bir görsel çizmeleri istenebilir. Ekonomik faaliyetler ve mesleklerle arasındaki ilişkiyi ortaya koyan dijital içeriklerle öğrenme desteklenebilir. Öğrencilerden ailelerinde veya yakın çevrelerindeki bir kişinin mesleği ve mesleğin ilgili olduğu ekonomik faaliyetle ilgili bilgi toplamaları istenebilir. Öğrencilerden yatırım ve pazarlaması yapılan ürünlere örnekler vermeleri istenebilir. Yakın çevrelerindeki yatırım ve pazarlama süreçlerinin yürütüldüğü faaliyet alanlarına örnek vermeleri istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.6.5.1. Ülkemizin kaynakları ile ekonomik faaliyetler arasındaki ilişkiyi çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ülkemizin kaynakları ve ekonomik faaliyetlerin özelliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Ülkemizin kaynakları ve ekonomik faaliyetler arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.5.2. Ekonomik faaliyetler ve meslekler arasındaki ilişki hakkında çıkarımda bulunabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Gözlem ve deneyimlerinden yola çıkarak ekonomik faaliyetler ve meslekleri ilişkilendirir.",
+          "bold": false
+        },
+        {
+          "text": "b) Ekonomik faaliyetlerdeki değişime bağlı olarak gelecekte ortaya çıkabilecek meslekler hakkında çıkarımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.5.3. Tasarladığı bir ürün için yatırım ve pazarlama proje önerisi hazırlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Tasarladığı bir ürün için yatırım ve pazarlama projelerini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "b) Tasarladığı ürünün yatırım ve pazarlama alanlarına ilişkin gözlemlerine dayalı tahminlerde bulunur.",
+          "bold": false
+        },
+        {
+          "text": "c) Olası riskleri değerlendirerek tasarladığı ürünün yatırım ve pazarlama alanlarının belirlenmesine gerekçe sunarak karar verir.",
+          "bold": false
+        },
+        {
+          "text": "ç) Tasarladığı ürünün yatırım ve pazarlama aşaması için gerekli kaynakları yönetir.",
+          "bold": false
+        },
+        {
+          "text": "d) Tasarladığı ürün için yatırım ve pazarlama proje öneri raporu oluşturur.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.6.5.1",
+          "codeAsPrinted": "SB.6.5.1",
+          "text": "Ülkemizin kaynakları ile ekonomik faaliyetler arasındaki ilişkiyi çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Ülkemizin kaynakları ve ekonomik faaliyetlerin özelliklerini belirler.",
+            "b) Ülkemizin kaynakları ve ekonomik faaliyetler arasındaki ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.5.2",
+          "codeAsPrinted": "SB.6.5.2",
+          "text": "Ekonomik faaliyetler ve meslekler arasındaki ilişki hakkında çıkarımda bulunabilme",
+          "group": null,
+          "components": [
+            "a) Gözlem ve deneyimlerinden yola çıkarak ekonomik faaliyetler ve meslekleri ilişkilendirir.",
+            "b) Ekonomik faaliyetlerdeki değişime bağlı olarak gelecekte ortaya çıkabilecek meslekler hakkında çıkarımda bulunur."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.5.3",
+          "codeAsPrinted": "SB.6.5.3",
+          "text": "Tasarladığı bir ürün için yatırım ve pazarlama proje önerisi hazırlayabilme",
+          "group": null,
+          "components": [
+            "a) Tasarladığı bir ürün için yatırım ve pazarlama projelerini sorgular.",
+            "b) Tasarladığı ürünün yatırım ve pazarlama alanlarına ilişkin gözlemlerine dayalı tahminlerde bulunur.",
+            "c) Olası riskleri değerlendirerek tasarladığı ürünün yatırım ve pazarlama alanlarının belirlenmesine gerekçe sunarak karar verir.",
+            "ç) Tasarladığı ürünün yatırım ve pazarlama aşaması için gerekli kaynakları yönetir.",
+            "d) Tasarladığı ürün için yatırım ve pazarlama proje öneri raporu oluşturur."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/422",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/422",
+      "title": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T11:13:03.025Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_422.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "6.Sınıf"
+      ],
+      "pageTitle": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolü ile fikrî mülkiyet hakları ve bu haklara riayetin önemi konularına yönelik bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "11",
+        "Kavramsal Beceriler": "KB2.13. Yapılandırma KB2.6. Bilgi Toplama",
+        "Eğilimler": "E3.4 Gerçeği Arama, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme ), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D5. Duyarlılık, D6. Dürüstük, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.6.6.1. Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolünü yapılandırabilmea) Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolüne yönelik nedensel ilişkileri ortaya koyar.b) Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolüne ilişkin anlamlı bir bütün ortaya koyar. SB.6.6.2. Bir ürün veya fikrin telif ve patent haklarıyla ilgili bilgi toplayabilmea) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili bilgi toplayacağı kaynakları belirler.b) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili bilgileri belirlediği kaynaklardan toplar.c) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili topladığı bilgileri doğrular.ç) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili doğruladığı bilgileri kaydeder.",
+        "İçerik Çerçevesi": "Ulaşım ve İletişim Teknolojilerinin Kültürel Etkileşimdeki RolüTelif ve Patent Süreci",
+        "Anahtar Kavramlar": "emek, fikir, fikrî mülkiyet, iletişim, marka, patent, telif, tescil, ulaşım",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları bilgi görseli, derecelendirme ölçekleri, kontrol listeleri ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Bir ürün veya fikrin telif ve patent süreçlerini yansıtan bir rapor hazırlamaya ve sunmaya yönelik performans görevi verilebilir. Hazırlanan raporlar derecelendirme ölçeği, sunumlar ise kontrol listesi ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin güncel ve yaygın ulaşım ve iletişim araçları konusunda bilgi sahibi olduğu, icat, buluş, teknoloji, ürün, üretim, kültür, hak ve sorumluluk kavramlarını bildiği kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin güncel ulaşım ve iletişim teknolojileri konusundaki bilgi düzeyleri, açık uçlu sorularla değerlendirilebilir. Öğrencilerin icat, buluş, ürün, üretim, kültür, hak ve sorumluluk kavramlarına dair bilgi düzeyleri açık uçlu sorular kullanılarak değerlendirilebilir.",
+        "Köprü Kurma": "Öğrencilerin günlük hayat ve kültürün, ulaşım ve iletişim teknolojilerindeki hızlı değişimden nasıl etkilendiği hakkındaki görüşleri alınabilir. Öğrencilere dünyanın farklı yerlerinde yaşayan tanıdıklarıyla nasıl iletişim kurdukları ve onlarla ne sıklıkla görüştükleri sorulabilir. Öğrencilere hikâye veya roman yazma, şarkı besteleme gibi bir ideallerinin olup olmadığı ve bu ideallerini gerçekleştirdiklerinde fikrî mülkiyet haklarını nasıl koruyabileceklerini bilip bilmedikleri sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.6.6.1 Öğrencilerden ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşim ve değişimdeki rolünü yazılı ve görsel kaynaklardan yararlanarak belirlemeleri istenir (OB1, OB4). Bu süreçte dijital kaynaklardan da yararlanılabilir (OB2). Ulaşım ve iletişim sistemlerinin gelişmesi, bilgi ve haber kaynaklarının çeşitlenmesi, bu kaynaklara erişimin hızlanması ve çevrim içi platformların yaygınlaşmasının kültürel etkileşim ve değişimdeki rolünü, nedenleriyle ortaya koymaları sağlanır (E3.4, SDB3.3). Bu süreçte değişimin neden ve sonuçları balık kılçığı tekniği kullanılarak belirlenebilir. Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel değişimdeki etkisine günlük yaşamdan ve yakın çevresinden örnekler vermeleri istenir. Kültürün korunmasının neden önemli olduğu; ulaşım ve iletişim teknolojilerinin kültürümüz üzerindeki olumsuz etkilerinin nasıl azaltılabileceği, kültürün devamlılığının nasıl sağlanabileceği konularında duyarlılık ve vatanseverlik değerleri bağlamında fikir yürütülür (D5.1,D19.1). Bu süreçte beyin fırtınası veya zihin haritası tekniklerinden yararlanılabilir. Ulaşım ve iletişim teknolojilerindeki gelişmeler ile çevrim içi platformların yaygınlaşmasının kültürel değişim üzerindeki etkileri, şablon olarak sunulan bilgi görseli üzerinde belirtilir (OB2). SB.6.6.2 Öğrencilerin verilen yazılı ve görsel kaynakları inceleyerek bunlar arasından bir ürün veya fikrin patent ve telif haklarıyla ilgili bilgi toplamada kullanabileceği kaynakları belirlemeleri sağlanır (OB1, OB4, SDB1.2). Bu süreçte dijital kaynaklardan faydalanılabilir (OB2). Belirlenen kaynaklar üzerinden patent ve telif haklarıyla ilgili bilgi toplanır (OB1, OB2). Patent ve telif haklarının ülkemiz ve ekonomimiz için neden önemli olduğu, telif ve patent haklarına uymanın gerekliliğiyle ilgili öğrenci görüşleri alınır. Bu süreçte beyin fırtınası yapılabilir (SDB2.1, D6.2). Beyin fırtınası sırasında Türkiye Cumhuriyeti Sanayi ve Teknoloji Bakanlığına bağlı Türk Patent ve Marka Kurumunun hizmetlerine değinilir. Öğrencilerden bir ürün veya fikrin patent ve telif haklarıyla ilgili ulaşılan bilgileri en az üç farklı kaynakla karşılaştırarak doğrulamaları istenir (E3.10). Performans görevi kapsamında öğrencilerden edindikleri bilgilerden yararlanılarak grup çalışması yolu ile bir ürün veya fikrin patent ve telif haklarını yansıtan bir rapor hazırlamaları ve sunmaları istenebilir (SDB2.2). Hazırlanan raporlar derecelendirme ölçeği sunumlar ise kontrol listesi ile değerlendirilebilir.",
+        "Zenginleştirme": "Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürler üzerinde yaratacağı olumlu ve olumsuz sonuçlarını anlatan dijital çizgi roman yazmaları istenebilir. Ulaşım ve iletişim teknolojilerinde gelecekte meydana gelebilecek gelişmeler üzerinde düşünerek bu teknolojilerin gelecek kültürleri nasıl etkileyebileceğine dair çıkarımda bulunmaları istenebilir. Ülkemizde ve dünyanın farklı ülkelerinde bir yılda alınan patent sayıları ile ilgili bilgi toplanarak bu patentlerin hangi alanlarda alındığı ile ilgili frayer diyagramı oluşturulması istenebilir.",
+        "Destekleme": "Ulaşım ve iletişim araçlarının kültürel değişime etkileri animasyonlar, filmler, eğitici videolar gibi dijital içeriklerle incelenebilir. Telif ve patent süreçlerini özetleyen animasyonlar kullanılabilir. Telif ve patent gerektiren ürünlerin sınıflandırılmasına yönelik eşleştirme kartları gibi somutlaştırıcı etkinlikler yapılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.6.6.1. Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolünü yapılandırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolüne yönelik nedensel ilişkileri ortaya koyar.",
+          "bold": false
+        },
+        {
+          "text": "b) Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolüne ilişkin anlamlı bir bütün ortaya koyar.",
+          "bold": false
+        },
+        {
+          "text": "SB.6.6.2. Bir ürün veya fikrin telif ve patent haklarıyla ilgili bilgi toplayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili bilgi toplayacağı kaynakları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili bilgileri belirlediği kaynaklardan toplar.",
+          "bold": false
+        },
+        {
+          "text": "c) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili topladığı bilgileri doğrular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili doğruladığı bilgileri kaydeder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.6.6.1",
+          "codeAsPrinted": "SB.6.6.1",
+          "text": "Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolünü yapılandırabilme",
+          "group": null,
+          "components": [
+            "a) Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolüne yönelik nedensel ilişkileri ortaya koyar.",
+            "b) Ulaşım ve iletişim teknolojilerindeki gelişmelerin kültürel etkileşimdeki rolüne ilişkin anlamlı bir bütün ortaya koyar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.6.6.2",
+          "codeAsPrinted": "SB.6.6.2",
+          "text": "Bir ürün veya fikrin telif ve patent haklarıyla ilgili bilgi toplayabilme",
+          "group": null,
+          "components": [
+            "a) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili bilgi toplayacağı kaynakları belirler.",
+            "b) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili bilgileri belirlediği kaynaklardan toplar.",
+            "c) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili topladığı bilgileri doğrular.",
+            "ç) Bir ürün veya fikrin telif ve patent süreçleriyle ilgili doğruladığı bilgileri kaydeder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

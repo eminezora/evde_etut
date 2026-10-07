@@ -1,0 +1,402 @@
+{
+  "https://tymm.meb.gov.tr/Ders/GetProgramList?page=1&kademe=temel-egitim": {
+    "url": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=1&kademe=temel-egitim",
+    "cacheFile": "html/Ders_GetProgramList_page_1_kademe_temel-egitim.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:26.304Z",
+    "bytes": 3413,
+    "sha256": "2ebae6ab02efd56fe654ee0701f7efc09d92dea0ce48e273e462925ead083399"
+  },
+  "https://tymm.meb.gov.tr/Ders/GetProgramList?page=2&kademe=temel-egitim": {
+    "url": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=2&kademe=temel-egitim",
+    "cacheFile": "html/Ders_GetProgramList_page_2_kademe_temel-egitim.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:27.754Z",
+    "bytes": 3912,
+    "sha256": "6fe62e857905850ec8e256ac85cf33a4d48ea9c1e28cea849377ecf271234b50"
+  },
+  "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim": {
+    "url": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim",
+    "cacheFile": "html/Ders_GetProgramList_page_3_kademe_temel-egitim.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:29.255Z",
+    "bytes": 3970,
+    "sha256": "20aca32b919b29ae3a3a39acc43c4b59050ba11552d00bb9b3faf20df9953498"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-turkce-dersi": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-turkce-dersi",
+    "cacheFile": "html/ogretim-programlari_ders_ortaokul-turkce-dersi.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:30.815Z",
+    "bytes": 24310,
+    "sha256": "405406285aea6833d88200c1846e7bbe9b5511c124df5eac79720bb664b94b49"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8",
+    "cacheFile": "html/ogretim-programlari_ortaokul-turkce-dersi_8.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:32.269Z",
+    "bytes": 16973,
+    "sha256": "6de6beffaa43d6b21b1a9175c385663cec2d1c9200dcecef0e9e06927f5a1026"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/287",
+    "cacheFile": "html/ortaokul-turkce-dersi_unite_287.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:33.849Z",
+    "bytes": 49732,
+    "sha256": "ebd68ae9ba76dcd95453538520458c83e44ae5fe1a3912b6d0323eac8feef0b3"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/290",
+    "cacheFile": "html/ortaokul-turkce-dersi_unite_290.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:35.312Z",
+    "bytes": 52734,
+    "sha256": "bd905913623bf391688a926fa026cd7616cc339b526303169fc447b38038facd"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/291",
+    "cacheFile": "html/ortaokul-turkce-dersi_unite_291.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:36.806Z",
+    "bytes": 50679,
+    "sha256": "b431beeee9072d953634fdd414b20d9f79dca0af262174aa227512cd7be47ff1"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/293",
+    "cacheFile": "html/ortaokul-turkce-dersi_unite_293.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:38.307Z",
+    "bytes": 52496,
+    "sha256": "83c163cac576ec7406b4378fbc277c209393f34361ab99f05ecfc9944a72d9e6"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/309",
+    "cacheFile": "html/ortaokul-turkce-dersi_unite_309.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:39.810Z",
+    "bytes": 50910,
+    "sha256": "99628b76543f20dcf76dc844538f0cac6f2e51a194db16bab54f0a62e86703f0"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-turkce-dersi/unite/312",
+    "cacheFile": "html/ortaokul-turkce-dersi_unite_312.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:41.314Z",
+    "bytes": 49324,
+    "sha256": "c21fa81d2ff7839ae4db480ff1d9a0b77c9d1d18cc79d41c58043d32e31a02f8"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-matematik-dersi": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-matematik-dersi",
+    "cacheFile": "html/ogretim-programlari_ders_ortaokul-matematik-dersi.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:42.794Z",
+    "bytes": 24433,
+    "sha256": "d93d9b686232f6a7878b5f91929f7108867ea6a1130119e1200461242475c5f1"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8",
+    "cacheFile": "html/ogretim-programlari_ortaokul-matematik-dersi_8.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:44.292Z",
+    "bytes": 18704,
+    "sha256": "a91b8bea4310985568a42199469ae9e762483a8e53f9f0df22e9f3ece356ebca"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/463": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/463",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_463.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:45.823Z",
+    "bytes": 57660,
+    "sha256": "c81ac65209e1af0353fef2709d664cec5aacf2de97310b317959b27b8ff30126"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/464": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/464",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_464.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:47.321Z",
+    "bytes": 61255,
+    "sha256": "5754e876d96067c7543b6c0937fe8adb70970e8d3434e1a34fdd6b1ae8643b44"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/465": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/465",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_465.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:48.822Z",
+    "bytes": 55547,
+    "sha256": "d299ff1520f259cb176f865fe3a8b22310558d79b6c64343cb595d1b4e17ab4e"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/466": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/466",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_466.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:50.324Z",
+    "bytes": 45299,
+    "sha256": "96337df4e493451d4542285414409d39ba5b2724d0527442db54cb14a0ece8ea"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/467": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/467",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_467.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:51.845Z",
+    "bytes": 56233,
+    "sha256": "b1ecb472f3483899959b06a87d6af1fced51031e84474c83d70480fbbbfb23e9"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/468": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/468",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_468.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:53.340Z",
+    "bytes": 48749,
+    "sha256": "67d6dcce18c54302f9e63bfa653e599dd0b9f1367b936c467efd858178cb530e"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/469": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/469",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_469.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:54.827Z",
+    "bytes": 39847,
+    "sha256": "ecc268de5ca6f6f49021026bf4795040c13e5d5aed64951c7cfb61e4dffc13b1"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/470": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/470",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_470.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:56.335Z",
+    "bytes": 59284,
+    "sha256": "dcbb1cf99c836de7501e1bfef9964bed0ca22192bdb7c6acaf925181f3c173f5"
+  },
+  "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/471": {
+    "url": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/471",
+    "cacheFile": "html/ortaokul-matematik-dersi_unite_471.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:57.838Z",
+    "bytes": 46419,
+    "sha256": "2d04f6693adf7ad5bc084489f8642a74f69a231df6a62d09c7d05721a057f77b"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ders/fen-bilimleri-dersi": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/fen-bilimleri-dersi",
+    "cacheFile": "html/ogretim-programlari_ders_fen-bilimleri-dersi.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:13:59.317Z",
+    "bytes": 27677,
+    "sha256": "85f16a6e9c631105e36a43ce26155402c0bc35f062b3b4a84380c1ceecb8a3c3"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8",
+    "cacheFile": "html/ogretim-programlari_fen-bilimleri-dersi_8.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:00.813Z",
+    "bytes": 17526,
+    "sha256": "541ddf543603d8aa12f0a705d474be7dedf312bb5e0085c3d2549d8e943b6d3b"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/416": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/416",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_416.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:02.349Z",
+    "bytes": 48266,
+    "sha256": "d79004b0a3d300ab6385d40e31daaa9fb86a48923d8eaea7496adafd7d3d2fcb"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/429": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/429",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_429.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:03.829Z",
+    "bytes": 39372,
+    "sha256": "259a9d73349cb42c2a550f38a1b3198d33e9681028add48fc4297020e9d11196"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/430": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/430",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_430.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:05.349Z",
+    "bytes": 67511,
+    "sha256": "a52e0d5c375c8f9c6ff728cf2abcd75139013f96ce54734ca9424a077d16a853"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/431": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/431",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_431.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:06.831Z",
+    "bytes": 42407,
+    "sha256": "f295526375c076ca540ab891267b1620f920093b32d44465ba82f9fe87bc8884"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/432": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/432",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_432.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:08.361Z",
+    "bytes": 64936,
+    "sha256": "339df4a957963d222f6f2c31058c3cadcc1dbfa3a0582893614dd06cc047def4"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/433": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/433",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_433.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:09.843Z",
+    "bytes": 42398,
+    "sha256": "c71ca419ab2dadaaaa19cdf8231347b984e8805c6bdbebdb3bc75200a8afb1ea"
+  },
+  "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/434": {
+    "url": "https://tymm.meb.gov.tr/fen-bilimleri-dersi/unite/434",
+    "cacheFile": "html/fen-bilimleri-dersi_unite_434.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:11.343Z",
+    "bytes": 41911,
+    "sha256": "807747020fc7b044209213d6cf384107e2c71b886bebafd6badf3abf9c410833"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ders/ingilizce-dersi-temel-egitim": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ingilizce-dersi-temel-egitim",
+    "cacheFile": "html/ogretim-programlari_ders_ingilizce-dersi-temel-egitim.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:12.855Z",
+    "bytes": 47219,
+    "sha256": "206cc73e1ecae58c8ceb5425411f865a8b684a1d405b335fc3e4058f9414c3e0"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/8": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/8",
+    "cacheFile": "html/ogretim-programlari_ingilizce-dersi-temel-egitim_8.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:14.339Z",
+    "bytes": 18696,
+    "sha256": "61195e6354adfbd33da342bca8c0b6513e73ba04fc0c3c564808aa0fbba620e9"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/795": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/795",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_795.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:15.846Z",
+    "bytes": 21986,
+    "sha256": "a22854bc7c2f7f15f34f16fe82fc63cbce70c4dc1a9eabbdbaa2ba34e933eb6e"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/717": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/717",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_717.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:17.396Z",
+    "bytes": 144469,
+    "sha256": "83de425b95fd3e55109db48e3c01f78f37d51aba1a480ce50e84e0d6370bd4ba"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/722": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/722",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_722.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:18.898Z",
+    "bytes": 145395,
+    "sha256": "1678b06d21a0e7f30a18a18e1bfc1269c95de4e56b93a0a7df2fd68756455cac"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/730": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/730",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_730.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:20.393Z",
+    "bytes": 143002,
+    "sha256": "1e783606b36a599e1373ab695083dced89e4f0dadb3793e954a35e26d8cb30d1"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/745": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/745",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_745.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:21.896Z",
+    "bytes": 144086,
+    "sha256": "60e43715fed1294d47ac33337b2aab0a522d4492e6c1ad0dc23cb3c4a72e82e3"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/749": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/749",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_749.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:23.452Z",
+    "bytes": 145044,
+    "sha256": "1b58d281bd103fa3fd9538d391968d9b24056c0c297af81e50023050b7e52ca6"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/754": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/754",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_754.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:24.902Z",
+    "bytes": 144416,
+    "sha256": "73cc40178e732a6988dac96444eabd465c7d8ea473ee058a72a5a2bc216b6245"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/761": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/761",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_761.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:26.407Z",
+    "bytes": 141893,
+    "sha256": "f3d43ceb1c9dcd4acb82bf065d17bc32d010277ec34b927371a5ced59376af26"
+  },
+  "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/778": {
+    "url": "https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/778",
+    "cacheFile": "html/ingilizce-dersi-temel-egitim_unite_778.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:27.984Z",
+    "bytes": 141019,
+    "sha256": "f7657cce6aba6a5ffc248a57b49f209a9a33fce8371788384a40cbda5753c611"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi",
+    "cacheFile": "html/ogretim-programlari_ders_sosyal-bilgiler-dersi.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:29.457Z",
+    "bytes": 24626,
+    "sha256": "910a6cfc6dd54814bbcb4cfc19ca0f3be6c9f630ec697e7f349bf665887effc2"
+  },
+  "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8",
+    "cacheFile": "html/ogretim-programlari_sosyal-bilgiler-dersi_8.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:30.856Z",
+    "bytes": 17041,
+    "sha256": "3aeaaeefcc1463875420a7de9221518bb593fcddfe9d9d8d4eb488ae299f6128"
+  },
+  "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/423": {
+    "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/423",
+    "cacheFile": "html/sosyal-bilgiler-dersi_unite_423.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:32.440Z",
+    "bytes": 50072,
+    "sha256": "a57bbe8483b382311bb20526850614c31351e192f44f828dc66f590ff0a6d27e"
+  },
+  "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/424": {
+    "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/424",
+    "cacheFile": "html/sosyal-bilgiler-dersi_unite_424.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:33.974Z",
+    "bytes": 39327,
+    "sha256": "cd5b03f5d18db811925e1b7baab72d209b34c6ee3bf3f78a5a3f6e00171c1f5c"
+  },
+  "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/425": {
+    "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/425",
+    "cacheFile": "html/sosyal-bilgiler-dersi_unite_425.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:35.382Z",
+    "bytes": 47857,
+    "sha256": "6bb443b06923c681ec9de87073a8193c485bdef98c9c163e8cbc9cf6fdcfd64b"
+  },
+  "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/426": {
+    "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/426",
+    "cacheFile": "html/sosyal-bilgiler-dersi_unite_426.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:36.888Z",
+    "bytes": 46827,
+    "sha256": "c789c60a948af60340c6ab05f11aaf160788ed1b8b69b12772b0f24ac96f2d0b"
+  },
+  "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/427": {
+    "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/427",
+    "cacheFile": "html/sosyal-bilgiler-dersi_unite_427.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:38.379Z",
+    "bytes": 40821,
+    "sha256": "1ddd7c313c6a2eb33680e1937afc6d25998b1820ac19894290dee268567c7caf"
+  },
+  "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/428": {
+    "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/428",
+    "cacheFile": "html/sosyal-bilgiler-dersi_unite_428.html",
+    "status": 200,
+    "fetchedAt": "2026-10-07T11:14:39.892Z",
+    "bytes": 47050,
+    "sha256": "df9a85c34dd70131fea700fab8a16bce0fca154c806eb49e4edd1fa57297a749"
+  }
+}

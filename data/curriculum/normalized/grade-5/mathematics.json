@@ -1,0 +1,1364 @@
+{
+  "subject": "Matematik",
+  "grade": 5,
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6",
+  "sourceStatus": "FOUND",
+  "outcomes": [
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "1.Tema: Sayılar Ve Nicelikler (1)",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.1.1",
+      "outcomeCodeAsPrinted": "MAT.5.1.1",
+      "outcomeText": "Altı basamaklı sayıları okuma ve yazmayı çok basamaklı sayılara genelleyebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Günlük hayattaki farklı bağlamlardan yola çıkarak altıdan çok basamaklı sayılar hakkında bilgi toplar.",
+        "b) Sayıların bölükleri ile okunuşları arasındaki ortak özellikleri belirler.",
+        "c) Sayıların bölükleri ile okunuşları arasındaki farklılıkları belirler.",
+        "ç) Sayıların bölükleri ile okunuşları arasındaki örüntüler üzerinden basamak sayısı altıdan çok olan sayıların okunuş ve yazılışları hakkında önermelerde bulunur."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB2. Matematiksel Problem Çözme"
+      ],
+      "conceptualSkills": [
+        "KB2.9. Genelleme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.6. Analitiklik",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.2. İş Birliği",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D7. Estetik",
+        "D16. Sorumluluk",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Sosyal Bilgiler",
+        "Fen Bilimleri"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma"
+      ],
+      "lessonHours": 28,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/447",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 1.Tema: Sayılar Ve Nicelikler (1)",
+      "sourceFetchedAt": "2026-10-07T10:53:58.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "1.Tema: Sayılar Ve Nicelikler (1)",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.1.2",
+      "outcomeCodeAsPrinted": "MAT.5.1.2",
+      "outcomeText": "Doğal sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Problemin içerdiği sayı ve işlem bileşenlerini belirler.",
+        "b) Problemde verilenler ile istenenlerin gerektirdiği işlemler arasındaki ilişkiyi belirler.",
+        "c) Problem bağlamıyla ilişkili verilenleri uygun matematiksel temsillere dönüştürür.",
+        "ç) Problemi matematiksel temsiller kullanarak kendi ifadeleri ile açıklar.",
+        "d) Problemin sonucuna ilişkin tahminde bulunur ve işlemleri gerçekleştirmek için stratejiler geliştirir.",
+        "e) Belirlenen strateji veya stratejileri çözüm için uygular.",
+        "f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.",
+        "g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek kısa yolları değerlendirir.",
+        "ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.",
+        "h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB2. Matematiksel Problem Çözme"
+      ],
+      "conceptualSkills": [
+        "KB2.9. Genelleme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.6. Analitiklik",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.2. İş Birliği",
+        "SDB3.2. Esneklik"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D7. Estetik",
+        "D16. Sorumluluk",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Sosyal Bilgiler",
+        "Fen Bilimleri"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma"
+      ],
+      "lessonHours": 28,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/447",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 1.Tema: Sayılar Ve Nicelikler (1)",
+      "sourceFetchedAt": "2026-10-07T10:53:58.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "1.Tema: Sayılar Ve Nicelikler (2)",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.1.3",
+      "outcomeCodeAsPrinted": "MAT.5.1.3",
+      "outcomeText": "Gerçek yaşam durumlarına karşılık gelen kesirleri farklı biçimlerde temsil edebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Kesirlerin farklı gösterimlerinin (bileşik, tam sayılı, ondalık, yüzde) gerçek yaşam durumu içerisindeki kullanımını anlar.",
+        "b) Gerçek yaşam durumlarında karşılaşılan kesirlerin farklı gösterimlerini ilişkilendirmek için farklı modelleri (yüzlük kart, somut modeller, sayı doğrusu gibi) seçer.",
+        "c) Seçilen modelleri kullanır.",
+        "ç) Kullanılan modelleri kesirlerin farklı gösterimleri ile yorumlar.",
+        "d) Benzer durumlarda kullanılabilecek farklı modelleri kullanışlılık açısından karşılaştırır.",
+        "e) Karşılaştırdığı modellerin kullanışlılığına ilişkin karar verir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.4. Gerçeği Arama"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D5. Duyarlılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D17. Tasarruf",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB3. Finansal Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [],
+      "interSkillRelations": [],
+      "lessonHours": 33,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/449",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 1.Tema: Sayılar Ve Nicelikler (2)",
+      "sourceFetchedAt": "2026-10-07T10:54:00.190Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "1.Tema: Sayılar Ve Nicelikler (2)",
+      "unitOrThemeCode": "1",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.1.4",
+      "outcomeCodeAsPrinted": "MAT.5.1.4",
+      "outcomeText": "Farklı gösterimlerle ifade edilen kesirlerin karşılaştırılmasına yönelik çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Farklı gösterimlerle ifade edilen kesirlerin karşılaştırılmasına yönelik varsayımda bulunur.",
+        "b) Varsayımındaki ilişkileri inceleyerek kesirlerin karşılaştırılmasına yönelik genellemeleri belirler.",
+        "c) Elde ettiği genellemelerin varsayımını karşılayıp karşılamadığını sayı doğrusu, şekil gibi temsiller üzerinde gösterir.",
+        "ç) Varsayımı ile ilgili ulaştığı sonuca yönelik matematiksel önermeleri sözel ya da sembolik temsil ile sunar.",
+        "d) Sunduğu önermelerin tahmin etme becerisine katkısını gerekçelerle açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.4. Gerçeği Arama"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet",
+        "D5. Duyarlılık",
+        "D14. Saygı",
+        "D16. Sorumluluk",
+        "D17. Tasarruf",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB3. Finansal Okuryazarlık",
+        "OB7. Veri Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [],
+      "interSkillRelations": [],
+      "lessonHours": 33,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/449",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 1.Tema: Sayılar Ve Nicelikler (2)",
+      "sourceFetchedAt": "2026-10-07T10:54:00.190Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "2.Tema: İşlemlerle Cebirsel Düşünme",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.2.1",
+      "outcomeCodeAsPrinted": "MAT.5.2.1",
+      "outcomeText": "Eşitliğin korunumuna ve işlem özelliklerine yönelik çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Eşitliğin korunumuna, doğal sayılarla toplama ve çarpma işlemlerinin değişme, birleşme; çarpmanın toplama ve çıkarma işlemleri üzerine dağılma özelliklerine yönelik varsayımlarda bulunur.",
+        "b) İncelediği örnekler üzerinden varsayımına yönelik genellemeleri belirler.",
+        "c) Elde ettiği genellemelerin varsayımını karşılayıp karşılamadığını çeşitli örnekler üzerinden sınar.",
+        "ç) Varsayımı ile ilgili ulaştığı sonuca yönelik doğrulayabileceği matematiksel bir önermeyi sözel ve sembolik temsil ile sunar.",
+        "d) Sunduğu önermenin katkısına yönelik gerekçe sunar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB1. Matematiksel Muhakeme"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E3.3. Yaratıcılık",
+        "E3.7. Sistematiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar verme"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D11. Özgürlük",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/450",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 2.Tema: İşlemlerle Cebirsel Düşünme",
+      "sourceFetchedAt": "2026-10-07T10:54:01.676Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "2.Tema: İşlemlerle Cebirsel Düşünme",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.2.2",
+      "outcomeCodeAsPrinted": "MAT.5.2.2",
+      "outcomeText": "Karşılaştığı günlük hayat ya da matematiksel durumlarda işlem önceliğini yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Doğal sayılarla dört işlem içeren problemlerde ve sayı cümlelerinde işlem önceliğini inceler.",
+        "b) Karşılaştığı doğal sayılarla dört işlem içeren problemlerde ve sayı cümlelerinde işlem önceliğini uygular.",
+        "c) Karşılaştığı durumlarda işlem önceliğini açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB1. Matematiksel Muhakeme"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E3.3. Yaratıcılık",
+        "E3.7. Sistematiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar verme"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D11. Özgürlük",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/450",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 2.Tema: İşlemlerle Cebirsel Düşünme",
+      "sourceFetchedAt": "2026-10-07T10:54:01.676Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "2.Tema: İşlemlerle Cebirsel Düşünme",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.2.3",
+      "outcomeCodeAsPrinted": "MAT.5.2.3",
+      "outcomeText": "Sayı ve şekil örüntülerinin kuralına ilişkin muhakeme yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Örüntülerdeki ilişkilere yönelik varsayımda bulunur.",
+        "b) Varsayıma yönelik örüntüdeki terimleri inceleyerek örüntünün kuralına ilişkin genellemeleri belirler.",
+        "c) Genellediği ilişkilerin varsayımını karşılayıp karşılamadığını sınar.",
+        "ç) Varsayımı ile ilgili ulaştığı sonuca yönelik doğrulayabileceği önermeyi sözel ve sembolik temsiller kullanarak sunar.",
+        "d) Sunduğu önermenin kullanışlılığına yönelik gerekçeler sunar.",
+        "e) Sunduğu önermenin geçerliliğini destekleyen kapsayıcı örnekler verir.",
+        "f) İşe koştuğu doğrulamanın benzer önermelere uygulanıp uygulanamayacağını değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB1. Matematiksel Muhakeme"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E3.3. Yaratıcılık",
+        "E3.7. Sistematiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar verme"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D11. Özgürlük",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/450",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 2.Tema: İşlemlerle Cebirsel Düşünme",
+      "sourceFetchedAt": "2026-10-07T10:54:01.676Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "2.Tema: İşlemlerle Cebirsel Düşünme",
+      "unitOrThemeCode": "2",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.2.4",
+      "outcomeCodeAsPrinted": "MAT.5.2.4",
+      "outcomeText": "Temel aritmetik işlem içeren durumlardaki algoritmaları yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Temel aritmetik işlem içeren durumlardaki algoritmik yapıyı inceler.",
+        "b) İncelediği durumlardaki algoritmik yapıyı tablo temsiline veya aritmetik işlemlere dönüştürür.",
+        "c) Dönüştürdüğü algoritmik yapının içerdiği matematiksel ilişkileri sözlü olarak ifade eder."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB1. Matematiksel Muhakeme"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E3.3. Yaratıcılık",
+        "E3.7. Sistematiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar verme"
+      ],
+      "values": [
+        "D3. Çalışkanlık",
+        "D11. Özgürlük",
+        "D17. Tasarruf"
+      ],
+      "literacySkills": [
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/450",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 2.Tema: İşlemlerle Cebirsel Düşünme",
+      "sourceFetchedAt": "2026-10-07T10:54:01.676Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.1",
+      "outcomeCodeAsPrinted": "MAT.5.3.1",
+      "outcomeText": "Temel geometrik çizimler için matematiksel araç ve teknolojiden yararlanabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Nokta, doğru, doğru parçası, ışın, açı, çember ve dikme çiziminde gerekli araç ve teknolojileri tanır.",
+        "b) Nokta, doğru, doğru parçası, ışın, açı, çember ve dikmeyi oluşturmak için uygun olan araç ve teknolojileri belirler.",
+        "c) Nokta, doğru, doğru parçası, ışın, açı, çember ve dikmeyi oluşturmak için uygun araç ve teknolojileri kullanır."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.2",
+      "outcomeCodeAsPrinted": "MAT.5.3.2",
+      "outcomeText": "Temel geometrik çizimlere dayalı deneyimlerini yansıtabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Temel geometrik çizimlere dayalı deneyimlerini gözden geçirir.",
+        "b) Temel geometrik çizimlerin özelliklerine yönelik çıkarım yapar.",
+        "c) Çıkarımını farklı örnekler üzerinden değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.3",
+      "outcomeCodeAsPrinted": "MAT.5.3.3",
+      "outcomeText": "Açıları ölçmek için matematiksel araç ve teknolojiden yararlanabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Açı ölçmek için gerekli araç ve teknolojiyi tanır.",
+        "b) Açı ölçmek için uygun araç ve teknolojiyi belirler.",
+        "c) Açı ölçmek için uygun araç ve teknolojiyi kullanır."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.4",
+      "outcomeCodeAsPrinted": "MAT.5.3.4",
+      "outcomeText": "Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşabilecek açılara dair çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşabilecek açılara dair varsayımlarda bulunur.",
+        "b) Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşan açıları belirleyerek listeler.",
+        "c) Belirlediği açıları varsayımlarıyla karşılaştırır.",
+        "ç) Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşan açılara dair önerme sunar.",
+        "d) Sunduğu önermelerin, doğruların oluşturduğu açıların incelenmesine yönelik katkısına dair gerekçe sunar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.5",
+      "outcomeCodeAsPrinted": "MAT.5.3.5",
+      "outcomeText": "Çokgenleri düzlemde ardışık olarak kesişen doğruların oluşturduğu kapalı şekiller olarak yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Düzlemde en az üç doğrunun -son doğru ilk doğruyla kesişecek biçimde- ardışık kesişerek oluşturdukları durumları inceler.",
+        "b) Düzlemde en az üç doğrunun - son doğru ilk doğruyla kesişecek biçimde - ardışık kesişimleri ile çeşitli çokgenler oluşturur.",
+        "c) Çokgenlerin düzlemde en az üç doğrunun -son doğru ilk doğruyla kesişecek biçimde- ardışık kesişimleri ile meydana geldiğini ifade eder."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.6",
+      "outcomeCodeAsPrinted": "MAT.5.3.6",
+      "outcomeText": "Çokgenlerin özellikleri ile ilgili edindiği deneyimleri yansıtabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Çokgenlerin özellikleri ile ilgili edindiği deneyimleri gözden geçirir.",
+        "b) Çokgenlerin kenar ve açı özelliklerine dair çıkarım yapar.",
+        "c) Çıkarımını farklı örnekler üzerinden değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "3.Tema: Geometrik Şekiller",
+      "unitOrThemeCode": "3",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.3.7",
+      "outcomeCodeAsPrinted": "MAT.5.3.7",
+      "outcomeText": "Matematiksel araç ve teknoloji yardımıyla düzlemde iki noktada kesişen çember çiftinin merkezleri ve kesişim noktalarından biri ile inşa edilen üçgenlerin kenar özelliklerine yönelik çıkarım yapabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) İki noktada kesişen çember çiftinin merkezleri ve kesişim noktalarından biri ile inşa edilebilecek üçgenlerin kenar özelliklerine yönelik varsayımlarda bulunur.",
+        "b) Örnek çizimler üzerinden, kesişen iki çemberin merkezleri ve kesişim nokta larından biri ile inşa edilen çeşitkenar, ikizkenar ve eşkenar üçgenleri belirler.",
+        "c) Belirlediği üçgenlerin özelliklerini varsayımları ile karşılaştırır.",
+        "ç) Varsayımlarını, inşa ettiği üçgenler ile karşılaştırarak doğrulayabileceği önermeler şeklinde ifade eder.",
+        "d) Sunduğu önermelerin katkısını değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma (MAB5.1. Matematiksel Araç ve Teknolojiden Yararlanma)"
+      ],
+      "conceptualSkills": [
+        "KB2.10. Çıkarım Yapma",
+        "KB2.14. Yorumlama",
+        "KB2.15. Yansıtma"
+      ],
+      "dispositions": [
+        "E1.2. Bağımsızlık",
+        "E3.3. Yaratıcılık"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendine Uyarlama (Öz Yansıtma)",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D7. Estetik",
+        "D19. Vatanseverlik"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 38,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/448",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 3.Tema: Geometrik Şekiller",
+      "sourceFetchedAt": "2026-10-07T10:54:03.194Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": [
+        "Satır devamı birleştirildi: \"önermeler şeklinde ifade eder.\""
+      ]
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "4.Tema: Geometrik Nicelikler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.4.1",
+      "outcomeCodeAsPrinted": "MAT.5.4.1",
+      "outcomeText": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde kenar uzunluklarını yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde olası kenar uzunluklarını inceler.",
+        "b) Verilen çevre uzunluğuna sahip ve kenar uzunlukları doğal sayı olan dikdörtgen oluşturur.",
+        "c) Kenar uzunlukları doğal sayı olan farklı dikdörtgenlerin aynı çevre uzunluğuna sahip olabileceğini açıklar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB2. Matematiksel Problem Çözme"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.17. Değerlendirme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.6. Analitiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D7. Estetik, D14.Saygı"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/451",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 4.Tema: Geometrik Nicelikler",
+      "sourceFetchedAt": "2026-10-07T10:54:04.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "4.Tema: Geometrik Nicelikler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.4.2",
+      "outcomeCodeAsPrinted": "MAT.5.4.2",
+      "outcomeText": "Birim karelerden yola çıkarak dikdörtgenin alanını değerlendirebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Dikdörtgenin alanını ölçmede, seçtiği birim kareleri ölçüt olarak belirler.",
+        "b) Dikdörtgenin alanını seçilen birim karelerle ölçer.",
+        "c) Birim kare sayısının dikdörtgenin iki ardışık kenar uzunluğu ile ilişkisini inceler.",
+        "ç) Dikdörtgenin alan bağıntısına (iki ardışık kenarın uzunlukları çarpımı) ilişkin yargıda bulunur."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB2. Matematiksel Problem Çözme"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.17. Değerlendirme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.6. Analitiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D7. Estetik, D14.Saygı"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/451",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 4.Tema: Geometrik Nicelikler",
+      "sourceFetchedAt": "2026-10-07T10:54:04.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "4.Tema: Geometrik Nicelikler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.4.3",
+      "outcomeCodeAsPrinted": "MAT.5.4.3",
+      "outcomeText": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin alanının ölçüsü verildiğinde çevre uzunluğunu, çevre uzunluğu verildiğinde alanını yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Alanının ölçüsü verilen bir dikdörtgenin çevre uzunluğunu, çevre uzunluğu verilen bir dikdörtgenin alanını inceler.",
+        "b) Aynı alana sahip farklı dikdörtgenlerin çevre uzunluklarını ve aynı çevre uzunluğuna sahip farklı dikdörtgenlerin alanlarını belirler.",
+        "c) Aynı çevre uzunluğuna sahip dikdörtgenlerin farklı alanlara ve aynı alana sahip dikdörtgenlerin farklı çevre uzunluklarına sahip olabileceğini ifade eder."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB2. Matematiksel Problem Çözme"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.17. Değerlendirme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.6. Analitiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D7. Estetik, D14.Saygı"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/451",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 4.Tema: Geometrik Nicelikler",
+      "sourceFetchedAt": "2026-10-07T10:54:04.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "4.Tema: Geometrik Nicelikler",
+      "unitOrThemeCode": "4",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.4.4",
+      "outcomeCodeAsPrinted": "MAT.5.4.4",
+      "outcomeText": "Dikdörtgenin çevre uzunluğu ve alanı ile ilgili problemleri çözebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Dikdörtgenin çevre uzunluğu ve alanı ile ilgili problemlerde ilgili matematiksel bileşenleri (şekil, uzunluk, alan ölçüleri gibi) belirler.",
+        "b) Matematiksel bileşenler arasındaki ilişkileri belirler.",
+        "c) Problem bağlamındaki temsilleri farklı temsillere dönüştürür.",
+        "ç) Matematiksel temsillere dönüştürdüğü problemi kendi ifadeleri ile açıklar.",
+        "d) Problemin sonucuna ilişkin tahminde bulunur ve işlemleri gerçekleştirmek için stratejiler geliştirir.",
+        "e) Belirlediği stratejileri çözüm için uygular.",
+        "f) Çözüm yollarını kontrol eder ve çözüme ulaştırmayan stratejiyi değiştirir.",
+        "g) Problemin çözümü için kullandığı veya geliştirdiği stratejileri gözden geçirerek alternatif çözüm yollarını değerlendirir.",
+        "ğ) Kullandığı strateji veya stratejileri farklı problemlerin çözümlerine geneller.",
+        "h) Genellemenin geçerliliğini matematiksel örneklerle değerlendirir."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB2. Matematiksel Problem Çözme"
+      ],
+      "conceptualSkills": [
+        "KB2.14. Yorumlama",
+        "KB2.17. Değerlendirme"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E3.6. Analitiklik"
+      ],
+      "socialEmotionalSkills": [
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.1. Uyum",
+        "SDB3.2. Esneklik",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D7. Estetik, D14.Saygı"
+      ],
+      "literacySkills": [
+        "OB2. Dijital Okuryazarlık",
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Görsel Sanatlar"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma"
+      ],
+      "lessonHours": 20,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/451",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 4.Tema: Geometrik Nicelikler",
+      "sourceFetchedAt": "2026-10-07T10:54:04.679Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "5.Tema: İstatistiksel Araştırma Süreci",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.5.1",
+      "outcomeCodeAsPrinted": "MAT.5.5.1",
+      "outcomeText": "Kategorik veri ile çalışabilme ve veriye dayalı karar verebilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Kategorik veriye dayanan istatistiksel araştırma gerektiren durumları fark eder.",
+        "b) Kategorik veriye dayanan betimleme veya karşılaştırma gerektirebilecek araştırma soruları oluşturur.",
+        "c) Kategorik veriye ulaşmak için plan yapar.",
+        "ç) Araştırma sorusuna uygun hazırlanan anket sorularını kullanarak veri toplar veya hazır veriye ulaşır.",
+        "d) Veri görselleştirme aracını (sıklık tablosu, sütun grafiği, daire grafiği, nokta grafiği gibi) seçme gerekçelerini belirtir.",
+        "e) Toplanan veriyi uygun araçlar ile analiz eder.",
+        "f) Araştırmada ulaştığı sonuçlara yönelik gerekçeler sunar.",
+        "g) Araştırma sonuçlarının araştırma sorusuna ne düzeyde cevap verdiğini değerlendirerek araştırma sürecine uygun olmayan adımları yeniden planlar."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB4. Veri ile Çalışma ve Veriye Dayalı Karar Verme"
+      ],
+      "conceptualSkills": [
+        "KB2.18. Tartışma"
+      ],
+      "dispositions": [
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.9. Şüphe Duyma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D17. Tasarruf",
+        "D18. Temizlik",
+        "D8. Mahremiyet"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB6. Vatandaşlık Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Sosyal Bilgiler",
+        "Fen Bilimleri"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 24,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/452",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 5.Tema: İstatistiksel Araştırma Süreci",
+      "sourceFetchedAt": "2026-10-07T10:54:06.240Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "5.Tema: İstatistiksel Araştırma Süreci",
+      "unitOrThemeCode": "5",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.5.2",
+      "outcomeCodeAsPrinted": "MAT.5.5.2",
+      "outcomeText": "Başkaları tarafından oluşturulan kategorik veriye dayalı istatistiksel sonuç veya yorumları tartışabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Başkaları tarafından oluşturulan kategorik veriye dayalı istatistiksel sonuç veya yorumlara yönelik istatistiksel temellendirme yapar.",
+        "b) Başkaları tarafından oluşturulan kategorik veriye dayalı istatistiksel sonuç veya yorumlara yönelik hataları ya da yanlılıkları tespit eder.",
+        "c) Başkaları tarafından oluşturulan kategorik veriye dayalı sonuç veya yorumları çürütür ya da kabul eder."
+      ],
+      "learningArea": null,
+      "skills": [
+        "MAB4. Veri ile Çalışma ve Veriye Dayalı Karar Verme"
+      ],
+      "conceptualSkills": [
+        "KB2.18. Tartışma"
+      ],
+      "dispositions": [
+        "E3.4. Gerçeği Arama",
+        "E3.5. Açık Fikirlilik",
+        "E3.6. Analitiklik",
+        "E3.7. Sistematiklik",
+        "E3.8. Soru Sorma",
+        "E3.9. Şüphe Duyma",
+        "E3.10. Eleştirel Bakma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.1. Kendini Tanıma (Öz Farkındalık)",
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB2.3. Sosyal Farkındalık"
+      ],
+      "values": [
+        "D5. Duyarlılık",
+        "D6. Dürüstlük",
+        "D17. Tasarruf",
+        "D18. Temizlik",
+        "D8. Mahremiyet"
+      ],
+      "literacySkills": [
+        "OB1. Bilgi Okuryazarlığı",
+        "OB2. Dijital Okuryazarlık",
+        "OB3. Finansal Okuryazarlık",
+        "OB4. Görsel Okuryazarlık",
+        "OB6. Vatandaşlık Okuryazarlığı",
+        "OB8. Sürdürülebilirlik Okuryazarlığı"
+      ],
+      "interdisciplinaryRelations": [
+        "Sosyal Bilgiler",
+        "Fen Bilimleri"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil",
+        "MAB5. Matematiksel Araç ve Teknoloji ile Çalışma",
+        "KB3.3. Eleştirel Düşünme"
+      ],
+      "lessonHours": 24,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/452",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 5.Tema: İstatistiksel Araştırma Süreci",
+      "sourceFetchedAt": "2026-10-07T10:54:06.240Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "6.Tema: Veriden Olasılığa",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.6.1",
+      "outcomeCodeAsPrinted": "MAT.5.6.1",
+      "outcomeText": "Herhangi bir olayın olasılığının 0 (imkânsız) ile 1 (kesin) arasında (0 ve 1 dâhil) olduğunu (olasılık spektrumu) yorumlayabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Olayları ve olası durumları inceler.",
+        "b) Bir olayın olasılığına dair tahminlerini farklı sayı temsillerine dönüştürür.",
+        "c) Kendi ifadeleriyle tahminde bulunduğu bir olayın olasılığının 0 ile 1 arasında (0 ve 1 dâhil) olduğunu ifade eder."
+      ],
+      "learningArea": null,
+      "skills": [],
+      "conceptualSkills": [
+        "KB2.13. Yapılandırma",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.5. Oyunseverlik",
+        "E3.9. Şüphe Duyma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendini Uyarlama (Öz Yansıtma)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet"
+      ],
+      "literacySkills": [
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Sosyal Bilgiler"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 9,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/455",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 6.Tema: Veriden Olasılığa",
+      "sourceFetchedAt": "2026-10-07T10:54:07.753Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    },
+    {
+      "subject": "Matematik",
+      "grade": 5,
+      "unitOrTheme": "6.Tema: Veriden Olasılığa",
+      "unitOrThemeCode": "6",
+      "unitOrThemeSubtitle": null,
+      "outcomeCode": "MAT.5.6.2",
+      "outcomeCodeAsPrinted": "MAT.5.6.2",
+      "outcomeText": "Olayları az ya da çok olasılıklı şeklinde yapılandırabilme",
+      "outcomeGroup": null,
+      "processComponents": [
+        "a) Olayların olasılıklarına ilişkin nedensel veya mantıksal ilişkiler ortaya koyar.",
+        "b) Kendi öz bilgisi ile elde ettiği ilişkilere dayanarak olayların olasılıklarını az veya çok olasılıklı şeklinde ortaya koyar."
+      ],
+      "learningArea": null,
+      "skills": [],
+      "conceptualSkills": [
+        "KB2.13. Yapılandırma",
+        "KB2.14. Yorumlama"
+      ],
+      "dispositions": [
+        "E1.1. Merak",
+        "E2.5. Oyunseverlik",
+        "E3.9. Şüphe Duyma"
+      ],
+      "socialEmotionalSkills": [
+        "SDB1.2. Kendini Düzenleme (Öz Düzenleme)",
+        "SDB1.3. Kendini Uyarlama (Öz Yansıtma)",
+        "SDB2.1. İletişim",
+        "SDB2.2. İş Birliği",
+        "SDB3.3. Sorumlu Karar Verme"
+      ],
+      "values": [
+        "D1. Adalet"
+      ],
+      "literacySkills": [
+        "OB4. Görsel Okuryazarlık"
+      ],
+      "interdisciplinaryRelations": [
+        "Sosyal Bilgiler"
+      ],
+      "interSkillRelations": [
+        "MAB3. Matematiksel Temsil"
+      ],
+      "lessonHours": 9,
+      "sourceUrl": "https://tymm.meb.gov.tr/ortaokul-matematik-dersi/unite/455",
+      "sourceTitle": "Ortaokul Matematik Dersi 5.Sınıf – 6.Tema: Veriden Olasılığa",
+      "sourceFetchedAt": "2026-10-07T10:54:07.753Z",
+      "reviewStatus": "VERIFIED",
+      "reviewReasons": [],
+      "parsingNotes": []
+    }
+  ]
+}

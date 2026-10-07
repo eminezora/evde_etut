@@ -1,0 +1,913 @@
+{
+  "subject": "Sosyal Bilgiler",
+  "courseName": "Sosyal Bilgiler Dersi",
+  "sourceStatus": "FOUND",
+  "course": {
+    "id": 8,
+    "name": "Sosyal Bilgiler Dersi",
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi",
+    "foundIn": "https://tymm.meb.gov.tr/Ders/GetProgramList?page=3&kademe=temel-egitim",
+    "heading": "Sosyal Bilgiler Dersi",
+    "gradeCards": [
+      {
+        "label": "4.Sınıf",
+        "grade": 4,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/5"
+      },
+      {
+        "label": "5.Sınıf",
+        "grade": 5,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6"
+      },
+      {
+        "label": "6.Sınıf",
+        "grade": 6,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/7"
+      },
+      {
+        "label": "7.Sınıf",
+        "grade": 7,
+        "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8"
+      }
+    ]
+  },
+  "programUrl": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6",
+  "mainPage": {
+    "url": "https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6",
+    "heading": "Sosyal Bilgiler Dersi 5.Sınıf",
+    "headingGrade": 5,
+    "gradeVerified": true,
+    "fetchedAt": "2026-10-07T10:54:19.644Z",
+    "links": [
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/379",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/379",
+        "title": "1. Öğrenme Alanı: Birlikte Yaşamak"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/383",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/383",
+        "title": "2. Öğrenme Alanı: Evimiz Dünya"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/389",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/389",
+        "title": "3. Öğrenme Alanı: Ortak Mirasımız"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/394",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/394",
+        "title": "4. Öğrenme Alanı: Yaşayan Demokrasimiz"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/402",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/402",
+        "title": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi"
+      },
+      {
+        "href": "/sosyal-bilgiler-dersi/unite/405",
+        "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/405",
+        "title": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler"
+      }
+    ]
+  },
+  "units": [
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/379",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/379",
+      "title": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:21.163Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_379.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "1. Öğrenme Alanı: Birlikte Yaşamak",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin aile ve yakın çevresindeki gruplara, bu gruplardaki rollerine, bu rollere ait hak ve sorumluluklarına, farklı kültürlere ait özelliklere, bu özelliklere saygı duymanın toplumsal birlik açısından önemine, yardımlaşma ve dayanışma faaliyetlerine katkı sağlamanın toplumsal birliği sürdürmeye etkisine yönelik bilgi ve beceriler kazanması amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "16",
+        "Alan Becerileri": "SBAB5. Sosyal Katılım",
+        "Kavramsal Beceriler": "KB2.4. Çözümleme KB2.14. Yorumlama",
+        "Eğilimler": "E2.1. Empati, E2.2. Sorumluluk, E2.3. Girişkenlik, E3.3. Yaratıcılık,",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık, SDB3.2. Esneklik",
+        "Değerler": "D14. Saygı, D15. Sevgi, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı, OB6. Vatandaşlık Okuryazarlığ",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Bilişim Teknolojileri ve Yazılım, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.5. Sınıflama, KB2.7. Karşılaştırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.5.1.1. Dâhil olduğu gruplar ve bu gruplardaki rolleri arasındaki ilişkileri çözümleyebilmea) Dâhil olduğu grupları ve bu gruplardaki rollerini belirler.b) Dâhil olduğu gruplar ile bu gruplardaki rolleri arasındaki ilişkileri belirler. SB.5.1.2. Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yorumlayabilmea) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini örnekler üzerinden inceler.b) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yazılı, görsel veya dijital ürünlere dönüştürür.c) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini ifade eder. SB.5.1.3. Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine katkı sağlayabilmea) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerini sorgular. b) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için sosyal temas oluşturur. c) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için grup dinamiğini sağlar. ç) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için fikir üretir. d) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikirleri müzakere eder. e) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikri eyleme dönüştürür.",
+        "İçerik Çerçevesi": "Gruplar ve RollerKültürel Özelliklere Saygı ve Birlikte Yaşama KültürüYardımlaşma ve Dayanışma Faaliyetlerinin Toplumsal Birliğe Etkisi",
+        "Anahtar Kavramlar": "birlik ve beraberlik, dayanışma, grup, hak, kültür, rol, saygı, sorumluluk, STK, yardımlaşma",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; karşılaştırma tablosu, gözlem formu, derecelendirme ölçeği, kontrol listesi, anekdot kaydı, analitik dereceli puanlama anahtarı, çalışma yaprakları ve performans görevi ile değerlendirilebilir.Performans görevi: Sosyal sorumluluk projesi gerçekleştirme ve bu süreç sonunda broşürler ve videoların oluşturulmasına yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin grup çalışması, rol, iletişim, iş birliği, hak, sorumluluk, kültür, yardımlaşma ve dayanışma kavramlarına ait temel bilgilere sahip olduğu kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilere grup ve rol kavramına ilişkin açık uçlu sorular sorulabilir.Kültür kavramı ile çağrışım yapan kelimelere örnekler vermeleri istenebilir.Yardımlaşma ve dayanışma kavramlarına ilişkin açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilere ilkokulda hangi gruplara dâhil oldukları ve bu gruplardaki rollerinin ne olduğu sorulabilir. Yakın çevrelerinde kendi kültüründen farklı bir dil, kıyafet, yemek, kutlama töreni gibi kültürel ögelere sahip olan insanlar veya toplumlar ile karşılaşabileceği ifade edilebilir. Öğrencilerden varsa buna dair örnekler vermeleri istenebilir. Öğrencilere bu kültürel özelliklere ilişkin neler düşündükleri ve hissettikleri sorulabilir. Öğrencilere okullarında düzenlenebilecek bir yardım kampanyasının amacının ve toplumsal faydalarının neler olabileceği sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.5.1.1 Öğrencilerden yakın çevrelerinde, okullarında ve sınıflarında dâhil oldukları grupları incelemeleri istenir. Her öğrencinin bu gruplardaki rollerini yazılı olarak listelemesi sağlanır. Öğrencinin ortaokula başlamasıyla burada yer alabileceği gruplardaki değişimlere ve bu gruplardaki rollerine de vurgu yapılır (E1.1, OB1). Listede yer alan gruplardaki rolleri ile bu rollerin getirdiği hak ve sorumlulukları tartışmaları sağlanır. Bu süreçte akvaryum veya küçük grup tartışma teknikleri kullanılabilir. Dâhil oldukları gruplardaki rollere ilişkin hak ve sorumlulukların benzerlik-farklılık açısından karşılaştırılması sağlanır (SDB2.3). Elde edilen bilgiler, karşılaştırma tablosuna kaydedilir (KB2.7, OB1). Sınıftaki öğrenciler; aile, arkadaş, okul ve sosyal sorumluluk grupları olmak üzere dört gruba ayrılır. Aile grubunda çocuk, kardeş, abla veya ağabey; arkadaş grubunda lider, arabulucu; okul grubunda sınıf başkanı, nöbetçi; sosyal sorumluluk grubunda gönüllü, yönetici, kampanya sorumlusu rollerine ilişkin daha önceden hazırlanmış rol kartları gruplara dağıtılarak dâhil olunan gruplardaki rollerle ilgili canlandırma yapılır (E2.1, E2.2, E2.3). Canlandırma sonrası gruplarda üstlenilen roller ile hak ve sorumluluklara ait duygu ve düşünceler ifade edilir (SDB2.3). Canlandırma süreci; gözlem formu, derecelendirme ölçeği veya kontrol listesi kullanılarak değerlendirilebilir. Canlandırma sonunda öğrenciler dâhil olunan gruplar ile bu gruplardaki rolleri arasındaki ilişkiyi yazılı, sözlü veya görsel olarak ifade eder. Süreç içerisinde öğrencilerin görev bilinci geliştirmelerine ve görevlerini zamanında, eksiksiz yerine getirmelerine yönelik çalışmalar yaptırılır (D16.3). SB.5.1.2 Öğrencilere ülkemizin, Kuzey Kıbrıs Türk Cumhuriyeti (KKTC)’ nin ve farklı ülkelerin kültürel özelliklerine ilişkin yazılı ve görsel kaynaklar sunulur (OB1, OB4). Dijital kaynaklardan da yararlanılabilir (OB2). Sunulan kaynaklar üzerinden kendi kültürümüze ve farklı kültürlere ait sanat, müzik, yemek, giyim, kutlama, gelenek ve göreneklere yönelik özellikler öğrenciler tarafından incelenir. Belirlenen kültürel özellikler sınıflandırma tablosuna kaydedilir (KB2.5). Ülkemizin ve farklı ülkelerin kültürel özellikleri, benzerlik ve farklılık açısından karşılaştırılır (KB2.7). Bu bağlamda KKTC ile aramızdaki benzerlikler, tarihî ve kültürel bağlar açısından ele alınır. Örnek olaylar üzerinden farklı kültürel özelliklere sahip insanların bir araya gelmesini gerektiren durumlar sorgulanır (SDB2.3). Öğrenciler her grupta eşit sayıda öğrenci olacak şekilde gruplara ayrılır ve bu gruplara örnek olaylardan hareketle benzer durumları içeren senaryolar verilir. Öğrencilerden senaryolardaki durumu el kuklaları ile canlandırmaları istenir. Bu süreçte ipli kukla, siyah gölge oyunu veya tiyatro kuklası tekniklerinden de yararlanılabilir (E2.1, E2.2, E2.3, SDB2.2). Canlandırılan durumlardan hareketle kültürel özelliklere saygı duymanın önemini ve insanları farklılıklarıyla kabul etmenin gerekliliği ortaya konulur (D15.1). Gruplardan kültürel özelliklere saygı duymanın birlikte yaşamaya etkisine yönelik yazılı, görsel veya dijital ürünler ortaya koymaları istenir. Gruplar, hazırladıkları ürünlerden yola çıkarak kültürel özelliklere saygı duymanın birlikte yaşamaya etkisine ilişkin sunum yapar. Sürecin değerlendirilmesinde çalışma yaprağı kullanılabilir. Süreç içerisinde öğrencilerin insanların farklı kültür ve inançlara sahip olabileceğini fark etmeleri, millî ve manevi değerlerin yaşatılmasında sorumluluk üstlenmeleri beklenir (D14.3, D19.3). Ayrıca farklı toplumların kültürlerine saygılı olmanın önemi vurgulanır (OB5, OB6). SB.5.1.3 Yazılı ve görsel kaynaklar üzerinden yardımlaşma ve dayanışma faaliyetlerine ilişkin örnekler incelenir (OB1,OB4). Süreçte dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerden yapılan incelemelerden hareketle yardımlaşma ve dayanışma faaliyetlerine ilişkin günlük hayattan ve yakın çevreden örnekler vermeleri istenir. Yardımlaşma ve dayanışma faaliyetlerinin toplumsal birliği sürdürmeye etkisi sorgulanır. Bu süreçte örnek olay yöntemi kullanılabilir. Öğrenciler toplumsal birliği sürdürmeyi etkileyen yardımlaşma ve dayanışma faaliyetlerine ilişkin çıkarımlarda bulunur. Öğrenciler toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışmayı desteklemek amacıyla performans görevi kapsamında sosyal sorumluluk projesi hazırlayabilir. Performans görevi için sınıftaki öğrenciler gruplara ayrılabilir (SDB2.2). Hazırlanan performans görevi dereceli puanlama anahtarı ile değerlendirilebilir. Oluşturulan gruplarda, yapılacak sosyal sorumluluk projesi ile ilgili görev paylaşımı yapılır. Her gruba ayrı bir görev düşecek şekilde “yönetici, ihtiyaç saptama, kaynak belirleyici, kampanya sorumlusu, faaliyet yürütücüleri” olmak üzere grupların belirlenen görevlerden birini seçmeleri sağlanır (SDB2.2). T.C. Millî Eğitim Bakanlığı’na bağlı kurum ve kuruluşlar tarafından yapılmış örnek projeler incelenir. Bu incelemelerden, kendi deneyimlerinden ve yakın çevresinden edindiği bilgilerden yola çıkarak öğrencilerden çocuklar, yaşlılar veya okullara yönelik sosyal sorumluluk proje fikirleri üretmeleri istenir (E3.3, SDB3.2). Ortaya çıkan fikirler sınıf içerisinde müzakere edilir (SDB2.2). Üretilen fikirlerin güçlü ve zayıf yönleri “Güçlü ve Zayıf Yönler” tablosu doldurularak belirlenir. Fikirlerin zayıf yönlerini güçlendirmek için grup üyeleri tarafından alternatif çözümler geliştirilir. Müzakere sürecinin değerlendirilmesinde gözlem formu, kontrol listesi, anekdot kaydı gibi araçlar kullanılabilir. Süreç içerisinde oluşturulan gruplar ve grupların görevleri dikkate alınarak ortaya çıkan fikirlerden biri sınıfın ortak kararıyla seçilir ve uygulanmak üzere tasarıya dönüştürülür. Gruplar tarafından süreçte aldıkları görevler yerine getirilerek veli ve okul idaresi gözetiminde tasarı bir sosyal sorumluluk projesi olarak eyleme dönüştürülür (OB6, E2.2, E2.3). Yapılan proje ile öğrencilerin toplumsal yardımlaşma ve dayanışma etkinliklerine katılmalarının önemi üzerinde durularak topluma karşı sorumluluk bilinci geliştirmeleri desteklenir (D16.2). Grupların çalışma süreçlerini yansıtan ve faaliyetlerini tanıtan broşürler, sürece dair videolar okul içerisinde paylaşılır. Sınıfta sosyal medya panosu oluşturulur (E3.3). Yapılan çalışmalar esnasında öğrencilerin insanlara iyi davranmanın toplumsal bağları güçlendireceğini fark etmeleri, millî ve manevi değerleri göz önünde bulundurarak dayanışma içinde hareket etmeleri, fedakârlık yapmaları ve iyiliksever davranışlar sergilemeleri sağlanır (D14.3, D20.3). Çalışmalar okul gazetesi veya yerel medyada yayımlanır. Proje süreci, dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerden farklı ülkelerdeki akranlarının yakın çevrelerinde, okullarında ve sınıflarında dâhil oldukları gruplar ve bu gruplardaki rollerine ilişkin bilgi toplanması istenebilir. Kendi dâhil olduğu gruplar ve rolleri, diğer ülkelerdeki grup ve roller ile karşılaştırabilir. Elde edilen bilgilerden yola çıkılarak dâhil olmak istenen özgün bir grup fikri oluşturulabilir. Merak edilen bir ülkenin kültürel özelliklerine yönelik yapılacak araştırma sonucunda ulaşılan görsellerle bir kolaj çalışması hazırlanabilir. Hazırlanan kolaj çalışmaları okul sergisi ile sunulabilir. Toplumsal birliği sürdürmek amacıyla yardımlaşma ve dayanışmaya yönelik bir öneri uygulanmak üzere ilgili kurum, kuruluş veya STK’ye sunulabilir. Toplumsal birliği sürdürmek amacıyla yardımlaşma ve dayanışmaya yönelik bir öneri uygulanmak üzere ilgili kurum, kuruluş veya STK’ye sunulabilir.",
+        "Destekleme": "Öğrencilerden dâhil olunan gruplar ve bu gruplardaki rollerin listelenmesi istenebilir. Görseller veya yazılı ifadelerden yola çıkılarak grup ve rol kavramlarının eşleştirilmesi istenebilir. Kısa cevaplı sorular veya eşleştirme kartları aracılığıyla rollerinin ve sorumluluklarının bulunması sağlanabilir. Öğrencilerden dâhil oldukları gruplarda kendilerine verilen rollere ilişkin canlandırmalar yapmaları istenebilir. Günlük yaşamda karşılaşılan farklı kültürel ögelere örnekler verilebilir. Görseller üzerinden kültürel ögelerin sınıflandırılması istenebilir. STK’lerin çalışma alanlarını bulmaya yönelik görsel eşleştirme etkinlikleri yapılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.5.1.1. Dâhil olduğu gruplar ve bu gruplardaki rolleri arasındaki ilişkileri çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Dâhil olduğu grupları ve bu gruplardaki rollerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Dâhil olduğu gruplar ile bu gruplardaki rolleri arasındaki ilişkileri belirler.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.1.2. Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini örnekler üzerinden inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yazılı, görsel veya dijital ürünlere dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "c) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.1.3. Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine katkı sağlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "b) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için sosyal temas oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için grup dinamiğini sağlar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için fikir üretir.",
+          "bold": false
+        },
+        {
+          "text": "d) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikirleri müzakere eder.",
+          "bold": false
+        },
+        {
+          "text": "e) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikri eyleme dönüştürür.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.5.1.1",
+          "codeAsPrinted": "SB.5.1.1",
+          "text": "Dâhil olduğu gruplar ve bu gruplardaki rolleri arasındaki ilişkileri çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Dâhil olduğu grupları ve bu gruplardaki rollerini belirler.",
+            "b) Dâhil olduğu gruplar ile bu gruplardaki rolleri arasındaki ilişkileri belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.1.2",
+          "codeAsPrinted": "SB.5.1.2",
+          "text": "Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini örnekler üzerinden inceler.",
+            "b) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yazılı, görsel veya dijital ürünlere dönüştürür.",
+            "c) Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.1.3",
+          "codeAsPrinted": "SB.5.1.3",
+          "text": "Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine katkı sağlayabilme",
+          "group": null,
+          "components": [
+            "a) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerini sorgular.",
+            "b) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için sosyal temas oluşturur.",
+            "c) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için grup dinamiğini sağlar.",
+            "ç) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetleri için fikir üretir.",
+            "d) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikirleri müzakere eder.",
+            "e) Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine ilişkin üretilen fikri eyleme dönüştürür."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/383",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/383",
+      "title": "2. Öğrenme Alanı: Evimiz Dünya",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:22.679Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_383.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "2. Öğrenme Alanı: Evimiz Dünya",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin yaşadıkları ilin göreceli konum özellikleri, yaşadıkları ilde doğal ve beşerî çevredeki değişimler, yaşadıkları ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik yapılması gerekenler ve ülkemize kara sınırı olan komşu devletlerin temel özellikleri ile ilgili bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "22",
+        "Alan Becerileri": "SBAB7. Mekânsal Düşünme (SBAB7.1. Konum Algılama) SBAB4. Değişim ve Sürekliliği Algılama (SBAB4.2. Değişim ve Sürekliliği Neden ve Sonuçlarıyla Yorumlama) SBAB5. Sosyal Katılım (SBAB5.5. Fikri Eyleme Dönüştürme)",
+        "Kavramsal Beceriler": "KB2.6. Bilgi Toplama",
+        "Eğilimler": "E3.2. Odaklanma, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.7. Sistematiklik, E3.8. Soru Sorma, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB2.2. İş Birliği, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D5. Duyarlılık, D18. Temizlik, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "KB2.6. Bilgi Toplama KB2.7. Karşılaştırma",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.5.2.1. Yaşadığı ilin göreceli konum özelliklerini algılayabilme a) Yaşadığı ilin göreceli konum özelliklerini belirler. b) Yaşadığı ilin göreceli konum özelliklerini görselleştirir. c) Yaşadığı ilin göreceli konum özelliklerini özetler. SB.5.2.2. Yaşadığı ilde doğal ve beşerî çevredeki değişimi neden ve sonuçlarıyla yorumlayabilme a) Yaşadığı ilde doğal ve beşerî çevrenin değişimine neden olan unsurları inceler. b) Yaşadığı ilde doğal ve beşerî çevrenin değişiminden etkilenen unsurları inceler. c) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin etkilerini sorgular. ç) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder. SB.5.2.3. Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği fikrini eyleme dönüştürebilme a) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği planı yapar. b) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını uygular. c)Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını değerlendirir. SB.5.2.4. Ülkemize kara sınırı olan komşu devletler hakkında bilgi toplayabilme a) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgilere ulaşmak amacıyla kullanacağı kaynakları belirler. b) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgileri belirlediği kaynaklardan bulur. c) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri doğrular. ç) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri kaydeder.",
+        "İçerik Çerçevesi": "Yaşadığı İlin Göreceli KonumuYaşadığı İlde Doğal ve Beşerî Çevredeki DeğişimYaşadığı İlde Meydana Gelebilecek Afetlerin EtkileriÜlkemize Komşu Devletler",
+        "Anahtar Kavramlar": "AFAD, afet, beşerî çevre, coğrafya, doğal çevre, göreceli konum, komşu devlet, sınır",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; gözlem formu, kontrol listesi, derecelendirme ölçeği, karşılaştırma tablosu, balık kılçığı, bütüncül dereceli puanlama anahtarı ve performans görevi kullanılarak değerlendirilebilir. Performans Görevi: Komşu devletleri tanıtan afiş tasarımı yapmaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin konum ve yön bulma becerilerine sahip oldukları, harita çeşitlerini tanıdıkları, yaşadıkları yerdeki doğal çevre ile insan arasındaki ilişkilere örnek verebilecekleri, yaşadıkları yerdeki afetlerin neler olduğunu ve bunların etkilerini azaltma konusunda yapabileceklerini bildikleri, bağımsızlık sembollerimiz olan Türk bayrağı ve İstiklâl Marşı’na ilişkin temel bilgilere sahip oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin konumlarını belirleme ve yön bulmaya, harita çeşitlerine ve haritaların temel özelliklerine ilişkin bilgileri açık uçlu sorular sorularak değerlendirilebilir. Öğrencilerden doğal çevre unsurlarına örnek vermeleri istenebilir. Öğrencilere “Yaşadığınız ilde görülme ihtimali olan afetlerin neler olduğunu ve herhangi bir afet durumunda ne yapacağınızı biliyor musunuz?” gibi sorular sorulabilir. Öğrencilere ülkemizin bağımsızlık sembollerine ilişkin açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilere yaşadıkları ilin diğer illerden hangi yönleriyle farklı olabileceğine dair düşüncelerini ortaya koymalarını sağlayan açık uçlu sorular sorulabilir. Öğrencilerin gözlem yaparak veya aile büyüklerine sorarak yaşadığı çevrede meydana gelen değişimlerin neler olduğunu sorgulaması sağlanabilir. Öğrencilerden tespit ettikleri değişimleri gruplandırmaları istenebilir. Öğrencilere “Deprem değil ihmal öldürür.” sözünden yola çıkarak yaşadığı yerde görülebilecek afetlere karşı alınabilecek bireysel ve toplumsal önlemlerin neler olabileceğine dair açık uçlu sorular sorulabilir. Bağımsızlık sembollerine saygı duyma hakkında tarihten örnekler verilerek öğrencilere bu örnekler hakkındaki düşünceleri sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.5.2.1 Öğrencilerin yazılı ve görsel kaynaklardaki örnekleri inceleyerek yaşadıkları ilin göreceli konum özelliklerini belirlemeleri sağlanır (OB1, OB4). Bu amaçla ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerden verilen kaynaklardan hareketle yaşadıkları ilin göreceli konum özelliklerinden yeryüzü şekillerine, su kaynaklarına, önemli tarihî mekânlarına, komşu illerine örnekler vermeleri istenir. Bu bağlamda öğrencilerin yaşadığı ildeki doğal güzelliklerin ve tarihî mekânların gelecek nesillere aktarılmasının önemine ilişkin farkındalık kazanmaları sağlanır (D19.3). Verilen örneklerden hareketle öğrencilerin yaşadıkları ilin göreceli konum özelliklerini tablo, Türkiye dilsiz mülki idare haritası veya görsellerle desteklenmiş bilgi kartlarından birini hazırlayarak görselleştirmeleri sağlanır (E3.3). Oluşturulan tablo, Türkiye dilsiz mülki idare haritası veya görsellerle desteklenmiş bilgi kartlarının değerlendirilmesi için derecelendirme ölçeğinden yararlanılabilir. Öğrencilerden kaynaklardan ve yapılan görselleştirmelerden yola çıkarak yaşadıkları ilin göreceli konum özelliklerini sözlü sunum olarak özetlemeleri istenir (SDB2.1, OB1). Öğrencilerin sunumları gözlem formu veya kontrol listeleri ile değerlendirilebilir. SB.5.2.2 Öğrenciler, yaşadıkları ilde bulunan doğal ve beşerî çevrede geçmişten günümüze meydana gelen değişimleri fotoğraflar, resimler, gazete haberleri, hava fotoğrafları, şehir haritaları, şehir planları, sözlü tarih görüşmeleri üzerinden inceler ve değişime neden olan unsurları belirler (OB1, OB4, E3.2). Bu süreçte yıllara göre doğal ve beşerî çevredeki değişimi gösteren dijital uygulamalar da kullanılabilir (OB2). Yaşadıkları ilde doğal ve beşerî çevrede değişen ve değişmeyen unsurlar belirlenir. Bu süreçte büyük grup tartışması yapılabilir. Öğrenci cevapları tahtaya yazılarak değişen ve değişmeyen unsurlarla ilgili karşılaştırma tablosu oluşturulur (KB2.7, OB7). Verilen kaynaklar üzerinden öğrencilerin yaşadıkları ilde bulunan doğal ve beşerî çevrede geçmişten günümüze meydana gelen değişimin etkilediği unsurlardan su kaynakları, bitki örtüsü varlığı, arazi kullanımı, yerleşim alanları, ulaşım sistemleri ve nüfus özelliklerini incelemeleri istenir (E3.4, SDB2.1, OB4). Öğrencilerin yaşadıkları ilde bulunan doğal ve beşerî çevrede geçmişten günümüze meydana gelen değişimin su kaynaklarına, bitki örtüsü varlığına, arazi kullanımına, yerleşim alanlarına, ulaşım sistemlerine ve nüfus özelliklerine olan etkisini sorgulamaları sağlanır. Öğrencilerden yaşadıkları ildeki doğal ve beşerî çevrede meydana gelen değişimlerin etkileri ile ilgili merak ettikleri soruları sormaları istenir (E3.8).Öğrenciler verilen kaynakları tekrar inceleyerek merak ettikleri sorular doğrultusunda yaşadıkları ilde bulunan doğal ve beşerî çevrede geçmişten günümüze meydana gelen değişimin neden ve sonuçlarını ifade eder. Bu süreçte öğrencilerden yaşadığı ilde bulunan doğal ve beşerî çevrede meydana gelen değişimin sonuçlarını altı şapkalı düşünme tekniği ile ifade etmeleri istenebilir (SDB3.3). Ayrıca öğrencilerin gelecek nesillere daha temiz bir çevre bırakmak için su kaynakları, bitki örtüsü varlığı veya yerleşim alanları gibi çevresel faktörlerin korunması konusunda duyarlı olmaları sağlanır (D18.3). Bu aşamada “yeşil vatan” kavramına da değinilerek ülkemizin doğal varlıklarını korumanın önemi ile ilgili farkındalık kazandırılır (D19.3). Öğrenciler, bireysel veya grup hâlinde yaşadıkları ildeki doğal ve beşerî çevrede geçmişten günümüze meydana gelen değişimin neden ve sonuçlarını balık kılçığı diyagramında yazılı olarak ifade eder (SDB2.1). SB.5.2.3 Verilen yazılı ve görsel kaynaklar üzerinden yaşanılan ildeki doğa olaylarının insanların etkisi ile afete dönüşme riskleri öğrenciler tarafından belirlenir (OB1, OB4). Bu süreçte dijital kaynaklardan, örnek olaylardan ve AFAD İl Afet Risk Azaltma Planı’ndan yararlanılabilir (OB2, SDB2.2, E3.7). Öğrencilerden; afetlerin etkilerini azaltmaya yönelik hazırlıklar konusunda afet bilinci geliştirmelerini destekleyecek bir farkındalık etkinlik planını grup çalışmasıyla hazırlamaları istenir (D5.3). Farkındalık etkinlik planlarının tasarımında, afet bilincine sahip olmanın afetlerin etkilerini azaltmadaki rolünü göz önünde bulundurmaları vurgulanır (SDB2.2, E3.7). Gruplar tarafından hazırlanan farkındalık etkinlikleri ile ilgili sunum, resim, afiş veya posterler hazırlanır. Bunlar sınıf ortamı, çevrim içi ortamlar, okul panoları, okul bahçesi veya koridorunda paylaşılır ve uygun ortamlarda uygulanır (SDB2.1, SDB2.2). Bu süreçte afet ve acil durumlarda bilgi kirliliğini önlemek amacıyla güvenilir bilgi kaynaklarının neler olduğu da açıklanır (E3.10). Gruplara afet farkındalık etkinliklerine yönelik öğretmenleri veya akranları tarafından yazılı veya sözlü olarak geri bildirimler verilir. Bu bildirimler doğrultusunda gruplar tarafından farkındalık etkinlikleri yeniden düzenlenir (SDB2.1). SB.5.2.4 Kara sınırımız olan komşu devletlerle ilgili bilgilere ulaşmak için kullanılacak yazılı ve görsel kaynaklar öğretmen rehberliğinde belirlenir (OB1, OB4). Bu amaçla ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Öğretmen tarafından bağımsızlık sembollerine ilişkin açıklamalar yapılır. Bu süreçte ülkemizin bağımsızlık sembollerine değinilir. Belirlenen kaynaklar üzerinden öğrenciler tarafından kara sınır komşumuz olan devletlerin başkentleri, bağımsızlık sembolleri ve ülkemize göre konumlarına ilişkin bilgiler bulunur (OB1, OB4). Yunanistan, Bulgaristan, Suriye ve Gürcistan’ın denizden de sınır komşumuz olduğu vurgusu yapılır. Öğrencilerin ülkesinin sınırlarını ve sınır komşularını tanımaları sağlanarak millî bilinç geliştirmeleri desteklenir (D19.1). Öğrencilerden kara sınırımız olan komşu devletlerle ilgili ulaşılan bilgileri güvenilir kaynaklarla karşılaştırarak doğrulamaları istenir (E3.10). Öğrencilerden performans görevi olarak bireysel veya grup hâlinde komşu devletleri tanıtan afiş hazırlamaları ve bu afişleri kullanarak komşu devletleri tanıtan kısa sunumlar yapmaları istenebilir (SDB2.2). Hazırlanan afişler dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerden yaşadıkları ilden farklı bir ilin göreceli konum özelliklerini yazılı ve görsel kaynaklarla incelemeleri istenir. Ayrıca öğrenciler öğretmen rehberliğinde dijital kaynakları da inceleyebilir. Öğrenciler tarafından bu iki ilin benzer ve farklı özelliklerine dair yazılı, görsel veya dijital bir ürün oluşturulabilir. Öğrencilerden yaşadıkları ilden farklı bir ilin göreceli konum özelliklerini yazılı ve görsel kaynaklarla incelemeleri istenir. Ayrıca öğrenciler öğretmen rehberliğinde dijital kaynakları da inceleyebilir. Öğrenciler tarafından bu iki ilin benzer ve farklı özelliklerine dair yazılı, görsel veya dijital bir ürün oluşturulabilir. Mevcut verilerden yola çıkılarak yaşadıkları ilde gelecekte doğal ve beşerî çevrede meydana gelebilecek değişimlerle ilgili öğrenciler tarafından öngörülere dayalı bir rapor oluşturulabilir. Öğrencilerden yaşadıkları ilde afetlerle ilgili faaliyetler gösteren resmî kurum ve sivil toplum kuruluşlarının çalışmalarını araştırmaları istenebilir. Araştırmalardan elde edilen bilgiler resim, afiş veya poster olarak sunulabilir. Öğrencilerden deniz sınırımız olan komşu devletlerden birini seçerek bu ülkeye dair merak ettiklerini araştırmaları ve araştırma sonuçlarına ilişkin yazılı veya görsel bir ürün oluşturmaları istenebilir.",
+        "Destekleme": "Öğrencilerden yaşadıkları il sınırına komşu olan illeri sıralamaları istenebilir. Öğrencilerden yaşadıkları ilin eski ve yeni fotoğraflarını doğal ve beşerî çevrede meydana gelen benzerlik ve farklılıklar açısından karşılaştırmaları istenebilir. Öğrencilerden yaşadıkları ili etkileyebilecek afetlerle ilgili bilgilerini yazılı veya sözlü olarak paylaşmaları istenebilir. Öğrencilerden Dilsiz Komşu Ülkeler Haritası üzerinde kara sınırımız olan komşu devletleri farklı renkte boyamaları ve bu devletlerin isimlerini harita üzerine yazmaları istenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.5.2.1. Yaşadığı ilin göreceli konum özelliklerini algılayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yaşadığı ilin göreceli konum özelliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Yaşadığı ilin göreceli konum özelliklerini görselleştirir.",
+          "bold": false
+        },
+        {
+          "text": "c) Yaşadığı ilin göreceli konum özelliklerini özetler.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.2.2. Yaşadığı ilde doğal ve beşerî çevredeki değişimi neden ve sonuçlarıyla yorumlayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yaşadığı ilde doğal ve beşerî çevrenin değişimine neden olan unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Yaşadığı ilde doğal ve beşerî çevrenin değişiminden etkilenen unsurları inceler.",
+          "bold": false
+        },
+        {
+          "text": "c) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin etkilerini sorgular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.2.3. Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği fikrini eyleme dönüştürebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği planı yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını uygular.",
+          "bold": false
+        },
+        {
+          "text": "c)Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.2.4. Ülkemize kara sınırı olan komşu devletler hakkında bilgi toplayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgilere ulaşmak amacıyla kullanacağı kaynakları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgileri belirlediği kaynaklardan bulur.",
+          "bold": false
+        },
+        {
+          "text": "c) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri doğrular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri kaydeder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.5.2.1",
+          "codeAsPrinted": "SB.5.2.1",
+          "text": "Yaşadığı ilin göreceli konum özelliklerini algılayabilme",
+          "group": null,
+          "components": [
+            "a) Yaşadığı ilin göreceli konum özelliklerini belirler.",
+            "b) Yaşadığı ilin göreceli konum özelliklerini görselleştirir.",
+            "c) Yaşadığı ilin göreceli konum özelliklerini özetler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.2.2",
+          "codeAsPrinted": "SB.5.2.2",
+          "text": "Yaşadığı ilde doğal ve beşerî çevredeki değişimi neden ve sonuçlarıyla yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Yaşadığı ilde doğal ve beşerî çevrenin değişimine neden olan unsurları inceler.",
+            "b) Yaşadığı ilde doğal ve beşerî çevrenin değişiminden etkilenen unsurları inceler.",
+            "c) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin etkilerini sorgular.",
+            "ç) Yaşadığı ilde doğal ve beşerî çevrede meydana gelen değişimin neden ve sonuçlarını elde ettiği bilgilere dayanarak ifade eder."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.2.3",
+          "codeAsPrinted": "SB.5.2.3",
+          "text": "Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği fikrini eyleme dönüştürebilme",
+          "group": null,
+          "components": [
+            "a) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinliği planı yapar.",
+            "b) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını uygular.",
+            "c) Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik hazırladığı farkındalık etkinliği planını değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.2.4",
+          "codeAsPrinted": "SB.5.2.4",
+          "text": "Ülkemize kara sınırı olan komşu devletler hakkında bilgi toplayabilme",
+          "group": null,
+          "components": [
+            "a) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgilere ulaşmak amacıyla kullanacağı kaynakları belirler.",
+            "b) Ülkemize kara sınırı olan komşu devletlerle ilgili bilgileri belirlediği kaynaklardan bulur.",
+            "c) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri doğrular.",
+            "ç) Ülkemize kara sınırı olan komşu devletlerle ilgili belirlediği kaynaklardan edindiği bilgileri kaydeder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/389",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/389",
+      "title": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:24.195Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_389.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "3. Öğrenme Alanı: Ortak Mirasımız",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin ortak miras ögeleri ve ortak mirasın korunmasının önemi, Anadolu’nun ilk yerleşim yerlerindeki sosyal hayat, Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkıları ile ilgili bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma) SBAB3. Tarihsel Empati",
+        "Kavramsal Beceriler": "KB2.7. Karşılaştırma",
+        "Eğilimler": "E1.1. Merak, E2.1. Empati, E2.2. Sorumluluk, E3.2. Odaklanma, E3.3. Yaratıcılık, E3.6. Analitiklik, E3.7. Sistematiklik, E3.8. Soru Sorma, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB3.1. Uyum, SDB3.3. Sorumlu Karar Verme",
+        "Değerler": "D15. Sevgi, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB5. Kültür Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.5.3.1. Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilmea) Yaşadığı ildeki somut ve somut olmayan kültürel miras ögelerinden hareketle ortak mirasın önemi hakkında çıkarım yapar.b) Yapılan çıkarımlardan hareketle ortak mirasın önemini açıklayan bir ürün oluşturur.c) Ortak mirasın önemi hakkında çıkarımlarına dayalı olarak oluşturduğu ürünü paylaşır. SB.5.3.2. Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına yönelik bakış açısı geliştirebilmea) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarını kaynaklardan edindiği bilgiler doğrultusunda yorumlar. b) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin tarihsel bağlam oluşturur. c) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin bakış açısını kaynaklar doğrultusunda yapılandırır. SB.5.3.3. Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını karşılaştırabilmea) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını belirler.b) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının benzerliklerini listeler.c) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının farklılıklarını listeler.",
+        "İçerik Çerçevesi": "Ortak Miras ÖgeleriSomut ve Somut Olmayan Kültürel Miras ÖgeleriAnadolu’nun İlk Yerleşim Yerlerinde Sosyal HayatMezopotamya ve Anadolu Medeniyetlerinin Ortak Mirasa Katkıları",
+        "Anahtar Kavramlar": "avcı-toplayıcı toplum, medeniyet, milat, ortak miras, UNESCO, yerleşik hayat",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; gözlem formu, kontrol listesi, bütüncül dereceli puanlama anahtarı, derecelendirme ölçeği, karşılaştırma tablosu, bilgi görseli ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Yaşadıkları ildeki somut ve somut olmayan kültürel miras ögelerinin önemine ilişkin olarak afiş, poster veya broşür hazırlamaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin ortak miras gibi kavramları bildiği kabul edilmektedir. İnsanların sosyal hayatlarında temel ihtiyaçlarını giderebilmek için üretim ve tüketim yaptıkları hakkında öğrencilerin bilgi sahibi oldukları kabul edilmektedir. Öğrencilerin bilim, kültür, ekonomi ve hukuk kavramlarına ait temel düzeyde bilgi sahibi olduğu kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin ortak miras kavramları hakkında neler bildiklerini belirlemeye yönelik açık uçlu sorular sorulabilir. Öğrencilerden geçmişte yaşamış toplulukların temel ihtiyaçlarını (beslenme, barınma vb.) nasıl gidermiş olabileceklerine yönelik tahminde bulunmaları istenebilir. Öğrencilerin bu toplulukların yaşam alanlarına ait arkeolojik kazılar hakkında neler bildiği sorulabilir. Öğrencilere bilim, kültür, hukuk ve ekonomi hakkında açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilere “Yaşadığınız ilde bildiğiniz veya ailenizle ziyaret ettiğiniz tarihî mekânlara örnekler verebilir misiniz?”, “Tarihî eser niteliğinde yapılara örnek verebilir misiniz?”, “Geçmişten günümüze ulaşan tarihî nesnelere ne gibi örnekler verebiliriz?” soruları yöneltilebilir. Öğrencilere insanların geçmişte yaşam alanı olarak nereleri tercih ettiğine ve tercih ettikleri yaşam alanında ne gibi özellikler olmasını önemsediklerine yönelik açık uçlu sorular sorulabilir. Öğrencilere “Tekerlek günlük hayatımızda hangi alanlarda kullanılıyor?”, “Yazı olmasaydı hayatımız nasıl olurdu?”, “Paranın kullanılmadığı bir hayatta ihtiyaçlarımızı nasıl giderirdik?” gibi sorular sorulabilir. Öğrencinin yaşadığı çevredeki ortak kültürel miras ögelerinden yola çıkarak bu ögelerin hangi medeniyetlere ait olabileceğine ilişkin tahminlerde bulunmaları istenebilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.5.3.1 Verilen yazılı ve görsel kaynaklardan “Birleşmiş Milletler Eğitim, Bilim ve Kültür Örgütü (UNESCO) Dünya Mirası Listesi ve Somut Olmayan Kültürel Miras Listesi’nde yer alan ögeleri dünyadan ve Türkiye’den örnekler kapsamında öğrenciler tarafından incelenir (OB1, OB4). Ayrıca dijital kaynaklar da kullanılabilir (OB2). Kaynaklardan yararlanılarak büyük grup tartışması ile ortak miras ögelerinin önemine dair öğrencilerin çıkarımda bulunmaları ve çıkarımlarını sözlü olarak ifade etmeleri sağlanır (SDB2.1). Öğrencilerden yaşadıkları ilde bulunan ve ortak miras kapsamında değerlendirilebilecek ögelerden “UNESCO Dünya Mirası Listesi”ne girmesini istedikleri ögeleri gerekçeleriyle sıralamaları istenir. Öğrencilerin çevrelerindeki ortak miras ögelerini fark etmeleri ve bu ögelerin korunmasına yönelik gerekçeler üretmeleri aşamasında ortak mirasın korunmasında duyarlı davranmaları sağlanır (D15.2, SDB3.3, OB5). Öğrencilerden yaşadıkları ildeki ortak miras ögelerinin önemine ilişkin performans görevi olarak afiş, poster veya broşür hazırlamaları istenebilir. Hazırlanan ürünler okulda sergilenir. Ürünler dereceli puanlama anahtarı ile değerlendirilebilir (E2.2, E3.2, E3.3, OB4). SB.5.3.2 Bir tarih şeridi üzerinde MÖ, Milat, MS ve yüzyıl kavramları açıklanarak öğrencilerin bu kavramları somutlaştırması sağlanır. Göbeklitepe’ye ait arkeolojik kazı görselleri öğrencilere inceletilir. Yapılan incelemeden yola çıkarak arkeoloji, arkeolojik kazı ve höyük kavramları açıklanır. Bu süreçte Göbeklitepe’nin inanç merkezi olarak tarihteki önemi vurgulanır. Geçmişte yaşamış toplumların yaşam koşullarının anlaşılmasında arkeolojinin rolü üzerinde durularak Anadolu’daki ilk yerleşim yerlerinden Çayönü, Çatalhöyük ve Hacılar’da yaşamış insanların sosyal hayatlarına ilişkin yazılı ve görsel kaynaklar öğrenciler tarafından incelenir (OB1, OB4). Ayrıca dijital kaynaklar da kullanılabilir (OB2). İlk yerleşim yerleri incelenirken öğrencilerin koruma alanlarını tanımaları, bu mirasın gelecek nesillere aktarılmasının önemini kavramaları ve buna yönelik farkındalık geliştirmeleri sağlanır (D19.3, OB5, E1.1, E3.8). Yapılan incelemeler sonucunda öğrenciler Anadolu’nun ilk yerleşim yerlerinde yaşayan toplumların sosyal hayatlarını şekillendiren unsurlardan barınma, beslenme ve temel geçim faaliyetlerini belirler. Öğrenciler, kaynaklarda yer alan bilgileri dikkate alarak Çayönü, Çatalhöyük ve Hacılar’da yaşamış insanların sosyal hayatlarına ilişkin görüşlerini sözlü olarak ifade eder (E3.6, OB1). Öğrencilerden incelenen kaynaklardan hareketle Çayönü, Çatalhöyük ve Hacılar’da yaşamış toplumların yaşadıkları dönemin ve mekânın koşulları ile sosyal hayatları arasındaki ilişkiyi analiz etmeleri istenir. Analiz sonucunda bu toplumların yaşadıkları dönemin ve mekânın özelliklerini fark etmeleri ve bu özellikleri sınıflama tablosuna kaydetmeleri istenir (KB2.5).Öğrencilerden Anadolu’da kurulan ilk yerleşmelerdeki toplumların sosyal hayat unsurlarından beslenme, barınma ve temel geçim faaliyetleriyle günümüz insanlarının hayatlarındaki bu unsurları karşılaştırarak benzer ve farklı yönlerini belirlemeleri sağlanır. Elde edilen veriler karşılaştırma tablosuna işlenir (E3.2, OB7). Yapılan analiz ve karşılaştırmalardan sonra öğrencilerden Anadolu’da kurulan ilk yerleşmelerde yaşayan toplumların beslenme, barınma ve temel geçim faaliyetlerini dönemin imkân ve koşullarını dikkate alarak açıklamaları istenir. Dönemin imkân ve koşulları açıklandıktan sonra öğrencilerden Anadolu’daki ilk yerleşmelerde yaşayan toplumların beslenme, barınma ve temel geçim faaliyetlerini etkileyen olumlu ve olumsuz durumlara ilişkin görüşlerini sözlü olarak ifade etmeleri istenir (SDB3.3). Bu süreçte fikir taraması tekniği kullanılabilir. Daha sonra Çayönü, Çatalhöyük ve Hacılarda yaşamış toplumların beslenme, barınma ve temel geçim faaliyetlerini etkileyen olumsuz durumlardan korunmak için neler yapmış olabileceklerine ilişkin görüşlerini ifade etmeleri istenir. Bu süreçte fikir zinciri tekniğinden yararlanılabilir. Öğrencilerden biri konuyla ilgili görüşünü bir kâğıda yazar ve kâğıdı başka bir öğrenciye verir. Kâğıdı alan öğrenci bu görüşü geliştirir veya kâğıda yeni bir görüş ekler. Bu şekilde sınıftaki öğrencilerin hepsi görüşünü yazılı olarak ifade eder. Teknik sınıf gruplara ayrılarak da uygulanabilir. Öğrenci görüşleri sınıfla paylaşılır. Öğrencilerin kendilerini Anadolu’daki yerleşim yerlerinden birinde tarihin ilgili döneminde yaşayan bir karakter (çocuk, avcı, toplayıcı, tarımla uğraşan biri vb.) olarak hayal etmeleri istenir. Bu karakterin yaşadığı dönemdeki sosyal hayatına ilişkin görüşlerini kaynaklardan edindiği bilgiler doğrultusunda sözlü olarak ifade etmeleri sağlanır (SDB3.1, OB1). Bu süreçte konuşma halkası tekniği kullanılabilir. Öğrencilerden o dönemde yaşamış olan insanlara ve yaşantılarına ilişkin görüşlerini yazılı veya görsel olarak ifade etmeleri istenir (OB4, E2.1, E3.3). Öğrencilerin hazırlayacağı yazılı veya görsel ürünler dereceli puanlama anahtarı ile değerlendirilebilir. SB.5.3.3 Verilen yazılı ve görsel kaynaklar üzerinden Mezopotamya ve Anadolu medeniyetleri incelenir (OB1, OB4). Ayrıca dijital kaynaklardan ve sanal müze uygulamalarından da yararlanılabilir (OB2). Öğrencilerden incelenen kaynaklardan yola çıkarak Mezopotamya ve Anadolu medeniyetlerinden Sümer, Babil, Asur, Hitit, Lidya ve İyonların ortak mirasa katkılarını belirlemeleri istenir (E3.2, E3.6, E3.10). Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkıları bağlamında ülke varlıklarına sahip çıkmanın ve geçmişe vefa göstermenin önemi açıklanarak öğrencilerin ortak mirası koruma ve yaşatma konusunda özveriyle davranmaları sağlanır (D19.3, D15.2). Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkıları, verilen tablodaki ilgili medeniyetin olduğu bölüme yazılır. Bu süreçte “Nesi var?” tekniğinden yararlanılabilir. Doldurulan tablodan hareketle, Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının bilim, kültür, ekonomi ve hukuk başlıkları altındaki benzerlikleri ve farklılıkları çalışma yaprağı üzerinde listelenir (OB1, SDB3.3, E2.2, E3.7). Bu süreçte beyin eseri tekniğinden yararlanılabilir. Ortaya konulan fikirlerdeki benzerlik ve farklılıklar öğrenciler tarafından değerlendirilir. Öğrencilerin bu medeniyetlerin ortak mirasa yaptığı katkılar üzerinden medeniyetlerin birbirlerinden etkilenerek geliştiği ve yayıldığına, Mezopotamya ve Anadolu coğrafyalarının medeniyetlerin beşiği olduğuna ilişkin çıkarım yapmaları sağlanır. Süreç gözlem formu veya kontrol listesi teknikleri ile takip edilebilir.",
+        "Zenginleştirme": "Öğrencilerden Anadolu’daki ilk yerleşim yerlerine ait ören yeri, müze ve sanal müze gezileri yaparak elde ettikleri bilgi ve deneyimlerini sınıfta paylaşmaları istenebilir. Öğrencilerden “UNESCO Kültür Mirası Listesi”nde bulunan tarihî alanlara ilişkin “Anadolu Kültür Yolu Haritası” hazırlamaları istenebilir. Bu harita ile kronolojik bir yolculuk yapılarak her durak için küçük canlandırma, şiir yazma, gibi bir eser hazırlanabilir. Her durakta farklı bir yaratıcı çalışma da yapılabilir. Haritalar tasarlandıktan sonra kronolojik sıralama ile verilen bilgilerden bir “zaman çizelgesi” oluşturulabilir. Öğrenciler tarafından ilk yerleşim yerlerinin yapı tiplerinden hareketle dönem mimarisine yönelik bir yapı modeli tasarlanabilir. Ortak mirasın korunmasının önemine ilişkin kamu spotu çekilebilir. Anadolu Medeneyetleri’nden Frigler ve Urartuların ortak mirasa katkısına ilişkin araştırma yaparak bunu bir rapora dönüştürmesi istenebilir.",
+        "Destekleme": "Öğrencilerden ortak kültürel mirasın korunmasının önemine dair duygu ve düşüncelerini yansıtan bir metin oluşturmaları istenebilir. Anadolu’daki ilk yerleşim yerlerinden birinde yaşadığı hayal edilen bir ailenin hayatını yansıtacak bir resim çizmeleri istenebilir. Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkıda bulunan özellikleriyle ilgili kart eşleştirme oyunları oynanabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.5.3.1. Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yaşadığı ildeki somut ve somut olmayan kültürel miras ögelerinden hareketle ortak mirasın önemi hakkında çıkarım yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Yapılan çıkarımlardan hareketle ortak mirasın önemini açıklayan bir ürün oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Ortak mirasın önemi hakkında çıkarımlarına dayalı olarak oluşturduğu ürünü paylaşır.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.3.2. Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına yönelik bakış açısı geliştirebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarını kaynaklardan edindiği bilgiler doğrultusunda yorumlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin tarihsel bağlam oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin bakış açısını kaynaklar doğrultusunda yapılandırır.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.3.3. Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını karşılaştırabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının benzerliklerini listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının farklılıklarını listeler.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.5.3.1",
+          "codeAsPrinted": "SB.5.3.1",
+          "text": "Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilme",
+          "group": null,
+          "components": [
+            "a) Yaşadığı ildeki somut ve somut olmayan kültürel miras ögelerinden hareketle ortak mirasın önemi hakkında çıkarım yapar.",
+            "b) Yapılan çıkarımlardan hareketle ortak mirasın önemini açıklayan bir ürün oluşturur.",
+            "c) Ortak mirasın önemi hakkında çıkarımlarına dayalı olarak oluşturduğu ürünü paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.3.2",
+          "codeAsPrinted": "SB.5.3.2",
+          "text": "Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına yönelik bakış açısı geliştirebilme",
+          "group": null,
+          "components": [
+            "a) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarını kaynaklardan edindiği bilgiler doğrultusunda yorumlar.",
+            "b) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin tarihsel bağlam oluşturur.",
+            "c) Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına ilişkin bakış açısını kaynaklar doğrultusunda yapılandırır."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.3.3",
+          "codeAsPrinted": "SB.5.3.3",
+          "text": "Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını karşılaştırabilme",
+          "group": null,
+          "components": [
+            "a) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını belirler.",
+            "b) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının benzerliklerini listeler.",
+            "c) Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarının farklılıklarını listeler."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/394",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/394",
+      "title": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:25.669Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_394.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "4. Öğrenme Alanı: Yaşayan Demokrasimiz",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin demokrasi ve cumhuriyetin temel niteliklerine, demokrasi ve cumhuriyet kavramı arasındaki ilişkiye, etkin bir vatandaşın özelliklerine, temel hak ve sorumlulukların önemine, toplumsal hayatta karşılaşılabilecek sorunların çözümü için başvurulabilecek kurumlara ilişkin bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "23",
+        "Alan Becerileri": "SBAB5. Sosyal Katılım (KB2.8. Sorgulama)",
+        "Kavramsal Beceriler": "KB2.4. Çözümleme KB2.10. Çıkarım Yapma KB2.6. Bilgi Toplama",
+        "Eğilimler": "E1.1. Merak, E2.2. Sorumluluk, E2.5. Oyunseverlik, E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.10. Eleştirel Bakma",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği, SDB2.3. Sosyal Farkındalık",
+        "Değerler": "D1. Adalet, D5. Duyarlılık, D16. Sorumluluk, D19. Vatanseverlik, D20. Yardımseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık, OB6. Vatandaşlık Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Türkçe",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.5.4.1. Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi çözümleyebilmea) Demokrasi ve cumhuriyet kavramlarının niteliklerini belirler.b) Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi belirler. SB.5.4.2. Toplum düzenine etkisi bakımından etkin vatandaş olmanın önemine yönelik çıkarımda bulunabilmea) Etkin vatandaş olmanın önemine ilişkin varsayımda bulunur.b) Etkin vatandaşın sahip olması gereken özellikleri listeler.c) Etkin olan ve olmayan vatandaş özelliklerini karşılaştırır.ç) Etkin vatandaş davranışlarının toplum düzenine etkisine yönelik önermelerde bulunur.d) Etkin vatandaş olmanın önemini toplum düzeni açısından değerlendirir. SB.5.4.3. Temel insan hak ve sorumluluklarının önemini sorgulayabilmea) Temel insan hak ve sorumluluklarının önemine yönelik merak ettiği konuları tanımlar. b) Toplumsal hayatta insan hak ve sorumluluklarının önemine yönelik sorular sorar. c) Temel insan hak ve sorumluluklarının önemine ilişkin bilgi toplar. ç) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgilerin doğruluğunu değerlendirir. d) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgiler doğrultusunda çıkarımlar yapar. SB.5.4.4. Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabilmea) Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabileceği kaynakları belirler.b) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkındaki bilgileri bulur.c) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri doğrular.ç) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri kaydeder.",
+        "İçerik Çerçevesi": "Demokrasi ve Cumhuriyet Kavramının Temel NitelikleriEtkin Vatandaşın Özellikleri ve ÖnemiTemel Haklar, Sorumluluklar ve Önemiİhtiyaç Durumunda veya Sorunların Çözümünde Başvurulabilecek Kurumlar",
+        "Anahtar Kavramlar": "cumhuriyet, demokrasi, etkin vatandaşlık, milli egemenlik, katılım, çoğulculuk, hukukun üstünlüğü",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; gözlem formu, kontrol listesi, derecelendirme ölçeği, bütüncül dereceli puanlama anahtarı, çalışma yaprağı ve performans görevi kullanılarak değerlendirilebilir. Bunlara ek olarak Frayer Modeli, kelime ilişkilendirme testi, doğru-yanlış testleri ve tanılayıcı dallanmış ağaç tekniklerine başvurulabilir. Performans görevi: Yakın çevredeki ihtiyaçlar veya sorunlar, başvurulabilecek kurum ve kuruluşlar, başvuru yolları ile ilgili tablo veya listeler oluşturma, bu tabloları bilgi kartları, afiş ve postere dönüştürmeye yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin demokrasi, cumhuriyet, vatandaş, vatandaşlık kavramı ile temel hak ve özgürlükler hakkında ön bilgiye sahip oldukları, cumhuriyetin getirdiği değişimlerin hayatımıza katkıları, okulda karar alma ve demokratik katılım süreçleri hakkında temel bilgiye sahip oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden demokrasi, cumhuriyet, vatandaşlık, temel hak ve özgürlükler kavramları ile ilişkili kelimeler bulmaları istenerek kelime bulutları yapılabilir ve panoya asılabilir. Öğrencilere “etkin vatandaş” denilince ne anladıkları sorulabilir. Öğrencilere, temel hak ve sorumluklarla ilgili açık uçlu sorular sorulabilir. Öğrencilerden çevresinde yaşadıkları sorunlara yönelik örnekler vermeleri istenir ve öğrencilere bu sorunların çözümü için neler yapabilecekleri sorulabilir.",
+        "Köprü Kurma": "Öğrencilere evde, okulda, yaşadıkları ilde demokratik hayat ile ilgili açık uçlu sorular sorulabilir. Öğrencilere günlük hayatta karşılaşabileceği örnek olaylar verilerek etkin vatandaşın bu olaylar karşısında nasıl davranması gerektiği sorulabilir. Öğrencilerden salgın, afet gibi durumlarda hak ve sorumlulukların kullanımı ile ilgili ortaya çıkabilecek kısıtlamalara örnekler vermeleri istenebilir. Öğrencilere bu kısıtlamaların günlük yaşama etkisine ilişkin beyin fırtınası yaptırılabilir. Öğrencilerden bireylerin evde, okulda, yaşadıkları ilde üzerine düşen sorumluluklarından hareketle sorumluluklar yerine getirilmediğinde ortaya çıkabilecek sorunlar hakkında tahminler yürütmeleri sağlanabilir. Öğrencilere sınıfta, okulda, mahallede, yolda yürürken, seyahat ederken, tatil yaparken vb. gözlemlenen veya yaşanan bir sorun karşısında kime veya hangi kuruma başvurulabileceği hakkında sorular sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.5.4.1 Öğrencilerin evde, okulda, yaşadığı şehirde demokrasi ile ilişkilendirilebilecek davranış ve uygulamalar hakkında konuyla ilgili gözlemler yapmaları, elde ettikleri verileri düzenleyerek sonuçları sınıfta paylaşmaları sağlanır (OB1, E1.1). Sınıf başkanı seçimi, yerel seçimler, dilekçe gibi demokrasinin günlük hayata yansımalarına dair örnekler verilir, öğrencilerin de örnekler vermeleri teşvik edilir. Bu süreçte öğrencilerin, ele aldıkları demokratik uygulamaları hakkaniyet ölçütlerine göre değerlendirebilecekleri örnek olay analizleri yoluyla adalet bilincini eyleme dönüştürmeleri desteklenir (D1.1). Öğrencilerin demokrasinin temel niteliklerinden özgürlük, eşitlik, seçme ve seçilme hakkı, millî egemenlik, katılım, çoğulculuk ve hukukun üstünlüğünü fark etmelerini sağlamak üzere yazılı ve görsel kaynaklar incelenir (OB1, OB4). Ayrıca dijital kaynaklar da incelenebilir (OB2). Verilen örnekler, kaynakların incelenmesi ve yapılan gözlemlerden hareketle öğrencilerden demokrasinin niteliklerini belirlemeleri, yazılı ve sözlü olarak ifade etmeleri istenir (SDB2.1). Öğrencilerin cumhuriyet ile ilgili verilen yazılı, görsel veya dijital kaynakları inceleyerek cumhuriyetin özellikleri hakkında tahminlerde bulunmaları sağlanır (OB4). Öğretmen tarafından yapılan açıklama ve verilen örneklerden hareketle öğrencilerin cumhuriyet kavramının niteliklerini belirleyerek örneklendirmeleri sağlanır. Öğrencilerden cumhuriyetin korunması ve sürdürülmesinin önemine ilişkin görüşlerini ifade etmeleri ve bu konuda sorumluluk üstlenmenin önemini tartışmaları istenir (D19.1). Frayer modeli kullanılarak öğrencilerden cumhuriyet kavramının tanımı, özellikleri, örnekler ve örnek olmayan durumlara ilişkin bilgileri düzenlemeleri ve arkadaşları ile paylaşmaları istenir. Cumhuriyet ve demokrasi kavramlarının yazılı olduğu kartlar öğrencilere sırasıyla dağıtılarak kelime ilişkilendirme testi uygulanır. Kartlara yazılan sözcükler “cumhuriyet ile ilgili olanlar” ve “demokrasi ile ilgili olanlar” şeklinde sınıflandırılır.Yapılan sınıflandırmadan hareketle öğrencilerden cumhuriyet ve demokrasi kavramları arasındaki ilişkiyi gösteren yazılı veya görsel bir ürün tasarlamaları istenir (E3.3). Öğrencilerin hazırladıkları ürünler dereceli puanlama anahtarı ile değerlendirilebilir. SB.5.4.2 Vatandaş kavramı açıklanarak vatandaşlık okuryazarlık becerisi üzerinde durulur (OB6). Öğrencilerden etkin vatandaş olmanın toplumsal hayattaki önemine ilişkin varsayımlarda bulunmaları ve düşüncelerini sözlü olarak ifade etmeleri sağlanır. Verilen yazılı ve görsel kaynaklardan etkin vatandaşlık kavram ve özellikleri incelenir (OB1,OB4), dijital kaynaklardan da faydalanılabilir (OB2). Öğrencilerden verilen kaynakları inceleyerek etkin vatandaşın özelliklerine ilişkin bilgileri listelemeleri istenir (E2.2). Etkin olan ve olmayan vatandaş davranışlarını karşılaştırmaları, konuya ilişkin görüşlerini sözlü ve yazılı olarak ifade etmeleri sağlanır. Toplumsal sorunlara ilişkin örnek durum kartları verilerek bu durumda etkin olan ve olmayan vatandaş olarak nitelendirilebilecek bireylerin neler yapabilecekleri ile ilgili “Siz olsaydınız ne yapardınız?” eğitsel oyunu oynanabilir (E2.5). Öğrencilerin özgün fikirler öne sürmesi teşvik edilir. Oyun sonunda topluma karşı görevlerini yerine getirmenin toplumsal düzenin sürdürülmesindeki önemi tartışılır. Tartışma sürecinde vergi vermek, oy kullanmak gibi vatandaşlık görevlerinin öneminin içselleştirilmesi beklenir (D16.2, SDB2.3, OB6). Eğitsel oyun süreci gözlem formu, derecelendirme ölçeği veya kontrol listesi kullanılarak değerlendirilebilir. Günlük hayatta karşılaşılan durumlardan hareketle etkin vatandaş davranışlarının toplum düzenine etkisine yönelik önermeler sunmaları istenir. Öğrencilerin sunduğu önermeleri sınıf tahtasına listelenir. Önermeler sınıfça tartışılarak etkin vatandaş olmanın önemi toplumsal düzen açısından değerlendirilir (SDB2.1). Bu süreç kısa cevaplı veya açık uçlu sorularla oluşturulmuş çalışma yaprakları ile değerlendirilebilir. SB.5.4.3 Temel insan hak ve sorumlulukları ile ilgili örnek olaylar ve görseller öğrenciler tarafından incelenir, yaptıkları incelemeden hareketle, temel insan hak ve sorumluluklarının önemine ilişkin merak ettikleri konuları tanımlamaları istenir (E1.1). Öğrencilerden tanımladıkları konulardan hareketle temel insan hak ve sorumluluklarının önemine yönelik sorular hazırlamaları istenir (OB6). Bu süreçte 5N1K tekniğini kullanılabilir. Belirlenen sorulardan yola çıkarak temel insan hak ve sorumluluklarının önemine ilişkin verilen yazılı ve görsel kaynaklardan bilgi toplamaları sağlanır (OB1, OB4, SDB2.2). Dijital kaynaklardan da faydalanılabilir (OB2). Her insanın temel hak ve özgürlüklere sahip olduğu, bu hakları kullanırken diğer insanların haklarının da gözetilmesi gerektiği vurgulanır (D1.1). Kaynaklardan toplanan bilgiler öğrenciler tarafından sınıfa sözlü veya yazılı olarak sunulur. Toplanan bilgilerin doğruluğu değerlendirilir. Bu süreçte grup tartışması yapılır (SDB2.1). Tartışmada ortaya çıkan farklı görüşler dikkate alınarak ve öğretmen geri bildirimleri ile bilgilerin doğrulanması sağlanır (E3.4). Öğrencilerin topladıkları bilgilere dayanarak temel insan hak ve sorumluluklarının önemine yönelik çıkarım yapmaları sağlanır. Yapılan çıkarımların yazılı ve görsel olarak sunulması sağlanır (SDB2.2). Bu süreçte istasyon tekniği kullanılabilir. Süreç kontrol listesi veya gözlem formu ile değerlendirilebilir. SB.5.4.4 Öğrencilerden muhtarlık, belediye, kaymakamlık veya STK ile iş birliği yapılarak giderilebilecek (okul bahçesinde ve okul yolunda güvenlik için konulması gereken tabelalar, kasisler, mahallenin güzelleştirilmesi ve temizliği, ihtiyaç sahiplerine yardım etme, sahipsiz hayvanlar ile ilgili beslenme, barınma ve güvenlik önlemleri vb.) ihtiyaç veya sorunları belirlemeleri istenir ve bu ihtiyaç ve sorunlar listelenir. Bu süreçte beyin fırtınası tekniği kullanılabilir. Öğrencilerden listedeki sorun veya ihtiyaçlardan birini seçmeleri istenir. Belirlenen sorunların giderilmesinde toplumsal dayanışma ile bireysel davranış ve tutumların önemli olduğu vurgulanarak öğrencilerin bu konuda duyarlı olması sağlanır (D5.2, D20.2). Seçilen ihtiyacın giderilmesi veya sorunun çözüm yolları hakkında bilgi toplaması için başvurabilecekleri yazılı, görsel veya dijital kaynakları belirlemeleri istenir (SDB1.2, OB1, OB2, OB4). İhtiyacın/sorunun çözümü için başvurulabilecek kurum ve kuruluşlar, başvuru ve çözüm yolları ile ilgili bilgi toplamak üzere belirlenen kaynaklar ve örnek dilekçeler incelenir. İncelenen kaynaklardan hareketle bu kurum ve kuruluşlar hakkında bilgiler kaydedilir. Yakın çevrelerinden başlayarak toplumsal sorunların çözümünde üstelenebilecekleri bireysel sorumluluklar hakkında görüşler alınır. Bu aşamada öğrencilerin seçtikleri toplumsal sorunların çözümüne ilişkin öneriler sunmaları istenir (E2.2, D16.2). Öğrencilere seçtikleri sorunun çözümü için ilgili kuruma dilekçe yazmaları konusunda rehberlik edilir. Toplumsal sorunlara ve çözüm yollarına ilişkin kaynaklardan elde edilen bilgiler güncellik ve bilimsellik açısından değerlendirilir (OB6, E3.10, SDB2.1). Bu süreçte büyük grup tartışması tekniği uygulanabilir. Bu süreçte öğrencilerden aynı kuruma ilişkin ulaştıkları bilgileri en az iki farklı kaynaktan kontrol etmeleri, resmî kurum siteleri ile diğer kaynakları karşılaştırmaları ve çelişkili bilgiler varsa hangisinin daha güvenilir olduğuna gerekçe göstererek karar vermeleri istenir. Ulaşılan bilgilerin doğrulanması sürecinde güvenilir bilgiye ulaşmanın önemi vurgulanır. Tartışma sonuçlarından hareketle ihtiyaçlar veya sorunlar, başvurulabilecek kurum ve kuruluşlar, başvuru yolları ile ilgili tablo veya listeler oluşturulur. Bu tabloların performans görevi olarak bilgi kartları, afiş veya postere dönüştürülerek sergilenmesi sağlanabilir (E3.3). Oluşturulan ürünler dereceli puanlama anahtarı ile değerlendirilebilir. formu ile değerlendirilebilir.",
+        "Zenginleştirme": "Evde, okulda, ülkede demokrasiye yönelik yaratıcı drama etkinlikleri yapılabilir. Cumhuriyet konulu şiir dinletisi düzenlenebilir. Cumhuriyet konulu resim, fotoğraf, afiş ve posterler hazırlanarak sergilenebilir. Öğrencilerden dijital uygulamalar kullanarak cumhuriyetin temel niteliklerinden biriyle ilgili bir ağ günlüğü yazısı hazırlamaları istenebilir. Hazırlanan çalışmalar dijital uygulamalar aracılığıyla paylaşılarak bütün sınıfın katkıda bulunacağı hâle getirilebilir. Teknolojik imkânların yetersizliği durumunda bu etkinlik gazete köşe yazısı yazma, manşet haber oluşturma, ders notu veya konuşma metni şeklinde yazma ve paylaşma etkinliğine dönüştürülebilir. Aktif, pasif, duyarlı ve duyarsız vatandaş ile ilgili rol kartları, ben kimim, nesi var gibi eğitsel oyunlar oynanabilir. Dilek ve şikâyet kutusu tasarımları yapılabilir, oluşturulan kutular okulun belirli yerlerine konulabilir. Temel hak ve özgürlükler ile ilgili serbest kürsü etkinliği yapılabilir. Bu etkinlikte öğrenciler kendi seçtikleri bir hak veya sorumluluk ile ilgili yaptıkları araştırma sonuçlarını akranları ile paylaşır. Öğrencilerden düşünce ve ifade özgürlüğü, özel hayatın gizliliği, seçme ve seçilme hakkı, eğitim ve öğretim hakkı gibi toplumsal hayattaki haklarla ilgili kartlar oluşturmaları istenebilir. Kartlar kullanılarak oyunlar oynanabilir, doğaçlamalar yapılabilir. Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek bir kurumun tanıtım broşürü tasarımı yapılabilir, reklam filmi senaryosu yazmaları istenebilir.",
+        "Destekleme": "Demokrasi ve cumhuriyet kavramları ile ilgili görseller kullanılarak akran desteği ile kolaj çalışması yapılabilir. Etkin vatandaşın devlete ve topluma karşı sorumlulukları ile ilgili görsel okuma ve eşleştirme etkinliklerinin yer aldığı çalışma yaprakları kullanılabilir. Temel hak ve sorumlulukların önemine ilişkin hikâyeler anlatılabilir, canlandırılabilir. İhtiyaç hâlinde veya sorunlar karşısında başvuru yapabileceği kurumlar hakkında hazırlanmış kart oyunları oynanabilir. Başvuru yapılabilecek kurumların genel ağ siteleri incelenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.5.4.1. Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi çözümleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Demokrasi ve cumhuriyet kavramlarının niteliklerini belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi belirler.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.4.2. Toplum düzenine etkisi bakımından etkin vatandaş olmanın önemine yönelik çıkarımda bulunabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Etkin vatandaş olmanın önemine ilişkin varsayımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Etkin vatandaşın sahip olması gereken özellikleri listeler.",
+          "bold": false
+        },
+        {
+          "text": "c) Etkin olan ve olmayan vatandaş özelliklerini karşılaştırır.",
+          "bold": false
+        },
+        {
+          "text": "ç) Etkin vatandaş davranışlarının toplum düzenine etkisine yönelik önermelerde bulunur.",
+          "bold": false
+        },
+        {
+          "text": "d) Etkin vatandaş olmanın önemini toplum düzeni açısından değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.4.3. Temel insan hak ve sorumluluklarının önemini sorgulayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Temel insan hak ve sorumluluklarının önemine yönelik merak ettiği konuları tanımlar.",
+          "bold": false
+        },
+        {
+          "text": "b) Toplumsal hayatta insan hak ve sorumluluklarının önemine yönelik sorular sorar.",
+          "bold": false
+        },
+        {
+          "text": "c) Temel insan hak ve sorumluluklarının önemine ilişkin bilgi toplar.",
+          "bold": false
+        },
+        {
+          "text": "ç) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgilerin doğruluğunu değerlendirir.",
+          "bold": false
+        },
+        {
+          "text": "d) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgiler doğrultusunda çıkarımlar yapar.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.4.4. Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabileceği kaynakları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkındaki bilgileri bulur.",
+          "bold": false
+        },
+        {
+          "text": "c) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri doğrular.",
+          "bold": false
+        },
+        {
+          "text": "ç) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri kaydeder.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.5.4.1",
+          "codeAsPrinted": "SB.5.4.1",
+          "text": "Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi çözümleyebilme",
+          "group": null,
+          "components": [
+            "a) Demokrasi ve cumhuriyet kavramlarının niteliklerini belirler.",
+            "b) Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi belirler."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.4.2",
+          "codeAsPrinted": "SB.5.4.2",
+          "text": "Toplum düzenine etkisi bakımından etkin vatandaş olmanın önemine yönelik çıkarımda bulunabilme",
+          "group": null,
+          "components": [
+            "a) Etkin vatandaş olmanın önemine ilişkin varsayımda bulunur.",
+            "b) Etkin vatandaşın sahip olması gereken özellikleri listeler.",
+            "c) Etkin olan ve olmayan vatandaş özelliklerini karşılaştırır.",
+            "ç) Etkin vatandaş davranışlarının toplum düzenine etkisine yönelik önermelerde bulunur.",
+            "d) Etkin vatandaş olmanın önemini toplum düzeni açısından değerlendirir."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.4.3",
+          "codeAsPrinted": "SB.5.4.3",
+          "text": "Temel insan hak ve sorumluluklarının önemini sorgulayabilme",
+          "group": null,
+          "components": [
+            "a) Temel insan hak ve sorumluluklarının önemine yönelik merak ettiği konuları tanımlar.",
+            "b) Toplumsal hayatta insan hak ve sorumluluklarının önemine yönelik sorular sorar.",
+            "c) Temel insan hak ve sorumluluklarının önemine ilişkin bilgi toplar.",
+            "ç) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgilerin doğruluğunu değerlendirir.",
+            "d) Temel insan hak ve sorumluluklarının önemine ilişkin topladığı bilgiler doğrultusunda çıkarımlar yapar."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.4.4",
+          "codeAsPrinted": "SB.5.4.4",
+          "text": "Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabilme",
+          "group": null,
+          "components": [
+            "a) Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabileceği kaynakları belirler.",
+            "b) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkındaki bilgileri bulur.",
+            "c) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri doğrular.",
+            "ç) Belirlediği kaynaklardan ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında ulaştığı bilgileri kaydeder."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/402",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/402",
+      "title": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:27.207Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_402.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "5. Öğrenme Alanı: Hayatımızdaki Ekonomi",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilerin kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine, bütçe planlamanın önemine, yaşadığı ildeki ekonomik faaliyetlere ilişkin bilgi ve beceriler kazanmaları amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "18",
+        "Alan Becerileri": "SBAB6. Girişimcilik (SBAB6.2. Kaynakları Yönetme)",
+        "Kavramsal Beceriler": "KB2.14. Yorumlama KB2.3. Özetleme",
+        "Eğilimler": "E2.2. Sorumluluk, E3.3. Yaratıcılık",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB1.2. Kendini Düzenleme (Öz Düzenleme), SDB2.1. İletişim, SDB2.2. İş Birliği",
+        "Değerler": "D17. Tasarruf, D19. Vatanseverlik",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB3. Finansal Okuryazarlık, OB4. Görsel Okuryazarlık, OB8. Sürdürülebilirlik Okuryazarlığı",
+        "Disiplinler Arası İlişkiler": "Görsel Sanatlar, Bilişim Teknolojileri ve Yazılım, Türkçe, Matematik",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.5.5.1.Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlayabilme a) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini farklı kaynaklar üzerinden inceler. b) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine ilişkin bilgileri bağlamdan kopmadan dönüştürür. c) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder. SB.5.5.2. İhtiyaç ve isteklerini karşılamak için gerekli bütçe kaynaklarını yönetebilme a) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları belirler. b) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları temin etme ve etkin kullanmaya ilişkin bir taslak oluşturur. SB.5.5.3. Yaşadığı ildeki ekonomik faaliyetleri özetleyebilme a) Yaşadığı ildeki ekonomik faaliyetleri çözümler. b) Yaşadığı ildeki ekonomik faaliyetleri alanlarına göre sınıflandırır. c) Yaşadığı ildeki ekonomik faaliyetleri yorumlar.",
+        "İçerik Çerçevesi": "Kaynakların Verimli KullanımıBütçe OluşturmaYaşadığım İldeki Ekonomik Faaliyetler",
+        "Anahtar Kavramlar": "bütçe, gelir, gider, ekonomik faaliyet, sürdürülebilirlik, tasarruf",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktılarının değerlendirilmesi için gözlem formu, anekdot kaydı, kontrol listesi, bütüncül dereceli puanlama anahtarı, derecelendirme ölçeği, öz değerlendirme formu, sınıflama tablosu, kavram ağı ve performans görevi kullanılabilir. Performans Görevi: Öğrencilerin belirledikleri kaynaklardan elde ettikleri geliri kullanarak öncelikli olarak ihtiyaçları doğrultusunda israftan uzak durarak kendilerine ait bir bütçe planlamaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin doğal kaynakların neler olduğu, ihtiyaç ve istekler arasındaki farklılıkları bildiği ve yaşadığı çevredeki ekonomik faaliyetlerin neler olduğu hakkında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerden doğal kaynakların neler olduğu ve bunların kullanım alanlarına dair örnekler vermeleri istenebilir. İstek ve ihtiyaçlar arasındaki farklılıklara ilişkin eşleştirme etkinlikleri veya kelime bulutları yapılabilir. Öğrencilerden ekonomik faaliyetlere ilişkin çevrelerinden örnekler vermeleri istenebilir.",
+        "Köprü Kurma": "Öğrencilerden yakın çevrelerindeki doğal kaynakların kullanımının doğa ve insanlar üzerindeki etkilerine örnekler vermeleri istenebilir. Atıkların değerlendirilmesi ve geri dönüşümü için çevrelerinde yapılan faaliyetlere örnekler vermeleri istenebilir. Öğrencilere günlük yaşamlarında atıkların geri dönüşümü için neler yaptıkları sorulabilir. Öğrencilerin tasarruf yapmanın ekonomik hayata olumlu etkileri hakkında görüşleri alınabilir. Öğrencilerden yaşadıkları ildeki ekonomik faaliyetlere örnek vermeleri istenebilir. Ailede, yakın çevrede bulunan kişilerin çalıştığı mesleklere ve bunların hangi ekonomik faaliyetlerle ilişkili olduğuna yönelik sorular sorulabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.5.5.1 Öğrencilerden evde, okulda, çevrede yapmış oldukları gözlemler ve deneyimlerinden yola çıkarak toprak, su, orman ve maden kaynaklarının insanlar tarafından nasıl kullanıldığına ilişkin görüşlerini belirtmeleri istenir. Kaynakların verimli ve verimsiz kullanıldığı durumların doğa ve insan üzerindeki etkilerine dair büyük grup tartışması yapmaları sağlanır. Bu süreçte öğrencilerin birbirlerini etkin şekilde dinlemeleri, duygu ve düşüncelerini ifade etmeleri istenir (SDB2.1). Öğrencilere kaynakların doğa ve insanlar için önemine yönelik sorular sorularak sahip olduklarının değerini fark etmeleri ve kaynakların korunmasının önemini kavramaları sağlanır (D17.3). Tartışma süreci gözlem formu, anekdot kaydı, kontrol listesi gibi tekniklerle değerlendirilebilir. Öğrencilerin kaynakların kullanımının doğa ve insanlar üzerine etkilerini gösteren yazılı ve görsel kaynakları incelemeleri istenir (OB1, OB4). Bu süreçte ayrıca dijital kaynaklardan da yararlanılabilir (OB2). İncelemeler sırasında kaynakların verimli kullanımı ve geri dönüşümü ile ilgili Sıfır Atık projesine de yer verilir. Sıfır Atık projesinin uygulanmasında kullanılan 5D yaklaşımının temel aşamalarından da söz edilebilir. Öğrencilerden gruplara ayrılarak kaynakların verimli, israf edilmeden kullanımının doğa ve insan üzerine etkisine yönelik ürünler ortaya koymaları istenir (E2.2). Gruplardan hikâye, şiir, haber, slogan veya resim hazırlamaları istenir (SDB2.2, E3.3, OB4). Ürünler hazırlanırken Sıfır Atık projesi 5D yaklaşımı aşamalarından yararlanılabilir. Hazırlanan ürünlerden yararlanarak kaynakların verimli kullanımının doğa ve insanlar üzerindeki etkisi sözlü veya yazılı olarak sunulur. Öğrencilerin ülke varlıklarına sahip çıkmanın, ülkesinin ekonomik değerleri ile doğal güzelliklerini korumanın ve kaynakları bilinçli, sürdürülebilir bir şekilde kullanmanın önemini fark etmeleri sağlanır (OB8, D19.3). Ürün değerlendirme sürecinde bütüncül dereceli puanlama anahtarından yararlanılabilir. Öğrencilerin diğer arkadaşları tarafından oluşturulan farklı ürünleri değerlendirme sürecinde ise akran değerlendirme formlarına başvurulabilir. SB.5.5.2 Bütçe örnekleri üzerinden öğrenciler bütçeyi oluşturan unsurları belirler ve listeler (OB1). Bu süreçte ayrıca dijital kaynaklardan da yararlanılabilir (OB2). Öğrencilerin bütçede bulunan gelir ve gider kalemlerini, bunlar arasındaki dengenin, tasarrufun kişi ve aile için önemini fark etmeleri sağlanır (OB3). Öğrencilerin bilinçli tüketici olmanın gerekliliklerini fark etmeleri, bütçe planlamasının önemini kavramaları ve bütçeye göre hareket edilmediği durumlarda yaşanabilecek sorunları belirlemeleri sağlanır (D17.1). Öğrencilerden yaptıkları incelemelerden hareketle kendi bütçelerini oluşturabilecekleri gelir kaynaklarını belirlemeleri istenir. Bu kaynaklar günlük harçlıklar, bayram harçlıkları, kumbaralarında bulunan paralar olabilir.Belirledikleri kaynaklardan elde ettikleri geliri kullanarak öncelikli olarak ihtiyaçları doğrultusunda israftan uzak durarak kendilerine ait bir bütçe planlamaları istenir (D17.2, SDB1.2, E3.3). Performans görevi kapsamında hazırlanan bu bütçe planları dereceli puanlama anahtarı kullanılarak değerlendirilebilir. Yapılan bütçe planları bir hafta uygulandıktan sonra öğrencilerden bütçe planı öncesi ve sonrası harcamalarında oluşan değişiklikleri bir rapor veya tablo şeklinde hazırlamaları istenir. Öğrencilerin bütçe planlamanın ve kaynaklarını bütçeye göre kullanmanın önemine yönelik bilinç kazanmaları sağlanır (D17.1). Öğrenci ürünleri öz değerlendirme formları kullanılarak değerlendirilebilir (SDB1.2). SB.5.5.3 Öğrencilerden günlük hayatlarında karşılaştıkları ekonomik faaliyetlerle ilgili örnekler vermeleri, yazılı ve görsel kaynaklar üzerinden ekonomik faaliyet sektörlerini incelemeleri istenir (OB1, OB4). Öğrenciler ekonomik faaliyetleri incelerken dijital kaynaklardan da yararlanabilir (OB2). Öğrencilerin valilik, kaymakamlık, il tarım ve orman müdürlükleri gibi resmî kurumlara ait genel ağ adreslerini kullanarak yaşadıkları ildeki ekonomik faaliyetleri belirlemeleri sağlanır (OB2). Edinilen bilgilerden yararlanarak öğrencilerden yaşadıkları ildeki ekonomik faaliyetleri sınıflandırmaları istenir (E3.3, OB1). Bu süreçte sınıflama tablosu veya kavram ağı kullanılabilir. Yapılan sınıflama veya tablolardan hareketle öğrencilerin yaşadıkları ildeki ekonomik faaliyetleri sözlü veya yazılı olarak sunmaları sağlanır. Ekonomik faaliyetlerin sürdürülebilir bir şekilde yürütülmesinin yaşadıkları il ve ülkemiz ekonomisi açısından önemini açıklamaları istenir (OB8). Yapılan sözlü açıklamalar sırasında öğrencilerin birbirlerini etkin şekilde dinlemeleri, duygu ve düşüncelerini açıklamaları sağlanır (SDB2.1). Öğrencilere ülkemizde gerçekleştirilen ekonomik faaliyetlerin önemi ve bu faaliyetlerin kaynağı olan ekonomik değerleri koruma bilinci kazandırılır (D19.3). Sözlü veya yazılı sunumlar kontrol listesi veya derecelendirme ölçekleri ile değerlendirilebilir.",
+        "Zenginleştirme": "Aile üyeleri veya okul içinde diğer öğrencilerle kaynakların etkili kullanımına yönelik röportaj çalışması yapılabilir. Yapılan röportajlar haber şeklinde derlenerek okul panosunda paylaşılabilir. Öğrencilerden bireysel olarak hazırladıkları bütçe planlarından yola çıkarak ailelerinin bir aylık bütçe planlamasını yapmaları istenebilir. Öğrencilerden yakın çevrelerindeki kaynaklardan hareketle yaşadıkları yerin ve ülke ekonomisinin kalkınmasına yönelik bir proje önerisinde bulunmaları sağlanabilir.",
+        "Destekleme": "Öğrencilerden kaynakların etkili ve verimli kullanmanın önemine ilişkin zihin haritaları hazırlamaları istenebilir. Öğretmen yardımı ile öğrencilerin aile bütçesinde bulunması gereken unsurlarla ilgili zihin haritası yapmaları sağlanabilir. Öğrencilere yaşadıkları çevredeki kaynaklar ve ekonomik faaliyetlerle ilgili eşleştirme etkinlikleri yapılabilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.5.5.1.Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlayabilme",
+          "bold": false
+        },
+        {
+          "text": "a) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini farklı kaynaklar üzerinden inceler.",
+          "bold": false
+        },
+        {
+          "text": "b) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine ilişkin bilgileri bağlamdan kopmadan dönüştürür.",
+          "bold": false
+        },
+        {
+          "text": "c) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.5.2. İhtiyaç ve isteklerini karşılamak için gerekli bütçe kaynaklarını yönetebilme",
+          "bold": true
+        },
+        {
+          "text": "a) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları belirler.",
+          "bold": false
+        },
+        {
+          "text": "b) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları temin etme ve etkin kullanmaya ilişkin bir taslak oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.5.3. Yaşadığı ildeki ekonomik faaliyetleri özetleyebilme",
+          "bold": true
+        },
+        {
+          "text": "a) Yaşadığı ildeki ekonomik faaliyetleri çözümler.",
+          "bold": false
+        },
+        {
+          "text": "b) Yaşadığı ildeki ekonomik faaliyetleri alanlarına göre sınıflandırır.",
+          "bold": false
+        },
+        {
+          "text": "c) Yaşadığı ildeki ekonomik faaliyetleri yorumlar.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.5.5.1",
+          "codeAsPrinted": "SB.5.5.1",
+          "text": "Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlayabilme",
+          "group": null,
+          "components": [
+            "a) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini farklı kaynaklar üzerinden inceler.",
+            "b) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine ilişkin bilgileri bağlamdan kopmadan dönüştürür.",
+            "c) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini nesnel, doğru ve anlamı değiştirmeyecek şekilde yeniden ifade eder."
+          ],
+          "issues": [],
+          "notes": [
+            "Sayfada kod ile metin arasında boşluk yok: \"SB.5.5.1.Kaynakları \""
+          ]
+        },
+        {
+          "code": "SB.5.5.2",
+          "codeAsPrinted": "SB.5.5.2",
+          "text": "İhtiyaç ve isteklerini karşılamak için gerekli bütçe kaynaklarını yönetebilme",
+          "group": null,
+          "components": [
+            "a) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları belirler.",
+            "b) İhtiyaç ve isteklerini karşılamaya yönelik bütçe için gerekli olan kaynakları temin etme ve etkin kullanmaya ilişkin bir taslak oluşturur."
+          ],
+          "issues": [],
+          "notes": []
+        },
+        {
+          "code": "SB.5.5.3",
+          "codeAsPrinted": "SB.5.5.3",
+          "text": "Yaşadığı ildeki ekonomik faaliyetleri özetleyebilme",
+          "group": null,
+          "components": [
+            "a) Yaşadığı ildeki ekonomik faaliyetleri çözümler.",
+            "b) Yaşadığı ildeki ekonomik faaliyetleri alanlarına göre sınıflandırır.",
+            "c) Yaşadığı ildeki ekonomik faaliyetleri yorumlar."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    },
+    {
+      "href": "/sosyal-bilgiler-dersi/unite/405",
+      "url": "https://tymm.meb.gov.tr/sosyal-bilgiler-dersi/unite/405",
+      "title": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "reachable": true,
+      "fetchedAt": "2026-10-07T10:54:28.654Z",
+      "cacheFile": "html/sosyal-bilgiler-dersi_unite_405.html",
+      "meta": [
+        "Sosyal Bilgiler Dersi",
+        "5.Sınıf"
+      ],
+      "pageTitle": "6. Öğrenme Alanı: Teknoloji Ve Sosyal Bilimler",
+      "subtitle": null,
+      "intro": "Bu öğrenme alanında öğrencilere teknolojik ürünlerin bilinçli kullanımının önemi ile buluşlar ve teknolojik ürünlerin toplum hayatına etkilerine ilişkin bilgi ve becerilerin kazandırılması amaçlanmaktadır.",
+      "fields": {
+        "Ders Saati": "6",
+        "Alan Becerileri": "SBAB2. Kanıta Dayalı Sorgulama ve Araştırma (SBAB2.6. Kanıta Dayalı Ürün Oluşturma ve Paylaşma)",
+        "Kavramsal Beceriler": "KB2.18. Tartışma",
+        "Eğilimler": "E3.3. Yaratıcılık, E3.4. Gerçeği Arama, E3.5. Açık Fikirlilik",
+        "Sosyal-Duygusal Öğrenme Becerileri": "SDB2.1. İletişim, SDB3.3 Sorumlu Karar Verme",
+        "Değerler": "D8. Mahremiyet, D11. Özgürlük, D17. Tasarruf",
+        "Okuryazarlık Becerileri": "OB1. Bilgi Okuryazarlığı, OB2. Dijital Okuryazarlık, OB4. Görsel Okuryazarlık",
+        "Disiplinler Arası İlişkiler": "Bilişim Teknolojileri ve Yazılım, Fen Bilimleri",
+        "Beceriler Arası İlişkiler": "-",
+        "Öğrenme Çıktıları ve Süreç Bileşenleri": "SB.5.6.1.Teknolojik gelişmelerin toplum hayatına etkilerini tartışabilme a) Teknolojik gelişmelerin toplum hayatına etkileri hakkında mantıksal temellendirmeler yapar. b) Teknolojik gelişmelerin toplum hayatına etkileri üzerindeki tartışmalarda tutarsızlıkları tespit eder. c) Teknolojik gelişmelerin toplum hayatına etkilerine yönelik görüşleri çürütür veya kabul eder. SB.5.6.2. Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturduğu ürünü paylaşabilme a) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kanıtlara dayalı çıkarımda bulunur. b) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kendi çıkarımlarına dayalı ürün oluşturur. c) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturulan ürünleri paylaşır.",
+        "İçerik Çerçevesi": "Teknolojik Gelişmelerin Toplum Hayatına EtkileriTeknolojik Ürünlerin Bilinçli Kullanımı",
+        "Anahtar Kavramlar": "dijital ayak izi, genel ağ, e-ticaret, teknoloji",
+        "Öğrenme Kanıtları (Ölçme ve Değerlendirme)": "Bu öğrenme alanında yer alan öğrenme çıktıları; kısa veya uzun cevaplı maddeler içeren çalışma yaprakları, bütüncül dereceli puanlama anahtarı ve performans görevi kullanılarak değerlendirilebilir. Performans görevi: Teknolojik ürünlerin bilinçli kullanımına yönelik olarak estetik unsurlarla zenginleştirilmiş ürünler (kısa film, kamu spotu, afiş, karikatür, hikâye, şiir, şarkı, diyalog, kullanım kılavuzu) hazırlamaya yönelik performans görevi verilebilir. Performans görevi dereceli puanlama anahtarı ile değerlendirilebilir.",
+        "Temel Kabuller": "Öğrencilerin teknolojik ve bilimsel gelişmelerin insan hayatına etkileri, dijital ortamı kullanırken uyulması gereken güvenlik kuralları, bilinçli kullanımın ne olduğu temel hak ve hürriyetler konularında temel düzeyde bilgi sahibi oldukları kabul edilmektedir.",
+        "Ön Değerlendirme Süreci": "Öğrencilerin teknolojik gelişmelerin insan hayatına etkileri üzerine bilgi düzeylerini belirlemek için açık uçlu sorular sorulabilir. Öğrencilerin dijital ortamı kullanırken uyulması gereken güvenlik kuralları, teknolojik ürünlerin bilinçli kullanımı ve buna yönelik hak ve hürriyetler konularındaki bilgi düzeylerini belirlemek için açık uçlu sorular sorulabilir.",
+        "Köprü Kurma": "Öğrencilere hangi teknolojik araçlara sahip oldukları ve bunları günlük hayatlarında hangi sıklık ve amaçla kullandıkları sorulabilir. Öğrencilerden teknolojik ürünlerin kullanımı sırasında karşılaştıkları problemlere örnek vermeleri istenebilir. Teknolojinin bilinçli kullanımına yönelik haberler veya durumlar incelenebilir. Bu ders boyunca öğrenilen bilgilerin gerek sınıfta gerekse sınıf dışında teknolojiyi daha bilinçli kullanmaya yardımcı olacağı ve günlük hayatı kolaylaştırabileceği vurgusu yapılabilir.",
+        "Öğrenme-Öğretme Uygulamaları": "SB.5.6.1 Verilen yazılı ve görsel kaynaklar üzerinden; teknolojik gelişmelerin kültür, ekonomi, eğitim, sağlık, iletişim ve ulaşım açısından toplum hayatına etkileri incelenir (OB1, OB4). Bu süreçte dijital kaynaklara da başvurulabilir (OB2). Öğrencilerden inceledikleri kaynaklardan yola çıkarak teknolojik gelişmelerin toplum hayatına etkilerini gerekçeleriyle ortaya koymaları istenir (SDB3.3). Bu süreçte tartışma yöntemleri kullanılabilir. Tartışma sürecinde ortaya çıkan farklı görüşler ve tutarsızlıklar öğrenciler tarafından tespit edilip tahtaya listelenir. Tespit edilen farklı görüş ve tutarsızlıklara ilişkin sınıf değerlendirmesi yapılarak kabul edilen veya kabul edilmeyen görüşler gerekçeleriyle kişisel haklara saygı ve özgürlük çerçevesinde yazılı veya sözlü olarak öğrenciler tarafından ifade edilir (E3.3, E3.4, E3.5, SDB3.3, D11.3). Sürecin değerlendirilmesi amacıyla kısa veya uzun cevaplı maddeler içeren çalışma yaprakları kullanılabilir. SB.5.6.2 Öğrencilere teknolojik ürünlerin (bilgisayar, televizyon, cep telefonu, tablet, bulaşık makinesi, ampul vb.) kullanımına yönelik pedagojik açıdan uygun olumlu ve olumsuz örnekler (videolar, haberler veya diyaloglar) sunulur. Verilen örnekler üzerinden öğrencilerden teknolojik ürünlerin bilinçli kullanımına ilişkin çıkarımda bulunmaları istenir (OB1, OB4, OB2, D8.1). Bu kapsamda kişisel bilgilerin gizliliğini korumanın önemi üzerine örnek olaylar incelenir (D8.2). Teknolojik ürünlerin kullanımında dikkat edilmesi gereken hususlar sorularak öğrencilerden gelen cevaplar tahtaya yazılır (SDB2.1). Teknolojik ürünlerin bilinçli ve değerini bilerek kullanımı konusunda farkındalık oluşturmaya yönelik videolar, kamu spotları veya proje örnekleri incelenir (D17.1, D17.3). Öğrenciler gruplara ayrılarak çalışma yaprağı yardımıyla bir teknolojik ürün belirler. Öğrencilerden bu ürünün hatalı kullanım örneklerini, bu durumun yol açtığı olumsuzlukları ve ürünün bilinçli kullanımında dikkat edilmesi gereken hususları belirlemeleri istenir (D17.1, D17.3). Teknolojik ürünün bilinçli kullanımı hakkında farkındalık oluşturmak için tasarlayabilecekleri bir ürünü (kısa film, kamu spotu, afiş, karikatür, hikâye, şiir, şarkı veya kullanım kılavuzu) belirlemeleri istenir. Gruplar tarafından geliştirilen ürün fikirleri sınıfta sunulur. Bu fikirler ile ilgili öğretmen ve öğrenci dönütleri alınır. Geri bildirimler doğrultusunda son şekli verilen ürün fikirleri, performans görevi kapsamında estetik unsurlarla zenginleştirilmiş ürünlere (kısa film, kamu spotu, afiş, karikatür, hikâye, şiir, şarkı veya kullanım kılavuzu) dönüştürülebilir. Öğrencilerin teknolojik ürünlerin bilinçli kullanımına ilişkin hazırladıkları ürünler sınıfta sunulur veya okul koridorundaki panolarda sergilenir. Öğrenci ürünleri dereceli puanlama anahtarı kullanılarak değerlendirilebilir.",
+        "Zenginleştirme": "Öğrencilerden insanların hayatını kolaylaştıracak bir ürün tasarlayarak sınıfa sunmaları istenebilir. Öğrencilerden teknolojik ürünleri bilinçli kullanmanın önemine yönelik araştırma yapmaları ve bu araştırmayı sınıfta sözlü olarak sunmaları istenebilir.",
+        "Destekleme": "Buluşlar ve teknolojik ürünlerin insan ve toplum hayatına etkileriyle ilgili öğrenme süreci görseller ve işitsel materyallerle desteklenebilir. Teknolojik ürünlerin bilinçli kullanımına ilişkin pedagojik açıdan uygun olan animasyon, kısa film ve belgesel üzerinden incelenebilir."
+      },
+      "outcomesBlockSegments": [
+        {
+          "text": "SB.5.6.1.Teknolojik gelişmelerin toplum hayatına etkilerini tartışabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Teknolojik gelişmelerin toplum hayatına etkileri hakkında mantıksal temellendirmeler yapar.",
+          "bold": false
+        },
+        {
+          "text": "b) Teknolojik gelişmelerin toplum hayatına etkileri üzerindeki tartışmalarda tutarsızlıkları tespit eder.",
+          "bold": false
+        },
+        {
+          "text": "c) Teknolojik gelişmelerin toplum hayatına etkilerine yönelik görüşleri çürütür veya kabul eder.",
+          "bold": false
+        },
+        {
+          "text": "SB.5.6.2. Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturduğu ürünü paylaşabilme",
+          "bold": true
+        },
+        {
+          "text": "a) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kanıtlara dayalı çıkarımda bulunur.",
+          "bold": false
+        },
+        {
+          "text": "b) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kendi çıkarımlarına dayalı ürün oluşturur.",
+          "bold": false
+        },
+        {
+          "text": "c) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturulan ürünleri paylaşır.",
+          "bold": false
+        }
+      ],
+      "parsedOutcomes": [
+        {
+          "code": "SB.5.6.1",
+          "codeAsPrinted": "SB.5.6.1",
+          "text": "Teknolojik gelişmelerin toplum hayatına etkilerini tartışabilme",
+          "group": null,
+          "components": [
+            "a) Teknolojik gelişmelerin toplum hayatına etkileri hakkında mantıksal temellendirmeler yapar.",
+            "b) Teknolojik gelişmelerin toplum hayatına etkileri üzerindeki tartışmalarda tutarsızlıkları tespit eder.",
+            "c) Teknolojik gelişmelerin toplum hayatına etkilerine yönelik görüşleri çürütür veya kabul eder."
+          ],
+          "issues": [],
+          "notes": [
+            "Sayfada kod ile metin arasında boşluk yok: \"SB.5.6.1.Teknolojik \""
+          ]
+        },
+        {
+          "code": "SB.5.6.2",
+          "codeAsPrinted": "SB.5.6.2",
+          "text": "Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturduğu ürünü paylaşabilme",
+          "group": null,
+          "components": [
+            "a) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kanıtlara dayalı çıkarımda bulunur.",
+            "b) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kendi çıkarımlarına dayalı ürün oluşturur.",
+            "c) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturulan ürünleri paylaşır."
+          ],
+          "issues": [],
+          "notes": []
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "problems": []
+}

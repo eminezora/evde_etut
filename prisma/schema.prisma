@@ -1,0 +1,296 @@
+// Production schema (PostgreSQL) – used by Vercel and `npm run db:deploy`.
+// prisma/dev-sqlite/schema.prisma is the local SQLite copy; it must stay identical except for the
+// datasource provider (tests/schema-sync.test.ts enforces that).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String
+  role         String // "TEACHER" | "STUDENT"
+  createdAt    DateTime @default(now())
+
+  classrooms         Classroom[]
+  assignments        Assignment[]
+  memberships        ClassroomMember[]
+  studentAssignments StudentAssignment[]
+}
+
+model Classroom {
+  id        String   @id @default(cuid())
+  teacherId String
+  teacher   User     @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  name      String // e.g. "7/A"
+  grade     Int // 5, 6, 7, 8 – limits which curriculum outcomes can be used
+  joinCode  String   @unique // students join with this code
+  createdAt DateTime @default(now())
+
+  assignments Assignment[]
+  members     ClassroomMember[]
+
+  @@index([teacherId])
+}
+
+model ClassroomMember {
+  id          String    @id @default(cuid())
+  classroomId String
+  classroom   Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  studentId   String
+  student     User      @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  joinedAt    DateTime  @default(now())
+
+  @@unique([classroomId, studentId])
+  @@index([studentId])
+}
+
+// One row per MEB learning outcome (subject + grade + outcomeCode), imported from
+// data/curriculum/normalized/all-middle-school.json. Only VERIFIED rows are selectable.
+model CurriculumOutcome {
+  id                   String    @id @default(cuid())
+  subject              String
+  grade                Int
+  // First theme/unit the outcome appears in; every theme is listed in `units`.
+  unitOrTheme          String?
+  unitOrThemeCode      String?
+  outcomeCode          String
+  outcomeCodeAsPrinted String? // verbatim spelling on the MEB page
+  outcomeText          String
+  outcomeGroup         String? // e.g. Türkçe "Okuma"
+  processComponents    Json?
+  learningArea         String?
+  skills               Json?
+  conceptualSkills     Json?
+  values               Json?
+  literacySkills       Json?
+  sourceUrl            String
+  sourceTitle          String?
+  sourceFetchedAt      DateTime?
+  reviewStatus         String // "VERIFIED" | "REVIEW_REQUIRED" | "NOT_IN_DATASET"
+  reviewReasons        Json?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  units              CurriculumOutcomeUnit[]
+  assignmentOutcomes AssignmentOutcome[]
+  questionOutcomes   QuestionOutcome[]
+
+  @@unique([subject, grade, outcomeCode])
+  @@index([grade, subject])
+  @@index([grade, subject, unitOrTheme])
+  @@index([reviewStatus])
+}
+
+// Every theme/unit an outcome is listed under on MEB (Türkçe repeats the same outcome in
+// several themes). grade/subject are copied here so the Theme -> Outcome filter is one indexed query.
+model CurriculumOutcomeUnit {
+  id              String            @id @default(cuid())
+  outcomeId       String
+  outcome         CurriculumOutcome @relation(fields: [outcomeId], references: [id], onDelete: Cascade)
+  grade           Int
+  subject         String
+  unitOrTheme     String
+  unitOrThemeCode String?
+  unitOrder       Int // order of the theme/unit on the MEB program page
+  outcomeOrder    Int // order of the outcome on the theme/unit page
+  sourceUrl       String
+
+  @@unique([outcomeId, unitOrTheme])
+  @@index([grade, subject, unitOrTheme])
+}
+
+model Assignment {
+  id                          String    @id @default(cuid())
+  teacherId                   String
+  teacher                     User      @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  classroomId                 String
+  classroom                   Classroom @relation(fields: [classroomId], references: [id], onDelete: Cascade)
+  subject                     String
+  grade                       Int
+  unitOrTheme                 String
+  topic                       String
+  minimumScore                Int       @default(70) // success threshold, 0–100 (%)
+  questionCount               Int       @default(7) // questions the AI draft should contain (5–10)
+  // Attempt policy (teacher can change it after publishing).
+  maxAttempts                 Int       @default(3)
+  unlimitedAttempts           Boolean   @default(false)
+  // Feedback policy: explanations/correctness after submit, correct answers only after passing.
+  showExplanationsAfterSubmit Boolean   @default(false)
+  showAnswersAfterPass        Boolean   @default(true)
+  deadline                    DateTime
+  status                      String    @default("DRAFT") // "DRAFT" | "PUBLISHED"
+  publishedAt                 DateTime?
+  createdAt                   DateTime  @default(now())
+  updatedAt                   DateTime  @updatedAt
+
+  assignmentOutcomes AssignmentOutcome[]
+  studyContent       StudyContent?
+  questions          Question[]
+  generationLogs     ContentGenerationLog[]
+  studentAssignments StudentAssignment[]
+
+  @@index([teacherId])
+  @@index([classroomId])
+}
+
+model AssignmentOutcome {
+  id           String            @id @default(cuid())
+  assignmentId String
+  outcomeId    String
+  assignment   Assignment        @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  outcome      CurriculumOutcome @relation(fields: [outcomeId], references: [id], onDelete: Restrict)
+
+  @@unique([assignmentId, outcomeId])
+  @@index([assignmentId])
+  @@index([outcomeId])
+}
+
+// Pre-class preparation content. Only TEACHER_APPROVED content of a PUBLISHED assignment is
+// ever shown to students.
+model StudyContent {
+  id                String     @id @default(cuid())
+  assignmentId      String     @unique
+  assignment        Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  introduction      String     @default("")
+  keyConcepts       Json // [{ term, explanation }]
+  summary           String     @default("")
+  simpleExample     String     @default("")
+  mustKnow          Json // string[] – "Derse gelmeden önce bunları bilmen yeterli"
+  status            String // "AI_GENERATED_DRAFT" | "MANUAL_DRAFT" | "TEACHER_APPROVED"
+  generatedBy       String // "AI" | "TEACHER"
+  aiModel           String?
+  contentVersion    Int        @default(1) // bumped when approved content is edited after publishing
+  teacherEditedAt   DateTime?
+  teacherApprovedAt DateTime?
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+}
+
+// Pre-knowledge check question. Type-specific fields (options, pairs, correct answer, …) live in
+// `data`, validated by src/lib/content/question-schema.ts.
+model Question {
+  id           String            @id @default(cuid())
+  assignmentId String
+  assignment   Assignment        @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  type         String
+  questionText String
+  data         Json
+  explanation  String?
+  points       Int               @default(10)
+  orderNum     Int
+  generatedBy  String // "AI" | "TEACHER"
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  outcomes     QuestionOutcome[]
+  answers      Answer[]
+
+  @@index([assignmentId, orderNum])
+}
+
+// Question -> MEB outcome traceability (queryable, for teacher analytics later).
+model QuestionOutcome {
+  id         String            @id @default(cuid())
+  questionId String
+  question   Question          @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  outcomeId  String
+  outcome    CurriculumOutcome @relation(fields: [outcomeId], references: [id], onDelete: Restrict)
+
+  @@unique([questionId, outcomeId])
+  @@index([outcomeId])
+}
+
+// Technical log of AI generation attempts. Never stores prompts, responses or secrets.
+model ContentGenerationLog {
+  id           String     @id @default(cuid())
+  assignmentId String
+  assignment   Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  teacherId    String
+  scope        String // "ALL" | "SUMMARY" | "QUESTIONS"
+  provider     String
+  model        String
+  status       String // "RUNNING" | "SUCCEEDED" | "FAILED" | "TIMEOUT" | "INVALID_RESPONSE" | "REFUSED"
+  startedAt    DateTime   @default(now())
+  finishedAt   DateTime?
+  generatedAt  DateTime?
+  errorMessage String?
+  inputTokens  Int?
+  outputTokens Int?
+
+  @@index([assignmentId, status])
+}
+
+// One row per (assignment, student), created when the student first opens a published assignment.
+// `status` is only ever changed by src/lib/assessment/status-machine.ts transitions.
+model StudentAssignment {
+  id                 String     @id @default(cuid())
+  assignmentId       String
+  assignment         Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  studentId          String
+  student            User       @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  status             String     @default("NOT_STARTED")
+  summaryOpenedAt    DateTime?
+  summaryConfirmedAt DateTime?
+  startedAt          DateTime?
+  completedAt        DateTime?
+  latestScore        Int? // final score (0–100) of the latest finalized attempt
+  bestScore          Int?
+  attemptCount       Int        @default(0)
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+  attempts           Attempt[]
+
+  @@unique([assignmentId, studentId])
+  @@index([studentId])
+  @@index([assignmentId, status])
+}
+
+model Attempt {
+  id                    String            @id @default(cuid())
+  studentAssignmentId   String
+  studentAssignment     StudentAssignment @relation(fields: [studentAssignmentId], references: [id], onDelete: Cascade)
+  attemptNumber         Int
+  status                String // "IN_PROGRESS" | "PENDING_TEACHER_REVIEW" | "COMPLETED" | "EXPIRED"
+  startedAt             DateTime          @default(now())
+  submittedAt           DateTime?
+  finalizedAt           DateTime?
+  autoScore             Int? // 0–100 over auto-scored questions
+  manualScore           Int? // 0–100 over teacher-reviewed questions
+  finalScore            Int? // 0–100 over all questions; set only when nothing awaits review
+  earnedPoints          Float?
+  totalPoints           Int?
+  correctCount          Int?
+  incorrectCount        Int?
+  requiresTeacherReview Boolean           @default(false)
+  answers               Answer[]
+
+  @@unique([studentAssignmentId, attemptNumber])
+  @@index([status])
+}
+
+model Answer {
+  id              String    @id @default(cuid())
+  attemptId       String
+  attempt         Attempt   @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  questionId      String
+  question        Question  @relation(fields: [questionId], references: [id], onDelete: Restrict)
+  answer          Json? // type-specific, validated by src/lib/assessment/answer-schema.ts
+  isCorrect       Boolean?
+  awardedPoints   Float?
+  reviewStatus    String // "DRAFT" | "AUTO_SCORED" | "PENDING_REVIEW" | "REVIEWED" | "UNANSWERED"
+  teacherFeedback String?
+  reviewedAt      DateTime?
+  reviewedById    String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@unique([attemptId, questionId])
+  @@index([reviewStatus])
+}
