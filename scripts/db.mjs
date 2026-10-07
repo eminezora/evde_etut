@@ -25,7 +25,11 @@ function databaseUrl(dev) {
 const args = process.argv.slice(2);
 const dev = args[0] === "--dev" ? Boolean(args.shift()) : false;
 const force = args[0] === "--sqlite" || args[0] === "--postgres" ? args.shift() : null;
-const sqlite = force ? force === "--sqlite" : databaseUrl(dev).startsWith("file:");
+const resolvedUrl = databaseUrl(dev);
+const sqlite = force ? force === "--sqlite" : resolvedUrl.startsWith("file:");
 const schema = sqlite ? "prisma/dev-sqlite/schema.prisma" : "prisma/schema.prisma";
 console.error(`[db] ${sqlite ? "SQLite (dev)" : "PostgreSQL"} schema: ${schema}`);
-execFileSync("npx", ["prisma", ...args, "--schema", schema], { stdio: "inherit" });
+execFileSync("npx", ["prisma", ...args, "--schema", schema], {
+  stdio: "inherit",
+  env: { ...process.env, ...(resolvedUrl ? { DATABASE_URL: resolvedUrl } : {}) },
+});

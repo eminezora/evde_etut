@@ -21,13 +21,28 @@ export function LoginForm() {
       body: JSON.stringify({ email, password }),
     });
     setBusy(false);
+    let data: { error?: string; message?: string; role?: string } | null = null;
+    try {
+      data = await res.json();
+    } catch {
+      data = null;
+    }
     if (!res.ok) {
-      setError((await res.json().catch(() => null))?.error ?? "Giriş yapılamadı.");
+      setError(
+        data?.error ||
+        data?.message ||
+        (res.status === 401
+          ? "E-posta veya şifre hatalı."
+          : res.status === 429
+          ? "Çok fazla deneme yapıldı. Lütfen biraz bekleyin."
+          : "Giriş yapılamadı. Sunucu bağlantısını kontrol edin.")
+      );
       return;
     }
-    const { role } = await res.json();
-    router.replace(role === "STUDENT" ? "/ogrenci/gorevler" : "/ogretmen/gorevler");
-    router.refresh();
+    if (data?.role) {
+      router.replace(data.role === "STUDENT" ? "/ogrenci/gorevler" : "/ogretmen/gorevler");
+      router.refresh();
+    }
   }
 
   return (

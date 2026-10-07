@@ -48,7 +48,7 @@ export async function authenticate(input: unknown, db: PrismaClient = defaultPri
   const hash = user?.passwordHash ?? DUMMY_HASH;
   const ok = await bcrypt.compare(parsed.data.password, hash);
   if (!user || !user.passwordHash || !ok) return null;
-  return { id: user.id, role: user.role, sessionVersion: user.sessionVersion };
+  return { id: user.id, role: user.role, sessionVersion: user.sessionVersion ?? 0 };
 }
 
 export async function registerUser(input: unknown, env: NodeJS.ProcessEnv = process.env, db: PrismaClient = defaultPrisma) {
