@@ -19,8 +19,10 @@ const registerSchema = z.object({
 });
 
 function codeMatches(given: string | undefined, expected: string) {
-  const a = Buffer.from(given ?? "");
-  const b = Buffer.from(expected);
+  const normGiven = (given ?? "").trim().replace(/^["']|["']$/g, "");
+  const normExpected = expected.trim().replace(/^["']|["']$/g, "");
+  const a = Buffer.from(normGiven);
+  const b = Buffer.from(normExpected);
   return a.length === b.length && timingSafeEqual(a, b);
 }
 
@@ -29,9 +31,10 @@ export async function registerUser(input: unknown, env: NodeJS.ProcessEnv = proc
   if (!parsed.success) return fail(400, "VALIDATION", parsed.error.issues[0].message);
   const { role, name, email, password, teacherCode } = parsed.data;
   if (role === "TEACHER") {
-    const expected = env.TEACHER_SIGNUP_CODE?.trim();
+    const rawExpected = env.TEACHER_SIGNUP_CODE?.trim();
+    const expected = rawExpected?.replace(/^["']|["']$/g, "").trim();
     if (!expected) return fail(403, "TEACHER_SIGNUP_DISABLED", "Öğretmen kaydı şu anda kapalı.");
-    if (!codeMatches(teacherCode?.trim(), expected)) return fail(403, "BAD_TEACHER_CODE", "Öğretmen davet kodu hatalı.");
+    if (!codeMatches(teacherCode, expected)) return fail(403, "BAD_TEACHER_CODE", "Öğretmen davet kodu hatalı.");
   }
   try {
     const user = await db.user.create({

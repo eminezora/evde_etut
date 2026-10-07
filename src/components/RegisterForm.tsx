@@ -27,7 +27,8 @@ export function RegisterForm() {
     });
     setBusy(false);
     if (!res.ok) {
-      setError((await res.json().catch(() => null))?.error ?? "Kayıt yapılamadı.");
+      const data = await res.json().catch(() => null);
+      setError(data?.error || data?.message || "Kayıt işlemi tamamlanamadı. Lütfen bilgilerinizi kontrol ediniz.");
       return;
     }
     router.replace(role === "TEACHER" ? "/ogretmen/siniflar" : "/ogrenci/gorevler");
