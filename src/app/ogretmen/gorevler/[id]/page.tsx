@@ -7,6 +7,8 @@ import { AI_NOT_CONFIGURED_MESSAGE, isAiConfigured } from "@/lib/ai/index.ts";
 import { formatDate, statusLabel } from "@/lib/assignments/format.ts";
 import { ContentEditor } from "@/components/ContentEditor.tsx";
 import { PolicyForm } from "@/components/teacher/PolicyForm.tsx";
+import { AssignmentActions } from "@/components/teacher/AssignmentActions.tsx";
+import { getEditState } from "@/lib/assignments/assignment-service.ts";
 
 export default async function AssignmentDetailPage({
   params,
@@ -21,6 +23,7 @@ export default async function AssignmentDetailPage({
   const tab = requested === "hazirlik" ? "hazirlik" : "genel";
   const a = await getTeacherContent(teacher.id, id);
   if (!a) notFound();
+  const editState = await getEditState(a.id);
   const outcomes = a.assignmentOutcomes.map(({ outcome }) => ({ code: outcome.outcomeCode, text: outcome.outcomeText }));
   const c = a.studyContent;
 
@@ -39,13 +42,22 @@ export default async function AssignmentDetailPage({
             </div>
             <h1 style={{ margin: "4px 0 0" }}>{a.topic}</h1>
           </div>
-          {a.status === "PUBLISHED" && (
-            <Link href={`/ogretmen/gorevler/${a.id}/analiz`} className="button primary" style={{ minHeight: 38 }}>
-              📊 Hazırlık Analizini Gör
-            </Link>
-          )}
+          <div className="row">
+            {a.status === "PUBLISHED" && (
+              <Link href={`/ogretmen/gorevler/${a.id}/analiz`} className="button primary" style={{ minHeight: 38 }}>
+                📊 Öğrenci Çalışmaları ve Rapor
+              </Link>
+            )}
+            <AssignmentActions assignmentId={a.id} archived={Boolean(a.archivedAt)} willArchive={a.status !== "DRAFT" || editState.studentsOpened > 0} />
+          </div>
         </div>
       </div>
+
+      {a.archivedAt && (
+        <div className="card archived-banner" role="note">
+          📦 Bu görev arşivlendi: listenizde ve öğrencilerin ekranında görünmez. Öğrenci cevapları ve raporlar korunur; “Arşivden Çıkar” ile geri alabilirsiniz.
+        </div>
+      )}
 
       <nav className="tabs" aria-label="Görev sekmeleri">
         <Link href={`/ogretmen/gorevler/${a.id}`} aria-current={tab === "genel" ? "page" : undefined}>
@@ -129,6 +141,7 @@ export default async function AssignmentDetailPage({
           aiConfigured={isAiConfigured()}
           aiNotConfiguredMessage={AI_NOT_CONFIGURED_MESSAGE}
           questionCount={a.questionCount}
+          questionsLocked={editState.started || Boolean(a.archivedAt)}
           outcomes={outcomes}
           content={
             c && {

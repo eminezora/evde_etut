@@ -90,7 +90,19 @@ export async function getAssignmentReport(teacherId: string, assignmentId: strin
   // 2. Every student's progress row for this assignment.
   const sas = await db.studentAssignment.findMany({
     where: { assignmentId },
-    select: { id: true, studentId: true, status: true, summaryOpenedAt: true, summaryConfirmedAt: true, attemptCount: true, latestScore: true, bestScore: true, completedAt: true },
+    select: {
+      id: true,
+      studentId: true,
+      status: true,
+      summaryOpenedAt: true,
+      summaryConfirmedAt: true,
+      startedAt: true,
+      attemptCount: true,
+      latestScore: true,
+      bestScore: true,
+      completedAt: true,
+      attempts: { orderBy: { attemptNumber: "desc" }, take: 1, select: { earnedPoints: true, totalPoints: true } },
+    },
   });
   const saByStudent = new Map(sas.map((s) => [s.studentId, s]));
 
@@ -103,6 +115,9 @@ export async function getAssignmentReport(teacherId: string, assignmentId: strin
         status: reportStatus(sa, a.deadline, now),
         summaryOpenedAt: sa?.summaryOpenedAt ?? null,
         summaryConfirmedAt: sa?.summaryConfirmedAt ?? null,
+        startedAt: sa?.startedAt ?? null,
+        detailedStatus: sa?.status ?? "NOT_STARTED",
+        latestPoints: sa?.attempts[0] && sa.attempts[0].totalPoints ? { earned: sa.attempts[0].earnedPoints ?? 0, total: sa.attempts[0].totalPoints } : null,
         attemptCount: sa?.attemptCount ?? 0,
         latestScore: sa?.latestScore ?? null,
         bestScore: sa?.bestScore ?? null,
@@ -259,7 +274,7 @@ export async function getAssignmentReport(teacherId: string, assignmentId: strin
  */
 async function readinessTrend(db: PrismaClient, classroomId: string, subject: string, classSize: number, now: Date) {
   const list = await db.assignment.findMany({
-    where: { classroomId, subject, status: "PUBLISHED" },
+    where: { classroomId, subject, status: "PUBLISHED", archivedAt: null },
     orderBy: [{ publishedAt: "asc" }, { createdAt: "asc" }],
     select: { id: true, topic: true, publishedAt: true, deadline: true },
   });

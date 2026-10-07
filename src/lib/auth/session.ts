@@ -13,10 +13,12 @@ function secret() {
 export interface SessionPayload {
   userId: string;
   role: string;
+  /** User.sessionVersion when the session was issued; a password change invalidates older sessions. */
+  sessionVersion?: number;
 }
 
 export async function createSessionToken(payload: SessionPayload) {
-  return new SignJWT({ role: payload.role })
+  return new SignJWT({ role: payload.role, sv: payload.sessionVersion ?? 0 })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject(payload.userId)
     .setIssuedAt()
@@ -28,7 +30,8 @@ export async function readSessionToken(token: string | undefined): Promise<Sessi
   if (!token) return null;
   try {
     const { payload } = await jwtVerify(token, secret(), { algorithms: ["HS256"] });
-    return payload.sub && typeof payload.role === "string" ? { userId: payload.sub, role: payload.role } : null;
+    if (!payload.sub || typeof payload.role !== "string" || payload.purpose) return null;
+    return { userId: payload.sub, role: payload.role, sessionVersion: typeof payload.sv === "number" ? payload.sv : 0 };
   } catch {
     return null;
   }
@@ -41,3 +44,22 @@ export const sessionCookieOptions = {
   path: "/",
   maxAge: MAX_AGE_SECONDS,
 };
+
+/** Short-lived signed data for multi-step flows (OAuth state, pending Google sign-up). Never a session. */
+export async function signFlowToken(purpose: string, data: Record<string, unknown>, maxAgeSeconds: number) {
+  return new SignJWT({ ...data, purpose })
+    .setProtectedHeader({ alg: "HS256" })
+    .setIssuedAt()
+    .setExpirationTime(`${maxAgeSeconds}s`)
+    .sign(secret());
+}
+
+export async function readFlowToken<T extends Record<string, unknown>>(purpose: string, token: string | undefined): Promise<T | null> {
+  if (!token) return null;
+  try {
+    const { payload } = await jwtVerify(token, secret(), { algorithms: ["HS256"] });
+    return payload.purpose === purpose ? (payload as unknown as T) : null;
+  } catch {
+    return null;
+  }
+}

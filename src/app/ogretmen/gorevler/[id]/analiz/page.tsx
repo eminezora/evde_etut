@@ -10,6 +10,7 @@ import { BarList } from "@/components/analytics/BarList.tsx";
 import { TrendChart } from "@/components/analytics/TrendChart.tsx";
 import { PrintButton } from "@/components/analytics/PrintButton.tsx";
 import { StudentTable } from "@/components/analytics/StudentTable.tsx";
+import { STATUS_LABELS, type StudentStatus } from "@/lib/assessment/status-machine.ts";
 
 const EMPTY = "Bu görev için henüz yeterli öğrenci verisi oluşmadı.";
 const rate = (v: number | null) => (v === null ? "—" : `%${v}`);
@@ -249,6 +250,9 @@ export default async function AnalyticsPage({ params }: { params: Promise<{ id: 
               statusLabel: REPORT_STATUS_LABELS[s.status],
               summaryOpened: fmt(s.summaryOpenedAt),
               summaryConfirmed: fmt(s.summaryConfirmedAt),
+              startedAt: fmt(s.startedAt),
+              detailedStatus: STATUS_LABELS[s.detailedStatus as StudentStatus] ?? s.detailedStatus,
+              latestPoints: s.latestPoints ? `${s.latestPoints.earned}/${s.latestPoints.total}` : null,
               attemptCount: s.attemptCount,
               latestScore: s.latestScore,
               bestScore: s.bestScore,

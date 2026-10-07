@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -43,7 +44,10 @@ export function LoginForm() {
         required
       />
 
-      <label htmlFor="password">Şifre</label>
+      <div className="label-row">
+        <label htmlFor="password">Şifre</label>
+        <Link href="/sifremi-unuttum">Şifremi unuttum</Link>
+      </div>
       <input
         id="password"
         name="password"

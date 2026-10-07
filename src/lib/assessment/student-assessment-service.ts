@@ -42,6 +42,7 @@ export const MESSAGES = {
 
 const accessWhere = (studentId: string): Prisma.AssignmentWhereInput => ({
   status: "PUBLISHED",
+  archivedAt: null,
   studyContent: { is: { status: "TEACHER_APPROVED" } },
   classroom: { members: { some: { studentId } } },
 });

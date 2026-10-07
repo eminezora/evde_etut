@@ -26,20 +26,43 @@ function codeMatches(given: string | undefined, expected: string) {
   return a.length === b.length && timingSafeEqual(a, b);
 }
 
+/** Shared check of the teacher invite code (TEACHER_SIGNUP_CODE); also used by Google sign-up. */
+export function checkTeacherCode(teacherCode: string | undefined, env: NodeJS.ProcessEnv = process.env) {
+  const expected = env.TEACHER_SIGNUP_CODE?.trim().replace(/^["']|["']$/g, "").trim();
+  if (!expected) return fail(403, "TEACHER_SIGNUP_DISABLED", "Öğretmen kaydı şu anda kapalı.");
+  if (!codeMatches(teacherCode, expected)) return fail(403, "BAD_TEACHER_CODE", "Öğretmen davet kodu hatalı.");
+  return null;
+}
+
+// Hash of a random throw-away string, compared when the account does not exist (timing equalisation).
+const DUMMY_HASH = "$2b$10$pSaE7G29TCsMLWauoydWYewmu7MKWhQJZcQeMSGv4wAVqU8he3D9.";
+
+const loginSchema = z.object({ email: z.string().trim().toLowerCase().email(), password: z.string().min(1).max(200) });
+
+/** E-mail + password sign-in. Accounts without a local password (Google-only) can't sign in this way. */
+export async function authenticate(input: unknown, db: PrismaClient = defaultPrisma) {
+  const parsed = loginSchema.safeParse(input);
+  if (!parsed.success) return null;
+  const user = await db.user.findUnique({ where: { email: parsed.data.email }, select: { id: true, role: true, sessionVersion: true, passwordHash: true } });
+  // Always run one bcrypt comparison so response time does not reveal whether the e-mail exists.
+  const hash = user?.passwordHash ?? DUMMY_HASH;
+  const ok = await bcrypt.compare(parsed.data.password, hash);
+  if (!user || !user.passwordHash || !ok) return null;
+  return { id: user.id, role: user.role, sessionVersion: user.sessionVersion };
+}
+
 export async function registerUser(input: unknown, env: NodeJS.ProcessEnv = process.env, db: PrismaClient = defaultPrisma) {
   const parsed = registerSchema.safeParse(input);
   if (!parsed.success) return fail(400, "VALIDATION", parsed.error.issues[0].message);
   const { role, name, email, password, teacherCode } = parsed.data;
   if (role === "TEACHER") {
-    const rawExpected = env.TEACHER_SIGNUP_CODE?.trim();
-    const expected = rawExpected?.replace(/^["']|["']$/g, "").trim();
-    if (!expected) return fail(403, "TEACHER_SIGNUP_DISABLED", "Öğretmen kaydı şu anda kapalı.");
-    if (!codeMatches(teacherCode, expected)) return fail(403, "BAD_TEACHER_CODE", "Öğretmen davet kodu hatalı.");
+    const bad = checkTeacherCode(teacherCode, env);
+    if (bad) return bad;
   }
   try {
     const user = await db.user.create({
       data: { role, name, email, passwordHash: await bcrypt.hash(password, 10) },
-      select: { id: true, role: true },
+      select: { id: true, role: true, sessionVersion: true },
     });
     return { ok: true as const, data: user };
   } catch (e) {
@@ -75,12 +98,12 @@ export async function createClassroom(teacherId: string, input: unknown, db: Pri
 }
 
 export async function joinClassroom(studentId: string, input: unknown, db: PrismaClient = defaultPrisma) {
-  const parsed = z.object({ code: z.string().min(1, "Katılma kodu girilmelidir.").max(40) }).safeParse(input);
+  const parsed = z.object({ code: z.string().trim().min(1, "Katılma kodu girilmelidir.").max(40, "Katılma kodu çok uzun.") }).safeParse(input);
   if (!parsed.success) return fail(400, "VALIDATION", parsed.error.issues[0].message);
   const student = await db.user.findFirst({ where: { id: studentId, role: "STUDENT" } });
   if (!student) return fail(403, "FORBIDDEN", "Sınıfa yalnızca öğrenciler katılabilir.");
   const classroom = await db.classroom.findUnique({ where: { joinCode: normalizeJoinCode(parsed.data.code) }, select: { id: true, name: true, grade: true } });
-  if (!classroom) return fail(404, "NOT_FOUND", "Bu koda ait bir sınıf bulunamadı.");
+  if (!classroom) return fail(404, "NOT_FOUND", "Bu koda ait bir sınıf bulunamadı. Kodu öğretmeninden kontrol edip tekrar dene.");
   await db.classroomMember.upsert({
     where: { classroomId_studentId: { classroomId: classroom.id, studentId } },
     create: { classroomId: classroom.id, studentId },

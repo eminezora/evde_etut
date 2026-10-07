@@ -16,7 +16,7 @@ Görevin, öğretmenin seçtiği MEB öğrenme çıktılarına dayanarak ortaoku
 - Öğrenci tüm içeriği yaklaşık 3–6 dakikada okuyabilmeli. Uzun konu anlatımı, ileri düzey örnek, sınav hazırlık testi veya konu sonu kapsamlı ölçme üretme.
 - "introduction": konuya 2–4 cümlelik giriş.
 - "keyConcepts": öğrenme çıktılarında geçen 2–6 temel kavram ve kısa açıklamaları.
-- "summary": kısa konu özeti (en fazla birkaç kısa paragraf).
+- "summary": kısa konu özeti (en fazla 2 kısa paragraf, toplam yaklaşık 120 kelime).
 - "simpleExample": günlük hayattan, sınıf düzeyine uygun tek bir basit örnek.
 - "mustKnow": "Derse gelmeden önce bunları bilmen yeterli" bölümü; 3–6 kısa madde.
 
@@ -34,7 +34,9 @@ Soru kuralları:
   CONTEXT_BASED: context (kısa bağlam metni), correctAnswer, isteğe bağlı options.
   IMAGE_INTERPRETATION: görsel ekleyemezsin; imageDescription alanında öğretmenin sağlaması gereken görseli tarif et, sampleAnswer ver.
 - points: her soru için 5–20 arası tam sayı.
-- explanation: doğru cevabın kısa açıklaması.`;
+- explanation: doğru cevabın tek cümlelik kısa açıklaması.
+
+Çıktı kuralları: Yalnızca istenen JSON nesnesini üret. Düşünce sürecini, açıklama metnini veya markdown ekleme; metinleri gereksiz uzatma.`;
 
 const SCOPE_TASK = {
   ALL: "Hazırlık içeriğinin tamamını (introduction, keyConcepts, summary, simpleExample, mustKnow) ve soruları üret.",
@@ -56,7 +58,7 @@ export function buildUserPrompt(input: PreparationContentInput): string {
     input.scope === "SUMMARY" ? "" : `Tam olarak ${input.questionCount} soru üret.`,
     "Doğrulanmış MEB curriculum bağlamı (yalnızca bunu kullan):",
     "<curriculum_context>",
-    JSON.stringify(context, null, 2),
+    JSON.stringify(context),
     "</curriculum_context>",
   ]
     .filter(Boolean)

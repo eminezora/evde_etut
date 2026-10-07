@@ -4,9 +4,11 @@ import { listAssignmentsForTeacher } from "@/lib/assignments/assignment-service.
 import { formatDate, statusLabel } from "@/lib/assignments/format.ts";
 import { countPendingReviews } from "@/lib/assessment/review-service.ts";
 
-export default async function AssignmentsPage() {
+export default async function AssignmentsPage({ searchParams }: { searchParams: Promise<{ arsiv?: string; silindi?: string }> }) {
   const teacher = await requireTeacher();
-  const [assignments, pending] = await Promise.all([listAssignmentsForTeacher(teacher.id), countPendingReviews(teacher.id)]);
+  const { arsiv, silindi } = await searchParams;
+  const archived = arsiv === "1";
+  const [assignments, pending] = await Promise.all([listAssignmentsForTeacher(teacher.id, undefined, { archived }), countPendingReviews(teacher.id)]);
 
   const publishedCount = assignments.filter((a) => a.status === "PUBLISHED").length;
   const draftCount = assignments.filter((a) => a.status === "DRAFT").length;
@@ -70,17 +72,24 @@ export default async function AssignmentsPage() {
         </div>
       )}
 
+      {silindi === "1" && <p className="notice-inline ok" role="status">Taslak görev silindi.</p>}
+
       {/* Assignments Table Card */}
       <div className="card">
         <div className="row" style={{ justifyContent: "space-between", marginBottom: 16 }}>
-          <h2>Tüm Görevler</h2>
-          <span className="badge">{assignments.length} görev listelendi</span>
+          <h2>{archived ? "Arşivlenen Görevler" : "Tüm Görevler"}</h2>
+          <div className="row">
+            <span className="badge">{assignments.length} görev listelendi</span>
+            <Link href={archived ? "/ogretmen/gorevler" : "/ogretmen/gorevler?arsiv=1"} style={{ fontSize: "0.88rem" }}>
+              {archived ? "← Aktif görevlere dön" : "📦 Arşivlenenler"}
+            </Link>
+          </div>
         </div>
 
         {assignments.length === 0 ? (
           <div style={{ textAlign: "center", padding: "40px 16px" }}>
             <span style={{ fontSize: "2.5rem", display: "block", marginBottom: 12 }}>📋</span>
-            <p className="muted" style={{ fontSize: "1.05rem" }}>Henüz oluşturulmuş bir görev bulunmuyor.</p>
+            <p className="muted" style={{ fontSize: "1.05rem" }}>{archived ? "Arşivlenmiş görev yok." : "Henüz oluşturulmuş bir görev bulunmuyor."}</p>
             <Link href="/ogretmen/gorevler/yeni" className="button primary" style={{ marginTop: 8 }}>
               İlk Görevi Oluştur →
             </Link>

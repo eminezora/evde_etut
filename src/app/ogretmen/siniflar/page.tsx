@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { requireTeacher } from "@/lib/auth/current-user.ts";
 import { listTeacherClassrooms } from "@/lib/accounts/account-service.ts";
 import { CreateClassroomForm } from "@/components/teacher/CreateClassroomForm.tsx";
@@ -47,7 +48,7 @@ export default async function ClassroomsPage() {
                 {classrooms.map((c) => (
                   <tr key={c.id}>
                     <td>
-                      <strong style={{ fontSize: "1rem" }}>{c.name}</strong>
+                      <Link href={`/ogretmen/siniflar/${c.id}`} style={{ fontSize: "1rem", fontWeight: 700 }}>{c.name}</Link>
                     </td>
                     <td>
                       <span className="badge">{c.grade}. sınıf</span>
@@ -68,7 +69,7 @@ export default async function ClassroomsPage() {
                       </span>
                     </td>
                     <td>
-                      <span className="muted">{c._count.members} öğrenci</span>
+                      <Link href={`/ogretmen/siniflar/${c.id}`}>{c._count.members} öğrenci →</Link>
                     </td>
                     <td>
                       <span className="muted">{c._count.assignments} görev</span>

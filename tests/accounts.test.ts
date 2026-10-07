@@ -15,7 +15,7 @@ describe("registration", () => {
     expect(r.ok && r.data.role).toBe("STUDENT");
     const user = await db.user.findUniqueOrThrow({ where: { email: e } }); // e-mail normalised to lower case
     expect(user.passwordHash).not.toContain("gizli");
-    expect(await bcrypt.compare("gizli-sifre-1", user.passwordHash)).toBe(true);
+    expect(await bcrypt.compare("gizli-sifre-1", user.passwordHash!)).toBe(true);
     const dup = await registerUser({ role: "STUDENT", name: "Ali", email: e, password: "gizli-sifre-1" }, env, db);
     expect(!dup.ok && dup.status).toBe(409);
   });

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { Mascot } from "@/components/Mascot.tsx";
 
 const description = "MEB öğrenme çıktılarına bağlı derse hazırlık görevleri";
 
@@ -17,7 +18,10 @@ export const viewport: Viewport = { colorScheme: "light", themeColor: "#ffffff" 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
-      <body>{children}</body>
+      <body>
+        {children}
+        <Mascot />
+      </body>
     </html>
   );
 }

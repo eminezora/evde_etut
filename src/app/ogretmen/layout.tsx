@@ -23,14 +23,15 @@ export default async function TeacherLayout({ children }: { children: React.Reac
           <Link href="/ogretmen/gorevler">Görevler</Link>
           <Link href="/ogretmen/siniflar">Sınıflarım</Link>
           <Link href="/ogretmen/degerlendirme">Değerlendirme</Link>
+          <Link href="/ogretmen/profil">Profil</Link>
           <Link href="/ogretmen/gorevler/yeni" className="button primary" style={{ minHeight: 34, padding: "5px 12px", fontSize: "0.88rem" }}>
             + Yeni Görev
           </Link>
           <div className="row" style={{ gap: 8, marginLeft: 6 }}>
-            <span className="user-pill">
+            <Link href="/ogretmen/profil" className="user-pill" title="Profil ve hesap ayarları">
               <span className="user-avatar">{teacher.name.charAt(0).toUpperCase()}</span>
               <span>{teacher.name}</span>
-            </span>
+            </Link>
             <LogoutButton />
           </div>
         </nav>

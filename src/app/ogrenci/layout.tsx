@@ -21,11 +21,12 @@ export default async function StudentLayout({ children }: { children: React.Reac
         </div>
         <nav>
           <Link href="/ogrenci/gorevler">Görevlerim</Link>
+          <Link href="/ogrenci/profil">Profil</Link>
           <div className="row" style={{ gap: 8, marginLeft: 6 }}>
-            <span className="user-pill">
+            <Link href="/ogrenci/profil" className="user-pill" title="Profil ve hesap ayarları">
               <span className="user-avatar" style={{ background: "var(--ok)" }}>{student.name.charAt(0).toUpperCase()}</span>
               <span>{student.name}</span>
-            </span>
+            </Link>
             <LogoutButton />
           </div>
         </nav>

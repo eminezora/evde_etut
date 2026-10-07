@@ -382,9 +382,16 @@ describe("approval, publishing and student visibility", () => {
     const outsider = await makeStudent([]);
     expect(await getStudentAssignment(outsider.id, assignment.id, db)).toBeNull();
 
-    // After publishing: questions are locked, AI regeneration is blocked, content edits bump the version.
+    // After publishing: questions stay editable until a student starts (locking is covered in
+    // assignment-management.test.ts), AI regeneration is blocked, content edits bump the version.
     const q = await db.question.findFirstOrThrow({ where: { assignmentId: assignment.id } });
-    expect((await deleteQuestion(teacher.id, assignment.id, q.id, db)).ok).toBe(false);
+    await db.studentAssignment.upsert({
+      where: { assignmentId_studentId: { assignmentId: assignment.id, studentId: student.id } },
+      create: { assignmentId: assignment.id, studentId: student.id, status: "ASSESSMENT_IN_PROGRESS", attempts: { create: { attemptNumber: 1, status: "IN_PROGRESS" } } },
+      update: { attempts: { create: { attemptNumber: 1, status: "IN_PROGRESS" } } },
+    });
+    const locked = await deleteQuestion(teacher.id, assignment.id, q.id, db);
+    expect(!locked.ok && locked.code).toBe("QUESTIONS_LOCKED");
     expect((await generateStudyContent(teacher.id, assignment.id, { confirmOverwrite: true }, { db, provider: new MockContentProvider() })).ok).toBe(false);
     await saveStudyContent(teacher.id, assignment.id, manualContent, db);
     const v2 = await db.studyContent.findUnique({ where: { assignmentId: assignment.id } });

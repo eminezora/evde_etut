@@ -93,7 +93,13 @@ git push -u origin main
 |---|---|---|
 | `DATABASE_URL` | Evet | PostgreSQL bağlantısı (Vercel'de **pooled** adres) |
 | `AUTH_SECRET` | Evet | En az 32 karakterlik rastgele değer; oturum çerezlerini imzalar |
-| `TEACHER_SIGNUP_CODE` | Öğretmen kaydı için | Öğretmenlerin kayıtta gireceği davet kodu; boşsa öğretmen kaydı kapalıdır |
+| `TEACHER_SIGNUP_CODE` | Öğretmen kaydı için | Öğretmenlerin kayıtta gireceği davet kodu; boşsa öğretmen kaydı kapalıdır (Google ile kayıtta da istenir) |
+| `APP_URL` | Önerilir | Sitenin herkese açık adresi (ör. `https://evde-etut.vercel.app`); e-posta bağlantıları ve Google dönüş adresi bundan üretilir |
+| `MAIL_PROVIDER` | Hayır | `resend` (varsayılan). `memory` yalnızca test/yerel içindir, production'da yok sayılır |
+| `RESEND_API_KEY` | Şifre sıfırlama için | Resend API anahtarı |
+| `MAIL_FROM` | Şifre sıfırlama için | Gönderen, Resend'de doğrulanmış alan adıyla: `Evde Etüt <bildirim@alanadiniz.com>` |
+| `GOOGLE_CLIENT_ID` | Google girişi için | Google OAuth istemci kimliği; ikisi de doluysa "Google ile devam et" görünür |
+| `GOOGLE_CLIENT_SECRET` | Google girişi için | Google OAuth istemci gizli anahtarı |
 | `AI_PROVIDER` | Hayır | `evren` veya `anthropic`; boşsa yapay zekâ kapalı, içerik elle hazırlanır |
 | `EVREN_LLM_BASE_URL` | `evren` için | `https://evren-llmapi.ssyz.org.tr/v1` |
 | `EVREN_LLM_API_KEY` | `evren` için | EVREN API anahtarı (yoksa `AI_API_KEY` kullanılır) |

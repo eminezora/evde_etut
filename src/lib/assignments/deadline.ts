@@ -21,3 +21,9 @@ export function turkeyDeadlineToIso(date: string, hour: string, minute: string):
 export function turkeyToday(now: Date = new Date()): string {
   return new Date(now.getTime() + TURKEY_OFFSET_MS).toISOString().slice(0, 10);
 }
+
+/** ISO instant -> Türkiye wall-clock parts for the picker ({ date: "YYYY-MM-DD", hour: "HH", minute: "MM" }). */
+export function isoToTurkeyParts(iso: string | Date) {
+  const d = new Date(new Date(iso).getTime() + TURKEY_OFFSET_MS).toISOString();
+  return { date: d.slice(0, 10), hour: d.slice(11, 13), minute: d.slice(14, 16) };
+}

@@ -11,18 +11,35 @@ export interface StudentRow {
   name: string;
   status: Status;
   statusLabel: string;
+  /** Exact workflow state (e.g. "Özet Okunuyor") shown under the report status. */
+  detailedStatus: string;
   summaryOpened: string | null;
   summaryConfirmed: string | null;
+  startedAt: string | null;
   attemptCount: number;
+  latestPoints: string | null;
   latestScore: number | null;
   bestScore: number | null;
   completedAt: string | null;
 }
 
-const ORDER: Status[] = ["READY", "NEEDS_REVIEW", "PENDING_REVIEW", "NOT_STARTED", "IN_PROGRESS", "EXPIRED"];
-const FILTERS: { key: "ALL" | Status; label: string }[] = [{ key: "ALL", label: "Tümü" }, ...ORDER.map((k) => ({ key: k, label: REPORT_STATUS_LABELS[k] }))];
+const FILTERS: { key: "ALL" | Status; label: string }[] = [
+  { key: "ALL", label: "Tümü" },
+  { key: "READY", label: REPORT_STATUS_LABELS.READY },
+  { key: "NEEDS_REVIEW", label: REPORT_STATUS_LABELS.NEEDS_REVIEW },
+  { key: "NOT_STARTED", label: REPORT_STATUS_LABELS.NOT_STARTED },
+  { key: "IN_PROGRESS", label: "Devam Ediyor" },
+  { key: "PENDING_REVIEW", label: REPORT_STATUS_LABELS.PENDING_REVIEW },
+  { key: "EXPIRED", label: REPORT_STATUS_LABELS.EXPIRED },
+];
 
 const ICON: Record<Status, string> = { READY: "✓", NEEDS_REVIEW: "↻", PENDING_REVIEW: "⏳", IN_PROGRESS: "…", NOT_STARTED: "○", EXPIRED: "✕" };
+
+function outcomeLabel(r: StudentRow) {
+  if (r.status === "READY") return "Derse Hazır";
+  if (r.status === "NEEDS_REVIEW") return "Tekrar Gerekli";
+  return "—";
+}
 
 export function StudentTable({ assignmentId, rows }: { assignmentId: string; rows: StudentRow[] }) {
   const [filter, setFilter] = useState<"ALL" | Status>("ALL");
@@ -44,24 +61,48 @@ export function StudentTable({ assignmentId, rows }: { assignmentId: string; row
           ))}
         </div>
         <label htmlFor="student-search" className="sr-only">Öğrenci ara</label>
-        <input id="student-search" type="search" placeholder="Öğrenci ara…" value={q} onChange={(e) => setQ(e.target.value)} style={{ maxWidth: 240 }} />
+        <input id="student-search" type="search" placeholder="Öğrenci adına göre ara…" value={q} onChange={(e) => setQ(e.target.value)} style={{ maxWidth: 240 }} />
       </div>
       <div className="table-scroll">
         <table>
           <thead>
-            <tr><th>Öğrenci</th><th>Özeti Açtı</th><th>Özeti Onayladı</th><th>Deneme</th><th>Son Puan</th><th>En İyi Puan</th><th>Durum</th><th>Tamamlama</th></tr>
+            <tr>
+              <th>Öğrenci</th>
+              <th>Durum</th>
+              <th>Başlama</th>
+              <th>Tamamlama</th>
+              <th>Deneme</th>
+              <th>Puan</th>
+              <th>Başarı</th>
+              <th>Sonuç</th>
+              <th>Değerlendirme</th>
+              <th className="no-print"></th>
+            </tr>
           </thead>
           <tbody>
             {shown.map((r) => (
               <tr key={r.studentId}>
-                <td><Link href={`/ogretmen/gorevler/${assignmentId}/ogrenci/${r.studentId}`}>{r.name}</Link></td>
-                <td>{r.summaryOpened ?? "—"}</td>
-                <td>{r.summaryConfirmed ?? "—"}</td>
-                <td>{r.attemptCount}</td>
-                <td>{r.latestScore === null ? "—" : `%${r.latestScore}`}</td>
-                <td>{r.bestScore === null ? "—" : `%${r.bestScore}`}</td>
-                <td><span aria-hidden="true">{ICON[r.status]} </span>{r.statusLabel}</td>
+                <td><Link href={`/ogretmen/ogrenciler/${r.studentId}`} title="Öğrencinin geçmiş performansı">{r.name}</Link></td>
+                <td>
+                  <span aria-hidden="true">{ICON[r.status]} </span>{r.statusLabel}
+                  {r.detailedStatus !== r.statusLabel && <div className="muted" style={{ fontSize: "0.78rem" }}>{r.detailedStatus}</div>}
+                </td>
+                <td>{r.startedAt ?? r.summaryOpened ?? "—"}</td>
                 <td>{r.completedAt ?? "—"}</td>
+                <td>{r.attemptCount}</td>
+                <td>{r.latestPoints ?? "—"}</td>
+                <td>{r.latestScore === null ? "—" : `%${r.latestScore}`}</td>
+                <td>{outcomeLabel(r)}</td>
+                <td>{r.status === "PENDING_REVIEW" ? <span className="badge" style={{ background: "var(--info-bg)", color: "var(--info-text)" }}>Bekliyor</span> : "—"}</td>
+                <td className="no-print">
+                  {r.attemptCount > 0 ? (
+                    <Link href={`/ogretmen/gorevler/${assignmentId}/ogrenci/${r.studentId}`} className="button" style={{ minHeight: 30, padding: "3px 10px", fontSize: "0.82rem", whiteSpace: "nowrap" }}>
+                      Cevapları Gör
+                    </Link>
+                  ) : (
+                    <span className="muted" style={{ fontSize: "0.82rem" }}>Cevap yok</span>
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>

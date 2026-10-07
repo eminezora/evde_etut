@@ -108,7 +108,7 @@ export async function updateAssessmentPolicy(teacherId: string, assignmentId: st
 
 /** Everything about one student's work on one assignment, including all attempts and answers. */
 export async function getStudentDetail(teacherId: string, assignmentId: string, studentId: string, db: PrismaClient = defaultPrisma) {
-  const a = await db.assignment.findFirst({ where: { id: assignmentId, teacherId }, select: { id: true, topic: true, minimumScore: true, classroomId: true } });
+  const a = await db.assignment.findFirst({ where: { id: assignmentId, teacherId }, select: { id: true, topic: true, subject: true, minimumScore: true, classroomId: true, classroom: { select: { name: true } } } });
   if (!a) return null;
   const member = await db.classroomMember.findUnique({ where: { classroomId_studentId: { classroomId: a.classroomId, studentId } }, include: { student: { select: { name: true } } } });
   if (!member) return null;

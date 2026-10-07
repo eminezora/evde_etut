@@ -23,6 +23,19 @@ export default async function StudentDashboardPage() {
 
   return (
     <>
+      {classrooms.length === 0 && (
+        <div className="card join-card" role="region" aria-labelledby="join-title">
+          <div className="join-card-icon" aria-hidden="true">🏫</div>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <h2 id="join-title" style={{ margin: "0 0 4px" }}>Sınıfa Katıl</h2>
+            <p className="muted" style={{ margin: "0 0 4px" }}>
+              Henüz bir sınıfa bağlı değilsin. Öğretmeninin verdiği 8 karakterlik sınıf kodunu yazarak sınıfına katıl; görevlerin burada görünecek.
+            </p>
+            <JoinClassroomForm />
+          </div>
+        </div>
+      )}
+
       {/* Student Welcome Hero Card */}
       <div className="card" style={{ background: "linear-gradient(135deg, var(--surface) 0%, var(--surface-subtle) 100%)", border: "1px solid var(--accent-border)", padding: "28px 24px" }}>
         <div className="row" style={{ justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -76,9 +89,11 @@ export default async function StudentDashboardPage() {
           )}
         </div>
 
-        <div style={{ paddingTop: 14, borderTop: "1px solid var(--border)" }}>
-          <JoinClassroomForm />
-        </div>
+        {classrooms.length > 0 && (
+          <div style={{ paddingTop: 14, borderTop: "1px solid var(--border)" }}>
+            <JoinClassroomForm />
+          </div>
+        )}
       </div>
 
       {/* Grouped Tasks Sections */}

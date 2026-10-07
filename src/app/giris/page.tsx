@@ -1,46 +1,30 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { getCurrentStudent, getCurrentTeacher } from "@/lib/auth/current-user.ts";
+import { getCurrentUser } from "@/lib/auth/current-user.ts";
 import { LoginForm } from "@/components/LoginForm.tsx";
+import { AuthShell, GOOGLE_ERRORS, GoogleButton } from "@/components/auth/AuthShell.tsx";
 
-export default async function LoginPage() {
-  if (await getCurrentTeacher()) redirect("/ogretmen/gorevler");
-  if (await getCurrentStudent()) redirect("/ogrenci/gorevler");
+export default async function LoginPage({ searchParams }: { searchParams: Promise<{ hata?: string; sifre?: string }> }) {
+  const user = await getCurrentUser();
+  if (user) redirect(user.role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
+  const { hata, sifre } = await searchParams;
 
   return (
-    <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", background: "linear-gradient(180deg, var(--bg) 0%, var(--surface-subtle) 100%)" }}>
-      <header className="top" style={{ borderBottom: "none", background: "transparent" }}>
-        <Link href="/" className="brand-badge">
-          <span className="brand-icon">📚</span>
-          <span>Evde Etüt</span>
-        </Link>
-        <Link href="/" className="button ghost" style={{ minHeight: 36, padding: "6px 14px" }}>
-          ← Ana Sayfa
-        </Link>
-      </header>
-
-      <main style={{ maxWidth: 460, margin: "auto", width: "100%", padding: "20px 16px 60px" }}>
-        <div className="card" style={{ padding: "32px 28px", boxShadow: "var(--shadow-lg)" }}>
-          <div style={{ textAlign: "center", marginBottom: 24 }}>
-            <span className="brand-icon" style={{ width: 44, height: 44, fontSize: "1.4rem", margin: "0 auto 12px" }}>
-              📚
-            </span>
-            <h1 style={{ fontSize: "1.6rem", margin: "0 0 6px" }}>Giriş Yap</h1>
-            <p className="muted" style={{ fontSize: "0.92rem", margin: 0 }}>
-              Evde Etüt hesabınıza erişerek derse hazırlık görevlerinizi takip edin.
-            </p>
-          </div>
-
-          <LoginForm />
-
-          <div style={{ textAlign: "center", marginTop: 20, paddingTop: 16, borderTop: "1px solid var(--border)", fontSize: "0.92rem" }}>
-            <span className="muted">Hesabınız yok mu? </span>
-            <Link href="/kayit" style={{ fontWeight: 600 }}>
-              Ücretsiz kayıt olun →
-            </Link>
-          </div>
-        </div>
-      </main>
-    </div>
+    <AuthShell
+      icon="📚"
+      title="Giriş Yap"
+      subtitle="Evde Etüt hesabınıza erişerek derse hazırlık görevlerinizi takip edin."
+      footer={
+        <>
+          <span className="muted">Hesabınız yok mu? </span>
+          <Link href="/kayit" style={{ fontWeight: 600 }}>Ücretsiz kayıt olun →</Link>
+        </>
+      }
+    >
+      {sifre === "yenilendi" && <p className="notice-inline ok" role="status">Şifreniz güncellendi. Yeni şifrenizle giriş yapabilirsiniz.</p>}
+      {hata && GOOGLE_ERRORS[hata] && <p className="error" role="alert">{GOOGLE_ERRORS[hata]}</p>}
+      <GoogleButton />
+      <LoginForm />
+    </AuthShell>
   );
 }

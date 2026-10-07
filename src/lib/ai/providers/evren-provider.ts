@@ -30,7 +30,11 @@ type ChatResponse = {
   usage?: { prompt_tokens?: number; completion_tokens?: number };
 };
 
-/** Extract the JSON object from a chat answer (tolerates <think> blocks and ``` fences). */
+/**
+ * Extract the JSON object from a chat answer. Tolerates <think> blocks, ``` fences, a short sentence
+ * before/after the object and trailing commas – nothing else is "repaired": anything still invalid
+ * is rejected (and the result is validated with Zod afterwards anyway).
+ */
 export function extractJson(content: string): unknown {
   let text = content.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
   const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/i);
@@ -38,12 +42,25 @@ export function extractJson(content: string): unknown {
   const start = text.indexOf("{");
   const end = text.lastIndexOf("}");
   if (start < 0 || end <= start) throw new ProviderError("INCOMPLETE", "AI yanıtında JSON bulunamadı.");
-  try {
-    return JSON.parse(text.slice(start, end + 1));
-  } catch {
-    throw new ProviderError("INCOMPLETE", "AI yanıtı geçerli JSON değil.");
+  const body = text.slice(start, end + 1);
+  for (const candidate of [body, body.replace(/,\s*([}\]])/g, "$1")]) {
+    try {
+      return JSON.parse(candidate);
+    } catch {
+      /* try the next, more lenient candidate */
+    }
   }
+  throw new ProviderError("INCOMPLETE", "AI yanıtı geçerli JSON değil.");
 }
+
+/** Transient upstream statuses worth exactly one retry. */
+const RETRYABLE = new Set([429, 500, 502, 503, 504]);
+const RETRY_DELAY_MS = 1500;
+const sleep = (ms: number, signal: AbortSignal) =>
+  new Promise<void>((resolve, reject) => {
+    const t = setTimeout(resolve, ms);
+    signal.addEventListener("abort", () => (clearTimeout(t), reject(signal.reason)), { once: true });
+  });
 
 export class EvrenContentProvider implements ContentGenerationProvider {
   readonly name = "evren";
@@ -83,15 +100,28 @@ export class EvrenContentProvider implements ContentGenerationProvider {
 
   async generatePreparationContent(input: PreparationContentInput, { signal }: { signal: AbortSignal }): Promise<ProviderResult> {
     const schema = z.toJSONSchema(wireSchemas[input.scope]);
-    let res: Response;
-    try {
-      res = await this.call(input, signal, { type: "json_schema", json_schema: { name: "preparation_content", strict: true, schema } });
-      // Servers without json_schema support: retry once in plain JSON mode (Zod still validates).
-      if (res.status === 400 || res.status === 422) res = await this.call(input, signal, { type: "json_object" });
-    } catch {
-      if (signal.aborted) throw new ProviderError("TIMEOUT", "AI isteği zaman aşımına uğradı.");
-      throw new ProviderError("FAILED", "AI servisine bağlanılamadı.");
+    const schemaFormat = { type: "json_schema", json_schema: { name: "preparation_content", strict: true, schema } };
+    let res: Response | null = null;
+    // At most two HTTP calls: one controlled retry after a network error or 429/5xx.
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        res = await this.call(input, signal, schemaFormat);
+        // Servers without json_schema support: retry once in plain JSON mode (Zod still validates).
+        if (res.status === 400 || res.status === 422) res = await this.call(input, signal, { type: "json_object" });
+      } catch {
+        if (signal.aborted) throw new ProviderError("TIMEOUT", "AI isteği zaman aşımına uğradı.");
+        if (attempt === 2) throw new ProviderError("FAILED", "AI servisine bağlanılamadı.");
+        res = null;
+      }
+      if (res && !RETRYABLE.has(res.status)) break;
+      if (attempt === 2) break;
+      try {
+        await sleep(RETRY_DELAY_MS, signal);
+      } catch {
+        throw new ProviderError("TIMEOUT", "AI isteği zaman aşımına uğradı.");
+      }
     }
+    if (!res) throw new ProviderError("FAILED", "AI servisine bağlanılamadı.");
     if (!res.ok) throw new ProviderError("FAILED", `AI API hatası (HTTP ${res.status}).`);
 
     let body: ChatResponse;

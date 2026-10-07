@@ -44,7 +44,10 @@ async function send(url: string, method: string, body?: unknown) {
 }
 
 type Scope = "ALL" | "SUMMARY" | "QUESTIONS";
-type JobState = { state: "NONE" } | { state: "RUNNING"; jobId: string; scope: Scope } | { state: "SUCCEEDED"; jobId: string } | { state: "FAILED"; jobId: string; message: string };
+type JobState = { state: "NONE" } | { state: "RUNNING"; jobId: string; scope: Scope } | { state: "SUCCEEDED"; jobId: string } | { state: "FAILED"; jobId: string; message: string; reason?: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED" };
+/** Generation UI state. Every path out of "generating" ends in success, failed or timeout. */
+type GenState = "idle" | "generating" | "success" | "failed" | "timeout";
+const SLOW_AFTER_S = 120;
 
 const POLL_MS = 3000;
 // The server closes a job after AI_TIMEOUT_MS + 45 s at most; this client cap is only a last resort.
@@ -62,6 +65,7 @@ export function ContentEditor({
   outcomes,
   content,
   questions,
+  questionsLocked = false,
 }: {
   assignmentId: string;
   assignmentStatus: string;
@@ -71,6 +75,8 @@ export function ContentEditor({
   outcomes: OutcomeOption[];
   content: EditorContent | null;
   questions: EditorQuestion[];
+  /** True once a student has started the check (see content-service QUESTIONS_LOCKED_MESSAGE). */
+  questionsLocked?: boolean;
 }) {
   const router = useRouter();
   const isDraft = assignmentStatus === "DRAFT";
@@ -107,20 +113,28 @@ export function ContentEditor({
 
   const [elapsed, setElapsed] = useState(0);
   const [retryScope, setRetryScope] = useState<Scope | null>(null);
+  const [genState, setGenState] = useState<GenState>("idle");
+  const [genError, setGenError] = useState<string | null>(null);
+  const endGeneration = useCallback((state: "failed" | "timeout", scope: Scope, text: string) => {
+    setBusy(null);
+    setGenState(state);
+    setGenError(text);
+    setRetryScope(scope);
+  }, []);
   const alive = useRef(true);
 
   /** Poll the job until it finishes; the editor then reloads with the saved draft. */
   const followJob = useCallback(
     async (jobId: string, scope: Scope, startedAt = Date.now()) => {
       setBusy(`gen-${scope}`);
+      setGenState("generating");
+      setGenError(null);
       setRetryScope(null);
       let networkErrors = 0;
       while (alive.current) {
         setElapsed(Math.round((Date.now() - startedAt) / 1000));
         if (Date.now() - startedAt > CLIENT_MAX_WAIT_MS) {
-          setBusy(null);
-          setRetryScope(scope);
-          setMessage({ kind: "error", lines: ["Yapay zekâdan yanıt alınamadı. Lütfen tekrar deneyin veya içeriği manuel hazırlayın."] });
+          endGeneration("timeout", scope, "Yapay zekâdan zamanında yanıt alınamadı. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.");
           return;
         }
         await sleep(POLL_MS);
@@ -136,9 +150,7 @@ export function ContentEditor({
         if (!job) {
           // Brief network hiccups are tolerated; the job keeps running on the server.
           if (++networkErrors >= 5) {
-            setBusy(null);
-            setRetryScope(scope);
-            setMessage({ kind: "error", lines: ["Sunucuya ulaşılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin."] });
+            endGeneration("failed", scope, "Sunucuya ulaşılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin.");
             return;
           }
           continue;
@@ -152,18 +164,18 @@ export function ContentEditor({
             /* storage unavailable: the badge on the reloaded content still shows the new draft */
           }
           setBusy(null);
+          setGenState("success");
           setMessage({ kind: "ok", lines: [GENERATED_TEXT] });
           setDirty(false);
           router.refresh();
           return;
         }
-        setBusy(null);
-        setRetryScope(scope);
-        setMessage({ kind: "error", lines: [job.state === "FAILED" ? job.message : "İçerik oluşturulamadı. Lütfen tekrar deneyin."] });
+        if (job.state === "FAILED") endGeneration(job.reason === "TIMEOUT" ? "timeout" : "failed", scope, job.message);
+        else endGeneration("failed", scope, "İçerik oluşturulamadı. Lütfen tekrar deneyin.");
         return;
       }
     },
-    [assignmentId, router],
+    [assignmentId, router, endGeneration],
   );
 
   // On mount: show the "draft ready" notice after the reload, or resume a job that is still running
@@ -200,6 +212,8 @@ export function ContentEditor({
       if (!window.confirm(`${what} yapay zekâ ile yeniden oluşturulacak ve mevcut düzenlemelerin yerini alacak. Devam edilsin mi?${extra}`)) return;
     }
     setBusy(`gen-${scope}`);
+    setGenState("generating");
+    setGenError(null);
     setElapsed(0);
     setRetryScope(null);
     setMessage(null);
@@ -211,9 +225,8 @@ export function ContentEditor({
     }
     const jobId = started.json?.data?.jobId;
     if (!started.ok || !jobId) {
-      setBusy(null);
-      setRetryScope(scope);
-      report(false, started.json, "");
+      const errs = Object.values(started.json?.errors ?? {}).flat();
+      endGeneration("failed", scope, errs[0] ?? started.json?.error ?? "İçerik oluşturma başlatılamadı. Lütfen tekrar deneyin.");
       return;
     }
     await followJob(jobId, scope);
@@ -281,22 +294,27 @@ export function ContentEditor({
                   </>
                 )}
               </div>
-              {generating && (
+              {genState === "generating" && generating && (
                 <div className="generating" role="status" aria-live="polite">
                   <span className="spinner" aria-hidden="true" />
                   <div>
-                    <strong>İçerik hazırlanıyor, bu işlem biraz sürebilir.</strong>
+                    <strong>{elapsed >= SLOW_AFTER_S ? "İşlem beklenenden uzun sürüyor." : "İçerik hazırlanıyor, bu işlem biraz sürebilir."}</strong>
                     <p className="muted" style={{ margin: "2px 0 0" }}>
-                      Genellikle 1–2 dakika sürer{elapsed > 0 ? ` · ${elapsed} sn` : ""}. Bu sayfadan ayrılsanız da işlem devam eder.
+                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yavaş yanıt veriyor; en fazla birkaç dakika içinde sonuç ya da hata mesajı göreceksiniz." : "Genellikle 1–2 dakika sürer."}
+                      {elapsed > 0 ? ` · ${elapsed} sn` : ""} İşlem sunucuda arka planda sürer; bu sayfadan ayrılsanız da devam eder.
                     </p>
                   </div>
                 </div>
               )}
-              {!generating && retryScope && (
-                <div className="row" style={{ marginTop: 12 }}>
-                  <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working}>
-                    Tekrar dene
-                  </button>
+              {(genState === "failed" || genState === "timeout") && !generating && (
+                <div className="generation-error" role="alert">
+                  <strong>{genState === "timeout" ? "Yapay zekâ zamanında yanıt vermedi." : "Taslak oluşturulamadı."}</strong>
+                  <p style={{ margin: "4px 0 10px" }}>{genError}</p>
+                  {retryScope && (
+                    <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working}>
+                      Tekrar Dene
+                    </button>
+                  )}
                 </div>
               )}
             </>
@@ -363,7 +381,7 @@ export function ContentEditor({
                 <>
                   <div className="row" style={{ justifyContent: "space-between" }}>
                     <span><strong>{i + 1}.</strong> <span className="badge">{QUESTION_TYPE_LABELS[q.type as QuestionType] ?? q.type}</span> <span className="muted">{q.points} puan · {q.generatedBy === "AI" ? "YZ" : "Öğretmen"}</span></span>
-                    {isDraft && (
+                    {!questionsLocked && (
                       <span className="row">
                         <button type="button" onClick={() => setEditing(q.id)} disabled={working}>Düzenle</button>
                         <button type="button" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}`, "DELETE", undefined, "Soru silinsin mi?")} disabled={working}>Sil</button>
@@ -379,7 +397,10 @@ export function ContentEditor({
             </li>
           ))}
         </ol>
-        {isDraft &&
+        {questionsLocked && (
+          <p className="notice-inline" role="note">🔒 Öğrenciler bu görevin sorularını çözmeye başladığı için sorular kilitlendi. Verilen cevapların anlamını korumak için soru eklenemez, silinemez ve düzenlenemez. Hazırlık içeriğini, son teslim tarihini ve deneme hakkını değiştirebilirsiniz.</p>
+        )}
+        {!questionsLocked &&
           (editing === "new" ? (
             <QuestionForm outcomes={outcomes} submitLabel="Soruyu Ekle" onSubmit={(p) => submitQuestion(p)} onCancel={() => setEditing(null)} />
           ) : (

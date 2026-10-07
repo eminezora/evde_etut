@@ -21,3 +21,45 @@ export const ATTEMPT_STATUS_LABELS: Record<string, string> = {
   COMPLETED: "Tamamlandı",
   EXPIRED: "Süresi Geçti",
 };
+
+/** The correct / expected answer of a question, for the teacher's answer sheet. */
+export function describeCorrectAnswer(type: string, data: unknown): { label: string; text: string } {
+  const d = (data ?? {}) as Record<string, unknown>;
+  switch (type) {
+    case "MULTIPLE_CHOICE":
+    case "CONTEXT_BASED":
+      return { label: "Doğru cevap", text: String(d.correctAnswer ?? "—") };
+    case "TRUE_FALSE":
+      return { label: "Doğru cevap", text: d.correctAnswer ? "Doğru" : "Yanlış" };
+    case "FILL_IN_THE_BLANK": {
+      const extra = (d.acceptableAnswers as string[] | undefined)?.filter(Boolean) ?? [];
+      return { label: "Doğru cevap", text: [String(d.correctAnswer ?? "—"), ...extra].join(" / ") };
+    }
+    case "MATCHING":
+      return { label: "Doğru eşleştirme", text: ((d.pairs as { left: string; right: string }[]) ?? []).map((p) => `${p.left} → ${p.right}`).join("; ") || "—" };
+    case "ORDERING":
+      return { label: "Doğru sıralama", text: ((d.correctOrder as number[]) ?? []).map((i) => (d.items as string[])[i]).join(" → ") || "—" };
+    default:
+      return { label: "Örnek / beklenen cevap", text: String(d.sampleAnswer ?? "—") };
+  }
+}
+
+export type AnswerState = "CORRECT" | "INCORRECT" | "PARTIAL" | "PENDING" | "UNANSWERED" | "REVIEWED";
+
+export function answerState(a: { reviewStatus: string; isCorrect: boolean | null; awardedPoints: number | null }, maxPoints: number): AnswerState {
+  if (a.reviewStatus === "PENDING_REVIEW") return "PENDING";
+  if (a.reviewStatus === "UNANSWERED") return "UNANSWERED";
+  const pts = a.awardedPoints ?? 0;
+  if (a.isCorrect === true || (maxPoints > 0 && pts >= maxPoints)) return "CORRECT";
+  if (pts > 0) return "PARTIAL";
+  return "INCORRECT";
+}
+
+export const ANSWER_STATE_LABELS: Record<AnswerState, string> = {
+  CORRECT: "Doğru",
+  INCORRECT: "Yanlış",
+  PARTIAL: "Kısmen doğru",
+  PENDING: "Değerlendirme bekliyor",
+  UNANSWERED: "Boş bırakıldı",
+  REVIEWED: "Öğretmen puanladı",
+};
