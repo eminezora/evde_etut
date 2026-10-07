@@ -75,17 +75,33 @@ const generateSchema = z.object({
   confirmOverwrite: z.boolean().default(false),
 });
 
-const LOCK_WINDOW_MS = 3 * 60_000;
-
 export interface GenerateDeps {
   db?: PrismaClient;
   provider?: ContentGenerationProvider | null;
   timeoutMs?: number;
 }
 
-export async function generateStudyContent(teacherId: string, assignmentId: string, rawInput: unknown, deps: GenerateDeps = {}) {
+/**
+ * A RUNNING log older than the AI timeout plus this margin belongs to a run that never finished
+ * (e.g. the serverless function was stopped). It no longer blocks a retry and is reported as failed.
+ */
+const STALE_MARGIN_MS = 45_000;
+const staleAfterMs = (timeoutMs: number) => timeoutMs + STALE_MARGIN_MS;
+
+export const AI_TIMEOUT_USER_MESSAGE = "Yapay zekâ yanıtı zamanında gelmedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.";
+export const AI_INVALID_USER_MESSAGE = "Yapay zekâ geçerli bir taslak üretemedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.";
+
+type GenerationOutcome = ContentResult<{ scope: string; questions: number | null }>;
+
+/**
+ * Phase 1 (fast, inside the request): validate, check ownership and take the per-assignment lock.
+ * Returns the job id and `run`, phase 2, which calls the AI provider and saves the draft. `run`
+ * never throws: every exit path closes the generation log, so a job can't stay RUNNING.
+ */
+export async function startStudyContentGeneration(teacherId: string, assignmentId: string, rawInput: unknown, deps: GenerateDeps = {}) {
   const db = deps.db ?? defaultPrisma;
   const provider = deps.provider === undefined ? getContentProvider() : deps.provider;
+  const timeoutMs = deps.timeoutMs ?? aiTimeoutMs();
   const parsed = generateSchema.safeParse(rawInput ?? {});
   if (!parsed.success) return zodFail(parsed.error);
   const { scope, confirmOverwrite } = parsed.data;
@@ -107,10 +123,10 @@ export async function generateStudyContent(teacherId: string, assignmentId: stri
   const questionCount = parsed.data.questionCount ?? a.questionCount;
   if (questionCount !== a.questionCount) await db.assignment.update({ where: { id: a.id }, data: { questionCount } });
 
-  // Server-side double-click guard: one RUNNING generation per assignment.
+  // Server-side double-click guard: one live RUNNING generation per assignment.
   const lock = await db.$transaction(async (tx) => {
     const running = await tx.contentGenerationLog.findFirst({
-      where: { assignmentId: a.id, status: "RUNNING", startedAt: { gt: new Date(Date.now() - LOCK_WINDOW_MS) } },
+      where: { assignmentId: a.id, status: "RUNNING", startedAt: { gt: new Date(Date.now() - staleAfterMs(timeoutMs)) } },
     });
     if (running) return null;
     return tx.contentGenerationLog.create({ data: { assignmentId: a.id, teacherId, scope, provider: provider.name, model: provider.model, status: "RUNNING" } });
@@ -120,64 +136,113 @@ export async function generateStudyContent(teacherId: string, assignmentId: stri
   const finish = (status: string, extra: Prisma.ContentGenerationLogUpdateInput = {}) =>
     db.contentGenerationLog.update({ where: { id: lock.id }, data: { status, finishedAt: new Date(), ...extra } });
 
-  let result;
-  try {
-    result = await provider.generatePreparationContent(
-      {
-        scope,
-        subject: a.subject,
-        grade: a.grade,
-        unitOrTheme: a.unitOrTheme,
-        teacherTopic: a.topic,
-        questionCount,
-        outcomes: a.assignmentOutcomes.map(({ outcome }) => ({
-          code: outcome.outcomeCode,
-          text: outcome.outcomeText,
-          processComponents: Array.isArray(outcome.processComponents) ? (outcome.processComponents as string[]) : [],
-        })),
-      },
-      { signal: AbortSignal.timeout(deps.timeoutMs ?? aiTimeoutMs()) },
-    );
-  } catch (error) {
-    const kind = error instanceof ProviderError ? error.kind : "FAILED";
-    const status = kind === "TIMEOUT" ? "TIMEOUT" : kind === "REFUSED" ? "REFUSED" : kind === "INCOMPLETE" ? "INVALID_RESPONSE" : "FAILED";
-    await finish(status, { errorMessage: error instanceof ProviderError ? error.message : "Beklenmeyen sağlayıcı hatası." });
-    return fail(kind === "TIMEOUT" ? 504 : 502, status, AI_FAILED_MESSAGE);
+  async function run(): Promise<GenerationOutcome> {
+    let result;
+    try {
+      result = await provider!.generatePreparationContent(
+        {
+          scope,
+          subject: a.subject,
+          grade: a.grade,
+          unitOrTheme: a.unitOrTheme,
+          teacherTopic: a.topic,
+          questionCount,
+          outcomes: a.assignmentOutcomes.map(({ outcome }) => ({
+            code: outcome.outcomeCode,
+            text: outcome.outcomeText,
+            processComponents: Array.isArray(outcome.processComponents) ? (outcome.processComponents as string[]) : [],
+          })),
+        },
+        { signal: AbortSignal.timeout(timeoutMs) },
+      );
+    } catch (error) {
+      const kind = error instanceof ProviderError ? error.kind : "FAILED";
+      const status = kind === "TIMEOUT" ? "TIMEOUT" : kind === "REFUSED" ? "REFUSED" : kind === "INCOMPLETE" ? "INVALID_RESPONSE" : "FAILED";
+      await finish(status, { errorMessage: error instanceof ProviderError ? error.message : "Beklenmeyen sağlayıcı hatası." }).catch(() => undefined);
+      return fail(kind === "TIMEOUT" ? 504 : 502, status, AI_FAILED_MESSAGE);
+    }
+
+    try {
+      const outcomeCodes = a.assignmentOutcomes.map((ao) => ao.outcome.outcomeCode);
+      const checked = parseGeneratedContent(scope, result.raw, { questionCount, allowedOutcomeCodes: outcomeCodes });
+      if (!checked.ok) {
+        // Log schema paths only – never the raw model output.
+        await finish("INVALID_RESPONSE", { errorMessage: checked.issues.slice(0, 20).join(" | ").slice(0, 2000) });
+        return fail(502, "INVALID_RESPONSE", AI_FAILED_MESSAGE);
+      }
+      const { content, questions } = checked.value;
+
+      await db.$transaction(async (tx) => {
+        if (content) {
+          const data = {
+            ...content,
+            status: "AI_GENERATED_DRAFT",
+            generatedBy: "AI",
+            aiModel: provider!.model,
+            teacherEditedAt: null,
+            teacherApprovedAt: null,
+          };
+          await tx.studyContent.upsert({ where: { assignmentId: a.id }, create: { assignmentId: a.id, ...data }, update: data });
+        } else if (a.studyContent?.status === "TEACHER_APPROVED") {
+          await tx.studyContent.update({ where: { assignmentId: a.id }, data: { status: "AI_GENERATED_DRAFT", teacherApprovedAt: null } });
+        }
+        if (questions) {
+          await tx.question.deleteMany({ where: { assignmentId: a.id } });
+          await writeQuestions(tx, a.id, questions, (q) => resolveOutcomeIds(a, q.curriculumOutcomeCodes).ids, "AI");
+        }
+      }, {
+        maxWait: 10000,
+        timeout: 20000,
+      });
+      await finish("SUCCEEDED", { generatedAt: new Date(), inputTokens: result.inputTokens, outputTokens: result.outputTokens });
+      return { ok: true, data: { scope, questions: questions?.length ?? null } } as const;
+    } catch {
+      await finish("FAILED", { errorMessage: "Taslak kaydedilemedi." }).catch(() => undefined);
+      return fail(502, "FAILED", AI_FAILED_MESSAGE);
+    }
   }
 
-  const outcomeCodes = a.assignmentOutcomes.map((ao) => ao.outcome.outcomeCode);
-  const checked = parseGeneratedContent(scope, result.raw, { questionCount, allowedOutcomeCodes: outcomeCodes });
-  if (!checked.ok) {
-    // Log schema paths only – never the raw model output.
-    await finish("INVALID_RESPONSE", { errorMessage: checked.issues.slice(0, 20).join(" | ").slice(0, 2000) });
-    return fail(502, "INVALID_RESPONSE", AI_FAILED_MESSAGE);
-  }
-  const { content, questions } = checked.value;
+  return { ok: true, data: { jobId: lock.id, scope, run } } as const;
+}
 
-  await db.$transaction(async (tx) => {
-    if (content) {
-      const data = {
-        ...content,
-        status: "AI_GENERATED_DRAFT",
-        generatedBy: "AI",
-        aiModel: provider.model,
-        teacherEditedAt: null,
-        teacherApprovedAt: null,
-      };
-      await tx.studyContent.upsert({ where: { assignmentId: a.id }, create: { assignmentId: a.id, ...data }, update: data });
-    } else if (a.studyContent?.status === "TEACHER_APPROVED") {
-      await tx.studyContent.update({ where: { assignmentId: a.id }, data: { status: "AI_GENERATED_DRAFT", teacherApprovedAt: null } });
-    }
-    if (questions) {
-      await tx.question.deleteMany({ where: { assignmentId: a.id } });
-      await writeQuestions(tx, a.id, questions, (q) => resolveOutcomeIds(a, q.curriculumOutcomeCodes).ids, "AI");
-    }
-  }, {
-    maxWait: 10000,
-    timeout: 20000,
-  });
-  await finish("SUCCEEDED", { generatedAt: new Date(), inputTokens: result.inputTokens, outputTokens: result.outputTokens });
-  return { ok: true, data: { scope, questions: questions?.length ?? null } } as const;
+/** Generate and wait for the result (used by tests and scripts; the route runs phase 2 in the background). */
+export async function generateStudyContent(teacherId: string, assignmentId: string, rawInput: unknown, deps: GenerateDeps = {}): Promise<GenerationOutcome> {
+  const started = await startStudyContentGeneration(teacherId, assignmentId, rawInput, deps);
+  if (!started.ok) return started;
+  return started.data.run();
+}
+
+export type GenerationStatus =
+  | { state: "NONE" }
+  | { state: "RUNNING"; jobId: string; scope: string; startedAt: string }
+  | { state: "SUCCEEDED"; jobId: string; scope: string; finishedAt: string | null }
+  | { state: "FAILED"; jobId: string; scope: string; finishedAt: string | null; message: string };
+
+const failureMessage = (status: string) =>
+  status === "TIMEOUT" ? AI_TIMEOUT_USER_MESSAGE : status === "INVALID_RESPONSE" ? AI_INVALID_USER_MESSAGE : AI_FAILED_MESSAGE;
+
+/** Latest generation job of an assignment the teacher owns. A RUNNING job past its deadline is closed as TIMEOUT. */
+export async function getGenerationStatus(
+  teacherId: string,
+  assignmentId: string,
+  { db = defaultPrisma, timeoutMs = aiTimeoutMs(), now = new Date() }: { db?: PrismaClient; timeoutMs?: number; now?: Date } = {},
+): Promise<ContentResult<GenerationStatus>> {
+  const a = await db.assignment.findUnique({ where: { id: assignmentId }, select: { teacherId: true } });
+  if (!a) return fail(404, "NOT_FOUND", "Görev bulunamadı.");
+  if (a.teacherId !== teacherId) return fail(403, "FORBIDDEN", "Bu görev size ait değil.");
+  let log = await db.contentGenerationLog.findFirst({ where: { assignmentId }, orderBy: { startedAt: "desc" } });
+  if (!log) return { ok: true, data: { state: "NONE" } };
+  if (log.status === "RUNNING" && log.startedAt.getTime() < now.getTime() - staleAfterMs(timeoutMs)) {
+    log = await db.contentGenerationLog.update({
+      where: { id: log.id },
+      data: { status: "TIMEOUT", finishedAt: now, errorMessage: "İşlem süresi içinde tamamlanmadı (sunucu işlemi durdu)." },
+    });
+  }
+  const base = { jobId: log.id, scope: log.scope };
+  if (log.status === "RUNNING") return { ok: true, data: { state: "RUNNING", ...base, startedAt: log.startedAt.toISOString() } };
+  const finishedAt = log.finishedAt?.toISOString() ?? null;
+  if (log.status === "SUCCEEDED") return { ok: true, data: { state: "SUCCEEDED", ...base, finishedAt } };
+  return { ok: true, data: { state: "FAILED", ...base, finishedAt, message: failureMessage(log.status) } };
 }
 
 // ---------------------------------------------------------------------------------------------

@@ -1,9 +1,10 @@
 :root {
-  --bg: #f8fafc;
+  color-scheme: light;
+  --bg: #f6f8fb;
   --surface: #ffffff;
   --surface-hover: #fbfcfe;
   --surface-subtle: #f1f5f9;
-  --text: #0f172a;
+  --text: #1e293b;
   --muted: #64748b;
   --border: #e2e8f0;
   --border-focus: #3b82f6;
@@ -14,8 +15,8 @@
   --accent-text: #ffffff;
   --accent-light: #eff6ff;
   --accent-border: #bfdbfe;
-  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
 
   --danger: #dc2626;
   --danger-bg: #fef2f2;
@@ -47,53 +48,6 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.04);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.09), 0 8px 10px -6px rgb(0 0 0 / 0.05);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #090d16;
-    --surface: #111827;
-    --surface-hover: #162035;
-    --surface-subtle: #1f293d;
-    --text: #f1f5f9;
-    --muted: #94a3b8;
-    --border: #1e293b;
-    --border-focus: #60a5fa;
-
-    --accent: #3b82f6;
-    --accent-hover: #60a5fa;
-    --accent-active: #93c5fd;
-    --accent-text: #ffffff;
-    --accent-light: #172554;
-    --accent-border: #1e3a8a;
-    --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
-    --accent-gradient-hover: linear-gradient(135deg, #60a5fa 0%, #818cf8 100%);
-
-    --danger: #ef4444;
-    --danger-bg: #450a0a;
-    --danger-border: #7f1d1d;
-    --danger-text: #fecaca;
-
-    --ok: #10b981;
-    --ok-bg: #064e3b;
-    --ok-border: #047857;
-    --ok-text: #a7f3d0;
-
-    --warn: #f59e0b;
-    --warn-bg: #451a03;
-    --warn-border: #78350f;
-    --warn-text: #fde68a;
-
-    --info-bg: #1e293b;
-    --info-border: #334155;
-    --info-text: #93c5fd;
-
-    --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.2);
-    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.2);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.35), 0 2px 4px -2px rgb(0 0 0 / 0.25);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
-  }
 }
 
 * { box-sizing: border-box; }
@@ -142,11 +96,6 @@ header.top {
   border-bottom: 1px solid var(--border);
   box-shadow: var(--shadow-xs);
   flex-wrap: wrap;
-}
-@media (prefers-color-scheme: dark) {
-  header.top {
-    background: rgba(17, 24, 39, 0.9);
-  }
 }
 
 .brand-badge {
@@ -275,6 +224,7 @@ input[type="email"],
 input[type="password"],
 input[type="number"],
 input[type="datetime-local"],
+input[type="date"],
 select,
 textarea {
   width: 100%;
@@ -658,7 +608,7 @@ dl.details dd {
 .concepts dt {
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 4px;
+  margin: 0 0 4px;
 }
 .concepts dd {
   margin: 0;
@@ -1106,4 +1056,89 @@ dl.details dd {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Deadline picker: calendar day + hour + minute (Türkiye time) */
+fieldset.deadline-picker {
+  grid-column: 1 / -1;
+  max-width: 560px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+fieldset.deadline-picker legend {
+  padding: 0;
+  margin: 14px 0 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+.deadline-row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.deadline-row .sub-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+.deadline-row input[type="date"] {
+  cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.75;
+}
+@media (max-width: 480px) {
+  .deadline-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  .deadline-row > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* AI generation progress */
+.generating {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--info-border);
+  border-radius: var(--radius-md);
+  background: var(--info-bg);
+  color: var(--info-text);
+}
+.spinner {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  border: 2.5px solid var(--accent-border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation-duration: 2.5s; }
+}
+
+/* Result notices (editor, forms) */
+.card.notice-error {
+  border-color: var(--danger-border);
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+.card.notice-ok {
+  border-color: var(--ok-border);
+  background: var(--ok-bg);
+  color: var(--ok-text);
 }

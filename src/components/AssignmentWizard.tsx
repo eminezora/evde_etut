@@ -8,6 +8,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { createAssignmentSchema, fieldErrors } from "@/lib/assignments/assignment-schema.ts";
+import { turkeyDeadlineToIso, turkeyToday } from "@/lib/assignments/deadline.ts";
 
 interface Classroom {
   id: string;
@@ -24,6 +25,9 @@ interface Outcome {
   outcomeText: string;
   sourceUrl: string;
 }
+
+const HOURS = Array.from({ length: 24 }, (_, i) => String(i).padStart(2, "0"));
+const MINUTES = ["00", "05", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55"];
 
 const STEPS = ["Sınıf", "Ders", "Tema / Ünite", "Öğrenme Çıktısı", "Detaylar"];
 
@@ -43,7 +47,9 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
   const [selected, setSelected] = useState<Map<string, Outcome>>(new Map());
   const [topic, setTopic] = useState("");
   const [minimumScore, setMinimumScore] = useState("70");
-  const [deadline, setDeadline] = useState("");
+  const [deadlineDate, setDeadlineDate] = useState("");
+  const [deadlineHour, setDeadlineHour] = useState("17");
+  const [deadlineMinute, setDeadlineMinute] = useState("00");
   const [questionCount, setQuestionCount] = useState("7");
 
   const [subjects, setSubjects] = useState<string[] | null>(null);
@@ -132,7 +138,7 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
       topic,
       outcomeIds: [...selected.keys()],
       minimumScore,
-      deadline: deadline ? new Date(deadline).toISOString() : "",
+      deadline: turkeyDeadlineToIso(deadlineDate, deadlineHour, deadlineMinute),
       questionCount,
       status: "DRAFT" as const,
     };
@@ -398,18 +404,49 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
               {errorList("questionCount")}
             </div>
 
-            <div>
-              <label htmlFor="deadline">Son Teslim Tarihi</label>
-              <input
-                id="deadline"
-                type="datetime-local"
-                value={deadline}
-                onChange={(e) => setDeadline(e.target.value)}
-                required
-              />
-              <span className="muted" style={{ fontSize: "0.82rem" }}>Öğrencilerin derse gelmeden önceki son saati.</span>
+            <fieldset className="deadline-picker">
+              <legend>Son Teslim Tarihi</legend>
+              <div className="deadline-row">
+                <div>
+                  <label htmlFor="deadline" className="sub-label">Gün</label>
+                  <input
+                    id="deadline"
+                    type="date"
+                    min={turkeyToday()}
+                    value={deadlineDate}
+                    onChange={(e) => setDeadlineDate(e.target.value)}
+                    onClick={(e) => {
+                      try {
+                        e.currentTarget.showPicker?.();
+                      } catch {
+                        /* picker not available: the input still accepts typing */
+                      }
+                    }}
+                    required
+                  />
+                </div>
+                <div>
+                  <label htmlFor="deadline-hour" className="sub-label">Saat</label>
+                  <select id="deadline-hour" value={deadlineHour} onChange={(e) => setDeadlineHour(e.target.value)}>
+                    {HOURS.map((h) => (
+                      <option key={h} value={h}>{h}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
+                  <label htmlFor="deadline-minute" className="sub-label">Dakika</label>
+                  <select id="deadline-minute" value={deadlineMinute} onChange={(e) => setDeadlineMinute(e.target.value)}>
+                    {MINUTES.map((m) => (
+                      <option key={m} value={m}>{m}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+              <span className="muted" style={{ fontSize: "0.82rem" }}>
+                Türkiye saati. Öğrencilerin derse gelmeden önceki son saati.
+              </span>
               {errorList("deadline")}
-            </div>
+            </fieldset>
           </div>
 
           {errorList("outcomeIds")}

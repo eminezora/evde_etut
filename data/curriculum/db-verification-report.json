@@ -1,0 +1,142 @@
+{
+  "generatedAt": "2026-10-07T18:15:41.817Z",
+  "perGrade": {
+    "5": {
+      "outcomes": 333,
+      "selectable": 302,
+      "subjects": {
+        "İngilizce": {
+          "outcomes": 184,
+          "selectable": 160,
+          "units": 8
+        },
+        "Fen Bilimleri": {
+          "outcomes": 27,
+          "selectable": 27,
+          "units": 7
+        },
+        "Matematik": {
+          "outcomes": 23,
+          "selectable": 23,
+          "units": 7
+        },
+        "Türkçe": {
+          "outcomes": 80,
+          "selectable": 73,
+          "units": 6
+        },
+        "Sosyal Bilgiler": {
+          "outcomes": 19,
+          "selectable": 19,
+          "units": 6
+        }
+      }
+    },
+    "6": {
+      "outcomes": 362,
+      "selectable": 361,
+      "subjects": {
+        "Türkçe": {
+          "outcomes": 100,
+          "selectable": 100,
+          "units": 6
+        },
+        "Matematik": {
+          "outcomes": 24,
+          "selectable": 23,
+          "units": 7
+        },
+        "Fen Bilimleri": {
+          "outcomes": 36,
+          "selectable": 36,
+          "units": 7
+        },
+        "İngilizce": {
+          "outcomes": 184,
+          "selectable": 184,
+          "units": 8
+        },
+        "Sosyal Bilgiler": {
+          "outcomes": 18,
+          "selectable": 18,
+          "units": 6
+        }
+      }
+    },
+    "7": {
+      "outcomes": 375,
+      "selectable": 374,
+      "subjects": {
+        "Türkçe": {
+          "outcomes": 102,
+          "selectable": 101,
+          "units": 6
+        },
+        "Matematik": {
+          "outcomes": 30,
+          "selectable": 30,
+          "units": 9
+        },
+        "Fen Bilimleri": {
+          "outcomes": 35,
+          "selectable": 35,
+          "units": 7
+        },
+        "İngilizce": {
+          "outcomes": 191,
+          "selectable": 191,
+          "units": 8
+        },
+        "Sosyal Bilgiler": {
+          "outcomes": 17,
+          "selectable": 17,
+          "units": 6
+        }
+      }
+    },
+    "8": {
+      "outcomes": 362,
+      "selectable": 352,
+      "subjects": {
+        "Türkçe": {
+          "outcomes": 89,
+          "selectable": 80,
+          "units": 6
+        },
+        "Matematik": {
+          "outcomes": 23,
+          "selectable": 23,
+          "units": 7
+        },
+        "Fen Bilimleri": {
+          "outcomes": 43,
+          "selectable": 43,
+          "units": 7
+        },
+        "İngilizce": {
+          "outcomes": 192,
+          "selectable": 192,
+          "units": 8
+        },
+        "T.C. İnkılap Tarihi ve Atatürkçülük": {
+          "outcomes": 15,
+          "selectable": 14,
+          "units": 4
+        }
+      }
+    }
+  },
+  "totals": {
+    "dbOutcomes": 1432,
+    "datasetOutcomes": 1432,
+    "duplicatesInDb": 0,
+    "withoutSourceUrl": 0,
+    "notInDataset": 0,
+    "missingInDb": 0,
+    "misplacedUnitLinks": 0,
+    "unparseableDatasetRecords": 0
+  },
+  "missingInDb": [],
+  "misplacedUnitLinks": [],
+  "unparseableDatasetRecords": []
+}

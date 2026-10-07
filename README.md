@@ -28,6 +28,7 @@ npm run dev
 | `npm run db:deploy` | Commit edilmiş migration'ları uygular (`prisma migrate deploy`) |
 | `npm run db:migrate` | Yalnızca yerel: yeni SQLite migration'ı oluşturur |
 | `npm run curriculum` | Müfredatı veritabanına aktarır (idempotent) |
+| `npm run curriculum:report` | Veritabanındaki müfredatı veri setiyle karşılaştırır (salt okunur; sınıf/ders sayıları, duplicate, eksik, URL'siz kayıt) |
 | `npm run demo` | Demo sınıf, hesaplar ve görevler – yalnızca sunum içindir |
 | `npm run test:evren` | Gerçek EVREN API ile canlı içerik üretim testi |
 | `npm run curriculum:fetch` / `curriculum:validate` | MEB veri setini yeniden üretir / doğrular (geliştirici aracı) |
@@ -100,7 +101,7 @@ git push -u origin main
 | `AI_API_KEY` | `anthropic` için | Anthropic API anahtarı |
 | `AI_MODEL` | Hayır | Yalnızca `anthropic`; varsayılan `claude-opus-5-5` |
 | `EVREN_LLM_REASONING_EFFORT` | Hayır | `none`/`low`/`medium`/`high`/`off`; varsayılan `low` (glm-5.3 aksi hâlde dakikalarca "düşünür") |
-| `AI_TIMEOUT_MS` | Hayır | Varsayılan 150000 |
+| `AI_TIMEOUT_MS` | Hayır | Varsayılan 240000 (route `maxDuration` 300 sn'den küçük olmalı) |
 
 `DEMO_PASSWORD` production'da gerekmez. `NEXT_PUBLIC_*` değişkeni yoktur; hiçbir secret istemciye gönderilmez.
 
@@ -130,12 +131,15 @@ DATABASE_URL="<direct-postgres-url>" npm run db:deploy      # = prisma migrate d
 ### 6. Curriculum seed
 
 ```bash
-DATABASE_URL="<direct-postgres-url>" npm run curriculum
+DATABASE_URL="<direct-postgres-url>" npm run curriculum:report   # salt okunur: eksik/duplicate kontrolü
+DATABASE_URL="<direct-postgres-url>" npm run curriculum          # eksikleri ekler, mevcutları günceller
+DATABASE_URL="<direct-postgres-url>" npm run curriculum:report   # sonucu doğrular (eksik 0 olmalı)
 ```
 
 - İdempotenttir: tekrar çalıştırmak kopya oluşturmaz, mevcut kayıtları günceller (`subject + grade + outcomeCode`).
 - `VERIFIED` / `REVIEW_REQUIRED` durumları korunur; REVIEW_REQUIRED kayıtlar öğretmen seçiminde görünmez.
-- Uzak veritabanında 1–2 dakika sürebilir. Demo hesap **oluşturmaz**.
+- Uzak veritabanında 1–2 dakika sürebilir. Demo hesap **oluşturmaz**. Hiçbir kaydı silmez; veri setinde
+  artık olmayan çıktılar yalnızca `NOT_IN_DATASET` olarak işaretlenir.
 
 ### 7. Vercel project import
 
@@ -153,8 +157,9 @@ Environment variables'ı (2. adım) bu ekranda girin.
 Deploy'a basın. Sonraki her `git push` otomatik deploy edilir. Yeni migration içeren bir sürümü
 push'lamadan önce 5. adımı çalıştırın.
 
-> Yapay zekâ üretim endpoint'i en fazla 180 sn çalışabilir (`maxDuration`). Vercel'de Fluid compute
-> (yeni projelerde varsayılan) bunu destekler; Fluid compute kapalı bir Hobby projede süre sınırı 60 sn'dir.
+> Yapay zekâ taslağı arka planda üretilir: istek hemen 202 döner, editör durumu 3 sn'de bir sorgular.
+> Arka plan işi en fazla 300 sn çalışabilir (`maxDuration`). Vercel'de **Fluid compute** açık olmalıdır
+> (yeni projelerde varsayılan); kapalıysa Hobby planda süre sınırı 60 sn'dir ve taslak üretimi yarıda kalır.
 
 ### 9. Production test
 

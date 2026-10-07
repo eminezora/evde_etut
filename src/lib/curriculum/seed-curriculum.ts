@@ -21,6 +21,9 @@ export interface SeedStats {
 
 const keyOf = (subject: string, grade: number, code: string) => `${subject}|${grade}|${code}`;
 const CHUNK = 100;
+// Theme links are written in small batches: one large batch can exceed a hosted database's
+// transaction time limit and stop the import half way (outcomes saved, themes missing).
+const LINK_CHUNK = 20;
 
 interface GroupedOutcome {
   primary: OutcomeRecord;
@@ -97,7 +100,11 @@ function outcomeData(g: GroupedOutcome) {
   } satisfies Prisma.CurriculumOutcomeCreateInput;
 }
 
-export async function seedCurriculum(prisma: PrismaClient, records: OutcomeRecord[]): Promise<SeedStats> {
+export async function seedCurriculum(
+  prisma: PrismaClient,
+  records: OutcomeRecord[],
+  onProgress?: (phase: "outcomes" | "units", done: number, total: number) => void,
+): Promise<SeedStats> {
   const { groups, skipped } = groupDataset(records);
   const existing = await prisma.curriculumOutcome.findMany({ select: { id: true, subject: true, grade: true, outcomeCode: true } });
   const existingKeys = new Set(existing.map((e) => keyOf(e.subject, e.grade, e.outcomeCode)));
@@ -118,13 +125,14 @@ export async function seedCurriculum(prisma: PrismaClient, records: OutcomeRecor
       }),
     );
     for (const row of rows) idByKey.set(keyOf(row.subject, row.grade, row.outcomeCode), row.id);
+    onProgress?.("outcomes", Math.min(i + CHUNK, entries.length), entries.length);
   }
 
   // Theme/unit links: upsert the current ones, drop links the dataset no longer has.
   let unitLinks = 0;
   let removedUnitLinks = 0;
-  for (let i = 0; i < entries.length; i += CHUNK) {
-    const chunk = entries.slice(i, i + CHUNK);
+  for (let i = 0; i < entries.length; i += LINK_CHUNK) {
+    const chunk = entries.slice(i, i + LINK_CHUNK);
     const ops: Prisma.PrismaPromise<unknown>[] = [];
     for (const [key, g] of chunk) {
       const outcomeId = idByKey.get(key)!;
@@ -143,6 +151,7 @@ export async function seedCurriculum(prisma: PrismaClient, records: OutcomeRecor
     }
     const results = await prisma.$transaction(ops);
     for (const res of results) if (res && typeof res === "object" && "count" in res) removedUnitLinks += (res as { count: number }).count;
+    onProgress?.("units", Math.min(i + LINK_CHUNK, entries.length), entries.length);
   }
 
   // Outcomes in the DB that are not in the dataset any more: hide them, never delete.

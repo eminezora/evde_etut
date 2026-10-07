@@ -1,6 +1,6 @@
 // Provider factory driven by environment variables (server-only; nothing here is NEXT_PUBLIC_):
 //   AI_PROVIDER = evren | anthropic | mock   (unset → AI generation disabled, manual flow still works)
-//   AI_TIMEOUT_MS = request timeout          (optional; default 150000)
+//   AI_TIMEOUT_MS = request timeout          (optional; default 240000)
 // evren (OpenAI-compatible EVREN LLM API):
 //   EVREN_LLM_BASE_URL = API base URL incl. /v1 (required)
 //   EVREN_LLM_API_KEY  = API key (required; AI_API_KEY is accepted as a fallback)
@@ -21,7 +21,7 @@ export const AI_FAILED_MESSAGE = "İçerik oluşturulamadı. Tekrar deneyebilir 
 
 export function aiTimeoutMs(env: NodeJS.ProcessEnv = process.env) {
   const v = Number(env.AI_TIMEOUT_MS);
-  return Number.isFinite(v) && v >= 5_000 ? v : 150_000;
+  return Number.isFinite(v) && v >= 5_000 ? v : 240_000;
 }
 
 export function getContentProvider(env: NodeJS.ProcessEnv = process.env): ContentGenerationProvider | null {

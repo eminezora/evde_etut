@@ -11,7 +11,10 @@ const dataset: { outcomes: OutcomeRecord[] } = JSON.parse(await readFile(file, "
 const prisma = new PrismaClient();
 try {
   const started = Date.now();
-  const stats = await seedCurriculum(prisma, dataset.outcomes);
+  const stats = await seedCurriculum(prisma, dataset.outcomes, (phase, done, total) => {
+    process.stderr.write(`\r${phase === "outcomes" ? "Çıktılar" : "Tema bağlantıları"}: ${done}/${total}   `);
+    if (done === total) process.stderr.write("\n");
+  });
   const total = await prisma.curriculumOutcome.count();
   const review = await prisma.curriculumOutcome.count({ where: { reviewStatus: "REVIEW_REQUIRED" } });
   console.log(JSON.stringify({ ...stats, dbTotal: total, dbReviewRequired: review, ms: Date.now() - started }, null, 2));

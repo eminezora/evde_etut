@@ -4,7 +4,7 @@
 // "Onayla ve Yayınla". All rules are enforced again on the server.
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { QUESTION_TYPE_LABELS, type QuestionType } from "@/lib/content/question-schema.ts";
 import { QuestionForm, stateFromQuestion, type OutcomeOption } from "./QuestionForm.tsx";
 
@@ -42,6 +42,16 @@ async function send(url: string, method: string, body?: unknown) {
   const json = await res.json().catch(() => null);
   return { ok: res.ok, status: res.status, json };
 }
+
+type Scope = "ALL" | "SUMMARY" | "QUESTIONS";
+type JobState = { state: "NONE" } | { state: "RUNNING"; jobId: string; scope: Scope } | { state: "SUCCEEDED"; jobId: string } | { state: "FAILED"; jobId: string; message: string };
+
+const POLL_MS = 3000;
+// The server closes a job after AI_TIMEOUT_MS + 45 s at most; this client cap is only a last resort.
+const CLIENT_MAX_WAIT_MS = 6 * 60_000;
+const DONE_KEY = (id: string) => `content-generated:${id}`;
+const GENERATED_TEXT = "Taslak oluşturuldu. Yayınlamadan önce inceleyip düzenleyin.";
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 export function ContentEditor({
   assignmentId,
@@ -95,7 +105,94 @@ export function ContentEditor({
     }
   }
 
-  async function generate(scope: "ALL" | "SUMMARY" | "QUESTIONS") {
+  const [elapsed, setElapsed] = useState(0);
+  const [retryScope, setRetryScope] = useState<Scope | null>(null);
+  const alive = useRef(true);
+
+  /** Poll the job until it finishes; the editor then reloads with the saved draft. */
+  const followJob = useCallback(
+    async (jobId: string, scope: Scope, startedAt = Date.now()) => {
+      setBusy(`gen-${scope}`);
+      setRetryScope(null);
+      let networkErrors = 0;
+      while (alive.current) {
+        setElapsed(Math.round((Date.now() - startedAt) / 1000));
+        if (Date.now() - startedAt > CLIENT_MAX_WAIT_MS) {
+          setBusy(null);
+          setRetryScope(scope);
+          setMessage({ kind: "error", lines: ["Yapay zekâdan yanıt alınamadı. Lütfen tekrar deneyin veya içeriği manuel hazırlayın."] });
+          return;
+        }
+        await sleep(POLL_MS);
+        if (!alive.current) return;
+        let job: JobState | null = null;
+        try {
+          const res = await fetch(`/api/assignments/${assignmentId}/content/generate`, { cache: "no-store" });
+          const json = await res.json().catch(() => null);
+          if (res.ok && json?.data) job = json.data as JobState;
+        } catch {
+          job = null;
+        }
+        if (!job) {
+          // Brief network hiccups are tolerated; the job keeps running on the server.
+          if (++networkErrors >= 5) {
+            setBusy(null);
+            setRetryScope(scope);
+            setMessage({ kind: "error", lines: ["Sunucuya ulaşılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin."] });
+            return;
+          }
+          continue;
+        }
+        networkErrors = 0;
+        if (job.state === "RUNNING" && job.jobId === jobId) continue;
+        if (job.state === "SUCCEEDED") {
+          try {
+            sessionStorage.setItem(DONE_KEY(assignmentId), "1");
+          } catch {
+            /* storage unavailable: the badge on the reloaded content still shows the new draft */
+          }
+          setBusy(null);
+          setMessage({ kind: "ok", lines: [GENERATED_TEXT] });
+          setDirty(false);
+          router.refresh();
+          return;
+        }
+        setBusy(null);
+        setRetryScope(scope);
+        setMessage({ kind: "error", lines: [job.state === "FAILED" ? job.message : "İçerik oluşturulamadı. Lütfen tekrar deneyin."] });
+        return;
+      }
+    },
+    [assignmentId, router],
+  );
+
+  // On mount: show the "draft ready" notice after the reload, or resume a job that is still running
+  // (e.g. the teacher refreshed the page while the draft was being prepared).
+  useEffect(() => {
+    alive.current = true;
+    let justGenerated = false;
+    try {
+      justGenerated = sessionStorage.getItem(DONE_KEY(assignmentId)) !== null;
+      sessionStorage.removeItem(DONE_KEY(assignmentId));
+    } catch {
+      /* storage unavailable */
+    }
+    if (justGenerated) void Promise.resolve().then(() => alive.current && setMessage({ kind: "ok", lines: [GENERATED_TEXT] }));
+    if (isDraft && aiConfigured) {
+      fetch(`/api/assignments/${assignmentId}/content/generate`, { cache: "no-store" })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((json) => {
+          const job = json?.data as (JobState & { startedAt?: string }) | undefined;
+          if (alive.current && job?.state === "RUNNING") void followJob(job.jobId, job.scope, job.startedAt ? Date.parse(job.startedAt) : Date.now());
+        })
+        .catch(() => undefined);
+    }
+    return () => {
+      alive.current = false;
+    };
+  }, [assignmentId, isDraft, aiConfigured, followJob]);
+
+  async function generate(scope: Scope) {
     const hasExisting = (scope !== "QUESTIONS" && content) || (scope !== "SUMMARY" && questions.length > 0);
     if (hasExisting) {
       const what = scope === "ALL" ? "Hazırlık içeriği ve tüm sorular" : scope === "SUMMARY" ? "Hazırlık içeriği (sorular hariç)" : "Tüm sorular";
@@ -103,14 +200,23 @@ export function ContentEditor({
       if (!window.confirm(`${what} yapay zekâ ile yeniden oluşturulacak ve mevcut düzenlemelerin yerini alacak. Devam edilsin mi?${extra}`)) return;
     }
     setBusy(`gen-${scope}`);
+    setElapsed(0);
+    setRetryScope(null);
     setMessage(null);
-    const { ok, json } = await send(`/api/assignments/${assignmentId}/content/generate`, "POST", { scope, questionCount, confirmOverwrite: Boolean(hasExisting) });
-    setBusy(null);
-    report(ok, json, "Taslak oluşturuldu. Yayınlamadan önce inceleyip düzenleyin.");
-    if (ok) {
-      setDirty(false);
-      router.refresh();
+    let started: { ok: boolean; json: { data?: { jobId?: string }; error?: string; errors?: Record<string, string[]> } | null };
+    try {
+      started = await send(`/api/assignments/${assignmentId}/content/generate`, "POST", { scope, questionCount, confirmOverwrite: Boolean(hasExisting) });
+    } catch {
+      started = { ok: false, json: { error: "Sunucuya ulaşılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin." } };
     }
+    const jobId = started.json?.data?.jobId;
+    if (!started.ok || !jobId) {
+      setBusy(null);
+      setRetryScope(scope);
+      report(false, started.json, "");
+      return;
+    }
+    await followJob(jobId, scope);
   }
 
   async function questionAction(url: string, method: string, body?: unknown, confirmText?: string) {
@@ -175,7 +281,24 @@ export function ContentEditor({
                   </>
                 )}
               </div>
-              {generating && <p className="muted" role="status">İçerik oluşturuluyor; bu işlem bir dakika kadar sürebilir.</p>}
+              {generating && (
+                <div className="generating" role="status" aria-live="polite">
+                  <span className="spinner" aria-hidden="true" />
+                  <div>
+                    <strong>İçerik hazırlanıyor, bu işlem biraz sürebilir.</strong>
+                    <p className="muted" style={{ margin: "2px 0 0" }}>
+                      Genellikle 1–2 dakika sürer{elapsed > 0 ? ` · ${elapsed} sn` : ""}. Bu sayfadan ayrılsanız da işlem devam eder.
+                    </p>
+                  </div>
+                </div>
+              )}
+              {!generating && retryScope && (
+                <div className="row" style={{ marginTop: 12 }}>
+                  <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working}>
+                    Tekrar dene
+                  </button>
+                </div>
+              )}
             </>
           )}
         </div>

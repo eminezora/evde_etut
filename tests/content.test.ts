@@ -9,11 +9,13 @@ import {
   approveAndPublish,
   deleteQuestion,
   generateStudyContent,
+  getGenerationStatus,
   getStudentAssignment,
   listStudentAssignments,
   moveQuestion,
   publishAssignment,
   saveStudyContent,
+  startStudyContentGeneration,
   updateQuestion,
 } from "../src/lib/content/content-service.ts";
 import { db, ensureCurriculum, inDays, makeStudent, makeTeacher, verifiedOutcomesOfFirstUnit } from "./helpers.ts";
@@ -170,6 +172,69 @@ describe("AI generation", () => {
     const confirmed = await generateStudyContent(teacher.id, assignment.id, { scope: "SUMMARY", confirmOverwrite: true }, { db, provider: new MockContentProvider() });
     expect(confirmed.ok).toBe(true);
     expect(await db.question.count({ where: { assignmentId: assignment.id } })).toBe(0); // SUMMARY leaves questions alone
+  });
+});
+
+describe("background generation job", () => {
+  it("starts at once, reports RUNNING, then SUCCEEDED with the saved draft", async () => {
+    const { teacher, assignment } = await setup();
+    let release!: () => void;
+    const gate = new Promise<void>((r) => (release = r));
+    const mock = new MockContentProvider();
+    const slow: ContentGenerationProvider = {
+      name: "slow",
+      model: "slow-model",
+      async generatePreparationContent(input) {
+        await gate;
+        return mock.generatePreparationContent(input);
+      },
+    };
+    const started = await startStudyContentGeneration(teacher.id, assignment.id, { scope: "ALL" }, { db, provider: slow });
+    expect(started.ok).toBe(true);
+    if (!started.ok) return;
+    const running = await getGenerationStatus(teacher.id, assignment.id, { db });
+    expect(running.ok && running.data).toMatchObject({ state: "RUNNING", jobId: started.data.jobId, scope: "ALL" });
+
+    const job = started.data.run();
+    release();
+    expect((await job).ok).toBe(true);
+    const done = await getGenerationStatus(teacher.id, assignment.id, { db });
+    expect(done.ok && done.data.state).toBe("SUCCEEDED");
+    expect(await db.question.count({ where: { assignmentId: assignment.id } })).toBe(5);
+
+    // Another teacher can't read the job.
+    const { teacher: other } = await makeTeacher([{ name: "6/B", grade: 6 }]);
+    const foreign = await getGenerationStatus(other.id, assignment.id, { db });
+    expect(!foreign.ok && foreign.status).toBe(403);
+  });
+
+  it("reports failures with a Turkish message and closes a job whose run never finished", async () => {
+    const { teacher, assignment } = await setup();
+    const failing = stubProvider(() => {
+      throw new ProviderError("TIMEOUT", "timeout");
+    });
+    const res = await generateStudyContent(teacher.id, assignment.id, {}, { db, provider: failing });
+    expect(res.ok).toBe(false);
+    const failed = await getGenerationStatus(teacher.id, assignment.id, { db });
+    expect(failed.ok && failed.data).toMatchObject({ state: "FAILED", message: expect.stringMatching(/zamanında gelmedi/) });
+
+    // A RUNNING row left behind by a stopped function: reported as failed and no longer blocks a retry.
+    await db.contentGenerationLog.create({
+      data: { assignmentId: assignment.id, teacherId: teacher.id, scope: "ALL", provider: "evren", model: "m", status: "RUNNING", startedAt: new Date(Date.now() - 10 * 60_000) },
+    });
+    const stale = await getGenerationStatus(teacher.id, assignment.id, { db, timeoutMs: 150_000 });
+    expect(stale.ok && stale.data.state).toBe("FAILED");
+    const retry = await generateStudyContent(teacher.id, assignment.id, {}, { db, provider: new MockContentProvider(), timeoutMs: 150_000 });
+    expect(retry.ok).toBe(true);
+  });
+
+  it("closes the job as FAILED when saving the draft throws", async () => {
+    const { teacher, assignment } = await setup();
+    const started = await startStudyContentGeneration(teacher.id, assignment.id, {}, { db, provider: new MockContentProvider() });
+    if (!started.ok) throw new Error("not started");
+    await db.assignment.delete({ where: { id: assignment.id } }); // the draft can no longer be saved
+    const res = await started.data.run();
+    expect(res.ok).toBe(false);
   });
 });
 
