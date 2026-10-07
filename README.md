@@ -15,7 +15,7 @@ npm install
 cp .env.example .env          # AUTH_SECRET'i doldurun; DATABASE_URL="file:./dev.db" kalabilir
 npm run db:migrate            # SQLite dev veritabanını oluşturur (prisma/dev-sqlite/dev.db)
 npm run curriculum            # MEB müfredatını yükler (idempotent)
-npm run demo                  # isteğe bağlı: demo hesaplar (DEMO_PASSWORD gerekir)
+npm run demo                  # isteğe bağlı: demo sınıf ve hesaplar (DEMO_PASSWORD gerekir)
 npm run dev
 ```
 
@@ -28,8 +28,31 @@ npm run dev
 | `npm run db:deploy` | Commit edilmiş migration'ları uygular (`prisma migrate deploy`) |
 | `npm run db:migrate` | Yalnızca yerel: yeni SQLite migration'ı oluşturur |
 | `npm run curriculum` | Müfredatı veritabanına aktarır (idempotent) |
-| `npm run demo` | Demo hesaplar – yalnızca sunum içindir |
+| `npm run demo` | Demo sınıf, hesaplar ve görevler – yalnızca sunum içindir |
+| `npm run test:evren` | Gerçek EVREN API ile canlı içerik üretim testi |
 | `npm run curriculum:fetch` / `curriculum:validate` | MEB veri setini yeniden üretir / doğrular (geliştirici aracı) |
+
+### Demo hesapları (yalnızca geliştirme / sunum)
+
+`npm run demo` yerel veritabanında aşağıdaki demo verisini oluşturur (tekrar çalıştırınca demo sınıfını sıfırlar).
+Production'da otomatik çalışmaz; uzak bir veritabanına yazmak için bilerek `-- --allow-remote` eklemek gerekir.
+
+| | |
+|---|---|
+| Demo Teacher | `ogretmen@demo.local` |
+| Demo Student | `ogrenci@demo.local` (ayrıca `ogrenci2`–`ogrenci5@demo.local`) |
+| Demo Classroom Code | `DEMO5A` (5/A, 5. sınıf) |
+| Şifre | `.env` içindeki `DEMO_PASSWORD` değeri (repo'da şifre yoktur) |
+
+Demo içeriği: "Güneş ve Ay" yayınlanmış görevi (gerçek MEB çıktıları `FB.5.1.1`, `FB.5.1.2`; 6 farklı soru türü),
+"Kuvvet ve ölçülmesi" taslak görevi (canlı yapay zekâ demosu için) ve farklı durumlarda öğrenciler
+(Derse Hazır, Tekrar Gerekli, Öğretmen Değerlendirmesi Bekleniyor, okuyor, başlamadı). Sunum akışı için `DEMO_SCRIPT.md`.
+
+### EVREN canlı testi
+
+`.env.local` içinde `AI_PROVIDER=evren`, `EVREN_LLM_BASE_URL`, `EVREN_LLM_API_KEY`, `EVREN_LLM_MODEL` tanımlıyken
+`npm run test:evren` gerçek API ile bir hazırlık taslağı üretir (birkaç kredi harcar; anahtar yazdırılmaz).
+EVREN hesabında kullanım şartlarının (v1) kabul edilmiş olması gerekir.
 
 ### İki şema, tek model
 
@@ -76,7 +99,8 @@ git push -u origin main
 | `EVREN_LLM_MODEL` | Hayır | Varsayılan `glm-5.3`; karşılaştırma için yalnızca bu değeri değiştirin (`gemma-4-31b`, `qwen3.8-flash-next`) |
 | `AI_API_KEY` | `anthropic` için | Anthropic API anahtarı |
 | `AI_MODEL` | Hayır | Yalnızca `anthropic`; varsayılan `claude-opus-5-5` |
-| `AI_TIMEOUT_MS` | Hayır | Varsayılan 90000 |
+| `EVREN_LLM_REASONING_EFFORT` | Hayır | `none`/`low`/`medium`/`high`/`off`; varsayılan `low` (glm-5.3 aksi hâlde dakikalarca "düşünür") |
+| `AI_TIMEOUT_MS` | Hayır | Varsayılan 150000 |
 
 `DEMO_PASSWORD` production'da gerekmez. `NEXT_PUBLIC_*` değişkeni yoktur; hiçbir secret istemciye gönderilmez.
 
@@ -129,8 +153,8 @@ Environment variables'ı (2. adım) bu ekranda girin.
 Deploy'a basın. Sonraki her `git push` otomatik deploy edilir. Yeni migration içeren bir sürümü
 push'lamadan önce 5. adımı çalıştırın.
 
-> Yapay zekâ üretim endpoint'i en fazla 120 sn çalışabilir (`maxDuration`). Vercel'de Fluid compute
-> (yeni projelerde varsayılan) bunu destekler; kapalı bir Hobby projede süre sınırı 60 sn'dir.
+> Yapay zekâ üretim endpoint'i en fazla 180 sn çalışabilir (`maxDuration`). Vercel'de Fluid compute
+> (yeni projelerde varsayılan) bunu destekler; Fluid compute kapalı bir Hobby projede süre sınırı 60 sn'dir.
 
 ### 9. Production test
 

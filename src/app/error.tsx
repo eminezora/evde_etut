@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 // Generic error screen: never shows the error message or stack trace to the user.
 export default function ErrorPage({ reset }: { error: Error & { digest?: string }; reset: () => void }) {
   return (
@@ -9,7 +11,7 @@ export default function ErrorPage({ reset }: { error: Error & { digest?: string 
         <p>İşlem tamamlanamadı. Sayfayı yeniden deneyebilir ya da biraz sonra tekrar gelebilirsiniz.</p>
         <div className="row">
           <button type="button" className="primary" onClick={() => reset()}>Tekrar dene</button>
-          <a className="button" href="/">Ana sayfa</a>
+          <Link className="button" href="/">Ana sayfa</Link>
         </div>
       </div>
     </main>

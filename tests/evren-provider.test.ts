@@ -39,6 +39,21 @@ describe("EVREN provider configuration", () => {
     expect(getContentProvider(base)?.name).toBe("evren");
   });
 
+  it("controls reasoning effort via EVREN_LLM_REASONING_EFFORT", async () => {
+    const effort = async (v?: string) => {
+      const f = fakeFetch([{ status: 200, body: chat(JSON.stringify(summary)) }]);
+      const env = { ...base, ...(v === undefined ? {} : { EVREN_LLM_REASONING_EFFORT: v }) };
+      const p = getContentProvider(env) as EvrenContentProvider;
+      (p as unknown as { fetchImpl: typeof fetch }).fetchImpl = f.impl;
+      await p.generatePreparationContent(input, { signal: signal() });
+      return JSON.parse(String(f.calls[0].init.body)).reasoning_effort;
+    };
+    expect(await effort()).toBe("low");
+    expect(await effort("high")).toBe("high");
+    expect(await effort("off")).toBeUndefined();
+    expect(await effort("nonsense")).toBe("low");
+  });
+
   it("is disabled (manual flow) without base URL or API key", () => {
     expect(getContentProvider({ ...base, EVREN_LLM_BASE_URL: "" })).toBeNull();
     expect(getContentProvider({ ...base, EVREN_LLM_BASE_URL: "not-a-url" })).toBeNull();
@@ -59,6 +74,7 @@ describe("EVREN provider requests", () => {
     expect(body.messages[1].content).toContain("MAT.5.1.1");
     expect(typeof body.messages[1].content).toBe("string"); // no image/audio parts
     expect(body.response_format.type).toBe("json_schema");
+    expect(body.reasoning_effort).toBe("low");
     expect((f.calls[0].init.headers as Record<string, string>).Authorization).toBe("Bearer k");
     expect(parseGeneratedContent("SUMMARY", r.raw, { questionCount: 5, allowedOutcomeCodes: ["MAT.5.1.1"] }).ok).toBe(true);
     expect(r).toMatchObject({ inputTokens: 10, outputTokens: 20 });

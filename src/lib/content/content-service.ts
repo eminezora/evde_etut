@@ -172,6 +172,9 @@ export async function generateStudyContent(teacherId: string, assignmentId: stri
       await tx.question.deleteMany({ where: { assignmentId: a.id } });
       await writeQuestions(tx, a.id, questions, (q) => resolveOutcomeIds(a, q.curriculumOutcomeCodes).ids, "AI");
     }
+  }, {
+    maxWait: 10000,
+    timeout: 20000,
   });
   await finish("SUCCEEDED", { generatedAt: new Date(), inputTokens: result.inputTokens, outputTokens: result.outputTokens });
   return { ok: true, data: { scope, questions: questions?.length ?? null } } as const;
@@ -342,6 +345,9 @@ export async function approveAndPublish(teacherId: string, assignmentId: string,
     await tx.studyContent.update({ where: { assignmentId: a.id }, data: { status: "TEACHER_APPROVED", teacherApprovedAt: now } });
     const updated = await tx.assignment.update({ where: { id: a.id }, data: { status: "PUBLISHED", publishedAt: now } });
     return { ok: true, data: updated } as const;
+  }, {
+    maxWait: 10000,
+    timeout: 20000,
   });
 }
 

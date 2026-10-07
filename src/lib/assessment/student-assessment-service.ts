@@ -192,7 +192,8 @@ export function attemptPolicy(a: { maxAttempts: number; unlimitedAttempts: boole
 /** Start (or resume) an attempt. Attempt number is computed here; the client never sends it. */
 export async function startAttempt(studentId: string, assignmentId: string, db: PrismaClient = defaultPrisma) {
   try {
-    return await db.$transaction(async (tx) => {
+    return await db.$transaction(
+      async (tx) => {
       const ctx = await context(tx, studentId, assignmentId);
       if (!ctx) throw new Abort(fail(404, "NOT_FOUND", MESSAGES.notFound));
       const { a, sa } = ctx;
@@ -226,7 +227,12 @@ export async function startAttempt(studentId: string, assignmentId: string, db: 
         data: { status: transition(sa.status, "ASSESSMENT_IN_PROGRESS"), startedAt: sa.startedAt ?? new Date(), attemptCount: count + 1 },
       });
       return { ok: true, data: attempt } as const;
-    });
+    },
+    {
+      maxWait: 10000,
+      timeout: 20000,
+    },
+  );
   } catch (e) {
     if (e instanceof Abort) return e.result;
     if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === "P2002") return fail(409, "CONFLICT", "Deneme zaten başlatıldı, sayfayı yenile.");
@@ -271,14 +277,20 @@ export async function saveAnswers(studentId: string, attemptId: string, input: u
   const parsed = saveSchema.safeParse(input);
   if (!parsed.success) return fail(400, "VALIDATION", parsed.error.issues[0].message);
   try {
-    return await db.$transaction(async (tx) => {
-      const own = await loadOwnAttempt(tx, studentId, attemptId);
-      if (!own) throw new Abort(fail(404, "NOT_FOUND", "Çalışma bulunamadı."));
-      if (own.attempt.status !== "IN_PROGRESS") throw new Abort(fail(409, "NOT_OPEN", MESSAGES.notOpen));
-      if (isPastDeadline(own.a)) throw new Abort(fail(400, "DEADLINE", MESSAGES.submitDeadline));
-      await upsertDraftAnswers(tx, attemptId, own.a.id, parsed.data.answers);
-      return { ok: true, data: { saved: parsed.data.answers.length } } as const;
-    });
+    return await db.$transaction(
+      async (tx) => {
+        const own = await loadOwnAttempt(tx, studentId, attemptId);
+        if (!own) throw new Abort(fail(404, "NOT_FOUND", "Çalışma bulunamadı."));
+        if (own.attempt.status !== "IN_PROGRESS") throw new Abort(fail(409, "NOT_OPEN", MESSAGES.notOpen));
+        if (isPastDeadline(own.a)) throw new Abort(fail(400, "DEADLINE", MESSAGES.submitDeadline));
+        await upsertDraftAnswers(tx, attemptId, own.a.id, parsed.data.answers);
+        return { ok: true, data: { saved: parsed.data.answers.length } } as const;
+      },
+      {
+        maxWait: 10000,
+        timeout: 20000,
+      },
+    );
   } catch (e) {
     if (e instanceof Abort) return e.result;
     throw e;
@@ -322,7 +334,12 @@ export async function submitAttempt(studentId: string, attemptId: string, input:
       }
       const result = await finalizeOrHold(tx, attemptId);
       return { ok: true, data: result } as const;
-    });
+    },
+    {
+      maxWait: 10000,
+      timeout: 20000,
+    },
+  );
   } catch (e) {
     if (e instanceof Abort) return e.result;
     throw e;

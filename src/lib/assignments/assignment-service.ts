@@ -72,6 +72,9 @@ export async function createAssignment(teacherId: string, rawInput: unknown, db:
       await tx.assignmentOutcome.createMany({ data: input.outcomeIds.map((outcomeId) => ({ assignmentId: created.id, outcomeId })) });
     }
     return created;
+  }, {
+    maxWait: 10000,
+    timeout: 20000,
   });
   return { ok: true, data: assignment } as const;
 }

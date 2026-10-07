@@ -11,10 +11,17 @@ import { wireSchemas } from "../response-schema.ts";
 /** Used only when EVREN_LLM_MODEL is not set. */
 export const EVREN_FALLBACK_MODEL = "glm-5.3";
 
+export const REASONING_EFFORTS = ["none", "low", "medium", "high"] as const;
+export type ReasoningEffort = (typeof REASONING_EFFORTS)[number];
+/** Reasoning models (e.g. glm-5.3) otherwise spend most of the budget and minutes "thinking". */
+export const EVREN_DEFAULT_REASONING_EFFORT: ReasoningEffort = "low";
+
 export interface EvrenConfig {
   baseUrl: string;
   apiKey: string;
   model: string;
+  /** Sent as `reasoning_effort`; null omits the parameter (for models that reject it). */
+  reasoningEffort?: ReasoningEffort | null;
   fetchImpl?: typeof fetch;
 }
 
@@ -44,8 +51,10 @@ export class EvrenContentProvider implements ContentGenerationProvider {
   private readonly url: string;
   private readonly apiKey: string;
   private readonly fetchImpl: typeof fetch;
+  private readonly reasoningEffort: ReasoningEffort | null;
 
-  constructor({ baseUrl, apiKey, model, fetchImpl }: EvrenConfig) {
+  constructor({ baseUrl, apiKey, model, reasoningEffort = EVREN_DEFAULT_REASONING_EFFORT, fetchImpl }: EvrenConfig) {
+    this.reasoningEffort = reasoningEffort;
     this.url = `${baseUrl.replace(/\/+$/, "")}/chat/completions`;
     this.apiKey = apiKey;
     this.model = model;
@@ -64,7 +73,9 @@ export class EvrenContentProvider implements ContentGenerationProvider {
           { role: "user", content: `${buildUserPrompt(input)}\n\nYanıtı yalnızca tek bir JSON nesnesi olarak ver; açıklama veya markdown ekleme.` },
         ],
         temperature: 0.3,
-        max_tokens: 8000,
+        // Room for optional reasoning plus the JSON answer (~2–3k tokens for 5–10 questions).
+        max_tokens: 12000,
+        ...(this.reasoningEffort ? { reasoning_effort: this.reasoningEffort } : {}),
         response_format: responseFormat,
       }),
     });

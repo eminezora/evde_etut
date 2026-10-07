@@ -79,6 +79,9 @@ export async function reviewAnswer(teacherId: string, answerId: string, input: u
     const remaining = await tx.answer.count({ where: { attemptId: answer.attemptId, reviewStatus: "PENDING_REVIEW" } });
     const result = remaining === 0 ? await finalizeOrHold(tx, answer.attemptId) : null;
     return { ok: true as const, data: { remaining, result } };
+  }, {
+    maxWait: 10000,
+    timeout: 20000,
   });
 }
 

@@ -3,7 +3,8 @@
 import { generateStudyContent } from "@/lib/content/content-service.ts";
 import { readBody, withTeacher } from "@/lib/http/content-route.ts";
 
-export const maxDuration = 120;
+// Generation can take 1–3 minutes with reasoning models (AI_TIMEOUT_MS default 150 s).
+export const maxDuration = 180;
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

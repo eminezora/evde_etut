@@ -11,8 +11,8 @@ import { existsSync, readFileSync } from "node:fs";
 
 function databaseUrl() {
   if (process.env.DATABASE_URL) return process.env.DATABASE_URL;
-  // Same precedence as Next.js for the keys we need: .env.local, then .env.
-  for (const file of [".env.local", ".env"]) {
+  // Same precedence as Next.js for the keys we need: .env.production.local, .env.local, then .env.
+  for (const file of [".env.production.local", ".env.local", ".env"]) {
     if (!existsSync(file)) continue;
     const m = readFileSync(file, "utf8").match(/^\s*DATABASE_URL\s*=\s*"?([^"\n]*)"?\s*$/m);
     if (m) return m[1];

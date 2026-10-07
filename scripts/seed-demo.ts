@@ -16,7 +16,7 @@ import bcrypt from "bcryptjs";
 import { PrismaClient } from "@prisma/client";
 
 // Local convenience: read .env files for values not already set in the shell (shell values win).
-for (const file of [".env.local", ".env"]) {
+for (const file of [".env.production.local", ".env.local", ".env"]) {
   try {
     process.loadEnvFile(file);
   } catch {
@@ -88,7 +88,7 @@ try {
   const old = await prisma.assignment.findMany({ where: { classroomId: classroom.id }, select: { id: true } });
   if (old.length) {
     const ids = old.map((a) => a.id);
-    await prisma.answer.deleteMany({ where: { attempt: { studentAssignment: { assignmentId: { in: ids } } } } });
+    await prisma.answer.deleteMany({ where: { question: { assignmentId: { in: ids } } } });
     await prisma.assignment.deleteMany({ where: { id: { in: ids } } });
   }
 
