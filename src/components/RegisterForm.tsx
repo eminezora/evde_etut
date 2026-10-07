@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -18,7 +17,13 @@ export function RegisterForm() {
     const res = await fetch("/api/auth/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ role, name: form.get("name"), email: form.get("email"), password: form.get("password"), teacherCode: form.get("teacherCode") ?? undefined }),
+      body: JSON.stringify({
+        role,
+        name: form.get("name"),
+        email: form.get("email"),
+        password: form.get("password"),
+        teacherCode: form.get("teacherCode") ?? undefined,
+      }),
     });
     setBusy(false);
     if (!res.ok) {
@@ -31,29 +36,98 @@ export function RegisterForm() {
 
   return (
     <form onSubmit={onSubmit}>
-      <fieldset style={{ border: 0, padding: 0, margin: 0 }}>
-        <legend style={{ fontWeight: 600 }}>Hesap türü</legend>
-        <div className="row">
-          <label className="row" style={{ fontWeight: 400 }}><input type="radio" name="role" checked={role === "STUDENT"} onChange={() => setRole("STUDENT")} /> Öğrenci</label>
-          <label className="row" style={{ fontWeight: 400 }}><input type="radio" name="role" checked={role === "TEACHER"} onChange={() => setRole("TEACHER")} /> Öğretmen</label>
+      {/* Role Selection Segmented Control */}
+      <div style={{ marginBottom: 18 }}>
+        <label style={{ margin: "0 0 8px" }}>Hesap Türü Seçin</label>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, padding: 4, background: "var(--surface-subtle)", borderRadius: "var(--radius-md)", border: "1px solid var(--border)" }}>
+          <button
+            type="button"
+            onClick={() => setRole("STUDENT")}
+            className={role === "STUDENT" ? "primary" : "ghost"}
+            style={{
+              minHeight: 38,
+              borderRadius: "var(--radius-sm)",
+              boxShadow: role === "STUDENT" ? "var(--shadow-xs)" : "none",
+            }}
+          >
+            🎓 Öğrenci
+          </button>
+          <button
+            type="button"
+            onClick={() => setRole("TEACHER")}
+            className={role === "TEACHER" ? "primary" : "ghost"}
+            style={{
+              minHeight: 38,
+              borderRadius: "var(--radius-sm)",
+              boxShadow: role === "TEACHER" ? "var(--shadow-xs)" : "none",
+            }}
+          >
+            👨‍🏫 Öğretmen
+          </button>
         </div>
-      </fieldset>
-      <label htmlFor="name">Ad soyad</label>
-      <input id="name" name="name" type="text" autoComplete="name" required minLength={2} maxLength={80} />
-      <label htmlFor="email">E-posta</label>
-      <input id="email" name="email" type="email" autoComplete="email" required />
-      <label htmlFor="password">Şifre (en az 8 karakter)</label>
-      <input id="password" name="password" type="password" autoComplete="new-password" required minLength={8} />
+      </div>
+
+      <label htmlFor="name">Ad Soyad</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        autoComplete="name"
+        placeholder="Örn. Ayşe Yılmaz"
+        required
+        minLength={2}
+        maxLength={80}
+      />
+
+      <label htmlFor="email">E-posta Adresi</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        autoComplete="email"
+        placeholder="ornek@okul.k12.tr"
+        required
+      />
+
+      <label htmlFor="password">Şifre</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        autoComplete="new-password"
+        placeholder="En az 8 karakter"
+        required
+        minLength={8}
+      />
+
       {role === "TEACHER" && (
-        <>
-          <label htmlFor="teacherCode">Öğretmen davet kodu</label>
-          <input id="teacherCode" name="teacherCode" type="password" autoComplete="off" required />
-        </>
+        <div style={{ marginTop: 14 }}>
+          <label htmlFor="teacherCode">Öğretmen Davet Kodu</label>
+          <input
+            id="teacherCode"
+            name="teacherCode"
+            type="password"
+            autoComplete="off"
+            placeholder="Okul veya sistem yöneticisi kodu"
+            required
+          />
+          <p className="muted" style={{ fontSize: "0.82rem", margin: "4px 0 0" }}>
+            Öğretmen hesabı oluşturabilmek için okulunuz tarafından verilen davet kodunu giriniz.
+          </p>
+        </div>
       )}
+
       {error && <p className="error" role="alert">{error}</p>}
-      <div className="row" style={{ marginTop: 16, justifyContent: "space-between" }}>
-        <button className="primary" type="submit" disabled={busy}>{busy ? "Kaydediliyor…" : "Kayıt ol"}</button>
-        <Link href="/giris">Hesabın var mı? Giriş yap</Link>
+
+      <div style={{ marginTop: 22 }}>
+        <button
+          className="primary"
+          type="submit"
+          disabled={busy}
+          style={{ width: "100%", justifyContent: "center" }}
+        >
+          {busy ? "Hesap Oluşturuluyor…" : `${role === "STUDENT" ? "Öğrenci" : "Öğretmen"} Olarak Kayıt Ol →`}
+        </button>
       </div>
     </form>
   );
