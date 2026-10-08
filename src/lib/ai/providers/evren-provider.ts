@@ -90,8 +90,8 @@ export class EvrenContentProvider implements ContentGenerationProvider {
           { role: "user", content: `${buildUserPrompt(input)}\n\nYanıtı yalnızca tek bir JSON nesnesi olarak ver; açıklama veya markdown ekleme.` },
         ],
         temperature: 0.2,
-        // Targeted token limit for concise JSON (~1.5k–2k tokens for 5–10 questions).
-        max_tokens: 4096,
+        // Room for the JSON answer: a 10-question set is ~3k tokens; 4096 truncated large sets.
+        max_tokens: 6000,
         ...(this.reasoningEffort ? { reasoning_effort: this.reasoningEffort } : {}),
         response_format: responseFormat,
       }),

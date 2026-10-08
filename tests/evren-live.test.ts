@@ -44,7 +44,7 @@ describe.skipIf(!LIVE)("EVREN LLM (live)", () => {
     const id = created.data.id;
 
     const started = Date.now();
-    const res = await generateStudyContent(teacher.id, id, { scope: "ALL" }, { db, provider, timeoutMs: 240_000 });
+    const res = await generateStudyContent(teacher.id, id, { scope: "ALL" }, { db, provider });
     const log = await db.contentGenerationLog.findFirst({ where: { assignmentId: id }, orderBy: { startedAt: "desc" } });
     console.log(`[evren] ${log?.status} in ${Math.round((Date.now() - started) / 1000)} s, tokens in/out: ${log?.inputTokens}/${log?.outputTokens}${log?.errorMessage ? `, issues: ${log.errorMessage}` : ""}`);
     expect(res.ok).toBe(true);
@@ -84,7 +84,7 @@ describe.skipIf(!LIVE)("EVREN LLM (live)", () => {
       );
       if (!created.ok) throw new Error(JSON.stringify(created.errors));
       const started = Date.now();
-      const res = await generateStudyContent(teacher.id, created.data.id, { scope: "ALL" }, { db, provider, timeoutMs: 240_000 });
+      const res = await generateStudyContent(teacher.id, created.data.id, { scope: "ALL" }, { db, provider });
       const log = await db.contentGenerationLog.findFirst({ where: { assignmentId: created.data.id }, orderBy: { startedAt: "desc" } });
       console.log(`[evren] grade ${grade} ${subject} ${count}q: ${log?.status} in ${Math.round((Date.now() - started) / 1000)} s, tokens out: ${log?.outputTokens}${log?.errorMessage ? `, issues: ${log.errorMessage}` : ""}`);
       expect(res.ok).toBe(true);

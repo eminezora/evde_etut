@@ -75,6 +75,30 @@ const generateSchema = z.object({
   confirmOverwrite: z.boolean().default(false),
 });
 
+/**
+ * "ALL" is requested as two parallel calls (preparation content + questions). The model's output
+ * speed is the bottleneck (~30–40 tokens/s), so two half-size answers arrive in roughly half the
+ * time of one full answer. The merged object goes through the same strict ALL validation.
+ */
+export async function generateWithProvider(
+  provider: ContentGenerationProvider,
+  input: Parameters<ContentGenerationProvider["generatePreparationContent"]>[0],
+  opts: { signal: AbortSignal },
+): Promise<Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>>> {
+  if (input.scope !== "ALL") return provider.generatePreparationContent(input, opts);
+  const [content, questions] = await Promise.all([
+    provider.generatePreparationContent({ ...input, scope: "SUMMARY" }, opts),
+    provider.generatePreparationContent({ ...input, scope: "QUESTIONS" }, opts),
+  ]);
+  const asObject = (v: unknown) => (v && typeof v === "object" && !Array.isArray(v) ? (v as Record<string, unknown>) : {});
+  const sum = (a?: number, b?: number) => (a === undefined && b === undefined ? undefined : (a ?? 0) + (b ?? 0));
+  return {
+    raw: { ...asObject(content.raw), questions: asObject(questions.raw).questions },
+    inputTokens: sum(content.inputTokens, questions.inputTokens),
+    outputTokens: sum(content.outputTokens, questions.outputTokens),
+  };
+}
+
 export interface GenerateDeps {
   db?: PrismaClient;
   provider?: ContentGenerationProvider | null;
@@ -229,7 +253,7 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
       for (let attempt = 1; attempt <= 2; attempt++) {
         logLifecycle("evren_request_started", { assignment: a.id, attempt });
         try {
-          result = await provider!.generatePreparationContent(providerInput, { signal });
+          result = await generateWithProvider(provider!, providerInput, { signal });
           logLifecycle("evren_response_received", { assignment: a.id, attempt, elapsed_ms: Date.now() - startedAt });
         } catch (error) {
           const kind = error instanceof ProviderError ? error.kind : "FAILED";

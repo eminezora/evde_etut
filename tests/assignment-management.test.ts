@@ -219,8 +219,34 @@ describe("AI generation robustness", () => {
     };
     const r = await generateStudyContent(d.teacher.id, d.id, { scope: "ALL", questionCount: 5 }, { db, provider: flaky });
     expect(r.ok).toBe(true);
-    expect(calls).toBe(2);
+    expect(calls).toBe(4); // 2 attempts × (content + questions in parallel)
     expect(await db.question.count({ where: { assignmentId: d.id } })).toBe(5);
+  });
+
+  it("requests content and questions in parallel for ALL and merges them", async () => {
+    const d = await draft();
+    const mock = new MockContentProvider();
+    const scopes: string[] = [];
+    let inFlight = 0;
+    let maxInFlight = 0;
+    const tracking: ContentGenerationProvider = {
+      name: "tracking",
+      model: "m",
+      async generatePreparationContent(input) {
+        scopes.push(input.scope);
+        inFlight++;
+        maxInFlight = Math.max(maxInFlight, inFlight);
+        await new Promise((r) => setTimeout(r, 20));
+        inFlight--;
+        return mock.generatePreparationContent(input);
+      },
+    };
+    const r = await generateStudyContent(d.teacher.id, d.id, { scope: "ALL", questionCount: 6 }, { db, provider: tracking });
+    expect(r.ok).toBe(true);
+    expect(scopes.sort()).toEqual(["QUESTIONS", "SUMMARY"]);
+    expect(maxInFlight).toBe(2);
+    expect(await db.question.count({ where: { assignmentId: d.id } })).toBe(6);
+    expect(await db.studyContent.count({ where: { assignmentId: d.id } })).toBe(1);
   });
 
   it("gives up after one retry and records the failure", async () => {
@@ -236,7 +262,7 @@ describe("AI generation robustness", () => {
     };
     const r = await generateStudyContent(d.teacher.id, d.id, {}, { db, provider: broken });
     expect(!r.ok && r.code).toBe("INVALID_RESPONSE");
-    expect(calls).toBe(2);
+    expect(calls).toBe(4); // one retry only: 2 attempts × 2 parallel calls
     expect((await db.contentGenerationLog.findFirst({ where: { assignmentId: d.id }, orderBy: { startedAt: "desc" } }))!.status).toBe("INVALID_RESPONSE");
   });
 });

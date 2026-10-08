@@ -12,9 +12,10 @@ import { getGenerationStatus, startStudyContentGeneration } from "@/lib/content/
 import { readBody, withTeacher } from "@/lib/http/content-route.ts";
 import { jsonError } from "@/lib/http/route-helpers.ts";
 
-// Must exceed AI_TIMEOUT_MS (default 90 s) so a timed-out call can still be recorded as failed.
+// Must exceed AI_TIMEOUT_MS (default 150 s) so a timed-out call can still be recorded as failed.
+// 300 s is the Vercel limit with Fluid compute (deployments with 300 were accepted before).
 // The editor polls the job status, so nobody waits on this request.
-export const maxDuration = 180;
+export const maxDuration = 300;
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
