@@ -2,7 +2,7 @@ import { requireAdmin } from "@/lib/auth/current-user.ts";
 import { prisma } from "@/lib/db.ts";
 import { UsersManager } from "@/components/admin/UsersManager.tsx";
 
-export const metadata = { title: "Öğrenciler – Evde Etüt Admin" };
+export const metadata = { title: "Öğrenciler – DersBot Admin" };
 
 export default async function AdminStudentsPage() {
   await requireAdmin();

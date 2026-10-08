@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { requireAdmin } from "@/lib/auth/current-user.ts";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
+import { DersBotLogo } from "@/components/brand/DersBotLogo.tsx";
 
 const NAV_ITEMS = [
   {
@@ -153,10 +154,10 @@ export default async function AdminLayout({ children }: { children: React.ReactN
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <Link href="/admin" style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none", color: "var(--ink)", fontWeight: 700, fontSize: "1.05rem" }}>
-            <span style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem" }}>Evde Etüt</span>
-            <span className="muted" style={{ fontWeight: 500, fontSize: "0.85rem" }}>/ Yönetim Masası</span>
-          </Link>
+          <DersBotLogo href="/admin" size="sm" />
+          <span className="muted" style={{ fontWeight: 500, fontSize: "0.85rem", borderLeft: "1px solid var(--border)", paddingLeft: 10 }}>
+            Yönetim Masası
+          </span>
           <span
             className="badge"
             style={{

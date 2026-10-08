@@ -2,6 +2,7 @@ import Link from "next/link";
 import { requireTeacher } from "@/lib/auth/current-user.ts";
 import { listTeacherClassrooms } from "@/lib/accounts/account-service.ts";
 import { CreateClassroomForm } from "@/components/teacher/CreateClassroomForm.tsx";
+import { DersBotTip } from "@/components/brand/DersBotTip.tsx";
 
 export default async function ClassroomsPage({ searchParams }: { searchParams: Promise<{ filtre?: string }> }) {
   const teacher = await requireTeacher();
@@ -57,10 +58,14 @@ export default async function ClassroomsPage({ searchParams }: { searchParams: P
         </div>
 
         {classrooms.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "40px 16px" }}>
-            <p className="muted" style={{ fontSize: "0.95rem" }}>
-              {isArchiveView ? "Arşivlenmiş bir sınıfınız bulunmuyor." : "Henüz kayıtlı bir sınıfınız bulunmuyor."}
-            </p>
+          <div style={{ textAlign: "center", padding: "32px 16px" }}>
+            <div style={{ maxWidth: 460, margin: "0 auto", textAlign: "left" }}>
+              <DersBotTip title="DersBot Sınıf Rehberi">
+                {isArchiveView
+                  ? "Arşivlenmiş bir sınıfınız bulunmuyor. Aktif sınıflarınızı yukarıdaki menüden inceleyebilirsiniz."
+                  : "Henüz oluşturulmuş bir sınıfınız yok. Yukarıdaki formdan şube adını ve kademesini seçerek hemen ilk sınıfınızı oluşturun!"}
+              </DersBotTip>
+            </div>
           </div>
         ) : (
           <div className="table-scroll">
@@ -129,8 +134,10 @@ export default async function ClassroomsPage({ searchParams }: { searchParams: P
           </div>
         )}
 
-        <div style={{ marginTop: 16, padding: "10px 14px", backgroundColor: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", fontSize: "0.85rem", color: "var(--text-secondary)", border: "1px solid var(--border)" }}>
-          ✎ <strong>Katılım Kodu:</strong> Öğrencileriniz hesaplarını açtıktan sonra panolarındaki &ldquo;Sınıfa Katıl&rdquo; alanına bu 8 haneli kodu girerek şubeye kaydolurlar.
+        <div style={{ marginTop: 20 }}>
+          <DersBotTip title="DersBot Sınıf Katılım Kodu Rehberi">
+            Öğrencileriniz hesaplarını açtıktan sonra panolarındaki <strong>&ldquo;Sınıfa Katıl&rdquo;</strong> alanına bu 8 haneli kodu girerek doğrudan şubenize kaydolurlar. Dilediğiniz an sınıf detayından kodu yenileyebilirsiniz.
+          </DersBotTip>
         </div>
       </div>
     </>

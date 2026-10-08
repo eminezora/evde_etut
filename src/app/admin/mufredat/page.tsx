@@ -1,7 +1,7 @@
 import { requireAdmin } from "@/lib/auth/current-user.ts";
 import { prisma } from "@/lib/db.ts";
 
-export const metadata = { title: "MEB Müfredat Durumu – Evde Etüt Admin" };
+export const metadata = { title: "MEB Müfredat Durumu – DersBot Admin" };
 
 export default async function AdminCurriculumPage() {
   await requireAdmin();

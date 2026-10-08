@@ -5,7 +5,7 @@ import { getStudentHistory } from "@/lib/assessment/student-history-service.ts";
 import { STATUS_LABELS, type StudentStatus } from "@/lib/assessment/status-machine.ts";
 import { formatDate } from "@/lib/assignments/format.ts";
 
-export const metadata = { title: "Öğrenci Gelişim Geçmişi – Evde Etüt" };
+export const metadata = { title: "Öğrenci Gelişim Geçmişi – DersBot" };
 const label = (s: string | undefined) => (s ? STATUS_LABELS[s as StudentStatus] ?? s : "Başlamadı");
 
 export default async function StudentHistoryPage({ params }: { params: Promise<{ studentId: string }> }) {

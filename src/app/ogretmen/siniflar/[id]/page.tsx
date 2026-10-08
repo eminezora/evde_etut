@@ -6,7 +6,7 @@ import { formatDate } from "@/lib/assignments/format.ts";
 import { ClassroomActions } from "@/components/teacher/ClassroomActions.tsx";
 import { prisma } from "@/lib/db.ts";
 
-export const metadata = { title: "Sınıf Detayı – Evde Etüt" };
+export const metadata = { title: "Sınıf Detayı – DersBot" };
 
 export default async function ClassroomPage({ params }: { params: Promise<{ id: string }> }) {
   const teacher = await requireTeacher();
@@ -53,6 +53,23 @@ export default async function ClassroomPage({ params }: { params: Promise<{ id: 
           assignmentCount={assignmentCount}
         />
       </div>
+
+      {r.classroom.archivedAt && (
+        <div
+          className="editorial-panel"
+          style={{
+            borderLeft: "4px solid var(--amber, #f59e0b)",
+            backgroundColor: "var(--amber-bg, #fffbeb)",
+            marginBottom: 20,
+            padding: "14px 18px",
+          }}
+        >
+          <strong style={{ color: "var(--amber-text, #92400e)" }}>📦 Arşivlenmiş Sınıf:</strong>
+          <p style={{ margin: "4px 0 0", fontSize: "0.88rem", color: "var(--amber-text, #92400e)" }}>
+            Bu sınıf arşivlenmiştir. Öğrencilerin aktif sınıflar ekranında görünmez ve yeni öğrenci katılımı kabul etmez. Öğrencilerin geçmiş çalışma kayıtları, tamamlanan hazırlık görevleri ve karneleri güvenle korunur. Sağ üstteki <strong>&ldquo;Tekrar Aktif Et&rdquo;</strong> butonunu kullanarak sınıfı dilediğiniz an tekrar aktif hale getirebilirsiniz.
+          </p>
+        </div>
+      )}
 
       {/* Editorial Metric Strip for Classroom */}
       <div className="editorial-metrics" style={{ marginBottom: 24 }}>

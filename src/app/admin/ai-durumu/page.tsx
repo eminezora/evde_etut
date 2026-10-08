@@ -3,7 +3,7 @@ import { prisma } from "@/lib/db.ts";
 import { formatDate } from "@/lib/assignments/format.ts";
 import { AiRecoveryButton } from "@/components/admin/AiRecoveryButton.tsx";
 
-export const metadata = { title: "AI ve EVREN Sistem Durumu – Evde Etüt Admin" };
+export const metadata = { title: "AI ve EVREN Sistem Durumu – DersBot Admin" };
 
 export default async function AdminAiStatusPage() {
   await requireAdmin();

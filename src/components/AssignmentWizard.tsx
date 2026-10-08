@@ -60,6 +60,8 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [errors, setErrors] = useState<Record<string, string[]>>({});
   const [saving, setSaving] = useState(false);
+  const [redirecting, setRedirecting] = useState(false);
+  const [navNotice, setNavNotice] = useState<string | null>(null);
 
   const classroom = classrooms.find((c) => c.id === classroomId);
 
@@ -145,8 +147,11 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
   }, [step, classroomId, subject, unitOrTheme, selected]);
 
   const save = async () => {
+    if (saving || redirecting) return;
     setSaving(true);
     setErrors({});
+    setNavNotice(null);
+
     const payload = {
       classroomId,
       subject,
@@ -165,19 +170,44 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
       return;
     }
 
-    const res = await fetch("/api/assignments", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    setSaving(false);
-    const body = await res.json().catch(() => null);
-    if (!res.ok) {
-      setErrors((body?.errors as Record<string, string[]>) ?? { _form: [body?.error ?? "Kayıt başarısız."] });
-      return;
+    try {
+      const res = await fetch("/api/assignments", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const body = await res.json().catch(() => null);
+      if (!res.ok) {
+        setSaving(false);
+        setErrors((body?.errors as Record<string, string[]>) ?? { _form: [body?.error ?? "Kayıt başarısız."] });
+        return;
+      }
+
+      const createdId = (body?.id ?? body?.data?.id) as string | undefined;
+      if (!createdId) {
+        setSaving(false);
+        setErrors({ _form: ["Görev oluşturuldu fakat sistemden görev kimliği (ID) alınamadı. Lütfen Görevler listesinden kontrol edin."] });
+        return;
+      }
+
+      setSaving(false);
+      setRedirecting(true);
+      setNavNotice("Görev başarıyla oluşturuldu! Hazırlık İçeriği & Soru Editörüne aktarılıyorsunuz...");
+
+      const targetUrl = `/ogretmen/gorevler/${createdId}?tab=hazirlik`;
+      try {
+        router.push(targetUrl);
+        router.refresh();
+      } catch {
+        // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+        window.location.assign(targetUrl);
+      }
+    } catch (err: unknown) {
+      setSaving(false);
+      setRedirecting(false);
+      setErrors({ _form: [(err as Error)?.message ?? "Görev kaydedilirken beklenmeyen bir hata oluştu."] });
     }
-    router.push(`/ogretmen/gorevler/${body.data.id}/duzenle`);
-    router.refresh();
   };
 
   const errorList = (key: string) =>
@@ -466,10 +496,16 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
               {errorList("unitOrTheme")}
               {errorList("_form")}
 
-              <div style={{ marginTop: 20, padding: "12px 16px", backgroundColor: "var(--accent-light)", border: "1px solid var(--accent-border)", borderRadius: "var(--radius-xs)" }}>
+              {navNotice && (
+                <div className="notice-inline ok" style={{ marginTop: 16 }}>
+                  {navNotice}
+                </div>
+              )}
+
+              <div style={{ marginTop: 20, padding: "14px 18px", backgroundColor: "var(--accent-light)", border: "1px solid var(--accent-border)", borderRadius: "var(--radius-sm)" }}>
                 <span className="kicker" style={{ color: "var(--accent)", margin: 0 }}>SONRAKİ ADIMLAR</span>
                 <p style={{ margin: "4px 0 0", fontSize: "0.88rem", color: "var(--text)" }}>
-                  Görev taslağını kaydettikten sonra doğrudan <strong>Hazırlık İçeriği</strong> alanına geçeceksiniz. Orada EVREN yapay zekâsıyla özet ve soruları tek tıkla üretebilir ve onaylayıp yayınlayabilirsiniz.
+                  Görev taslağını kaydettikten sonra doğrudan <strong>Hazırlık İçeriği & Soru Editörü</strong> alanına aktarılacaksınız. Orada DersBot yapay zekâsıyla özet ve soruları tek tıkla üretebilir ve onaylayıp yayınlayabilirsiniz.
                 </p>
               </div>
 
@@ -478,10 +514,10 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
                   type="button"
                   className="primary"
                   onClick={save}
-                  disabled={saving || selected.size === 0}
-                  style={{ width: "100%", justifyContent: "center", minHeight: 42, fontSize: "0.95rem" }}
+                  disabled={saving || redirecting || selected.size === 0}
+                  style={{ width: "100%", justifyContent: "center", minHeight: 44, fontSize: "0.95rem", fontWeight: 600 }}
                 >
-                  {saving ? "Kaydediliyor…" : "Taslak Olarak Kaydet ve İçeriğe Geç →"}
+                  {redirecting ? "İçerik Ekranına Yönlendiriliyor…" : saving ? "Kaydediliyor…" : "Taslak Olarak Kaydet ve İçeriğe Geç →"}
                 </button>
               </div>
             </section>

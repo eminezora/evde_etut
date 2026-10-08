@@ -5,6 +5,7 @@ import { STATUS_LABELS, stepIndex, type StudentStatus } from "@/lib/assessment/s
 import { formatDate } from "@/lib/assignments/format.ts";
 import { listStudentClassrooms } from "@/lib/accounts/account-service.ts";
 import { JoinClassroomForm } from "@/components/student/JoinClassroomForm.tsx";
+import { DersBotTip } from "@/components/brand/DersBotTip.tsx";
 
 const TIMELINE_SECTIONS: { key: DashboardCategory; title: string; subtitle: string; empty: string }[] = [
   { key: "UPCOMING", title: "Öncelikli Çalışma Planı", subtitle: "Yarınki dersler için hazırlanacak yeni ödevler", empty: "Şu an sırada bekleyen yeni görev bulunmuyor. Harika bir durumdasın!" },
@@ -65,10 +66,10 @@ export default async function StudentDashboardPage() {
         </div>
 
         {classrooms.length === 0 ? (
-          <div style={{ padding: "16px 0" }}>
-            <p className="muted" style={{ marginBottom: 12 }}>
-              Henüz bir sınıfa katılmadın. Öğretmeninin paylaştığı 8 haneli katılım kodunu girerek sınıfına dahil olabilirsin:
-            </p>
+          <div style={{ padding: "8px 0" }}>
+            <DersBotTip title="DersBot'a Hoş Geldin!" style={{ marginBottom: 14 }}>
+              Henüz bir sınıfa katılmadın. Öğretmeninin seninle paylaştığı 8 haneli sınıf kodunu girerek sınıfına dahil olabilir ve MEB hazırlık föylerine hemen erişebilirsin!
+            </DersBotTip>
             <JoinClassroomForm />
           </div>
         ) : (
@@ -94,6 +95,12 @@ export default async function StudentDashboardPage() {
           </div>
         )}
       </section>
+
+      {cards.length === 0 && classrooms.length > 0 && (
+        <DersBotTip title="DersBot Çalışma Takvimi" style={{ marginBottom: 24 }}>
+          Sınıfına henüz öğretmeninden yeni bir hazırlık görevi atanmadı. Yeni bir MEB föyü eklendiğinde burada bildirimini göreceksin. Derslerle ilgili aklına takılan her şeyi sağ alttaki simgemden bana sorabilirsin!
+        </DersBotTip>
+      )}
 
       {/* Görevler: Timeline / Çalışma Planı Düzeni */}
       <section id="gorevler">

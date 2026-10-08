@@ -2,10 +2,10 @@ import { requireAdmin } from "@/lib/auth/current-user.ts";
 import { prisma } from "@/lib/db.ts";
 import { SettingsManager, type SettingsMap } from "@/components/admin/SettingsManager.tsx";
 
-export const metadata = { title: "Sistem Ayarları – Evde Etüt Admin" };
+export const metadata = { title: "Sistem Ayarları – DersBot Admin" };
 
 const DEFAULT_SETTINGS: SettingsMap = {
-  platformName: "Evde Etüt",
+  platformName: "DersBot",
   supportEmail: "destek@evdeetut.k12.tr",
   teacherSignupsEnabled: "true",
   studentSignupsEnabled: "true",

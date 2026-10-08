@@ -1,5 +1,6 @@
 // Shared frame of the sign-in, sign-up and password pages in Editorial Learning Workspace design.
 import Link from "next/link";
+import { DersBotLogo } from "@/components/brand/DersBotLogo.tsx";
 
 export function AuthShell({
   icon,
@@ -20,10 +21,7 @@ export function AuthShell({
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column", backgroundColor: "var(--bg)" }}>
       {/* Editorial Header */}
       <header className="top" style={{ borderBottom: "1px solid var(--border)", background: "var(--surface)" }}>
-        <Link href="/" className="brand-badge">
-          <span className="brand-icon">✎</span>
-          <span>Evde Etüt</span>
-        </Link>
+        <DersBotLogo showSubtitle />
         <Link href="/" className="button ghost" style={{ minHeight: 34, padding: "4px 12px", fontSize: "0.85rem" }}>
           ← Ana Sayfa
         </Link>

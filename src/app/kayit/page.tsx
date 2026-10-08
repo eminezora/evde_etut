@@ -12,7 +12,7 @@ export default async function RegisterPage() {
     <AuthShell
       icon="✎"
       title="Hesap Oluştur"
-      subtitle="Öğrenci veya öğretmen olarak hemen Evde Etüt ailesine katılın."
+      subtitle="Öğrenci veya öğretmen olarak hemen DersBot ailesine katılın."
       width={480}
       footer={
         <>

@@ -6,7 +6,7 @@ import { NameForm, PasswordForm } from "@/components/profile/ProfileForms.tsx";
 import { JoinClassroomForm } from "@/components/student/JoinClassroomForm.tsx";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
 
-export const metadata = { title: "Profil – Evde Etüt" };
+export const metadata = { title: "Profil – DersBot" };
 
 export default async function StudentProfilePage() {
   const student = await requireStudent();

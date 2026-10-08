@@ -3,7 +3,7 @@ import { isResetTokenValid } from "@/lib/accounts/password-service.ts";
 import { AuthShell } from "@/components/auth/AuthShell.tsx";
 import { ResetPasswordForm } from "@/components/auth/PasswordForms.tsx";
 
-export const metadata = { title: "Şifre Sıfırla – Evde Etüt" };
+export const metadata = { title: "Şifre Sıfırla – DersBot" };
 
 export default async function ResetPasswordPage({ searchParams }: { searchParams: Promise<{ token?: string }> }) {
   const { token } = await searchParams;

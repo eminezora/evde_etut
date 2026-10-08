@@ -6,7 +6,7 @@ import { ProfileHeader } from "@/components/profile/ProfileHeader.tsx";
 import { NameForm, PasswordForm } from "@/components/profile/ProfileForms.tsx";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
 
-export const metadata = { title: "Profil & Hesap – Evde Etüt" };
+export const metadata = { title: "Profil & Hesap – DersBot" };
 
 export default async function TeacherProfilePage() {
   const teacher = await requireTeacher();

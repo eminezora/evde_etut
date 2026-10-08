@@ -28,6 +28,7 @@ export async function createAssignment(teacherId: string, rawInput: unknown, db:
   const classroom = await db.classroom.findUnique({ where: { id: input.classroomId } });
   if (!classroom) return fail(404, "classroomId", "Sınıf bulunamadı.");
   if (classroom.teacherId !== teacherId) return fail(403, "classroomId", "Bu sınıf size ait değil.");
+  if (classroom.archivedAt) return fail(400, "classroomId", "Arşivlenmiş bir sınıfa yeni görev atanamaz.");
 
   // Re-load every outcome from the DB (including non-VERIFIED ones, to give a precise error).
   const outcomes = await db.curriculumOutcome.findMany({

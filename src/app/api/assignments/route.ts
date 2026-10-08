@@ -10,5 +10,9 @@ export async function POST(request: Request) {
   const body = await request.json().catch(() => null);
   const result = await createAssignment(teacher.id, body);
   if (!result.ok) return jsonError(result.status, "Görev kaydedilemedi.", result.errors);
-  return NextResponse.json({ id: result.data.id, status: result.data.status }, { status: 201 });
+  return NextResponse.json({
+    id: result.data.id,
+    status: result.data.status,
+    data: { id: result.data.id, status: result.data.status },
+  }, { status: 201 });
 }

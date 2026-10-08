@@ -3,7 +3,7 @@ import { prisma } from "@/lib/db.ts";
 import { listAuditLogs } from "@/lib/admin/audit-service.ts";
 import { formatDate } from "@/lib/assignments/format.ts";
 
-export const metadata = { title: "Admin Genel Bakış – Evde Etüt" };
+export const metadata = { title: "Admin Genel Bakış – DersBot" };
 
 const getSevenDaysAgo = () => new Date(Date.now() - 7 * 86_400_000);
 

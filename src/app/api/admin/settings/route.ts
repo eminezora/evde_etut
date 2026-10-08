@@ -7,7 +7,7 @@ import { prisma } from "@/lib/db.ts";
 import { jsonError } from "@/lib/http/route-helpers.ts";
 
 const DEFAULT_SETTINGS: Record<string, string> = {
-  platformName: "Evde Etüt",
+  platformName: "DersBot",
   supportEmail: "destek@evdeetut.k12.tr",
   teacherSignupsEnabled: "true",
   studentSignupsEnabled: "true",

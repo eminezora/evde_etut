@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentStudent } from "@/lib/auth/current-user.ts";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
+import { DersBotLogo } from "@/components/brand/DersBotLogo.tsx";
 
 export default async function StudentLayout({ children }: { children: React.ReactNode }) {
   const student = await getCurrentStudent();
@@ -12,10 +13,7 @@ export default async function StudentLayout({ children }: { children: React.Reac
       {/* Editorial Student Top Header */}
       <header className="top">
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <Link href="/ogrenci/gorevler" className="brand-badge">
-            <span className="brand-icon">✎</span>
-            <span>Evde Etüt</span>
-          </Link>
+          <DersBotLogo href="/ogrenci/gorevler" />
           <span className="badge" style={{ backgroundColor: "var(--surface-subtle)", color: "var(--text-secondary)", borderColor: "var(--border)" }}>
             Öğrenci Çalışma Alanı
           </span>

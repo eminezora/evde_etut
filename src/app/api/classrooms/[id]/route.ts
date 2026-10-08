@@ -3,7 +3,12 @@
 
 import { NextResponse } from "next/server";
 import { getCurrentTeacher } from "@/lib/auth/current-user.ts";
-import { deleteOrArchiveClassroom, updateClassroom } from "@/lib/classroom/classroom-service.ts";
+import {
+  archiveClassroom,
+  deleteOrArchiveClassroom,
+  hardDeleteClassroom,
+  updateClassroom,
+} from "@/lib/classroom/classroom-service.ts";
 import { jsonError } from "@/lib/http/route-helpers.ts";
 
 export async function PATCH(request: Request, { params }: { params: Promise<{ id: string }> }) {
@@ -17,12 +22,29 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
     : NextResponse.json({ error: result.message, code: result.code }, { status: result.status });
 }
 
-export async function DELETE(_request: Request, { params }: { params: Promise<{ id: string }> }) {
+export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const teacher = await getCurrentTeacher();
   if (!teacher) return jsonError(401, "Oturum açmanız gerekiyor.");
   const { id } = await params;
-  const result = await deleteOrArchiveClassroom(teacher.id, id);
+
+  const url = new URL(request.url);
+  const action = url.searchParams.get("action") ?? url.searchParams.get("mode");
+
+  let result;
+  if (action === "archive") {
+    result = await archiveClassroom(teacher.id, id);
+  } else if (action === "delete" || action === "hard_delete") {
+    result = await hardDeleteClassroom(teacher.id, id);
+  } else {
+    result = await deleteOrArchiveClassroom(teacher.id, id);
+  }
+
   return result.ok
-    ? NextResponse.json({ ok: true, action: result.action, message: result.message })
+    ? NextResponse.json({
+        ok: true,
+        action: result.action,
+        message: result.message,
+        data: "data" in result ? result.data : undefined,
+      })
     : NextResponse.json({ error: result.message, code: result.code }, { status: result.status });
 }

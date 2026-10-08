@@ -6,7 +6,7 @@ import { getCurrentUser } from "@/lib/auth/current-user.ts";
 import { AuthShell } from "@/components/auth/AuthShell.tsx";
 import { GoogleRoleForm } from "@/components/auth/PasswordForms.tsx";
 
-export const metadata = { title: "Hesabını Tamamla – Evde Etüt" };
+export const metadata = { title: "Hesabını Tamamla – DersBot" };
 
 export default async function GoogleSignupPage() {
   const user = await getCurrentUser();
@@ -24,7 +24,7 @@ export default async function GoogleSignupPage() {
         </svg>
       }
       title="Hesabını Tamamla"
-      subtitle={`${identity.name} (${identity.email}) olarak Google ile devam ediyorsunuz. Evde Etüt'ü nasıl kullanacaksınız?`}
+      subtitle={`${identity.name} (${identity.email}) olarak Google ile devam ediyorsunuz. DersBot'u nasıl kullanacaksınız?`}
       width={480}
       footer={<Link href="/giris">Vazgeç</Link>}
     >

@@ -100,6 +100,76 @@ export async function regenerateClassroomJoinCode(
   return fail(409, "CODE_COLLISION", "Yeni katılma kodu oluşturulamadı, lütfen tekrar deneyin.");
 }
 
+export async function hardDeleteClassroom(
+  teacherId: string,
+  classroomId: string,
+  db: PrismaClient = defaultPrisma,
+  isAdmin = false
+) {
+  const classroom = await db.classroom.findUnique({
+    where: { id: classroomId },
+    select: {
+      id: true,
+      teacherId: true,
+      _count: {
+        select: {
+          members: true,
+          assignments: true,
+        },
+      },
+    },
+  });
+
+  if (!classroom) return fail(404, "NOT_FOUND", "Sınıf bulunamadı.");
+  if (!isAdmin && classroom.teacherId !== teacherId) {
+    return fail(403, "FORBIDDEN", "Bu sınıfı silme yetkiniz bulunmuyor.");
+  }
+
+  const hasMembers = classroom._count.members > 0;
+  const hasAssignments = classroom._count.assignments > 0;
+
+  if (hasMembers || hasAssignments) {
+    return fail(
+      400,
+      "HAS_DATA",
+      "Bu sınıfta öğrenci veya geçmiş çalışma verileri bulunduğu için kalıcı olarak silinemez. Arşivleyebilirsiniz."
+    );
+  }
+
+  await db.classroom.delete({ where: { id: classroomId } });
+  return { ok: true as const, action: "DELETED" as const, message: "Sınıf kalıcı olarak silindi." };
+}
+
+export async function archiveClassroom(
+  teacherId: string,
+  classroomId: string,
+  db: PrismaClient = defaultPrisma,
+  isAdmin = false
+) {
+  const classroom = await db.classroom.findUnique({
+    where: { id: classroomId },
+    select: { id: true, teacherId: true, archivedAt: true },
+  });
+
+  if (!classroom) return fail(404, "NOT_FOUND", "Sınıf bulunamadı.");
+  if (!isAdmin && classroom.teacherId !== teacherId) {
+    return fail(403, "FORBIDDEN", "Bu sınıfı arşivleme yetkiniz bulunmuyor.");
+  }
+
+  const updated = await db.classroom.update({
+    where: { id: classroomId },
+    data: { archivedAt: new Date() },
+    select: { id: true, archivedAt: true },
+  });
+
+  return {
+    ok: true as const,
+    action: "ARCHIVED" as const,
+    message: "Sınıfta kayıtlı öğrenciler veya görevler bulunduğu için sınıf arşivlendi. Öğrenci geçmişleri ve raporlar korunacaktır.",
+    data: updated,
+  };
+}
+
 export async function deleteOrArchiveClassroom(
   teacherId: string,
   classroomId: string,
@@ -126,29 +196,14 @@ export async function deleteOrArchiveClassroom(
     return fail(403, "FORBIDDEN", "Bu sınıfı silme veya arşivleme yetkiniz bulunmuyor.");
   }
 
-  // Count if any student attempt data exists
   const hasMembers = classroom._count.members > 0;
   const hasAssignments = classroom._count.assignments > 0;
 
   if (!hasMembers && !hasAssignments) {
-    // Completely empty classroom: safe to hard-delete
-    await db.classroom.delete({ where: { id: classroomId } });
-    return { ok: true as const, action: "DELETED" as const, message: "Sınıf kalıcı olarak silindi." };
+    return hardDeleteClassroom(teacherId, classroomId, db, isAdmin);
   }
 
-  // Classroom has students or assignments: MUST soft-delete / archive to preserve history
-  const updated = await db.classroom.update({
-    where: { id: classroomId },
-    data: { archivedAt: new Date() },
-    select: { id: true, archivedAt: true },
-  });
-
-  return {
-    ok: true as const,
-    action: "ARCHIVED" as const,
-    message: "Sınıfta kayıtlı öğrenciler veya görevler bulunduğu için sınıf arşivlendi. Öğrenci geçmişleri ve raporlar korunacaktır.",
-    data: updated,
-  };
+  return archiveClassroom(teacherId, classroomId, db, isAdmin);
 }
 
 export async function unarchiveClassroom(

@@ -1,6 +1,8 @@
 import { afterAll, describe, expect, it } from "vitest";
 import {
+  archiveClassroom,
   deleteOrArchiveClassroom,
+  hardDeleteClassroom,
   regenerateClassroomJoinCode,
   unarchiveClassroom,
   updateClassroom,
@@ -160,5 +162,101 @@ describe("classroom management & archiving", () => {
 
     const restoredList = await listTeacherClassrooms(teacher.id, { onlyArchived: false }, db);
     expect(restoredList.some((c) => c.id === classroom.id)).toBe(true);
+  });
+
+  it("prevents hard-delete on classroom with enrolled students and suggests archive", async () => {
+    const { teacher, rooms } = await makeTeacher([{ name: "6/B", grade: 6 }]);
+    const classroom = rooms[0];
+    await makeStudent([classroom.id]);
+
+    const result = await hardDeleteClassroom(teacher.id, classroom.id, db);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.status).toBe(400);
+      expect(result.code).toBe("HAS_DATA");
+      expect(result.message).toContain("kalıcı olarak silinemez. Arşivleyebilirsiniz.");
+    }
+  });
+
+  it("prevents hard-delete on classroom with assignments and suggests archive", async () => {
+    await ensureCurriculum();
+    const { teacher, rooms } = await makeTeacher([{ name: "5/C", grade: 5 }]);
+    const classroom = rooms[0];
+    const { unitOrTheme, outcomes } = await verifiedOutcomesOfFirstUnit(5, "Matematik");
+    const asgn = await createAssignment(teacher.id, {
+      classroomId: classroom.id,
+      subject: "Matematik",
+      unitOrTheme,
+      topic: "Doğal Sayılar",
+      outcomeIds: [outcomes[0].id],
+      minimumScore: 70,
+      deadline: inDays(7),
+    }, db);
+    expect(asgn.ok).toBe(true);
+
+    const result = await hardDeleteClassroom(teacher.id, classroom.id, db);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(result.status).toBe(400);
+      expect(result.code).toBe("HAS_DATA");
+      expect(result.message).toContain("kalıcı olarak silinemez. Arşivleyebilirsiniz.");
+    }
+  });
+
+  it("explicitly archives an empty classroom without deleting it", async () => {
+    const { teacher, rooms } = await makeTeacher([{ name: "8/D", grade: 8 }]);
+    const classroom = rooms[0];
+
+    const result = await archiveClassroom(teacher.id, classroom.id, db);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.action).toBe("ARCHIVED");
+    }
+
+    const inDb = await db.classroom.findUnique({ where: { id: classroom.id } });
+    expect(inDb).not.toBeNull();
+    expect(inDb?.archivedAt).not.toBeNull();
+  });
+
+  it("blocks another teacher from archiving, deleting, or restoring a classroom", async () => {
+    const { rooms } = await makeTeacher([{ name: "6/E", grade: 6 }]);
+    const classroom = rooms[0];
+    const { teacher: stranger } = await makeTeacher([]);
+
+    const badArchive = await archiveClassroom(stranger.id, classroom.id, db);
+    expect(badArchive.ok).toBe(false);
+    if (!badArchive.ok) expect(badArchive.status).toBe(403);
+
+    const badDelete = await hardDeleteClassroom(stranger.id, classroom.id, db);
+    expect(badDelete.ok).toBe(false);
+    if (!badDelete.ok) expect(badDelete.status).toBe(403);
+
+    const badRestore = await unarchiveClassroom(stranger.id, classroom.id, db);
+    expect(badRestore.ok).toBe(false);
+    if (!badRestore.ok) expect(badRestore.status).toBe(403);
+  });
+
+  it("prevents creating new assignments in an archived classroom", async () => {
+    await ensureCurriculum();
+    const { teacher, rooms } = await makeTeacher([{ name: "7/F", grade: 7 }]);
+    const classroom = rooms[0];
+
+    await archiveClassroom(teacher.id, classroom.id, db);
+
+    const { unitOrTheme, outcomes } = await verifiedOutcomesOfFirstUnit(7, "Matematik");
+    const asgn = await createAssignment(teacher.id, {
+      classroomId: classroom.id,
+      subject: "Matematik",
+      unitOrTheme,
+      topic: "Tam Sayılar",
+      outcomeIds: [outcomes[0].id],
+      minimumScore: 70,
+      deadline: inDays(7),
+    }, db);
+
+    expect(asgn.ok).toBe(false);
+    if (!asgn.ok) {
+      expect(asgn.errors?.classroomId).toBeDefined();
+    }
   });
 });

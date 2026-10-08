@@ -10,9 +10,9 @@ export interface AssistantChatContext {
   userName?: string;
 }
 
-const SYSTEM_PROMPT = `Sen 'Etüt' adında, Evde Etüt eğitim platformunda öğretmenlere ve öğrencilere yardımcı olan zeki ve sevimli bir baykuş asistansın.
+const SYSTEM_PROMPT = `Sen 'DersBot' adında, DersBot akıllı eğitim platformunda öğretmenlere ve öğrencilere yardımcı olan sevimli, zeki, mezuniyet kepli yardımcı eğitim robotusun.
 Temel ilkelerin:
-1. Kısa, samimi, anlaşılır, Türkçe ve nazik yanıtlar ver (en fazla 2-3 kısa paragraf).
+1. Kısa, samimi, anlaşılır, Türkçe ve motive edici yanıtlar ver (en fazla 2-3 kısa paragraf).
 2. Kullanıcının rolüne (öğretmen veya öğrenci) ve bulunduğu sayfaya duyarlı rehberlik sağla.
 3. Öğretmenlere: görev oluşturma, MEB kazanımı seçimi, AI taslak hazırlama, sınıf kodunu paylaşma, açık uçlu soru değerlendirme ve sınıf arşivleme konularında yol göster.
 4. Öğrencilere: sınıfa katılma kodu girme, hazırlık görevlerini çözme, konu özetini okuma, 'Derse Hazır' / 'Tekrar Gerekli' durumları hakkında bilgi ver.
@@ -29,12 +29,12 @@ function getDeterministicResponse(message: string, context: AssistantChatContext
   // Greetings
   if (/^(merhaba|selam|günaydın|iyi günler|hey)/.test(q)) {
     if (role === "TEACHER") {
-      return `Merhaba Hocam! Ben Etüt, Evde Etüt asistanınız. Yeni görev oluşturma, sınıf yönetimi veya öğrenci değerlendirmeleri konusunda size nasıl yardımcı olabilirim?`;
+      return `Merhaba Hocam! Ben DersBot, akıllı eğitim asistanınız. Yeni görev oluşturma, sınıf yönetimi veya öğrenci değerlendirmeleri konusunda size nasıl yardımcı olabilirim?`;
     }
     if (role === "STUDENT") {
-      return `Merhaba! Ben Etüt. Sınıfa katılma, derse hazırlık görevlerini tamamlama veya başarı durumun hakkında aklına takılanları sorabilirsin!`;
+      return `Merhaba! Ben DersBot. Sınıfa katılma, derse hazırlık görevlerini tamamlama veya başarı durumun hakkında aklına takılanları sorabilirsin!`;
     }
-    return `Merhaba! Ben Etüt, Evde Etüt platformunun rehber asistanıyım. Platform hakkında merak ettiğiniz her şeyi bana sorabilirsiniz.`;
+    return `Merhaba! Ben DersBot, akıllı eğitim platformunun rehber robotuyum. Platform hakkında merak ettiğiniz her şeyi bana sorabilirsiniz.`;
   }
 
   // Teacher specific questions
@@ -97,7 +97,7 @@ function getDeterministicResponse(message: string, context: AssistantChatContext
     return `Şu anda **Görevlerim** ekranındasınız. Öğretmenlerinizin tanımladığı derse hazırlık çalışmalarını buradan takip edebilir veya üst kısımdan yeni bir sınıfa katılabilirsiniz.`;
   }
 
-  return `Size en iyi şekilde yardımcı olmak isterim! Evde Etüt platformunda görev oluşturma, sınıfa katılma kodları, ders özetleri veya başarı durumları hakkında bana soru sorabilirsiniz.`;
+  return `Size en iyi şekilde yardımcı olmak isterim! DersBot platformunda görev oluşturma, sınıfa katılma kodları, ders özetleri veya başarı durumları hakkında bana soru sorabilirsiniz.`;
 }
 
 export async function chatWithAssistant(

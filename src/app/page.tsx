@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getCurrentStudent, getCurrentTeacher } from "@/lib/auth/current-user.ts";
+import { DersBotLogo } from "@/components/brand/DersBotLogo.tsx";
 
 export default async function HomePage() {
   const teacher = await getCurrentTeacher();
@@ -15,12 +16,9 @@ export default async function HomePage() {
       {/* Editorial Masthead Top Header */}
       <header className="top" style={{ borderBottom: "1px solid var(--border)", background: "var(--surface)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <Link href="/" className="brand-badge">
-            <span className="brand-icon">✎</span>
-            <span>Evde Etüt</span>
-          </Link>
+          <DersBotLogo showSubtitle />
           <span style={{ fontSize: "0.8rem", color: "var(--muted)", borderLeft: "1px solid var(--border)", paddingLeft: 12 }}>
-            Öğrenme Çalışma Alanı
+            Akıllı Derse Hazırlık Robotu
           </span>
         </div>
 
@@ -64,13 +62,13 @@ export default async function HomePage() {
           {/* Sol Sütun: Editoryal Manifesto */}
           <div>
             <h1 style={{ fontSize: "2.75rem", lineHeight: 1.15, marginBottom: 16 }}>
-              Derse Eksiksiz ve Özgüvenle Hazırlanın.
+              DersBot ile Derse Eksiksiz ve Özgüvenle Hazırlanın.
             </h1>
             <p style={{ fontSize: "1.12rem", lineHeight: 1.7, color: "var(--text-secondary)", marginBottom: 24 }}>
-              Evde Etüt; geleneksel uzun ev ödevi yorgunluğunu ortadan kaldırarak ortaokul öğrencilerinin
+              DersBot; geleneksel uzun ev ödevi yorgunluğunu ortadan kaldırarak ortaokul öğrencilerinin
               dersten önceki akşam yalnızca 5 dakikalık MEB kazanım özetini okumasını, formatif ön kontrolleri
               tamamlamasını ve öğretmenlerin ertesi sabah sınıfa hazır bulunuşluk analiziyle girmesini sağlayan
-              akademik çalışma alanıdır.
+              akıllı eğitim robotudur.
             </p>
 
             <div className="row" style={{ gap: 12, marginBottom: 32 }}>
@@ -267,13 +265,12 @@ export default async function HomePage() {
       {/* Editorial Footer */}
       <footer style={{ marginTop: "auto", borderTop: "1px solid var(--border)", background: "var(--surface)", padding: "28px 24px" }}>
         <div style={{ maxWidth: 1080, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span className="brand-icon" style={{ width: 26, height: 26, fontSize: "0.9rem" }}>✎</span>
-            <strong style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem" }}>Evde Etüt</strong>
-            <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>· Millî Eğitim Bakanlığı Standartlarında Derse Hazırlık</span>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <DersBotLogo size="sm" />
+            <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>· Millî Eğitim Bakanlığı Standartlarında Derse Hazırlık Robotu</span>
           </div>
           <div style={{ fontSize: "0.85rem", color: "var(--muted)" }}>
-            © 2026 Evde Etüt. Tüm hakları saklıdır.
+            © 2026 DersBot. Tüm hakları saklıdır.
           </div>
         </div>
       </footer>

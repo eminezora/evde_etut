@@ -5,7 +5,7 @@ import { getAssignmentForTeacher, getEditState, MIN_SCORE_LOCKED_MESSAGE, QUESTI
 import { AssignmentEditForm } from "@/components/teacher/AssignmentEditForm.tsx";
 import { PolicyForm } from "@/components/teacher/PolicyForm.tsx";
 
-export const metadata = { title: "Görevi Düzenle – Evde Etüt" };
+export const metadata = { title: "Görevi Düzenle – DersBot" };
 
 export default async function EditAssignmentPage({ params }: { params: Promise<{ id: string }> }) {
   const teacher = await requireTeacher();

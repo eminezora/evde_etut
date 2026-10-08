@@ -7,7 +7,7 @@ export default async function NewAssignmentPage() {
   const teacher = await requireTeacher();
   // Only the teacher's own classrooms; curriculum options are fetched per step.
   const classrooms = await prisma.classroom.findMany({
-    where: { teacherId: teacher.id },
+    where: { teacherId: teacher.id, archivedAt: null },
     select: { id: true, name: true, grade: true },
     orderBy: [{ grade: "asc" }, { name: "asc" }],
   });

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { AuthShell } from "@/components/auth/AuthShell.tsx";
 import { ForgotPasswordForm } from "@/components/auth/PasswordForms.tsx";
 
-export const metadata = { title: "Şifremi Unuttum – Evde Etüt" };
+export const metadata = { title: "Şifremi Unuttum – DersBot" };
 
 export default function ForgotPasswordPage() {
   return (

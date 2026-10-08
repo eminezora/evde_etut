@@ -3,6 +3,7 @@ import { requireTeacher } from "@/lib/auth/current-user.ts";
 import { listAssignmentsForTeacher } from "@/lib/assignments/assignment-service.ts";
 import { formatDate } from "@/lib/assignments/format.ts";
 import { countPendingReviews } from "@/lib/assessment/review-service.ts";
+import { DersBotTip } from "@/components/brand/DersBotTip.tsx";
 
 export default async function AssignmentsPage({
   searchParams,
@@ -125,13 +126,19 @@ export default async function AssignmentsPage({
         </div>
 
         {assignments.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "48px 16px" }}>
-            <p className="muted" style={{ fontSize: "0.95rem", marginBottom: 12 }}>
-              {archived ? "Arşivlenmiş görev bulunmuyor." : "Henüz oluşturulmuş bir ders hazırlık görevi yok."}
-            </p>
-            <Link href="/ogretmen/gorevler/yeni" className="button primary">
-              İlk Görevi Oluştur →
-            </Link>
+          <div style={{ textAlign: "center", padding: "36px 16px" }}>
+            <div style={{ maxWidth: 460, margin: "0 auto 18px", textAlign: "left" }}>
+              <DersBotTip title="DersBot Görev Rehberi">
+                {archived
+                  ? "Arşivlenmiş bir görev bulunmuyor. Aktif görevlerinizi listenizden inceleyebilirsiniz."
+                  : "Henüz oluşturulmuş bir derse hazırlık görevi yok. MEB kazanımını seçerek yapay zekâ desteğiyle ilk görevinizi hazırlayabilirsiniz!"}
+              </DersBotTip>
+            </div>
+            {!archived && (
+              <Link href="/ogretmen/gorevler/yeni" className="button primary">
+                + İlk Görevi Oluştur →
+              </Link>
+            )}
           </div>
         ) : (
           <div className="table-scroll">

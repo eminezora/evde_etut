@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentTeacher } from "@/lib/auth/current-user.ts";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
+import { DersBotLogo } from "@/components/brand/DersBotLogo.tsx";
 
 export default async function TeacherLayout({ children }: { children: React.ReactNode }) {
   const teacher = await getCurrentTeacher();
@@ -12,10 +13,7 @@ export default async function TeacherLayout({ children }: { children: React.Reac
       {/* Top Editorial Header (Mobile & Desktop Global Header) */}
       <header className="top">
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <Link href="/ogretmen/gorevler" className="brand-badge">
-            <span className="brand-icon">✎</span>
-            <span>Evde Etüt</span>
-          </Link>
+          <DersBotLogo href="/ogretmen/gorevler" />
           <span className="badge" style={{ backgroundColor: "var(--surface-subtle)", color: "var(--accent)", borderColor: "var(--border)" }}>
             Öğretmen Çalışma Alanı
           </span>

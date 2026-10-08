@@ -1,86 +1,99 @@
 /* ==========================================================================
-   EVDE ETÜT – EDITORIAL LEARNING WORKSPACE DESIGN SYSTEM
+   DERSBOT – AKILLI EĞİTİM PLATFORMU DESIGN SYSTEM
    Tasarım Felsefesi:
-   - Sıcak kırık beyaz / kağıt tonu ana zemin
-   - Koyu mürekkep / lacivert metin
-   - Kobalt / royal blue ana vurgu
-   - Sınırlı mercan / terrakotta ikincil vurgu
-   - Doğal orman yeşili başarı, amber uyarı, kontrollü bordo hata
-   - Az radius (2px - 6px), çok az shadow, ince ve net border'lar
-   - Güçlü editoryal tipografi (Serif başlıklar + keskin okuma sans'ı)
-   - Kart yerine section / divider / tab / table yaklaşımı
+   - Ana referans: DersBot logosu ve maskotu
+   - Ana renkler: Derin lacivert (#0f2252), canlı mavi (#2563eb), açık camgöbeği/turkuaz (#0284c7, #e0f2fe), beyaz (#ffffff)
+   - Vurgu rengi: Altın sarısı (#f59e0b, #fbbf24)
+   - Genel görünüm: Ferah, açık, aydınlık, beyaz ağırlıklı
+   - Yumuşak modern köşeler (8px - 16px), dostça ve canlı ikonografi
+   - Net ve temiz hiyerarşi, dengeli boşluk kullanımı
    ========================================================================== */
 
 :root {
   color-scheme: light;
 
-  /* Temel Zemin ve Kağıt Tonları */
-  --bg: #f9f8f5;
-  --bg-warm: #f6f4ee;
+  /* Temel Zemin ve Beyaz Yüzey Tonları */
+  --bg: #f8fafc;
+  --bg-warm: #f0f7ff;
   --surface: #ffffff;
-  --surface-hover: #faf9f6;
-  --surface-subtle: #f2efe9;
-  --surface-muted: #e9e5db;
+  --surface-hover: #f8fafc;
+  --surface-subtle: #f0f9ff;
+  --surface-muted: #e2e8f0;
 
-  /* Mürekkep ve Tipografi Renkleri */
-  --text: #161c28;
-  --text-secondary: #364052;
-  --text-muted: #5e6878;
-  --muted: #5e6878;
+  /* Metin ve Tipografi Renkleri */
+  --text: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --muted: #64748b;
 
   /* Çizgi ve Bölücü Sınırları */
-  --border: #e3ded6;
-  --border-subtle: #ece8e1;
-  --border-strong: #c8c2b5;
-  --border-focus: #1e3a8a;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
+  --border-strong: #cbd5e1;
+  --border-focus: #2563eb;
 
-  /* Renk Paleti ve Vurgular */
-  --accent: #1e3a8a;             /* Derin Kobalt / Mürekkep Mavisi */
-  --accent-hover: #172d6b;
-  --accent-active: #112252;
-  --accent-light: #eff3fa;
-  --accent-border: #ccd8ed;
+  /* DersBot Marka Renk Paleti */
+  --brand-navy: #0f2252;
+  --brand-blue: #2563eb;
+  --brand-blue-hover: #1d4ed8;
+  --brand-cyan: #0284c7;
+  --brand-cyan-light: #e0f2fe;
+  --brand-cyan-bright: #38bdf8;
+  --brand-yellow: #f59e0b;
+  --brand-yellow-light: #fef3c7;
+  --brand-gold: #fbbf24;
+
+  /* Ana Vurgu (Canlı DersBot Mavisi) */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-active: #1e40af;
+  --accent-light: #eff6ff;
+  --accent-border: #bfdbfe;
   --accent-text: #ffffff;
 
-  --secondary: #c2410c;          /* Mercan / Terrakotta Vurgu */
-  --secondary-light: #fff7ed;
-  --secondary-border: #fed7aa;
+  /* İkincil Vurgu (Altın Sarısı / Mezuniyet Püskülü) */
+  --secondary: #f59e0b;
+  --secondary-light: #fef3c7;
+  --secondary-border: #fde68a;
 
-  /* Geri Bildirim Renkleri (Sakin ve Doğal) */
-  --ok: #166534;                 /* Doğal Yaprak Yeşili */
-  --ok-bg: #f0fdf4;
-  --ok-border: #bbf7d0;
-  --ok-text: #14532d;
+  /* Geri Bildirim Renkleri */
+  --ok: #10b981;
+  --ok-bg: #ecfdf5;
+  --ok-border: #a7f3d0;
+  --ok-text: #065f46;
 
-  --warn: #92400e;               /* Sıcak Amber */
+  --warn: #d97706;
   --warn-bg: #fffbeb;
   --warn-border: #fde68a;
-  --warn-text: #78350f;
+  --warn-text: #92400e;
 
-  --danger: #991b1b;             /* Kontrollü Bordo / Kırmızı */
+  --danger: #ef4444;
   --danger-bg: #fef2f2;
   --danger-border: #fecaca;
-  --danger-text: #7f1d1d;
+  --danger-text: #991b1b;
 
-  --info-bg: #eff6ff;
-  --info-border: #bfdbfe;
-  --info-text: #1e3a8a;
+  --info-bg: #f0f9ff;
+  --info-border: #bae6fd;
+  --info-text: #0369a1;
 
-  /* Editoryal Radius (Az ve Keskin) */
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
+  /* Yumuşak Dostça Radius (DersBot Eğrileri) */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
   --radius-pill: 9999px;
 
-  /* Editoryal Gölgeler (Çok Hafif, Çizgi Öncelikli) */
+  /* Canlı Gölgeler */
   --shadow-none: none;
-  --shadow-xs: 0 1px 2px rgba(22, 28, 40, 0.04);
-  --shadow-sm: 0 1px 3px rgba(22, 28, 40, 0.06);
-  --shadow-md: 0 4px 6px -2px rgba(22, 28, 40, 0.06);
+  --shadow-xs: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 2px 4px 0 rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 6px 12px -2px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 24px -4px rgba(15, 23, 42, 0.12);
+  --shadow-brand: 0 8px 24px -4px rgba(37, 99, 235, 0.25);
 
   /* Font Aileleri */
-  --font-serif: "Charter", "Bitstream Charter", "Sitka Text", "Cambria", Georgia, serif;
+  --font-serif: "Newsreader", "Charter", "Georgia", "Cambria", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
@@ -457,30 +470,33 @@ a.button:hover {
 
 button.primary,
 a.button.primary {
-  background-color: var(--accent);
+  background: linear-gradient(135deg, var(--brand-blue) 0%, #1d4ed8 100%);
   color: #ffffff;
-  border-color: var(--accent);
-  box-shadow: var(--shadow-xs);
+  border-color: #1d4ed8;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
 }
 
 button.primary:hover,
 a.button.primary:hover {
-  background-color: var(--accent-hover);
-  border-color: var(--accent-hover);
-  color: #ffffff;
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  border-color: #1e40af;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+  transform: translateY(-1px);
 }
 
 button.secondary,
 a.button.secondary {
-  background-color: var(--secondary);
+  background: linear-gradient(135deg, var(--brand-yellow) 0%, #d97706 100%);
   color: #ffffff;
-  border-color: var(--secondary);
+  border-color: #d97706;
+  box-shadow: 0 2px 6px rgba(245, 158, 11, 0.25);
 }
 
 button.secondary:hover,
 a.button.secondary:hover {
-  background-color: #9a3412;
-  border-color: #9a3412;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  border-color: #b45309;
+  transform: translateY(-1px);
 }
 
 button.ghost,
@@ -1075,3 +1091,42 @@ tr:hover td {
   main { max-width: none; padding: 0; }
   .card, .editorial-panel { box-shadow: none; border-color: #bbb; break-inside: avoid; }
 }
+
+/* ==========================================================================
+   DERSBOT MARKA ANİMASYONLARI VE ROZETLER
+   ========================================================================== */
+
+@keyframes dersbot-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dersbot-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(37, 99, 235, 0);
+  }
+}
+
+.badge-yellow {
+  background-color: var(--brand-yellow-light, #fef3c7);
+  color: #92400e;
+  border-color: #fde68a;
+  font-weight: 600;
+}
+
+.badge-cyan {
+  background-color: var(--brand-cyan-light, #e0f2fe);
+  color: #0369a1;
+  border-color: #bae6fd;
+  font-weight: 600;
+}
+

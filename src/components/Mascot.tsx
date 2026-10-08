@@ -1,17 +1,16 @@
 "use client";
 
-// "Etüt" – Platform's interactive AI assistant and mascot.
-// - Welcomes user on first session visit with a gentle animation.
-// - Clicking opens the interactive chat panel with contextual quick-help chips.
-// - Connects to /api/assistant/chat with graceful fallback.
-// - Persists minimize / close preferences in localStorage.
-// - Mobile-friendly and respects prefers-reduced-motion.
+// "DersBot" – Platformun akıllı, sevimli eğitim robotu ve etkileşimli öğrenme asistanı.
+// - Kullanıcı ilk oturum açtığında sıcak bir mini karşılama sunar.
+// - Tıklanabilir sağ alt köşe asistan penceresi açar.
+// - Öğretmen, öğrenci ve yöneticilere rollerine özel akıllı hızlı ipucu çipleri sağlar.
+// - /api/assistant/chat endpoint'iyle gerçek zamanlı etkileşir.
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
-const PREF_KEY = "etut-mascot"; // "min" | "off" | "on"
-const SEEN_KEY = "etut-mascot-seen";
+const PREF_KEY = "dersbot-mascot-pref"; // "min" | "off" | "on"
+const SEEN_KEY = "dersbot-mascot-seen";
 
 interface Message {
   id: string;
@@ -21,7 +20,7 @@ interface Message {
 
 export function Mascot() {
   const pathname = usePathname() ?? "/";
-  const [pref, setPref] = useState<"on" | "min" | "off" | null>(null);
+  const [pref, setPref] = useState<"on" | "min">("on");
   const [isOpen, setIsOpen] = useState(false);
   const [welcome, setWelcome] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -32,14 +31,15 @@ export function Mascot() {
 
   const isTeacher = pathname.startsWith("/ogretmen");
   const isStudent = pathname.startsWith("/ogrenci");
-  const userRole = isTeacher ? "TEACHER" : isStudent ? "STUDENT" : "GUEST";
+  const isAdmin = pathname.startsWith("/admin");
+  const userRole = isTeacher ? "TEACHER" : isStudent ? "STUDENT" : isAdmin ? "ADMIN" : "GUEST";
 
-  // Read preferences on mount
+  // Tercihleri yükle
   useEffect(() => {
-    let p: "on" | "min" | "off" = "on";
+    let p: "on" | "min" = "on";
     try {
       const v = localStorage.getItem(PREF_KEY);
-      if (v === "min" || v === "off") p = v;
+      if (v === "min") p = "min";
     } catch {
       /* storage unavailable */
     }
@@ -62,34 +62,42 @@ export function Mascot() {
 
     void Promise.resolve().then(() => {
       setPref(p);
-      setWelcome(!seenWelcomed && p !== "off");
+      setWelcome(!seenWelcomed && p !== "min");
     });
   }, []);
 
-  // Welcome animation auto-dismiss
+  // Karşılama baloncuğu otomatik gizlenme
   useEffect(() => {
     if (!welcome) return;
-    const t = setTimeout(() => setWelcome(false), 1600);
+    const t = setTimeout(() => setWelcome(false), 3600);
     return () => clearTimeout(t);
   }, [welcome]);
 
   const idCounterRef = useRef(0);
 
-  // Set default greeting based on role
+  // Role göre başlangıç mesajı
   useEffect(() => {
-    let initialGreeting = "Merhaba! Ben Etüt, Evde Etüt asistanınızım. Platform hakkında aklınıza takılan her şeyi bana sorabilirsiniz.";
+    let initialGreeting =
+      "Merhaba! Ben DersBot, akıllı eğitim yardımcınım. Platform hakkında aklına takılan her şeyi bana sorabilirsin!";
     if (isTeacher) {
-      initialGreeting = "Merhaba Hocam! Ben Etüt. Görev hazırlama, sınıf kodları veya öğrenci değerlendirmeleri konusunda size yardımcı olabilirim.";
+      initialGreeting =
+        "Merhaba Hocam! Ben DersBot. Yeni görev planlama, sınıf kodları veya öğrenci değerlendirmeleri konusunda size rehberlik etmek için buradayım.";
     } else if (isStudent) {
-      initialGreeting = "Selam! Ben Etüt. Sınıfa katılma, görevleri tamamlama veya başarı durumun hakkında sorularını cevaplayabilirim.";
+      initialGreeting =
+        "Selam! Ben DersBot. Sınıfa katılma, derse hazırlık özetleri veya soru çözümleri hakkında takıldığın her an bana danışabilirsin!";
+    } else if (isAdmin) {
+      initialGreeting =
+        "Merhaba Yönetici! Ben DersBot. Öğretmen davet kodları, kullanıcı izinleri veya AI servis durumu hakkında sorularınızı yanıtlayabilirim.";
     }
 
     void Promise.resolve().then(() => {
-      setMessages((prev) => (prev.length === 0 ? [{ id: "welcome-1", sender: "bot", text: initialGreeting }] : prev));
+      setMessages((prev) =>
+        prev.length === 0 ? [{ id: "welcome-1", sender: "bot", text: initialGreeting }] : prev
+      );
     });
-  }, [isTeacher, isStudent]);
+  }, [isTeacher, isStudent, isAdmin]);
 
-  // Scroll to bottom on new messages
+  // Yeni mesajda aşağı kaydır
   useEffect(() => {
     if (isOpen) {
       messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -138,7 +146,7 @@ export function Mascot() {
     }
   }
 
-  const savePref = (p: "on" | "min" | "off") => {
+  const savePref = (p: "on" | "min") => {
     setPref(p);
     try {
       if (p === "on") localStorage.removeItem(PREF_KEY);
@@ -148,38 +156,84 @@ export function Mascot() {
     }
   };
 
-  if (pref === null || pref === "off") return null;
-
-  // Quick suggestion chips
+  // Hızlı öneri çipleri
   const teacherChips = [
     "Yeni görev nasıl oluşturulur?",
-    "Sınıf kodu nerede?",
-    "Öğrenci cevaplarını göster",
-    "AI taslak nasıl hazırlanır?",
+    "Sınıf kodu nerede ve nasıl paylaşılır?",
+    "Öğrenci cevaplarını nasıl değerlendiririm?",
+    "AI taslak oluşturma nasıl çalışır?",
   ];
 
   const studentChips = [
     "Sınıfa nasıl katılırım?",
-    "Görevlerim nerede?",
-    "Derse Hazır ne demek?",
-    "Tekrar Gerekli ne demek?",
+    "Bugünkü görevlerim nerede?",
+    "Derse Hazır rozeti ne demek?",
+    "Tekrar Gerekli ne anlama gelir?",
   ];
 
-  const chips = isTeacher ? teacherChips : studentChips;
+  const adminChips = [
+    "Öğretmen davet kodu nasıl üretilir?",
+    "Kullanıcı durumunu nasıl güncellerim?",
+    "AI servis sağlığı nasıl kontrol edilir?",
+  ];
+
+  const chips = isTeacher ? teacherChips : isStudent ? studentChips : isAdmin ? adminChips : teacherChips;
 
   return (
     <>
-      {/* Floating Mascot Button */}
+      {/* Sağ Alt Köşe Yüzen DersBot Butonu */}
       <div
-        className={`mascot${welcome ? " mascot-welcome" : ""}${pref === "min" ? " mascot-min" : ""}`}
+        className="dersbot-mascot-container"
+        style={{
+          position: "fixed",
+          bottom: 20,
+          right: 20,
+          zIndex: 100,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-end",
+          gap: 8,
+        }}
         aria-live="polite"
-        style={{ zIndex: 100 }}
       >
+        {/* Karşılama Baloncuğu */}
+        {(welcome || (!isOpen && pref === "on")) && (
+          <div
+            className="dersbot-welcome-bubble"
+            onClick={() => setIsOpen(true)}
+            style={{
+              backgroundColor: "#ffffff",
+              color: "var(--brand-navy, #0f1e42)",
+              padding: "10px 14px",
+              borderRadius: "14px",
+              border: "1.5px solid #bfdbfe",
+              boxShadow: "0 4px 14px rgba(37, 99, 235, 0.15)",
+              fontSize: "0.84rem",
+              fontWeight: 500,
+              maxWidth: 240,
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              gap: 8,
+              lineHeight: 1.35,
+              animation: "dersbot-fade-in 0.25s ease-out",
+            }}
+          >
+            <span style={{ fontSize: "1rem" }}>👋</span>
+            <div>
+              <strong style={{ color: "var(--brand-blue, #2563eb)", display: "block" }}>
+                DersBot Çevrim İçi
+              </strong>
+              <span>Yardıma mı ihtiyacın var? Tıkla!</span>
+            </div>
+          </div>
+        )}
+
+        {/* Ana Robot Butonu */}
         <button
           type="button"
-          className="mascot-owl"
-          aria-label={isOpen ? "Asistan panelini kapat" : "Etüt Asistanı ile sohbet et"}
-          title="Etüt Asistanı – Çalışma Rehberi"
+          aria-label={isOpen ? "DersBot asistanını kapat" : "DersBot ile sohbet et"}
+          title="DersBot – Akıllı Öğrenme Asistanı"
           onClick={() => {
             if (pref === "min") {
               savePref("on");
@@ -187,118 +241,156 @@ export function Mascot() {
             setIsOpen((prev) => !prev);
           }}
           style={{
-            width: 52,
-            height: 52,
+            width: 58,
+            height: 58,
             borderRadius: "50%",
             backgroundColor: "#ffffff",
-            border: "1.5px solid var(--border)",
-            boxShadow: "0 4px 14px rgba(22, 28, 40, 0.12)",
+            border: "2.5px solid #2563eb",
+            boxShadow: isOpen
+              ? "0 0 0 4px rgba(37, 99, 235, 0.2), 0 8px 20px rgba(15, 23, 42, 0.2)"
+              : "0 4px 18px rgba(37, 99, 235, 0.35)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             cursor: "pointer",
-            padding: 8,
-            transition: "transform 0.15s ease, box-shadow 0.15s ease",
+            padding: 0,
+            overflow: "hidden",
+            position: "relative",
+            transition: "all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1)",
           }}
         >
-          {/* Fine-line editorial owl SVG */}
-          <svg viewBox="0 0 40 40" width="34" height="34" fill="none" stroke="#161c28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            {/* Owl Body & Crown */}
-            <path d="M12 30c-3-4-4-9-2-15 2-7 7-11 14-11s12 4 14 11c2 6 1 11-2 15-3 4-21 4-24 0z" />
-            {/* Feather details */}
-            <path d="M16 28c-1-3-1-6 0-9 2-3 5-4 8-4s6 1 8 4c1 3 1 6 0 9" stroke="#1e3a8a" strokeWidth="1.4" />
-            {/* Scholarly spectacles */}
-            <circle cx="15.5" cy="18" r="4.2" stroke="#1e3a8a" strokeWidth="1.5" />
-            <circle cx="24.5" cy="18" r="4.2" stroke="#1e3a8a" strokeWidth="1.5" />
-            <line x1="19.7" y1="18" x2="20.3" y2="18" stroke="#1e3a8a" strokeWidth="1.5" />
-            {/* Eyes / Pupils */}
-            <circle cx="15.5" cy="18" r="1.4" fill="#161c28" stroke="none" />
-            <circle cx="24.5" cy="18" r="1.4" fill="#161c28" stroke="none" />
-            {/* Beak */}
-            <path d="M18.8 22.2l1.2 2 1.2-2z" fill="#c2410c" stroke="#c2410c" strokeWidth="0.8" />
-            {/* Open Book Base */}
-            <path d="M11 34c4-1 8-1 9 1 1-2 5-2 9-1" stroke="#161c28" strokeWidth="1.6" />
-          </svg>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/brand/dersbot-mascot.jpg"
+            alt="DersBot"
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          />
+
+          {/* Çevrim içi yeşil durum noktası */}
+          <span
+            style={{
+              position: "absolute",
+              bottom: 2,
+              right: 2,
+              width: 12,
+              height: 12,
+              borderRadius: "50%",
+              backgroundColor: "#10b981",
+              border: "2px solid #ffffff",
+              boxShadow: "0 0 6px #10b981",
+            }}
+          />
         </button>
       </div>
 
-      {/* Editorial Assistant Window */}
+      {/* DersBot Sohbet Penceresi */}
       {isOpen && (
         <div
           role="dialog"
-          aria-label="Etüt Çalışma Asistanı Paneli"
+          aria-label="DersBot Öğrenme Asistanı"
           style={{
             position: "fixed",
-            bottom: "82px",
+            bottom: "86px",
             right: "20px",
-            width: "370px",
+            width: "380px",
             maxWidth: "calc(100vw - 32px)",
-            height: "500px",
+            height: "520px",
             maxHeight: "calc(100vh - 110px)",
-            backgroundColor: "var(--bg)",
-            borderRadius: "var(--radius-sm)",
-            border: "1px solid var(--border)",
-            boxShadow: "0 12px 32px -4px rgba(22, 28, 40, 0.18), 0 0 0 1px rgba(22, 28, 40, 0.06)",
+            backgroundColor: "#ffffff",
+            borderRadius: "16px",
+            border: "1.5px solid #bfdbfe",
+            boxShadow: "0 16px 36px -4px rgba(15, 23, 42, 0.2), 0 0 0 1px rgba(37, 99, 235, 0.1)",
             display: "flex",
             flexDirection: "column",
             zIndex: 101,
             overflow: "hidden",
-            animation: "mascot-fade 0.2s ease-out",
+            animation: "dersbot-fade-in 0.2s ease-out",
           }}
         >
-          {/* Masthead Header */}
+          {/* DersBot Başlık Barı (Mavi Degrade + Maskot) */}
           <div
             style={{
               padding: "12px 16px",
-              backgroundColor: "var(--ink)",
-              color: "#fbfaf7",
+              background: "linear-gradient(135deg, #0f2252 0%, #1d4ed8 100%)",
+              color: "#ffffff",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
-              borderBottom: "1px solid #2d3748",
+              borderBottom: "1px solid rgba(255, 255, 255, 0.15)",
             }}
           >
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <div
                 style={{
-                  width: 28,
-                  height: 28,
-                  borderRadius: "var(--radius-xs)",
-                  backgroundColor: "rgba(255, 255, 255, 0.12)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  width: 38,
+                  height: 38,
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                  border: "2px solid #ffffff",
+                  boxShadow: "0 2px 6px rgba(0, 0, 0, 0.2)",
+                  background: "#ffffff",
+                  flexShrink: 0,
                 }}
               >
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fbfaf7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
-                  <path d="M6 6h10" />
-                  <path d="M6 10h10" />
-                </svg>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/brand/dersbot-mascot.jpg"
+                  alt="DersBot Asistan"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
               </div>
+
               <div>
-                <div style={{ fontSize: "0.72rem", color: "var(--terracotta)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                  ETÜT REHBERİ
+                <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                  <span style={{ fontWeight: 800, fontSize: "1.05rem", letterSpacing: "-0.01em" }}>
+                    Ders<span style={{ color: "#38bdf8" }}>Bot</span>
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "0.68rem",
+                      padding: "2px 6px",
+                      borderRadius: "9999px",
+                      backgroundColor: "rgba(255, 255, 255, 0.2)",
+                      color: "#fef08a",
+                      fontWeight: 600,
+                    }}
+                  >
+                    MEB Uyumlu
+                  </span>
                 </div>
-                <div style={{ fontWeight: 600, fontSize: "0.95rem", lineHeight: 1.2, color: "#ffffff" }}>
-                  {isTeacher ? "Öğretmen Masası Asistanı" : isStudent ? "Öğrenci Çalışma Asistanı" : "Platform Asistanı"}
+                <div style={{ fontSize: "0.76rem", opacity: 0.9, lineHeight: 1.2 }}>
+                  {isTeacher
+                    ? "Öğretmen Rehber Robotu"
+                    : isStudent
+                    ? "Öğrenci Ders Arkadaşı"
+                    : isAdmin
+                    ? "Yönetici Sistem Asistanı"
+                    : "Akıllı Eğitim Robotu"}
                 </div>
               </div>
             </div>
 
-            <div style={{ display: "flex", gap: 4 }}>
+            <div style={{ display: "flex", gap: 6 }}>
               <button
                 type="button"
-                onClick={() => setIsOpen(false)}
+                onClick={() => {
+                  savePref("min");
+                  setIsOpen(false);
+                }}
                 title="Simge durumuna küçült"
                 aria-label="Küçült"
                 style={{
-                  background: "transparent",
+                  background: "rgba(255, 255, 255, 0.15)",
                   border: "none",
-                  color: "#cbd5e1",
+                  borderRadius: "6px",
+                  color: "#ffffff",
                   cursor: "pointer",
                   fontSize: "1.1rem",
-                  padding: "2px 6px",
+                  width: 28,
+                  height: 28,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                   lineHeight: 1,
                 }}
               >
@@ -310,12 +402,17 @@ export function Mascot() {
                 title="Pencereyi kapat"
                 aria-label="Kapat"
                 style={{
-                  background: "transparent",
+                  background: "rgba(255, 255, 255, 0.15)",
                   border: "none",
-                  color: "#cbd5e1",
+                  borderRadius: "6px",
+                  color: "#ffffff",
                   cursor: "pointer",
                   fontSize: "1.1rem",
-                  padding: "2px 6px",
+                  width: 28,
+                  height: 28,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                   lineHeight: 1,
                 }}
               >
@@ -324,7 +421,7 @@ export function Mascot() {
             </div>
           </div>
 
-          {/* Messages Body */}
+          {/* Mesaj Akışı */}
           <div
             style={{
               flex: 1,
@@ -333,7 +430,7 @@ export function Mascot() {
               display: "flex",
               flexDirection: "column",
               gap: 12,
-              backgroundColor: "var(--surface-subtle)",
+              backgroundColor: "#f8fafc",
             }}
           >
             {messages.map((m) => (
@@ -343,12 +440,11 @@ export function Mascot() {
                   alignSelf: m.sender === "user" ? "flex-end" : "flex-start",
                   maxWidth: "86%",
                   padding: "10px 14px",
-                  borderRadius: "var(--radius-xs)",
-                  backgroundColor: m.sender === "user" ? "var(--accent)" : "#ffffff",
-                  color: m.sender === "user" ? "#ffffff" : "var(--ink)",
-                  border: m.sender === "user" ? "none" : "1px solid var(--border)",
-                  borderLeft: m.sender === "user" ? "none" : "3px solid var(--accent)",
-                  boxShadow: "0 1px 2px rgba(22, 28, 40, 0.05)",
+                  borderRadius: m.sender === "user" ? "14px 14px 2px 14px" : "14px 14px 14px 2px",
+                  backgroundColor: m.sender === "user" ? "var(--brand-blue, #2563eb)" : "#ffffff",
+                  color: m.sender === "user" ? "#ffffff" : "var(--brand-navy, #0f1e42)",
+                  border: m.sender === "user" ? "none" : "1px solid #e2e8f0",
+                  boxShadow: "0 1px 3px rgba(15, 23, 42, 0.05)",
                   fontSize: "0.88rem",
                   lineHeight: 1.55,
                   whiteSpace: "pre-line",
@@ -364,29 +460,28 @@ export function Mascot() {
                 style={{
                   alignSelf: "flex-start",
                   padding: "8px 12px",
-                  borderRadius: "var(--radius-xs)",
+                  borderRadius: "14px 14px 14px 2px",
                   backgroundColor: "#ffffff",
-                  border: "1px solid var(--border)",
-                  borderLeft: "3px solid var(--muted)",
-                  color: "var(--muted)",
+                  border: "1px solid #bfdbfe",
+                  color: "var(--brand-blue, #2563eb)",
                   fontSize: "0.82rem",
                   display: "flex",
                   alignItems: "center",
                   gap: 8,
                 }}
               >
-                <span style={{ fontStyle: "italic" }}>Etüt araştırıyor ve yanıt hazırlıyor…</span>
+                <span style={{ fontStyle: "italic" }}>DersBot düşünüyor ve yanıt hazırlıyor…</span>
               </div>
             )}
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Quick Suggestion Chips */}
+          {/* Hızlı Öneri Çipleri */}
           <div
             style={{
               padding: "8px 12px",
               backgroundColor: "#ffffff",
-              borderTop: "1px solid var(--border)",
+              borderTop: "1px solid #e2e8f0",
               display: "flex",
               gap: 6,
               overflowX: "auto",
@@ -402,14 +497,15 @@ export function Mascot() {
                 disabled={loading}
                 style={{
                   fontSize: "0.78rem",
-                  padding: "4px 10px",
-                  borderRadius: "var(--radius-xs)",
-                  border: "1px solid var(--border)",
-                  backgroundColor: "var(--surface-subtle)",
-                  color: "var(--ink)",
+                  padding: "5px 12px",
+                  borderRadius: "9999px",
+                  border: "1px solid #bfdbfe",
+                  backgroundColor: "#f0f9ff",
+                  color: "#0369a1",
+                  fontWeight: 500,
                   cursor: "pointer",
                   flexShrink: 0,
-                  transition: "background 0.15s ease",
+                  transition: "all 0.15s ease",
                 }}
               >
                 {chip}
@@ -417,7 +513,7 @@ export function Mascot() {
             ))}
           </div>
 
-          {/* Input Footer */}
+          {/* Soru Gönderme Formu */}
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -426,7 +522,7 @@ export function Mascot() {
             style={{
               padding: "10px 12px",
               backgroundColor: "#ffffff",
-              borderTop: "1px solid var(--border)",
+              borderTop: "1px solid #e2e8f0",
               display: "flex",
               gap: 8,
               alignItems: "center",
@@ -436,27 +532,31 @@ export function Mascot() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Sorunuzu buraya yazın…"
+              placeholder="DersBot'a bir soru sor…"
               disabled={loading}
               style={{
                 flex: 1,
-                padding: "8px 12px",
-                borderRadius: "var(--radius-xs)",
-                border: "1px solid var(--border)",
+                padding: "8px 14px",
+                borderRadius: "9999px",
+                border: "1px solid #cbd5e1",
                 fontSize: "0.88rem",
                 outline: "none",
-                minHeight: "36px",
-                background: "var(--surface-subtle)",
+                minHeight: "38px",
+                background: "#f8fafc",
+                color: "#0f172a",
               }}
             />
             <button
               type="submit"
               disabled={loading || !input.trim()}
               style={{
-                width: 36,
-                height: 36,
-                borderRadius: "var(--radius-xs)",
-                backgroundColor: input.trim() && !loading ? "var(--accent)" : "var(--border)",
+                width: 38,
+                height: 38,
+                borderRadius: "50%",
+                background:
+                  input.trim() && !loading
+                    ? "linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)"
+                    : "#e2e8f0",
                 color: "#ffffff",
                 border: "none",
                 cursor: input.trim() && !loading ? "pointer" : "default",
@@ -464,12 +564,23 @@ export function Mascot() {
                 alignItems: "center",
                 justifyContent: "center",
                 flexShrink: 0,
-                transition: "background 0.15s ease",
+                boxShadow: input.trim() && !loading ? "0 2px 6px rgba(37, 99, 235, 0.3)" : "none",
+                transition: "all 0.15s ease",
               }}
               title="Gönder"
               aria-label="Gönder"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
                 <line x1="22" y1="2" x2="11" y2="13" />
                 <polygon points="22 2 15 22 11 13 2 9 22 2" />
               </svg>

@@ -2,7 +2,7 @@ import { requireAdmin } from "@/lib/auth/current-user.ts";
 import { listAuditLogs } from "@/lib/admin/audit-service.ts";
 import { formatDate } from "@/lib/assignments/format.ts";
 
-export const metadata = { title: "İşlem Geçmişi (Audit Log) – Evde Etüt Admin" };
+export const metadata = { title: "İşlem Geçmişi (Audit Log) – DersBot Admin" };
 
 export default async function AdminAuditLogPage() {
   await requireAdmin();

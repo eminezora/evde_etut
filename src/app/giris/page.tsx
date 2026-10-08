@@ -13,7 +13,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
     <AuthShell
       icon="✎"
       title="Giriş Yap"
-      subtitle="Evde Etüt hesabınıza erişerek derse hazırlık görevlerinizi takip edin."
+      subtitle="DersBot hesabınıza erişerek derse hazırlık görevlerinizi takip edin."
       footer={
         <>
           <span className="muted">Hesabınız yok mu? </span>
