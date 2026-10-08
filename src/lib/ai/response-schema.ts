@@ -56,8 +56,49 @@ function normaliseQuestion(q: WireQuestion): unknown {
     curriculumOutcomeCodes: q.curriculumOutcomeCodes,
   };
   switch (q.type) {
-    case "MULTIPLE_CHOICE":
-      return { ...common, options: q.options, correctAnswer: q.correctAnswer };
+    case "MULTIPLE_CHOICE": {
+      const options = q.options ?? [];
+      let correctAnswer = q.correctAnswer;
+      if (options.length > 0 && typeof correctAnswer === "string") {
+        const trimmedAns = correctAnswer.trim();
+        if (!options.includes(trimmedAns)) {
+          // 1. Check letter index (A -> index 0, B -> index 1, etc.)
+          const cleanLetter = trimmedAns.toUpperCase().replace(/[).:\s]/g, "");
+          const letters = ["A", "B", "C", "D", "E", "F"];
+          const letterIdx = letters.indexOf(cleanLetter);
+          if (letterIdx >= 0 && letterIdx < options.length) {
+            correctAnswer = options[letterIdx];
+          } else {
+            // 2. Check if an option has prefix like "A) " and matches trimmedAns without prefix
+            const strippedMatch = options.find((opt) => {
+              const stripped = opt.replace(/^[A-Fa-f][).:\s]+/, "").trim();
+              return stripped.toLowerCase() === trimmedAns.toLowerCase();
+            });
+            if (strippedMatch) {
+              correctAnswer = strippedMatch;
+            } else {
+              // 3. Check if trimmedAns has prefix and matches option without prefix
+              const ansStripped = trimmedAns.replace(/^[A-Fa-f][).:\s]+/, "").trim();
+              const optMatch = options.find((opt) => opt.trim().toLowerCase() === ansStripped.toLowerCase());
+              if (optMatch) {
+                correctAnswer = optMatch;
+              } else {
+                // 4. Substring or endsWith match
+                const subMatch = options.find((opt) => {
+                  const o = opt.trim().toLowerCase();
+                  const a = trimmedAns.toLowerCase();
+                  return o.endsWith(a) || o.includes(a);
+                });
+                if (subMatch) {
+                  correctAnswer = subMatch;
+                }
+              }
+            }
+          }
+        }
+      }
+      return { ...common, options, correctAnswer };
+    }
     case "TRUE_FALSE":
       return { ...common, correctAnswer: q.correctBoolean };
     case "FILL_IN_THE_BLANK":
@@ -118,11 +159,25 @@ export function parseGeneratedContent(
   let questions: ValidQuestion[] | null = null;
   if (scope !== "SUMMARY") {
     const list = data.questions ?? [];
-    if (list.length !== questionCount) issues.push(`questions: ${questionCount} soru bekleniyordu, ${list.length} geldi`);
+    // If model generated more questions than requested, safely take the requested count
+    const targetList = list.length > questionCount ? list.slice(0, questionCount) : list;
+    if (targetList.length !== questionCount) issues.push(`questions: ${questionCount} soru bekleniyordu, ${targetList.length} geldi`);
     const allowed = new Set(allowedOutcomeCodes);
     questions = [];
-    list.forEach((q, i) => {
-      const parsed = questionSchema.safeParse(normaliseQuestion(q));
+    targetList.forEach((q, i) => {
+      // Normalise minor formatting variations in outcome codes (e.g. whitespace, trailing dot, uppercase)
+      const rawCodes = q.curriculumOutcomeCodes ?? [];
+      const normalizedCodes = rawCodes.map((c) => {
+        if (allowed.has(c)) return c;
+        const clean = c.replace(/[^A-Za-z0-9]/g, "").toUpperCase();
+        const matched = allowedOutcomeCodes.find((a) => a.replace(/[^A-Za-z0-9]/g, "").toUpperCase() === clean);
+        if (matched) return matched;
+        const prefixMatched = allowedOutcomeCodes.find((a) => a.startsWith(c) || c.startsWith(a));
+        if (prefixMatched) return prefixMatched;
+        return c;
+      });
+
+      const parsed = questionSchema.safeParse(normaliseQuestion({ ...q, curriculumOutcomeCodes: normalizedCodes }));
       if (!parsed.success) {
         issues.push(...parsed.error.issues.map((x) => `questions.${i}.${x.path.join(".")}: ${x.message}`));
         return;

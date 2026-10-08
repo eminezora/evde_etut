@@ -245,7 +245,7 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
       };
       const outcomeCodes = a.assignmentOutcomes.map((ao) => ao.outcome.outcomeCode);
       const signal = AbortSignal.timeout(timeoutMs);
-      const canRetry = (attempt: number) => attempt === 1 && Date.now() - startedAt < timeoutMs / 2;
+      const canRetry = (attempt: number) => attempt === 1 && Date.now() - startedAt < timeoutMs - 16_000;
 
       let result: Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>> | undefined;
       let checked: ReturnType<typeof parseGeneratedContent> | undefined;
@@ -317,6 +317,7 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
             await tx.question.deleteMany({ where: { assignmentId: a.id } });
             await writeQuestions(tx, a.id, questions, (q) => resolveOutcomeIds(a, q.curriculumOutcomeCodes).ids, "AI");
           }
+          await tx.assignment.update({ where: { id: a.id }, data: { updatedAt: new Date() } });
         }, {
           maxWait: 10000,
           timeout: 20000,

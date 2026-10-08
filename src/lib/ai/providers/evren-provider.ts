@@ -78,13 +78,14 @@ export class EvrenContentProvider implements ContentGenerationProvider {
     this.fetchImpl = fetchImpl ?? fetch;
   }
 
-  private async call(input: PreparationContentInput, signal: AbortSignal, responseFormat: Record<string, unknown>) {
+  private async call(input: PreparationContentInput, signal: AbortSignal, responseFormat: Record<string, unknown>, modelToUse: string = this.model) {
+    const supportsReasoning = (modelToUse.toLowerCase().startsWith("glm") || modelToUse.toLowerCase().includes("reason")) && Boolean(this.reasoningEffort);
     return this.fetchImpl(this.url, {
       method: "POST",
       signal,
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${this.apiKey}` },
       body: JSON.stringify({
-        model: this.model,
+        model: modelToUse,
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
           { role: "user", content: `${buildUserPrompt(input)}\n\nYanıtı yalnızca tek bir JSON nesnesi olarak ver; açıklama veya markdown ekleme.` },
@@ -92,7 +93,7 @@ export class EvrenContentProvider implements ContentGenerationProvider {
         temperature: 0.2,
         // Room for the JSON answer: a 10-question set is ~3k tokens; 4096 truncated large sets.
         max_tokens: 6000,
-        ...(this.reasoningEffort ? { reasoning_effort: this.reasoningEffort } : {}),
+        ...(supportsReasoning ? { reasoning_effort: this.reasoningEffort } : {}),
         response_format: responseFormat,
       }),
     });
@@ -104,10 +105,11 @@ export class EvrenContentProvider implements ContentGenerationProvider {
     let res: Response | null = null;
     // At most two HTTP calls: one controlled retry after a network error or 429/5xx.
     for (let attempt = 1; attempt <= 2; attempt++) {
+      const currentModel = attempt === 2 && this.model === "glm-5.3" ? "gemma-4-31b" : this.model;
       try {
-        res = await this.call(input, signal, schemaFormat);
+        res = await this.call(input, signal, schemaFormat, currentModel);
         // Servers without json_schema support: retry once in plain JSON mode (Zod still validates).
-        if (res.status === 400 || res.status === 422) res = await this.call(input, signal, { type: "json_object" });
+        if (res.status === 400 || res.status === 422) res = await this.call(input, signal, { type: "json_object" }, currentModel);
       } catch {
         if (signal.aborted) throw new ProviderError("TIMEOUT", "AI isteği zaman aşımına uğradı.");
         if (attempt === 2) throw new ProviderError("FAILED", "AI servisine bağlanılamadı.");

@@ -161,7 +161,7 @@ export function ContentEditor({
           continue;
         }
         networkErrors = 0;
-        if ((job.state === "RUNNING" || job.state === "GENERATING") && job.jobId === jobId) continue;
+        if (job.state === "RUNNING" || job.state === "GENERATING") continue;
         if (job.state === "SUCCEEDED" || job.state === "SUCCESS") {
           try {
             sessionStorage.setItem(DONE_KEY(assignmentId), "1");
@@ -173,6 +173,11 @@ export function ContentEditor({
           setMessage({ kind: "ok", lines: [GENERATED_TEXT] });
           setDirty(false);
           router.refresh();
+          setTimeout(() => {
+            if (alive.current) {
+              window.location.reload();
+            }
+          }, 400);
           return;
         }
         if (job.state === "TIMEOUT") {
@@ -236,9 +241,9 @@ export function ContentEditor({
     };
   }, [assignmentId, isDraft, aiConfigured, followJob]);
 
-  async function generate(scope: Scope) {
+  async function generate(scope: Scope, skipConfirm = false) {
     const hasExisting = (scope !== "QUESTIONS" && content) || (scope !== "SUMMARY" && questions.length > 0);
-    if (hasExisting) {
+    if (hasExisting && !skipConfirm) {
       const what = scope === "ALL" ? "Hazırlık içeriği ve tüm sorular" : scope === "SUMMARY" ? "Hazırlık içeriği (sorular hariç)" : "Tüm sorular";
       const extra = dirty ? "\n\nKaydedilmemiş değişiklikleriniz de kaybolacak." : "";
       if (!window.confirm(`${what} yapay zekâ ile yeniden oluşturulacak ve mevcut düzenlemelerin yerini alacak. Devam edilsin mi?${extra}`)) return;
@@ -327,6 +332,9 @@ export function ContentEditor({
                 <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <label htmlFor="qc" style={{ margin: 0, fontSize: "0.85rem", whiteSpace: "nowrap" }}>Soru Sayısı (5–10):</label>
                   <input id="qc" type="number" min={5} max={10} value={questionCount} onChange={(e) => setQuestionCount(e.target.value)} style={{ width: 80, padding: "5px 8px" }} />
+                  {Number(questionCount) > 5 && (
+                    <span className="muted" style={{ fontSize: "0.78rem" }}>⚡ 5 soru en hızlı ve güvenli sürede üretilir</span>
+                  )}
                 </div>
 
                 <div className="row" style={{ gap: 8 }}>
@@ -370,7 +378,7 @@ export function ContentEditor({
                     {genError || (genState === "timeout" ? "Yapay zekâ servisi beklenenden uzun sürdü. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz." : "İçerik bu kez oluşturulamadı. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.")}
                   </p>
                   {retryScope && (
-                    <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working} style={{ minHeight: 30, fontSize: "0.8rem", padding: "2px 10px" }}>
+                    <button type="button" className="primary" onClick={() => generate(retryScope, true)} disabled={working} style={{ minHeight: 30, fontSize: "0.8rem", padding: "2px 10px" }}>
                       Tekrar Dene
                     </button>
                   )}

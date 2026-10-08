@@ -170,7 +170,7 @@ export default async function AssignmentDetailPage({
         </div>
       ) : (
         <ContentEditor
-          key={c?.updatedAt.getTime() ?? 0}
+          key={`${c?.updatedAt?.getTime() ?? 0}-${a.updatedAt?.getTime() ?? 0}-${a.questions.length}-${a.questions[0]?.id ?? ""}`}
           assignmentId={a.id}
           assignmentStatus={a.status}
           aiConfigured={isAiConfigured()}
