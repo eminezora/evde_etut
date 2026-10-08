@@ -8,7 +8,7 @@ import { setSessionCookie } from "@/lib/auth/current-user.ts";
 import { appBaseUrl } from "@/lib/mail/mail-service.ts";
 
 const GOOGLE_SIGNUP_COOKIE = "g_signup";
-const dashboard = (role: string) => (role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
+const dashboard = (role: string) => (role === "ADMIN" ? "/admin" : role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
 
 export async function GET(request: Request) {
   const url = new URL(request.url);

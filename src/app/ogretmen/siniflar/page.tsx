@@ -3,9 +3,17 @@ import { requireTeacher } from "@/lib/auth/current-user.ts";
 import { listTeacherClassrooms } from "@/lib/accounts/account-service.ts";
 import { CreateClassroomForm } from "@/components/teacher/CreateClassroomForm.tsx";
 
-export default async function ClassroomsPage() {
+export default async function ClassroomsPage({ searchParams }: { searchParams: Promise<{ filtre?: string }> }) {
   const teacher = await requireTeacher();
-  const classrooms = await listTeacherClassrooms(teacher.id);
+  const { filtre } = await searchParams;
+  const isArchiveView = filtre === "arsiv";
+
+  const [activeClassrooms, archivedClassrooms] = await Promise.all([
+    listTeacherClassrooms(teacher.id, { onlyArchived: false }),
+    listTeacherClassrooms(teacher.id, { onlyArchived: true }),
+  ]);
+
+  const classrooms = isArchiveView ? archivedClassrooms : activeClassrooms;
 
   return (
     <>
@@ -16,21 +24,39 @@ export default async function ClassroomsPage() {
         </p>
       </div>
 
-      <div className="card" style={{ marginBottom: 24 }}>
-        <h2 style={{ fontSize: "1.15rem", marginBottom: 12 }}>+ Yeni Sınıf Oluştur</h2>
-        <CreateClassroomForm />
-      </div>
+      {!isArchiveView && (
+        <div className="card" style={{ marginBottom: 24 }}>
+          <h2 style={{ fontSize: "1.15rem", marginBottom: 12 }}>+ Yeni Sınıf Oluştur</h2>
+          <CreateClassroomForm />
+        </div>
+      )}
 
       <div className="card">
-        <div className="row" style={{ justifyContent: "space-between", marginBottom: 16 }}>
-          <h2>Mevcut Sınıflarım</h2>
-          <span className="badge">{classrooms.length} sınıf</span>
+        <div className="row" style={{ justifyContent: "space-between", alignItems: "center", marginBottom: 16, flexWrap: "wrap", gap: 12 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <Link
+              href="/ogretmen/siniflar"
+              className={`button ${!isArchiveView ? "primary" : ""}`}
+              style={{ minHeight: 32, fontSize: "0.85rem", padding: "4px 12px" }}
+            >
+              Aktif Sınıflar ({activeClassrooms.length})
+            </Link>
+            <Link
+              href="/ogretmen/siniflar?filtre=arsiv"
+              className={`button ${isArchiveView ? "primary" : ""}`}
+              style={{ minHeight: 32, fontSize: "0.85rem", padding: "4px 12px" }}
+            >
+              Arşivlenmiş ({archivedClassrooms.length})
+            </Link>
+          </div>
+          <span className="badge">
+            {classrooms.length} {isArchiveView ? "arşivli sınıf" : "aktif sınıf"}
+          </span>
         </div>
 
         {classrooms.length === 0 ? (
           <div style={{ textAlign: "center", padding: "32px 16px" }}>
-            <span style={{ fontSize: "2rem", display: "block", marginBottom: 8 }}>🏫</span>
-            <p className="muted">Henüz kayıtlı bir sınıfınız bulunmuyor.</p>
+            <p className="muted">{isArchiveView ? "Arşivlenmiş bir sınıfınız bulunmuyor." : "Henüz kayıtlı bir sınıfınız bulunmuyor."}</p>
           </div>
         ) : (
           <div className="table-scroll">

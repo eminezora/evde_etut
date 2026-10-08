@@ -7,7 +7,7 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { getContentProvider } from "../src/lib/ai/index.ts";
 import { createAssignment } from "../src/lib/assignments/assignment-service.ts";
 import { approveAndPublish, generateStudyContent, getStudentAssignment, publishAssignment } from "../src/lib/content/content-service.ts";
-import { db, ensureCurriculum, inDays, makeStudent, makeTeacher } from "./helpers.ts";
+import { db, ensureCurriculum, inDays, makeStudent, makeTeacher, verifiedOutcomesOfFirstUnit } from "./helpers.ts";
 
 const LIVE = process.env.EVREN_LIVE === "1";
 if (LIVE) {
@@ -70,4 +70,26 @@ describe.skipIf(!LIVE)("EVREN LLM (live)", () => {
     console.log(`[evren] giriş: ${content.introduction}\n[evren] kavramlar: ${concepts}\n[evren] özet: ${content.summary.slice(0, 600)}\n[evren] bilmen yeterli: ${(content.mustKnow as string[]).join(" | ")}`);
     for (const q of questions) console.log(`[evren] ${q.orderNum}. ${q.type} [${q.outcomes.map((o) => o.outcome.outcomeCode).join(",")}] ${q.questionText}`);
   }, 300_000);
+  // Question-count variants on grades 6 and 8 (timing is printed for the report).
+  for (const [grade, subject, count] of [[6, "Matematik", 5], [8, "Fen Bilimleri", 7]] as const) {
+    it(`generates exactly ${count} questions for grade ${grade} ${subject}`, async () => {
+      const provider = getContentProvider(process.env);
+      const { teacher, rooms } = await makeTeacher([{ name: `${grade}/L`, grade }]);
+      const { unitOrTheme, outcomes } = await verifiedOutcomesOfFirstUnit(grade, subject);
+      const chosen = outcomes.slice(0, 2);
+      const created = await createAssignment(
+        teacher.id,
+        { classroomId: rooms[0].id, subject, unitOrTheme, topic: unitOrTheme, outcomeIds: chosen.map((o) => o.id), minimumScore: 70, deadline: inDays(5), questionCount: count },
+        db,
+      );
+      if (!created.ok) throw new Error(JSON.stringify(created.errors));
+      const started = Date.now();
+      const res = await generateStudyContent(teacher.id, created.data.id, { scope: "ALL" }, { db, provider, timeoutMs: 240_000 });
+      const log = await db.contentGenerationLog.findFirst({ where: { assignmentId: created.data.id }, orderBy: { startedAt: "desc" } });
+      console.log(`[evren] grade ${grade} ${subject} ${count}q: ${log?.status} in ${Math.round((Date.now() - started) / 1000)} s, tokens out: ${log?.outputTokens}${log?.errorMessage ? `, issues: ${log.errorMessage}` : ""}`);
+      expect(res.ok).toBe(true);
+      expect(await db.question.count({ where: { assignmentId: created.data.id } })).toBe(count);
+      expect(await db.studyContent.count({ where: { assignmentId: created.data.id, status: "AI_GENERATED_DRAFT" } })).toBe(1);
+    }, 300_000);
+  }
 });

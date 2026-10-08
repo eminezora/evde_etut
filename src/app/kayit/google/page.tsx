@@ -10,7 +10,7 @@ export const metadata = { title: "Hesabını Tamamla – Evde Etüt" };
 
 export default async function GoogleSignupPage() {
   const user = await getCurrentUser();
-  if (user) redirect(user.role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
+  if (user) redirect(user.role === "ADMIN" ? "/admin" : user.role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
   const identity = await readFlowToken<{ name: string; email: string }>("google-signup", (await cookies()).get("g_signup")?.value);
   if (!identity) redirect("/giris?hata=google-hata");
   return (

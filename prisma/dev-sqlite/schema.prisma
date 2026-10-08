@@ -17,9 +17,11 @@ model User {
   googleSub      String?  @unique // Google account id ("sub"), set when the account is linked to Google
   avatarUrl      String?
   name           String
-  role           String // "TEACHER" | "STUDENT"
+  role           String // "TEACHER" | "STUDENT" | "ADMIN"
   // Bumped on password change/reset; sessions carrying an older value are rejected.
   sessionVersion Int      @default(0)
+  isActive       Boolean  @default(true)
+  disabledAt     DateTime?
   createdAt      DateTime @default(now())
 
   classrooms          Classroom[]
@@ -27,6 +29,9 @@ model User {
   memberships         ClassroomMember[]
   studentAssignments  StudentAssignment[]
   passwordResetTokens PasswordResetToken[]
+  createdInviteCodes  TeacherInviteCode[]  @relation("CreatedInviteCodes")
+  inviteCodeUsages    TeacherInviteUsage[] @relation("UsedInviteCodes")
+  auditLogs           AuditLog[]
 }
 
 // Single-use password reset link. Only a SHA-256 hash of the token is stored.
@@ -43,18 +48,21 @@ model PasswordResetToken {
 }
 
 model Classroom {
-  id        String   @id @default(cuid())
-  teacherId String
-  teacher   User     @relation(fields: [teacherId], references: [id], onDelete: Cascade)
-  name      String // e.g. "7/A"
-  grade     Int // 5, 6, 7, 8 – limits which curriculum outcomes can be used
-  joinCode  String   @unique // students join with this code
-  createdAt DateTime @default(now())
+  id          String    @id @default(cuid())
+  teacherId   String
+  teacher     User      @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  name        String // e.g. "7/A"
+  grade       Int // 5, 6, 7, 8 – limits which curriculum outcomes can be used
+  joinCode    String    @unique // students join with this code
+  description String?
+  archivedAt  DateTime?
+  createdAt   DateTime  @default(now())
 
   assignments Assignment[]
   members     ClassroomMember[]
 
   @@index([teacherId])
+  @@index([teacherId, archivedAt])
 }
 
 model ClassroomMember {
@@ -312,4 +320,56 @@ model Answer {
 
   @@unique([attemptId, questionId])
   @@index([reviewStatus])
+}
+
+model TeacherInviteCode {
+  id          String               @id @default(cuid())
+  code        String               @unique // e.g. "OGRT-8H2K-X7P4"
+  maxUses     Int                  @default(1)
+  usedCount   Int                  @default(0)
+  isActive    Boolean              @default(true)
+  expiresAt   DateTime?
+  createdById String?
+  createdBy   User?                @relation("CreatedInviteCodes", fields: [createdById], references: [id], onDelete: SetNull)
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+
+  usages      TeacherInviteUsage[] @relation("InviteCodeUsages")
+
+  @@index([code, isActive])
+}
+
+model TeacherInviteUsage {
+  id           String            @id @default(cuid())
+  inviteCodeId String
+  inviteCode   TeacherInviteCode @relation("InviteCodeUsages", fields: [inviteCodeId], references: [id], onDelete: Cascade)
+  teacherId    String
+  teacher      User              @relation("UsedInviteCodes", fields: [teacherId], references: [id], onDelete: Cascade)
+  usedAt       DateTime          @default(now())
+
+  @@index([inviteCodeId])
+  @@index([teacherId])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  adminId    String?
+  admin      User?    @relation(fields: [adminId], references: [id], onDelete: SetNull)
+  action     String
+  entityType String
+  entityId   String?
+  metadata   Json?
+  createdAt  DateTime @default(now())
+
+  @@index([adminId])
+  @@index([action])
+  @@index([createdAt])
+}
+
+model SystemSetting {
+  id          String   @id @default(cuid())
+  key         String   @unique
+  value       String
+  description String?
+  updatedAt   DateTime @updatedAt
 }

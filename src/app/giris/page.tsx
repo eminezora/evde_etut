@@ -6,7 +6,7 @@ import { AuthShell, GOOGLE_ERRORS, GoogleButton } from "@/components/auth/AuthSh
 
 export default async function LoginPage({ searchParams }: { searchParams: Promise<{ hata?: string; sifre?: string }> }) {
   const user = await getCurrentUser();
-  if (user) redirect(user.role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
+  if (user) redirect(user.role === "ADMIN" ? "/admin" : user.role === "TEACHER" ? "/ogretmen/gorevler" : "/ogrenci/gorevler");
   const { hata, sifre } = await searchParams;
 
   return (

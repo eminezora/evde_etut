@@ -13,6 +13,8 @@ export async function getClassroomRoster(teacherId: string, classroomId: string,
       name: true,
       grade: true,
       joinCode: true,
+      description: true,
+      archivedAt: true,
       members: { orderBy: { student: { name: "asc" } }, select: { joinedAt: true, student: { select: { id: true, name: true } } } },
     },
   });
@@ -34,7 +36,17 @@ export async function getClassroomRoster(teacherId: string, classroomId: string,
       average: scores.length ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : null,
     };
   });
-  return { classroom: { id: classroom.id, name: classroom.name, grade: classroom.grade, joinCode: classroom.joinCode }, roster };
+  return {
+    classroom: {
+      id: classroom.id,
+      name: classroom.name,
+      grade: classroom.grade,
+      joinCode: classroom.joinCode,
+      description: classroom.description,
+      archivedAt: classroom.archivedAt,
+    },
+    roster,
+  };
 }
 
 const DONE = ["READY_FOR_CLASS", "NEEDS_REVIEW", "PENDING_TEACHER_REVIEW"];

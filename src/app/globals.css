@@ -76,6 +76,8 @@ a:hover {
 
 main {
   max-width: 1040px;
+  width: 100%;
+  min-width: 0; /* flex item: let wide tables scroll inside .table-scroll instead of widening the page */
   margin: 0 auto;
   padding: 32px 20px 80px;
 }
@@ -1430,3 +1432,51 @@ details.attempt-sheet > summary::-webkit-details-marker { display: none; }
   .mascot-owl { transition: none; }
 }
 @media print { .mascot { display: none; } }
+
+/* Modal & Dialogs */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+  animation: modal-fade 0.15s ease-out;
+}
+
+.modal-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  padding: 24px;
+  width: 100%;
+  animation: modal-scale 0.15s ease-out;
+}
+
+@keyframes modal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modal-scale {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: none; }
+}
+
+.warning-banner {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  color: var(--warn-text);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+}
+
+.admin-nav-link:hover {
+  background-color: #f1f5f9;
+  color: #0f172a !important;
+}

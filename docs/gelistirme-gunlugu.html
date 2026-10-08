@@ -1,0 +1,3886 @@
+<title>Evde Etüt Geliştirme Günlüğü</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a sticky contents rail beside one reading column; the prompt log is a numbered timeline (order is real information). */
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --sunken: #eef2f8;
+  --ink: #18233a;
+  --ink-soft: #4d5b75;
+  --line: #d9e1ee;
+  --accent: #1f5fd1;
+  --accent-soft: #e4edfd;
+  --ok: #18794e;
+  --ok-soft: #e3f4ea;
+  --warn: #9a5b00;
+  --warn-soft: #fdf1dc;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1522; --surface: #161f31; --sunken: #1c2740; --ink: #e6ecf7; --ink-soft: #a5b2c8; --line: #2a3754;
+    --accent: #7aa7ff; --accent-soft: #1f2f52; --ok: #5fd197; --ok-soft: #173326; --warn: #f2b45a; --warn-soft: #3a2a12;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1522; --surface: #161f31; --sunken: #1c2740; --ink: #e6ecf7; --ink-soft: #a5b2c8; --line: #2a3754;
+  --accent: #7aa7ff; --accent-soft: #1f2f52; --ok: #5fd197; --ok-soft: #173326; --warn: #f2b45a; --warn-soft: #3a2a12;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 17px/1.6 var(--font-body); padding-inline: 16px; padding-block: 0 64px; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; line-height: 1.15; margin: 0; }
+h2 { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 14px; }
+h3 { font-size: 1.1rem; font-weight: 600; margin: 22px 0 8px; }
+p { margin: 0 0 12px; max-width: 68ch; }
+code, .mono { font-family: var(--font-mono); font-size: 0.86em; }
+code { background: var(--sunken); padding: 1px 5px; border-radius: 4px; }
+
+.shell { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 48px; }
+header.hero { max-width: 1120px; margin: 0 auto; padding-block: 48px 32px; border-bottom: 1px solid var(--line); margin-bottom: 32px; }
+.eyebrow { font: 600 0.78rem/1 var(--font-body); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -0.02em; max-width: 16ch; }
+.hero .lede { font-size: 1.15rem; color: var(--ink-soft); margin-top: 16px; max-width: 62ch; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px 28px; margin-top: 22px; font-size: 0.95rem; color: var(--ink-soft); }
+.facts b { color: var(--ink); font-weight: 600; }
+
+nav.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 24px); align-self: start; font-size: 0.92rem; }
+nav.toc ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; border-left: 2px solid var(--line); }
+nav.toc a { display: block; padding: 5px 12px; color: var(--ink-soft); text-decoration: none; margin-left: -2px; border-left: 2px solid transparent; }
+nav.toc a:hover { color: var(--accent); border-left-color: var(--accent); }
+
+main { min-width: 0; }
+section { margin-bottom: 56px; scroll-margin-top: 24px; }
+.privacy { display: flex; gap: 12px; align-items: flex-start; background: var(--ok-soft); border: 1px solid color-mix(in srgb, var(--ok) 35%, transparent); color: var(--ink); border-radius: 10px; padding: 14px 16px; margin-bottom: 40px; }
+.privacy strong { color: var(--ok); }
+ul.plain { margin: 0 0 12px; padding-left: 1.2em; max-width: 70ch; }
+ul.plain li { margin-bottom: 6px; }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px 32px; }
+.cols > div { min-width: 0; }
+
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); margin-bottom: 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--ink-soft); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; background: var(--sunken); }
+tr:last-child td { border-bottom: 0; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+.checks { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.check { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; min-width: 0; }
+.check .k { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); }
+.check .v { font: 700 1.15rem/1.3 var(--font-display); margin-top: 4px; }
+.pill { display: inline-block; font-size: 0.78rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--ok-soft); color: var(--ok); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+
+.todo { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; counter-reset: todo; }
+.todo li { counter-increment: todo; display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.todo li::before { content: counter(todo); font: 700 1rem/1.6 var(--font-display); color: var(--accent); }
+.callout { background: var(--warn-soft); border-radius: 10px; padding: 14px 16px; margin-bottom: 16px; }
+.callout strong { color: var(--warn); }
+
+ol.log { list-style: none; padding: 0; margin: 0; position: relative; }
+ol.log::before { content: ""; position: absolute; left: 21px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+li.prompt { position: relative; padding-left: 56px; margin-bottom: 18px; scroll-margin-top: 24px; }
+.p-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 6px; }
+.p-num { position: absolute; left: 0; top: 0; width: 44px; height: 30px; display: grid; place-items: center; background: var(--surface); border: 2px solid var(--accent); color: var(--accent); border-radius: 8px; font: 700 0.9rem/1 var(--font-mono); }
+.p-phase { background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 1px 9px; font-weight: 600; font-size: 0.78rem; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; font-weight: 600; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--accent); font: 700 1.1rem/1 var(--font-mono); }
+details[open] summary::after { content: "–"; }
+.p-title { min-width: 0; }
+.p-size { margin-left: auto; color: var(--ink-soft); font-weight: 400; font-size: 0.85rem; white-space: nowrap; }
+.p-body { position: relative; border-top: 1px solid var(--line); }
+.p-body pre { margin: 0; padding: 16px; max-height: 520px; overflow: auto; white-space: pre-wrap; word-break: break-word; font: 0.84rem/1.55 var(--font-mono); color: var(--ink); background: var(--sunken); border-radius: 0 0 10px 10px; }
+button.copy { position: absolute; top: 8px; right: 12px; font: 600 0.78rem var(--font-body); padding: 4px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+button.copy:hover { border-color: var(--accent); color: var(--accent); }
+p.note { font-size: 0.9rem; color: var(--ink-soft); margin: 8px 0 0; font-style: italic; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.toolbar button { font: 600 0.88rem var(--font-body); padding: 6px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.toolbar button:hover { border-color: var(--accent); color: var(--accent); }
+
+@media (max-width: 860px) {
+  .shell { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  nav.toc { position: static; margin-bottom: 32px; }
+  nav.toc ol { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border-left: 0; }
+  nav.toc a { border-left: 0; padding: 4px 0; }
+  li.prompt { padding-left: 0; }
+  ol.log::before { display: none; }
+  .p-num { position: static; width: auto; height: auto; padding: 2px 8px; }
+}
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+</style>
+
+<header class="hero">
+  <div class="eyebrow">Proje günlüğü · 7–8 Ekim 2026</div>
+  <h1>Evde Etüt Geliştirme Günlüğü</h1>
+  <p class="lede">Ortaokul öğrencilerinin derse gelmeden önce MEB öğrenme çıktılarına bağlı kısa bir özet okuyup ön bilgi kontrolü çözdüğü, öğretmenin de sınıfın derse hazır olup olmadığını gördüğü uygulamanın Claude Code ile yapılış kaydı. Bütün istemler, ortaya çıkan özellikler, kurulum bilgileri ve açık işler bir arada.</p>
+  <div class="facts">
+    <span>Canlı adres: <b><a href="https://evde-etut.vercel.app" rel="noopener">evde-etut.vercel.app</a></b></span>
+    <span>Kod deposu: <b>eminezora/evde_etut</b></span>
+    <span>Yapay zekâ: <b>EVREN LLM · glm-5.3</b></span>
+    <span>Kullanıcı istemi: <b>24</b></span>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="toc" aria-label="İçindekiler">
+    <ol>
+      <li><a href="#ozet">Uygulama</a></li>
+      <li><a href="#ozellikler">Özellikler</a></li>
+      <li><a href="#teknik">Teknik yapı</a></li>
+      <li><a href="#mufredat">MEB müfredatı</a></li>
+      <li><a href="#yapay-zeka">Yapay zekâ akışı</a></li>
+      <li><a href="#kurulum">Kurulum ve ayarlar</a></li>
+      <li><a href="#testler">Test sonuçları</a></li>
+      <li><a href="#yapilacaklar">Yapılacaklar</a></li>
+      <li><a href="#istemler">Tüm istemler</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <div class="privacy" role="note">
+      <span aria-hidden="true">🔒</span>
+      <p style="margin:0"><strong>Gizli bilgi içermez.</strong> Veritabanı adresi, şifreler, API anahtarları, davet kodu ve test token'ları bu sayfaya alınmadı. Ortam değişkenleri yalnızca adlarıyla geçer. Kullanıcının paylaştığı ekran görüntüleri eklenmedi; biri veritabanı bağlantı adresini gösteriyordu.</p>
+    </div>
+
+    <section id="ozet">
+      <h2>Uygulama</h2>
+      <p><b>Evde Etüt</b>, öğretmenin bir sonraki dersin konusunu MEB Türkiye Yüzyılı Maarif Modeli öğrenme çıktılarından seçip öğrencilere 3–6 dakikalık bir hazırlık görevi verdiği bir web uygulamasıdır. Hazırlık içeriği ve sorular yapay zekâ ile taslak olarak üretilebilir ya da elle yazılabilir; öğretmen onaylamadan öğrenciye hiçbir şey gösterilmez.</p>
+      <p>Öğrenci özeti okur, “okudum” onayı verir ve kısa bir ön bilgi kontrolü çözer. Sonuç öğretmenin belirlediği eşiğe göre <b>Derse Hazır</b> ya da <b>Tekrar Gerekli</b> olur. Açık uçlu sorular öğretmen tarafından puanlanır. Öğretmen, ders öncesinde sınıfın hazırlık raporunu görür.</p>
+    </section>
+
+    <section id="ozellikler">
+      <h2>Özellikler</h2>
+      <div class="cols">
+        <div>
+          <h3>Öğretmen</h3>
+          <ul class="plain">
+            <li>Sınıf oluşturma ve 8 karakterlik katılma kodu</li>
+            <li>Görev sihirbazı: sınıf → ders → tema/ünite → MEB öğrenme çıktısı → ayrıntılar</li>
+            <li>Son teslim için takvim + saat/dakika seçici (Türkiye saati)</li>
+            <li>Yapay zekâ taslağı: arka planda üretim, ilerleme göstergesi, “Tekrar Dene”</li>
+            <li>İçerik ve soru düzenleme, “Onayla ve Yayınla”</li>
+            <li>Görevi düzenleme; öğrenci başladıktan sonra sorular ve başarı eşiği kilitlenir</li>
+            <li>Görevi silme: dokunulmamış taslak silinir, diğerleri arşivlenir</li>
+            <li>Görev raporu: filtreler, arama, “Cevapları Gör”</li>
+            <li>Cevap kağıdı: tüm cevaplar, doğru cevap, puan ve durum; açık uçlu sorulara yerinde puan</li>
+            <li>Öğrenci geçmişi ve sınıf öğrenci listesi</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Öğrenci</h3>
+          <ul class="plain">
+            <li>Sınıfa katılma kodu; sınıfı yoksa panelde belirgin “Sınıfa Katıl” kartı</li>
+            <li>Görev panosu: yaklaşan, devam eden, tekrar gerekli, derse hazır</li>
+            <li>Özet → onay → ön bilgi kontrolü → sonuç adımları</li>
+            <li>Deneme hakkı ve öğretmenin geri bildirim ayarlarına uyan sonuç ekranı</li>
+          </ul>
+          <h3>Hesap</h3>
+          <ul class="plain">
+            <li>E-posta + şifre ile kayıt (her alan adı); öğretmen için davet kodu</li>
+            <li>“Google ile devam et”: ilk girişte Öğrenciyim / Öğretmenim seçimi</li>
+            <li>Şifremi unuttum: 30 dakika geçerli, tek kullanımlık e-posta bağlantısı</li>
+            <li>Profil: ad soyad, şifre değiştirme veya parola oluşturma, özet sayılar</li>
+            <li>Yardımcı maskot “Etüt”: kısa ipuçları, küçültülebilir, kapatılabilir</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="teknik">
+      <h2>Teknik yapı</h2>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Katman</th><th>Seçim</th></tr></thead>
+        <tbody>
+          <tr><td>Uygulama</td><td>Next.js 16 (App Router), TypeScript, sunucu bileşenleri + route handler'lar</td></tr>
+          <tr><td>Veritabanı</td><td>Prisma 6 · production'da PostgreSQL, yerelde ve testlerde SQLite (iki şema birebir eşit tutulur)</td></tr>
+          <tr><td>Doğrulama</td><td>Zod: formlar, API girdileri ve yapay zekâ çıktısı</td></tr>
+          <tr><td>Oturum</td><td>İmzalı HS256 çerez; şifre değişince eski oturumlar geçersiz (<code>sessionVersion</code>)</td></tr>
+          <tr><td>Yapay zekâ</td><td>EVREN LLM (OpenAI uyumlu), model <code>glm-5.3</code>, <code>reasoning_effort=low</code>, katı JSON şeması</td></tr>
+          <tr><td>E-posta</td><td>Resend (şifre sıfırlama)</td></tr>
+          <tr><td>Giriş</td><td>E-posta + şifre ve Google OpenID Connect (PKCE, state, nonce)</td></tr>
+          <tr><td>Test</td><td>Vitest; her çalıştırmada yeni bir SQLite test veritabanı</td></tr>
+          <tr><td>Yayın</td><td>Vercel (Fluid compute), GitHub'a her push'ta otomatik deploy</td></tr>
+        </tbody>
+      </table></div>
+      <p>Yetkilendirme her yerde sunucu ve servis katmanında yapılır: öğretmen yalnızca kendi sınıflarını, öğrencilerini ve görevlerini; öğrenci yalnızca kendi çalışmalarını görür. Kimlik numarasını değiştirerek başka kullanıcının verisine ulaşmak testlerle denenmiştir ve engellenir.</p>
+    </section>
+
+    <section id="mufredat">
+      <h2>MEB müfredatı</h2>
+      <p>Veri yalnızca <a href="https://tymm.meb.gov.tr" rel="noopener">tymm.meb.gov.tr</a> resmi öğretim programı sayfalarından çekildi. Her öğrenme çıktısı kodu, metni, teması/ünitesi ve kaynak adresiyle saklanır. Yükleme tekrar çalıştırılabilir; kopya kayıt oluşturmaz, hiçbir kaydı silmez.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Sınıf</th><th>Dersler</th><th class="num">Öğrenme çıktısı</th></tr></thead>
+        <tbody>
+          <tr><td>5. sınıf</td><td>Türkçe 80 · Matematik 23 · Fen Bilimleri 27 · Sosyal Bilgiler 19 · İngilizce 184</td><td class="num">333</td></tr>
+          <tr><td>6. sınıf</td><td>Türkçe 100 · Matematik 24 · Fen Bilimleri 36 · Sosyal Bilgiler 18 · İngilizce 184</td><td class="num">362</td></tr>
+          <tr><td>7. sınıf</td><td>Türkçe 102 · Matematik 30 · Fen Bilimleri 35 · Sosyal Bilgiler 17 · İngilizce 191</td><td class="num">375</td></tr>
+          <tr><td>8. sınıf</td><td>Türkçe 89 · Matematik 23 · Fen Bilimleri 43 · İnkılap Tarihi 15 · İngilizce 192</td><td class="num">362</td></tr>
+          <tr><td><b>Toplam</b></td><td>Tekrar eden 0 · kaynak adresi olmayan 0 · temasız çıktı 0</td><td class="num"><b>1.432</b></td></tr>
+        </tbody>
+      </table></div>
+      <p>Production'da 7. ve 8. sınıfın tema bağlantıları ilk yüklemede yarıda kalmıştı; bu yüzden sihirbazda o sınıfların temaları boş görünüyordu. Yükleme küçük parçalara bölündü ve production veritabanı yeniden tamamlandı. <code>npm run curriculum:report</code> komutu durumu salt okunur olarak raporlar.</p>
+    </section>
+
+    <section id="yapay-zeka">
+      <h2>Yapay zekâ akışı</h2>
+      <p>Önceden taslak üretimi 1–3 dakika açık kalan tek bir istekti; bağlantı koparsa ekran sonsuza kadar “Oluşturuluyor…” durumunda kalıyordu. Şimdi istek hemen döner, üretim sunucuda arka planda sürer, ekran durumu düzenli sorgular. Her yol başarı, hata ya da zaman aşımıyla biter; sayfa yenilense de iş bulunur ve yarıda kalan işler otomatik kapatılır. Geçici ağ ve 429/5xx hatalarında, ayrıca bozuk JSON'da en fazla bir kontrollü yeniden deneme yapılır.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Gerçek EVREN testi</th><th class="num">Soru</th><th class="num">Süre</th><th>Sonuç</th></tr></thead>
+        <tbody>
+          <tr><td>6. sınıf Matematik</td><td class="num">5</td><td class="num">41 sn</td><td><span class="pill">kaydedildi</span></td></tr>
+          <tr><td>5. sınıf Fen Bilimleri</td><td class="num">6</td><td class="num">51 sn</td><td><span class="pill">kaydedildi</span></td></tr>
+          <tr><td>8. sınıf Fen Bilimleri</td><td class="num">7</td><td class="num">60 sn</td><td><span class="pill">kaydedildi</span></td></tr>
+          <tr><td>Arayüzden, EVREN yavaşken</td><td class="num">7</td><td class="num">&gt;150 sn, sonra 118 sn</td><td><span class="pill warn">ilk deneme zaman aşımı</span> <span class="pill">ikinci deneme yayınlandı</span></td></tr>
+        </tbody>
+      </table></div>
+      <div class="callout"><strong>Açık konu:</strong> Kodda şu an varsayılan yapay zekâ zaman aşımı 90 sn, sunucu süre sınırı 180 sn. EVREN yavaş anlarda 118–150 sn sürebildiği için Vercel'de <code>AI_TIMEOUT_MS=160000</code> ayarlanması öneriliyor.</div>
+    </section>
+
+    <section id="kurulum">
+      <h2>Kurulum ve ayarlar</h2>
+      <h3>Ortam değişkenleri (yalnızca adlar)</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Ad</th><th>Ne işe yarar</th></tr></thead>
+        <tbody>
+          <tr><td><code>DATABASE_URL</code></td><td>PostgreSQL bağlantısı (Vercel'de pooled adres)</td></tr>
+          <tr><td><code>AUTH_SECRET</code></td><td>Oturum çerezlerini imzalar; en az 32 karakter</td></tr>
+          <tr><td><code>TEACHER_SIGNUP_CODE</code></td><td>Öğretmen kayıt davet kodu; boşsa öğretmen kaydı kapalı (Google ile kayıtta da istenir)</td></tr>
+          <tr><td><code>APP_URL</code></td><td>Sitenin adresi; e-posta bağlantıları ve Google dönüş adresi bundan üretilir</td></tr>
+          <tr><td><code>RESEND_API_KEY</code>, <code>MAIL_FROM</code>, <code>MAIL_PROVIDER</code></td><td>Şifre sıfırlama e-postası (Resend, doğrulanmış alan adı)</td></tr>
+          <tr><td><code>GOOGLE_CLIENT_ID</code>, <code>GOOGLE_CLIENT_SECRET</code></td><td>“Google ile devam et”; ikisi de doluysa buton görünür</td></tr>
+          <tr><td><code>AI_PROVIDER</code></td><td><code>evren</code>; boşsa yapay zekâ kapalı, içerik elle hazırlanır</td></tr>
+          <tr><td><code>EVREN_LLM_BASE_URL</code>, <code>EVREN_LLM_API_KEY</code>, <code>EVREN_LLM_MODEL</code></td><td>EVREN bağlantısı; model varsayılanı <code>glm-5.3</code></td></tr>
+          <tr><td><code>EVREN_LLM_REASONING_EFFORT</code></td><td>Varsayılan <code>low</code>; <code>none</code> kullanılamaz çıktı verdi</td></tr>
+          <tr><td><code>AI_TIMEOUT_MS</code></td><td>Yapay zekâ zaman aşımı; öneri <code>160000</code></td></tr>
+        </tbody>
+      </table></div>
+      <h3>Komutlar</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Komut</th><th>İş</th></tr></thead>
+        <tbody>
+          <tr><td><code>npm run dev</code></td><td>Yerel geliştirme sunucusu (SQLite)</td></tr>
+          <tr><td><code>npm run db:deploy</code></td><td>Migration'ları uygular; veri silmez</td></tr>
+          <tr><td><code>npm run curriculum</code></td><td>Müfredatı veritabanına aktarır (tekrar çalıştırılabilir)</td></tr>
+          <tr><td><code>npm run curriculum:report</code></td><td>Müfredat durumunu salt okunur raporlar</td></tr>
+          <tr><td><code>npm run lint · typecheck · test · build</code></td><td>Kalite kontrolleri</td></tr>
+          <tr><td><code>npm run test:evren</code></td><td>Gerçek EVREN API ile canlı üretim testi</td></tr>
+          <tr><td><code>npm run demo</code></td><td>Yalnızca yerel sunum verisi; production'da çalışmaz</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <section id="testler">
+      <h2>Test sonuçları</h2>
+      <div class="checks">
+        <div class="check"><div class="k">Typecheck</div><div class="v">0 hata</div></div>
+        <div class="check"><div class="k">Lint</div><div class="v">0 hata · 0 uyarı</div></div>
+        <div class="check"><div class="k">Testler</div><div class="v">115 geçti · 3 atlandı</div></div>
+        <div class="check"><div class="k">Build</div><div class="v">Başarılı</div></div>
+        <div class="check"><div class="k">Canlı EVREN</div><div class="v">3 / 3 geçti</div></div>
+      </div>
+      <p>Atlanan 3 test, yalnızca <code>npm run test:evren</code> ile çalışan canlı EVREN testleridir; ayrıca çalıştırılıp geçti. Testler şifre sıfırlamayı (süresi geçmiş ve kullanılmış bağlantı dahil), profil ve şifre değiştirmeyi, Google hesap bağlamayı, görev düzenleme kilitlerini, arşivlemede öğrenci verisinin korunmasını, cevap kağıdını, açık uçlu soru olmayan görevin otomatik tamamlanmasını ve başka öğretmenin verisine erişimin engellendiğini kapsar.</p>
+      <p>Tarayıcıda elle denendi: şifre sıfırlama, sınıfa katılma (geçersiz kod dahil), profil, Google ile ilk kayıtta rol seçimi, görev düzenleme ve silme penceresi, arşivleme ve geri alma, rapor tablosu, cevap kağıdı, öğrenci geçmişi, mobil görünüm ve maskot.</p>
+    </section>
+
+    <section id="yapilacaklar">
+      <h2>Yapılacaklar</h2>
+      <ol class="todo">
+        <li><div><b>Veritabanı şifresini yenile.</b> Paylaşılan bir ekran görüntüsünde bağlantı adresi göründü. Prisma Console'da yeni anahtar oluşturup Vercel'deki <code>DATABASE_URL</code> değerini güncelle.</div></li>
+        <li><div><b>Vercel'e yeni değişkenleri ekle:</b> <code>APP_URL</code>, <code>RESEND_API_KEY</code>, <code>MAIL_FROM</code>, <code>GOOGLE_CLIENT_ID</code>, <code>GOOGLE_CLIENT_SECRET</code>, <code>AI_TIMEOUT_MS=160000</code>; ardından Redeploy.</div></li>
+        <li><div><b>Resend:</b> hesap aç, alan adını DNS kayıtlarıyla doğrula, API anahtarı oluştur, <code>MAIL_FROM</code> değerini doğrulanmış alan adıyla gir.</div></li>
+        <li><div><b>Google OAuth:</b> Google Cloud Console'da Web OAuth istemcisi oluştur; yönlendirme adresi <code>https://evde-etut.vercel.app/api/auth/google/callback</code>.</div></li>
+        <li><div><b>Bekleyen yerel değişiklikleri incele ve gönder:</b> mobilde tabloların sayfayı genişletmesini düzelten CSS, 5 ve 7 soruluk canlı EVREN testleri, zaman aşımı belgeleri.</div></li>
+        <li><div><b>Zaman aşımı kararını ver:</b> paralel bir oturumun raporu 90 sn diyor; ölçümler 160 sn'yi destekliyor.</div></li>
+      </ol>
+    </section>
+
+    <section id="istemler">
+      <h2>Tüm istemler</h2>
+      <p>Kullanıcının bu oturumda yazdığı her istem, gönderildiği sırayla ve tam metniyle. Otomatik sistem mesajları (arka plan görevi bildirimleri, “devam et” notları) ayrıldı. Saatler Türkiye saatidir. Uzun istemler kapalı gelir; tıklayarak açabilir, tek düğmeyle kopyalayabilirsin.</p>
+      <div class="toolbar">
+        <button type="button" id="open-all">Tümünü aç</button>
+        <button type="button" id="close-all">Tümünü kapat</button>
+      </div>
+      <ol class="log">
+
+<li class="prompt" id="istem-1">
+  <div class="p-meta"><span class="p-num">01</span><time>7 Eki 13:49</time><span class="p-phase">Müfredat verisi</span></div>
+  <details>
+    <summary><span class="p-title">5. sınıf MEB müfredatını resmi kaynaktan çıkarma</span><span class="p-size">857 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t1">Kopyala</button><pre id="t1">Aşağıdaki URL&#x27;ler Millî Eğitim Bakanlığı Türkiye Yüzyılı Maarif Modeli resmi öğretim programı sayfalarıdır.
+Bu aşamada SADECE 5. sınıf müfredat verilerini hazırla.
+Kaynak URL&#x27;ler:
+İngilizce:
+https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/6
+Fen Bilimleri:
+https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/6
+Matematik:
+https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/6
+Türkçe:
+https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/6
+Sosyal Bilgiler:
+https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/6
+ÖNEMLİ:
+Bu URL&#x27;lerin sonundaki `/6` değerini sınıf seviyesi olarak yorumlama.
+Bu bağlantıların içeriklerini inceleyerek bunların 5. sınıf programı olduğunu doğrula ve bütün kayıtları gerçek sayfa içeriğine göre işle.
+AMAÇ
+Bu sayfalardaki resmi MEB öğretim programı yapısını incele.
+Her ders için sayfada bulunan:
+
+* tema
+* ünite
+* öğrenme alanı
+* bölüm
+
+bağlantılarını tespit et.
+Ana sayfadaki özet bilgilerle yetinme.
+Her tema veya üniteye ait alt sayfalara gir ve öğrenme çıktılarını ayrıntılı olarak çıkar.
+Örneğin İngilizce için aşağıdaki gibi alt sayfalar bulunabilir:
+https://tymm.meb.gov.tr/ingilizce-dersi-temel-egitim/unite/718
+Ancak URL numaralarını tahmin etme.
+Yalnızca ana MEB sayfasında gerçekten bulunan bağlantıları takip et.
+ÇIKARILACAK VERİLER
+Her öğrenme çıktısı için mümkün olduğu ölçüde şu alanları çıkar:
+
+* subject
+* grade
+* unitOrTheme
+* unitOrThemeCode
+* outcomeCode
+* outcomeText
+* processComponents
+* learningArea
+* skills
+* conceptualSkills
+* values
+* literacySkills
+* interdisciplinaryRelations
+* sourceUrl
+* sourceTitle
+
+Sayfada bulunmayan alanları tahmin ederek doldurma.
+Bir alan yoksa:
+null
+veya uygun durumda:
+[]
+kullan.
+SINIF
+Bu çalışma sadece 5. sınıf içindir.
+Her ders sayfasında sınıf düzeyinin gerçekten 5. sınıf olduğunu içerikten doğrula.
+Tüm kayıtların:
+&quot;grade&quot;: 5
+değerine sahip olması gerekir.
+Ancak bunu yalnızca resmi MEB sayfasındaki içerikle doğruladıktan sonra yap.
+Eğer herhangi bir sayfanın 5. sınıfa ait olduğu doğrulanamıyorsa tahmin yapma.
+Bu durumda kaydı:
+&quot;reviewStatus&quot;: &quot;REVIEW_REQUIRED&quot;
+olarak işaretle.
+EN ÖNEMLİ KURAL
+MEB sayfasında açık biçimde bulunmayan hiçbir:
+
+* öğrenme çıktısı
+* kazanım
+* öğrenme çıktısı kodu
+* tema
+* ünite
+* açıklama
+* süreç bileşeni
+
+uydurma.
+Eksik metni model bilgisiyle tamamlama.
+Başka eğitim sitelerine gitme.
+Wikipedia, özel yayınevi, blog veya başka curriculum kaynağı kullanma.
+Bu çalışma için tek eğitim kaynağı:
+tymm.meb.gov.tr
+olmalıdır.
+VERİ YAPISI
+Her öğrenme çıktısını ayrı bir kayıt olarak tut.
+Örnek yapı:
+{
+&quot;subject&quot;: &quot;Fen Bilimleri&quot;,
+&quot;grade&quot;: 5,
+&quot;unitOrTheme&quot;: &quot;...&quot;,
+&quot;unitOrThemeCode&quot;: null,
+&quot;outcomeCode&quot;: &quot;...&quot;,
+&quot;outcomeText&quot;: &quot;...&quot;,
+&quot;processComponents&quot;: [
+&quot;...&quot;
+],
+&quot;learningArea&quot;: null,
+&quot;skills&quot;: [],
+&quot;sourceUrl&quot;: &quot;https://tymm.meb.gov.tr/...&quot;,
+&quot;sourceTitle&quot;: &quot;...&quot;,
+&quot;reviewStatus&quot;: &quot;VERIFIED&quot;
+}
+REVIEW_REQUIRED
+Şu durumlardan biri varsa tahmin yürütme:
+
+* sınıf seviyesi belirsiz
+* tema adı belirsiz
+* öğrenme çıktısı kodu tam okunamıyor
+* öğrenme çıktısı metni eksik
+* sayfa yapısı beklenenden farklı
+* ilgili alt sayfaya ulaşılamıyor
+* bağlantının 5. sınıfa ait olduğu doğrulanamıyor
+
+Bu durumda:
+&quot;reviewStatus&quot;: &quot;REVIEW_REQUIRED&quot;
+olarak işaretle.
+DOSYA YAPISI
+Aşağıdaki klasörleri oluştur:
+data/curriculum/raw/grade-5/
+data/curriculum/normalized/grade-5/
+Raw klasöründe gerekli ham veriyi veya kaynak yapıyı sakla.
+Normalized klasöründe uygulamanın kullanacağı temiz JSON dosyalarını oluştur:
+english.json
+science.json
+mathematics.json
+turkish.json
+social-studies.json
+Ayrıca tüm dersleri birleştiren:
+grade-5.json
+dosyası oluştur.
+SOURCE TRACEABILITY
+Her öğrenme çıktısında:
+sourceUrl
+zorunlu olsun.
+Mümkünse ayrıca:
+sourceTitle
+sourceFetchedAt
+alanlarını da ekle.
+Böylece uygulamadaki her öğrenme çıktısının hangi MEB sayfasından geldiği sonradan doğrulanabilsin.
+DUPLICATE KONTROLÜ
+Aynı:
+subject + grade + outcomeCode
+kombinasyonu iki kez bulunursa duplicate olarak raporla.
+Sessizce silme.
+VALIDATION
+Veri çıkarma tamamlandıktan sonra şu kontrolleri yap:
+
+1. outcomeCode boş mu?
+2. outcomeText boş mu?
+3. subject doğru mu?
+4. grade gerçekten 5 mi?
+5. sourceUrl `https://tymm.meb.gov.tr/` ile mi başlıyor?
+6. duplicate outcome var mı?
+7. REVIEW_REQUIRED kayıt var mı?
+8. tema/ünite bağlantılarının tamamı ziyaret edilmiş mi?
+9. her öğrenme çıktısının kaynak sayfası kayıtlı mı?
+10. aynı outcomeCode farklı metinlerle tekrar ediyor mu?
+
+Sonucu:
+data/curriculum/grade-5-validation-report.json
+dosyasına yaz.
+ÖZET RAPOR
+Ayrıca:
+data/curriculum/grade-5-summary.json
+oluştur.
+Şu yapıya benzer olsun:
+{
+&quot;grade&quot;: 5,
+&quot;subjects&quot;: {
+&quot;İngilizce&quot;: {
+&quot;unitsOrThemes&quot;: 0,
+&quot;outcomes&quot;: 0
+},
+&quot;Fen Bilimleri&quot;: {
+&quot;unitsOrThemes&quot;: 0,
+&quot;outcomes&quot;: 0
+},
+&quot;Matematik&quot;: {
+&quot;unitsOrThemes&quot;: 0,
+&quot;outcomes&quot;: 0
+},
+&quot;Türkçe&quot;: {
+&quot;unitsOrThemes&quot;: 0,
+&quot;outcomes&quot;: 0
+},
+&quot;Sosyal Bilgiler&quot;: {
+&quot;unitsOrThemes&quot;: 0,
+&quot;outcomes&quot;: 0
+}
+},
+&quot;totalOutcomes&quot;: 0,
+&quot;duplicates&quot;: 0,
+&quot;reviewRequired&quot;: 0,
+&quot;errors&quot;: 0
+}
+Buradaki sayıları gerçek sonuçlardan hesapla.
+SCRIPT
+Mümkünse işlemi daha sonra tekrar çalıştırabilmek için:
+scripts/fetch-meb-grade-5.ts
+şeklinde bir script oluştur.
+package.json&#x27;a:
+npm run curriculum:fetch
+komutunu ekle.
+Ayrıca validation için:
+npm run curriculum:validate
+komutunu oluştur.
+WEB SAYFALARINI OKUMA
+Öncelikle normal HTTP fetch ile sayfaları indir.
+HTML parsing gerekiyorsa Cheerio gibi hafif bir parser kullan.
+Eğer öğrenme çıktıları JavaScript ile sonradan yükleniyorsa ve normal fetch ile görünmüyorsa, o zaman Playwright kullan.
+Gereksiz yere Playwright kullanma.
+SİTEYE YÜK BİNDİRME
+Aynı URL&#x27;yi sürekli tekrar isteme.
+Local cache kullan.
+İstekler arasında kontrollü gecikme bırak.
+Maximum retry:
+3
+olsun.
+BU AŞAMADA YAPMA
+Henüz:
+
+* PostgreSQL&#x27;e veri yazma
+* Prisma seed oluşturma
+* öğretmen panelini değiştirme
+* öğrenci panelini değiştirme
+* AI içerik üretimini bağlama
+
+Bunları yapma.
+İlk hedef yalnızca doğru ve kontrol edilebilir bir 5. sınıf MEB curriculum dataset oluşturmaktır.
+İŞLEM SONUNDA BANA RAPOR VER
+İşlem tamamlandığında terminalde kısa bir rapor göster:
+
+5. SINIF MEB MÜFREDAT AKTARIMI TAMAMLANDI
+
+İngilizce:
+
+* Tema/Ünite:
+* Öğrenme çıktısı:
+
+Fen Bilimleri:
+
+* Tema/Ünite:
+* Öğrenme çıktısı:
+
+Matematik:
+
+* Tema/Ünite:
+* Öğrenme çıktısı:
+
+Türkçe:
+
+* Tema/Ünite:
+* Öğrenme çıktısı:
+
+Sosyal Bilgiler:
+
+* Tema/Ünite:
+* Öğrenme çıktısı:
+
+Toplam öğrenme çıktısı:
+Duplicate:
+Review Required:
+Hata:
+Ayrıca ziyaret edilen bütün MEB URL&#x27;lerini listele.
+SON KONTROL
+İşlem bitmeden önce özellikle şunu doğrula:
+
+* Bütün veriler 5. sınıfa mı ait?
+* Bütün tema/üniteler tarandı mı?
+* Her öğrenme çıktısının MEB kaynak URL&#x27;si var mı?
+* Her öğrenme çıktısı MEB&#x27;deki gerçek koduyla mı kaydedildi?
+* Model tarafından uydurulmuş hiçbir kayıt var mı?
+* REVIEW_REQUIRED olan kayıtlar açıkça raporlandı mı?
+
+Önce sayfa yapılarını incele, ardından veriyi çıkar.
+Hiçbir MEB öğrenme çıktısını tahmin ederek oluşturma.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-2">
+  <div class="p-meta"><span class="p-num">02</span><time>7 Eki 14:05</time><span class="p-phase">Müfredat verisi</span></div>
+  <details>
+    <summary><span class="p-title">6, 7 ve 8. sınıfa genişletme</span><span class="p-size">494 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t2">Kopyala</button><pre id="t2">5. sınıf MEB curriculum veri çıkarma sistemi başarıyla oluşturuldu.
+
+Şimdi mevcut scraper, parser, validation ve veri modelini yeniden kullanarak 6, 7 ve 8. sınıf müfredat verilerini hazırla.
+Mevcut 5. sınıf mimarisini bozma ve gereksiz yere yeniden yazma.
+Önce mevcut kodu incele ve mümkün olduğunca aynı reusable curriculum pipeline&#x27;ı kullan.
+TEMEL KURAL
+Müfredat için tek resmi kaynak:
+https://tymm.meb.gov.tr
+Başka kaynak kullanma.
+MEB&#x27;de bulunmayan:
+
+* öğrenme çıktısı
+* öğrenme çıktısı kodu
+* tema
+* ünite
+* süreç bileşeni
+* kazanım
+
+uydurma.
+Eksik veriyi model belleğinden tamamlama.
+SINIF KAPSAMI
+6. sınıf
+
+* Türkçe
+* Matematik
+* Fen Bilimleri
+* İngilizce
+* Sosyal Bilgiler
+* Din Kültürü ve Ahlak Bilgisi
+
+7. sınıf
+
+* Türkçe
+* Matematik
+* Fen Bilimleri
+* İngilizce
+* Sosyal Bilgiler
+* Din Kültürü ve Ahlak Bilgisi
+
+8. sınıf
+
+* Türkçe
+* Matematik
+* Fen Bilimleri
+* İngilizce
+* T.C. İnkılap Tarihi ve Atatürkçülük
+* Din Kültürü ve Ahlak Bilgisi
+
+8. sınıfa Sosyal Bilgiler ekleme.
+
+Onun yerine T.C. İnkılap Tarihi ve Atatürkçülük kullan.
+ÇALIŞMA YÖNTEMİ
+Her sınıf için ayrı ayrı çalış.
+Önce 6. sınıfı tamamla.
+Validation çalıştır.
+Sonra 7. sınıfa geç.
+Validation çalıştır.
+Sonra 8. sınıfa geç.
+Validation çalıştır.
+Bir sınıfta ciddi parsing problemi varsa sonraki sınıfa geçmeden önce düzelt.
+DOSYA YAPISI
+Mevcut 5. sınıf yapısına paralel olarak oluştur:
+data/curriculum/raw/grade-6/
+data/curriculum/normalized/grade-6/
+data/curriculum/raw/grade-7/
+data/curriculum/normalized/grade-7/
+data/curriculum/raw/grade-8/
+data/curriculum/normalized/grade-8/
+Her sınıf için ders bazlı JSON dosyaları oluştur.
+Ayrıca:
+grade-6.json
+grade-7.json
+grade-8.json
+oluştur.
+VALIDATION
+Her sınıf için ayrı validation report üret:
+grade-6-validation-report.json
+grade-7-validation-report.json
+grade-8-validation-report.json
+Şunları kontrol et:
+
+* eksik outcomeCode
+* eksik outcomeText
+* yanlış sınıf
+* duplicate kayıt
+* geçersiz sourceUrl
+* eksik tema/ünite
+* REVIEW_REQUIRED kayıt
+* aynı outcomeCode için farklı metin
+* ziyaret edilemeyen alt sayfalar
+
+SOURCE TRACEABILITY
+Her learning outcome için zorunlu olarak:
+
+* subject
+* grade
+* unitOrTheme
+* outcomeCode
+* outcomeText
+* sourceUrl
+* reviewStatus
+
+sakla.
+Mümkünse ayrıca:
+
+* sourceTitle
+* sourceFetchedAt
+* processComponents
+
+sakla.
+TEKRAR EDEN KOD YAZMA
+5, 6, 7 ve 8. sınıf için dört ayrı scraper kopyası oluşturma.
+Ortak reusable fonksiyonlar kullan.
+Örneğin yapı buna benzer olabilir:
+src/lib/curriculum/
+fetch-page.ts
+parse-program.ts
+parse-unit.ts
+validate-outcomes.ts
+curriculum-config.ts
+Sınıf ve ders URL&#x27;lerini config üzerinden yönet.
+SCRIPT KOMUTLARI
+Mümkünse şu komutları destekle:
+npm run curriculum:fetch
+npm run curriculum:fetch
+npm run curriculum:fetch
+ve tümünü çalıştırmak için:
+npm run curriculum:fetch
+Validation:
+npm run curriculum:validate
+TÜM SINIFLAR TAMAMLANDIKTAN SONRA
+5, 6, 7 ve 8. sınıf normalized datasetlerini birleştirerek:
+data/curriculum/normalized/all-middle-school.json
+oluştur.
+Ayrıca:
+data/curriculum/curriculum-summary.json
+oluştur.
+Şuna benzer gerçek istatistikler içersin:
+{
+&quot;grades&quot;: [5, 6, 7, 8],
+&quot;subjects&quot;: 7,
+&quot;totalUnitsOrThemes&quot;: 0,
+&quot;totalOutcomes&quot;: 0,
+&quot;verified&quot;: 0,
+&quot;reviewRequired&quot;: 0,
+&quot;duplicates&quot;: 0,
+&quot;errors&quot;: 0
+}
+Sayıları gerçek dataset üzerinden hesapla.
+ÇOK ÖNEMLİ
+Henüz PostgreSQL veya Prisma&#x27;ya seed etme.
+Önce bütün 5–8 curriculum dataset tamamlanmalı ve doğrulanmalı.
+Uygulama ekranlarını değiştirme.
+AI içerik üretimini değiştirme.
+Bu aşamanın amacı yalnızca ortaokul müfredat veri setini tamamlamaktır.
+İŞLEM SONUNDA BANA RAPOR VER
+Her sınıf için:
+
+* ders sayısı
+* tema/ünite sayısı
+* öğrenme çıktısı sayısı
+* VERIFIED kayıt
+* REVIEW_REQUIRED kayıt
+* duplicate
+* error
+
+göster.
+Ardından bütün ortaokul için toplam sonucu göster.
+MEB sayfasından doğrulanamayan hiçbir veriyi tahmin ederek oluşturma.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-3">
+  <div class="p-meta"><span class="p-num">03</span><time>7 Eki 14:23</time><span class="p-phase">Veritabanı ve sihirbaz</span></div>
+  <details>
+    <summary><span class="p-title">Müfredatı PostgreSQL&#x27;e aktarma ve görev sihirbazı</span><span class="p-size">910 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t3">Kopyala</button><pre id="t3">5, 6, 7 ve 8. sınıf MEB curriculum datasetleri tamamlandı ve doğrulandı.
+Şimdi bu verileri uygulamanın gerçek PostgreSQL/Prisma yapısına bağla.
+Bu aşamada scraper mantığını değiştirme.
+Kaynak olarak yalnızca mevcut doğrulanmış normalized curriculum datasetini kullan.
+Ana veri dosyası:
+data/curriculum/normalized/all-middle-school.json
+AMAÇ
+Öğretmen görev oluştururken şu akışla MEB öğrenme çıktısı seçebilsin:
+Sınıf
+→ Ders
+→ Tema / Ünite
+→ Öğrenme Çıktısı
+Bu seçenekler doğrudan veritabanındaki gerçek MEB curriculum verilerinden gelmelidir.
+Hard-coded ders veya öğrenme çıktısı listesi kullanma.
+1. PRISMA MODELİNİ OLUŞTUR
+Prisma schema içinde `CurriculumOutcome` modeli oluştur veya mevcut modeli kontrol ederek aşağıdaki yapıya uygun hale getir.
+Önerilen yapı:
+model CurriculumOutcome {
+id String @id @default(cuid())
+subject String
+grade Int
+unitOrTheme String?
+unitOrThemeCode String?
+outcomeCode String
+outcomeText String
+processComponents Json?
+learningArea String?
+skills Json?
+conceptualSkills Json?
+values Json?
+literacySkills Json?
+sourceUrl String
+sourceTitle String?
+sourceFetchedAt DateTime?
+reviewStatus String
+createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt
+assignmentOutcomes AssignmentOutcome[]
+@@unique([subject, grade, outcomeCode])
+@@index([grade, subject])
+@@index([grade, subject, unitOrTheme])
+}
+Gerekirse mevcut veri yapısına göre teknik olarak iyileştir.
+Ancak temel alanları kaybetme.
+2. ASSIGNMENT İLİŞKİSİ
+Bir assignment birden fazla öğrenme çıktısına bağlanabilmelidir.
+Many-to-many ilişki için explicit join table kullan:
+model AssignmentOutcome {
+id String @id @default(cuid())
+assignmentId String
+outcomeId String
+assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+outcome CurriculumOutcome @relation(fields: [outcomeId], references: [id], onDelete: Restrict)
+@@unique([assignmentId, outcomeId])
+@@index([assignmentId])
+@@index([outcomeId])
+}
+Assignment modeline:
+assignmentOutcomes AssignmentOutcome[]
+ilişkisini ekle.
+3. MIGRATION
+Schema değişiklikleri tamamlandıktan sonra development migration oluştur.
+Migration sırasında mevcut veriyi gereksiz yere silme.
+Destructive migration gerekiyorsa otomatik uygulama; önce açıkça bildir.
+4. CURRICULUM SEED
+Normalized JSON dosyasındaki curriculum verilerini PostgreSQL&#x27;e aktaran ayrı seed/import scripti oluştur.
+Örneğin:
+scripts/seed-curriculum.ts
+veya mevcut Prisma seed altyapısına uygun başka bir yapı kullan.
+Komut:
+npm run curriculum
+olsun.
+5. SEED KURALLARI
+Seed idempotent olmalıdır.
+Aynı komutu ikinci kez çalıştırınca duplicate oluşturmasın.
+Unique key olarak:
+subject + grade + outcomeCode
+kullan.
+Mümkünse Prisma upsert kullan.
+Ancak aynı outcomeCode&#x27;un metni güncellenmişse güncel normalized dataset ile veritabanındaki alanları güncelle.
+6. REVIEW_REQUIRED
+`reviewStatus = REVIEW_REQUIRED` olan kayıtları varsayılan olarak öğretmen seçim listesinde gösterme.
+Sadece:
+VERIFIED
+olan curriculum outcome kayıtları öğretmen tarafından seçilebilsin.
+REVIEW_REQUIRED kayıtları veritabanında tutulabilir ancak üretim akışında kullanılmasın.
+7. CURRICULUM SERVICE
+Curriculum verilerine doğrudan componentlerden Prisma sorgusu yazma.
+Reusable service oluştur.
+Örneğin:
+src/lib/curriculum/curriculum-service.ts
+Fonksiyonlar:
+getAvailableGrades()
+getSubjectsByGrade(grade)
+getUnitsByGradeAndSubject(grade, subject)
+getOutcomes({
+grade,
+subject,
+unitOrTheme
+})
+getOutcomeById(id)
+getOutcomesByIds(ids)
+Tüm fonksiyonlarda sadece VERIFIED kayıtları varsayılan olarak döndür.
+8. SERVER-SIDE KULLANIM
+Curriculum sorgularını mümkün olduğunca server-side çalıştır.
+Gerekirse route handler veya server action kullan.
+Client&#x27;a tüm curriculum datasetini tek seferde gönderme.
+Kullanıcı seçimine göre gerekli veriyi getir.
+Örneğin:
+Grade seçildi
+→ ilgili dersler getir
+Subject seçildi
+→ ilgili temalar getir
+Theme seçildi
+→ ilgili öğrenme çıktıları getir
+9. TEACHER ASSIGNMENT WIZARD
+Teacher için görev oluşturma ekranını implement et veya mevcutsa güncelle.
+Adımlar:
+Adım 1 – Sınıf
+Teacher kendi classroomlarından birini seçer.
+Sınıf düzeyi Classroom.grade alanından alınır.
+Teacher keyfi olarak başka bir grade seçmemelidir.
+Örneğin:
+Classroom:
+7/A
+grade: 7
+ise curriculum selection otomatik 7. sınıf ile sınırlandırılsın.
+Adım 2 – Ders
+Seçilen grade için mevcut curriculum derslerini getir.
+Örnek:
+Matematik
+Türkçe
+Fen Bilimleri
+İngilizce
+Sosyal Bilgiler
+Din Kültürü ve Ahlak Bilgisi
+Ancak seçenekleri hard-code etme.
+CurriculumOutcome tablosundan üret.
+Adım 3 – Tema / Ünite
+Seçilen:
+grade + subject
+için benzersiz tema/üniteleri getir.
+Adım 4 – Öğrenme Çıktısı
+Seçilen:
+grade + subject + unitOrTheme
+için VERIFIED öğrenme çıktılarını getir.
+Her kayıt UI&#x27;da şu şekilde gösterilsin:
+[OUTCOME CODE]
+Outcome text
+Örnek:
+MAT.5.1.1
+...
+Birden fazla öğrenme çıktısı checkbox ile seçilebilsin.
+10. MEB KAYNAK GÖSTERİMİ
+Öğretmen bir outcome seçtiğinde küçük bir bilgi alanı göster:
+MEB Öğrenme Çıktısı
+Kod:
+...
+Kaynak:
+MEB Türkiye Yüzyılı Maarif Modeli
+Kaynağı Görüntüle
+`sourceUrl` bağlantısını kullan.
+11. ASSIGNMENT KAYDETME
+Teacher wizard&#x27;ı tamamladığında Assignment kaydı oluştur.
+Aynı transaction içinde:
+AssignmentOutcome
+kayıtlarını da oluştur.
+Bir assignment outcome olmadan publish edilememelidir.
+Draft olarak kaydetmeye izin verilebilir.
+12. VALIDATION
+Zod schema oluştur.
+Assignment oluştururken validate et:
+
+* classroom teacher&#x27;a ait mi?
+* classroom grade ile curriculum outcome grade aynı mı?
+* seçilen outcome gerçekten VERIFIED mı?
+* outcome seçilen subject ile aynı mı?
+* outcome seçilen tema/üniteye ait mi?
+* en az 1 outcome seçilmiş mi?
+* minimumScore 0–100 arasında mı?
+* deadline geçerli mi?
+
+Bu kontroller sadece client tarafında değil server tarafında da yapılmalıdır.
+13. SECURITY
+Teacher request içinde curriculumOutcomeId gönderirse DB&#x27;den tekrar doğrula.
+Client&#x27;ın gönderdiği:
+grade
+subject
+unit
+değerlerine körü körüne güvenme.
+Gerçek outcome kaydından doğrula.
+14. ASSIGNMENT DETAIL
+Oluşturulan assignment detay sayfasında:
+Ders
+Sınıf
+Konu
+Tema/Ünite
+MEB Öğrenme Çıktıları
+Başarı eşiği
+Son tarih
+Durum
+göster.
+MEB öğrenme çıktılarında:
+
+* outcomeCode
+* outcomeText
+
+liste halinde göster.
+15. TEST
+En az şu testleri ekle:
+
+1. Curriculum seed duplicate oluşturmuyor.
+2. REVIEW_REQUIRED outcome seçim listesinde görünmüyor.
+3. 
+   5. sınıf classroom için 6. sınıf outcome seçilemiyor.
+4. Teacher birden fazla outcome seçebiliyor.
+5. AssignmentOutcome kayıtları doğru oluşuyor.
+6. Teacher başka teacher&#x27;ın classroom&#x27;una assignment oluşturamıyor.
+7. Outcome olmadan assignment publish edilemiyor.
+8. Curriculum filtreleri grade/subject/unit bazında doğru sonuç döndürüyor.
+
+16. TEST SONRASI
+Çalıştır:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+Tüm hataları düzelt.
+17. BU AŞAMADA YAPMA
+Henüz AI ile otomatik konu özeti veya soru oluşturma kısmına geçme.
+Önce:
+MEB curriculum
+→ database
+→ assignment
+zincirinin kusursuz çalışmasını tamamla.
+İŞLEM SONUNDA BANA RAPOR VER
+Şunları bildir:
+
+* PostgreSQL&#x27;e kaç CurriculumOutcome kaydı eklendi?
+* 
+   5. sınıf kaç kayıt?
+* 
+   6. sınıf kaç kayıt?
+* 
+   7. sınıf kaç kayıt?
+* 
+   8. sınıf kaç kayıt?
+* kaç REVIEW_REQUIRED kayıt database&#x27;e alındı?
+* duplicate oluştu mu?
+* migration başarılı mı?
+* curriculum seed başarılı mı?
+* assignment wizard çalışıyor mu?
+* birden fazla outcome seçilebiliyor mu?
+* npm run build başarılı mı?
+
+Ayrıca değiştirdiğin/oluşturduğun temel dosyaları listele.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-4">
+  <div class="p-meta"><span class="p-num">04</span><time>7 Eki 14:37</time><span class="p-phase">Hazırlık içeriği</span></div>
+  <details>
+    <summary><span class="p-title">Yapay zekâ / elle hazırlık içeriği ve öğretmen onayı</span><span class="p-size">1478 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t4">Kopyala</button><pre id="t4">Curriculum → database → assignment wizard zinciri tamamlandı.
+Şimdi öğretmenin seçtiği MEB öğrenme çıktıları ve konu başlığına göre öğrenciler için ders öncesi hazırlık içeriği ve kısa değerlendirme soruları üreten sistemi geliştir.
+Bu aşamanın ana amacı:
+Öğretmen assignment oluşturduğunda sistem otomatik olarak bir TASLAK hazırlasın.
+Taslak iki ana bölümden oluşsun:
+
+1. Ders öncesi kısa konu özeti
+2. Ön bilgi kontrol değerlendirmesi
+
+Ancak hiçbir AI içeriği öğretmen onayı olmadan öğrenciye yayınlanmamalıdır.
+TEMEL AKIŞ
+Teacher assignment oluşturur.
+↓
+Classroom belirlenir.
+↓
+Grade belirlenir.
+↓
+Subject belirlenir.
+↓
+MEB curriculum outcome veya outcome&#x27;lar seçilir.
+↓
+Teacher topic başlığı girer.
+↓
+Assignment DRAFT olarak oluşturulur.
+↓
+Teacher:
+“Hazırlık İçeriği Oluştur”
+butonuna basar.
+↓
+Sistem AI kullanarak:
+
+* kısa konu girişi
+* temel kavramlar
+* kısa konu özeti
+* basit örnek
+* “Bunu bilmen yeterli” bölümü
+* ön bilgi kontrol soruları
+
+oluşturur.
+↓
+İçerik:
+AI_GENERATED_DRAFT
+olarak kaydedilir.
+↓
+Teacher içeriği inceler.
+↓
+Teacher istediği alanları düzenler.
+↓
+Teacher soruları:
+
+* düzenleyebilir
+* silebilir
+* yeniden sıralayabilir
+* yeni soru ekleyebilir
+
+↓
+Teacher:
+“Onayla ve Yayınla”
+butonuna basar.
+↓
+StudyContent:
+TEACHER_APPROVED
+olur.
+Assignment:
+PUBLISHED
+olur.
+↓
+Öğrenci görevi görebilir.
+ÇOK ÖNEMLİ MEB GROUNDING KURALI
+AI genel bilgisine göre serbestçe eğitim içeriği üretmemelidir.
+AI&#x27;ya yalnızca şu verileri gönder:
+
+* subject
+* grade
+* unitOrTheme
+* teacherTopic
+* seçilen MEB outcome code&#x27;ları
+* seçilen MEB outcome text&#x27;leri
+* processComponents varsa bunlar
+* doğrulanmış curriculum bağlamı
+
+AI system prompt&#x27;unda açıkça şu mantığı kullan:
+“Bu içerik Türkiye Cumhuriyeti Millî Eğitim Bakanlığı Türkiye Yüzyılı Maarif Modeli kapsamında hazırlanacaktır.
+Yalnızca sana verilen MEB öğrenme çıktıları ve curriculum bağlamını kullan.
+Bu kapsamın dışında yeni kazanım, öğrenme çıktısı veya ileri seviye konu ekleme.
+Eksik bilgiyi genel dünya bilgisiyle genişletme.
+Amaç öğrencinin konuyu tamamen öğrenmesi değil, sınıftaki bir sonraki derse gerekli temel ön bilgiyi kazanmasıdır.”
+AI PROVIDER ABSTRACTION
+AI entegrasyonunu doğrudan component içine yazma.
+Reusable provider abstraction oluştur.
+Örneğin:
+src/lib/ai/
+İçinde:
+content-generation-provider.ts
+provider implementations
+prompt-builder.ts
+response-schema.ts
+gibi dosyalar olabilir.
+Interface örneği:
+interface ContentGenerationProvider {
+generatePreparationContent(
+input: PreparationContentInput
+): Promise&lt;GeneratedPreparationContent&gt;;
+}
+AI provider sonradan değiştirilebilir olsun.
+ENVIRONMENT VARIABLES
+Örneğin:
+AI_PROVIDER=
+AI_API_KEY=
+AI_MODEL=
+Environment variable üzerinden yönet.
+API key client-side bundle içine kesinlikle girmemeli.
+AI KAPALIYSA
+AI_API_KEY tanımlı değilse uygulama bozulmamalı.
+Teacher yine:
+
+* manuel konu özeti
+* manuel soru
+
+oluşturabilmeli.
+AI butonunda anlaşılır mesaj göster:
+“Yapay zekâ içerik üretimi şu anda yapılandırılmamış. İçeriği manuel olarak hazırlayabilirsiniz.”
+STUDY CONTENT MODEL
+Mevcut StudyContent modelini kontrol et.
+Gerekirse aşağıdaki mantığa uygun hale getir:
+StudyContent
+
+* id
+* assignmentId
+* introduction
+* summary
+* simpleExample
+* mustKnow
+* status
+* generatedBy
+* teacherApprovedAt
+* createdAt
+* updatedAt
+
+Key concepts için ilişkisel tablo veya JSON kullanabilirsin.
+Örneğin:
+keyConcepts Json
+Status:
+AI_GENERATED_DRAFT
+MANUAL_DRAFT
+TEACHER_APPROVED
+generatedBy:
+AI
+TEACHER
+gibi bir yapı kullanılabilir.
+AI&#x27;NIN ÜRETECEĞİ İÇERİK
+AI&#x27;dan yapılandırılmış JSON response iste.
+Serbest uzun markdown döndürmesini isteme.
+Beklenen çıktı örneği:
+{
+&quot;introduction&quot;: &quot;...&quot;,
+&quot;keyConcepts&quot;: [
+{
+&quot;term&quot;: &quot;...&quot;,
+&quot;explanation&quot;: &quot;...&quot;
+}
+],
+&quot;summary&quot;: &quot;...&quot;,
+&quot;simpleExample&quot;: &quot;...&quot;,
+&quot;mustKnow&quot;: [
+&quot;...&quot;,
+&quot;...&quot;,
+&quot;...&quot;
+],
+&quot;questions&quot;: [...]
+}
+Response&#x27;u Zod ile validate et.
+AI invalid JSON döndürürse doğrudan database&#x27;e yazma.
+İÇERİK UZUNLUĞU
+Öğrencinin konu özetini yaklaşık 3–6 dakikada okuyabilmesini hedefle.
+Aşırı uzun ders anlatımı üretme.
+Özet:
+
+* sade
+* ortaokul seviyesine uygun
+* doğrudan konuya yönelik
+* kavram odaklı
+* kısa
+
+olmalıdır.
+PEDAGOJİK KURAL
+İçerik öğrencinin konuyu tamamen öğrenmesini sağlamaya çalışmamalıdır.
+Amaç:
+“Öğretmen ertesi derste bu konuyu anlatmaya başladığında öğrenci temel kavramlara yabancı olmasın.”
+Özellikle:
+
+* uzun konu anlatımı
+* ileri düzey örnek
+* sınav hazırlık testi
+* konu sonu kapsamlı ölçme
+
+oluşturma.
+“BUNU BİLMEN YETERLİ” BÖLÜMÜ
+Her içerikte kısa bir bölüm oluştur:
+“Derse gelmeden önce bunları bilmen yeterli.”
+3–6 temel madde olabilir.
+Öğrencinin dikkatini hangi temel ön bilgilere vermesi gerektiğini göstermelidir.
+SORU SAYISI
+Varsayılan:
+7 soru
+olsun.
+Teacher bunu değiştirebilsin.
+Önerilen sınırlar:
+5–10 soru
+Teacher assignment oluştururken veya içerik üretmeden önce question count belirleyebilsin.
+SORU TİPLERİ
+Desteklenen question types:
+MULTIPLE_CHOICE
+TRUE_FALSE
+FILL_IN_THE_BLANK
+MATCHING
+ORDERING
+SHORT_ANSWER
+LONG_ANSWER
+CONTEXT_BASED
+IMAGE_INTERPRETATION
+AI her görevde bütün türleri kullanmak zorunda değildir.
+Öğrenme çıktısına ve konuya uygun soru türlerini seçsin.
+SORU ÇEŞİTLİLİĞİ
+Mümkün olduğunda tek tip test üretme.
+Örneğin 7 soruluk çalışma:
+
+* 2 multiple choice
+* 1 true/false
+* 1 fill in the blank
+* 1 matching
+* 1 short answer
+* 1 context based
+
+şeklinde olabilir.
+Ancak konu buna uygun değilse zorla bu dağılımı uygulama.
+SORULARIN AMACI
+Sorular:
+“Öğrenci konuyu tamamen öğrendi mi?”
+sorusunu ölçmemelidir.
+Şunu ölçmelidir:
+“Öğrenci bu konunun öğretmen tarafından sınıfta anlatılmasını takip edebilmek için yeterli ön bilgi oluşturdu mu?”
+Bu nedenle soru seviyesi:
+kolay → orta
+olmalıdır.
+QUESTION JSON
+AI soruları yapılandırılmış JSON döndürsün.
+Örnek multiple choice:
+{
+&quot;type&quot;: &quot;MULTIPLE_CHOICE&quot;,
+&quot;questionText&quot;: &quot;...&quot;,
+&quot;options&quot;: [
+&quot;...&quot;,
+&quot;...&quot;,
+&quot;...&quot;,
+&quot;...&quot;
+],
+&quot;correctAnswer&quot;: &quot;...&quot;,
+&quot;explanation&quot;: &quot;...&quot;,
+&quot;points&quot;: 10,
+&quot;curriculumOutcomeCodes&quot;: [
+&quot;...&quot;
+]
+}
+TRUE_FALSE:
+{
+&quot;type&quot;: &quot;TRUE_FALSE&quot;,
+&quot;questionText&quot;: &quot;...&quot;,
+&quot;correctAnswer&quot;: true,
+&quot;explanation&quot;: &quot;...&quot;,
+&quot;points&quot;: 10
+}
+MATCHING:
+{
+&quot;type&quot;: &quot;MATCHING&quot;,
+&quot;questionText&quot;: &quot;...&quot;,
+&quot;pairs&quot;: [
+{
+&quot;left&quot;: &quot;...&quot;,
+&quot;right&quot;: &quot;...&quot;
+}
+],
+&quot;points&quot;: 10
+}
+ORDERING:
+{
+&quot;type&quot;: &quot;ORDERING&quot;,
+&quot;questionText&quot;: &quot;...&quot;,
+&quot;items&quot;: [
+&quot;...&quot;,
+&quot;...&quot;,
+&quot;...&quot;
+],
+&quot;correctOrder&quot;: [
+0,
+1,
+2
+],
+&quot;points&quot;: 10
+}
+SORU → OUTCOME İZLENEBİLİRLİĞİ
+Mümkün olduğunca her soruyu ilgili CurriculumOutcome ile ilişkilendir.
+Question ile CurriculumOutcome arasında gerekiyorsa ilişki oluştur.
+Alternatif olarak:
+question.curriculumOutcomeCodes
+veya ayrı join table kullanılabilir.
+Tercihen relational ve sorgulanabilir bir yapı kullan.
+Bu daha sonra teacher analytics için kullanılacaktır.
+TEACHER CONTENT EDITOR
+Assignment detail sayfasına:
+“Hazırlık İçeriği”
+sekmesi ekle.
+Teacher burada şunları görsün:
+Konuya Giriş
+Editable textarea/editor.
+Temel Kavramlar
+Teacher:
+
+* kavram ekleyebilsin
+* silebilsin
+* açıklamayı değiştirebilsin
+
+Konu Özeti
+Editable.
+Basit Örnek
+Editable.
+Bunu Bilmen Yeterli
+Maddeler düzenlenebilsin.
+QUESTION EDITOR
+Aynı ekranda:
+“Ön Bilgi Kontrol Soruları”
+bölümü oluştur.
+Her question kartında:
+
+* sıra
+* soru türü
+* soru
+* puan
+* bağlı outcome
+
+göster.
+Teacher:
+Düzenle
+Sil
+Yukarı taşı
+Aşağı taşı
+butonlarına sahip olsun.
+Ayrıca:
+“Yeni Soru Ekle”
+butonu olsun.
+YENİ SORU EKLEME
+Teacher AI dışında manuel soru ekleyebilsin.
+Question type seçer.
+Forma göre ilgili alanlar gösterilir.
+Örneğin MULTIPLE_CHOICE seçildiyse:
+
+* question text
+* option A
+* option B
+* option C
+* option D
+* correct option
+* explanation
+* points
+* curriculum outcome
+
+göster.
+YENİDEN ÜRETME
+Teacher:
+“Tüm İçeriği Yeniden Oluştur”
+butonuna sahip olabilir.
+Ancak mevcut öğretmen düzenlemelerini yanlışlıkla silme.
+Yeniden üretmeden önce confirmation iste.
+Ayrıca daha kontrollü seçenekler ekle:
+“Özeti Yeniden Oluştur”
+“Soruları Yeniden Oluştur”
+Bu işlemler sadece DRAFT durumunda mümkün olsun.
+AI OUTPUT&#x27;U PUBLISH ETME
+AI generation tamamlanınca otomatik publish ETME.
+Status:
+AI_GENERATED_DRAFT
+olsun.
+Teacher:
+“Onayla ve Yayınla”
+butonuna basmadan öğrenci bu içeriğe erişememelidir.
+PUBLISH VALIDATION
+Assignment publish edilmeden önce server-side kontrol et:
+
+* en az 1 CurriculumOutcome
+* StudyContent mevcut
+* introduction veya summary mevcut
+* en az 1 question
+* questions toplam points &gt; 0
+* minimumScore geçerli
+* teacher assignment owner
+* StudyContent teacher tarafından onaylandı
+
+PUBLISH TRANSACTION
+“Onayla ve Yayınla” sırasında transaction kullan.
+Gerekirse:
+StudyContent.status = TEACHER_APPROVED
+StudyContent.teacherApprovedAt = now()
+Assignment.status = PUBLISHED
+Assignment.publishedAt = now()
+tek transaction içinde kaydedilsin.
+ÖĞRENCİ GÖRÜNÜRLÜĞÜ
+Student sadece:
+Assignment.status = PUBLISHED
+ve
+StudyContent.status = TEACHER_APPROVED
+olan içeriği görebilsin.
+Draft endpoint veya URL değiştirerek içeriğe erişemesin.
+Server-side authorization yap.
+CONTENT VERSIONING
+Teacher yayınladıktan sonra içeriği değiştirmek isterse basit bir versioning yaklaşımı düşün.
+Minimum olarak:
+updatedAt
+tut.
+Daha iyi ise:
+contentVersion
+alanı eklenebilir.
+Ancak aşırı karmaşık bir CMS oluşturma.
+AI GENERATION LOG
+AI işlemleri için teknik log tut.
+Örneğin:
+ContentGenerationLog
+
+* id
+* assignmentId
+* provider
+* model
+* status
+* generatedAt
+* errorMessage
+
+Ancak API secret veya hassas prompt verisini loglama.
+ERROR HANDLING
+AI timeout olursa:
+“İçerik oluşturulamadı. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.”
+göster.
+AI response validation başarısız olursa kullanıcıya raw response gösterme.
+Logla ve güvenli hata mesajı göster.
+RATE / DOUBLE CLICK
+Teacher “İçerik Oluştur” butonuna art arda basarsa aynı anda birden fazla generation başlatma.
+Button loading state kullan.
+Server tarafında da mümkünse duplicate generation önlemi ekle.
+TESTLER
+En az şu testleri yaz:
+
+1. AI olmadan manuel content oluşturulabiliyor.
+2. AI output Zod validation&#x27;dan geçmeden DB&#x27;ye yazılmıyor.
+3. AI content DRAFT olarak kaydediliyor.
+4. Draft student tarafından görülemiyor.
+5. Teacher content&#x27;i düzenleyebiliyor.
+6. Teacher question silebiliyor.
+7. Teacher question ekleyebiliyor.
+8. Teacher başka teacher&#x27;ın assignment content&#x27;ini değiştiremiyor.
+9. Assignment outcome olmadan publish edilemiyor.
+10. StudyContent teacher approved değilse publish edilemiyor.
+11. Published assignment student tarafından görüntülenebiliyor.
+12. Question → curriculum outcome ilişkileri doğru kaydediliyor.
+
+BUILD
+Sonunda çalıştır:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+Tüm hataları çöz.
+BU AŞAMADA HENÜZ YAPMA
+Student assessment scoring ve READY_FOR_CLASS akışını bu aşamada tamamlamak zorunda değilsin.
+Bu aşamanın odağı:
+MEB curriculum
+→ AI draft generation
+→ teacher editing
+→ teacher approval
+→ publish
+zinciridir.
+İŞLEM SONUNDA BANA RAPOR VER
+Şunları bildir:
+
+* hangi AI provider abstraction oluşturuldu?
+* hangi environment variables gerekiyor?
+* StudyContent nasıl saklanıyor?
+* kaç question type implement edildi?
+* teacher editor çalışıyor mu?
+* manuel content creation çalışıyor mu?
+* AI kapalıyken uygulama çalışıyor mu?
+* teacher approval server-side doğrulanıyor mu?
+* draft student tarafından erişilemiyor mu?
+* npm run build başarılı mı?
+* oluşturulan/değiştirilen temel dosyalar hangileri?
+
+Eğer gerçek AI provider için API key yoksa provider abstraction, mock/dev implementation ve manuel içerik akışını tamamla; secret uydurma ve koda sahte API key yazma.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-5">
+  <div class="p-meta"><span class="p-num">05</span><time>7 Eki 15:10</time><span class="p-phase">Öğrenci akışı</span></div>
+  <details>
+    <summary><span class="p-title">Öğrenci değerlendirme akışı ve “Derse Hazır” mantığı</span><span class="p-size">1827 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t5">Kopyala</button><pre id="t5">Öğretmen tarafında:
+MEB curriculum
+→ assignment
+→ AI/manual hazırlık içeriği
+→ teacher edit
+→ teacher approval
+→ publish
+akışı tamamlandı.
+Şimdi öğrenci tarafındaki tam değerlendirme ve READY_FOR_CLASS akışını geliştir.
+ANA AMAÇ
+Öğrenci yayınlanmış görevi açtığında şu sırayla ilerlemelidir:
+
+1. Görevi gör
+2. Konuya giriş
+3. Konu özetini oku
+4. “Okudum ve temel kavramları anladım” onayı ver
+5. Ön Bilgi Kontrol Çalışmasını başlat
+6. Soruları cevapla
+7. Çalışmayı gönder
+8. Sistem otomatik puanlanabilen soruları değerlendir
+9. Gerekirse öğretmen değerlendirmesi bekle
+10. Nihai puanı hesapla
+11. Teacher tarafından belirlenen minimumScore ile karşılaştır
+12. Sonucu göster
+13. Gerekirse tekrar çalış ve yeniden dene
+
+TEMEL PRENSİP
+Bu değerlendirme:
+“Öğrenci konuyu tamamen öğrendi mi?”
+sorusunu cevaplamaz.
+Amaç:
+“Öğrenci derste öğretmenin anlatacağı konuyu takip edebilmek için gerekli temel ön bilgiyi oluşturdu mu?”
+sorusunu değerlendirmektir.
+UI metinlerinde de bu ayrımı koru.
+STUDENT DASHBOARD
+Student dashboard gerçek database verilerini kullansın.
+Görevleri şu kategorilerde göster:
+
+* Yaklaşan Görevler
+* Devam Edenler
+* Derse Hazırım
+* Tekrar Gerekli
+* Süresi Geçmiş
+
+Her assignment kartında:
+
+* ders
+* konu
+* sınıf
+* öğretmen
+* son tarih
+* ilerleme
+* durum
+* varsa son skor
+
+göster.
+Sadece öğrenciye ait classroom&#x27;larda PUBLISHED olan görevleri göster.
+ASSIGNMENT ACCESS SECURITY
+Student sadece üyesi olduğu classroom&#x27;a ait assignment&#x27;ları görebilsin.
+Student:
+
+* başka öğrencinin assignment durumuna
+* başka classroom&#x27;a
+* DRAFT assignment&#x27;a
+* TEACHER_APPROVED olmayan content&#x27;e
+
+erişememelidir.
+Bu kontroller server-side yapılmalıdır.
+STUDENT ASSIGNMENT KAYDI
+Bir öğrenci published assignment&#x27;ı ilk kez açtığında gerekiyorsa StudentAssignment kaydı oluştur.
+Alanlar en az:
+
+* id
+* assignmentId
+* studentId
+* status
+* summaryOpenedAt
+* summaryConfirmedAt
+* startedAt
+* completedAt
+* latestScore
+* createdAt
+* updatedAt
+
+Unique:
+assignmentId + studentId
+olmalıdır.
+Duplicate StudentAssignment oluşmamalı.
+STATUS AKIŞI
+StudentAssignment status enum:
+NOT_STARTED
+READING
+READY_FOR_ASSESSMENT
+ASSESSMENT_IN_PROGRESS
+PENDING_TEACHER_REVIEW
+NEEDS_REVIEW
+READY_FOR_CLASS
+EXPIRED
+Geçerli transition mantığı oluştur.
+Örneğin:
+NOT_STARTED
+→ READING
+READING
+→ READY_FOR_ASSESSMENT
+READY_FOR_ASSESSMENT
+→ ASSESSMENT_IN_PROGRESS
+ASSESSMENT_IN_PROGRESS
+→ READY_FOR_CLASS
+veya
+ASSESSMENT_IN_PROGRESS
+→ NEEDS_REVIEW
+Açık uçlu sorular bekliyorsa:
+ASSESSMENT_IN_PROGRESS
+→ PENDING_TEACHER_REVIEW
+Öğrencinin client üzerinden istediği status&#x27;a geçmesine izin verme.
+Status transition server-side business logic tarafından belirlenmelidir.
+PROGRESS STEPPER
+Assignment sayfasında görsel progress stepper oluştur:
+
+1. Konuya Giriş
+2. Konu Özeti
+3. Okudum ve Anladım
+4. Ön Bilgi Kontrolü
+5. Sonuç
+
+Aktif ve tamamlanan adımları göster.
+Sadece renge güvenme; ikon ve text kullan.
+KONU ÖZETİ
+Student yalnızca teacher-approved content görsün.
+Göster:
+
+* introduction
+* key concepts
+* summary
+* simple example
+* must know
+
+Bölümleri okunabilir şekilde tasarla.
+SUMMARY OPENED
+Student summary sayfasını ilk açtığında:
+summaryOpenedAt
+kaydet.
+İlk açılıştan sonra tekrar açılırsa eski değeri overwrite etme.
+“OKUDUM VE ANLADIM”
+Summary sonunda checkbox:
+“Özeti okudum ve temel kavramları anladım.”
+Button:
+“Ön Bilgi Kontrolüne Geç”
+Student checkbox&#x27;ı işaretlemeden ilerleyemesin.
+Server-side confirm action oluştur.
+Onaylandığında:
+summaryConfirmedAt = now()
+status = READY_FOR_ASSESSMENT
+olmalı.
+Client-side checkbox tek başına yeterli kabul edilmemeli.
+ASSESSMENT BAŞLATMA
+Student assessment başladığında yeni Attempt kaydı oluştur.
+Alanlar:
+
+* id
+* studentAssignmentId
+* attemptNumber
+* status
+* startedAt
+* submittedAt
+* autoScore
+* manualScore
+* finalScore
+* requiresTeacherReview
+
+Attempt status uygun enum ile yönetilebilir.
+Attempt number:
+1, 2, 3...
+otomatik hesaplanmalı.
+Client&#x27;tan attemptNumber kabul etme.
+DENEME SINIRI
+Assignment üzerinde:
+maxAttempts
+unlimitedAttempts
+alanlarını kullan.
+Student yeni attempt başlatmadan önce server-side kontrol yap.
+Eğer unlimitedAttempts = false ve maxAttempts dolmuşsa yeni attempt oluşturma.
+Türkçe mesaj:
+“Bu görev için izin verilen deneme sayısını tamamladın.”
+Teacher daha sonra attempt limit değiştirebilir.
+DEADLINE
+Deadline geçmişse mevcut business rule&#x27;a göre:
+StudentAssignment.status = EXPIRED
+olabilir.
+Deadline sonrası yeni attempt başlatmayı engelle.
+Ancak öğretmenin sonuçları görebilmesi için eski attempt&#x27;leri silme.
+SORU GÖSTERİMİ
+Question engine&#x27;e göre doğru renderer kullan.
+Desteklenen türler:
+MULTIPLE_CHOICE
+TRUE_FALSE
+FILL_IN_THE_BLANK
+MATCHING
+ORDERING
+SHORT_ANSWER
+LONG_ANSWER
+CONTEXT_BASED
+IMAGE_INTERPRETATION
+Her question component reusable olsun.
+Örneğin:
+QuestionRenderer
+question.type değerine göre uygun component&#x27;i seçsin.
+MULTIPLE CHOICE
+Öğrenci tek seçenek seçsin.
+Radio group kullan.
+TRUE FALSE
+Doğru / Yanlış seçenekleri.
+FILL IN THE BLANK
+Text input.
+Basit otomatik değerlendirme kullanılabilir.
+Case normalization, whitespace trim gibi makul normalization yap.
+Türkçe karakterleri rastgele değiştirme.
+Gerekiyorsa acceptedAnswers yapısı kullan.
+MATCHING
+İki grup eşleştirme.
+Mobile uyumlu olsun.
+Drag-and-drop tek yöntem olmasın.
+Keyboard-accessible fallback kullan.
+Dropdown veya select tabanlı alternatif tercih edebilirsin.
+ORDERING
+Öğrenci öğeleri sıralayabilsin.
+Accessible reorder controls kullan.
+Sadece drag-and-drop&#x27;a güvenme.
+SHORT ANSWER
+Short answer otomatik puanlanabilir değilse teacher review&#x27;a gönder.
+Keyword matching gibi güvenilmez yöntemle kesin doğru/yanlış kararı verme.
+LONG ANSWER
+Daima veya varsayılan olarak teacher review gerektirsin.
+CONTEXT BASED
+Context/metin/görsel + soru yapısını destekle.
+Alt soru varsa mevcut veri modeline uygun şekilde çöz.
+IMAGE INTERPRETATION
+Soru için imageUrl veya güvenli media metadata desteği sağla.
+External image loading için güvenlik ve Next.js image config kontrollerini yap.
+AUTOSAVE
+Öğrenci cevaplarını mümkünse autosave et.
+Özellikle uzun cevaplarda veri kaybını azalt.
+Ancak her keypress&#x27;te aşırı database request atma.
+Debounce veya explicit save mantığı kullan.
+Final submit öncesinde kaydedilmiş cevapları doğrula.
+ANSWER MODEL
+Her cevap:
+
+* attemptId
+* questionId
+* answer
+* isCorrect
+* awardedPoints
+* reviewStatus
+
+gibi alanlar içerebilir.
+Gerekirse JSON answer yapısı kullan.
+Question type&#x27;a göre answer formatını validate et.
+SUBMIT
+Student:
+“Çalışmayı Bitir”
+butonuna bastığında confirmation göster:
+“Çalışmayı göndermek istediğine emin misin?”
+Submit sonrası attempt değiştirilememeli.
+Server-side:
+
+1. Attempt öğrenciye mi ait?
+2. Attempt açık mı?
+3. Assignment deadline uygun mu?
+4. Sorular assignment&#x27;a mı ait?
+5. Duplicate answer var mı?
+6. Gerekli validation&#x27;lar geçiyor mu?
+
+kontrol et.
+PUANLAMA MOTORU
+Scoring logic&#x27;i UI componentlerden ayır.
+Örneğin:
+src/lib/assessment/scoring-service.ts
+oluştur.
+Question type bazında scorer kullan.
+Örneğin:
+scoreMultipleChoice()
+scoreTrueFalse()
+scoreFillBlank()
+scoreMatching()
+scoreOrdering()
+PUAN
+Question.points üzerinden hesapla.
+Toplam score&#x27;u doğrudan ham puan değil, 0–100 aralığında normalize et.
+Örnek:
+earnedPoints / totalPoints * 100
+Uygun rounding kullan.
+MinimumScore da 0–100 aralığındadır.
+OPEN ANSWERS
+Eğer attempt içinde teacher review gereken soru varsa:
+Attempt.requiresTeacherReview = true
+StudentAssignment.status =
+PENDING_TEACHER_REVIEW
+olmalı.
+Öğrenciye geçici otomatik skoru nihai başarı gibi gösterme.
+Mesaj:
+“Çalışmanın otomatik değerlendirilen bölümü tamamlandı. Açık uçlu cevapların öğretmenin tarafından değerlendirildikten sonra nihai sonucun oluşacak.”
+TEACHER REVIEW PANEL
+Teacher dashboard&#x27;a:
+“Değerlendirme Bekleyenler”
+bölümü ekle.
+Teacher:
+
+* öğrenci
+* assignment
+* attempt
+* soru
+* öğrenci cevabı
+* maksimum puan
+
+görebilsin.
+Teacher ilgili cevap için:
+awardedPoints
+girebilsin.
+0 ile question.points arasında validate et.
+İsterse kısa teacher feedback ekleyebilsin.
+REVIEW TAMAMLANINCA
+Bir attempt&#x27;teki review gereken bütün cevaplar puanlandığında:
+manual score hesapla.
+finalScore oluştur.
+Sonra assignment.minimumScore ile karşılaştır.
+READY_FOR_CLASS LOGIC
+Eğer:
+finalScore &gt;= assignment.minimumScore
+ise:
+StudentAssignment.status = READY_FOR_CLASS
+completedAt = now()
+latestScore = finalScore
+Student ekranında büyük başarı mesajı göster:
+“DERSE HAZIRSIN!”
+Alt mesaj:
+“Bu konu için gerekli temel ön bilgiyi oluşturdun. Artık derste yeni konuyu öğrenmeye hazırsın.”
+Bu ifade öğrencinin konuyu tamamen öğrendiğini söylememelidir.
+NEEDS_REVIEW LOGIC
+Eğer:
+finalScore &lt; assignment.minimumScore
+ise:
+StudentAssignment.status = NEEDS_REVIEW
+latestScore = finalScore
+göster:
+“Biraz daha hazırlığa ihtiyacın var.”
+Alt açıklama:
+“Bazı temel kavramları tekrar gözden geçirip yeniden deneyebilirsin.”
+TEKRAR ÖNERİSİ
+Yanlış yapılan soruların CurriculumOutcome ilişkilerini kullan.
+Mümkünse:
+“Tekrar Bakmanı Öneriyoruz”
+alanında ilgili:
+
+* temel kavram
+* içerik bölümü
+* öğrenme çıktısı
+
+göster.
+Student&#x27;a doğru cevabı doğrudan tüm sorular için vermek yerine açıklama politikasını assignment yapısına uygun yönet.
+Amaç öğrenciyi yeniden hazırlık içeriğine yönlendirmek.
+TEKRAR DENEME
+Student tekrar attempt başlatabilsin.
+Yeni attempt:
+attemptNumber + 1
+olmalıdır.
+Eski attempt&#x27;leri silme veya overwrite etme.
+Teacher bütün geçmiş attempt&#x27;leri görebilsin.
+EN İYİ PUAN MI SON PUAN MI?
+StudentAssignment.latestScore son tamamlanmış attempt&#x27;i gösterebilir.
+Ayrıca:
+bestScore
+alanı eklemek teknik olarak faydalıysa ekle.
+Teacher analytics için:
+
+* latest score
+* best score
+* attempt count
+
+ayrı hesaplanabilir olsun.
+READY_FOR_CLASS olduktan sonra assignment politikasına göre yeni attempt engellenebilir.
+Varsayılan olarak READY_FOR_CLASS olduktan sonra tekrar denemeye gerek yoktur.
+SONUÇ SAYFASI
+Student sonuç sayfasında:
+
+* puan
+* minimum başarı eşiği
+* durum
+* attempt sayısı
+* doğru / yanlış sayısı
+* varsa teacher feedback
+
+göster.
+Örneğin:
+Puanın: %82
+Derse hazır olma eşiği: %70
+Durum:
+Derse Hazır
+FEEDBACK
+Otomatik değerlendirilen objective sorular için teacher&#x27;ın izin verdiği ölçüde:
+
+* doğru / yanlış
+* kısa explanation
+
+gösterilebilir.
+Ancak doğru cevapların gösterilmesi sonraki attempt&#x27;i anlamsızlaştıracaksa, feedback politikasını dikkatli tasarla.
+Basit çözüm:
+Assignment&#x27;a:
+showAnswersAfterPass
+showExplanationsAfterSubmit
+gibi ayarlar ekleyebilirsin.
+Aşırı karmaşıklaştırma.
+TEACHER STUDENT DETAIL
+Teacher bir assignment içinde öğrenciye tıkladığında:
+
+* summaryOpenedAt
+* summaryConfirmedAt
+* attempt sayısı
+* tüm skorlar
+* latest score
+* best score
+* status
+* cevaplar
+* teacher review
+* completion time
+
+görebilsin.
+ANALYTICS İÇİN VERİ
+Bu aşamada teacher analytics&#x27;in kullanabileceği doğru veriyi üret.
+Her assignment için hesaplanabilir olsun:
+
+* assigned students
+* started
+* summary confirmed
+* attempted
+* completed
+* READY_FOR_CLASS
+* NEEDS_REVIEW
+* PENDING_TEACHER_REVIEW
+* expired
+* average final score
+* average attempts
+* question correct rate
+* curriculum outcome success rate
+
+OUTCOME SUCCESS
+Her question ilgili CurriculumOutcome ile bağlıysa outcome bazında başarı hesapla.
+Örneğin:
+MAT.X.X.X
+→ bu outcome&#x27;a bağlı sorularda sınıf doğru oranı %62
+Bu veri daha sonraki “Yarınki Derse Hazırlık Raporu” için kullanılacaktır.
+TRANSACTIONS
+Attempt submit, scoring ve status update gibi kritik işlemlerde Prisma transaction kullan.
+Yarı kaydedilmiş submission bırakma.
+CONCURRENCY
+Student submit butonuna iki kez basarsa duplicate submission oluşmamalı.
+Attempt status kontrolü veya transaction ile double submit engelle.
+VALIDATION
+Tüm student input&#x27;larını Zod ile validate et.
+Correct answer client tarafına gereksiz yere gönderilmemeli.
+Özellikle objective questions için correctAnswer&#x27;ı student page source içinde expose etme.
+Scoring server-side yapılmalıdır.
+SECURITY TESTS
+Mutlaka test et:
+
+1. Student başka student&#x27;ın attempt&#x27;ini okuyamıyor.
+2. Student başka student adına answer submit edemiyor.
+3. Student correctAnswer alanını API üzerinden alamıyor.
+4. Student finalScore&#x27;u client request ile belirleyemiyor.
+5. Student kendi status&#x27;unu READY_FOR_CLASS yapamıyor.
+6. Student attempt limitini bypass edemiyor.
+7. Student deadline kontrolünü bypass edemiyor.
+8. Student DRAFT assignment&#x27;a erişemiyor.
+
+FUNCTIONAL TESTS
+En az:
+
+1. Published assignment öğrenci dashboard&#x27;unda görünüyor.
+2. Student summary açınca status READING oluyor.
+3. Confirmation olmadan assessment başlamıyor.
+4. Confirmation sonrası assessment başlayabiliyor.
+5. Attempt number doğru artıyor.
+6. Multiple choice scoring doğru.
+7. True/False scoring doğru.
+8. Fill blank scoring doğru.
+9. Matching scoring doğru.
+10. Ordering scoring doğru.
+11. Open answer PENDING_TEACHER_REVIEW yapıyor.
+12. Teacher review sonrası finalScore tekrar hesaplanıyor.
+13. Threshold geçen READY_FOR_CLASS oluyor.
+14. Threshold altı NEEDS_REVIEW oluyor.
+15. Attempt limit çalışıyor.
+16. Expired assignment yeni attempt kabul etmiyor.
+17. Retry eski attempt&#x27;i silmiyor.
+
+UI/UX
+Student assessment mobile-first tasarlansın.
+Soru kartları rahat okunmalı.
+Next / Previous navigasyonu olabilir.
+İlerleme göstergesi:
+3 / 7 soru
+gibi gösterilebilir.
+Henüz cevaplanmamış sorular belirtilsin.
+Submit öncesinde:
+“2 soruyu henüz cevaplamadın.”
+uyarısı verilebilir.
+Teacher zorunlu answer politikasına göre submit&#x27;e izin ver veya engelle.
+ACCESSIBILITY
+Question controls keyboard ile kullanılabilsin.
+Radio button, checkbox, input ve labels semantic olsun.
+Matching/ordering sadece mouse&#x27;a bağlı olmasın.
+BUILD
+Sonunda:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+çalıştır.
+Hataları düzeltmeden aşamayı tamamlanmış kabul etme.
+BU AŞAMANIN SONUNDA
+Gerçek uçtan uca şu senaryo çalışmalıdır:
+Teacher published assignment oluşturur.
+↓
+Student login olur.
+↓
+Assignment&#x27;ı görür.
+↓
+Özeti okur.
+↓
+“Okudum ve anladım” onayı verir.
+↓
+Assessment başlatır.
+↓
+Soruları cevaplar.
+↓
+Submit eder.
+↓
+Sistem objective soruları puanlar.
+↓
+Gerekirse teacher açık uçlu soruları değerlendirir.
+↓
+Final score oluşur.
+↓
+MinimumScore kontrol edilir.
+↓
+Student:
+READY_FOR_CLASS
+veya
+NEEDS_REVIEW
+durumuna geçer.
+↓
+Teacher gerçek sonucu dashboard&#x27;da görebilir.
+İŞLEM SONUNDA BANA RAPOR VER
+Bana şu bilgileri ver:
+
+* hangi question types gerçekten çalışıyor?
+* hangileri auto-score ediliyor?
+* hangileri teacher review gerektiriyor?
+* status transition sistemi nasıl kuruldu?
+* attempt limit çalışıyor mu?
+* deadline kontrolü çalışıyor mu?
+* objective correct answers client&#x27;tan gizlendi mi?
+* teacher review akışı çalışıyor mu?
+* READY_FOR_CLASS gerçekten server-side hesaplanıyor mu?
+* retry akışı çalışıyor mu?
+* npm run build başarılı mı?
+* oluşturulan/değiştirilen temel dosyalar hangileri?</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-6">
+  <div class="p-meta"><span class="p-num">06</span><time>7 Eki 15:29</time><span class="p-phase">Dağıtım</span></div>
+  <details>
+    <summary><span class="p-title">Production / Vercel dağıtım hazırlığı</span><span class="p-size">889 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t6">Kopyala</button><pre id="t6">Uygulama localhost ortamında çalışıyor.
+Şimdi uygulamayı production deployment için hazırla.
+Bu aşamada yeni büyük özellik ekleme.
+Amaç:
+Local çalışan mevcut uygulamayı güvenli şekilde GitHub&#x27;a yüklenebilir ve Vercel&#x27;de production olarak yayınlanabilir hale getirmek.
+1. PRODUCTION AUDIT
+Önce mevcut repository&#x27;yi incele.
+Kontrol et:
+
+* TypeScript errors
+* lint errors
+* failing tests
+* build errors
+* hardcoded localhost URLs
+* hardcoded secrets
+* development-only configuration
+* mock API kullanımı
+* mock database data
+* insecure authorization
+* console.log ile hassas veri basılması
+* client bundle içinde secret
+* eksik environment variables
+
+Bulduğun sorunları düzelt.
+Yeni özellik geliştirme.
+2. ENVIRONMENT VARIABLES
+Projede kullanılan tüm environment variable&#x27;ları tespit et.
+`.env.example` dosyasını güncelle.
+Gerçek secret değerleri kesinlikle ekleme.
+Örneğin uygulamada gerçekten kullanılıyorsa:
+DATABASE_URL=
+AUTH_SECRET=
+NEXT_PUBLIC_APP_URL=
+AI_PROVIDER=
+AI_API_KEY=
+AI_MODEL=
+gibi alanları ekle.
+Gereksiz environment variable ekleme.
+3. .GITIGNORE
+`.gitignore` dosyasını kontrol et.
+En az şunların commit edilmediğinden emin ol:
+.env
+.env.local
+.env.production
+node_modules
+.next
+coverage
+Projede kullanılan teknolojiye göre gerekli diğer build/cache dosyalarını da ekle.
+Ancak curriculum normalized dataset uygulamanın gerekli bir parçasıysa bunu yanlışlıkla ignore etme.
+4. SECRET AUDIT
+Repository içinde secret veya API key olabilecek değerleri ara.
+Özellikle:
+
+* API keys
+* database URLs
+* passwords
+* auth secrets
+* tokens
+
+bulunuyorsa source code&#x27;dan çıkar ve environment variable kullan.
+Gerçek secret değerlerini terminal çıktısında tekrar gösterme.
+5. DATABASE PRODUCTION READINESS
+Prisma schema&#x27;yı kontrol et.
+Production PostgreSQL için uygun olduğundan emin ol.
+Migration dosyalarının mevcut olduğunu kontrol et.
+Development&#x27;ta kullanılan `prisma db push` yaklaşımını production deployment&#x27;ın ana yöntemi olarak kullanma.
+Production için migration stratejisi hazırla.
+README&#x27;ye şu akışı açıkça yaz:
+npx prisma migrate deploy
+ve gerekiyorsa curriculum seed komutu.
+6. CURRICULUM SEED
+Mevcut doğrulanmış MEB curriculum dataset&#x27;in production database&#x27;e güvenli biçimde aktarılabilmesini sağla.
+Seed idempotent olmalı.
+Aynı seed tekrar çalıştırılırsa duplicate CurriculumOutcome oluşturmamalı.
+Komut mevcutsa test et:
+npm run curriculum
+Curriculum seed sırasında:
+
+* VERIFIED
+* REVIEW_REQUIRED
+
+durumları korunmalı.
+7. DEMO DATA
+Production için zorunlu olmayan demo datayı gerçek kullanıcı verisi gibi otomatik oluşturma.
+Eğer proje sunumunda demo hesaplara ihtiyaç varsa ayrı bir:
+npm run demo
+scripti oluştur veya mevcut scripti kontrol et.
+Demo data ile curriculum seed&#x27;i birbirinden ayır.
+Production deployment sırasında yanlışlıkla demo öğrenci/öğretmen oluşturulmamalı.
+8. AUTH PRODUCTION CONFIG
+Authentication yapılandırmasını kontrol et.
+Production&#x27;da:
+
+* secure cookies
+* correct callback/base URL
+* HTTPS uyumu
+* server-side authorization
+
+çalışmalı.
+`localhost` hard-code edilmiş callback veya application URL varsa environment variable&#x27;a taşı.
+9. NEXT.JS PRODUCTION BUILD
+Şunları çalıştır:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+Hepsi başarılı olmalı.
+Build warning varsa kritik olup olmadığını değerlendir.
+Production&#x27;ı etkileyen warningleri düzelt.
+10. VERCEL COMPATIBILITY
+Projenin Vercel ile uyumlu olduğundan emin ol.
+Kontrol et:
+
+* Node runtime gerektiren kodlar
+* filesystem&#x27;e kalıcı veri yazma girişimleri
+* localhost bağımlılıkları
+* unsupported server behavior
+* Prisma connection handling
+
+Persistent data local filesystem&#x27;de tutulmamalıdır.
+Production verisi PostgreSQL&#x27;de tutulmalıdır.
+11. DATABASE CONNECTION
+Serverless ortamda PostgreSQL connection yönetimini kontrol et.
+Her request&#x27;te gereksiz yeni PrismaClient oluşturma.
+Development hot-reload sorunlarını önleyen uygun singleton yaklaşımı kullan.
+Production connection davranışını Vercel/PostgreSQL yapısına uygun tut.
+12. README DEPLOYMENT BÖLÜMÜ
+README.md içerisinde açık bir:
+Production Deployment
+bölümü oluştur.
+Şunları adım adım açıkla:
+
+1. GitHub repository oluşturma
+2. Environment variables
+3. PostgreSQL database oluşturma
+4. DATABASE_URL ekleme
+5. Prisma migration
+6. Curriculum seed
+7. Vercel project import
+8. Build/deploy
+9. Production test
+
+13. DEPLOY CHECKLIST
+`DEPLOYMENT_CHECKLIST.md` oluştur.
+İçeriğinde checkbox olarak:
+
+* Git repository clean
+* Secrets removed
+* `.env.example` updated
+* Production database created
+* DATABASE_URL configured
+* AUTH_SECRET configured
+* AI configuration added if used
+* `prisma migrate deploy` successful
+* curriculum seed successful
+* lint successful
+* typecheck successful
+* tests successful
+* production build successful
+* Vercel deploy successful
+* Teacher login tested
+* Student login tested
+* Classroom flow tested
+* Assignment flow tested
+* AI/manual content flow tested
+* Assessment tested
+* READY_FOR_CLASS tested
+* Teacher reports tested
+
+olsun.
+14. GITHUB PREPARATION
+Repo henüz Git repository değilse initialize etmeye hazırlan.
+Ancak benim GitHub hesabım adına remote repository oluşturma veya authentication gerektiren işlemleri varsayma.
+Bana çalıştırmam gereken Git komutlarını açıkça ver.
+Örnek olarak gerekli komutları repository durumuna göre üret.
+15. VERCEL PREPARATION
+Vercel deployment için gerekli tüm ayarları belirle.
+Bana özellikle:
+
+* hangi environment variable&#x27;ları Vercel&#x27;e girmem gerektiğini
+* build command
+* install command
+* output configuration gerekiyorsa bunu
+* migration/seed&#x27;i ne zaman çalıştırmam gerektiğini
+
+açık biçimde raporla.
+Gereksiz custom configuration oluşturma.
+Next.js için Vercel&#x27;in varsayılan davranışını mümkün olduğunca kullan.
+16. PRODUCTION SMOKE TEST PLAN
+Deployment sonrası uygulanacak kısa test planı oluştur.
+`PRODUCTION_SMOKE_TEST.md`
+dosyası oluştur.
+Senaryo:
+
+1. Teacher kayıt/giriş
+2. Classroom oluşturma
+3. Student kayıt/giriş
+4. Join code ile sınıfa katılma
+5. Teacher assignment oluşturma
+6. MEB outcome seçme
+7. İçerik hazırlama
+8. Teacher publish
+9. Student görevi görme
+10. Özeti okuma
+11. Assessment çözme
+12. Puanlama
+13. READY_FOR_CLASS / NEEDS_REVIEW
+14. Teacher sonuçları görme
+
+Her adım için beklenen sonucu yaz.
+17. ŞİMDİ YAPILACAKLAR
+Önce repository production audit&#x27;i yap.
+Gerekli düzeltmeleri tamamla.
+Sonra:
+
+* DEPLOYMENT_CHECKLIST.md
+* PRODUCTION_SMOKE_TEST.md
+* güncellenmiş README.md
+* `.env.example`
+
+hazırla.
+Ardından:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+çalıştır.
+İŞLEM SONUNDA BANA SADECE ŞU RAPORU VER
+
+1. Production&#x27;a hazır mı?
+2. Build başarılı mı?
+3. Testler başarılı mı?
+4. GitHub&#x27;a göndermeden önce benim yapmam gereken ne?
+5. Vercel&#x27;de hangi environment variables gerekli?
+6. Production database için hangi komutları çalıştırmalıyım?
+7. Curriculum seed komutu nedir?
+8. Hangi dosyaları oluşturdun/değiştirdin?
+9. Deployment&#x27;ı engelleyen herhangi bir sorun kaldı mı?
+
+Kullanıcı adına GitHub/Vercel hesabında geri döndürülemez işlem yapma.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-7">
+  <div class="p-meta"><span class="p-num">07</span><time>7 Eki 15:56</time><span class="p-phase">Yapay zekâ</span></div>
+  <details>
+    <summary><span class="p-title">EVREN LLM varsayılan modeli: glm-5.3</span><span class="p-size">108 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t7">Kopyala</button><pre id="t7">EVREN LLM entegrasyonunda varsayılan modeli güncelle.
+Kullanılacak varsayılan model:
+glm-5.3
+Environment configuration:
+EVREN_LLM_BASE_URL=https://evren-llmapi.ssyz.org.tr/v1
+EVREN_LLM_MODEL=glm-5.3
+AI_PROVIDER=evren
+Model adı source code içinde doğrudan sabitlenmemelidir.
+Her zaman:
+process.env.EVREN_LLM_MODEL
+üzerinden okunmalıdır.
+Fallback gerekiyorsa:
+glm-5.3
+kullan.
+Bu uygulamada modelin görevi:
+
+* MEB öğrenme çıktısına bağlı kısa ders öncesi hazırlık özeti üretmek
+* temel kavramları açıklamak
+* 5–10 soruluk ön bilgi kontrol çalışması üretmek
+* verilen MEB curriculum context dışına çıkmamak
+
+olacaktır.
+Görsel, OCR, embedding, reranking veya ses modellerini bu akışta kullanma.
+Mevcut:
+
+* MEB grounding
+* structured JSON
+* Zod validation
+* teacher approval
+* security
+* manual fallback
+
+kurallarını değiştirme.
+Daha sonra yalnızca environment variable değiştirilerek `gemma-4-31b` veya `qwen3.8-flash-next` ile karşılaştırma yapılabilsin.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-8">
+  <div class="p-meta"><span class="p-num">08</span><time>7 Eki 16:13</time><span class="p-phase">Raporlar</span></div>
+  <details>
+    <summary><span class="p-title">Öğretmen analizi ve hazırlık raporu</span><span class="p-size">851 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t8">Kopyala</button><pre id="t8">Uygulamanın temel akışları tamamlandı:
+
+* MEB curriculum
+* assignment oluşturma
+* AI/manual preparation content
+* teacher approval
+* student preparation flow
+* assessment
+* scoring
+* READY_FOR_CLASS / NEEDS_REVIEW
+
+Şimdi öğretmen analytics ve ders öncesi hazırlık raporu sistemini geliştir.
+ANA AMAÇ
+Öğretmen bir assignment için sadece tek tek öğrenci puanlarını değil, sınıfın genel olarak derse ne kadar hazır olduğunu görebilmeli.
+Bu ekran öğretmenin bir sonraki derse nasıl başlayacağına karar vermesine yardımcı olmalıdır.
+1. ASSIGNMENT ANALYTICS SAYFASI
+Route örneği:
+/teacher/assignments/[id]/analytics
+Bu sayfaya yalnızca assignment sahibi teacher erişebilsin.
+Server-side authorization zorunlu.
+2. ÜST ÖZET KARTLARI
+Şu değerleri gerçek veritabanından hesapla:
+
+* Görev verilen öğrenci sayısı
+* Göreve başlayan öğrenci sayısı
+* Özeti onaylayan öğrenci sayısı
+* Assessment başlatan öğrenci sayısı
+* Çalışmayı tamamlayan öğrenci sayısı
+* READY_FOR_CLASS öğrenci sayısı
+* NEEDS_REVIEW öğrenci sayısı
+* PENDING_TEACHER_REVIEW öğrenci sayısı
+* Süresi geçmiş / tamamlamamış öğrenci sayısı
+
+3. HAZIRLIK ORANI
+Sınıf hazırlık oranını hesapla.
+Önerilen formül:
+READY_FOR_CLASS öğrenci sayısı / assignment&#x27;a atanmış toplam öğrenci sayısı * 100
+Ayrıca ikinci bir oran da gösterebilirsin:
+READY_FOR_CLASS / assessment&#x27;ı tamamlayan öğrenci sayısı
+Ancak UI&#x27;da bu ikisini açıkça ayır.
+Örnek:
+Genel sınıf hazırlık oranı: %68
+Çalışmayı tamamlayanlar içindeki hazırlık oranı: %83
+4. ORTALAMA SKOR
+Şunları hesapla:
+
+* latest final score average
+* best score average
+* average attempts
+
+PENDING_TEACHER_REVIEW olan attempt&#x27;leri final score ortalamasına dahil etme.
+5. ÖĞRENCİ TABLOSU
+Tablo:
+Öğrenci
+Özeti Açtı
+Özeti Onayladı
+Deneme Sayısı
+Son Puan
+En İyi Puan
+Durum
+Tamamlama Zamanı
+Filtreler:
+
+* Tümü
+* Derse Hazır
+* Tekrar Gerekli
+* Değerlendirme Bekliyor
+* Başlamadı
+* Tamamlamadı
+* Süresi Geçti
+
+Teacher tabloyu öğrenci adına göre arayabilsin.
+6. SORU ANALİZİ
+Her question için hesapla:
+
+* questionText
+* questionType
+* toplam cevaplayan öğrenci
+* doğru cevap sayısı
+* yanlış cevap sayısı
+* correctRate
+* average awarded points
+* bağlı CurriculumOutcome
+
+En düşük correctRate&#x27;e sahip soruları:
+“En Çok Zorlanılan Sorular”
+başlığı altında göster.
+Örnek:
+Soru 4
+Doğru oranı: %46
+Soru 7
+Doğru oranı: %52
+7. OUTCOME ANALYSIS
+Question → CurriculumOutcome ilişkisini kullanarak öğrenme çıktısı bazında başarı hesapla.
+Her outcome için:
+
+* outcomeCode
+* outcomeText
+* bu outcome&#x27;a bağlı question sayısı
+* average success rate
+
+göster.
+Örneğin:
+MAT.5.1.1
+Başarı: %61
+MAT.5.1.2
+Başarı: %84
+En düşük outcome&#x27;ları ayrıca göster:
+“Ders Başında Tekrar Edilmesi Önerilen Alanlar”
+8. YARINKİ DERSE HAZIRLIK RAPORU
+Her assignment için özel bir summary panel oluştur.
+Başlık:
+Yarınki Derse Hazırlık Raporu
+Örnek format:
+7/A – Matematik
+Konu:
+Rasyonel Sayılar
+Toplam öğrenci:
+28
+Göreve başlayan:
+25
+Tamamlayan:
+23
+Derse hazır:
+19
+Tekrar yapmalı:
+4
+Tamamlamadı:
+5
+Sınıf hazırlık oranı:
+%68
+Ortalama puan:
+%74
+Ortalama deneme:
+1.4
+En çok zorlanılan öğrenme çıktısı:
+MAT....
+En çok zorlanılan soru:
+Soru 4
+9. ÖĞRETMENE EYLEM ÖNERİSİ
+Sistem basit, deterministic kurallarla öğretmene ders başlangıç önerisi verebilir.
+AI kullanmak zorunlu değil.
+Örnek kurallar:
+Hazırlık oranı &gt;= 80:
+“Sınıf genel olarak derse hazır. Derse kısa bir hatırlatmayla başlayabilirsiniz.”
+Hazırlık oranı 60–79:
+“Sınıfın önemli bir bölümü hazır, ancak bazı temel kavramları kısa süre tekrar etmek faydalı olabilir.”
+Hazırlık oranı &lt; 60:
+“Sınıfın hazır bulunuşluğu düşük. Yeni konuya geçmeden önce temel kavramları tekrar etmeniz önerilir.”
+Ayrıca en düşük outcome&#x27;u öneriye ekle.
+Örnek:
+“Özellikle negatif rasyonel sayıları karşılaştırma alanında zorlanma görülüyor.”
+Bu öneri AI ile üretilmesin; veriye dayalı deterministic olabilir.
+10. GRAFİKLER
+Teacher analytics sayfasında sade grafikler kullan.
+Öneriler:
+
+* status dağılımı
+* score distribution
+* question correct rate
+* outcome success rate
+
+Grafikleri erişilebilir yap.
+Grafik yanında sayısal değerleri de göster.
+Aşırı dashboard karmaşası oluşturma.
+11. TREND
+Aynı classroom + subject için geçmiş assignment&#x27;lar varsa:
+Hazırlık oranının zaman içindeki değişimini göster.
+Örnek:
+Görev 1: %58
+Görev 2: %67
+Görev 3: %74
+Bu özellik veri varsa görünsün.
+Veri yoksa boş grafik gösterme.
+12. EXPORT
+Teacher raporu CSV olarak indirebilsin.
+CSV&#x27;de:
+
+* student
+* status
+* attempt count
+* latest score
+* best score
+* summary confirmed
+* completed at
+
+alanları olabilir.
+Sensitive data export etme.
+Email, password, auth token gibi alanları export etme.
+13. PRINT VIEW
+“Raporu Yazdır”
+butonu ekle.
+Print-friendly CSS kullan.
+Öğretmen raporu PDF olarak tarayıcıdan yazdırabilsin.
+14. REAL DATA ONLY
+Analytics kartlarında hard-coded örnek sayılar kullanma.
+Tüm veriler gerçek database sorgularından gelsin.
+Empty state varsa uygun mesaj göster:
+“Bu görev için henüz yeterli öğrenci verisi oluşmadı.”
+15. PERFORMANCE
+N+1 query oluşturma.
+Analytics sorgularını optimize et.
+Gerekirse aggregate/groupBy kullan.
+Aşırı büyük response üretme.
+16. SECURITY
+Teacher sadece kendi assignment analytics&#x27;ini görebilsin.
+Student bu route&#x27;a erişememeli.
+Export endpoint&#x27;i de server-side authorization kontrolü yapmalı.
+17. TESTLER
+En az şu testleri ekle:
+
+1. Teacher kendi assignment analytics&#x27;ini görebiliyor.
+2. Başka teacher erişemiyor.
+3. Student erişemiyor.
+4. READY_FOR_CLASS oranı doğru hesaplanıyor.
+5. Average score PENDING_TEACHER_REVIEW kayıtlarını yanlışlıkla içermiyor.
+6. Question correct rate doğru.
+7. Outcome success rate doğru.
+8. Empty state doğru.
+9. CSV export unauthorized kullanıcıya kapalı.
+10. Ders başlangıç önerisi threshold&#x27;lara göre doğru.
+
+18. BUILD
+Sonunda:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+çalıştır.
+Hataları düzelt.
+İŞLEM SONUNDA RAPORLA
+Bana şunları bildir:
+
+1. Analytics sayfası hazır mı?
+2. Yarınki Derse Hazırlık Raporu hazır mı?
+3. Hazırlık oranı nasıl hesaplanıyor?
+4. En çok zorlanılan soru gösteriliyor mu?
+5. Outcome bazlı başarı var mı?
+6. CSV export çalışıyor mu?
+7. Print view çalışıyor mu?
+8. Authorization testleri geçti mi?
+9. Build başarılı mı?
+10. Değişen temel dosyalar hangileri?</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-9">
+  <div class="p-meta"><span class="p-num">09</span><time>7 Eki 16:22</time><span class="p-phase">Yayın hazırlığı</span></div>
+  <details>
+    <summary><span class="p-title">Sunum, demo verisi, gerçek kullanıcı testi ve son kontroller</span><span class="p-size">741 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t9">Kopyala</button><pre id="t9">Uygulamanın temel fonksiyonları tamamlandı.
+Şimdi yeni büyük özellik ekleme.
+Amaç:
+uygulamayı sunuma, gerçek kullanıcı testine, GitHub ve Vercel deployment&#x27;a hazır hale getirmek.
+1. FINAL UI/UX POLISH
+Tüm ana ekranları kontrol et:
+Teacher:
+
+* dashboard
+* classes
+* students
+* assignment wizard
+* assignment detail
+* content editor
+* analytics
+* reports
+* profile
+
+Student:
+
+* dashboard
+* assignments
+* preparation content
+* assessment
+* results
+* history
+* profile
+
+Kontrol et:
+
+* kırık layout var mı
+* mobil görünüm düzgün mü
+* taşan text var mı
+* buton isimleri tutarlı mı
+* loading state var mı
+* empty state var mı
+* hata mesajları Türkçe ve anlaşılır mı
+* status isimleri her yerde aynı mı
+
+Gereksiz tasarım değişikliği yapma.
+2. DİL TUTARLILIĞI
+Kullanıcıya görünen metinlerin tamamını Türkçe kontrol et.
+Teknik enumları UI&#x27;da gösterme.
+Örneğin:
+READY_FOR_CLASS
+yerine:
+Derse Hazır
+PENDING_TEACHER_REVIEW
+yerine:
+Öğretmen Değerlendirmesi Bekleniyor
+göster.
+3. DEMO HESAPLAR
+Development/demo amaçlı seed oluştur.
+Demo öğretmen:
+[ogretmen@demo.local](mailto:ogretmen@demo.local)
+Demo öğrenci:
+[ogrenci@demo.local](mailto:ogrenci@demo.local)
+Güvenli demo şifreleri kullan.
+Production&#x27;da otomatik demo kullanıcı oluşturma.
+Demo seed ayrı komutla çalışmalı:
+npm run demo
+4. DEMO SENARYOSU
+Demo seed içinde şu verileri oluştur:
+
+* 1 öğretmen
+* 1 adet 5. sınıf
+* en az 5 öğrenci
+* 1 published assignment
+* 1 draft assignment
+* gerçek MEB CurriculumOutcome ilişkileri
+* teacher-approved preparation content
+* en az 5 farklı soru
+* en az 1 READY_FOR_CLASS öğrenci
+* en az 1 NEEDS_REVIEW öğrenci
+* en az 1 NOT_STARTED öğrenci
+
+Böylece analytics ekranı boş görünmesin.
+5. DAVET KODU
+Demo sınıf için sabit ve kolay test edilebilir bir join code oluştur.
+Örneğin:
+DEMO5A
+Bu kod yalnızca demo seed içinde kullanılabilir.
+Teacher UI&#x27;da join code açıkça görülebilsin.
+Student bu kodla sınıfa katılabilsin.
+6. TEST HESAPLARI README
+README içinde yalnız development/demo için:
+Demo Teacher
+Demo Student
+Demo Classroom Code
+bilgilerini yaz.
+Gerçek production credential yazma.
+7. EVREN API TEST
+`.env.local` içinde EVREN API yapılandırması varsa gerçek API testini çalıştır.
+Mock kullanma.
+Kontrol et:
+
+* bağlantı başarılı mı
+* glm-5.3 çalışıyor mu
+* JSON response parse ediliyor mu
+* MEB-grounded content oluşuyor mu
+* draft kaydoluyor mu
+* teacher approval olmadan publish olmuyor mu
+
+API key&#x27;i loglama.
+8. UÇTAN UCA DEMO TESTİ
+Şu akışı baştan sona test et:
+Teacher login
+→ classroom
+→ assignment
+→ MEB outcome
+→ topic
+→ EVREN content generation
+→ teacher edit
+→ publish
+→ student login
+→ assignment
+→ summary
+→ confirmation
+→ assessment
+→ score
+→ READY_FOR_CLASS veya NEEDS_REVIEW
+→ teacher analytics
+Her adımın gerçekten database ile çalıştığını doğrula.
+9. HATALI AKIŞLAR
+Test et:
+
+* yanlış login
+* invalid join code
+* başka sınıfa erişim
+* draft assignment erişimi
+* deadline geçmiş görev
+* attempt limit
+* double submit
+* başka student&#x27;s result erişimi
+* başka teacher assignment erişimi
+* AI API unavailable
+* malformed AI JSON
+
+10. ACCESSIBILITY
+Kontrol et:
+
+* keyboard navigation
+* focus states
+* labels
+* buttons
+* form validation
+* contrast
+* status renklerinin yanında text/icon
+
+11. PERFORMANCE
+Kontrol et:
+
+* gereksiz büyük curriculum dataset client&#x27;a gönderiliyor mu
+* N+1 queries
+* büyük dashboard query&#x27;leri
+* gereksiz rerender
+* gereksiz AI request tekrarları
+
+Gerekirse optimize et.
+12. SECURITY AUDIT
+Kontrol et:
+
+* `.env.local` Git&#x27;e gitmiyor
+* API key client&#x27;a gitmiyor
+* passwords hash&#x27;li
+* server-side authorization var
+* IDOR açıkları yok
+* user-controlled IDs tekrar doğrulanıyor
+* SQL injection riski yok
+* raw stack trace kullanıcıya gösterilmiyor
+
+13. BUILD
+Çalıştır:
+npm run lint
+npm run typecheck
+npm test
+npm run build
+Hepsi başarılı olmalı.
+14. RELEASE CHECKLIST
+`RELEASE_CHECKLIST.md` oluştur.
+İçerik:
+
+* UI review completed
+* demo seed working
+* teacher flow tested
+* student flow tested
+* EVREN API tested
+* MEB curriculum verified
+* authorization tested
+* analytics tested
+* mobile tested
+* lint passed
+* typecheck passed
+* tests passed
+* build passed
+* secrets protected
+* GitHub ready
+* Vercel ready
+
+15. SUNUM İÇİN DEMO AKIŞI
+`DEMO_SCRIPT.md` oluştur.
+5 dakikalık proje demosu için kısa senaryo yaz:
+
+1. Problemi göster
+2. Teacher login
+3. Assignment oluştur
+4. MEB öğrenme çıktısı seç
+5. AI preparation content oluştur
+6. Teacher approve
+7. Student görevi tamamla
+8. READY_FOR_CLASS sonucu
+9. Teacher analytics göster
+10. Yarınki Derse Hazırlık Raporunu göster
+
+16. SON RAPOR
+Bana yalnızca şu sonucu ver:
+
+1. Demo hesaplar hazır mı?
+2. Demo join code nedir?
+3. EVREN API test edildi mi?
+4. Uçtan uca akış çalışıyor mu?
+5. Lint geçti mi?
+6. Typecheck geçti mi?
+7. Testler geçti mi?
+8. Build geçti mi?
+9. GitHub&#x27;a hazır mı?
+10. Vercel&#x27;e hazır mı?
+11. Kalan blocker var mı?</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-10">
+  <div class="p-meta"><span class="p-num">10</span><time>7 Eki 17:02</time><span class="p-phase">Takip</span></div>
+  <details open>
+    <summary><span class="p-title">“bitti mi artık?”</span><span class="p-size">3 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t10">Kopyala</button><pre id="t10">bitti mi artık?</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-11">
+  <div class="p-meta"><span class="p-num">11</span><time>7 Eki 20:14</time><span class="p-phase">Takip</span></div>
+  <details open>
+    <summary><span class="p-title">Öğretmen davet kodu sorusu</span><span class="p-size">4 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t11">Kopyala</button><pre id="t11">öğretmen davet kodu nedir?</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-12">
+  <div class="p-meta"><span class="p-num">12</span><time>7 Eki 20:17</time><span class="p-phase">Takip</span></div>
+  <details open>
+    <summary><span class="p-title">Kayıt ekranında “Öğretmen kaydı şu anda kapalı” hatası (ekran görüntüsüyle)</span><span class="p-size">5 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t12">Kopyala</button><pre id="t12">dediğini yaptım ama hata var</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-13">
+  <div class="p-meta"><span class="p-num">13</span><time>7 Eki 21:02</time><span class="p-phase">Düzeltmeler</span></div>
+  <details>
+    <summary><span class="p-title">Açık tema, tarih-saat seçici, yapay zekâ bekleme sorunu, 6–8. sınıf müfredatı</span><span class="p-size">840 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t13">Kopyala</button><pre id="t13">Mevcut çalışan `odev_claude` projesinde aşağıdaki sorunları düzelt. Önce mevcut kodu ve veri akışını incele; çalışan özellikleri bozma. Özellikle authentication, Prisma/PostgreSQL, MEB müfredat akışı, EVREN LLM entegrasyonu, öğretmen/öğrenci akışları ve mevcut 5. sınıf müfredatını koru.
+Şu 4 işi tamamla:
+
+1. ARAYÜZÜ AYDINLIK VE FERAH HALE GETİR
+
+Şu an uygulamanın birçok ekranı koyu/dark görünüyor. Bunu istemiyorum.
+Tüm uygulamanın ana tasarımını:
+
+* beyaz / çok açık gri arka plan,
+* koyu lacivert veya antrasit metin,
+* sakin mavi vurgu renkleri,
+* ferah boşluklar,
+* modern eğitim SaaS görünümü,
+* sade kartlar,
+* okunaklı form alanları
+
+şeklinde düzenle.
+Kesinlikle:
+
+* siyaha yakın ana arka plan,
+* neon/cyber görünüm,
+* ağır dark mode,
+* mor-siyah developer dashboard görünümü
+
+kullanma.
+Landing page, giriş, kayıt, öğretmen paneli, öğrenci paneli, sınıflar, görevler, görev oluşturma, içerik editörü, değerlendirme, rapor ve diğer mevcut ekranların tamamında aynı açık tasarım sistemini kullan.
+Mevcut Stitch tasarım diline mümkün olduğunca sadık kal; ancak çalışan fonksiyonları değiştirme.
+
+2. SON TESLİM TARİHİ ALANINI DÜZELT
+
+Öğretmenin görev oluşturduğu ekranda “Son teslim tarihi” alanı kullanıcı dostu değil.
+Bunu gerçek bir tarih + saat seçici haline getir.
+Beklenen:
+
+* alana tıklayınca takvim açılması,
+* öğretmenin günü takvimden seçebilmesi,
+* ayrıca saat ve dakika seçebilmesi,
+* mümkünse mobil ve masaüstünde düzgün çalışması,
+* mevcut backend’in beklediği deadline formatına doğru şekilde dönüştürülmesi,
+* timezone hatası oluşturmaması.
+
+Türkiye kullanımı esas alınmalı. UI Türkçe olmalı.
+Tarayıcının desteklediği native datetime-local yeterliyse kullanılabilir; ama kullanıcı gerçekten takvim ve saat seçebilmeli. Sadece serbest metin alanı bırakma.
+
+3. “YAPAY ZEKA İLE TASLAK OLUŞTURULUYOR” SORUNUNU DÜZELT
+
+Görev oluştururken EVREN ile AI taslağı üretildiğinde ekran uzun süre:
+“Yapay zeka ile taslak oluşturuluyor”
+durumunda kalıyor ve bazen sonuç hiç dönmüyor.
+Mevcut EVREN entegrasyonunu incele ve gerçek nedeni bul. Rastgele timeout artırmakla yetinme.
+Kontrol et:
+
+* `/api/assignments/[id]/content/generate` route’u
+* EVREN provider
+* request timeout
+* `maxDuration`
+* `EVREN_LLM_REASONING_EFFORT`
+* response parsing
+* JSON validation
+* frontend loading state
+* başarısız response durumunda loading state’in kapanması
+* Vercel serverless timeout davranışı
+* fetch abort/timeout
+* API’nin cevap verdiği halde frontend’in sonucu göstermeme ihtimali
+* malformed JSON durumları
+
+EVREN modeli şu an gerçek API ile çalışıyor. Mock’a geçme.
+Production ortamında:
+
+* `AI_PROVIDER=evren`
+* EVREN base URL
+* model
+* API key
+* reasoning effort
+
+environment variable üzerinden kullanılmaya devam etmeli.
+AI isteği sırasında kullanıcıya:
+“İçerik hazırlanıyor, bu işlem biraz sürebilir.”
+gibi bir loading durumu göster.
+Başarılı olduğunda taslağı mutlaka ekrana getir.
+Hata olduğunda sonsuz spinner bırakma. Türkçe ve anlaşılır hata mesajı göster ve “Tekrar dene” imkanı ver.
+Mümkünse EVREN’den gereksiz uzun reasoning isteme. İçerik üretimi için kaliteli ama makul sürede sonuç veren mevcut yapı korunsun.
+Bu akışı gerçek bir assignment üzerinde test et.
+
+4. 6, 7 VE 8. SINIF MEB MÜFREDATINI 5. SINIF GİBİ TAMAMLA
+5. sınıf müfredat verileri şu an doğru ve iyi çalışıyor. 5. sınıfa dokunma.
+
+Ancak 6, 7 ve 8. sınıflarda dersler / temalar / üniteler / öğrenme çıktıları eksik.
+Aşağıdaki resmi MEB Türkiye Yüzyılı Maarif Modeli kaynaklarını kullanacağım:
+
+6. sınıf:
+[6. SINIF MEB LİNKİNİ BURAYA YAPIŞTIRACAĞIM]
+7. sınıf:
+[7. SINIF MEB LİNKİNİ BURAYA YAPIŞTIRACAĞIM]
+8. sınıf:
+[8. SINIF MEB LİNKİNİ BURAYA YAPIŞTIRACAĞIM]
+
+YALNIZCA resmi MEB kaynağını kullan.
+
+5. sınıfta kullanılan mevcut veri modeli, scraper/normalizer, doğrulama ve database import yapısını incele. 6–8. sınıfları da AYNI yapıya getir.
+
+Şunlara özellikle dikkat et:
+
+* sınıf
+* ders
+* tema / ünite
+* öğrenme çıktısı kodu
+* öğrenme çıktısı metni
+* resmi kaynak URL
+* varsa alt başlık/öğrenme alanı
+* duplicate kayıtlar
+* eksik kayıtlar
+* aynı outcome’un yanlış ders/ünite altında görünmemesi
+
+5. sınıfın çalışan verisini silme veya yeniden bozma.
+
+Import işlemi idempotent olsun. Aynı seed/import tekrar çalıştırıldığında duplicate üretmesin.
+Üretim veritabanındaki mevcut CurriculumOutcome kayıtlarını körlemesine silme.
+Önce mevcut 6–8. sınıf verileriyle resmi MEB kaynaklarını karşılaştır ve hangi ders/tema/outcome’ların eksik olduğunu belirle.
+Sonra eksikleri tamamla.
+Ardından doğrulama raporu oluştur:
+
+* 5. sınıf outcome sayısı
+* 
+   6. sınıf outcome sayısı
+* 
+   7. sınıf outcome sayısı
+* 
+   8. sınıf outcome sayısı
+* ders bazında sayılar
+* duplicate sayısı
+* resmi URL’si olmayan kayıt sayısı
+* parse edilemeyen kayıt varsa listesi
+
+Öğretmen “Yeni Görev” oluştururken 6, 7 ve 8. sınıf seçildiğinde 5. sınıftaki gibi tam ders → tema/ünite → öğrenme çıktısı seçim akışı çalışmalı.
+SON KONTROLLER
+Değişikliklerden sonra:
+
+* typecheck
+* lint
+* test
+* build
+
+çalıştır.
+Ayrıca manuel olarak şu akışları test et:
+
+1. Öğretmen girişi
+2. Yeni görev oluşturma
+3. Son teslim tarihinden takvim + saat seçme
+4. 
+   6. sınıf MEB çıktısı seçme
+5. 
+   7. sınıf MEB çıktısı seçme
+6. 
+   8. sınıf MEB çıktısı seçme
+7. EVREN ile AI taslağı oluşturma
+8. Taslağın ekrana dönmesi
+9. Taslağı kaydetme/yayınlama
+
+ÖNEMLİ:
+
+* Secret değerleri loglama.
+* `.env` veya `.env.local` commit etme.
+* Production database’i silme/resetleme.
+* 
+   5. sınıf müfredatını bozma.
+* Mevcut çalışan backend özelliklerini mock data ile değiştirme.
+* Yeni gereksiz özellik ekleme.
+* İş bitince otomatik push yapma.
+
+İşin sonunda bana kısa bir rapor ver:
+
+1. Sorunların gerçek nedenleri
+2. Değiştirilen dosyalar
+3. 6–8 müfredatında nelerin eklendiği
+4. AI bekleme sorununun nasıl çözüldüğü
+5. Test sonuçları
+6. Production’a geçmeden önce benim yapmam gereken bir işlem/env değişikliği varsa açıkça yaz.
+
+
+ https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/7 https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/7 https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/7 https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/7 https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/7 https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/8 https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/8 https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/8 https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/8 https://tymm.meb.gov.tr/ogretim-programlari/sosyal-bilgiler-dersi/8 https://tymm.meb.gov.tr/ogretim-programlari/fen-bilimleri-dersi/9 https://tymm.meb.gov.tr/ogretim-programlari/ingilizce-dersi-temel-egitim/9 https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-matematik-dersi/9 https://tymm.meb.gov.tr/ogretim-programlari/ortaokul-turkce-dersi/9 https://tymm.meb.gov.tr/ogretim-programlari/tc-inkilap-tarihi-ve-ataturkculuk-dersi/9</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-14">
+  <div class="p-meta"><span class="p-num">14</span><time>7 Eki 21:29</time><span class="p-phase">Production verisi</span></div>
+  <details>
+    <summary><span class="p-title">Kullanıcının terminalde çalıştırdığı müfredat raporu komutu</span><span class="p-size">172 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t14">Kopyala</button><pre id="t14">DATABASE_URL=&quot;&lt;production-postgres-url&gt;&quot; npm run curriculum:report
+
+npm notice run odev-claude@0.1.0 curriculum:report
+npm notice run node scripts/db.mjs --dev generate &amp;&amp; tsx scripts/curriculum-report.ts
+[db] PostgreSQL schema: prisma/schema.prisma
+npm notice run odev-claude@0.1.0 npx
+npm notice run &#x27;prisma&#x27; generate --schema prisma/schema.prisma
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.19.3) to ./node_modules/@prisma/client in 59ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:242
+      throw new PrismaClientInitializationError(message, this.client._clientVersion)
+            ^
+
+PrismaClientInitializationError:
+Invalid `prisma.curriculumOutcome.findMany()` invocation in
+~/Desktop/odev_claude/scripts/curriculum-report.ts:20:47
+
+  17 const key = (subject: string, grade: number, code: string) =&gt; `${subject}|${grade}|${code}`;
+  18 const prisma = new PrismaClient();
+  19 try {
+→ 20   const rows = await prisma.curriculumOutcome.findMany(
+error: Error validating datasource `db`: the URL must start with the protocol `postgresql://` or `postgres://`.
+  --&gt;  schema.prisma:11
+   |
+10 |   provider = &quot;postgresql&quot;
+11 |   url      = env(&quot;DATABASE_URL&quot;)
+   |
+
+Validation Error Count: 1
+    at ei.handleRequestError (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:174:12)
+    at ei.request (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:143:12)
+    at async a (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/getPrismaClient.ts:833:24)
+    at async &lt;anonymous&gt; (~/Desktop/odev_claude/scripts/curriculum-report.ts:20:16) {
+  clientVersion: &#x27;6.19.3&#x27;,
+  errorCode: undefined,
+  retryable: undefined
+}
+
+Node.js v26.0.0</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-15">
+  <div class="p-meta"><span class="p-num">15</span><time>7 Eki 21:30</time><span class="p-phase">Production verisi</span></div>
+  <details open>
+    <summary><span class="p-title">“anlamadım şimdi napcam sırayla”</span><span class="p-size">4 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t15">Kopyala</button><pre id="t15">anlamadım şimdi napcam sırayla</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-16">
+  <div class="p-meta"><span class="p-num">16</span><time>7 Eki 21:31</time><span class="p-phase">Production verisi</span></div>
+  <details open>
+    <summary><span class="p-title">Veritabanı adresinin nereye yazılacağı sorusu</span><span class="p-size">19 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t16">Kopyala</button><pre id="t16">DATABASE_URL=&quot;$(grep &#x27;^DATABASE_URL=&#x27; .env.production.local | cut -d= -f2- | tr -d &#x27;&quot;&#x27;)&quot; npm run curriculum:report burada database urlyi nereye yazcam?</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-17">
+  <div class="p-meta"><span class="p-num">17</span><time>7 Eki 21:32</time><span class="p-phase">Production verisi</span></div>
+  <details>
+    <summary><span class="p-title">Rapor komutunun hata çıktısı</span><span class="p-size">127 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t17">Kopyala</button><pre id="t17">✔ Generated Prisma Client (v6.19.3) to ./node_modules/@prisma/client in 59ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:242
+      throw new PrismaClientInitializationError(message, this.client._clientVersion)
+            ^
+
+PrismaClientInitializationError: 
+Invalid `prisma.curriculumOutcome.findMany()` invocation in
+~/Desktop/odev_claude/scripts/curriculum-report.ts:20:47
+
+  17 const key = (subject: string, grade: number, code: string) =&gt; `${subject}|${grade}|${code}`;
+  18 const prisma = new PrismaClient();
+  19 try {
+→ 20   const rows = await prisma.curriculumOutcome.findMany(
+error: Error validating datasource `db`: the URL must start with the protocol `postgresql://` or `postgres://`.
+  --&gt;  schema.prisma:11
+   | 
+10 |   provider = &quot;postgresql&quot;
+11 |   url      = env(&quot;DATABASE_URL&quot;)
+   | 
+
+Validation Error Count: 1
+    at ei.handleRequestError (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:242:13)
+    at ei.handleAndLogRequestError (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:174:12)
+    at ei.request (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/RequestHandler.ts:143:12)
+    at async a (~/Desktop/odev_claude/node_modules/@prisma/client/src/runtime/getPrismaClient.ts:833:24)
+    at async &lt;anonymous&gt; (~/Desktop/odev_claude/scripts/curriculum-report.ts:20:16) {
+  clientVersion: &#x27;6.19.3&#x27;,
+  errorCode: undefined,
+  retryable: undefined
+}
+
+Node.js v26.0.0</pre></div>
+  </details><p class="note">Bu adımdan sonra kullanıcı rapor ve yükleme çıktılarını ekran görüntüsü olarak paylaştı. O görüntülerden biri veritabanı bağlantı adresini açıkça gösterdiği için bu sayfaya eklenmedi.</p>
+</li>
+
+<li class="prompt" id="istem-18">
+  <div class="p-meta"><span class="p-num">18</span><time>7 Eki 21:54</time><span class="p-phase">Dağıtım</span></div>
+  <details open>
+    <summary><span class="p-title">“tamam devam et” (GitHub&#x27;a gönderme adımı)</span><span class="p-size">3 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t18">Kopyala</button><pre id="t18">tamam devam et</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-19">
+  <div class="p-meta"><span class="p-num">19</span><time>7 Eki 21:57</time><span class="p-phase">Arayüz</span></div>
+  <details open>
+    <summary><span class="p-title">Giriş sayfasındaki demo bilgilerinin kaldırılması (ekran görüntüsüyle)</span><span class="p-size">3 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t19">Kopyala</button><pre id="t19">demo bilgiler silinecek</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-20">
+  <div class="p-meta"><span class="p-num">20</span><time>7 Eki 22:08</time><span class="p-phase">Arayüz</span></div>
+  <details open>
+    <summary><span class="p-title">Sekme başlığı “Evde Etüt” olsun</span><span class="p-size">7 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t20">Kopyala</button><pre id="t20">sekmede Ödev Yap değil Evde Etüt yazsın</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-21">
+  <div class="p-meta"><span class="p-num">21</span><time>7 Eki 22:12</time><span class="p-phase">Arayüz</span></div>
+  <details open>
+    <summary><span class="p-title">WhatsApp önizlemesinde eski başlık görünmesi (ekran görüntüsüyle)</span><span class="p-size">8 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t21">Kopyala</button><pre id="t21">hala eskisi görünüyo. ama sekmede evde etüt yazıyo</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-22">
+  <div class="p-meta"><span class="p-num">22</span><time>7 Eki 22:24</time><span class="p-phase">Büyük özellik paketi</span></div>
+  <details>
+    <summary><span class="p-title">Şifre sıfırlama, profil, Google ile giriş, görev düzenleme/silme, öğretmen raporları, maskot</span><span class="p-size">2112 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t22">Kopyala</button><pre id="t22">Mevcut `odev_claude` projesinde aşağıdaki geliştirmeleri yap.
+ÖNEMLİ:
+
+* Demo girişlerin kaldırılması ve temel giriş ekranı düzeni zaten yapıldı. Bunları yeniden yapma.
+* Mevcut çalışan authentication, teacher/student rolleri, Prisma/PostgreSQL yapısı, sınıf sistemi, MEB müfredatı, assignment sistemi ve EVREN entegrasyonunu bozma.
+* Production database’i resetleme.
+* Mevcut kullanıcı, sınıf, görev ve CurriculumOutcome kayıtlarını silme.
+* Otomatik `git push` veya production deploy yapma.
+* Secret değerleri loglama veya source code’a yazma.
+
+Bu görevde aşağıdaki maddelerin tamamını ele al.
+1. “ŞİFREMİ UNUTTUM” AKIŞI
+Hem öğretmen hem öğrenci giriş ekranındaki “Şifremi unuttum” bağlantısını gerçek çalışan bir akışa bağla.
+Akış:
+
+1. Kullanıcı `/sifremi-unuttum` sayfasına gider.
+2. E-posta adresini girer.
+3. Sistem güvenli ve rastgele bir password reset token üretir.
+4. Token plaintext olarak DB’de tutulmaz; yalnızca güvenli hash’i saklanır.
+5. Token yaklaşık 30 dakika geçerli olsun.
+6. Token tek kullanımlık olsun.
+7. Kullanıcıya e-posta ile şifre sıfırlama bağlantısı gönderilsin.
+8. Link `/sifre-sifirla?token=...` benzeri olsun.
+9. Kullanıcı yeni şifre + yeni şifre tekrar alanlarını doldursun.
+10. Şifre değiştirildikten sonra token tekrar kullanılamasın.
+
+Kullanıcı varlığını açık etme.
+Her durumda şu tarz mesaj göster:
+“Bu e-posta ile kayıtlı bir hesap varsa şifre sıfırlama bağlantısı gönderildi.”
+Token, parola, API key, DATABASE_URL veya secret loglama.
+Basit rate limit / abuse protection ekle.
+2. E-POSTA GÖNDERİMİ
+Projede mail sistemi yoksa provider tabanlı basit bir yapı oluştur.
+Tercihen Resend kullan.
+Environment variable tabanlı olsun:
+`RESEND_API_KEY`
+`MAIL_FROM`
+`APP_URL`
+Gerekirse:
+`MAIL_PROVIDER`
+kullanılabilir.
+Şifre sıfırlama e-postası Türkçe olsun.
+Konu:
+“Evde Etüt – Şifre Sıfırlama”
+İçerikte:
+
+* kısa açıklama
+* Şifremi Sıfırla bağlantısı/butonu
+* bağlantının 30 dakika geçerli olduğu
+* kullanıcı bu talebi yapmadıysa görmezden gelebileceği
+
+yer alsın.
+3. PROFİL / HESAP AYARLARI
+Hem öğretmen hem öğrenci için gerçek bir “Profil” / “Hesap Ayarları” ekranı oluştur veya mevcut ekranı tamamla.
+Dashboard/navigation üzerinden erişilebilir olsun.
+Profilde en az:
+
+* profil resmi/avatar veya baş harf avatarı
+* Ad Soyad
+* E-posta
+* Rol
+* Hesap oluşturma tarihi varsa
+* bağlı sınıflar / sınıf bilgileri
+* Şifre/parola yönetimi
+* Çıkış yap
+
+bulunsun.
+Öğrenci profili
+Göster:
+
+* Ad Soyad
+* E-posta
+* Öğrenci rolü
+* bağlı olduğu sınıf/sınıflar
+* sınıfa katılma kodu alanı
+* tamamlanan görev sayısı
+* bekleyen görev sayısı
+* hazır olduğu görev sayısı gibi basit özetler
+
+Öğretmen profili
+Göster:
+
+* Ad Soyad
+* E-posta
+* Öğretmen rolü
+* oluşturduğu sınıflar
+* toplam sınıf sayısı
+* toplam öğrenci sayısı
+* toplam aktif görev sayısı gibi basit özetler
+
+Kullanıcı en azından Ad Soyad bilgisini güncelleyebilsin.
+E-posta değişikliği ekleyeceksen güvenli doğrulama mantığı kullan; basitçe email field’ını değiştirip bırakma.
+4. PROFİLDEN ŞİFRE DEĞİŞTİRME
+Local password sahibi kullanıcı için:
+
+* Mevcut şifre
+* Yeni şifre
+* Yeni şifre tekrar
+
+alanları olsun.
+Mevcut şifre doğrulanmadan değişiklik yapılmasın.
+Google ile oluşturulmuş ve local password’u olmayan hesapta:
+“Şifre Değiştir”
+yerine:
+“Parola Oluştur”
+göster.
+5. GOOGLE İLE DEVAM ET
+Mevcut e-posta + şifre sistemini kaldırmadan Google OAuth desteği ekle.
+Giriş/kayıt ekranında:
+“Google ile devam et”
+butonu olsun.
+Gerekli env değişkenlerini source code’a yazma.
+Örneğin:
+`GOOGLE_CLIENT_ID`
+`GOOGLE_CLIENT_SECRET`
+Mevcut auth yapısına uygun callback/base URL ayarlarını kullan.
+6. GOOGLE İLE İLK GİRİŞTE ROL
+İlk Google girişinde kullanıcı sistemde yoksa:
+
+* Öğrenciyim
+* Öğretmenim
+
+seçimi göster.
+Öğrenci:
+
+* otomatik bir sınıfa atanmasın
+* öğretmenin verdiği sınıf koduyla katılsın
+
+Öğretmen:
+
+* Google hesabı var diye otomatik öğretmen yetkisi alma
+* mevcut `TEACHER_SIGNUP_CODE` mantığını koru
+
+Aynı doğrulanmış Google e-postası için duplicate kullanıcı oluşturma.
+Güvenli account linking uygula.
+7. ÖĞRENCİNİN SINIFA KATILMA AKIŞI
+Öğrenci kayıt olduktan sonra herhangi bir sınıfa otomatik atanmasın.
+Hiçbir sınıfa bağlı değilse dashboard’da belirgin:
+“Sınıfa Katıl”
+kartı göster.
+Öğretmenin verdiği sınıf koduyla sınıfa katılsın.
+Geçersiz kodda Türkçe ve anlaşılır hata ver.
+8. GÖREV SİLME
+Öğretmen kendi oluşturduğu görevi silebilsin.
+Ancak yanlışlıkla veri kaybını önle.
+Görev detay ekranında:
+“Görevi Sil”
+aksiyonu olsun.
+Tıklanınca confirmation modal aç:
+“Bu görevi silmek istediğinize emin misiniz?”
+Eğer görev hiç yayınlanmamış/draft ise gerçek silme yapılabilir.
+Eğer görev:
+
+* yayınlanmışsa
+* öğrenci başlamışsa
+* attempt/cevap/rapor verisi varsa
+
+öğrenci çalışmalarını körlemesine hard delete etme.
+Bu durumda tercihen soft delete / archive kullan.
+Örneğin:
+
+* `ARCHIVED`
+* `DELETED`
+* `isArchived`
+* `deletedAt`
+
+benzeri mevcut mimariye uygun bir mekanizma kullan.
+Öğretmen listesinde varsayılan olarak görünmesin ama veri bütünlüğü korunsun.
+Öğrenci geçmiş cevapları ve öğretmen raporları zarar görmemeli.
+9. GÖREV GÜNCELLEME / DÜZENLEME
+Öğretmen kendi görevini sonradan düzenleyebilsin.
+Görev detayında:
+“Görevi Düzenle”
+butonu olsun.
+Düzenlenebilecek alanlar:
+
+* görev adı/başlığı
+* son teslim tarihi ve saati
+* minimum başarı/hazır olma puanı
+* deneme hakkı
+* hazırlık içeriği
+* sorular
+* gerekli diğer mevcut assignment ayarları
+
+Ancak veri bütünlüğü önemli.
+Henüz öğrenci başlamamış görev
+Daha serbest düzenlenebilir.
+Öğrenci başlamış/yapmış görev
+Şunlara dikkat et:
+
+* mevcut attempt’ları anlamsız hale getirme
+* soruları körlemesine değiştirme
+* geçmiş öğrenci cevaplarını bozma
+
+Gerekirse öğrenci başladıktan sonra:
+
+* kritik alanları kilitle
+veya
+* yeni revision/version oluştur.
+
+En basit ama güvenli çözümü seç.
+Öğretmene neden bazı alanları değiştiremediğini Türkçe açıkla.
+10. SON TESLİM TARİHİ
+Görev oluşturma ve görev düzenleme ekranında son teslim tarihi alanı gerçek tarih + saat seçici olsun.
+Kullanıcı:
+
+* takvimden gün seçebilsin
+* saat ve dakika seçebilsin
+
+Türkiye kullanımı esas alınmalı.
+Serbest text input bırakma.
+Timezone dönüşümünü doğru yap.
+11. KRİTİK: AI TASLAK OLUŞTURMA SONSUZ BEKLEME SORUNU
+Öğretmen görev hazırlarken:
+`Hazırlık İçeriği &amp; Sorular → Yapay zekâ ile taslak`
+akışı hâlâ ciddi sorunlu.
+Mevcut davranış:
+
+* “Oluşturuluyor...” yazıyor
+* sayaç uzun süre devam ediyor
+* bazen sonuç hiç gelmiyor
+* spinner sonsuz kalıyor
+
+Bunu production bug olarak ele al.
+Sadece timeout süresini artırma.
+Gerçek nedeni tespit et.
+Özellikle incele:
+
+* `/api/assignments/[id]/content/generate`
+* EVREN provider
+* frontend fetch
+* `maxDuration`
+* `AI_TIMEOUT_MS`
+* `EVREN_LLM_REASONING_EFFORT`
+* request lifecycle
+* JSON parsing
+* Zod validation
+* Prisma save
+* frontend state refresh
+* Vercel runtime
+* AbortController/timeout
+
+Şu zincirin tamamı başarılı olmalı:
+EVREN response
+→ JSON parse
+→ validation
+→ DB save
+→ API response
+→ frontend state refresh
+→ hazırlık içeriği ve soruların öğretmene görünmesi
+Frontend state en az:
+
+* idle
+* generating
+* success
+* failed
+* timeout
+
+olmalı.
+Hiçbir durumda sonsuz spinner kalmasın.
+Başarısızlıkta:
+
+* spinner kapansın
+* Türkçe hata mesajı
+* “Tekrar Dene” butonu
+
+göster.
+İstek uzarsa:
+“İşlem beklenenden uzun sürüyor.”
+gibi mesaj gösterilebilir.
+“Bu sayfadan ayrılsanız da işlem devam eder.”
+ifadesi yalnızca gerçekten background job varsa kalsın. Yoksa kaldır.
+12. EVREN PERFORMANS OPTİMİZASYONU
+Mock’a geçme.
+Gerçek EVREN kullanılmaya devam etsin.
+`EVREN_LLM_REASONING_EFFORT=low` desteklenmeye devam etsin.
+Prompt/context gereksiz büyükse küçült.
+Sadece gerekli structured JSON’u üret.
+Gereksiz uzun reasoning veya açıklama isteme.
+Geçici 429/5xx/network hatalarında en fazla 1 kontrollü retry düşünülebilir.
+Sonsuz retry yapma.
+13. AI JSON DAYANIKLILIĞI
+EVREN cevabında:
+
+* markdown code fence
+* kısa açıklama
+* küçük JSON format sapmaları
+
+olabilir.
+Güvenli parse katmanı oluştur.
+Ama bozuk cevabı sessizce doğru kabul etme.
+Parse başarısızsa:
+
+* kontrollü hata
+* gerekiyorsa maksimum 1 retry
+* kullanıcıya “Tekrar Dene”
+
+göster.
+14. ÖĞRETMENİN ÖĞRENCİ ÇALIŞMALARINI GÖRMESİ
+Şu an öğretmenin yalnızca açık uçlu sorular için değerlendirme yapması yeterli değil.
+Öğretmen, kendi sınıfındaki öğrencilerin görevlerde ne yaptığını ayrıntılı görebilmeli.
+Bunun için gerçek bir:
+“Öğrenci Çalışmaları”
+veya
+“Cevap Kağıdı / Görev Raporu”
+ekranı oluştur.
+Öğretmen sadece kendi sınıfındaki öğrencilere erişebilsin.
+Başka öğretmenin öğrencilerine erişim kesinlikle olmamalı.
+15. GÖREV BAZLI ÖĞRENCİ RAPORU
+Öğretmen bir görevi açtığında öğrencileri tablo halinde görebilsin.
+Örneğin sütunlar:
+
+* Öğrenci Adı
+* Durum
+* Başlama zamanı
+* Tamamlama zamanı
+* Deneme sayısı
+* Puan
+* Başarı yüzdesi
+* Derse Hazır / Tekrar Gerekli
+* Öğretmen değerlendirmesi bekliyor mu?
+* “Cevapları Gör”
+
+Durumlar mevcut state’lerle uyumlu olsun:
+
+* NOT_STARTED
+* READING
+* READY_FOR_ASSESSMENT
+* ASSESSMENT_IN_PROGRESS
+* PENDING_TEACHER_REVIEW
+* NEEDS_REVIEW
+* READY_FOR_CLASS
+* EXPIRED
+
+16. ÖĞRENCİ CEVAP KAĞIDI
+Öğretmen bir öğrenci için “Cevapları Gör” dediğinde gerçek bir cevap kağıdı ekranı açılsın.
+Göster:
+
+* görev adı
+* öğrenci adı
+* hangi deneme
+* başlama/tamamlama tarihi
+* toplam puan
+* hazır olma sonucu
+
+Her soru için:
+
+* soru numarası
+* soru tipi
+* soru metni
+* öğrencinin verdiği cevap
+* doğru cevap / beklenen cevap
+* otomatik puan
+* öğretmen puanı varsa
+* toplam soru puanı
+* doğru / yanlış / kısmi / değerlendirme bekliyor durumu
+
+göster.
+Öğretmenin sadece açık uçlu soruları değil, öğrencinin TÜM cevaplarını görebilmesi gerekir.
+17. OTOMATİK PUANLANAN SORULAR
+Şu soru tiplerinde öğretmen verilen cevabı ve otomatik sonucu görebilsin:
+
+* MULTIPLE_CHOICE
+* TRUE_FALSE
+* FILL_IN_THE_BLANK
+* MATCHING
+* ORDERING
+* diğer mevcut otomatik puanlanabilir tipler
+
+Öğretmen bunları manuel değerlendirmek zorunda değil.
+Ancak raporda:
+
+* öğrencinin cevabı
+* doğru cevap
+* aldığı puan
+
+görünmeli.
+18. AÇIK UÇLU SORULARIN ÖĞRETMEN DEĞERLENDİRMESİ
+SHORT_ANSWER / LONG_ANSWER veya mevcut manuel değerlendirme gerektiren soru tiplerinde:
+
+* öğrenci cevabı
+* önerilen/örnek cevap varsa
+* maksimum puan
+* öğretmen puanı
+* öğretmen notu/geri bildirimi
+
+alanları olsun.
+Öğretmen yalnızca bu sorular için manuel puanlama yapmak zorunda olsun.
+Otomatik puanlanan sorular manuel değerlendirme kuyruğuna girmesin.
+Bir görevde açık uçlu soru yoksa:
+
+* `PENDING_TEACHER_REVIEW` gereksiz yere oluşmamalı
+* sonuç otomatik tamamlanabilmeli.
+
+19. ÖĞRENCİ BAZLI GEÇMİŞ RAPOR
+Öğretmen sınıf içinden bir öğrenciyi açtığında öğrencinin geçmiş görev performansını görebilsin.
+Örneğin:
+
+* Toplam görev
+* Tamamlanan
+* Derse Hazır
+* Tekrar Gerekli
+* Ortalama puan
+* Son aktiviteler
+
+ve görev listesi:
+
+* görev
+* ders
+* tarih
+* puan
+* durum
+* cevap kağıdı
+
+göster.
+Bu bir öğrenci performans geçmişi olsun.
+Ancak gereksiz karmaşık analytics sistemi oluşturma; mevcut verilerden anlamlı temel rapor yeterli.
+20. RAPOR FİLTRELEME
+Görev bazlı raporda temel filtreler ekle:
+
+* Tümü
+* Derse Hazır
+* Tekrar Gerekli
+* Başlamadı
+* Devam Ediyor
+* Öğretmen Değerlendirmesi Bekliyor
+
+Arama:
+
+* öğrenci adına göre
+
+olabilir.
+21. VERİ GİZLİLİĞİ / YETKİLENDİRME
+Çok önemli:
+Öğretmen:
+
+* yalnız kendi oluşturduğu sınıfları
+* yalnız kendi sınıflarındaki öğrencileri
+* yalnız bu öğrencilerin ilgili görev cevaplarını
+
+görebilsin.
+Öğrenci:
+
+* başka öğrencinin cevabını göremesin
+* öğretmen rapor endpoint’lerine erişemesin.
+
+Authorization yalnız frontend’de gizleme ile yapılmasın.
+Server/API/service katmanında doğrula.
+ID değiştirerek başka kullanıcının cevabına erişme açığı olmamalı.
+22. MASKOT / YARDIMCI KARAKTER
+Siteye sade, özgün ve profesyonel bir eğitim maskotu ekle.
+Telifli marka karakteri kullanma.
+Tercihen hafif SVG/CSS.
+İlk açılışta yaklaşık 1–2 saniyelik kısa karşılama animasyonu olsun.
+Sonrasında sağ alt köşede küçük şekilde kalsın.
+Kurallar:
+
+* ekranı kaplamasın
+* butonlara binmesin
+* mobilde düzgün çalışsın
+* kullanıcı kapatabilsin/minimize edebilsin
+* tercih localStorage ile hatırlanabilir
+* `prefers-reduced-motion` destekle
+* ağır animation dependency ekleme
+
+Bağlama uygun kısa yardım mesajları verebilir ama sürekli konuşmasın.
+Örnek:
+
+* “Sınıfa katılmak için öğretmeninden aldığın kodu kullanabilirsin.”
+* “Yeni görev oluşturmak için buradan başlayabilirsiniz.”
+
+23. UI
+Yeni tüm ekranlar uygulamanın açık tasarım sistemiyle uyumlu olsun:
+
+* beyaz / açık gri arka plan
+* koyu okunaklı yazı
+* sakin mavi vurgu
+* sade kartlar
+* ferah spacing
+* responsive
+* mobil uyumlu
+
+Dark/neon/cyber görünüm kullanma.
+24. PRISMA / DATABASE
+Yeni özellikler için gerekirse Prisma schema’yı genişlet.
+Örnek:
+
+* PasswordResetToken
+* OAuth account
+* assignment archive/version alanları
+
+Ama mevcut veri modelini gereksiz yere yeniden tasarlama.
+Migration gerekiyorsa oluştur.
+YASAK:
+
+* `prisma migrate reset`
+* production veri silme
+* CurriculumOutcome silme
+* mevcut attempt/answer verilerini kaybetme
+* demo seed çalıştırma
+
+25. TESTLER
+Aşağıdaki akışları test et.
+Password reset
+
+* reset isteği
+* mail
+* geçerli token
+* süresi geçmiş token
+* kullanılmış token
+* yeni parola ile login
+
+Profile
+
+* öğretmen profil
+* öğrenci profil
+* ad soyad güncelleme
+* şifre değiştirme
+* Google hesabına parola oluşturma
+
+Görev
+
+* görev oluşturma
+* deadline takvim + saat
+* görev düzenleme
+* öğrenci başlamamış görev düzenleme
+* öğrenci başlamış görev düzenleme güvenliği
+* görev silme/arşivleme
+* öğrenci verilerinin kaybolmaması
+
+EVREN
+
+* 5 soruluk gerçek AI generation
+* 7 soruluk gerçek AI generation
+* sonuç ekrana geliyor mu
+* DB’ye kaydoluyor mu
+* timeout
+* parse error
+* network error
+* loading state kapanıyor mu
+* retry davranışı
+
+Öğretmen raporu
+
+* görev öğrenci listesi
+* tüm öğrenciler doğru mu
+* otomatik soruların cevapları
+* doğru cevaplar
+* puanlar
+* açık uçlu manuel değerlendirme
+* açık uçlu olmayan görevde review beklememesi
+* öğrenci geçmişi
+* başka öğretmenin verisine erişimin engellenmesi
+* öğrenci hesabıyla öğretmen raporuna erişimin engellenmesi
+
+Maskot
+
+* açılış animasyonu
+* köşede görünmesi
+* minimize/kapatma
+* mobil
+* reduced motion
+
+26. KALİTE KONTROLÜ
+İş bitince çalıştır:
+
+* `npm run typecheck`
+* `npm run lint`
+* `npm test`
+* `npm run build`
+
+Yeni kritik özellikler için test ekle.
+27. SON RAPOR
+İş bitince otomatik push/deploy yapma.
+Bana şu başlıklarda rapor ver:
+
+1. Yapılan değişiklikler
+2. Değiştirilen/eklenen önemli dosyalar
+3. Prisma schema değişiklikleri
+4. Migration gerekiyor mu?
+5. Yeni env değişkenleri
+6. Resend kurulumu için benim yapmam gerekenler
+7. Google OAuth için benim yapmam gerekenler
+8. Vercel’e eklemem gereken env değişkenleri
+9. Görev silme/arşivleme nasıl uygulandı?
+10. Görev düzenleme/version mantığı nasıl uygulandı?
+11. Profil ekranında neler var?
+12. AI sonsuz loading’in gerçek nedeni neydi?
+13. AI generation gerçek test süresi ne oldu?
+14. Öğretmen öğrenci cevap kağıdında hangi bilgileri görebiliyor?
+15. Açık uçlu değerlendirme mantığı nasıl değişti?
+16. Authorization testleri geçti mi?
+17. Maskot nasıl uygulandı?
+18. typecheck/lint/test/build sonuçları
+19. Production’a almadan önce benim yapmam gereken manuel işlemler
+
+Bu maddelerden herhangi biri tamamlanmadıysa açıkça belirt; tamamlandı gibi gösterme.
+
+
+ Google OAuth yalnızca ek bir giriş/kayıt seçeneğidir. Normal e-posta + şifre kayıt sistemi korunmalıdır. Gmail dışındaki geçerli e-posta adresleriyle kayıt engellenmemelidir.</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-23">
+  <div class="p-meta"><span class="p-num">23</span><time>8 Eki 10:56</time><span class="p-phase">Paylaşım</span></div>
+  <details open>
+    <summary><span class="p-title">Konuşmayı paylaşma isteği</span><span class="p-size">6 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t23">Kopyala</button><pre id="t23">bu konuşmayı paylaşmak istiyorum. linki ve</pre></div>
+  </details>
+</li>
+
+<li class="prompt" id="istem-24">
+  <div class="p-meta"><span class="p-num">24</span><time>8 Eki 10:57</time><span class="p-phase">Paylaşım</span></div>
+  <details open>
+    <summary><span class="p-title">“tüm promptlar ve gerekli bilgilerle oluştur”</span><span class="p-size">6 kelime</span></summary>
+    <div class="p-body"><button type="button" class="copy" data-target="t24">Kopyala</button><pre id="t24">tüm promptlar ve gerekli bilgilerle oluştur</pre></div>
+  </details>
+</li>
+      </ol>
+    </section>
+  </main>
+</div>
+
+<script>
+document.getElementById("open-all").addEventListener("click", () => document.querySelectorAll("li.prompt details").forEach((d) => (d.open = true)));
+document.getElementById("close-all").addEventListener("click", () => document.querySelectorAll("li.prompt details").forEach((d) => (d.open = false)));
+document.querySelectorAll("button.copy").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const pre = document.getElementById(btn.dataset.target);
+    const done = () => { btn.textContent = "Kopyalandı"; setTimeout(() => (btn.textContent = "Kopyala"), 1600); };
+    const select = () => { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Seçildi – ⌘C ile kopyala"; };
+    try { navigator.clipboard.writeText(pre.textContent).then(done, select); } catch { select(); }
+  });
+});
+</script>

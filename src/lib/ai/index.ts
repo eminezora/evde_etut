@@ -1,6 +1,6 @@
 // Provider factory driven by environment variables (server-only; nothing here is NEXT_PUBLIC_):
 //   AI_PROVIDER = evren | anthropic | mock   (unset → AI generation disabled, manual flow still works)
-//   AI_TIMEOUT_MS = request timeout          (optional; default 240000)
+//   AI_TIMEOUT_MS = request timeout          (optional; default 90000; must stay below the generate route maxDuration of 180 s)
 // evren (OpenAI-compatible EVREN LLM API):
 //   EVREN_LLM_BASE_URL = API base URL incl. /v1 (required)
 //   EVREN_LLM_API_KEY  = API key (required; AI_API_KEY is accepted as a fallback)

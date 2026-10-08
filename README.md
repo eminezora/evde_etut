@@ -107,7 +107,7 @@ git push -u origin main
 | `AI_API_KEY` | `anthropic` için | Anthropic API anahtarı |
 | `AI_MODEL` | Hayır | Yalnızca `anthropic`; varsayılan `claude-opus-5-5` |
 | `EVREN_LLM_REASONING_EFFORT` | Hayır | `none`/`low`/`medium`/`high`/`off`; varsayılan `low` (glm-5.3 aksi hâlde dakikalarca "düşünür") |
-| `AI_TIMEOUT_MS` | Hayır | Varsayılan 240000 (route `maxDuration` 300 sn'den küçük olmalı) |
+| `AI_TIMEOUT_MS` | Hayır | Varsayılan 90000; route `maxDuration` 180 sn'den küçük olmalı. EVREN yavaş anlarda 120–150 sn sürebildiği için `160000` önerilir |
 
 `DEMO_PASSWORD` production'da gerekmez. `NEXT_PUBLIC_*` değişkeni yoktur; hiçbir secret istemciye gönderilmez.
 
@@ -164,7 +164,7 @@ Deploy'a basın. Sonraki her `git push` otomatik deploy edilir. Yeni migration i
 push'lamadan önce 5. adımı çalıştırın.
 
 > Yapay zekâ taslağı arka planda üretilir: istek hemen 202 döner, editör durumu 3 sn'de bir sorgular.
-> Arka plan işi en fazla 300 sn çalışabilir (`maxDuration`). Vercel'de **Fluid compute** açık olmalıdır
+> Arka plan işi en fazla 180 sn çalışabilir (`maxDuration`). Vercel'de **Fluid compute** açık olmalıdır
 > (yeni projelerde varsayılan); kapalıysa Hobby planda süre sınırı 60 sn'dir ve taslak üretimi yarıda kalır.
 
 ### 9. Production test

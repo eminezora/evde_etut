@@ -5,14 +5,15 @@ import type { NextResponse } from "next/server";
 import { prisma } from "../db.ts";
 import { SESSION_COOKIE, createSessionToken, readSessionToken, sessionCookieOptions } from "./session.ts";
 
-const userSelect = { id: true, name: true, email: true, role: true, sessionVersion: true } as const;
+const userSelect = { id: true, name: true, email: true, role: true, sessionVersion: true, isActive: true, disabledAt: true } as const;
 
-/** The logged-in user (any role), or null. Sessions issued before a password change are rejected. */
+/** The logged-in user (any role), or null. Sessions issued before a password change or for disabled accounts are rejected. */
 export async function getCurrentUser() {
   const session = await readSessionToken((await cookies()).get(SESSION_COOKIE)?.value);
   if (!session) return null;
   const user = await prisma.user.findUnique({ where: { id: session.userId }, select: userSelect });
   if (!user || user.role !== session.role || user.sessionVersion !== (session.sessionVersion ?? 0)) return null;
+  if (!user.isActive || user.disabledAt !== null) return null;
   return { id: user.id, name: user.name, email: user.email, role: user.role };
 }
 
@@ -24,6 +25,11 @@ export async function getCurrentTeacher() {
 export async function getCurrentStudent() {
   const user = await getCurrentUser();
   return user?.role === "STUDENT" ? { id: user.id, name: user.name, email: user.email } : null;
+}
+
+export async function getCurrentAdmin() {
+  const user = await getCurrentUser();
+  return user?.role === "ADMIN" ? { id: user.id, name: user.name, email: user.email } : null;
 }
 
 /** Set the session cookie for a user on a response. */
@@ -50,4 +56,10 @@ export async function requireStudent() {
   const student = await getCurrentStudent();
   if (!student) redirect("/giris");
   return student;
+}
+
+export async function requireAdmin() {
+  const admin = await getCurrentAdmin();
+  if (!admin) redirect("/giris");
+  return admin;
 }

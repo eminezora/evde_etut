@@ -40,7 +40,8 @@ export function LoginForm() {
       return;
     }
     if (data?.role) {
-      router.replace(data.role === "STUDENT" ? "/ogrenci/gorevler" : "/ogretmen/gorevler");
+      const target = data.role === "ADMIN" ? "/admin" : data.role === "STUDENT" ? "/ogrenci/gorevler" : "/ogretmen/gorevler";
+      router.replace(target);
       router.refresh();
     }
   }
