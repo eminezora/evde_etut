@@ -75,21 +75,69 @@ const generateSchema = z.object({
   confirmOverwrite: z.boolean().default(false),
 });
 
+type ProviderResult = Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>>;
+
+/** A part that has not answered after this long gets one duplicate request (whichever answers first wins). */
+export const HEDGE_AFTER_MS = 50_000;
+
+/**
+ * Hedged request: EVREN usually answers a half-size request in 20–35 s, but now and then a single
+ * request stalls for minutes. If the first request is still running after `hedgeAfterMs`, the same
+ * request is sent once more; the first answer wins and the other request is aborted. An error before
+ * the hedge fires is returned at once (the provider already retried transient errors).
+ */
+export function hedged<T>(run: (signal: AbortSignal) => Promise<T>, parent: AbortSignal, hedgeAfterMs = HEDGE_AFTER_MS): Promise<T> {
+  return new Promise<T>((resolve, reject) => {
+    const controllers: AbortController[] = [];
+    let settled = false;
+    let running = 0;
+    let hedgeFired = false;
+    let lastError: unknown;
+    const finish = (fn: () => void) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      for (const c of controllers) c.abort();
+      fn();
+    };
+    const launch = () => {
+      const c = new AbortController();
+      controllers.push(c);
+      running++;
+      run(AbortSignal.any([parent, c.signal])).then(
+        (value) => finish(() => resolve(value)),
+        (error) => {
+          running--;
+          lastError = error;
+          if (running === 0 && (hedgeFired || parent.aborted)) finish(() => reject(lastError));
+          else if (!hedgeFired) finish(() => reject(error));
+        },
+      );
+    };
+    const timer = setTimeout(() => {
+      if (settled || parent.aborted) return;
+      hedgeFired = true;
+      launch();
+    }, hedgeAfterMs);
+    parent.addEventListener("abort", () => clearTimeout(timer), { once: true });
+    launch();
+  });
+}
+
 /**
  * "ALL" is requested as two parallel calls (preparation content + questions). The model's output
  * speed is the bottleneck (~30–40 tokens/s), so two half-size answers arrive in roughly half the
- * time of one full answer. The merged object goes through the same strict ALL validation.
+ * time of one full answer. Each part is hedged against a stalled request. The merged object goes
+ * through the same strict ALL validation.
  */
 export async function generateWithProvider(
   provider: ContentGenerationProvider,
   input: Parameters<ContentGenerationProvider["generatePreparationContent"]>[0],
-  opts: { signal: AbortSignal },
-): Promise<Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>>> {
-  if (input.scope !== "ALL") return provider.generatePreparationContent(input, opts);
-  const [content, questions] = await Promise.all([
-    provider.generatePreparationContent({ ...input, scope: "SUMMARY" }, opts),
-    provider.generatePreparationContent({ ...input, scope: "QUESTIONS" }, opts),
-  ]);
+  opts: { signal: AbortSignal; hedgeAfterMs?: number },
+): Promise<ProviderResult> {
+  const call = (part: typeof input) => hedged((signal) => provider.generatePreparationContent(part, { signal }), opts.signal, opts.hedgeAfterMs);
+  if (input.scope !== "ALL") return call(input);
+  const [content, questions] = await Promise.all([call({ ...input, scope: "SUMMARY" }), call({ ...input, scope: "QUESTIONS" })]);
   const asObject = (v: unknown) => (v && typeof v === "object" && !Array.isArray(v) ? (v as Record<string, unknown>) : {});
   const sum = (a?: number, b?: number) => (a === undefined && b === undefined ? undefined : (a ?? 0) + (b ?? 0));
   return {
@@ -245,7 +293,8 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
       };
       const outcomeCodes = a.assignmentOutcomes.map((ao) => ao.outcome.outcomeCode);
       const signal = AbortSignal.timeout(timeoutMs);
-      const canRetry = (attempt: number) => attempt === 1 && Date.now() - startedAt < timeoutMs - 16_000;
+      // Retry only while at least half the budget is left, so a retry can still finish in time.
+      const canRetry = (attempt: number) => attempt === 1 && Date.now() - startedAt < timeoutMs / 2;
 
       let result: Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>> | undefined;
       let checked: ReturnType<typeof parseGeneratedContent> | undefined;

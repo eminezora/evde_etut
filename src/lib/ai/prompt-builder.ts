@@ -18,9 +18,8 @@ Soru kuralları:
 - Her soru "curriculumOutcomeCodes" alanında verilen MEB kodlarından en az birini içermelidir.
 - points: 5–20 arası tam sayı.
 - explanation: Doğru cevabın 1 cümlelik kısa açıklaması.
-- Sorularda soru metnini, işlem adımlarını ve seçenekleri çok kısa, yalın ve net tut; uzatma.
 - Soru türleri:
-  * MULTIPLE_CHOICE: options (4 kısa seçenek), correctAnswer (seçeneklerden birinin tam metni).
+  * MULTIPLE_CHOICE: options (4 seçenek), correctAnswer (seçeneklerden biriyle aynı).
   * TRUE_FALSE: correctBoolean.
   * FILL_IN_THE_BLANK: questionText içinde "____" boşluk, correctAnswer.
   * MATCHING: pairs dizisi (left, right).
@@ -28,7 +27,7 @@ Soru kuralları:
   * SHORT_ANSWER: sampleAnswer.
 Kullanılmayan tür alanlarını null bırak.
 
-Çıktı kuralları: Yalnızca istenen tek JSON nesnesini üret. Düşünce metni, açıklama veya markdown ekleme; metinleri kısa ve öz tut.`;
+Çıktı kuralları: Yalnızca istenen tek JSON nesnesini üret. Düşünce metni, açıklama veya markdown ekleme; metinleri gereksiz uzatma.`;
 
 const SCOPE_TASK = {
   ALL: "Hazırlık içeriğinin tamamını (introduction, keyConcepts, summary, simpleExample, mustKnow) ve soruları üret.",

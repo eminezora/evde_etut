@@ -1,6 +1,6 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { createAssignment, deleteOrArchiveAssignment, getEditState, listAssignmentsForTeacher, restoreAssignment, updateAssignment } from "../src/lib/assignments/assignment-service.ts";
-import { addQuestion, generateStudyContent, getStudentAssignment, listStudentAssignments, saveStudyContent } from "../src/lib/content/content-service.ts";
+import { addQuestion, generateStudyContent, getStudentAssignment, hedged, listStudentAssignments, saveStudyContent } from "../src/lib/content/content-service.ts";
 import { getStudentDetail, listPendingReviews } from "../src/lib/assessment/review-service.ts";
 import { getClassroomRoster, getStudentHistory } from "../src/lib/assessment/student-history-service.ts";
 import { getStudentDashboard } from "../src/lib/assessment/student-assessment-service.ts";
@@ -221,6 +221,46 @@ describe("AI generation robustness", () => {
     expect(r.ok).toBe(true);
     expect(calls).toBe(4); // 2 attempts × (content + questions in parallel)
     expect(await db.question.count({ where: { assignmentId: d.id } })).toBe(5);
+  });
+
+  it("hedges a stalled request: a duplicate is sent once and the first answer wins", async () => {
+    let calls = 0;
+    let firstAborted = false;
+    const run = (signal: AbortSignal) => {
+      calls++;
+      if (calls === 1) {
+        // Stalls until aborted.
+        return new Promise<string>((_resolve, reject) => signal.addEventListener("abort", () => ((firstAborted = true), reject(new Error("aborted")))));
+      }
+      return new Promise<string>((r) => setTimeout(() => r("ikinci"), 10));
+    };
+    const started = Date.now();
+    expect(await hedged(run, AbortSignal.timeout(5_000), 30)).toBe("ikinci");
+    expect(calls).toBe(2);
+    expect(firstAborted).toBe(true);
+    expect(Date.now() - started).toBeLessThan(1_000);
+  });
+
+  it("does not hedge a fast request and returns an early error at once", async () => {
+    let calls = 0;
+    expect(await hedged(async () => (calls++, "hızlı"), AbortSignal.timeout(5_000), 200)).toBe("hızlı");
+    await new Promise((r) => setTimeout(r, 250));
+    expect(calls).toBe(1);
+
+    let errCalls = 0;
+    await expect(hedged(async () => { errCalls++; throw new Error("bozuk"); }, AbortSignal.timeout(5_000), 200)).rejects.toThrow("bozuk");
+    await new Promise((r) => setTimeout(r, 250));
+    expect(errCalls).toBe(1);
+  });
+
+  it("fails when both the request and its hedge fail, and stops at the overall deadline", async () => {
+    let calls = 0;
+    const slowFail = () => new Promise<string>((_r, reject) => { calls++; setTimeout(() => reject(new Error(`hata ${calls}`)), 60); });
+    await expect(hedged(slowFail, AbortSignal.timeout(5_000), 20)).rejects.toThrow(/hata/);
+    expect(calls).toBe(2);
+
+    const never = (signal: AbortSignal) => new Promise<string>((_r, reject) => signal.addEventListener("abort", () => reject(new Error("zaman aşımı"))));
+    await expect(hedged(never, AbortSignal.timeout(100), 30)).rejects.toThrow("zaman aşımı");
   });
 
   it("requests content and questions in parallel for ALL and merges them", async () => {
