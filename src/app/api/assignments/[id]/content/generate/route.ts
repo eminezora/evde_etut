@@ -14,7 +14,7 @@ import { jsonError } from "@/lib/http/route-helpers.ts";
 
 // Must exceed AI_TIMEOUT_MS (default 240 s) so a timed-out call can still be recorded as failed.
 // 300 s is the Vercel Hobby limit with Fluid compute; the editor polls, so nobody waits on this request.
-export const maxDuration = 300;
+export const maxDuration = 180;
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -28,9 +28,22 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
   }
   const { jobId, scope, run } = started.data;
   after(async () => {
-    await run();
+    try {
+      await run();
+    } catch (err) {
+      console.error(`[ai:lifecycle] after_execution_failed: assignment=${id} jobId=${jobId} error=${err instanceof Error ? err.message : String(err)}`);
+    }
   });
-  return NextResponse.json({ ok: true, data: { jobId, scope, state: "RUNNING" } }, { status: 202 });
+  return NextResponse.json({
+    ok: true,
+    data: {
+      jobId,
+      scope,
+      state: "GENERATING",
+      status: "RUNNING",
+      generationStartedAt: new Date().toISOString(),
+    },
+  }, { status: 202 });
 }
 
 export async function GET(_request: Request, { params }: { params: Promise<{ id: string }> }) {

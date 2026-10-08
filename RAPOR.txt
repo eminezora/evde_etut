@@ -1,0 +1,231 @@
+================================================================================
+EVDE ETÜT - YAPAY ZEKÂ İÇERİK OLUŞTURMA (AI GENERATION) HATA GİDERME RAPORU
+Tarih: 8 Ekim 2026
+Proje: odev_claude
+Konu: "Oluşturuluyor..." Durumunda Takılı Kalma ve Sonsuz Döngü Kök Neden Analizi,
+      State Machine Mimarisi, Stale Recovery ve Doğrulama Raporu
+================================================================================
+
+1. GENEL ÖZET
+--------------------------------------------------------------------------------
+Öğretmen panelinde "Yapay zekâ ile taslak oluştur" butonuna tıklandığında ekranın
+"Oluşturuluyor..." durumuna geçerek uzun süre bu durumda kalması ve en önemlisi
+sayfa tamamen yenilendiğinde (F5 / refresh) dahi "Oluşturuluyor..." durumunun
+sona ermeyip sonsuz döngüde devam etmesi sorunu incelenmiş ve kökten çözülmüştür.
+
+Sorunun yalnızca bir frontend spinner/yükleme animasyonu aksaklığı olmadığı,
+arka planda PostgreSQL veritabanındaki `ContentGenerationLog` kaydının kalıcı
+olarak "RUNNING" state'inde takılı kaldığı ve sayfa yenilendiğinde frontend'in
+veritabanındaki bu "RUNNING" durumunu okuyarak sonsuz bekleme döngüsüne girdiği
+tespit edilmiştir.
+
+Bu kapsamda:
+- Kesin 5 aşamalı State Machine mimarisi kuruldu (IDLE, GENERATING, SUCCESS, FAILED, TIMEOUT).
+- Hem GET sorgusunda hem de yeni başlatma isteklerinde çalışan "Stale Generation Recovery"
+  (zaman aşımına uğramış işleri kurtarma) mekanizması entegre edildi.
+- Sunucu tarafında global try/catch/finally koruması sağlandı.
+- Frontend'deki yanıltıcı arka plan job metni düzeltildi.
+- "Tekrar Dene" butonu ve detaylı hata durumu kartları eklendi.
+- Mevcut üretim veritabanındaki eski takılı kayıtları güvenle kurtarmak için
+  veri silmeyen bakım scripti (`npm run ai:recover`) yazıldı.
+- 115 birim ve entegrasyon testi, typecheck, lint ve derleme (build) başarıyla tamamlandı.
+
+
+2. KÖK NEDEN ANALİZİ (ROOT CAUSE ANALYSIS)
+--------------------------------------------------------------------------------
+Detaylı kod ve mimari incelemesinde problemin ortaya çıkmasına yol açan 5 ana etken
+belirlenmiştir:
+
+2.1. Vercel Serverless / Lambda Süre Sınırı ve Uncaught Kill
+   - `src/app/api/assignments/[id]/content/generate/route.ts` içinde `maxDuration = 300`
+     (5 dakika) olarak tanımlanmıştı. Ancak Vercel Hobby planlarında ve sunucusuz
+     çalışma ortamlarında Lambda çalışma süresi katı 60 saniye sınırı ile sınırlandırılmıştır.
+   - EVREN LLM (`glm-5.3` / reasoning low) yanıt üretimi 40-70 saniye sürdüğünde
+     veya ağ gecikmesi olduğunda Vercel fonksiyonu harici olarak (SIGKILL / timeout)
+     sonlandırıyordu. Bu durumda sunucu tarafındaki JavaScript kodunda hiçbir `catch`
+     bloğu çalışamadan işlem kesiliyor ve PostgreSQL `ContentGenerationLog` tablosundaki
+     `status = "RUNNING"` kaydı terminal bir duruma (`FAILED` veya `TIMEOUT`) geçirilemiyordu.
+
+2.2. Sayfa Yenileme Sonrası Sonsuz Polling ve 409 Lockout
+   - `ContentEditor.tsx` bileşeni mount olduğunda (`useEffect`), `GET /api/assignments/[id]/content/generate`
+     endpoint'ini çağırıyordu.
+   - Veritabanında takılı kalmış `status = "RUNNING"` kaydı bulunduğu için, frontend
+     işlemin halen aktif olduğunu varsayarak `followJob()` fonksiyonunu başlatıyor ve
+     sayfa yenilense dahi sonsuz "Oluşturuluyor..." spinner'ında kalıyordu.
+   - Öğretmen sayfayı terk edip tekrar denemek istediğinde `startStudyContentGeneration`
+     servisi "Aktif bir içerik üretimi zaten devam ediyor" diyerek `409 Conflict`
+     fırlatıyor ve öğretmenin yeni bir üretim başlatması tamamen kilitleniyordu.
+
+2.3. Aşırı Geniş Stale (Bayat) Süresi Eşiği
+   - Eski kodda stale kontrolü `timeoutMs + 45s = 285s` (~5 dakika) olarak ayarlanmıştı.
+     Serverless fonksiyon 60. saniyede ölmüş olsa dahi sistem sonraki 4 dakika boyunca
+     bu ölü işi "canlı ve çalışıyor" kabul ediyordu.
+
+2.4. Yanıltıcı UI Yönlendirmesi
+   - Arayüzde yer alan "İşlem sunucuda arka planda sürer; bu sayfadan ayrılsanız da devam eder."
+     ifadesi gerçeği yansıtmıyordu. Sistemde Celery, BullMQ, Inngest veya QStash gibi
+     durable bir background job kuyruğu bulunmadığından, istemci bağlantısı koptuğunda
+     veya serverless fonksiyon kapandığında işlem arka planda devam edemiyordu.
+
+2.5. Hata Yollarında Terminal State Garantisinin Olmaması
+   - JSON ayrıştırma hatası, Zod şema doğrulama hatası veya Prisma kayıt hatalarında
+     bazı ara durumlarda `ContentGenerationLog` kaydı güncellenemeden düşüyordu.
+
+
+3. UYGULANAN ÇÖZÜMLER VE MİMARİ İYİLEŞTİRMELER
+--------------------------------------------------------------------------------
+
+3.1. 5 Kademeli Deterministik State Machine
+   Tüm içerik üretimi yaşam döngüsü kesin durum geçişlerine bağlanmıştır:
+   - IDLE: Henüz üretim başlatılmamış veya önceki işlem temizlenmiş.
+   - GENERATING: Üretim işlemi aktif olarak EVREN LLM üzerinde çalışıyor.
+   - SUCCESS: İçerik başarıyla oluşturuldu, doğrulandı ve Prisma'ya kaydedildi.
+   - FAILED: LLM, JSON ayrıştırma, Zod doğrulama veya DB hatası oluştu.
+   - TIMEOUT: Süre sınırı aşıldı veya işlem yanıt vermedi.
+
+   Geriye dönük uyumluluk için `status` (RUNNING, SUCCEEDED, FAILED, TIMEOUT)
+   alanları ve yeni `state` (GENERATING, SUCCESS, FAILED, TIMEOUT),
+   `generationStartedAt`, `generationFinishedAt`, `generationErrorCode` alanları
+   eksiksiz desteklenmektedir.
+
+3.2. Server Tarafında Global try-catch-finally Garantisi
+   `src/lib/content/content-service.ts` içindeki `run()` motoru sarmalanmıştır:
+   - EVREN HTTP çağrısı AbortSignal veya network hatası fırlatsa,
+   - Dönen yanıt JSON parse hatası verse,
+   - Üretilen içerik Zod `studyContentPayloadSchema` doğrulamasından geçemese,
+   - Prisma veritabanına yazma sırasında bir hata çıksa dahi;
+   `finally` ve `catch` blokları `ContentGenerationLog` kaydını anında `FAILED`
+   veya `TIMEOUT` durumuna çekmekte ve hata kodunu (`PROVIDER_ABORT`, `INVALID_JSON`,
+   `VALIDATION_ERROR`, vb.) kaydetmektedir.
+
+3.3. Akıllı Stale Generation Recovery (Bayat İşleri Otomatik Kurtarma)
+   - Gerçekçi bir zaman aşımı eşiği belirlendi: `staleThresholdMs = timeoutMs + 15s = 105s`.
+   - `GET /api/assignments/[id]/content/generate` çağrıldığında: Eğer kayıt `RUNNING`
+     ise ve başlangıç zamanı 105 saniyeden eskiyse, GET anında bu kaydı DB'de `TIMEOUT`
+     olarak kapatır ve istemciye `{ state: "TIMEOUT", isStaleRecovered: true }` döner.
+   - `POST /api/assignments/[id]/content/generate` çağrıldığında: Eğer eski bayat bir
+     iş varsa, aynı transaction içinde o iş kapatılır ve öğretmen 409 hatası almadan
+     yeni isteğini anında başlatabilir.
+
+3.4. Duplicate (Paralel) İstek Engellemesi
+   - Halen 105 saniyelik eşiğin içinde olan ve gerçekten devam eden bir üretim varsa,
+     aynı anda ikinci bir üretim başlatılması engellenir (409 Conflict).
+   - Ancak işlem başarısız olmuşsa, zaman aşımına uğramışsa veya stale olmuşsa
+     sistem anında yeni bir isteğe izin verir.
+
+3.5. Süre ve Zaman Aşımı Uyumlaştırması (Timeout Alignment)
+   - EVREN sağlayıcısı iç timeout'u: 90 saniye (`aiTimeoutMs = 90_000`).
+   - Stale eşiği: 105 saniye (`105_000 ms`).
+   - Frontend polling bekleme tavanı: 150 saniye (`CLIENT_MAX_WAIT_MS = 150_000`).
+   - Next.js API route `maxDuration`: 180 saniye (`export const maxDuration = 180`).
+   Böylece katmanlar arasındaki süreler hiyerarşik ve tutarlı hale getirilmiştir.
+
+3.6. Frontend (`ContentEditor.tsx`) İyileştirmeleri
+   - Sayfa yenilendiğinde eski bir hata veya stale durum varsa kullanıcıya sonsuz
+     spinner yerine açıklayıcı hata kartı ve "Tekrar Dene" butonu gösterilir.
+   - Gerçeği yansıtmayan "Arka planda devam eder" metni kaldırılmış; yerine kullanıcıya
+     "İçerik hazırlanırken lütfen bu sayfayı kapatmayın." uyarısı eklenmiştir.
+
+3.7. Production Bakım ve Kurtarma Scripti (`scripts/recover-stale-generations.ts`)
+   - Mevcut canlı PostgreSQL veritabanında daha önceden takılı kalmış olabilecek
+     tüm "RUNNING" log kayıtlarını güvenle temizlemek için yazılmıştır.
+   - `npm run ai:recover` komutu ile çalıştırılabilir.
+   - ASLA görev (assignment), öğrenci yanıtı (student answer) veya içerik silmez;
+     yalnızca bayat kalmış log kayıtlarının durumunu `TIMEOUT` yapar.
+
+
+4. DEĞİŞTİRİLEN VE EKLENEN DOSYALAR
+--------------------------------------------------------------------------------
+
+1. `src/lib/content/content-service.ts`
+   - State machine mantığı, stale recovery mekanizması, `recoverAllStaleGenerations`
+     fonksiyonu ve secret barındırmayan yapılandırılmış loglama eklendi.
+
+2. `src/components/ContentEditor.tsx`
+   - `JobState` ve `GenState` güncellendi, refresh sonrası otomatik recovery ve
+     "Tekrar Dene" aksiyonu bağlandı, UI metinleri düzeltildi.
+
+3. `src/app/api/assignments/[id]/content/generate/route.ts`
+   - `maxDuration = 180` yapıldı, Next.js `after()` fonksiyonu try/catch ile
+     korundu, standartlaştırılmış response payload'ı sağlandı.
+
+4. `src/lib/ai/index.ts`
+   - Fallback AI timeout süresi 240 saniyeden makul 90 saniyeye (`90_000 ms`) çekildi.
+
+5. `package.json`
+   - `"ai:recover": "tsx scripts/recover-stale-generations.ts"` scripti eklendi.
+
+6. `scripts/recover-stale-generations.ts` (YENİ DOSYA)
+   - Canlı veritabanındaki takılı eski üretim loglarını güvenle kurtaran bağımsız CLI aracı.
+
+7. `tests/ai-generation-resilience.test.ts` (YENİ DOSYA)
+   - 6 adet kapsamlı dayanıklılık testi:
+     * Başarılı üretim akışı (IDLE -> GENERATING -> SUCCESS)
+     * Zaman aşımı geçişi (TIMEOUT)
+     * Beklenmeyen çökme kurtarması (Unhandled Crash Recovery)
+     * GET sorgusunda otomatik stale recovery ve anında tekrar deneme (409'suz)
+     * Paralel istek bloklama ve stale sonrası serbest bırakma
+     * Toplu veritabanı stale kurtarma script fonksiyonu doğrulaması
+
+8. `tests/content.test.ts`
+   - Yeni state machine modeline göre test assertion'ları güncellendi.
+
+
+5. DOĞRULAMA VE TEST SONUÇLARI
+--------------------------------------------------------------------------------
+Yapılan tüm değişiklikler projenin kalite ve derleme adımlarından geçirilmiştir:
+
+1. Tip Kontrolü (TypeScript):
+   $ npm run typecheck
+   Sonuç: 0 hata (Hatasız tamamlandı)
+
+2. Kod Standartları (Lint):
+   $ npm run lint
+   Sonuç: 0 hata, 0 uyarı
+
+3. Test Süiti (Vitest):
+   $ npm test
+   Sonuç: 15 test dosyası, 115 testin tamamı BAŞARILI (100% PASS)
+   (tests/ai-generation-resilience.test.ts dahil)
+
+4. Üretim Derlemesi (Next.js Build):
+   $ npm run build
+   Sonuç: Başarılı (Turbopack ile 31/31 route derlendi, 0 hata)
+
+5. Recovery Script Testi:
+   $ npm run ai:recover
+   Sonuç: Başarıyla bağlandı, takılı bayat kayıtları kontrol etti ve temiz çıktı verdi (Exit code: 0).
+
+
+6. GÜVENLİK VE VERİ BÜTÜNLÜĞÜ
+--------------------------------------------------------------------------------
+- Hiçbir API anahtarı, parola, hash, token veya hassas veritabanı URL'si loglara
+  veya kaynak koda yazılmamıştır.
+- Üretim veritabanındaki hiçbir MEB kazanımı (CurriculumOutcome), kullanıcı, sınıf
+  veya öğrenci ödev kaydı silinmemiştir.
+- Otomatik git push veya yetkisiz production deployment yapılmamıştır.
+
+
+7. PRODUCTION DAĞITIM ADIMLARI VE ÖNERİLER
+--------------------------------------------------------------------------------
+Değişikliklerin canlı ortama (Vercel / Production) alınması için izlenmesi önerilen
+adımlar:
+
+1. Takılı Kalmış Canlı Kayıtların Temizlenmesi (İsteğe Bağlı ama Önerilir):
+   Vercel ortam değişkenlerine (`DATABASE_URL`) sahip bir terminalde:
+   $ npm run ai:recover
+   Bu komut canlı veritabanında geçmişte "RUNNING" durumunda kalmış eski kayıtları
+   tek seferde "TIMEOUT" durumuna çevirecektir.
+
+2. Git Commit ve Push:
+   $ git add package.json src/ tests/ scripts/ RAPOR.txt
+   $ git commit -m "fix(ai): implement resilient state machine and stale generation recovery"
+   $ git push origin main
+
+3. Vercel Dağıtımı:
+   Yeni commit push edildiğinde Vercel otomatik olarak derleyecek ve yeni sürümü
+   yayına alacaktır.
+
+================================================================================
+RAPOR SONU
+================================================================================

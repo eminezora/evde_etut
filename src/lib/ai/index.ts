@@ -21,7 +21,7 @@ export const AI_FAILED_MESSAGE = "İçerik oluşturulamadı. Tekrar deneyebilir 
 
 export function aiTimeoutMs(env: NodeJS.ProcessEnv = process.env) {
   const v = Number(env.AI_TIMEOUT_MS);
-  return Number.isFinite(v) && v >= 5_000 ? v : 240_000;
+  return Number.isFinite(v) && v >= 5_000 ? v : 90_000;
 }
 
 export function getContentProvider(env: NodeJS.ProcessEnv = process.env): ContentGenerationProvider | null {

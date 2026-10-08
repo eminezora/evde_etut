@@ -23,7 +23,8 @@
     "test:postgres": "node scripts/db.mjs --postgres generate && vitest run",
     "db:deploy": "node scripts/db.mjs migrate deploy",
     "demo": "node scripts/db.mjs --dev generate && tsx scripts/seed-demo.ts",
-    "test:evren": "node scripts/db.mjs --sqlite generate && EVREN_LIVE=1 vitest run tests/evren-live.test.ts"
+    "test:evren": "node scripts/db.mjs --sqlite generate && EVREN_LIVE=1 vitest run tests/evren-live.test.ts",
+    "ai:recover": "tsx scripts/recover-stale-generations.ts"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",

@@ -44,14 +44,19 @@ async function send(url: string, method: string, body?: unknown) {
 }
 
 type Scope = "ALL" | "SUMMARY" | "QUESTIONS";
-type JobState = { state: "NONE" } | { state: "RUNNING"; jobId: string; scope: Scope } | { state: "SUCCEEDED"; jobId: string } | { state: "FAILED"; jobId: string; message: string; reason?: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED" };
+type JobState =
+  | { state: "NONE" | "IDLE" }
+  | { state: "RUNNING" | "GENERATING"; jobId: string; scope: Scope; startedAt?: string; generationStartedAt?: string }
+  | { state: "SUCCEEDED" | "SUCCESS"; jobId: string }
+  | { state: "TIMEOUT"; jobId: string; message: string; isStaleRecovered?: boolean }
+  | { state: "FAILED"; jobId: string; message: string; reason?: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED"; isStaleRecovered?: boolean };
 /** Generation UI state. Every path out of "generating" ends in success, failed or timeout. */
 type GenState = "idle" | "generating" | "success" | "failed" | "timeout";
-const SLOW_AFTER_S = 120;
+const SLOW_AFTER_S = 60;
 
-const POLL_MS = 3000;
-// The server closes a job after AI_TIMEOUT_MS + 45 s at most; this client cap is only a last resort.
-const CLIENT_MAX_WAIT_MS = 6 * 60_000;
+const POLL_MS = 2500;
+// Client timeout aligned with backend: 150 seconds max.
+const CLIENT_MAX_WAIT_MS = 150_000;
 const DONE_KEY = (id: string) => `content-generated:${id}`;
 const GENERATED_TEXT = "Taslak oluşturuldu. Yayınlamadan önce inceleyip düzenleyin.";
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -156,8 +161,8 @@ export function ContentEditor({
           continue;
         }
         networkErrors = 0;
-        if (job.state === "RUNNING" && job.jobId === jobId) continue;
-        if (job.state === "SUCCEEDED") {
+        if ((job.state === "RUNNING" || job.state === "GENERATING") && job.jobId === jobId) continue;
+        if (job.state === "SUCCEEDED" || job.state === "SUCCESS") {
           try {
             sessionStorage.setItem(DONE_KEY(assignmentId), "1");
           } catch {
@@ -170,8 +175,15 @@ export function ContentEditor({
           router.refresh();
           return;
         }
-        if (job.state === "FAILED") endGeneration(job.reason === "TIMEOUT" ? "timeout" : "failed", scope, job.message);
-        else endGeneration("failed", scope, "İçerik oluşturulamadı. Lütfen tekrar deneyin.");
+        if (job.state === "TIMEOUT") {
+          endGeneration("timeout", scope, job.message || "Yapay zekâ yanıtı zamanında gelmedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.");
+          return;
+        }
+        if (job.state === "FAILED") {
+          endGeneration(job.reason === "TIMEOUT" ? "timeout" : "failed", scope, job.message || "İçerik oluşturulamadı. Lütfen tekrar deneyin.");
+          return;
+        }
+        endGeneration("failed", scope, "İçerik oluşturulamadı. Lütfen tekrar deneyin.");
         return;
       }
     },
@@ -180,6 +192,7 @@ export function ContentEditor({
 
   // On mount: show the "draft ready" notice after the reload, or resume a job that is still running
   // (e.g. the teacher refreshed the page while the draft was being prepared).
+  // Also recovers stale/failed states without getting stuck in an infinite spinner.
   useEffect(() => {
     alive.current = true;
     let justGenerated = false;
@@ -194,8 +207,21 @@ export function ContentEditor({
       fetch(`/api/assignments/${assignmentId}/content/generate`, { cache: "no-store" })
         .then((r) => (r.ok ? r.json() : null))
         .then((json) => {
-          const job = json?.data as (JobState & { startedAt?: string }) | undefined;
-          if (alive.current && job?.state === "RUNNING") void followJob(job.jobId, job.scope, job.startedAt ? Date.parse(job.startedAt) : Date.now());
+          if (!alive.current) return;
+          const job = json?.data as JobState | undefined;
+          if (!job) return;
+          if (job.state === "RUNNING" || job.state === "GENERATING") {
+            const started = job.generationStartedAt ? Date.parse(job.generationStartedAt) : job.startedAt ? Date.parse(job.startedAt) : Date.now();
+            void followJob(job.jobId, job.scope, started);
+          } else if (job.state === "TIMEOUT") {
+            setGenState("timeout");
+            setGenError(job.message || "Önceki içerik oluşturma işlemi zaman aşımına uğradı. Lütfen tekrar deneyin.");
+            setRetryScope("ALL");
+          } else if (job.state === "FAILED" && job.isStaleRecovered) {
+            setGenState("failed");
+            setGenError(job.message || "Önceki içerik oluşturma işlemi tamamlanamadı. Lütfen tekrar deneyin.");
+            setRetryScope("ALL");
+          }
         })
         .catch(() => undefined);
     }
@@ -300,8 +326,8 @@ export function ContentEditor({
                   <div>
                     <strong>{elapsed >= SLOW_AFTER_S ? "İşlem beklenenden uzun sürüyor." : "İçerik hazırlanıyor, bu işlem biraz sürebilir."}</strong>
                     <p className="muted" style={{ margin: "2px 0 0" }}>
-                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yavaş yanıt veriyor; en fazla birkaç dakika içinde sonuç ya da hata mesajı göreceksiniz." : "Genellikle 1–2 dakika sürer."}
-                      {elapsed > 0 ? ` · ${elapsed} sn` : ""} İşlem sunucuda arka planda sürer; bu sayfadan ayrılsanız da devam eder.
+                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yavaş yanıt veriyor; lütfen bekleyin." : "Genellikle 1–2 dakika sürer."}
+                      {elapsed > 0 ? ` · ${elapsed} sn` : ""} İçerik hazırlanırken lütfen bu sayfayı kapatmayın.
                     </p>
                   </div>
                 </div>

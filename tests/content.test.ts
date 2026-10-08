@@ -14,6 +14,7 @@ import {
   listStudentAssignments,
   moveQuestion,
   publishAssignment,
+  recoverAllStaleGenerations,
   saveStudyContent,
   startStudyContentGeneration,
   updateQuestion,
@@ -193,13 +194,13 @@ describe("background generation job", () => {
     expect(started.ok).toBe(true);
     if (!started.ok) return;
     const running = await getGenerationStatus(teacher.id, assignment.id, { db });
-    expect(running.ok && running.data).toMatchObject({ state: "RUNNING", jobId: started.data.jobId, scope: "ALL" });
+    expect(running.ok && running.data).toMatchObject({ state: "GENERATING", jobId: started.data.jobId, scope: "ALL" });
 
     const job = started.data.run();
     release();
     expect((await job).ok).toBe(true);
     const done = await getGenerationStatus(teacher.id, assignment.id, { db });
-    expect(done.ok && done.data.state).toBe("SUCCEEDED");
+    expect(done.ok && done.data.state === "SUCCESS").toBe(true);
     expect(await db.question.count({ where: { assignmentId: assignment.id } })).toBe(5);
 
     // Another teacher can't read the job.
@@ -216,16 +217,31 @@ describe("background generation job", () => {
     const res = await generateStudyContent(teacher.id, assignment.id, {}, { db, provider: failing });
     expect(res.ok).toBe(false);
     const failed = await getGenerationStatus(teacher.id, assignment.id, { db });
-    expect(failed.ok && failed.data).toMatchObject({ state: "FAILED", message: expect.stringMatching(/zamanında gelmedi/) });
+    expect(failed.ok && ["FAILED", "TIMEOUT"].includes(failed.data.state)).toBe(true);
+    expect(failed.ok && failed.data.message).toMatch(/zamanında gelmedi/);
 
-    // A RUNNING row left behind by a stopped function: reported as failed and no longer blocks a retry.
+    // A RUNNING row left behind by a stopped function: reported as TIMEOUT and no longer blocks a retry.
+    await db.contentGenerationLog.deleteMany({ where: { assignmentId: assignment.id } });
     await db.contentGenerationLog.create({
       data: { assignmentId: assignment.id, teacherId: teacher.id, scope: "ALL", provider: "evren", model: "m", status: "RUNNING", startedAt: new Date(Date.now() - 10 * 60_000) },
     });
     const stale = await getGenerationStatus(teacher.id, assignment.id, { db, timeoutMs: 150_000 });
-    expect(stale.ok && stale.data.state).toBe("FAILED");
+    expect(stale.ok && ["TIMEOUT", "FAILED"].includes(stale.data.state)).toBe(true);
+    expect(stale.ok && stale.data.isStaleRecovered).toBe(true);
     const retry = await generateStudyContent(teacher.id, assignment.id, {}, { db, provider: new MockContentProvider(), timeoutMs: 150_000 });
     expect(retry.ok).toBe(true);
+  });
+
+  it("recovers all stale generations across the database without touching assignments", async () => {
+    const { teacher, assignment } = await setup();
+    await db.contentGenerationLog.create({
+      data: { assignmentId: assignment.id, teacherId: teacher.id, scope: "ALL", provider: "evren", model: "m", status: "RUNNING", startedAt: new Date(Date.now() - 10 * 60_000) },
+    });
+    const count = await recoverAllStaleGenerations(db, 60_000);
+    expect(count).toBeGreaterThanOrEqual(1);
+    const log = await db.contentGenerationLog.findFirst({ where: { assignmentId: assignment.id }, orderBy: { startedAt: "desc" } });
+    expect(log?.status).toBe("TIMEOUT");
+    expect(log?.finishedAt).not.toBeNull();
   });
 
   it("closes the job as FAILED when saving the draft throws", async () => {

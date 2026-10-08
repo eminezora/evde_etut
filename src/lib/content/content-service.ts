@@ -85,13 +85,48 @@ export interface GenerateDeps {
  * A RUNNING log older than the AI timeout plus this margin belongs to a run that never finished
  * (e.g. the serverless function was stopped). It no longer blocks a retry and is reported as failed.
  */
-const STALE_MARGIN_MS = 45_000;
-const staleAfterMs = (timeoutMs: number) => timeoutMs + STALE_MARGIN_MS;
+export const STALE_MARGIN_MS = 15_000;
+export const staleThresholdMs = (timeoutMs: number) => timeoutMs + STALE_MARGIN_MS;
 
 export const AI_TIMEOUT_USER_MESSAGE = "Yapay zekâ yanıtı zamanında gelmedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.";
 export const AI_INVALID_USER_MESSAGE = "Yapay zekâ geçerli bir taslak üretemedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.";
 
-type GenerationOutcome = ContentResult<{ scope: string; questions: number | null }>;
+export type GenerationState = "IDLE" | "GENERATING" | "SUCCESS" | "FAILED" | "TIMEOUT";
+
+export type GenerationOutcome = ContentResult<{ scope: string; questions: number | null }>;
+
+function logLifecycle(event: string, meta: Record<string, unknown>) {
+  const parts = Object.entries(meta).map(([k, v]) => `${k}=${v}`).join(" ");
+  console.log(`[ai:lifecycle] ${event}: ${parts}`);
+}
+
+function logLifecycleError(event: string, meta: Record<string, unknown>) {
+  const parts = Object.entries(meta).map(([k, v]) => `${k}=${v}`).join(" ");
+  console.error(`[ai:lifecycle] ${event}: ${parts}`);
+}
+
+/**
+ * Recovers all stuck RUNNING logs across the database that exceeded the stale threshold.
+ * Non-destructive: only updates technical log rows, never touches assignments or student attempts.
+ */
+export async function recoverAllStaleGenerations(db: PrismaClient = defaultPrisma, timeoutMs = aiTimeoutMs()): Promise<number> {
+  const threshold = new Date(Date.now() - staleThresholdMs(timeoutMs));
+  const stale = await db.contentGenerationLog.updateMany({
+    where: {
+      status: "RUNNING",
+      startedAt: { lte: threshold },
+    },
+    data: {
+      status: "TIMEOUT",
+      finishedAt: new Date(),
+      errorMessage: "İşlem süresi aşıldığı için sistem tarafından sonlandırıldı.",
+    },
+  });
+  if (stale.count > 0) {
+    logLifecycle("stale_generation_recovered", { count: stale.count });
+  }
+  return stale.count;
+}
 
 /**
  * Phase 1 (fast, inside the request): validate, check ownership and take the per-assignment lock.
@@ -123,91 +158,166 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
   const questionCount = parsed.data.questionCount ?? a.questionCount;
   if (questionCount !== a.questionCount) await db.assignment.update({ where: { id: a.id }, data: { questionCount } });
 
-  // Server-side double-click guard: one live RUNNING generation per assignment.
+  // Server-side double-click guard with automatic stale recovery:
+  const thresholdDate = new Date(Date.now() - staleThresholdMs(timeoutMs));
   const lock = await db.$transaction(async (tx) => {
-    const running = await tx.contentGenerationLog.findFirst({
-      where: { assignmentId: a.id, status: "RUNNING", startedAt: { gt: new Date(Date.now() - staleAfterMs(timeoutMs)) } },
+    // 1. Recover any stale RUNNING job for this assignment
+    const staleLogs = await tx.contentGenerationLog.findMany({
+      where: { assignmentId: a.id, status: "RUNNING", startedAt: { lte: thresholdDate } },
     });
-    if (running) return null;
-    return tx.contentGenerationLog.create({ data: { assignmentId: a.id, teacherId, scope, provider: provider.name, model: provider.model, status: "RUNNING" } });
-  });
-  if (!lock) return fail(409, "IN_PROGRESS", "Bu görev için içerik zaten oluşturuluyor. Lütfen bekleyin.");
-
-  const finish = (status: string, extra: Prisma.ContentGenerationLogUpdateInput = {}) =>
-    db.contentGenerationLog.update({ where: { id: lock.id }, data: { status, finishedAt: new Date(), ...extra } });
-
-  async function run(): Promise<GenerationOutcome> {
-    const providerInput = {
-      scope,
-      subject: a.subject,
-      grade: a.grade,
-      unitOrTheme: a.unitOrTheme,
-      teacherTopic: a.topic,
-      questionCount,
-      outcomes: a.assignmentOutcomes.map(({ outcome }) => ({
-        code: outcome.outcomeCode,
-        text: outcome.outcomeText,
-        processComponents: Array.isArray(outcome.processComponents) ? (outcome.processComponents as string[]) : [],
-      })),
-    };
-    const outcomeCodes = a.assignmentOutcomes.map((ao) => ao.outcome.outcomeCode);
-    // One deadline for the whole job, including the single retry below.
-    const signal = AbortSignal.timeout(timeoutMs);
-    const startedAt = Date.now();
-    const canRetry = (attempt: number) => attempt === 1 && Date.now() - startedAt < timeoutMs / 2;
-
-    let result: Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>> | undefined;
-    let checked: ReturnType<typeof parseGeneratedContent> | undefined;
-    for (let attempt = 1; attempt <= 2; attempt++) {
-      try {
-        result = await provider!.generatePreparationContent(providerInput, { signal });
-      } catch (error) {
-        const kind = error instanceof ProviderError ? error.kind : "FAILED";
-        // A truncated/unparseable answer is retried once when there is enough time left.
-        if (kind === "INCOMPLETE" && canRetry(attempt)) continue;
-        const status = kind === "TIMEOUT" ? "TIMEOUT" : kind === "REFUSED" ? "REFUSED" : kind === "INCOMPLETE" ? "INVALID_RESPONSE" : "FAILED";
-        await finish(status, { errorMessage: error instanceof ProviderError ? error.message : "Beklenmeyen sağlayıcı hatası." }).catch(() => undefined);
-        return fail(kind === "TIMEOUT" ? 504 : 502, status, AI_FAILED_MESSAGE);
-      }
-      checked = parseGeneratedContent(scope, result.raw, { questionCount, allowedOutcomeCodes: outcomeCodes });
-      if (checked.ok || !canRetry(attempt)) break;
+    for (const stale of staleLogs) {
+      logLifecycle("stale_generation_recovered", { assignment: a.id, jobId: stale.id });
+      await tx.contentGenerationLog.update({
+        where: { id: stale.id },
+        data: {
+          status: "TIMEOUT",
+          finishedAt: new Date(),
+          errorMessage: "Zaman aşımı (yeni istek başlatıldığı için sonlandırıldı).",
+        },
+      });
     }
 
+    // 2. Check for active RUNNING job
+    const activeRunning = await tx.contentGenerationLog.findFirst({
+      where: { assignmentId: a.id, status: "RUNNING", startedAt: { gt: thresholdDate } },
+    });
+    if (activeRunning) return null;
+
+    // 3. Create new RUNNING log
+    return tx.contentGenerationLog.create({
+      data: { assignmentId: a.id, teacherId, scope, provider: provider.name, model: provider.model, status: "RUNNING" },
+    });
+  });
+
+  if (!lock) return fail(409, "IN_PROGRESS", "Bu görev için içerik zaten oluşturuluyor. Lütfen bekleyin.");
+  const lockRecord = lock;
+
+  const finish = async (status: string, extra: Prisma.ContentGenerationLogUpdateInput = {}) => {
     try {
+      return await db.contentGenerationLog.update({ where: { id: lockRecord.id }, data: { status, finishedAt: new Date(), ...extra } });
+    } catch (err) {
+      logLifecycleError("db_save_failed", { assignment: a.id, jobId: lockRecord.id, error: err instanceof Error ? err.message : String(err) });
+      return null;
+    }
+  };
+
+  async function run(): Promise<GenerationOutcome> {
+    const startedAt = Date.now();
+    logLifecycle("generation_started", { assignment: a.id, jobId: lockRecord.id, scope, provider: provider!.name, model: provider!.model });
+
+    try {
+      const providerInput = {
+        scope,
+        subject: a.subject,
+        grade: a.grade,
+        unitOrTheme: a.unitOrTheme,
+        teacherTopic: a.topic,
+        questionCount,
+        outcomes: a.assignmentOutcomes.map(({ outcome }) => ({
+          code: outcome.outcomeCode,
+          text: outcome.outcomeText,
+          processComponents: Array.isArray(outcome.processComponents) ? (outcome.processComponents as string[]) : [],
+        })),
+      };
+      const outcomeCodes = a.assignmentOutcomes.map((ao) => ao.outcome.outcomeCode);
+      const signal = AbortSignal.timeout(timeoutMs);
+      const canRetry = (attempt: number) => attempt === 1 && Date.now() - startedAt < timeoutMs / 2;
+
+      let result: Awaited<ReturnType<ContentGenerationProvider["generatePreparationContent"]>> | undefined;
+      let checked: ReturnType<typeof parseGeneratedContent> | undefined;
+
+      for (let attempt = 1; attempt <= 2; attempt++) {
+        logLifecycle("evren_request_started", { assignment: a.id, attempt });
+        try {
+          result = await provider!.generatePreparationContent(providerInput, { signal });
+          logLifecycle("evren_response_received", { assignment: a.id, attempt, elapsed_ms: Date.now() - startedAt });
+        } catch (error) {
+          const kind = error instanceof ProviderError ? error.kind : "FAILED";
+          logLifecycleError("evren_request_failed", { assignment: a.id, attempt, kind, error: error instanceof Error ? error.message : String(error) });
+          if (kind === "INCOMPLETE" && canRetry(attempt)) {
+            logLifecycle("retrying_generation", { assignment: a.id });
+            continue;
+          }
+          const isTimeout = kind === "TIMEOUT" || signal.aborted;
+          const status = isTimeout ? "TIMEOUT" : kind === "REFUSED" ? "REFUSED" : kind === "INCOMPLETE" ? "INVALID_RESPONSE" : "FAILED";
+          logLifecycleError(isTimeout ? "generation_timeout" : "generation_failed", { assignment: a.id, elapsed_ms: Date.now() - startedAt });
+          await finish(status, { errorMessage: error instanceof ProviderError ? error.message : "Beklenmeyen sağlayıcı hatası." });
+          return fail(isTimeout ? 504 : 502, status, AI_FAILED_MESSAGE);
+        }
+
+        try {
+          checked = parseGeneratedContent(scope, result.raw, { questionCount, allowedOutcomeCodes: outcomeCodes });
+        } catch (parseErr) {
+          logLifecycleError("parse_failed", { assignment: a.id, attempt, error: parseErr instanceof Error ? parseErr.message : String(parseErr) });
+          if (canRetry(attempt)) continue;
+          await finish("INVALID_RESPONSE", { errorMessage: "AI yanıtı JSON/şema ayrıştırma hatası." });
+          return fail(502, "INVALID_RESPONSE", AI_FAILED_MESSAGE);
+        }
+
+        if (checked.ok) {
+          logLifecycle("parse_success", { assignment: a.id });
+          logLifecycle("validation_success", { assignment: a.id });
+          break;
+        } else {
+          logLifecycleError("validation_failed", { assignment: a.id, attempt, issues: checked.issues.slice(0, 3).join("; ") });
+          if (!canRetry(attempt)) break;
+        }
+      }
+
       if (!result || !checked || !checked.ok) {
-        // Log schema paths only – never the raw model output.
-        await finish("INVALID_RESPONSE", { errorMessage: checked && !checked.ok ? checked.issues.slice(0, 20).join(" | ").slice(0, 2000) : "Geçerli yanıt alınamadı." });
+        logLifecycleError("generation_failed", { assignment: a.id, reason: "INVALID_RESPONSE", elapsed_ms: Date.now() - startedAt });
+        await finish("INVALID_RESPONSE", {
+          errorMessage: checked && !checked.ok ? checked.issues.slice(0, 20).join(" | ").slice(0, 2000) : "Geçerli yanıt alınamadı.",
+        });
         return fail(502, "INVALID_RESPONSE", AI_FAILED_MESSAGE);
       }
+
       const { content, questions } = checked.value;
 
-      await db.$transaction(async (tx) => {
-        if (content) {
-          const data = {
-            ...content,
-            status: "AI_GENERATED_DRAFT",
-            generatedBy: "AI",
-            aiModel: provider!.model,
-            teacherEditedAt: null,
-            teacherApprovedAt: null,
-          };
-          await tx.studyContent.upsert({ where: { assignmentId: a.id }, create: { assignmentId: a.id, ...data }, update: data });
-        } else if (a.studyContent?.status === "TEACHER_APPROVED") {
-          await tx.studyContent.update({ where: { assignmentId: a.id }, data: { status: "AI_GENERATED_DRAFT", teacherApprovedAt: null } });
-        }
-        if (questions) {
-          await tx.question.deleteMany({ where: { assignmentId: a.id } });
-          await writeQuestions(tx, a.id, questions, (q) => resolveOutcomeIds(a, q.curriculumOutcomeCodes).ids, "AI");
-        }
-      }, {
-        maxWait: 10000,
-        timeout: 20000,
-      });
+      try {
+        await db.$transaction(async (tx) => {
+          if (content) {
+            const data = {
+              ...content,
+              status: "AI_GENERATED_DRAFT",
+              generatedBy: "AI",
+              aiModel: provider!.model,
+              teacherEditedAt: null,
+              teacherApprovedAt: null,
+            };
+            await tx.studyContent.upsert({ where: { assignmentId: a.id }, create: { assignmentId: a.id, ...data }, update: data });
+          } else if (a.studyContent?.status === "TEACHER_APPROVED") {
+            await tx.studyContent.update({ where: { assignmentId: a.id }, data: { status: "AI_GENERATED_DRAFT", teacherApprovedAt: null } });
+          }
+          if (questions) {
+            await tx.question.deleteMany({ where: { assignmentId: a.id } });
+            await writeQuestions(tx, a.id, questions, (q) => resolveOutcomeIds(a, q.curriculumOutcomeCodes).ids, "AI");
+          }
+        }, {
+          maxWait: 10000,
+          timeout: 20000,
+        });
+        logLifecycle("db_save_success", { assignment: a.id, questions: questions?.length ?? 0 });
+      } catch (dbErr) {
+        logLifecycleError("db_save_failed", { assignment: a.id, error: dbErr instanceof Error ? dbErr.message : String(dbErr) });
+        await finish("FAILED", { errorMessage: "Taslak veritabanına kaydedilemedi." });
+        return fail(502, "FAILED", AI_FAILED_MESSAGE);
+      }
+
       await finish("SUCCEEDED", { generatedAt: new Date(), inputTokens: result.inputTokens, outputTokens: result.outputTokens });
+      logLifecycle("generation_success", { assignment: a.id, total_duration_ms: Date.now() - startedAt });
       return { ok: true, data: { scope, questions: questions?.length ?? null } } as const;
-    } catch {
-      await finish("FAILED", { errorMessage: "Taslak kaydedilemedi." }).catch(() => undefined);
-      return fail(502, "FAILED", AI_FAILED_MESSAGE);
+    } catch (unexpected) {
+      const elapsed = Date.now() - startedAt;
+      const isTimeout = unexpected instanceof ProviderError && unexpected.kind === "TIMEOUT";
+      const status = isTimeout ? "TIMEOUT" : "FAILED";
+      logLifecycleError(isTimeout ? "generation_timeout" : "generation_failed", {
+        assignment: a.id,
+        total_duration_ms: elapsed,
+        error: unexpected instanceof Error ? unexpected.message : String(unexpected),
+      });
+      await finish(status, { errorMessage: unexpected instanceof Error ? unexpected.message.slice(0, 1000) : "Beklenmeyen sunucu hatası." });
+      return fail(isTimeout ? 504 : 502, status, AI_FAILED_MESSAGE);
     }
   }
 
@@ -222,10 +332,76 @@ export async function generateStudyContent(teacherId: string, assignmentId: stri
 }
 
 export type GenerationStatus =
-  | { state: "NONE" }
-  | { state: "RUNNING"; jobId: string; scope: string; startedAt: string }
-  | { state: "SUCCEEDED"; jobId: string; scope: string; finishedAt: string | null }
-  | { state: "FAILED"; jobId: string; scope: string; finishedAt: string | null; message: string; reason: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED" };
+  | {
+      state: "IDLE";
+      status: "IDLE";
+      jobId?: undefined;
+      scope?: undefined;
+      generationStartedAt?: undefined;
+      generationFinishedAt?: undefined;
+      startedAt?: undefined;
+      finishedAt?: undefined;
+      message?: undefined;
+      generationErrorCode?: undefined;
+      reason?: undefined;
+      isStaleRecovered?: undefined;
+    }
+  | {
+      state: "GENERATING";
+      status: "RUNNING";
+      jobId: string;
+      scope: string;
+      generationStartedAt: string;
+      startedAt: string;
+      generationFinishedAt?: undefined;
+      finishedAt?: undefined;
+      message?: undefined;
+      generationErrorCode?: undefined;
+      reason?: undefined;
+      isStaleRecovered?: undefined;
+    }
+  | {
+      state: "SUCCESS";
+      status: "SUCCEEDED";
+      jobId: string;
+      scope: string;
+      generationStartedAt: string;
+      generationFinishedAt: string | null;
+      startedAt: string;
+      finishedAt: string | null;
+      message?: undefined;
+      generationErrorCode?: undefined;
+      reason?: undefined;
+      isStaleRecovered?: undefined;
+    }
+  | {
+      state: "FAILED";
+      status: "FAILED";
+      jobId: string;
+      scope: string;
+      generationStartedAt: string;
+      generationFinishedAt: string | null;
+      startedAt: string;
+      finishedAt: string | null;
+      message: string;
+      generationErrorCode: string;
+      reason: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED";
+      isStaleRecovered?: boolean;
+    }
+  | {
+      state: "TIMEOUT";
+      status: "TIMEOUT";
+      jobId: string;
+      scope: string;
+      generationStartedAt: string;
+      generationFinishedAt: string | null;
+      startedAt: string;
+      finishedAt: string | null;
+      message: string;
+      generationErrorCode: "TIMEOUT";
+      reason: "TIMEOUT";
+      isStaleRecovered?: boolean;
+    };
 
 const failureMessage = (status: string) =>
   status === "TIMEOUT" ? AI_TIMEOUT_USER_MESSAGE : status === "INVALID_RESPONSE" ? AI_INVALID_USER_MESSAGE : AI_FAILED_MESSAGE;
@@ -239,20 +415,100 @@ export async function getGenerationStatus(
   const a = await db.assignment.findUnique({ where: { id: assignmentId }, select: { teacherId: true } });
   if (!a) return fail(404, "NOT_FOUND", "Görev bulunamadı.");
   if (a.teacherId !== teacherId) return fail(403, "FORBIDDEN", "Bu görev size ait değil.");
+
   let log = await db.contentGenerationLog.findFirst({ where: { assignmentId }, orderBy: { startedAt: "desc" } });
-  if (!log) return { ok: true, data: { state: "NONE" } };
-  if (log.status === "RUNNING" && log.startedAt.getTime() < now.getTime() - staleAfterMs(timeoutMs)) {
-    log = await db.contentGenerationLog.update({
-      where: { id: log.id },
-      data: { status: "TIMEOUT", finishedAt: now, errorMessage: "İşlem süresi içinde tamamlanmadı (sunucu işlemi durdu)." },
-    });
+  if (!log) return { ok: true, data: { state: "IDLE", status: "IDLE" } };
+
+  // Stale detection & auto-recovery
+  const threshold = staleThresholdMs(timeoutMs);
+  const ageMs = now.getTime() - log.startedAt.getTime();
+  let wasStaleRecovered = false;
+
+  if (log.status === "RUNNING" && ageMs > threshold) {
+    logLifecycle("stale_generation_recovered", { assignment: assignmentId, jobId: log.id, age_s: Math.round(ageMs / 1000) });
+    try {
+      log = await db.contentGenerationLog.update({
+        where: { id: log.id },
+        data: {
+          status: "TIMEOUT",
+          finishedAt: now,
+          errorMessage: "İşlem süresi içinde tamamlanmadı (önceki sunucu oturumu durduruldu).",
+        },
+      });
+      wasStaleRecovered = true;
+    } catch (err) {
+      logLifecycleError("db_save_failed", { assignment: assignmentId, error: err instanceof Error ? err.message : String(err) });
+    }
   }
-  const base = { jobId: log.id, scope: log.scope };
-  if (log.status === "RUNNING") return { ok: true, data: { state: "RUNNING", ...base, startedAt: log.startedAt.toISOString() } };
-  const finishedAt = log.finishedAt?.toISOString() ?? null;
-  if (log.status === "SUCCEEDED") return { ok: true, data: { state: "SUCCEEDED", ...base, finishedAt } };
-  const reason = log.status === "TIMEOUT" ? "TIMEOUT" : log.status === "INVALID_RESPONSE" ? "INVALID_RESPONSE" : "FAILED";
-  return { ok: true, data: { state: "FAILED", ...base, finishedAt, message: failureMessage(log.status), reason } };
+
+  const base = {
+    jobId: log.id,
+    scope: log.scope,
+    generationStartedAt: log.startedAt.toISOString(),
+    startedAt: log.startedAt.toISOString(),
+  };
+
+  if (log.status === "RUNNING") {
+    return {
+      ok: true,
+      data: {
+        state: "GENERATING",
+        status: "RUNNING",
+        ...base,
+      },
+    };
+  }
+
+  const finishedAtStr = log.finishedAt?.toISOString() ?? null;
+
+  if (log.status === "SUCCEEDED") {
+    return {
+      ok: true,
+      data: {
+        state: "SUCCESS",
+        status: "SUCCEEDED",
+        ...base,
+        generationFinishedAt: finishedAtStr,
+        finishedAt: finishedAtStr,
+      },
+    };
+  }
+
+  if (log.status === "TIMEOUT") {
+    const msg = wasStaleRecovered
+      ? "Önceki içerik oluşturma işlemi zaman aşımına uğradı (tamamlanamadı). Lütfen 'Tekrar Dene' ile yeniden deneyin."
+      : failureMessage("TIMEOUT");
+    return {
+      ok: true,
+      data: {
+        state: "TIMEOUT",
+        status: "TIMEOUT",
+        ...base,
+        generationFinishedAt: finishedAtStr,
+        finishedAt: finishedAtStr,
+        message: msg,
+        generationErrorCode: "TIMEOUT",
+        reason: "TIMEOUT",
+        isStaleRecovered: wasStaleRecovered,
+      },
+    };
+  }
+
+  const reason = log.status === "INVALID_RESPONSE" ? "INVALID_RESPONSE" : "FAILED";
+  return {
+    ok: true,
+    data: {
+      state: "FAILED",
+      status: "FAILED",
+      ...base,
+      generationFinishedAt: finishedAtStr,
+      finishedAt: finishedAtStr,
+      message: failureMessage(log.status),
+      generationErrorCode: log.status,
+      reason,
+      isStaleRecovered: wasStaleRecovered,
+    },
+  };
 }
 
 // ---------------------------------------------------------------------------------------------
