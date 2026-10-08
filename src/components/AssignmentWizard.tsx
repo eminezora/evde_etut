@@ -52,7 +52,7 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
   const [topic, setTopic] = useState("");
   const [minimumScore, setMinimumScore] = useState("70");
   const [deadline, setDeadline] = useState("");
-  const [questionCount, setQuestionCount] = useState("7");
+  const [questionCount, setQuestionCount] = useState("5");
 
   const [subjects, setSubjects] = useState<string[] | null>(null);
   const [units, setUnits] = useState<Unit[] | null>(null);

@@ -52,11 +52,11 @@ type JobState =
   | { state: "FAILED"; jobId: string; message: string; reason?: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED"; isStaleRecovered?: boolean };
 /** Generation UI state. Every path out of "generating" ends in success, failed or timeout. */
 type GenState = "idle" | "generating" | "success" | "failed" | "timeout";
-const SLOW_AFTER_S = 60;
+const SLOW_AFTER_S = 30;
 
 const POLL_MS = 2500;
-// Client timeout aligned with backend: 150 seconds max.
-const CLIENT_MAX_WAIT_MS = 150_000;
+// Client timeout aligned with backend: 65 seconds max (serverless hard limit + margin).
+const CLIENT_MAX_WAIT_MS = 65_000;
 const DONE_KEY = (id: string) => `content-generated:${id}`;
 const GENERATED_TEXT = "Taslak oluşturuldu. Yayınlamadan önce inceleyip düzenleyin.";
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -139,7 +139,7 @@ export function ContentEditor({
       while (alive.current) {
         setElapsed(Math.round((Date.now() - startedAt) / 1000));
         if (Date.now() - startedAt > CLIENT_MAX_WAIT_MS) {
-          endGeneration("timeout", scope, "Yapay zekâdan zamanında yanıt alınamadı. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.");
+          endGeneration("timeout", scope, "Yapay zekâ servisi beklenenden uzun sürdü. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
           return;
         }
         await sleep(POLL_MS);
@@ -176,14 +176,14 @@ export function ContentEditor({
           return;
         }
         if (job.state === "TIMEOUT") {
-          endGeneration("timeout", scope, job.message || "Yapay zekâ yanıtı zamanında gelmedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.");
+          endGeneration("timeout", scope, job.message || "Yapay zekâ servisi beklenenden uzun sürdü. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
           return;
         }
         if (job.state === "FAILED") {
-          endGeneration(job.reason === "TIMEOUT" ? "timeout" : "failed", scope, job.message || "İçerik oluşturulamadı. Lütfen tekrar deneyin.");
+          endGeneration(job.reason === "TIMEOUT" ? "timeout" : "failed", scope, job.message || "İçerik bu kez oluşturulamadı. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
           return;
         }
-        endGeneration("failed", scope, "İçerik oluşturulamadı. Lütfen tekrar deneyin.");
+        endGeneration("failed", scope, "İçerik bu kez oluşturulamadı. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
         return;
       }
     },
@@ -212,14 +212,20 @@ export function ContentEditor({
           if (!job) return;
           if (job.state === "RUNNING" || job.state === "GENERATING") {
             const started = job.generationStartedAt ? Date.parse(job.generationStartedAt) : job.startedAt ? Date.parse(job.startedAt) : Date.now();
-            void followJob(job.jobId, job.scope, started);
+            if (Date.now() - started >= 58_000) {
+              setGenState("timeout");
+              setGenError("Yapay zekâ servisi beklenenden uzun sürdü. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
+              setRetryScope(job.scope || "ALL");
+            } else {
+              void followJob(job.jobId, job.scope, started);
+            }
           } else if (job.state === "TIMEOUT") {
             setGenState("timeout");
-            setGenError(job.message || "Önceki içerik oluşturma işlemi zaman aşımına uğradı. Lütfen tekrar deneyin.");
+            setGenError(job.message || "Yapay zekâ servisi beklenenden uzun sürdü. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
             setRetryScope("ALL");
-          } else if (job.state === "FAILED" && job.isStaleRecovered) {
+          } else if (job.state === "FAILED") {
             setGenState("failed");
-            setGenError(job.message || "Önceki içerik oluşturma işlemi tamamlanamadı. Lütfen tekrar deneyin.");
+            setGenError(job.message || "İçerik bu kez oluşturulamadı. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.");
             setRetryScope("ALL");
           }
         })
@@ -348,9 +354,9 @@ export function ContentEditor({
                 <div style={{ padding: "12px 14px", backgroundColor: "var(--surface-subtle)", border: "1px solid var(--border)", borderRadius: "var(--radius-xs)", display: "flex", alignItems: "center", gap: 12 }} role="status" aria-live="polite">
                   <span style={{ fontSize: "1.1rem" }}>⏳</span>
                   <div>
-                    <strong>{elapsed >= SLOW_AFTER_S ? "İşlem beklenenden uzun sürüyor." : "İçerik pedagojik kurallara göre oluşturuluyor..."}</strong>
+                    <strong>{elapsed >= SLOW_AFTER_S ? "İşlem beklenenden uzun sürüyor." : "İçerik hazırlanıyor, lütfen bekleyin."}</strong>
                     <p className="muted" style={{ margin: "2px 0 0", fontSize: "0.82rem" }}>
-                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yanıt veriyor; lütfen bekleyin." : "Genellikle 30–60 saniye sürer."}
+                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yanıt veriyor; lütfen bekleyin." : "Genellikle 30–45 saniye sürer."}
                       {elapsed > 0 ? ` · ${elapsed} sn` : ""} Lütfen sayfayı kapatmayın.
                     </p>
                   </div>
@@ -359,8 +365,10 @@ export function ContentEditor({
 
               {(genState === "failed" || genState === "timeout") && !generating && (
                 <div className="error" role="alert" style={{ marginTop: 10 }}>
-                  <strong>{genState === "timeout" ? "Yapay zekâ zamanında yanıt vermedi." : "Taslak oluşturulamadı."}</strong>
-                  <p style={{ margin: "4px 0 8px", fontSize: "0.85rem" }}>{genError}</p>
+                  <strong>İçerik bu kez oluşturulamadı.</strong>
+                  <p style={{ margin: "4px 0 8px", fontSize: "0.85rem" }}>
+                    {genError || (genState === "timeout" ? "Yapay zekâ servisi beklenenden uzun sürdü. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz." : "İçerik bu kez oluşturulamadı. Tekrar deneyebilir veya içeriği manuel hazırlayabilirsiniz.")}
+                  </p>
                   {retryScope && (
                     <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working} style={{ minHeight: 30, fontSize: "0.8rem", padding: "2px 10px" }}>
                       Tekrar Dene

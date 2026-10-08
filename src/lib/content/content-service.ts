@@ -85,7 +85,7 @@ export interface GenerateDeps {
  * A RUNNING log older than the AI timeout plus this margin belongs to a run that never finished
  * (e.g. the serverless function was stopped). It no longer blocks a retry and is reported as failed.
  */
-export const STALE_MARGIN_MS = 15_000;
+export const STALE_MARGIN_MS = 6_000;
 export const staleThresholdMs = (timeoutMs: number) => timeoutMs + STALE_MARGIN_MS;
 
 export const AI_TIMEOUT_USER_MESSAGE = "Yapay zekâ yanıtı zamanında gelmedi. Lütfen tekrar deneyin veya içeriği manuel hazırlayın.";

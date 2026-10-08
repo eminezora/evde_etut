@@ -21,7 +21,8 @@ export const AI_FAILED_MESSAGE = "İçerik oluşturulamadı. Tekrar deneyebilir 
 
 export function aiTimeoutMs(env: NodeJS.ProcessEnv = process.env) {
   const v = Number(env.AI_TIMEOUT_MS);
-  return Number.isFinite(v) && v >= 5_000 ? v : 90_000;
+  // Default to 52 seconds to stay safely within Vercel's 60s function limit while allowing Node AbortSignal to trigger first.
+  return Number.isFinite(v) && v >= 5_000 ? v : 52_000;
 }
 
 export function getContentProvider(env: NodeJS.ProcessEnv = process.env): ContentGenerationProvider | null {
