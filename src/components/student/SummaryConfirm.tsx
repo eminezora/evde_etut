@@ -24,19 +24,24 @@ export function SummaryConfirm({ assignmentId, status, confirmed }: { assignment
 
   if (confirmed) {
     return (
-      <div className="card">
-        <p>✓ Özeti okuduğunu onayladın.</p>
+      <div className="editorial-panel" style={{ background: "var(--surface-subtle)" }}>
+        <p style={{ margin: "0 0 12px", fontWeight: 600, color: "var(--success)", display: "flex", alignItems: "center", gap: 8 }}>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          Özeti okuduğunu onayladın.
+        </p>
         {["READY_FOR_ASSESSMENT", "ASSESSMENT_IN_PROGRESS", "NEEDS_REVIEW"].includes(status) && (
           <a className="button primary" href={next}>Ön Bilgi Kontrolüne Geç</a>
         )}
       </div>
     );
   }
-  if (status === "EXPIRED") return <div className="card"><p className="error">Bu görevin son tarihi geçti.</p></div>;
+  if (status === "EXPIRED") return <div className="editorial-panel"><p className="error" style={{ margin: 0 }}>Bu görevin son tarihi geçti.</p></div>;
 
   return (
     <form
-      className="card"
+      className="editorial-panel"
       onSubmit={async (e) => {
         e.preventDefault();
         if (!checked) return;
@@ -56,12 +61,12 @@ export function SummaryConfirm({ assignmentId, status, confirmed }: { assignment
         router.refresh();
       }}
     >
-      <label className="row" style={{ fontWeight: 600, flexWrap: "nowrap" }}>
-        <input type="checkbox" checked={checked} onChange={(e) => setChecked(e.target.checked)} />
-        Özeti okudum ve temel kavramları anladım.
+      <label className="row" style={{ fontWeight: 600, flexWrap: "nowrap", cursor: "pointer", userSelect: "none" }}>
+        <input type="checkbox" checked={checked} onChange={(e) => setChecked(e.target.checked)} style={{ width: 18, height: 18, accentColor: "var(--accent)" }} />
+        <span>Özeti okudum ve temel kavramları anladım.</span>
       </label>
-      {error && <p className="error" role="alert">{error}</p>}
-      <button className="primary" type="submit" disabled={!checked || busy} style={{ marginTop: 12 }}>
+      {error && <p className="error" role="alert" style={{ marginTop: 10 }}>{error}</p>}
+      <button className="primary" type="submit" disabled={!checked || busy} style={{ marginTop: 14 }}>
         {busy ? "Kaydediliyor…" : "Ön Bilgi Kontrolüne Geç"}
       </button>
     </form>

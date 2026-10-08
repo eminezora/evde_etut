@@ -138,11 +138,11 @@ export function ClassroomActions({ classroom, studentCount, assignmentCount }: C
   return (
     <div style={{ marginBottom: 20 }}>
       {isArchived && (
-        <div className="warning-banner" style={{ marginBottom: 16, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div className="editorial-panel" style={{ borderLeft: "4px solid var(--amber)", marginBottom: 16, padding: "14px 18px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
           <div>
-            <strong>⚠️ Bu sınıf arşivlenmiştir.</strong>
+            <strong style={{ color: "var(--amber)" }}>Arşivlenmiş Sınıf:</strong>
             <p className="muted" style={{ margin: "4px 0 0", fontSize: "0.88rem" }}>
-              Arşivlenmiş sınıflar öğrencilerin aktif listesinde görünmez ve yeni öğrenci katılımı kabul etmez. Raporlar ve geçmiş çalışmalar korunur.
+              Arşivlenmiş sınıflar öğrencilerin aktif listesinde görünmez ve yeni katılım kabul etmez. Raporlar ve geçmiş çalışmalar güvenle korunur.
             </p>
           </div>
           <button type="button" onClick={handleRestore} disabled={busy} className="button primary" style={{ minHeight: 36 }}>
@@ -151,7 +151,7 @@ export function ClassroomActions({ classroom, studentCount, assignmentCount }: C
         </div>
       )}
 
-      {error && <div className="error" style={{ marginBottom: 12 }}>{error}</div>}
+      {error && <div className="notice-inline error" style={{ marginBottom: 12 }}>{error}</div>}
       {success && <div className="notice-inline ok" style={{ marginBottom: 12 }}>{success}</div>}
 
       <div className="row" style={{ gap: 8, flexWrap: "wrap" }}>
@@ -164,7 +164,7 @@ export function ClassroomActions({ classroom, studentCount, assignmentCount }: C
           className="button"
           style={{ minHeight: 34, fontSize: "0.88rem" }}
         >
-          ✏️ Sınıfı Düzenle
+          Sınıfı Düzenle
         </button>
 
         <button
@@ -176,7 +176,7 @@ export function ClassroomActions({ classroom, studentCount, assignmentCount }: C
           className="button"
           style={{ minHeight: 34, fontSize: "0.88rem" }}
         >
-          🔄 Katılım Kodunu Yenile
+          Katılım Kodunu Yenile
         </button>
 
         {!isArchived && (
@@ -190,11 +190,11 @@ export function ClassroomActions({ classroom, studentCount, assignmentCount }: C
             style={{
               minHeight: 34,
               fontSize: "0.88rem",
-              color: isEmpty ? "var(--danger)" : "var(--warn-text)",
-              borderColor: isEmpty ? "var(--danger-border)" : "var(--warn-border)",
+              color: isEmpty ? "var(--crimson)" : "var(--amber)",
+              borderColor: "var(--border)",
             }}
           >
-            {isEmpty ? "🗑️ Sınıfı Sil" : "📦 Sınıfı Arşivle"}
+            {isEmpty ? "Sınıfı Sil" : "Sınıfı Arşivle"}
           </button>
         )}
       </div>
@@ -306,7 +306,7 @@ export function ClassroomActions({ classroom, studentCount, assignmentCount }: C
                   Bu sınıfı arşivlemek istediğinizden emin misiniz?
                 </p>
                 <div className="info" style={{ marginTop: 8, fontSize: "0.88rem" }}>
-                  💡 <strong>Verileriniz Korunur:</strong> Sınıftaki {studentCount} öğrencinin geçmiş çalışma kayıtları, tamamlanan görevler ve başarı raporları silinmez. Sınıf aktif listenizden kaldırılarak arşiv bölümüne taşınır. İleride istediğiniz zaman tekrar aktif edebilirsiniz.
+                  <strong>Verileriniz Korunur:</strong> Sınıftaki {studentCount} öğrencinin geçmiş çalışma kayıtları, tamamlanan görevler ve başarı raporları silinmez. Sınıf aktif listenizden kaldırılarak arşiv bölümüne taşınır. İleride istediğiniz zaman tekrar aktif edebilirsiniz.
                 </div>
               </div>
             )}

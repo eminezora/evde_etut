@@ -10,14 +10,21 @@ export default async function AdminAuditLogPage() {
 
   return (
     <div>
-      <div style={{ marginBottom: 20 }}>
-        <h1 style={{ margin: "0 0 6px", fontSize: "1.4rem", fontWeight: 700 }}>İşlem Geçmişi (Audit Log)</h1>
-        <p className="muted" style={{ margin: 0, fontSize: "0.95rem" }}>
-          Sistem yöneticileri tarafından gerçekleştirilen kritik operasyonların ve değişikliklerin kayıtları.
+      <div style={{ marginBottom: 24 }}>
+        <div className="editorial-kicker">GÜVENLİK VE DENETİM İZİ</div>
+        <h1 style={{ margin: "4px 0 6px", fontSize: "1.45rem", fontWeight: 700 }}>İşlem Geçmişi (Audit Log)</h1>
+        <p className="muted" style={{ margin: 0, fontSize: "0.92rem" }}>
+          Sistem yöneticileri tarafından gerçekleştirilen kritik operasyonların ve değişikliklerin denetim kayıtları.
         </p>
       </div>
 
-      <div className="card" style={{ padding: 0, overflow: "hidden" }}>
+      <div className="editorial-panel" style={{ padding: 0, overflow: "hidden" }}>
+        <div className="editorial-panel-header" style={{ padding: "14px 20px" }}>
+          <div>
+            <h2 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700 }}>Sistem Olay Günlüğü</h2>
+            <p className="muted" style={{ margin: "2px 0 0", fontSize: "0.8rem" }}>Son 100 yönetici işlemi listeleniyor</p>
+          </div>
+        </div>
         <div className="table-scroll">
           <table>
             <thead>

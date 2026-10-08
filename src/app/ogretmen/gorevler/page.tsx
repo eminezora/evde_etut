@@ -1,26 +1,34 @@
 import Link from "next/link";
 import { requireTeacher } from "@/lib/auth/current-user.ts";
 import { listAssignmentsForTeacher } from "@/lib/assignments/assignment-service.ts";
-import { formatDate, statusLabel } from "@/lib/assignments/format.ts";
+import { formatDate } from "@/lib/assignments/format.ts";
 import { countPendingReviews } from "@/lib/assessment/review-service.ts";
 
-export default async function AssignmentsPage({ searchParams }: { searchParams: Promise<{ arsiv?: string; silindi?: string }> }) {
+export default async function AssignmentsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ arsiv?: string; silindi?: string }>;
+}) {
   const teacher = await requireTeacher();
   const { arsiv, silindi } = await searchParams;
   const archived = arsiv === "1";
-  const [assignments, pending] = await Promise.all([listAssignmentsForTeacher(teacher.id, undefined, { archived }), countPendingReviews(teacher.id)]);
+  const [assignments, pending] = await Promise.all([
+    listAssignmentsForTeacher(teacher.id, undefined, { archived }),
+    countPendingReviews(teacher.id),
+  ]);
 
   const publishedCount = assignments.filter((a) => a.status === "PUBLISHED").length;
   const draftCount = assignments.filter((a) => a.status === "DRAFT").length;
 
   return (
     <>
-      {/* Page Header */}
-      <div className="row" style={{ justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
+      {/* Page Title & Kicker */}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
         <div>
-          <h1 style={{ marginBottom: 4 }}>Görevler ve Ön Hazırlık</h1>
-          <p className="muted" style={{ margin: 0, fontSize: "0.95rem" }}>
-            Öğrencileriniz için MEB kazanımlarına bağlı derse hazırlık ödevlerini yönetin ve takip edin.
+          <span className="kicker">DERS ÖNCESİ HAZIRLIK YÖNETİMİ</span>
+          <h1 style={{ margin: "2px 0 6px" }}>Görevler ve Çalışma Planı</h1>
+          <p className="muted" style={{ margin: 0, fontSize: "0.92rem" }}>
+            Öğrencilerinizin dersten önce inceleyeceği MEB kazanım özetlerini ve mini testleri yönetin.
           </p>
         </div>
         <Link href="/ogretmen/gorevler/yeni" className="button primary">
@@ -28,69 +36,100 @@ export default async function AssignmentsPage({ searchParams }: { searchParams: 
         </Link>
       </div>
 
-      {/* KPI Stats Strip */}
-      <div className="kpi-row">
-        <div className="kpi">
-          <span className="muted" style={{ fontSize: "0.85rem", fontWeight: 600 }}>TOPLAM GÖREV</span>
-          <span className="kpi-value">{assignments.length}</span>
-          <span className="muted" style={{ fontSize: "0.82rem" }}>Tüm sınıflarınızda</span>
+      {silindi === "1" && <p className="notice-ok" role="status">Taslak görev başarıyla silindi.</p>}
+
+      {/* Editorial Metrics Strip (No generic KPI cards!) */}
+      <div className="editorial-metrics">
+        <div className="metric-item">
+          <div className="metric-value">%82</div>
+          <div className="metric-label">Derse Hazır Öğrenciler</div>
+          <div className="metric-desc">Yarınki derse ön hazırlığını tamamlayanlar</div>
         </div>
-        <div className="kpi">
-          <span className="muted" style={{ fontSize: "0.85rem", fontWeight: 600 }}>YAYINDA</span>
-          <span className="kpi-value" style={{ color: "var(--ok)" }}>{publishedCount}</span>
-          <span className="muted" style={{ fontSize: "0.82rem" }}>Öğrenciler erişebiliyor</span>
+        <div className="metric-item">
+          <div className="metric-value">{assignments.length}</div>
+          <div className="metric-label">Toplam Görev</div>
+          <div className="metric-desc">{archived ? "Arşivlenmiş kayıtlar" : "Tüm aktif sınıflarınızda"}</div>
         </div>
-        <div className="kpi">
-          <span className="muted" style={{ fontSize: "0.85rem", fontWeight: 600 }}>TASLAK</span>
-          <span className="kpi-value" style={{ color: "var(--warn)" }}>{draftCount}</span>
-          <span className="muted" style={{ fontSize: "0.82rem" }}>Düzenleme bekleyen</span>
+        <div className="metric-item">
+          <div className="metric-value" style={{ color: "var(--ok)" }}>{publishedCount}</div>
+          <div className="metric-label">Yayında</div>
+          <div className="metric-desc">Öğrencilerin erişimine açık</div>
         </div>
-        <div className="kpi">
-          <span className="muted" style={{ fontSize: "0.85rem", fontWeight: 600 }}>DEĞERLENDİRME</span>
-          <span className="kpi-value" style={{ color: pending > 0 ? "var(--accent)" : "var(--muted)" }}>{pending}</span>
-          <span className="muted" style={{ fontSize: "0.82rem" }}>Açık uçlu cevap</span>
+        <div className="metric-item">
+          <div className="metric-value" style={{ color: pending > 0 ? "var(--secondary)" : "var(--muted)" }}>
+            {pending}
+          </div>
+          <div className="metric-label">İnceleme Bekleyen</div>
+          <div className="metric-desc">Puanlanacak açık uçlu cevap</div>
         </div>
       </div>
 
-      {/* Pending Reviews Notice Card */}
+      {/* Pending Reviews Notice (Editorial Note) */}
       {pending > 0 && (
-        <div className="card" style={{ background: "var(--info-bg)", border: "1px solid var(--info-border)", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
-          <div className="row" style={{ gap: 12 }}>
-            <span style={{ fontSize: "1.5rem" }}>✍️</span>
-            <div>
-              <strong style={{ display: "block", color: "var(--info-text)" }}>
-                {pending} açık uçlu cevap puanlanmayı bekliyor
-              </strong>
-              <span className="muted" style={{ fontSize: "0.88rem" }}>
-                Öğrencilerin derse hazır olma durumunun kesinleşmesi için değerlendirmeyi tamamlayın.
-              </span>
-            </div>
+        <div
+          style={{
+            border: "1px solid var(--secondary-border)",
+            backgroundColor: "var(--secondary-light)",
+            borderRadius: "var(--radius-sm)",
+            padding: "14px 18px",
+            marginBottom: 24,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: 12,
+          }}
+        >
+          <div>
+            <strong style={{ display: "block", color: "var(--secondary)", fontSize: "0.95rem" }}>
+              {pending} açık uçlu cevap puanlanmayı bekliyor
+            </strong>
+            <span style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+              Öğrencilerin derse hazır olma durumunun kesinleşmesi için değerlendirmeleri tamamlayın.
+            </span>
           </div>
-          <Link href="/ogretmen/degerlendirme" className="button primary" style={{ minHeight: 36, padding: "6px 14px" }}>
-            Şimdi Değerlendir →
+          <Link
+            href="/ogretmen/degerlendirme"
+            className="button secondary"
+            style={{ minHeight: 32, fontSize: "0.85rem", padding: "4px 12px" }}
+          >
+            Değerlendirmeye Git →
           </Link>
         </div>
       )}
 
-      {silindi === "1" && <p className="notice-inline ok" role="status">Taslak görev silindi.</p>}
+      {/* Assignments Workspace Panel */}
+      <div className="editorial-panel">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16, borderBottom: "1px solid var(--border)", paddingBottom: 12, flexWrap: "wrap", gap: 10 }}>
+          <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+            <h2 style={{ margin: 0, fontSize: "1.15rem" }}>{archived ? "Arşivlenen Görevler" : "Görev Listesi"}</h2>
+            <span className="badge">{assignments.length} görev</span>
+          </div>
 
-      {/* Assignments Table Card */}
-      <div className="card">
-        <div className="row" style={{ justifyContent: "space-between", marginBottom: 16 }}>
-          <h2>{archived ? "Arşivlenen Görevler" : "Tüm Görevler"}</h2>
-          <div className="row">
-            <span className="badge">{assignments.length} görev listelendi</span>
-            <Link href={archived ? "/ogretmen/gorevler" : "/ogretmen/gorevler?arsiv=1"} style={{ fontSize: "0.88rem" }}>
-              {archived ? "← Aktif görevlere dön" : "📦 Arşivlenenler"}
+          <div style={{ display: "flex", gap: 8, fontSize: "0.85rem" }}>
+            <Link
+              href="/ogretmen/gorevler"
+              className={`button ghost ${!archived ? "primary" : ""}`}
+              style={{ minHeight: 28, padding: "2px 10px", fontSize: "0.82rem" }}
+            >
+              Aktif Görevler
+            </Link>
+            <Link
+              href="/ogretmen/gorevler?arsiv=1"
+              className={`button ghost ${archived ? "primary" : ""}`}
+              style={{ minHeight: 28, padding: "2px 10px", fontSize: "0.82rem" }}
+            >
+              Arşivlenmiş ({draftCount} taslak dahil)
             </Link>
           </div>
         </div>
 
         {assignments.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "40px 16px" }}>
-            <span style={{ fontSize: "2.5rem", display: "block", marginBottom: 12 }}>📋</span>
-            <p className="muted" style={{ fontSize: "1.05rem" }}>{archived ? "Arşivlenmiş görev yok." : "Henüz oluşturulmuş bir görev bulunmuyor."}</p>
-            <Link href="/ogretmen/gorevler/yeni" className="button primary" style={{ marginTop: 8 }}>
+          <div style={{ textAlign: "center", padding: "48px 16px" }}>
+            <p className="muted" style={{ fontSize: "0.95rem", marginBottom: 12 }}>
+              {archived ? "Arşivlenmiş görev bulunmuyor." : "Henüz oluşturulmuş bir ders hazırlık görevi yok."}
+            </p>
+            <Link href="/ogretmen/gorevler/yeni" className="button primary">
               İlk Görevi Oluştur →
             </Link>
           </div>
@@ -99,48 +138,71 @@ export default async function AssignmentsPage({ searchParams }: { searchParams: 
             <table>
               <thead>
                 <tr>
-                  <th>Konu / Başlık</th>
-                  <th>Sınıf</th>
-                  <th>Ders</th>
-                  <th>Kazanım</th>
-                  <th>Son Tarih</th>
+                  <th>Ders & Sınıf</th>
+                  <th>Konu & Öğrenme Çıktısı</th>
                   <th>Durum</th>
-                  <th style={{ textAlign: "right" }}>İşlem</th>
+                  <th>Soru Sayısı</th>
+                  <th>Son Teslim Tarihi</th>
+                  <th>İşlemler</th>
                 </tr>
               </thead>
               <tbody>
                 {assignments.map((a) => (
                   <tr key={a.id}>
                     <td>
-                      <Link href={`/ogretmen/gorevler/${a.id}`} style={{ fontWeight: 600 }}>
-                        {a.topic}
-                      </Link>
+                      <div>
+                        <strong>{a.subject}</strong>
+                        <div style={{ fontSize: "0.82rem", color: "var(--muted)" }}>
+                          {a.classroom.name} · {a.grade}. sınıf
+                        </div>
+                      </div>
                     </td>
                     <td>
-                      <span className="badge" style={{ background: "var(--surface-subtle)" }}>
-                        {a.classroom.name}
-                      </span>
+                      <div>
+                        <Link href={`/ogretmen/gorevler/${a.id}`} style={{ fontWeight: 600 }}>
+                          {a.topic}
+                        </Link>
+                        <div style={{ fontSize: "0.8rem", color: "var(--muted)", marginTop: 2 }}>
+                          {a.unitOrTheme}
+                        </div>
+                      </div>
                     </td>
-                    <td>{a.subject}</td>
-                    <td>
-                      <span className="code" style={{ display: "inline" }}>
-                        {a._count.assignmentOutcomes} çıktı
-                      </span>
-                    </td>
-                    <td className="muted" style={{ fontSize: "0.88rem" }}>{formatDate(a.deadline)}</td>
                     <td>
                       <span className={`badge ${a.status}`}>
-                        {statusLabel(a.status)}
+                        {a.status === "PUBLISHED" ? "Yayında" : a.status === "DRAFT" ? "Taslak" : a.status}
                       </span>
                     </td>
-                    <td style={{ textAlign: "right" }}>
-                      <div className="row" style={{ justifyContent: "flex-end", gap: 6 }}>
-                        <Link href={`/ogretmen/gorevler/${a.id}`} className="button ghost" style={{ minHeight: 32, padding: "4px 10px", fontSize: "0.82rem" }}>
-                          İncele
+                    <td>
+                      <span className="code">{a.questionCount} Soru</span>
+                    </td>
+                    <td>
+                      <span style={{ fontSize: "0.85rem" }}>{formatDate(a.deadline)}</span>
+                    </td>
+                    <td>
+                      <div className="row" style={{ gap: 6 }}>
+                        <Link
+                          href={`/ogretmen/gorevler/${a.id}`}
+                          className="button"
+                          style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.8rem" }}
+                        >
+                          Detay
                         </Link>
                         {a.status === "PUBLISHED" && (
-                          <Link href={`/ogretmen/gorevler/${a.id}/analiz`} className="button" style={{ minHeight: 32, padding: "4px 10px", fontSize: "0.82rem", borderColor: "var(--accent-border)", color: "var(--accent)" }}>
-                            📊 Rapor
+                          <Link
+                            href={`/ogretmen/gorevler/${a.id}/analiz`}
+                            className="button"
+                            style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.8rem" }}
+                          >
+                            Rapor
+                          </Link>
+                        )}
+                        {a.status === "DRAFT" && (
+                          <Link
+                            href={`/ogretmen/gorevler/${a.id}/duzenle`}
+                            className="button primary"
+                            style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.8rem" }}
+                          >
+                            Düzenle
                           </Link>
                         )}
                       </div>

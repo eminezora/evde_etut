@@ -10,9 +10,9 @@ export default async function RegisterPage() {
 
   return (
     <AuthShell
-      icon="✨"
+      icon="✎"
       title="Hesap Oluştur"
-      subtitle="Öğrenci veya öğretmen olarak hemen Evde Etüt ailesine katılın. Her e-posta adresiyle kayıt olabilirsiniz."
+      subtitle="Öğrenci veya öğretmen olarak hemen Evde Etüt ailesine katılın."
       width={480}
       footer={
         <>

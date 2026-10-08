@@ -56,9 +56,13 @@ export function AssignmentActions({ assignmentId, archived, willArchive }: { ass
 
   return (
     <>
-      <div className="row">
-        <Link href={`/ogretmen/gorevler/${assignmentId}/duzenle`} className="button">✏️ Görevi Düzenle</Link>
-        <button type="button" className="danger-ghost" onClick={() => { setError(null); setOpen(true); }}>🗑 Görevi Sil</button>
+      <div className="row" style={{ gap: 8 }}>
+        <Link href={`/ogretmen/gorevler/${assignmentId}/duzenle`} className="button">
+          Görevi Düzenle
+        </Link>
+        <button type="button" className="danger-ghost" onClick={() => { setError(null); setOpen(true); }}>
+          Görevi Sil / Arşivle
+        </button>
       </div>
       <dialog ref={dialog} className="modal" aria-labelledby="delete-title" onClose={() => setOpen(false)} onCancel={() => setOpen(false)}>
         <h2 id="delete-title" style={{ marginTop: 0 }}>Bu görevi silmek istediğinize emin misiniz?</h2>

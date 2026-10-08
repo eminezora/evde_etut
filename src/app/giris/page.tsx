@@ -11,7 +11,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
 
   return (
     <AuthShell
-      icon="📚"
+      icon="✎"
       title="Giriş Yap"
       subtitle="Evde Etüt hesabınıza erişerek derse hazırlık görevlerinizi takip edin."
       footer={

@@ -54,7 +54,7 @@ export function ClassroomsAdminManager({ initialClassrooms }: { initialClassroom
     <div>
       {error && <div className="error" style={{ marginBottom: 16 }}>{error}</div>}
 
-      <div className="card" style={{ padding: 0, overflow: "hidden" }}>
+      <div className="editorial-panel" style={{ padding: 0, overflow: "hidden" }}>
         <div className="table-scroll">
           <table>
             <thead>

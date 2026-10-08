@@ -10,7 +10,7 @@ export default async function ResetPasswordPage({ searchParams }: { searchParams
   const valid = await isResetTokenValid(token);
   return (
     <AuthShell
-      icon="🔒"
+      icon="✎"
       title="Yeni Şifre Belirle"
       subtitle={valid ? "Hesabınız için yeni bir şifre belirleyin." : undefined}
       footer={<Link href="/giris" style={{ fontWeight: 600 }}>← Giriş sayfasına dön</Link>}

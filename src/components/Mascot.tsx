@@ -178,47 +178,67 @@ export function Mascot() {
         <button
           type="button"
           className="mascot-owl"
-          aria-label={isOpen ? "Asistanı kapat" : "Etüt Asistan ile sohbet et"}
-          title="Etüt Asistan"
+          aria-label={isOpen ? "Asistan panelini kapat" : "Etüt Asistanı ile sohbet et"}
+          title="Etüt Asistanı – Çalışma Rehberi"
           onClick={() => {
             if (pref === "min") {
               savePref("on");
             }
             setIsOpen((prev) => !prev);
           }}
+          style={{
+            width: 52,
+            height: 52,
+            borderRadius: "50%",
+            backgroundColor: "#ffffff",
+            border: "1.5px solid var(--border)",
+            boxShadow: "0 4px 14px rgba(22, 28, 40, 0.12)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            padding: 8,
+            transition: "transform 0.15s ease, box-shadow 0.15s ease",
+          }}
         >
-          <svg viewBox="0 0 64 64" width="100%" height="100%" aria-hidden="true">
-            <path d="M14 50c-4-6-5-14-3-22 3-11 11-17 21-17s18 6 21 17c2 8 1 16-3 22-5 7-31 7-36 0z" fill="#2563eb" />
-            <path d="M20 47c-2-4-2-9 0-13 3-5 8-7 12-7s9 2 12 7c2 4 2 9 0 13-4 5-20 5-24 0z" fill="#dbeafe" />
-            <path d="M14 22 10 12l10 6zM50 22l4-10-10 6z" fill="#1d4ed8" />
-            <circle cx="24" cy="27" r="7" fill="#fff" />
-            <circle cx="40" cy="27" r="7" fill="#fff" />
-            <circle className="mascot-pupil" cx="25" cy="28" r="3.2" fill="#1e293b" />
-            <circle className="mascot-pupil" cx="39" cy="28" r="3.2" fill="#1e293b" />
-            <path d="M29 33h6l-3 4z" fill="#f59e0b" />
-            <path d="M18 9h28l-14-6z" fill="#1e293b" />
-            <path d="M44 9v6" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" />
-            <path d="M26 54h4M34 54h4" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round" />
+          {/* Fine-line editorial owl SVG */}
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none" stroke="#161c28" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            {/* Owl Body & Crown */}
+            <path d="M12 30c-3-4-4-9-2-15 2-7 7-11 14-11s12 4 14 11c2 6 1 11-2 15-3 4-21 4-24 0z" />
+            {/* Feather details */}
+            <path d="M16 28c-1-3-1-6 0-9 2-3 5-4 8-4s6 1 8 4c1 3 1 6 0 9" stroke="#1e3a8a" strokeWidth="1.4" />
+            {/* Scholarly spectacles */}
+            <circle cx="15.5" cy="18" r="4.2" stroke="#1e3a8a" strokeWidth="1.5" />
+            <circle cx="24.5" cy="18" r="4.2" stroke="#1e3a8a" strokeWidth="1.5" />
+            <line x1="19.7" y1="18" x2="20.3" y2="18" stroke="#1e3a8a" strokeWidth="1.5" />
+            {/* Eyes / Pupils */}
+            <circle cx="15.5" cy="18" r="1.4" fill="#161c28" stroke="none" />
+            <circle cx="24.5" cy="18" r="1.4" fill="#161c28" stroke="none" />
+            {/* Beak */}
+            <path d="M18.8 22.2l1.2 2 1.2-2z" fill="#c2410c" stroke="#c2410c" strokeWidth="0.8" />
+            {/* Open Book Base */}
+            <path d="M11 34c4-1 8-1 9 1 1-2 5-2 9-1" stroke="#161c28" strokeWidth="1.6" />
           </svg>
         </button>
       </div>
 
-      {/* Chatbot Window */}
+      {/* Editorial Assistant Window */}
       {isOpen && (
         <div
           role="dialog"
-          aria-label="Etüt Asistan Sohbet Penceresi"
+          aria-label="Etüt Çalışma Asistanı Paneli"
           style={{
             position: "fixed",
             bottom: "82px",
             right: "20px",
-            width: "360px",
+            width: "370px",
             maxWidth: "calc(100vw - 32px)",
-            height: "490px",
+            height: "500px",
             maxHeight: "calc(100vh - 110px)",
-            backgroundColor: "#ffffff",
-            borderRadius: "16px",
-            boxShadow: "0 10px 30px -5px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(0, 0, 0, 0.08)",
+            backgroundColor: "var(--bg)",
+            borderRadius: "var(--radius-sm)",
+            border: "1px solid var(--border)",
+            boxShadow: "0 12px 32px -4px rgba(22, 28, 40, 0.18), 0 0 0 1px rgba(22, 28, 40, 0.06)",
             display: "flex",
             flexDirection: "column",
             zIndex: 101,
@@ -226,36 +246,42 @@ export function Mascot() {
             animation: "mascot-fade 0.2s ease-out",
           }}
         >
-          {/* Header */}
+          {/* Masthead Header */}
           <div
             style={{
               padding: "12px 16px",
-              background: "linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)",
-              color: "#ffffff",
+              backgroundColor: "var(--ink)",
+              color: "#fbfaf7",
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
+              borderBottom: "1px solid #2d3748",
             }}
           >
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <div
                 style={{
-                  width: 30,
-                  height: 30,
-                  borderRadius: "50%",
-                  background: "#ffffff",
+                  width: 28,
+                  height: 28,
+                  borderRadius: "var(--radius-xs)",
+                  backgroundColor: "rgba(255, 255, 255, 0.12)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: "1.1rem",
                 }}
               >
-                🦉
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#fbfaf7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                  <path d="M6 6h10" />
+                  <path d="M6 10h10" />
+                </svg>
               </div>
               <div>
-                <div style={{ fontWeight: 700, fontSize: "0.95rem", lineHeight: 1.2 }}>Etüt Asistan</div>
-                <div style={{ fontSize: "0.75rem", opacity: 0.9 }}>
-                  {isTeacher ? "Öğretmen Rehberi" : isStudent ? "Öğrenci Rehberi" : "Platform Asistanı"}
+                <div style={{ fontSize: "0.72rem", color: "var(--terracotta)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>
+                  ETÜT REHBERİ
+                </div>
+                <div style={{ fontWeight: 600, fontSize: "0.95rem", lineHeight: 1.2, color: "#ffffff" }}>
+                  {isTeacher ? "Öğretmen Masası Asistanı" : isStudent ? "Öğrenci Çalışma Asistanı" : "Platform Asistanı"}
                 </div>
               </div>
             </div>
@@ -264,37 +290,33 @@ export function Mascot() {
               <button
                 type="button"
                 onClick={() => setIsOpen(false)}
-                title="Küçült"
+                title="Simge durumuna küçült"
                 aria-label="Küçült"
                 style={{
                   background: "transparent",
                   border: "none",
-                  color: "#ffffff",
+                  color: "#cbd5e1",
                   cursor: "pointer",
-                  fontSize: "1.2rem",
-                  padding: "0 6px",
+                  fontSize: "1.1rem",
+                  padding: "2px 6px",
                   lineHeight: 1,
-                  opacity: 0.85,
                 }}
               >
                 –
               </button>
               <button
                 type="button"
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-                title="Kapat"
+                onClick={() => setIsOpen(false)}
+                title="Pencereyi kapat"
                 aria-label="Kapat"
                 style={{
                   background: "transparent",
                   border: "none",
-                  color: "#ffffff",
+                  color: "#cbd5e1",
                   cursor: "pointer",
-                  fontSize: "1.2rem",
-                  padding: "0 6px",
+                  fontSize: "1.1rem",
+                  padding: "2px 6px",
                   lineHeight: 1,
-                  opacity: 0.85,
                 }}
               >
                 ×
@@ -306,12 +328,12 @@ export function Mascot() {
           <div
             style={{
               flex: 1,
-              padding: "14px 14px 8px",
+              padding: "16px 14px",
               overflowY: "auto",
               display: "flex",
               flexDirection: "column",
-              gap: 10,
-              backgroundColor: "#f8fafc",
+              gap: 12,
+              backgroundColor: "var(--surface-subtle)",
             }}
           >
             {messages.map((m) => (
@@ -319,14 +341,16 @@ export function Mascot() {
                 key={m.id}
                 style={{
                   alignSelf: m.sender === "user" ? "flex-end" : "flex-start",
-                  maxWidth: "84%",
-                  padding: "8px 12px",
-                  borderRadius: m.sender === "user" ? "14px 14px 2px 14px" : "14px 14px 14px 2px",
-                  backgroundColor: m.sender === "user" ? "#2563eb" : "#ffffff",
-                  color: m.sender === "user" ? "#ffffff" : "#1e293b",
-                  boxShadow: m.sender === "user" ? "0 1px 2px rgba(0,0,0,0.1)" : "0 1px 3px rgba(0,0,0,0.06)",
+                  maxWidth: "86%",
+                  padding: "10px 14px",
+                  borderRadius: "var(--radius-xs)",
+                  backgroundColor: m.sender === "user" ? "var(--accent)" : "#ffffff",
+                  color: m.sender === "user" ? "#ffffff" : "var(--ink)",
+                  border: m.sender === "user" ? "none" : "1px solid var(--border)",
+                  borderLeft: m.sender === "user" ? "none" : "3px solid var(--accent)",
+                  boxShadow: "0 1px 2px rgba(22, 28, 40, 0.05)",
                   fontSize: "0.88rem",
-                  lineHeight: 1.45,
+                  lineHeight: 1.55,
                   whiteSpace: "pre-line",
                   wordBreak: "break-word",
                 }}
@@ -340,17 +364,18 @@ export function Mascot() {
                 style={{
                   alignSelf: "flex-start",
                   padding: "8px 12px",
-                  borderRadius: "14px 14px 14px 2px",
+                  borderRadius: "var(--radius-xs)",
                   backgroundColor: "#ffffff",
-                  color: "#64748b",
+                  border: "1px solid var(--border)",
+                  borderLeft: "3px solid var(--muted)",
+                  color: "var(--muted)",
                   fontSize: "0.82rem",
-                  boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
                   display: "flex",
                   alignItems: "center",
-                  gap: 6,
+                  gap: 8,
                 }}
               >
-                <span>🦉 Etüt düşünüyor...</span>
+                <span style={{ fontStyle: "italic" }}>Etüt araştırıyor ve yanıt hazırlıyor…</span>
               </div>
             )}
             <div ref={messagesEndRef} />
@@ -359,9 +384,9 @@ export function Mascot() {
           {/* Quick Suggestion Chips */}
           <div
             style={{
-              padding: "6px 12px",
+              padding: "8px 12px",
               backgroundColor: "#ffffff",
-              borderTop: "1px solid #e2e8f0",
+              borderTop: "1px solid var(--border)",
               display: "flex",
               gap: 6,
               overflowX: "auto",
@@ -377,11 +402,11 @@ export function Mascot() {
                 disabled={loading}
                 style={{
                   fontSize: "0.78rem",
-                  padding: "4px 9px",
-                  borderRadius: "9999px",
-                  border: "1px solid #cbd5e1",
-                  backgroundColor: "#f1f5f9",
-                  color: "#334155",
+                  padding: "4px 10px",
+                  borderRadius: "var(--radius-xs)",
+                  border: "1px solid var(--border)",
+                  backgroundColor: "var(--surface-subtle)",
+                  color: "var(--ink)",
                   cursor: "pointer",
                   flexShrink: 0,
                   transition: "background 0.15s ease",
@@ -399,9 +424,9 @@ export function Mascot() {
               handleSend();
             }}
             style={{
-              padding: "8px 12px",
+              padding: "10px 12px",
               backgroundColor: "#ffffff",
-              borderTop: "1px solid #e2e8f0",
+              borderTop: "1px solid var(--border)",
               display: "flex",
               gap: 8,
               alignItems: "center",
@@ -411,16 +436,17 @@ export function Mascot() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Bir soru yazın..."
+              placeholder="Sorunuzu buraya yazın…"
               disabled={loading}
               style={{
                 flex: 1,
                 padding: "8px 12px",
-                borderRadius: "20px",
-                border: "1px solid #cbd5e1",
+                borderRadius: "var(--radius-xs)",
+                border: "1px solid var(--border)",
                 fontSize: "0.88rem",
                 outline: "none",
                 minHeight: "36px",
+                background: "var(--surface-subtle)",
               }}
             />
             <button
@@ -429,22 +455,24 @@ export function Mascot() {
               style={{
                 width: 36,
                 height: 36,
-                borderRadius: "50%",
-                backgroundColor: input.trim() && !loading ? "#2563eb" : "#cbd5e1",
+                borderRadius: "var(--radius-xs)",
+                backgroundColor: input.trim() && !loading ? "var(--accent)" : "var(--border)",
                 color: "#ffffff",
                 border: "none",
                 cursor: input.trim() && !loading ? "pointer" : "default",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                fontSize: "1rem",
                 flexShrink: 0,
                 transition: "background 0.15s ease",
               }}
               title="Gönder"
               aria-label="Gönder"
             >
-              ➤
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
             </button>
           </form>
         </div>

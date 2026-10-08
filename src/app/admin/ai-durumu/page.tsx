@@ -47,54 +47,51 @@ export default async function AdminAiStatusPage() {
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20, flexWrap: "wrap", gap: 12 }}>
         <div>
-          <h1 style={{ margin: "0 0 6px", fontSize: "1.4rem", fontWeight: 700 }}>AI ve EVREN Sistem Durumu</h1>
+          <div className="editorial-kicker">YAPAY ZEKÂ MOTOR DENETİMİ · EVREN & LLM</div>
+          <h1 style={{ margin: "4px 0 6px", fontSize: "1.75rem", fontFamily: "var(--font-serif)" }}>AI ve EVREN Sistem Durumu</h1>
           <p className="muted" style={{ margin: 0, fontSize: "0.95rem" }}>
-            Yapay zekâ ile taslak oluşturma motorunun performansı, hata oranları ve işlem geçmişi.
+            Taslak oluşturma motorunun performansı, hata oranları ve işlem geçmişi.
           </p>
         </div>
         <AiRecoveryButton />
       </div>
 
-      {/* Metrics Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-          gap: 16,
-          marginBottom: 28,
-        }}
-      >
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>Aktif Sağlayıcı / Model</div>
-          <div style={{ fontSize: "1.2rem", fontWeight: 700, color: "#0f172a", marginTop: 4 }}>{activeModel}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>Provider: {activeProvider}</div>
+      {/* Editorial Metrics Grid */}
+      <div className="editorial-metrics" style={{ marginBottom: 28 }}>
+        <div className="metric">
+          <span className="metric-label">Aktif Sağlayıcı / Model</span>
+          <div className="metric-value" style={{ fontSize: "1.25rem" }}>{activeModel}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>Sağlayıcı: {activeProvider}</span>
         </div>
 
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>Başarılı Üretim</div>
-          <div style={{ fontSize: "1.6rem", fontWeight: 700, color: "#059669", marginTop: 4 }}>{successCount}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>Doğrulanan ve kaydedilen</div>
+        <div className="metric">
+          <span className="metric-label">Başarılı Üretim</span>
+          <div className="metric-value" style={{ color: "var(--leaf)" }}>{successCount}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>Doğrulanan ve kaydedilen</span>
         </div>
 
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>Hata & Zaman Aşımı</div>
-          <div style={{ fontSize: "1.6rem", fontWeight: 700, color: "#dc2626", marginTop: 4 }}>{failedCount + timeoutCount}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>{failedCount} Hata · {timeoutCount} Zaman Aşımı</div>
+        <div className="metric">
+          <span className="metric-label">Hata & Zaman Aşımı</span>
+          <div className="metric-value" style={{ color: "var(--crimson)" }}>{failedCount + timeoutCount}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>{failedCount} Hata · {timeoutCount} Zaman Aşımı</span>
         </div>
 
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>Ortalama Süre</div>
-          <div style={{ fontSize: "1.6rem", fontWeight: 700, color: "#2563eb", marginTop: 4 }}>
+        <div className="metric">
+          <span className="metric-label">Ortalama Yanıt Süresi</span>
+          <div className="metric-value" style={{ color: "var(--accent)" }}>
             {avgDurationMs ? `${(avgDurationMs / 1000).toFixed(1)} sn` : "—"}
           </div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>{runningCount > 0 ? `${runningCount} aktif işlem` : "Şu an kuyruk boş"}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>{runningCount > 0 ? `${runningCount} aktif işlem` : "Kuyruk boş"}</span>
         </div>
       </div>
 
       {/* Logs Table */}
-      <div className="card" style={{ padding: 0, overflow: "hidden" }}>
-        <div style={{ padding: "14px 18px", borderBottom: "1px solid #e2e8f0", fontWeight: 600, fontSize: "0.95rem" }}>
-          Son 20 Yapay Zekâ İçerik Üretim Kaydı
+      <div className="editorial-panel" style={{ padding: 0, overflow: "hidden" }}>
+        <div className="editorial-panel-header">
+          <div>
+            <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Yapay Zekâ İçerik Üretim Logları</h2>
+            <span className="muted" style={{ fontSize: "0.82rem" }}>Son 20 üretim işlemi ve durum kodları</span>
+          </div>
         </div>
         <div className="table-scroll">
           <table>

@@ -112,7 +112,7 @@ export function InviteCodesManager({ initialCodes }: { initialCodes: TeacherInvi
       {error && <div className="error" style={{ marginBottom: 16 }}>{error}</div>}
       {success && <div className="notice-inline ok" style={{ marginBottom: 16 }}>{success}</div>}
 
-      <div className="card" style={{ padding: 0, overflow: "hidden" }}>
+      <div className="editorial-panel" style={{ padding: 0, overflow: "hidden" }}>
         <div className="table-scroll">
           <table>
             <thead>

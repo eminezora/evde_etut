@@ -29,23 +29,24 @@ export default async function AssignmentDetailPage({
 
   return (
     <>
-      <div style={{ marginBottom: 16 }}>
-        <p className="muted" style={{ marginBottom: 8 }}>
-          <Link href="/ogretmen/gorevler">← Görevler listesine dön</Link>
+      <div style={{ marginBottom: 20 }}>
+        <p className="muted" style={{ marginBottom: 8, fontSize: "0.88rem" }}>
+          <Link href="/ogretmen/gorevler" style={{ textDecoration: "none" }}>← Görevler listesine dön</Link>
         </p>
-        <div className="row" style={{ justifyContent: "space-between", alignItems: "flex-start" }}>
+        <div className="editorial-kicker">ÖĞRETMEN ÇALIŞMA MASASI · {a.grade}. SINIF {a.subject}</div>
+        <div className="row" style={{ justifyContent: "space-between", alignItems: "flex-start", gap: 12, flexWrap: "wrap", marginTop: 4 }}>
           <div>
-            <div className="row" style={{ gap: 8, marginBottom: 4 }}>
+            <h1 style={{ margin: "0 0 6px", fontSize: "1.75rem", fontFamily: "var(--font-serif)" }}>{a.topic}</h1>
+            <div className="row" style={{ gap: 8 }}>
               <span className={`badge ${a.status}`}>{statusLabel(a.status)}</span>
-              <span className="badge" style={{ background: "var(--accent-light)", color: "var(--accent)" }}>{a.subject}</span>
+              <span className="badge" style={{ background: "var(--surface-subtle)", color: "var(--accent)" }}>{a.subject}</span>
               <span className="muted" style={{ fontSize: "0.88rem" }}>{a.classroom.name} ({a.grade}. sınıf)</span>
             </div>
-            <h1 style={{ margin: "4px 0 0" }}>{a.topic}</h1>
           </div>
-          <div className="row">
+          <div className="row" style={{ gap: 8 }}>
             {a.status === "PUBLISHED" && (
               <Link href={`/ogretmen/gorevler/${a.id}/analiz`} className="button primary" style={{ minHeight: 38 }}>
-                📊 Öğrenci Çalışmaları ve Rapor
+                Analiz ve Hazırlık Raporu →
               </Link>
             )}
             <AssignmentActions assignmentId={a.id} archived={Boolean(a.archivedAt)} willArchive={a.status !== "DRAFT" || editState.studentsOpened > 0} />
@@ -54,85 +55,119 @@ export default async function AssignmentDetailPage({
       </div>
 
       {a.archivedAt && (
-        <div className="card archived-banner" role="note">
-          📦 Bu görev arşivlendi: listenizde ve öğrencilerin ekranında görünmez. Öğrenci cevapları ve raporlar korunur; “Arşivden Çıkar” ile geri alabilirsiniz.
+        <div className="editorial-panel" style={{ borderLeft: "4px solid var(--amber)", padding: 18, marginBottom: 20 }} role="note">
+          <strong style={{ color: "var(--amber)" }}>Arşivlenmiş Görev:</strong> Bu görev arşivlendiği için listenizde ve öğrencilerin çalışma akışında gizlenmiştir. Geçmiş öğrenci cevapları ve rapor kayıtları güvenle korunur.
         </div>
       )}
 
-      <nav className="tabs" aria-label="Görev sekmeleri">
+      <nav className="tabs" aria-label="Görev sekmeleri" style={{ marginBottom: 24 }}>
         <Link href={`/ogretmen/gorevler/${a.id}`} aria-current={tab === "genel" ? "page" : undefined}>
-          Genel Bilgiler
+          Genel Bilgiler & Parametreler
         </Link>
         <Link href={`/ogretmen/gorevler/${a.id}?tab=hazirlik`} aria-current={tab === "hazirlik" ? "page" : undefined}>
-          Hazırlık İçeriği & Sorular
+          Hazırlık İçeriği & Soru Editörü
         </Link>
         {a.status === "PUBLISHED" && (
           <Link href={`/ogretmen/gorevler/${a.id}/analiz`}>
-            Analiz ve Hazırlık Raporu
+            Öğrenci Analizleri
           </Link>
         )}
       </nav>
 
       {tab === "genel" ? (
-        <>
-          <div className="card">
-            <h2>Görev Parametreleri</h2>
-            <dl className="details" style={{ marginTop: 12 }}>
-              <dt>Ders</dt><dd>{a.subject}</dd>
-              <dt>Sınıf</dt><dd>{a.classroom.name} ({a.grade}. sınıf)</dd>
-              <dt>Konu</dt><dd>{a.topic}</dd>
-              <dt>Tema / Ünite</dt><dd>{a.unitOrTheme}</dd>
-              <dt>Başarı Eşiği</dt><dd>%{a.minimumScore} (Derse Hazır Rozeti için)</dd>
-              <dt>Son Tarih</dt><dd>{formatDate(a.deadline)}</dd>
-              <dt>Durum</dt><dd><span className={`badge ${a.status}`}>{statusLabel(a.status)}</span></dd>
-              <dt>Hazırlık İçeriği</dt>
-              <dd>
-                {c ? (c.status === "TEACHER_APPROVED" ? "Onaylandı (Öğrencilere Açık)" : "Taslak – onay bekliyor") : "Henüz oluşturulmadı"} · {a.questions.length} soru
-              </dd>
-            </dl>
-
-            {a.status === "DRAFT" && (
-              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid var(--border)" }}>
-                <Link href={`/ogretmen/gorevler/${a.id}?tab=hazirlik`} className="button primary">
-                  Hazırlık İçeriğini Düzenle & Yayınla →
-                </Link>
+        <div style={{ display: "grid", gap: 20 }}>
+          <div className="editorial-panel">
+            <div className="editorial-panel-header">
+              <div>
+                <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Görev Parametreleri</h2>
+                <span className="muted" style={{ fontSize: "0.82rem" }}>Müfredat konumu, teslim tarihi ve başarı kriterleri</span>
               </div>
-            )}
+              <span className="badge" style={{ background: "var(--surface-subtle)" }}>
+                Durum: {statusLabel(a.status)}
+              </span>
+            </div>
+
+            <div style={{ padding: "20px" }}>
+              <dl className="details" style={{ margin: 0 }}>
+                <dt>Ders</dt><dd><strong>{a.subject}</strong></dd>
+                <dt>Sınıf & Şube</dt><dd>{a.classroom.name} ({a.grade}. sınıf)</dd>
+                <dt>Konu Başlığı</dt><dd>{a.topic}</dd>
+                <dt>Tema / Ünite</dt><dd>{a.unitOrTheme}</dd>
+                <dt>Başarı Eşiği</dt><dd>%{a.minimumScore} Hazır Bulunuşluk Puanı</dd>
+                <dt>Son Teslim Tarihi</dt><dd><time>{formatDate(a.deadline)}</time></dd>
+                <dt>Hazırlık Durumu</dt>
+                <dd>
+                  {c ? (c.status === "TEACHER_APPROVED" ? "Öğretmen Onaylı (Yayında)" : "Taslak – İnceleme Bekliyor") : "Oluşturulmadı"} · {a.questions.length} soru
+                </dd>
+              </dl>
+
+              {a.status === "DRAFT" && (
+                <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid var(--border)" }}>
+                  <Link href={`/ogretmen/gorevler/${a.id}?tab=hazirlik`} className="button primary">
+                    Hazırlık İçeriğini İncele, Düzenle & Yayınla →
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="card">
-            <h2>MEB Öğrenme Çıktıları</h2>
-            {a.assignmentOutcomes.length === 0 ? (
-              <p className="muted">Öğrenme çıktısı seçilmemiş. Bu görev yayınlanamaz.</p>
-            ) : (
-              <ul className="option-list" style={{ listStyle: "none", padding: 0 }}>
-                {a.assignmentOutcomes.map(({ outcome }) => (
-                  <li key={outcome.id} className="option" style={{ cursor: "default" }}>
-                    <div style={{ width: "100%" }}>
+          <div className="editorial-panel">
+            <div className="editorial-panel-header">
+              <div>
+                <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>MEB Öğrenme Çıktıları</h2>
+                <span className="muted" style={{ fontSize: "0.82rem" }}>Bu görevle hedeflenen resmi kazanımlar</span>
+              </div>
+              <span className="badge PUBLISHED">{a.assignmentOutcomes.length} Kazanım Eşleşti</span>
+            </div>
+
+            <div style={{ padding: "18px 20px" }}>
+              {a.assignmentOutcomes.length === 0 ? (
+                <p className="notice-inline warn" style={{ margin: 0 }}>Öğrenme çıktısı seçilmemiş. Bu görev yayınlanamaz.</p>
+              ) : (
+                <div style={{ display: "grid", gap: 10 }}>
+                  {a.assignmentOutcomes.map(({ outcome }) => (
+                    <div
+                      key={outcome.id}
+                      style={{
+                        padding: "12px 16px",
+                        background: "var(--surface-subtle)",
+                        border: "1px solid var(--border)",
+                        borderLeft: "3px solid var(--accent)",
+                        borderRadius: "var(--radius-xs)",
+                      }}
+                    >
                       <div className="row" style={{ gap: 8, marginBottom: 4 }}>
                         <span className="code">{outcome.outcomeCode}</span>
-                        <span className="badge PUBLISHED" style={{ fontSize: "0.75rem" }}>Doğrulanmış MEB Kazanımı</span>
+                        <span className="badge PUBLISHED" style={{ fontSize: "0.72rem" }}>MEB Resmi Kazanım</span>
                       </div>
-                      <div style={{ fontSize: "0.95rem" }}>{outcome.outcomeText}</div>
+                      <div style={{ fontSize: "0.93rem", lineHeight: 1.6, color: "var(--ink)" }}>{outcome.outcomeText}</div>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            )}
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="card">
-            <PolicyForm
-              assignmentId={a.id}
-              initial={{
-                maxAttempts: a.maxAttempts,
-                unlimitedAttempts: a.unlimitedAttempts,
-                showExplanationsAfterSubmit: a.showExplanationsAfterSubmit,
-                showAnswersAfterPass: a.showAnswersAfterPass,
-              }}
-            />
+          <div className="editorial-panel">
+            <div className="editorial-panel-header">
+              <div>
+                <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Teslim ve Değerlendirme Politikası</h2>
+                <span className="muted" style={{ fontSize: "0.82rem" }}>Deneme limitleri ve açıklama görünürlüğü ayarları</span>
+              </div>
+            </div>
+            <div style={{ padding: "20px" }}>
+              <PolicyForm
+                assignmentId={a.id}
+                initial={{
+                  maxAttempts: a.maxAttempts,
+                  unlimitedAttempts: a.unlimitedAttempts,
+                  showExplanationsAfterSubmit: a.showExplanationsAfterSubmit,
+                  showAnswersAfterPass: a.showAnswersAfterPass,
+                }}
+              />
+            </div>
           </div>
-        </>
+        </div>
       ) : (
         <ContentEditor
           key={c?.updatedAt.getTime() ?? 0}

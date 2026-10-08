@@ -1,5 +1,5 @@
 // Öğrenci cevap kağıdı: every attempt and every answer of one student on one assignment.
-// Access is enforced in getStudentDetail (own assignment + student is in that classroom).
+// Editorial Learning Workspace Answer Sheet Design.
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { requireTeacher } from "@/lib/auth/current-user.ts";
@@ -13,7 +13,6 @@ import { ReviewForm } from "@/components/teacher/ReviewForm.tsx";
 
 const fmt = (d: Date | null | undefined) => (d ? formatDate(d) : "—");
 const pct = (n: number | null | undefined) => (n === null || n === undefined ? "—" : `%${n}`);
-const STATE_CLASS: Record<string, string> = { CORRECT: "is-ok", PARTIAL: "is-warn", INCORRECT: "is-bad", UNANSWERED: "is-bad", PENDING: "is-pending" };
 
 export default async function AnswerSheetPage({ params }: { params: Promise<{ id: string; studentId: string }> }) {
   const teacher = await requireTeacher();
@@ -25,87 +24,160 @@ export default async function AnswerSheetPage({ params }: { params: Promise<{ id
 
   return (
     <>
-      <p className="muted" style={{ marginBottom: 6 }}>
-        <Link href={`/ogretmen/gorevler/${id}/analiz`}>← Görev raporuna dön</Link>
-        {" · "}
-        <Link href={`/ogretmen/ogrenciler/${studentId}`}>Öğrencinin geçmişi</Link>
-      </p>
-      <div className="row" style={{ gap: 8, marginBottom: 4 }}>
-        <span className="badge" style={{ background: "var(--accent-light)", color: "var(--accent)" }}>Cevap Kağıdı</span>
-        <span className="badge">{sa ? STATUS_LABELS[sa.status as StudentStatus] ?? sa.status : "Başlamadı"}</span>
-      </div>
-      <h1 style={{ margin: "4px 0 4px" }}>{d.student.name}</h1>
-      <p className="muted" style={{ margin: "0 0 16px" }}>{d.assignment.topic} · {d.assignment.subject} · {d.assignment.classroom.name}</p>
-
-      <div className="card">
-        <h2>Özet</h2>
-        <dl className="details" style={{ marginTop: 12 }}>
-          <dt>Durum</dt><dd>{sa ? STATUS_LABELS[sa.status as StudentStatus] ?? sa.status : "Başlamadı"}</dd>
-          <dt>Özeti açtı / onayladı</dt><dd>{fmt(sa?.summaryOpenedAt)} / {fmt(sa?.summaryConfirmedAt)}</dd>
-          <dt>Deneme sayısı</dt><dd>{sa?.attemptCount ?? 0}</dd>
-          <dt>Son / en iyi puan</dt><dd>{pct(sa?.latestScore)} / {pct(sa?.bestScore)} (derse hazır eşiği %{d.assignment.minimumScore})</dd>
-          <dt>Tamamlama</dt><dd>{fmt(sa?.completedAt)}</dd>
-        </dl>
+      <div style={{ marginBottom: 12 }}>
+        <p className="muted" style={{ margin: 0, fontSize: "0.85rem" }}>
+          <Link href={`/ogretmen/gorevler/${id}/analiz`} style={{ textDecoration: "none" }}>← Görev Raporuna Dön</Link>
+          {" · "}
+          <Link href={`/ogretmen/ogrenciler/${studentId}`} style={{ textDecoration: "none" }}>Öğrenci Gelişim Geçmişi</Link>
+        </p>
       </div>
 
-      {attempts.length === 0 && <div className="card"><p className="muted" style={{ margin: 0 }}>Öğrenci henüz ön bilgi kontrolünü çözmeye başlamadı.</p></div>}
+      <div style={{ marginBottom: 20 }}>
+        <span className="kicker">DEĞERLENDİRME VE CEVAP KAĞIDI</span>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 12 }}>
+          <div>
+            <h1 style={{ margin: "2px 0 4px" }}>{d.student.name}</h1>
+            <p className="muted" style={{ margin: 0, fontSize: "0.92rem" }}>
+              {d.assignment.topic} · {d.assignment.subject} · {d.assignment.classroom.name}
+            </p>
+          </div>
+          <span className={`badge ${sa?.status === "READY_FOR_CLASS" ? "READY" : sa?.status === "NEEDS_REVIEW" ? "NEEDS_REVIEW" : ""}`}>
+            {sa ? STATUS_LABELS[sa.status as StudentStatus] ?? sa.status : "Başlamadı"}
+          </span>
+        </div>
+      </div>
 
-      {attempts.map((t, idx) => {
+      {/* Editorial Summary Strip */}
+      <div className="editorial-metrics" style={{ marginBottom: 24 }}>
+        <div className="metric-item">
+          <div className="metric-value">
+            {pct(sa?.latestScore)}
+          </div>
+          <div className="metric-label">Sonuç Puanı</div>
+          <div className="metric-desc">Hedef başarı eşiği: %{d.assignment.minimumScore}</div>
+        </div>
+        <div className="metric-item">
+          <div className="metric-value">
+            {sa?.attemptCount ?? 0}
+          </div>
+          <div className="metric-label">Deneme Sayısı</div>
+          <div className="metric-desc">Toplam yapılan deneme</div>
+        </div>
+        <div className="metric-item">
+          <div className="metric-value" style={{ fontSize: "1.4rem" }}>
+            {fmt(sa?.completedAt)}
+          </div>
+          <div className="metric-label">Tamamlama Tarihi</div>
+          <div className="metric-desc">Ön bilgi kontrolü bitişi</div>
+        </div>
+      </div>
+
+      {attempts.length === 0 && (
+        <div className="editorial-panel" style={{ textAlign: "center", padding: "36px" }}>
+          <p className="muted" style={{ margin: 0 }}>Öğrenci henüz ön bilgi kontrolü denemesi başlatmadı.</p>
+        </div>
+      )}
+
+      {attempts.map((t) => {
         const ready = t.finalScore !== null && t.finalScore >= d.assignment.minimumScore;
         return (
-          <details key={t.id} className="card attempt-sheet" open={idx === 0}>
-            <summary>
-              <span className="row" style={{ justifyContent: "space-between", width: "100%" }}>
-                <strong style={{ fontSize: "1.1rem" }}>{t.attemptNumber}. Deneme</strong>
-                <span className="row" style={{ gap: 8 }}>
-                  <span className="badge">{ATTEMPT_STATUS_LABELS[t.status] ?? t.status}</span>
-                  {t.finalScore !== null && <span className={`badge ${ready ? "READY" : ""}`}>{ready ? "Derse Hazır" : "Tekrar Gerekli"}</span>}
+          <div key={t.id} className="editorial-panel" style={{ marginBottom: 24 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border)", paddingBottom: 12, marginBottom: 14, flexWrap: "wrap", gap: 10 }}>
+              <div>
+                <strong style={{ fontSize: "1.1rem" }}>{t.attemptNumber}. Deneme Cevap Kağıdı</strong>
+                <span className="muted" style={{ fontSize: "0.82rem", marginLeft: 10 }}>
+                  Gönderim: {fmt(t.submittedAt)}
                 </span>
-              </span>
-            </summary>
+              </div>
+              <div className="row" style={{ gap: 8 }}>
+                <span className="badge">{ATTEMPT_STATUS_LABELS[t.status] ?? t.status}</span>
+                {t.finalScore !== null && (
+                  <span className={`badge ${ready ? "READY" : "NEEDS_REVIEW"}`}>
+                    {ready ? "Derse Hazır (% " + t.finalScore + ")" : "Tekrar Gerekli (% " + t.finalScore + ")"}
+                  </span>
+                )}
+              </div>
+            </div>
 
-            <dl className="details" style={{ margin: "12px 0 16px" }}>
-              <dt>Başlama / gönderim</dt><dd>{fmt(t.startedAt)} / {fmt(t.submittedAt)}</dd>
-              <dt>Toplam puan</dt><dd>{t.earnedPoints ?? 0} / {t.totalPoints ?? "—"} puan · nihai {pct(t.finalScore)}</dd>
-              <dt>Otomatik / öğretmen</dt><dd>{pct(t.autoScore)} / {pct(t.manualScore)}</dd>
-            </dl>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12, padding: "10px 14px", backgroundColor: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", border: "1px solid var(--border)", marginBottom: 18, fontSize: "0.85rem" }}>
+              <div><strong>Kazanılan Puan:</strong> {t.earnedPoints ?? 0} / {t.totalPoints ?? "—"} puan</div>
+              <div><strong>Otomatik Puan:</strong> {pct(t.autoScore)}</div>
+              <div><strong>Öğretmen Puanı:</strong> {pct(t.manualScore)}</div>
+            </div>
 
-            <ol className="answer-list">
+            {/* Answer List formatted as authentic exam paper */}
+            <div style={{ display: "grid", gap: 16 }}>
               {t.answers.map((x, n) => {
                 const state = answerState(x, x.question.points);
                 const correct = describeCorrectAnswer(x.question.type, x.question.data);
                 const auto = isAutoScored(x.question.type, x.question.data);
+                const isCorrect = state === "CORRECT";
+                const isPending = state === "PENDING";
+                const isPartial = state === "PARTIAL";
+
                 return (
-                  <li key={x.id} className={`answer-item ${STATE_CLASS[state] ?? ""}`}>
-                    <div className="row" style={{ gap: 8, marginBottom: 6 }}>
-                      <strong>{n + 1}.</strong>
-                      <span className="badge">{QUESTION_TYPE_LABELS[x.question.type as QuestionType] ?? x.question.type}</span>
-                      <span className={`answer-state ${STATE_CLASS[state] ?? ""}`}>{ANSWER_STATE_LABELS[state]}</span>
-                      <span className="code" style={{ marginLeft: "auto" }}>
-                        {x.awardedPoints ?? "—"} / {x.question.points} puan {auto ? "(otomatik)" : x.reviewStatus === "REVIEWED" ? "(öğretmen)" : ""}
+                  <div
+                    key={x.id}
+                    style={{
+                      border: "1px solid var(--border)",
+                      borderLeft: `4px solid ${isCorrect ? "var(--ok)" : isPending ? "var(--accent)" : isPartial ? "var(--warn)" : "var(--danger)"}`,
+                      borderRadius: "var(--radius-xs)",
+                      padding: "16px 18px",
+                      backgroundColor: "var(--surface)",
+                    }}
+                  >
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8, flexWrap: "wrap", gap: 8 }}>
+                      <div className="row" style={{ gap: 8 }}>
+                        <strong>Soru {n + 1}</strong>
+                        <span className="badge">{QUESTION_TYPE_LABELS[x.question.type as QuestionType] ?? x.question.type}</span>
+                        <span className="badge" style={{ backgroundColor: isCorrect ? "var(--ok-bg)" : isPending ? "var(--accent-light)" : "var(--danger-bg)", color: isCorrect ? "var(--ok-text)" : isPending ? "var(--accent)" : "var(--danger-text)" }}>
+                          {ANSWER_STATE_LABELS[state]}
+                        </span>
+                      </div>
+                      <span className="code">
+                        {x.awardedPoints ?? "—"} / {x.question.points} Puan {auto ? "(Otomatik)" : x.reviewStatus === "REVIEWED" ? "(Öğretmen)" : ""}
                       </span>
                     </div>
-                    <p style={{ fontWeight: 600, margin: "4px 0 8px", whiteSpace: "pre-wrap" }}>{x.question.questionText}</p>
-                    <div className="answer-grid">
-                      <div><span className="muted">Öğrencinin cevabı</span><p>{describeAnswer(x.question.type, x.question.data, x.answer)}</p></div>
-                      <div><span className="muted">{correct.label}</span><p>{correct.text}</p></div>
+
+                    <p style={{ fontWeight: 600, margin: "6px 0 12px", whiteSpace: "pre-wrap", fontSize: "0.95rem" }}>
+                      {x.question.questionText}
+                    </p>
+
+                    <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 8 }}>
+                      <div style={{ padding: "10px 12px", backgroundColor: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", border: "1px solid var(--border)" }}>
+                        <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>ÖĞRENCİNİN CEVABI</span>
+                        <p style={{ margin: "4px 0 0", fontSize: "0.92rem", color: "var(--text)" }}>
+                          {describeAnswer(x.question.type, x.question.data, x.answer)}
+                        </p>
+                      </div>
+
+                      <div style={{ padding: "10px 12px", backgroundColor: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", border: "1px solid var(--border)" }}>
+                        <span className="kicker" style={{ margin: 0, fontSize: "0.72rem", color: "var(--ok)" }}>{correct.label}</span>
+                        <p style={{ margin: "4px 0 0", fontSize: "0.92rem", color: "var(--text)" }}>
+                          {correct.text}
+                        </p>
+                      </div>
                     </div>
+
                     {x.teacherFeedback && (
-                      <p style={{ margin: "8px 0 0", fontSize: "0.9rem", color: "var(--ok-text)" }}><strong>Öğretmen notu:</strong> {x.teacherFeedback}</p>
+                      <div style={{ marginTop: 8, padding: "8px 12px", backgroundColor: "var(--ok-bg)", border: "1px solid var(--ok-border)", borderRadius: "var(--radius-xs)", fontSize: "0.88rem", color: "var(--ok-text)" }}>
+                        <strong>Öğretmen Notu:</strong> {x.teacherFeedback}
+                      </div>
                     )}
+
                     {!auto && t.status === "PENDING_TEACHER_REVIEW" && (x.reviewStatus === "PENDING_REVIEW" || x.reviewStatus === "REVIEWED") && (
-                      <div className="review-box">
-                        <p className="muted" style={{ margin: "0 0 4px", fontSize: "0.85rem" }}>
-                          {x.reviewStatus === "PENDING_REVIEW" ? "Bu açık uçlu cevabı puanlayın." : "Puanı değiştirebilirsiniz (deneme hâlâ değerlendirme bekliyor)."} En fazla {x.question.points} puan.
+                      <div style={{ marginTop: 12, paddingTop: 12, borderTop: "1px solid var(--border)" }}>
+                        <p className="muted" style={{ margin: "0 0 6px", fontSize: "0.82rem" }}>
+                          {x.reviewStatus === "PENDING_REVIEW" ? "Bu açık uçlu cevabı puanlayın." : "Puanı değiştirebilirsiniz."} En fazla {x.question.points} puan.
                         </p>
                         <ReviewForm answerId={x.id} maxPoints={x.question.points} />
                       </div>
                     )}
-                  </li>
+                  </div>
                 );
               })}
-            </ol>
-          </details>
+            </div>
+          </div>
         );
       })}
     </>

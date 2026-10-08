@@ -25,50 +25,110 @@ export default async function StudentAssignmentPage({ params }: { params: Promis
 
   return (
     <>
-      <div style={{ marginBottom: 16 }}>
-        <p className="muted" style={{ marginBottom: 6 }}>
-          <Link href="/ogrenci/gorevler">← Görevlerime dön</Link>
+      <div style={{ marginBottom: 20 }}>
+        <p className="muted" style={{ marginBottom: 8, fontSize: "0.88rem" }}>
+          <Link href="/ogrenci/gorevler" style={{ textDecoration: "none" }}>← Görevlerime dön</Link>
         </p>
-        <div className="row" style={{ gap: 8, marginBottom: 4 }}>
-          <span className="badge" style={{ background: "var(--accent-light)", color: "var(--accent)" }}>
-            {a.subject}
-          </span>
-          <span className={`badge ${s}`}>
-            {STATUS_LABELS[s as StudentStatus] ?? s}
-          </span>
+        <div className="editorial-kicker">ÖĞRENCİ ÇALIŞMA PLANI · {a.grade}. SINIF</div>
+        <div className="row" style={{ justifyContent: "space-between", alignItems: "flex-start", gap: 12, flexWrap: "wrap", marginTop: 4 }}>
+          <div>
+            <h1 style={{ margin: "0 0 6px", fontSize: "1.75rem", fontFamily: "var(--font-serif)", letterSpacing: "-0.01em" }}>
+              {a.topic}
+            </h1>
+            <div className="row" style={{ gap: 8 }}>
+              <span className="badge" style={{ background: "var(--surface-subtle)", color: "var(--accent)", borderColor: "var(--border)" }}>
+                {a.subject}
+              </span>
+              <span className={`badge ${s}`}>
+                {STATUS_LABELS[s as StudentStatus] ?? s}
+              </span>
+              <span className="muted" style={{ fontSize: "0.85rem" }}>
+                {a.classroom} · {a.teacher}
+              </span>
+            </div>
+          </div>
+          {next && (
+            <Link className="button primary" href={next.href} style={{ padding: "10px 20px", fontSize: "0.95rem" }}>
+              {next.label}
+            </Link>
+          )}
         </div>
-        <h1 style={{ margin: "4px 0 0" }}>{a.topic}</h1>
       </div>
 
       <ProgressStepper status={s} summaryConfirmed={Boolean(sa.summaryConfirmedAt)} />
 
-      <div className="card">
-        <h2>Görev Bilgileri</h2>
-        <dl className="details" style={{ marginTop: 12 }}>
-          <dt>Ders & Düzey</dt><dd>{a.subject} ({a.grade}. sınıf)</dd>
-          <dt>Sınıf & Öğretmen</dt><dd>{a.classroom} · {a.teacher}</dd>
-          <dt>Tema / Ünite</dt><dd>{a.unitOrTheme}</dd>
-          <dt>Son Teslim Tarihi</dt><dd>{formatDate(a.deadline)}</dd>
-          <dt>Derse Hazır Olma Eşiği</dt><dd>%{a.minimumScore}</dd>
-          <dt>Ön Bilgi Kontrolü</dt><dd>{a.questionCount} soru · {a.policy.max === null ? "sınırsız deneme" : `${a.policy.used} / ${a.policy.max} deneme kullanıldı`}</dd>
-          <dt>Şu Anki Durum</dt><dd><span className={`badge ${s}`}>{STATUS_LABELS[s as StudentStatus] ?? s}</span></dd>
-        </dl>
+      <div className="editorial-panel" style={{ marginTop: 20, marginBottom: 20 }}>
+        <div className="editorial-panel-header">
+          <div>
+            <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Görev Parametreleri</h2>
+            <span className="muted" style={{ fontSize: "0.82rem" }}>Bu çalışmanın kuralları ve teslim bilgileri</span>
+          </div>
+          <span className="badge" style={{ background: "var(--surface-subtle)", color: "var(--muted)" }}>
+            Hedef: %{a.minimumScore} Hazır Bulunuşluk
+          </span>
+        </div>
+
+        <div style={{ padding: "18px 20px" }}>
+          <dl className="details" style={{ margin: 0 }}>
+            <dt>Ders & Kademe</dt>
+            <dd><strong>{a.subject}</strong> · {a.grade}. Sınıf</dd>
+            <dt>Sınıf & Öğretmen</dt>
+            <dd>{a.classroom} · {a.teacher}</dd>
+            <dt>Ünite / Tema</dt>
+            <dd>{a.unitOrTheme}</dd>
+            <dt>Son Teslim Tarihi</dt>
+            <dd><time>{formatDate(a.deadline)}</time></dd>
+            <dt>Hazır Olma Eşiği</dt>
+            <dd>%{a.minimumScore} ve üzeri puan</dd>
+            <dt>Ön Bilgi Soruları</dt>
+            <dd>{a.questionCount} soru · {a.policy.max === null ? "Sınırsız deneme imkanı" : `${a.policy.used} / ${a.policy.max} deneme hakkı kullanıldı`}</dd>
+            <dt>Güncel Durum</dt>
+            <dd><span className={`badge ${s}`}>{STATUS_LABELS[s as StudentStatus] ?? s}</span></dd>
+          </dl>
+        </div>
       </div>
 
-      <div className="card" style={{ borderLeft: "4px solid var(--accent)" }}>
-        <h2>Konuya Giriş</h2>
-        <p style={{ whiteSpace: "pre-wrap", fontSize: "1.05rem", lineHeight: 1.6 }}>
-          {content.introduction || "—"}
-        </p>
-        <div className="info" style={{ marginBottom: 20 }}>
-          💡 <strong>Unutma:</strong> Bu çalışmanın amacı konuyu önceden ezberlemen değil; yarın derste öğretmenini rahatça anlayabilmen için temel kavramları hatırlamandır.
+      <div className="editorial-panel" style={{ borderLeft: "4px solid var(--accent)" }}>
+        <div className="editorial-panel-header">
+          <div>
+            <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Ön Hazırlık Rehberi</h2>
+            <span className="muted" style={{ fontSize: "0.82rem" }}>Derse girmeden önce bilmen gereken temel bağlam</span>
+          </div>
         </div>
-        {s === "EXPIRED" && <p className="error">Bu görevin son teslim tarihi geçti.</p>}
-        {next && (
-          <Link className="button primary" href={next.href} style={{ padding: "12px 24px", fontSize: "1rem" }}>
-            {next.label}
-          </Link>
-        )}
+        <div style={{ padding: "20px" }}>
+          <p style={{ whiteSpace: "pre-wrap", fontSize: "1.02rem", lineHeight: 1.7, color: "var(--text)", margin: "0 0 20px" }}>
+            {content.introduction || "Bu görev için ön hazırlık girişi henüz tanımlanmamıştır."}
+          </p>
+
+          <div
+            style={{
+              padding: "14px 16px",
+              background: "var(--surface-subtle)",
+              border: "1px solid var(--border)",
+              borderRadius: "var(--radius-sm)",
+              borderLeft: "3px solid var(--accent)",
+              fontSize: "0.9rem",
+              lineHeight: 1.6,
+              marginBottom: 20,
+            }}
+          >
+            <strong style={{ color: "var(--accent)" }}>Öğrenci Notu:</strong> Bu çalışmanın amacı konuyu önceden ezberlemeniz değil; yarın sınıfta öğretmeninizi rahatça anlayabilmeniz için gereken temel terimleri hatırlamanızdır.
+          </div>
+
+          {s === "EXPIRED" && (
+            <p className="notice-inline error" role="alert">
+              Bu görevin son teslim tarihi dolmuştur; yeni deneme başlatılamaz.
+            </p>
+          )}
+
+          {next && (
+            <div style={{ marginTop: 16 }}>
+              <Link className="button primary" href={next.href} style={{ padding: "12px 24px", fontSize: "1rem" }}>
+                {next.label}
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

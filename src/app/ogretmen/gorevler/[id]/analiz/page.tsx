@@ -24,17 +24,6 @@ export default async function AnalyticsPage({ params }: { params: Promise<{ id: 
   const { assignment: a, totals: t } = r;
   const fmt = (d: Date | null) => (d ? formatDate(d) : null);
 
-  const cards: [string, string | number, string?][] = [
-    ["Görev verilen", t.assigned],
-    ["Göreve başlayan", t.started, "özeti açan"],
-    ["Özeti onaylayan", t.summaryConfirmed],
-    ["Ön bilgi kontrolünü başlatan", t.assessmentStarted],
-    ["Çalışmayı tamamlayan", t.completed, "nihai sonucu olan"],
-    ["Derse Hazır", t.ready],
-    ["Tekrar Gerekli", t.needsReview],
-    ["Öğretmen Değerlendirmesi Bekleniyor", t.pending],
-    ["Tamamlamamış", t.notCompleted, `${t.expired} süresi geçti`],
-  ];
   const struggleText = r.hasData ? "Belirgin bir zorlanma görülmedi" : "—";
   const briefRows: [string, React.ReactNode][] = [
     ["Toplam öğrenci", t.assigned],
@@ -71,69 +60,69 @@ export default async function AnalyticsPage({ params }: { params: Promise<{ id: 
       <p className="muted">{a.classroom} · {a.subject} · {a.unitOrTheme} · Son tarih {formatDate(a.deadline)} · Eşik %{a.minimumScore}</p>
 
       {/* Briefing */}
-      <section className="card briefing" aria-labelledby="briefing-title">
-        <h2 id="briefing-title">Yarınki Derse Hazırlık Raporu</h2>
-        <p style={{ marginTop: 0 }}><strong>{a.classroom} – {a.subject}</strong><br />Konu: {a.topic}</p>
-        <dl className="brief-grid">
+      <section className="editorial-panel" aria-labelledby="briefing-title">
+        <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>PEDAGOJİK ANALİZ</span>
+        <h2 id="briefing-title" style={{ fontSize: "1.3rem", margin: "2px 0 6px" }}>Yarınki Derse Hazırlık Raporu</h2>
+        <p style={{ marginTop: 0, color: "var(--muted)", fontSize: "0.88rem" }}>
+          <strong>{a.classroom} – {a.subject}</strong> · Konu: {a.topic}
+        </p>
+
+        <dl className="brief-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 14, margin: "16px 0", padding: "14px", backgroundColor: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", border: "1px solid var(--border)" }}>
           {briefRows.map(([label, value]) => (
             <div key={label}>
-              <dt>{label}</dt>
-              <dd>{value}</dd>
+              <dt style={{ fontSize: "0.78rem", color: "var(--muted)", textTransform: "uppercase", fontWeight: 700 }}>{label}</dt>
+              <dd style={{ fontSize: "1.05rem", fontWeight: 600, margin: "2px 0 0", color: "var(--text)" }}>{value}</dd>
             </div>
           ))}
         </dl>
+
         {r.recommendation ? (
-          <div className={`recommendation ${r.recommendation.level}`} role="note">
-            <strong>Ders başlangıç önerisi: </strong>
+          <div style={{ padding: "12px 16px", backgroundColor: "var(--accent-light)", border: "1px solid var(--accent-border)", borderRadius: "var(--radius-xs)", fontSize: "0.92rem", color: "var(--text)" }} role="note">
+            <strong style={{ color: "var(--accent)" }}>Ders Başlangıç Önerisi: </strong>
             {r.recommendation.text}
             {r.recommendation.focus && <> {r.recommendation.focus}</>}
           </div>
         ) : (
-          <p className="muted">{EMPTY}</p>
+          <p className="muted" style={{ margin: 0 }}>{EMPTY}</p>
         )}
       </section>
 
-      {/* KPIs */}
-      <section className="card" aria-labelledby="kpi-title">
-        <h2 id="kpi-title">Özet</h2>
-        <div className="kpi-row">
-          <div className="kpi">
-            <span className="kpi-value">{rate(t.readinessRate)}</span>
-            <span>Genel sınıf hazırlık oranı</span>
-            <span className="muted">derse hazır / görev verilen ({t.ready}/{t.assigned})</span>
+      {/* Metrics Strip */}
+      <section className="editorial-panel" aria-labelledby="kpi-title">
+        <h2 id="kpi-title" style={{ fontSize: "1.15rem", marginBottom: 16 }}>Sınıf Düzeyi Özet Göstergeleri</h2>
+        <div className="editorial-metrics">
+          <div className="metric-item">
+            <div className="metric-value">{rate(t.readinessRate)}</div>
+            <div className="metric-label">Genel Hazırlık Oranı</div>
+            <div className="metric-desc">Hazır / Toplam ({t.ready}/{t.assigned})</div>
           </div>
-          <div className="kpi">
-            <span className="kpi-value">{rate(t.readinessAmongCompleted)}</span>
-            <span>Çalışmayı tamamlayanlar içinde hazırlık oranı</span>
-            <span className="muted">derse hazır / tamamlayan ({t.ready}/{t.completed})</span>
+          <div className="metric-item">
+            <div className="metric-value">{rate(t.readinessAmongCompleted)}</div>
+            <div className="metric-label">Tamamlayanlar İçi Oran</div>
+            <div className="metric-desc">Hazır / Biten ({t.ready}/{t.completed})</div>
           </div>
-          <div className="kpi">
-            <span className="kpi-value">{t.averageLatestScore === null ? "—" : `%${num(t.averageLatestScore)}`}</span>
-            <span>Ortalama son puan</span>
-            <span className="muted">en iyi puan ort. {t.averageBestScore === null ? "—" : `%${num(t.averageBestScore)}`} · değerlendirme bekleyenler hariç</span>
+          <div className="metric-item">
+            <div className="metric-value">{t.averageLatestScore === null ? "—" : `%${num(t.averageLatestScore)}`}</div>
+            <div className="metric-label">Ortalama Puan</div>
+            <div className="metric-desc">En iyi ort. {t.averageBestScore === null ? "—" : `%${num(t.averageBestScore)}`}</div>
           </div>
-          <div className="kpi">
-            <span className="kpi-value">{num(t.averageAttempts)}</span>
-            <span>Ortalama deneme</span>
-            <span className="muted">deneme yapan öğrenciler</span>
+          <div className="metric-item">
+            <div className="metric-value">{num(t.averageAttempts)}</div>
+            <div className="metric-label">Ortalama Deneme</div>
+            <div className="metric-desc">Deneme yapan öğrenciler</div>
           </div>
-        </div>
-        <div className="stat-grid" style={{ marginTop: 12 }}>
-          {cards.map(([label, value, hint]) => (
-            <div key={label} className="stat"><strong>{value}</strong><span className="muted">{label}{hint ? ` (${hint})` : ""}</span></div>
-          ))}
         </div>
       </section>
 
       <div className="report-grid">
-        <section className="card" aria-labelledby="status-title">
+        <section className="editorial-panel" aria-labelledby="status-title">
           <h2 id="status-title">Durum dağılımı</h2>
           <BarList
             caption="Öğrencilerin duruma göre dağılımı"
             items={r.statusDistribution.map((s) => ({ key: s.status, label: s.label, value: s.count, max: maxStatus, display: `${s.count} öğrenci` }))}
           />
         </section>
-        <section className="card" aria-labelledby="score-title">
+        <section className="editorial-panel" aria-labelledby="score-title">
           <h2 id="score-title">Puan dağılımı</h2>
           {r.hasData ? (
             <BarList
@@ -146,7 +135,7 @@ export default async function AnalyticsPage({ params }: { params: Promise<{ id: 
         </section>
       </div>
 
-      <section className="card" aria-labelledby="outcome-title">
+      <section className="editorial-panel" aria-labelledby="outcome-title">
         <h2 id="outcome-title">Öğrenme çıktısı başarısı</h2>
         {r.hasData && r.outcomeStats.some((o) => o.successRate !== null) ? (
           <>
@@ -184,7 +173,7 @@ export default async function AnalyticsPage({ params }: { params: Promise<{ id: 
         )}
       </section>
 
-      <section className="card" aria-labelledby="question-title">
+      <section className="editorial-panel" aria-labelledby="question-title">
         <h2 id="question-title">Soru analizi</h2>
         {r.hasData && r.questionStats.some((q) => q.correctRate !== null) ? (
           <>
@@ -229,14 +218,14 @@ export default async function AnalyticsPage({ params }: { params: Promise<{ id: 
       </section>
 
       {r.trend.length > 1 && (
-        <section className="card" aria-labelledby="trend-title">
+        <section className="editorial-panel" aria-labelledby="trend-title">
           <h2 id="trend-title">Hazırlık oranı eğilimi · {a.classroom} {a.subject}</h2>
           <TrendChart points={r.trend} />
           <p className="muted">Her görev için: derse hazır öğrenci / sınıfın şu anki öğrenci sayısı. Son tarihi geçmemiş görevler henüz değişebilir.</p>
         </section>
       )}
 
-      <section className="card" aria-labelledby="students-title">
+      <section className="editorial-panel" aria-labelledby="students-title">
         <h2 id="students-title">Öğrenciler</h2>
         {r.students.length === 0 ? (
           <p className="muted">Bu sınıfta öğrenci yok.</p>

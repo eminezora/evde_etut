@@ -78,16 +78,15 @@ export function UsersManager({ initialUsers, defaultRoleFilter }: { initialUsers
 
       {/* Filter and Search Bar */}
       <div
+        className="editorial-panel"
         style={{
           display: "flex",
           gap: 12,
           flexWrap: "wrap",
           alignItems: "center",
           marginBottom: 16,
-          backgroundColor: "#ffffff",
           padding: "14px 16px",
-          border: "1px solid #e2e8f0",
-          borderRadius: "10px",
+          background: "#ffffff",
         }}
       >
         <input
@@ -113,13 +112,13 @@ export function UsersManager({ initialUsers, defaultRoleFilter }: { initialUsers
           <option value="DISABLED">Devre Dışı</option>
         </select>
 
-        <span className="badge" style={{ marginLeft: "auto" }}>
+        <span className="badge" style={{ marginLeft: "auto", background: "var(--surface-subtle)" }}>
           {filtered.length} kullanıcı listelendi
         </span>
       </div>
 
       {/* Users Table */}
-      <div className="card" style={{ padding: 0, overflow: "hidden" }}>
+      <div className="editorial-panel" style={{ padding: 0, overflow: "hidden" }}>
         <div className="table-scroll">
           <table>
             <thead>

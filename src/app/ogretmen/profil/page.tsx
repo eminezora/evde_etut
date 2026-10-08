@@ -6,44 +6,129 @@ import { ProfileHeader } from "@/components/profile/ProfileHeader.tsx";
 import { NameForm, PasswordForm } from "@/components/profile/ProfileForms.tsx";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
 
-export const metadata = { title: "Profil – Evde Etüt" };
+export const metadata = { title: "Profil & Hesap – Evde Etüt" };
 
 export default async function TeacherProfilePage() {
   const teacher = await requireTeacher();
   const p = await getTeacherProfile(teacher.id);
   if (!p) notFound();
+
   return (
     <>
+      <div style={{ marginBottom: 20 }}>
+        <span className="kicker">ÖĞRETMEN HESAP YÖNETİMİ</span>
+        <h1 style={{ margin: "2px 0 6px" }}>Profil ve Güvenlik Ayarları</h1>
+        <p className="muted" style={{ margin: 0, fontSize: "0.92rem" }}>
+          Kişisel bilgilerinizi, şifrenizi ve bağlı sınıflarınızın operasyonel durumunu yönetin.
+        </p>
+      </div>
+
       <ProfileHeader user={p.user} />
 
-      <div className="card">
-        <h2>Özet</h2>
-        <div className="stat-grid" style={{ marginTop: 12 }}>
-          <div className="stat"><span className="muted">Sınıf</span><strong>{p.stats.classrooms}</strong></div>
-          <div className="stat"><span className="muted">Öğrenci</span><strong>{p.stats.students}</strong></div>
-          <div className="stat"><span className="muted">Aktif görev</span><strong>{p.stats.activeAssignments}</strong></div>
-          <div className="stat"><span className="muted">Taslak görev</span><strong>{p.stats.draftAssignments}</strong></div>
+      {/* Section: Editorial Metrics Strip */}
+      <div className="editorial-metrics" style={{ marginBottom: 24 }}>
+        <div className="metric-item">
+          <div className="metric-value">{p.stats.classrooms}</div>
+          <div className="metric-label">Aktif Sınıf</div>
+          <div className="metric-desc">Yönettiğiniz toplam şube</div>
+        </div>
+        <div className="metric-item">
+          <div className="metric-value">{p.stats.students}</div>
+          <div className="metric-label">Kayıtlı Öğrenci</div>
+          <div className="metric-desc">Sınıflarınızdaki öğrenciler</div>
+        </div>
+        <div className="metric-item">
+          <div className="metric-value" style={{ color: "var(--ok)" }}>{p.stats.activeAssignments}</div>
+          <div className="metric-label">Yayındaki Görev</div>
+          <div className="metric-desc">Öğrencilerin eriştiği görevler</div>
+        </div>
+        <div className="metric-item">
+          <div className="metric-value" style={{ color: "var(--warn)" }}>{p.stats.draftAssignments}</div>
+          <div className="metric-label">Taslak Görev</div>
+          <div className="metric-desc">Hazırlık aşamasındaki ödevler</div>
         </div>
       </div>
 
-      <div className="card">
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <h2>Sınıflarım</h2>
-          <Link href="/ogretmen/siniflar">Sınıfları yönet →</Link>
+      {/* Section 1: Hesap Bilgileri */}
+      <div className="editorial-panel">
+        <div style={{ borderBottom: "1px solid var(--border)", paddingBottom: 10, marginBottom: 16 }}>
+          <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>BÖLÜM 01</span>
+          <h2 style={{ fontSize: "1.2rem", margin: "2px 0 0" }}>Hesap Bilgileri</h2>
         </div>
+
+        <NameForm initialName={p.user.name} />
+
+        <div style={{ marginTop: 18, paddingTop: 14, borderTop: "1px solid var(--border-subtle)" }}>
+          <label style={{ margin: "0 0 4px" }}>Kayıtlı E-posta Adresi</label>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: "0.95rem", fontWeight: 600 }}>{p.user.email}</span>
+            <span className="badge">Doğrulanmış Hesap</span>
+          </div>
+          <p className="muted" style={{ margin: "4px 0 0", fontSize: "0.8rem" }}>
+            E-posta adresi güvenlik ve veri bütünlüğü nedeniyle doğrudan değiştirilemez.
+          </p>
+        </div>
+      </div>
+
+      {/* Section 2: Güvenlik & Şifre */}
+      <div className="editorial-panel">
+        <div style={{ borderBottom: "1px solid var(--border)", paddingBottom: 10, marginBottom: 16 }}>
+          <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>BÖLÜM 02</span>
+          <h2 style={{ fontSize: "1.2rem", margin: "2px 0 0" }}>Güvenlik ve Parola</h2>
+        </div>
+
+        {!p.user.hasPassword && (
+          <p className="info" style={{ marginTop: 0, marginBottom: 16 }}>
+            Hesabınız Google ile açıldı. Dilerseniz e-posta ve şifreyle de oturum açabilmek için aşağıdan parola belirleyebilirsiniz.
+          </p>
+        )}
+        <PasswordForm hasPassword={p.user.hasPassword} />
+      </div>
+
+      {/* Section 3: Bağlı Sınıflar */}
+      <div className="editorial-panel">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border)", paddingBottom: 10, marginBottom: 16 }}>
+          <div>
+            <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>BÖLÜM 03</span>
+            <h2 style={{ fontSize: "1.2rem", margin: "2px 0 0" }}>Bağlı Sınıflar ve Şubeler</h2>
+          </div>
+          <Link href="/ogretmen/siniflar" className="button" style={{ minHeight: 28, fontSize: "0.8rem", padding: "2px 10px" }}>
+            Tüm Sınıfları Yönet →
+          </Link>
+        </div>
+
         {p.classrooms.length === 0 ? (
-          <p className="muted">Henüz sınıf oluşturmadınız. <Link href="/ogretmen/siniflar">İlk sınıfınızı oluşturun.</Link></p>
+          <p className="muted" style={{ margin: 0 }}>
+            Henüz sınıf oluşturmadınız. <Link href="/ogretmen/siniflar">İlk sınıfınızı oluşturun.</Link>
+          </p>
         ) : (
           <div className="table-scroll">
             <table>
-              <thead><tr><th>Sınıf</th><th>Düzey</th><th>Katılma kodu</th><th>Öğrenci</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>Sınıf / Şube</th>
+                  <th>Düzey</th>
+                  <th>Katılım Kodu</th>
+                  <th>Kayıtlı Öğrenci</th>
+                  <th>İşlem</th>
+                </tr>
+              </thead>
               <tbody>
                 {p.classrooms.map((c) => (
                   <tr key={c.id}>
-                    <td><Link href={`/ogretmen/siniflar/${c.id}`}>{c.name}</Link></td>
+                    <td>
+                      <Link href={`/ogretmen/siniflar/${c.id}`} style={{ fontWeight: 600 }}>
+                        {c.name}
+                      </Link>
+                    </td>
                     <td>{c.grade}. sınıf</td>
                     <td><span className="code">{c.joinCode}</span></td>
-                    <td>{c._count.members}</td>
+                    <td>{c._count.members} öğrenci</td>
+                    <td>
+                      <Link href={`/ogretmen/siniflar/${c.id}`} style={{ fontSize: "0.82rem" }}>
+                        Yönet →
+                      </Link>
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -52,19 +137,34 @@ export default async function TeacherProfilePage() {
         )}
       </div>
 
-      <div className="card">
-        <h2>Hesap Ayarları</h2>
-        <NameForm initialName={p.user.name} />
-        <label style={{ marginTop: 18 }}>E-posta</label>
-        <p className="muted" style={{ margin: 0 }}>{p.user.email} · E-posta adresi güvenlik nedeniyle buradan değiştirilemez.</p>
-        <h3 style={{ margin: "22px 0 8px", fontSize: "1rem" }}>{p.user.hasPassword ? "Şifre" : "Parola"}</h3>
-        {!p.user.hasPassword && <p className="muted" style={{ margin: "0 0 10px" }}>Hesabınız Google ile oluşturuldu. İsterseniz e-posta ile de giriş yapabilmek için bir parola oluşturabilirsiniz.</p>}
-        <PasswordForm hasPassword={p.user.hasPassword} />
+      {/* Section 4: Google Bağlantısı */}
+      <div className="editorial-panel">
+        <div style={{ borderBottom: "1px solid var(--border)", paddingBottom: 10, marginBottom: 14 }}>
+          <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>BÖLÜM 04</span>
+          <h2 style={{ fontSize: "1.2rem", margin: "2px 0 0" }}>Google Entegrasyonu</h2>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+          <div>
+            <strong style={{ fontSize: "0.95rem" }}>Google Hesabı ile Oturum Açma</strong>
+            <p className="muted" style={{ margin: "2px 0 0", fontSize: "0.85rem" }}>
+              {p.user.hasPassword ? "Google veya e-posta/şifre ile dilediğiniz gibi giriş yapabilirsiniz." : "Oturum açma Google OAuth ile eşleştirilmiştir."}
+            </p>
+          </div>
+          <span className="badge READY">Aktif</span>
+        </div>
       </div>
 
-      <div className="card row" style={{ justifyContent: "space-between" }}>
-        <span className="muted">Bu cihazdaki oturumu kapatın.</span>
-        <LogoutButton label="Çıkış Yap" />
+      {/* Section 5: Oturum Yönetimi */}
+      <div className="editorial-panel" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
+        <div>
+          <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>BÖLÜM 05</span>
+          <strong style={{ display: "block", fontSize: "0.95rem" }}>Aktif Cihaz Oturumu</strong>
+          <span className="muted" style={{ fontSize: "0.85rem" }}>
+            Bu tarayıcıdaki öğretmen oturumunuzu güvenle sonlandırın.
+          </span>
+        </div>
+        <LogoutButton label="Güvenli Çıkış Yap" />
       </div>
     </>
   );

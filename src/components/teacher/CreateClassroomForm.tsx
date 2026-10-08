@@ -22,7 +22,7 @@ export function CreateClassroomForm() {
         router.refresh();
       }}
     >
-      <h2>Yeni sınıf</h2>
+      <h2 style={{ fontSize: "1.1rem", fontFamily: "var(--font-serif)", margin: "0 0 14px" }}>Yeni Sınıf Şubesi Oluştur</h2>
       <div className="row" style={{ alignItems: "flex-end" }}>
         <div>
           <label htmlFor="cname">Sınıf adı</label>

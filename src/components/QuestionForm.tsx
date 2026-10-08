@@ -195,8 +195,9 @@ export function QuestionForm({
   );
 
   return (
-    <div className="card question-form">
-      <label htmlFor="q-type">Soru türü</label>
+    <div className="editorial-panel question-form" style={{ padding: 24, margin: "16px 0" }}>
+      <div className="editorial-kicker" style={{ color: "var(--accent)" }}>SORU YAPILANDIRMASI</div>
+      <label htmlFor="q-type" style={{ marginTop: 4 }}>Soru türü</label>
       <select id="q-type" value={s.type} onChange={(e) => set("type", e.target.value as QuestionType)}>
         {QUESTION_TYPES.map((t) => (
           <option key={t} value={t}>{QUESTION_TYPE_LABELS[t]}</option>

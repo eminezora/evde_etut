@@ -4,228 +4,277 @@ import { getCurrentStudent, getCurrentTeacher } from "@/lib/auth/current-user.ts
 export default async function HomePage() {
   const teacher = await getCurrentTeacher();
   const student = await getCurrentStudent();
-  const user = teacher ? { role: "TEACHER" as const, name: teacher.name, href: "/ogretmen/gorevler" }
-    : student ? { role: "STUDENT" as const, name: student.name, href: "/ogrenci/gorevler" }
+  const user = teacher
+    ? { role: "TEACHER" as const, name: teacher.name, href: "/ogretmen/gorevler" }
+    : student
+    ? { role: "STUDENT" as const, name: student.name, href: "/ogrenci/gorevler" }
     : null;
 
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      {/* Public Topbar */}
-      <header className="top">
-        <Link href="/" className="brand-badge">
-          <span className="brand-icon">📚</span>
-          <span>Evde Etüt</span>
-        </Link>
-        <nav>
-          <a href="#ozellikler">Özellikler</a>
-          <a href="#mufredat">MEB Müfredatı</a>
-          <a href="#nasil-calisir">Nasıl Çalışır?</a>
+      {/* Editorial Masthead Top Header */}
+      <header className="top" style={{ borderBottom: "1px solid var(--border)", background: "var(--surface)" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <Link href="/" className="brand-badge">
+            <span className="brand-icon">✎</span>
+            <span>Evde Etüt</span>
+          </Link>
+          <span style={{ fontSize: "0.8rem", color: "var(--muted)", borderLeft: "1px solid var(--border)", paddingLeft: 12 }}>
+            Öğrenme Çalışma Alanı
+          </span>
+        </div>
+
+        <nav style={{ display: "flex", alignItems: "center", gap: 16 }}>
+          <a href="#pedagoji" style={{ fontSize: "0.88rem", color: "var(--text-secondary)" }}>Pedagojik Model</a>
+          <a href="#mufredat" style={{ fontSize: "0.88rem", color: "var(--text-secondary)" }}>MEB Müfredatı</a>
+          <a href="#is-akisi" style={{ fontSize: "0.88rem", color: "var(--text-secondary)" }}>İş Akışı</a>
           {user ? (
-            <div className="row" style={{ gap: 8 }}>
+            <div className="row" style={{ gap: 8, marginLeft: 8 }}>
               <span className="user-pill">
                 <span className="user-avatar">{user.name.charAt(0).toUpperCase()}</span>
                 <span>{user.name}</span>
               </span>
-              <Link href={user.href} className="button primary" style={{ minHeight: 36, padding: "6px 14px" }}>
-                Panelime Git →
+              <Link href={user.href} className="button primary" style={{ minHeight: 34, padding: "4px 14px", fontSize: "0.88rem" }}>
+                Panelime Dön →
               </Link>
             </div>
           ) : (
-            <div className="row" style={{ gap: 8 }}>
-              <Link href="/giris" className="button" style={{ minHeight: 36, padding: "6px 14px" }}>
+            <div className="row" style={{ gap: 8, marginLeft: 8 }}>
+              <Link href="/giris" className="button ghost" style={{ minHeight: 34, padding: "4px 12px", fontSize: "0.88rem" }}>
                 Giriş Yap
               </Link>
-              <Link href="/kayit" className="button primary" style={{ minHeight: 36, padding: "6px 14px" }}>
-                Hemen Başla
+              <Link href="/kayit" className="button primary" style={{ minHeight: 34, padding: "4px 14px", fontSize: "0.88rem" }}>
+                Kayıt Ol
               </Link>
             </div>
           )}
         </nav>
       </header>
 
-      {/* Hero Section */}
-      <section className="landing-hero">
-        <div className="landing-pill">
-          <span>✨</span>
-          <span>MEB Türkiye Yüzyılı Maarif Modeli ile %100 Uyumlu</span>
-        </div>
-        <h1>Derse Eksiksiz ve Özgüvenle Hazırlanın</h1>
-        <p className="subtitle">
-          Evde Etüt; ortaokul öğrencilerinin dersten önce MEB kazanımlarına uygun özetleri okumasını,
-          yapay zekâ destekli ön bilgi kontrolünü tamamlamasını ve öğretmenlerin sınıfa hazır girmesini sağlayan
-          yeni nesil eğitim platformudur.
-        </p>
-        <div className="landing-cta-row">
-          <Link href="/kayit" className="button primary">
-            Öğrenci Olarak Başla →
-          </Link>
-          <Link href="/giris" className="button">
-            Öğretmen Girişi
-          </Link>
+      {/* Editorial Lead Section (Two Columns: Manifesto & Worksheet Preview) */}
+      <section style={{ maxWidth: 1080, margin: "0 auto", padding: "48px 24px 36px", width: "100%" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
+          <span className="badge" style={{ backgroundColor: "var(--surface-subtle)", color: "var(--accent)", borderColor: "var(--border-strong)" }}>
+            T.C. Millî Eğitim Bakanlığı Türkiye Yüzyılı Maarif Modeli
+          </span>
+          <span style={{ fontSize: "0.82rem", color: "var(--muted)" }}>Ortaokul Kademeleri (5, 6, 7, 8. Sınıf)</span>
         </div>
 
-        {/* Live Visual Showcase Card */}
-        <div className="card" style={{ maxWidth: 680, margin: "0 auto", textAlign: "left", border: "1px solid var(--accent-border)", background: "linear-gradient(180deg, var(--surface) 0%, var(--surface-subtle) 100%)" }}>
-          <div className="row" style={{ justifyContent: "space-between", marginBottom: 14 }}>
-            <div className="row" style={{ gap: 8 }}>
-              <span className="badge PUBLISHED">● Canlı Ön Hazırlık</span>
-              <span className="muted" style={{ fontSize: "0.88rem" }}>5. Sınıf · Fen Bilimleri</span>
+        <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: 40, alignItems: "start" }}>
+          {/* Sol Sütun: Editoryal Manifesto */}
+          <div>
+            <h1 style={{ fontSize: "2.75rem", lineHeight: 1.15, marginBottom: 16 }}>
+              Derse Eksiksiz ve Özgüvenle Hazırlanın.
+            </h1>
+            <p style={{ fontSize: "1.12rem", lineHeight: 1.7, color: "var(--text-secondary)", marginBottom: 24 }}>
+              Evde Etüt; geleneksel uzun ev ödevi yorgunluğunu ortadan kaldırarak ortaokul öğrencilerinin
+              dersten önceki akşam yalnızca 5 dakikalık MEB kazanım özetini okumasını, formatif ön kontrolleri
+              tamamlamasını ve öğretmenlerin ertesi sabah sınıfa hazır bulunuşluk analiziyle girmesini sağlayan
+              akademik çalışma alanıdır.
+            </p>
+
+            <div className="row" style={{ gap: 12, marginBottom: 32 }}>
+              <Link href="/kayit" className="button primary" style={{ padding: "10px 20px" }}>
+                Öğrenci Olarak Başla →
+              </Link>
+              <Link href="/giris" className="button" style={{ padding: "10px 20px" }}>
+                Öğretmen Girişi
+              </Link>
             </div>
-            <span className="badge READY">Derse Hazır (%98)</span>
-          </div>
-          <h2 style={{ margin: "0 0 6px" }}>Güneş ve Ay: Temel Hareketler ve Özellikler</h2>
-          <p className="muted" style={{ fontSize: "0.92rem", marginBottom: 12 }}>
-            Kazanımlar: <span className="code" style={{ display: "inline" }}>FB.5.1.1</span> Güneş&apos;in yapısı · <span className="code" style={{ display: "inline" }}>FB.5.1.2</span> Ay&apos;ın yapısı ve hareketleri
-          </p>
-          <div className="progress" style={{ height: 10 }}>
-            <span style={{ width: "98%" }} />
-          </div>
-          <div className="row" style={{ justifyContent: "space-between", marginTop: 12, fontSize: "0.88rem" }}>
-            <span className="muted">5 dakikalık konu özeti tamamlandı · 6 soru çözüldü</span>
-            <strong style={{ color: "var(--ok)" }}>✓ Yarınki derse hazır!</strong>
-          </div>
-        </div>
-      </section>
 
-      {/* Metrics Strip */}
-      <section style={{ maxWidth: 1040, margin: "0 auto", padding: "0 20px", width: "100%" }}>
-        <div className="stats-strip">
-          <div className="stats-strip-item">
-            <strong>5, 6, 7, 8</strong>
-            <span>Tüm Ortaokul Kademeleri</span>
-          </div>
-          <div className="stats-strip-item">
-            <strong>%100 MEB</strong>
-            <span>Resmi Müfredat Çıktıları</span>
-          </div>
-          <div className="stats-strip-item">
-            <strong>EVREN LLM</strong>
-            <span>Kişiselleştirilmiş İçerik Üretimi</span>
-          </div>
-          <div className="stats-strip-item">
-            <strong>Anlık Analiz</strong>
-            <span>Yarınki Derse Hazırlık Raporu</span>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Grid */}
-      <section id="ozellikler" style={{ maxWidth: 1040, margin: "0 auto", padding: "40px 20px", width: "100%" }}>
-        <div style={{ textAlign: "center", marginBottom: 36 }}>
-          <span className="badge">Neler Sunuyoruz?</span>
-          <h2 style={{ fontSize: "2rem", marginTop: 8 }}>Etkili Öğrenme İçin Tasarlanmış Özellikler</h2>
-          <p className="muted" style={{ maxWidth: 580, margin: "8px auto 0" }}>
-            Geleneksel uzun ev ödevleri yerine derse odaklanan, kısa ve ölçülebilir ön hazırlık deneyimi.
-          </p>
-        </div>
-
-        <div className="feature-grid">
-          <div className="feature-card">
-            <span className="feature-icon">📖</span>
-            <h3>5 Dakikalık Akıllı Konu Özeti</h3>
-            <p className="muted">
-              Uzun ve karmaşık ders kitapları yerine, öğrencinin ertesi günkü dersi takip edebilmesi için
-              gerekli temel kavramları ve &ldquo;Derse gelmeden önce bunları bilmen yeterli&rdquo; hap bilgilerini sunar.
-            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, borderTop: "1px solid var(--border)", paddingTop: 20 }}>
+              <div>
+                <strong style={{ display: "block", fontSize: "1.3rem", fontFamily: "var(--font-serif)" }}>5 Dakika</strong>
+                <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>Ders öncesi odaklı okuma süresi</span>
+              </div>
+              <div>
+                <strong style={{ display: "block", fontSize: "1.3rem", fontFamily: "var(--font-serif)" }}>%100 MEB</strong>
+                <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>Resmi öğrenme çıktılarıyla birebir eşli</span>
+              </div>
+            </div>
           </div>
 
-          <div className="feature-card">
-            <span className="feature-icon">🎯</span>
-            <h3>5 Çeşit Ön Bilgi Kontrolü</h3>
-            <p className="muted">
-              Çoktan seçmeli, doğru-yanlış, boşluk doldurma, kavram eşleştirme, kronolojik sıralama ve
-              açık uçlu sorularla öğrencinin ön bilgisini formatif olarak yoklar.
-            </p>
-          </div>
+          {/* Sağ Sütun: Canlı Çalışma Kağıdı Görünümü (Editorial Worksheet) */}
+          <div style={{ border: "1px solid var(--border-strong)", borderRadius: "var(--radius-md)", background: "var(--surface)", padding: "24px 26px", boxShadow: "var(--shadow-sm)" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border)", paddingBottom: 12, marginBottom: 16 }}>
+              <div>
+                <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>FEN BİLİMLERİ · 6. SINIF</span>
+                <strong style={{ fontSize: "1rem" }}>Hücre ve Organelleri</strong>
+              </div>
+              <span className="badge READY">Derse Hazır (%96)</span>
+            </div>
 
-          <div className="feature-card">
-            <span className="feature-icon">📊</span>
-            <h3>Yarınki Derse Hazırlık Raporu</h3>
-            <p className="muted">
-              Öğretmenler sınıfa girmeden önce hangi öğrencilerin derse hazır olduğunu, sınıfın en çok
-              hangi kazanımda veya soruda takıldığını anlık grafiklerle görür.
-            </p>
-          </div>
+            <div style={{ marginBottom: 16 }}>
+              <div style={{ fontSize: "0.78rem", color: "var(--muted)", textTransform: "uppercase", fontWeight: 700, marginBottom: 4 }}>
+                MEB Öğrenme Çıktısı
+              </div>
+              <p style={{ fontSize: "0.88rem", margin: 0, padding: "8px 10px", background: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", border: "1px solid var(--border)" }}>
+                <span className="code" style={{ marginRight: 6 }}>FB.6.2.1</span>
+                Bitki ve hayvan hücresinin temel organellerini görevleriyle açıklar.
+              </p>
+            </div>
 
-          <div className="feature-card">
-            <span className="feature-icon">⚡</span>
-            <h3>Evren Yapay Zekâ Entegrasyonu</h3>
-            <p className="muted">
-              Öğretmen sadece sınıf ve MEB kazanımını seçer; EVREN LLM pedagojik normlara uygun özet ve
-              soru taslağını saniyeler içinde hazırlar, öğretmen denetleyip yayınlar.
-            </p>
-          </div>
-        </div>
-      </section>
+            <div style={{ marginBottom: 16 }}>
+              <div style={{ fontSize: "0.78rem", color: "var(--muted)", textTransform: "uppercase", fontWeight: 700, marginBottom: 4 }}>
+                Temel Ders Notu (Özet)
+              </div>
+              <p style={{ fontSize: "0.9rem", lineHeight: 1.6, margin: 0, color: "var(--text-secondary)" }}>
+                Hücre, canlıların yapı taşıdır. Hücre zarı madde alışverişini denetler. Kloroplast yalnızca bitki hücrelerinde bulunur ve fotosentez yapar; sentriyoller ise hayvan hücrelerinin bölünmesinde görev alır.
+              </p>
+            </div>
 
-      {/* How it works */}
-      <section id="nasil-calisir" style={{ maxWidth: 1040, margin: "0 auto", padding: "40px 20px", width: "100%" }}>
-        <div style={{ textAlign: "center", marginBottom: 36 }}>
-          <span className="badge">İş Akışı</span>
-          <h2 style={{ fontSize: "2rem", marginTop: 8 }}>3 Adımda Eksiksiz Ders Hazırlığı</h2>
-        </div>
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
-          <div className="card" style={{ position: "relative" }}>
-            <span style={{ fontSize: "2.4rem", fontWeight: 800, color: "var(--accent)", opacity: 0.25, position: "absolute", top: 16, right: 20 }}>01</span>
-            <h3>1. Öğretmen Görev Atar</h3>
-            <p className="muted">
-              Sınıfını ve MEB öğrenme çıktısını seçer. Yapay zekâ taslağını onaylayıp tek tıkla öğrencilerine ulaştırır.
-            </p>
-          </div>
-          <div className="card" style={{ position: "relative" }}>
-            <span style={{ fontSize: "2.4rem", fontWeight: 800, color: "var(--accent)", opacity: 0.25, position: "absolute", top: 16, right: 20 }}>02</span>
-            <h3>2. Öğrenci Evde Hazırlanır</h3>
-            <p className="muted">
-              Akşam 10 dakikasını ayırarak özeti okur, mini testini tamamlar. Eksiklerini anında görüp tekrar edebilir.
-            </p>
-          </div>
-          <div className="card" style={{ position: "relative" }}>
-            <span style={{ fontSize: "2.4rem", fontWeight: 800, color: "var(--accent)", opacity: 0.25, position: "absolute", top: 16, right: 20 }}>03</span>
-            <h3>3. Sınıf Derse Hazır Buluşur</h3>
-            <p className="muted">
-              Öğretmen hazırlık raporunu inceleyerek derse başlar; öğrenci derste parmak kaldıracak özgüveni kazanır.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* MEB Curriculum Banner */}
-      <section id="mufredat" style={{ maxWidth: 1040, margin: "0 auto", padding: "40px 20px", width: "100%" }}>
-        <div className="card" style={{ background: "var(--accent-gradient)", color: "#ffffff", padding: "40px 32px", borderRadius: "var(--radius-xl)" }}>
-          <div style={{ maxWidth: 640 }}>
-            <span style={{ background: "rgba(255,255,255,0.2)", padding: "4px 12px", borderRadius: 999, fontSize: "0.85rem", fontWeight: 600 }}>
-              Resmi Müfredat Uyumlu
-            </span>
-            <h2 style={{ fontSize: "2.2rem", color: "#ffffff", margin: "16px 0 12px", lineHeight: 1.2 }}>
-              MEB Öğrenme Çıktılarına Doğrudan Bağlı
-            </h2>
-            <p style={{ fontSize: "1.05rem", opacity: 0.9, lineHeight: 1.6, marginBottom: 24 }}>
-              Türkçe, Matematik, Fen Bilimleri ve Sosyal Bilgiler programlarındaki her görev,
-              resmi MEB kazanım kodlarıyla birebir eşleştirilmiştir. Öğretmenler ve öğrenciler asla müfredat dışına çıkmaz.
-            </p>
-            <div className="row" style={{ gap: 12 }}>
-              <Link href="/kayit" className="button" style={{ background: "#ffffff", color: "#1e40af", borderColor: "transparent", fontWeight: 700 }}>
-                Hemen Ücretsiz Katıl
-              </Link>
-              <Link href="/giris" className="button" style={{ background: "transparent", color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}>
-                Giriş Yap
-              </Link>
+            <div style={{ borderTop: "1px solid var(--border)", paddingTop: 14 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.82rem", marginBottom: 6 }}>
+                <span style={{ fontWeight: 600 }}>Ön Bilgi Kontrolü (6 Soru)</span>
+                <span style={{ color: "var(--ok)", fontWeight: 700 }}>✓ Tamamlandı</span>
+              </div>
+              <div className="progress">
+                <span style={{ width: "96%" }} />
+              </div>
+              <div style={{ marginTop: 8, fontSize: "0.8rem", color: "var(--muted)" }}>
+                Öğretmenin değerlendirme ekranına aktarıldı.
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer style={{ marginTop: "auto", borderTop: "1px solid var(--border)", background: "var(--surface)", padding: "32px 20px" }}>
-        <div style={{ maxWidth: 1040, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-          <div className="row" style={{ gap: 10 }}>
-            <span className="brand-icon" style={{ width: 28, height: 28, fontSize: "0.95rem" }}>📚</span>
-            <strong>Evde Etüt Eğitim Platformu</strong>
+      {/* Editorial Principles 4-Column Strip */}
+      <section id="pedagoji" style={{ maxWidth: 1080, margin: "0 auto", padding: "20px 24px 40px", width: "1080px" }}>
+        <div style={{ borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "28px 0" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: 24 }}>
+            <div>
+              <span className="kicker">01 / Odaklı Hazırlık</span>
+              <h3 style={{ margin: "4px 0 8px" }}>5 Dakikalık Özet</h3>
+              <p style={{ fontSize: "0.88rem", margin: 0, color: "var(--text-secondary)" }}>
+                Öğrenci dersten önce ağır ders kitaplarında boğulmaz; yalnızca derse katılım için gereken anahtar kavramları okur.
+              </p>
+            </div>
+
+            <div>
+              <span className="kicker">02 / Resmi Müfredat</span>
+              <h3 style={{ margin: "4px 0 8px" }}>Maarif Modeli Uyumu</h3>
+              <p style={{ fontSize: "0.88rem", margin: 0, color: "var(--text-secondary)" }}>
+                Platformdaki tüm dersler MEB programındaki resmi kodlarla kurgulanır; müfredat dışı hiçbir içerik üretilmez.
+              </p>
+            </div>
+
+            <div>
+              <span className="kicker">03 / Ön Değerlendirme</span>
+              <h3 style={{ margin: "4px 0 8px" }}>Formatif Mini Kontrol</h3>
+              <p style={{ fontSize: "0.88rem", margin: 0, color: "var(--text-secondary)" }}>
+                Çoktan seçmeli, kavram eşleştirme ve açık uçlu sorularla öğrencinin konuyu anlama derecesi tespit edilir.
+              </p>
+            </div>
+
+            <div>
+              <span className="kicker">04 / Öğretmen Analizi</span>
+              <h3 style={{ margin: "4px 0 8px" }}>Hazırlık Raporu</h3>
+              <p style={{ fontSize: "0.88rem", margin: 0, color: "var(--text-secondary)" }}>
+                Öğretmen sınıfa adım atmadan önce hangi öğrencilerin hazır olduğunu ve en çok hangi soruda takıldığını görür.
+              </p>
+            </div>
           </div>
-          <p className="muted" style={{ margin: 0, fontSize: "0.88rem" }}>
-            T.C. Millî Eğitim Bakanlığı müfredat standartlarıyla uyumlu akıllı derse hazırlık platformu.
-          </p>
+        </div>
+      </section>
+
+      {/* Three Step Workflow */}
+      <section id="is-akisi" style={{ maxWidth: 1080, margin: "0 auto", padding: "20px 24px 48px", width: "100%" }}>
+        <span className="kicker">SİSTEMATİK AKIŞ</span>
+        <h2 style={{ fontSize: "1.8rem", marginBottom: 20 }}>3 Adımda Eksiksiz Ders Hazırlığı</h2>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20 }}>
+          <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "20px", background: "var(--surface)" }}>
+            <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--muted)", textTransform: "uppercase" }}>ADIM 01</span>
+            <h3 style={{ margin: "6px 0 8px" }}>Öğretmen Görev Atar</h3>
+            <p style={{ fontSize: "0.9rem", margin: 0, color: "var(--text-secondary)" }}>
+              Sınıfını ve MEB öğrenme çıktısını seçer. Pedagojik AI desteğiyle hazırlanan ders notunu ve mini testi inceleyip onaylar.
+            </p>
+          </div>
+
+          <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "20px", background: "var(--surface)" }}>
+            <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--muted)", textTransform: "uppercase" }}>ADIM 02</span>
+            <h3 style={{ margin: "6px 0 8px" }}>Öğrenci Evde İnceler</h3>
+            <p style={{ fontSize: "0.9rem", margin: 0, color: "var(--text-secondary)" }}>
+              Özet notu okur, 5 soruluk ön kontrolü çözer. Eksik kaldığı noktayı anında görerek derse hazır hale gelir.
+            </p>
+          </div>
+
+          <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "20px", background: "var(--surface)" }}>
+            <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--muted)", textTransform: "uppercase" }}>ADIM 03</span>
+            <h3 style={{ margin: "6px 0 8px" }}>Sınıf Derste Buluşur</h3>
+            <p style={{ fontSize: "0.9rem", margin: 0, color: "var(--text-secondary)" }}>
+              Öğretmen hazırlık durumunu bilerek dersi başlatır; öğrenciler ön bilgileri sağlam olduğu için özgüvenle katılır.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Curriculum Matrix Section */}
+      <section id="mufredat" style={{ maxWidth: 1080, margin: "0 auto", padding: "0 24px 64px", width: "100%" }}>
+        <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", background: "var(--surface)", padding: "28px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: 16 }}>
+            <div>
+              <span className="kicker">MÜFREDAT VERİ TABANI</span>
+              <h2 style={{ margin: "4px 0 0" }}>Desteklenen Dersler ve Kademeler</h2>
+            </div>
+            <Link href="/kayit" className="button primary" style={{ minHeight: 34, fontSize: "0.85rem" }}>
+              Hemen Başla →
+            </Link>
+          </div>
+
+          <div className="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ders</th>
+                  <th>Kademeler</th>
+                  <th>Öğrenme Alanları</th>
+                  <th>Müfredat Uyumu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Türkçe</strong></td>
+                  <td>5, 6, 7, 8. Sınıf</td>
+                  <td>Okuma, Yazma, Dinleme, Dil Yapıları</td>
+                  <td><span className="badge READY">MEB 2026 Maarif Modeli</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Matematik</strong></td>
+                  <td>5, 6, 7, 8. Sınıf</td>
+                  <td>Sayılar, Cebir, Geometri ve Ölçme, Veri</td>
+                  <td><span className="badge READY">MEB 2026 Maarif Modeli</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Fen Bilimleri</strong></td>
+                  <td>5, 6, 7, 8. Sınıf</td>
+                  <td>Canlılar ve Yaşam, Madde, Fiziksel Olaylar</td>
+                  <td><span className="badge READY">MEB 2026 Maarif Modeli</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Sosyal Bilgiler</strong></td>
+                  <td>5, 6, 7. Sınıf / T.C. İnkılap Tarihi (8)</td>
+                  <td>Birey ve Toplum, Kültür, Zaman ve Süreklilik</td>
+                  <td><span className="badge READY">MEB 2026 Maarif Modeli</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Editorial Footer */}
+      <footer style={{ marginTop: "auto", borderTop: "1px solid var(--border)", background: "var(--surface)", padding: "28px 24px" }}>
+        <div style={{ maxWidth: 1080, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span className="brand-icon" style={{ width: 26, height: 26, fontSize: "0.9rem" }}>✎</span>
+            <strong style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem" }}>Evde Etüt</strong>
+            <span style={{ fontSize: "0.85rem", color: "var(--muted)" }}>· Millî Eğitim Bakanlığı Standartlarında Derse Hazırlık</span>
+          </div>
+          <div style={{ fontSize: "0.85rem", color: "var(--muted)" }}>
+            © 2026 Evde Etüt. Tüm hakları saklıdır.
+          </div>
         </div>
       </footer>
     </div>

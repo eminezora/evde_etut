@@ -292,52 +292,77 @@ export function ContentEditor({
   return (
     <>
       {message && (
-        <div className={`card ${message.kind === "error" ? "notice-error" : "notice-ok"}`} role={message.kind === "error" ? "alert" : "status"}>
+        <div className={`editorial-panel ${message.kind === "error" ? "notice-error" : "notice-ok"}`} role={message.kind === "error" ? "alert" : "status"}>
           {message.lines.map((l) => <p key={l} style={{ margin: "2px 0" }}>{l}</p>)}
         </div>
       )}
 
       {isDraft && (
-        <div className="card">
-          <h2>Yapay zekâ ile taslak</h2>
+        <div className="editorial-panel" style={{ borderLeft: "3px solid var(--accent)", backgroundColor: "var(--surface)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 }}>
+            <div>
+              <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>OTOMATİK İÇERİK DESTEĞİ</span>
+              <h2 style={{ fontSize: "1.2rem", margin: "2px 0 4px" }}>Yapay Zekâ ile Ders Taslağı</h2>
+            </div>
+            <span className="badge" style={{ backgroundColor: "var(--accent-light)", color: "var(--accent)", borderColor: "var(--accent-border)" }}>
+              ✎ AI Destekli EVREN Pedagojisi
+            </span>
+          </div>
+
           {!aiConfigured ? (
-            <p className="muted">{aiNotConfiguredMessage}</p>
+            <p className="muted" style={{ margin: 0 }}>{aiNotConfiguredMessage}</p>
           ) : (
             <>
-              <p className="muted">Taslak yalnızca seçtiğiniz MEB öğrenme çıktılarına dayanır ve onayınız olmadan öğrencilere gösterilmez.</p>
-              <label htmlFor="qc">Soru sayısı (5–10)</label>
-              <input id="qc" type="number" min={5} max={10} value={questionCount} onChange={(e) => setQuestionCount(e.target.value)} style={{ maxWidth: 120 }} />
-              <div className="row" style={{ marginTop: 12 }}>
-                {!hasAnything ? (
-                  <button type="button" className="primary" onClick={() => generate("ALL")} disabled={working}>
-                    {busy === "gen-ALL" ? "Oluşturuluyor…" : "Hazırlık İçeriği Oluştur"}
-                  </button>
-                ) : (
-                  <>
-                    <button type="button" onClick={() => generate("ALL")} disabled={working}>{busy === "gen-ALL" ? "Oluşturuluyor…" : "Tüm İçeriği Yeniden Oluştur"}</button>
-                    <button type="button" onClick={() => generate("SUMMARY")} disabled={working}>{busy === "gen-SUMMARY" ? "Oluşturuluyor…" : "Özeti Yeniden Oluştur"}</button>
-                    <button type="button" onClick={() => generate("QUESTIONS")} disabled={working}>{busy === "gen-QUESTIONS" ? "Oluşturuluyor…" : "Soruları Yeniden Oluştur"}</button>
-                  </>
-                )}
+              <p className="muted" style={{ fontSize: "0.88rem", marginBottom: 12 }}>
+                Üretilen ders notu ve sorular yalnızca seçtiğiniz MEB kazanımlarına dayanır. Öğretmen onayı verilmeden öğrencilere gösterilmez.
+              </p>
+
+              <div style={{ display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap", marginBottom: 14 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <label htmlFor="qc" style={{ margin: 0, fontSize: "0.85rem", whiteSpace: "nowrap" }}>Soru Sayısı (5–10):</label>
+                  <input id="qc" type="number" min={5} max={10} value={questionCount} onChange={(e) => setQuestionCount(e.target.value)} style={{ width: 80, padding: "5px 8px" }} />
+                </div>
+
+                <div className="row" style={{ gap: 8 }}>
+                  {!hasAnything ? (
+                    <button type="button" className="primary" onClick={() => generate("ALL")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                      {busy === "gen-ALL" ? "Hazırlanıyor…" : "Özet ve Soruları Oluştur"}
+                    </button>
+                  ) : (
+                    <>
+                      <button type="button" onClick={() => generate("ALL")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                        {busy === "gen-ALL" ? "Hazırlanıyor…" : "Tümünü Yeniden Oluştur"}
+                      </button>
+                      <button type="button" onClick={() => generate("SUMMARY")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                        {busy === "gen-SUMMARY" ? "Hazırlanıyor…" : "Yalnızca Özeti Yenile"}
+                      </button>
+                      <button type="button" onClick={() => generate("QUESTIONS")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                        {busy === "gen-QUESTIONS" ? "Hazırlanıyor…" : "Yalnızca Soruları Yenile"}
+                      </button>
+                    </>
+                  )}
+                </div>
               </div>
+
               {genState === "generating" && generating && (
-                <div className="generating" role="status" aria-live="polite">
-                  <span className="spinner" aria-hidden="true" />
+                <div style={{ padding: "12px 14px", backgroundColor: "var(--surface-subtle)", border: "1px solid var(--border)", borderRadius: "var(--radius-xs)", display: "flex", alignItems: "center", gap: 12 }} role="status" aria-live="polite">
+                  <span style={{ fontSize: "1.1rem" }}>⏳</span>
                   <div>
-                    <strong>{elapsed >= SLOW_AFTER_S ? "İşlem beklenenden uzun sürüyor." : "İçerik hazırlanıyor, bu işlem biraz sürebilir."}</strong>
-                    <p className="muted" style={{ margin: "2px 0 0" }}>
-                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yavaş yanıt veriyor; lütfen bekleyin." : "Genellikle 1–2 dakika sürer."}
-                      {elapsed > 0 ? ` · ${elapsed} sn` : ""} İçerik hazırlanırken lütfen bu sayfayı kapatmayın.
+                    <strong>{elapsed >= SLOW_AFTER_S ? "İşlem beklenenden uzun sürüyor." : "İçerik pedagojik kurallara göre oluşturuluyor..."}</strong>
+                    <p className="muted" style={{ margin: "2px 0 0", fontSize: "0.82rem" }}>
+                      {elapsed >= SLOW_AFTER_S ? "Yapay zekâ servisi şu an yanıt veriyor; lütfen bekleyin." : "Genellikle 30–60 saniye sürer."}
+                      {elapsed > 0 ? ` · ${elapsed} sn` : ""} Lütfen sayfayı kapatmayın.
                     </p>
                   </div>
                 </div>
               )}
+
               {(genState === "failed" || genState === "timeout") && !generating && (
-                <div className="generation-error" role="alert">
+                <div className="error" role="alert" style={{ marginTop: 10 }}>
                   <strong>{genState === "timeout" ? "Yapay zekâ zamanında yanıt vermedi." : "Taslak oluşturulamadı."}</strong>
-                  <p style={{ margin: "4px 0 10px" }}>{genError}</p>
+                  <p style={{ margin: "4px 0 8px", fontSize: "0.85rem" }}>{genError}</p>
                   {retryScope && (
-                    <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working}>
+                    <button type="button" className="primary" onClick={() => generate(retryScope)} disabled={working} style={{ minHeight: 30, fontSize: "0.8rem", padding: "2px 10px" }}>
                       Tekrar Dene
                     </button>
                   )}
@@ -348,100 +373,151 @@ export function ContentEditor({
         </div>
       )}
 
-      <div className="card">
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <h2>Hazırlık İçeriği</h2>
-          {content && <span className="badge">{STATUS_LABEL[content.status] ?? content.status}{content.contentVersion > 1 ? ` · sürüm ${content.contentVersion}` : ""}</span>}
+      {/* Hazırlık İçeriği - Ders Notu & Föy Çalışma Alanı */}
+      <div className="editorial-panel">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border)", paddingBottom: 12, marginBottom: 16 }}>
+          <div>
+            <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>DERS NOTU YAYIN ÇALIŞMA ALANI</span>
+            <h2 style={{ fontSize: "1.25rem", margin: "2px 0 0" }}>Hazırlık İçeriği (Özet Föyü)</h2>
+          </div>
+          {content && (
+            <span className="badge">
+              {STATUS_LABEL[content.status] ?? content.status}{content.contentVersion > 1 ? ` · sürüm ${content.contentVersion}` : ""}
+            </span>
+          )}
         </div>
-        {!content && <p className="muted">Henüz içerik yok. Yapay zekâ ile oluşturabilir ya da aşağıya manuel yazıp kaydedebilirsiniz.</p>}
-        {!isDraft && <p className="muted">Görev yayında. Yaptığınız düzenlemeler yeni içerik sürümü olarak kaydedilir.</p>}
 
-        <label htmlFor="intro">Konuya Giriş</label>
-        <textarea id="intro" rows={3} value={form.introduction} onChange={(e) => update("introduction", e.target.value)} />
+        {!content && <p className="muted" style={{ fontSize: "0.9rem" }}>Henüz içerik bulunmuyor. Yukarıdan yapay zekâ ile üretebilir ya da alanları manuel doldurabilirsiniz.</p>}
+        {!isDraft && <p className="muted" style={{ fontSize: "0.9rem" }}>Görev yayında. Yaptığınız düzenlemeler yeni içerik sürümü olarak saklanır.</p>}
 
-        <label>Temel Kavramlar</label>
-        {form.keyConcepts.map((k, i) => (
-          <div key={i} className="concept-row">
-            <input type="text" aria-label={`Kavram ${i + 1}`} placeholder="Kavram" value={k.term} onChange={(e) => update("keyConcepts", form.keyConcepts.map((x, j) => (j === i ? { ...x, term: e.target.value } : x)))} />
-            <textarea aria-label={`Kavram ${i + 1} açıklaması`} rows={2} placeholder="Açıklama" value={k.explanation} onChange={(e) => update("keyConcepts", form.keyConcepts.map((x, j) => (j === i ? { ...x, explanation: e.target.value } : x)))} />
-            <button type="button" onClick={() => update("keyConcepts", form.keyConcepts.filter((_, j) => j !== i))}>Sil</button>
-          </div>
-        ))}
-        {form.keyConcepts.length < 10 && <button type="button" onClick={() => update("keyConcepts", [...form.keyConcepts, { term: "", explanation: "" }])}>+ Kavram ekle</button>}
+        <label htmlFor="intro">1. Konuya Giriş</label>
+        <textarea id="intro" rows={3} value={form.introduction} onChange={(e) => update("introduction", e.target.value)} placeholder="Öğrencinin konuya ilgisini çekecek kısa bir giriş..." />
 
-        <label htmlFor="summary">Konu Özeti</label>
-        <textarea id="summary" rows={8} value={form.summary} onChange={(e) => update("summary", e.target.value)} />
-
-        <label htmlFor="example">Basit Örnek</label>
-        <textarea id="example" rows={3} value={form.simpleExample} onChange={(e) => update("simpleExample", e.target.value)} />
-
-        <label>Bunu Bilmen Yeterli <span className="muted">(“Derse gelmeden önce bunları bilmen yeterli.” – 3–6 madde)</span></label>
-        {form.mustKnow.map((m, i) => (
-          <div key={i} className="row" style={{ flexWrap: "nowrap" }}>
-            <input type="text" aria-label={`Madde ${i + 1}`} value={m} onChange={(e) => update("mustKnow", form.mustKnow.map((x, j) => (j === i ? e.target.value : x)))} />
-            <button type="button" onClick={() => update("mustKnow", form.mustKnow.filter((_, j) => j !== i))}>Sil</button>
-          </div>
-        ))}
-        {form.mustKnow.length < 6 && <button type="button" onClick={() => update("mustKnow", [...form.mustKnow, ""])}>+ Madde ekle</button>}
-
-        <div className="row" style={{ marginTop: 16 }}>
-          <button type="button" className="primary" onClick={saveContent} disabled={working || (!dirty && Boolean(content))}>
-            {busy === "save" ? "Kaydediliyor…" : content ? "Değişiklikleri Kaydet" : "Manuel İçeriği Kaydet"}
+        <label style={{ marginTop: 16 }}>2. Temel Kavramlar & Tanımlar</label>
+        <div style={{ display: "grid", gap: 10 }}>
+          {form.keyConcepts.map((k, i) => (
+            <div key={i} style={{ display: "grid", gridTemplateColumns: "180px 1fr auto", gap: 10, alignItems: "start", padding: "10px", backgroundColor: "var(--surface-subtle)", borderRadius: "var(--radius-xs)", border: "1px solid var(--border)" }}>
+              <input type="text" aria-label={`Kavram ${i + 1}`} placeholder="Kavram Adı" value={k.term} onChange={(e) => update("keyConcepts", form.keyConcepts.map((x, j) => (j === i ? { ...x, term: e.target.value } : x)))} />
+              <textarea aria-label={`Kavram ${i + 1} açıklaması`} rows={2} placeholder="Açıklama" value={k.explanation} onChange={(e) => update("keyConcepts", form.keyConcepts.map((x, j) => (j === i ? { ...x, explanation: e.target.value } : x)))} />
+              <button type="button" onClick={() => update("keyConcepts", form.keyConcepts.filter((_, j) => j !== i))} style={{ minHeight: 34, padding: "2px 8px", fontSize: "0.8rem" }}>Sil</button>
+            </div>
+          ))}
+        </div>
+        {form.keyConcepts.length < 10 && (
+          <button type="button" onClick={() => update("keyConcepts", [...form.keyConcepts, { term: "", explanation: "" }])} style={{ marginTop: 8, minHeight: 30, fontSize: "0.82rem" }}>
+            + Kavram Ekle
           </button>
-          {dirty && <span className="muted">Kaydedilmemiş değişiklikler var.</span>}
+        )}
+
+        <label htmlFor="summary" style={{ marginTop: 16 }}>3. Konu Özeti (Ders Notu)</label>
+        <textarea id="summary" rows={7} value={form.summary} onChange={(e) => update("summary", e.target.value)} placeholder="Ders öncesi okunacak 5 dakikalık editoryal konu özeti..." />
+
+        <label htmlFor="example" style={{ marginTop: 16 }}>4. Günlük Hayattan Somut Örnek</label>
+        <textarea id="example" rows={3} value={form.simpleExample} onChange={(e) => update("simpleExample", e.target.value)} placeholder="Konunun günlük yaşamla bağlantısı..." />
+
+        <label style={{ marginTop: 16 }}>
+          5. Bunu Bilmen Yeterli <span className="muted">(“Derse gelmeden önce bunları bilmen yeterli” – 3–6 madde)</span>
+        </label>
+        <div style={{ display: "grid", gap: 8 }}>
+          {form.mustKnow.map((m, i) => (
+            <div key={i} className="row" style={{ flexWrap: "nowrap" }}>
+              <span className="code" style={{ minWidth: 26, textAlign: "center" }}>{i + 1}</span>
+              <input type="text" aria-label={`Madde ${i + 1}`} value={m} onChange={(e) => update("mustKnow", form.mustKnow.map((x, j) => (j === i ? e.target.value : x)))} style={{ flex: 1 }} />
+              <button type="button" onClick={() => update("mustKnow", form.mustKnow.filter((_, j) => j !== i))} style={{ minHeight: 34, padding: "2px 8px", fontSize: "0.8rem" }}>Sil</button>
+            </div>
+          ))}
+        </div>
+        {form.mustKnow.length < 6 && (
+          <button type="button" onClick={() => update("mustKnow", [...form.mustKnow, ""])} style={{ marginTop: 8, minHeight: 30, fontSize: "0.82rem" }}>
+            + Madde Ekle
+          </button>
+        )}
+
+        <div className="row" style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid var(--border)" }}>
+          <button type="button" className="primary" onClick={saveContent} disabled={working || (!dirty && Boolean(content))}>
+            {busy === "save" ? "Kaydediliyor…" : content ? "İçerik Değişikliklerini Kaydet" : "Manuel İçeriği Kaydet"}
+          </button>
+          {dirty && <span className="muted" style={{ fontSize: "0.85rem" }}>Kaydedilmemiş değişiklikler var.</span>}
         </div>
       </div>
 
-      <div className="card">
-        <div className="row" style={{ justifyContent: "space-between" }}>
-          <h2>Ön Bilgi Kontrol Soruları</h2>
-          <span className="muted">{questions.length} soru · toplam {totalPoints} puan</span>
+      {/* Soru Listesi & Editörü */}
+      <div className="editorial-panel">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--border)", paddingBottom: 12, marginBottom: 16 }}>
+          <div>
+            <span className="kicker" style={{ margin: 0, fontSize: "0.72rem" }}>FORMATİF DEĞERLENDİRME</span>
+            <h2 style={{ fontSize: "1.25rem", margin: "2px 0 0" }}>Ön Bilgi Kontrol Soruları</h2>
+          </div>
+          <span className="badge">{questions.length} soru · {totalPoints} puan</span>
         </div>
-        {questions.length === 0 && <p className="muted">Henüz soru yok.</p>}
-        <ol className="question-list">
+
+        {questions.length === 0 && <p className="muted" style={{ fontSize: "0.9rem" }}>Henüz soru eklenmedi.</p>}
+
+        <ol style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
           {questions.map((q, i) => (
-            <li key={q.id} className="question-card">
+            <li key={q.id} style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-xs)", padding: "16px", backgroundColor: "var(--surface)" }}>
               {editing === q.id ? (
                 <QuestionForm initial={stateFromQuestion(q.strict)} outcomes={outcomes} submitLabel="Soruyu Kaydet" onSubmit={(p) => submitQuestion(p, q.id)} onCancel={() => setEditing(null)} />
               ) : (
                 <>
-                  <div className="row" style={{ justifyContent: "space-between" }}>
-                    <span><strong>{i + 1}.</strong> <span className="badge">{QUESTION_TYPE_LABELS[q.type as QuestionType] ?? q.type}</span> <span className="muted">{q.points} puan · {q.generatedBy === "AI" ? "YZ" : "Öğretmen"}</span></span>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8, flexWrap: "wrap", gap: 8 }}>
+                    <div className="row" style={{ gap: 8 }}>
+                      <strong style={{ fontSize: "0.95rem" }}>{i + 1}.</strong>
+                      <span className="badge">{QUESTION_TYPE_LABELS[q.type as QuestionType] ?? q.type}</span>
+                      <span className="code">{q.points} puan</span>
+                      <span className="muted" style={{ fontSize: "0.8rem" }}>{q.generatedBy === "AI" ? "Yapay Zekâ" : "Öğretmen"}</span>
+                    </div>
+
                     {!questionsLocked && (
-                      <span className="row">
-                        <button type="button" onClick={() => setEditing(q.id)} disabled={working}>Düzenle</button>
-                        <button type="button" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}`, "DELETE", undefined, "Soru silinsin mi?")} disabled={working}>Sil</button>
-                        <button type="button" aria-label="Yukarı taşı" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}/move`, "POST", { direction: "up" })} disabled={working || i === 0}>↑ Yukarı taşı</button>
-                        <button type="button" aria-label="Aşağı taşı" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}/move`, "POST", { direction: "down" })} disabled={working || i === questions.length - 1}>↓ Aşağı taşı</button>
-                      </span>
+                      <div className="row" style={{ gap: 6 }}>
+                        <button type="button" onClick={() => setEditing(q.id)} disabled={working} style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.78rem" }}>Düzenle</button>
+                        <button type="button" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}`, "DELETE", undefined, "Soru silinsin mi?")} disabled={working} style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.78rem" }}>Sil</button>
+                        <button type="button" aria-label="Yukarı taşı" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}/move`, "POST", { direction: "up" })} disabled={working || i === 0} style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.78rem" }}>↑</button>
+                        <button type="button" aria-label="Aşağı taşı" onClick={() => questionAction(`/api/assignments/${assignmentId}/questions/${q.id}/move`, "POST", { direction: "down" })} disabled={working || i === questions.length - 1} style={{ minHeight: 28, padding: "2px 8px", fontSize: "0.78rem" }}>↓</button>
+                      </div>
                     )}
                   </div>
-                  <p style={{ whiteSpace: "pre-wrap" }}>{q.questionText}</p>
-                  <p className="muted" style={{ margin: 0 }}>Bağlı outcome: {q.outcomeCodes.length ? q.outcomeCodes.join(", ") : "—"}</p>
+                  <p style={{ whiteSpace: "pre-wrap", margin: "6px 0 8px", fontSize: "0.95rem", lineHeight: 1.5 }}>{q.questionText}</p>
+                  <p className="muted" style={{ margin: 0, fontSize: "0.8rem" }}>Bağlı MEB çıktısı: {q.outcomeCodes.length ? q.outcomeCodes.join(", ") : "—"}</p>
                 </>
               )}
             </li>
           ))}
         </ol>
+
         {questionsLocked && (
-          <p className="notice-inline" role="note">🔒 Öğrenciler bu görevin sorularını çözmeye başladığı için sorular kilitlendi. Verilen cevapların anlamını korumak için soru eklenemez, silinemez ve düzenlenemez. Hazırlık içeriğini, son teslim tarihini ve deneme hakkını değiştirebilirsiniz.</p>
+          <p className="error" role="note" style={{ marginTop: 14 }}>🔒 Öğrenciler bu görevin sorularını çözmeye başladığı için soru listesi kilitlenmiştir.</p>
         )}
+
         {!questionsLocked &&
           (editing === "new" ? (
-            <QuestionForm outcomes={outcomes} submitLabel="Soruyu Ekle" onSubmit={(p) => submitQuestion(p)} onCancel={() => setEditing(null)} />
+            <div style={{ marginTop: 16 }}>
+              <QuestionForm outcomes={outcomes} submitLabel="Soruyu Ekle" onSubmit={(p) => submitQuestion(p)} onCancel={() => setEditing(null)} />
+            </div>
           ) : (
-            <button type="button" onClick={() => setEditing("new")} disabled={working}>+ Yeni Soru Ekle</button>
+            <div style={{ marginTop: 16 }}>
+              <button type="button" onClick={() => setEditing("new")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                + Yeni Soru Ekle
+              </button>
+            </div>
           ))}
       </div>
 
+      {/* Onay ve Yayınlama Paneli */}
       {isDraft && (
-        <div className="card">
-          <h2>Onay</h2>
-          <p className="muted">Yayınladığınızda içerik “öğretmen onaylı” olarak işaretlenir ve görev sınıftaki öğrencilere açılır.</p>
-          <button type="button" className="primary" onClick={publish} disabled={working || dirty}>
-            {busy === "publish" ? "Yayınlanıyor…" : "Onayla ve Yayınla"}
-          </button>
-          {dirty && <p className="muted">Önce içerikteki değişiklikleri kaydedin.</p>}
+        <div className="editorial-panel" style={{ border: "1px solid var(--ok-border)", backgroundColor: "var(--ok-bg)" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14 }}>
+            <div>
+              <strong style={{ display: "block", color: "var(--ok-text)", fontSize: "1.05rem" }}>Görevi Onayla ve Yayınla</strong>
+              <p style={{ margin: "2px 0 0", fontSize: "0.88rem", color: "var(--text-secondary)" }}>
+                Yayınladığınızda ders notu ve sorular sınıftaki tüm öğrencilerin çalışma listesinde aktif hale gelecektir.
+              </p>
+            </div>
+            <button type="button" className="primary" onClick={publish} disabled={working || dirty} style={{ minHeight: 40, padding: "8px 22px" }}>
+              {busy === "publish" ? "Yayınlanıyor…" : "Onayla ve Yayınla →"}
+            </button>
+          </div>
+          {dirty && <p className="muted" style={{ marginTop: 8, fontSize: "0.82rem" }}>Önce içerikteki değişiklikleri kaydediniz.</p>}
         </div>
       )}
     </>

@@ -1,9 +1,8 @@
 "use client";
 
-// Teacher assignment wizard: Classroom -> Subject -> Theme/Unit -> MEB outcomes -> details.
-// Every option list is fetched on demand from the curriculum API for the chosen classroom;
-// the grade always comes from the classroom on the server. The same Zod schema the server
-// uses gives immediate feedback here, but the server re-validates everything.
+// Teacher assignment wizard: Vertical stepper + workspace approach
+// Sol: Sınıf, Ders, Tema/Ünite, MEB Öğrenme Çıktıları, Ayarlar, İçerik, Yayınla
+// Sağ: Aktif adımın geniş, ferah ve okunabilir editoryal çalışma alanı.
 
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
@@ -26,7 +25,15 @@ interface Outcome {
   sourceUrl: string;
 }
 
-const STEPS = ["Sınıf", "Ders", "Tema / Ünite", "Öğrenme Çıktısı", "Detaylar"];
+const WIZARD_STEPS = [
+  { id: 0, title: "Sınıf", subtitle: "Hedef şube seçimi" },
+  { id: 1, title: "Ders", subtitle: "MEB öğretim alanı" },
+  { id: 2, title: "Tema / Ünite", subtitle: "Müfredat ünitesi" },
+  { id: 3, title: "MEB Çıktıları", subtitle: "Kazanım eşleştirmesi" },
+  { id: 4, title: "Ayarlar", subtitle: "Başlık, eşik ve süre" },
+  { id: 5, title: "İçerik", subtitle: "AI / Manuel ders notu" },
+  { id: 6, title: "Yayınla", subtitle: "Öğrenci erişimi" },
+];
 
 async function getJson<T>(url: string): Promise<T> {
   const res = await fetch(url);
@@ -56,7 +63,6 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
 
   const classroom = classrooms.find((c) => c.id === classroomId);
 
-  // Each list is fetched only when its parent selection changes.
   useEffect(() => {
     if (!classroomId) return;
     let live = true;
@@ -92,361 +98,418 @@ export function AssignmentWizard({ classrooms }: { classrooms: Classroom[] }) {
     };
   }, [classroomId, subject, unitOrTheme]);
 
-  // Changing a parent selection resets everything below it.
   const pickClassroom = (id: string) => {
     setClassroomId(id);
     setSubject("");
     setSubjects(null);
     setUnitOrTheme("");
     setUnits(null);
-    setOutcomes(null);
     setSelected(new Map());
+    setOutcomes(null);
+    setStep(1);
   };
+
   const pickSubject = (s: string) => {
     setSubject(s);
     setUnitOrTheme("");
     setUnits(null);
-    setOutcomes(null);
     setSelected(new Map());
+    setOutcomes(null);
+    setStep(2);
   };
+
   const pickUnit = (u: string) => {
     setUnitOrTheme(u);
-    setOutcomes(null);
     setSelected(new Map());
+    setOutcomes(null);
+    setStep(3);
   };
-  const toggleOutcome = (o: Outcome) =>
+
+  const toggleOutcome = (o: Outcome) => {
     setSelected((prev) => {
       const next = new Map(prev);
       if (next.has(o.id)) next.delete(o.id);
       else next.set(o.id, o);
       return next;
     });
+  };
 
-  const canNext = [Boolean(classroomId), Boolean(subject), Boolean(unitOrTheme), selected.size > 0, true][step];
-  const selectedList = useMemo(() => [...selected.values()], [selected]);
+  const selectedList = useMemo(() => Array.from(selected.values()), [selected]);
 
-  async function save() {
-    const input = {
+  const canNext = useMemo(() => {
+    if (step === 0) return Boolean(classroomId);
+    if (step === 1) return Boolean(subject);
+    if (step === 2) return Boolean(unitOrTheme);
+    if (step === 3) return selected.size > 0;
+    return true;
+  }, [step, classroomId, subject, unitOrTheme, selected]);
+
+  const save = async () => {
+    setSaving(true);
+    setErrors({});
+    const payload = {
       classroomId,
       subject,
       unitOrTheme,
       topic,
-      outcomeIds: [...selected.keys()],
-      minimumScore,
-      deadline,
-      questionCount,
-      status: "DRAFT" as const,
+      outcomeIds: selectedList.map((o) => o.id),
+      minimumScore: Number(minimumScore),
+      deadline: deadline ? new Date(deadline) : new Date(NaN),
+      questionCount: Number(questionCount),
     };
-    const check = createAssignmentSchema.safeParse(input);
-    if (!check.success) {
-      setErrors(fieldErrors(check.error));
-      return;
-    }
-    setSaving(true);
-    setErrors({});
-    const res = await fetch("/api/assignments", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(input) });
-    const body = await res.json().catch(() => null);
-    setSaving(false);
-    if (!res.ok) {
-      setErrors(body?.errors ?? { _form: ["Görev kaydedilemedi."] });
-      return;
-    }
-    router.push(`/ogretmen/gorevler/${body.id}?tab=hazirlik`);
-    router.refresh();
-  }
 
-  const errorList = (key: string) => errors[key]?.map((m) => <p key={m} className="error" role="alert">{m}</p>);
+    const parsed = createAssignmentSchema.safeParse(payload);
+    if (!parsed.success) {
+      setErrors(fieldErrors(parsed.error));
+      setSaving(false);
+      return;
+    }
+
+    const res = await fetch("/api/assignments", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+    setSaving(false);
+    const body = await res.json().catch(() => null);
+    if (!res.ok) {
+      setErrors((body?.errors as Record<string, string[]>) ?? { _form: [body?.error ?? "Kayıt başarısız."] });
+      return;
+    }
+    router.push(`/ogretmen/gorevler/${body.data.id}/duzenle`);
+    router.refresh();
+  };
+
+  const errorList = (key: string) =>
+    errors[key]?.length ? (
+      <div className="error" role="alert" style={{ marginTop: 6 }}>
+        {errors[key].map((m, i) => (
+          <p key={i} style={{ margin: "2px 0" }}>{m}</p>
+        ))}
+      </div>
+    ) : null;
 
   return (
-    <div className="card" style={{ padding: "28px 24px" }}>
-      {/* Wizard Steps Navigation */}
-      <ol className="steps" aria-label="Görev oluşturma adımları">
-        {STEPS.map((s, i) => (
-          <li key={s} className={i === step ? "active" : ""}>
-            {i + 1}. {s}
-          </li>
-        ))}
-      </ol>
+    <div className="editorial-stepper-container">
+      {/* Sol Sütun: Vertical Stepper Rail */}
+      <aside className="stepper-rail">
+        <span className="kicker" style={{ fontSize: "0.72rem" }}>GÖREV PLANLAYICI</span>
+        <h3 style={{ fontSize: "1.05rem", margin: "2px 0 16px" }}>Hazırlık Adımları</h3>
 
-      {loadError && <p className="error" role="alert">{loadError}</p>}
+        <ul className="vertical-steps">
+          {WIZARD_STEPS.map((s, idx) => {
+            const isActive = step === idx;
+            const isDone = step > idx;
+            return (
+              <li
+                key={s.id}
+                className={`vertical-step-item ${isActive ? "active" : isDone ? "done" : ""}`}
+                style={{ cursor: isDone ? "pointer" : "default" }}
+                onClick={() => isDone && setStep(idx)}
+              >
+                <span className="step-num">{isDone ? "✓" : `0${idx + 1}`}</span>
+                <div>
+                  <div style={{ fontWeight: isActive ? 700 : 500 }}>{s.title}</div>
+                  <div style={{ fontSize: "0.76rem", opacity: 0.8 }}>{s.subtitle}</div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
 
-      {step === 0 && (
-        <section>
-          <h2>Adım 1 – Hedef Sınıfı Seçin</h2>
-          <p className="muted" style={{ marginBottom: 16 }}>
-            Görevin atanacağı sınıfı belirleyin. Müfredat çıktısı bu sınıfın düzeyine göre otomatik filtrelenecektir.
-          </p>
-          {classrooms.length === 0 ? (
-            <p className="muted">Size ait sınıf bulunamadı.</p>
-          ) : (
-            <div className="card-grid" role="radiogroup">
-              {classrooms.map((c) => (
-                <label
-                  key={c.id}
-                  className={`task-card ${c.id === classroomId ? "selected" : ""}`}
-                  style={{
-                    cursor: "pointer",
-                    borderColor: c.id === classroomId ? "var(--accent)" : "var(--border)",
-                    background: c.id === classroomId ? "var(--accent-light)" : "var(--surface)",
-                  }}
-                >
-                  <div className="row" style={{ justifyContent: "space-between" }}>
-                    <span className="badge" style={{ background: c.id === classroomId ? "var(--accent)" : "var(--surface-subtle)", color: c.id === classroomId ? "#fff" : "var(--text)" }}>
-                      {c.grade}. Sınıf
-                    </span>
-                    <input
-                      type="radio"
-                      name="classroom"
-                      checked={c.id === classroomId}
-                      onChange={() => pickClassroom(c.id)}
-                      style={{ margin: 0 }}
-                    />
-                  </div>
-                  <strong style={{ fontSize: "1.2rem", marginTop: 8 }}>{c.name} Şubesi</strong>
-                  <span className="muted" style={{ fontSize: "0.85rem" }}>
-                    T.C. MEB {c.grade}. sınıf öğretim programı
-                  </span>
-                </label>
-              ))}
-            </div>
-          )}
-          {classroom && (
-            <div className="info" style={{ marginTop: 16 }}>
-              ✓ <strong>{classroom.name}</strong> ({classroom.grade}. sınıf) seçildi.
-            </div>
-          )}
-        </section>
-      )}
+        {classroom && (
+          <div style={{ marginTop: 24, padding: "12px", background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xs)" }}>
+            <span className="kicker" style={{ margin: 0, fontSize: "0.7rem" }}>SEÇİLEN ŞUBE</span>
+            <strong style={{ display: "block", fontSize: "0.92rem", marginTop: 2 }}>{classroom.name}</strong>
+            <span style={{ fontSize: "0.8rem", color: "var(--muted)" }}>{classroom.grade}. sınıf düzeyi</span>
+          </div>
+        )}
+      </aside>
 
-      {step === 1 && (
-        <section>
-          <h2>Adım 2 – Ders Seçin</h2>
-          <p className="muted" style={{ marginBottom: 16 }}>
-            {classroom?.grade}. sınıf MEB müfredatında yer alan dersler:
-          </p>
-          {!subjects ? (
-            <p className="muted">Müfredat dersleri yükleniyor…</p>
-          ) : subjects.length === 0 ? (
-            <p className="muted">Bu sınıf düzeyi için ders verisi bulunamadı.</p>
-          ) : (
-            <div className="card-grid" role="radiogroup">
-              {subjects.map((s) => (
-                <label
-                  key={s}
-                  className={`task-card ${s === subject ? "selected" : ""}`}
-                  style={{
-                    cursor: "pointer",
-                    borderColor: s === subject ? "var(--accent)" : "var(--border)",
-                    background: s === subject ? "var(--accent-light)" : "var(--surface)",
-                  }}
-                >
-                  <div className="row" style={{ justifyContent: "space-between" }}>
-                    <span className="badge">Ders</span>
-                    <input
-                      type="radio"
-                      name="subject"
-                      checked={s === subject}
-                      onChange={() => pickSubject(s)}
-                      style={{ margin: 0 }}
-                    />
-                  </div>
-                  <strong style={{ fontSize: "1.15rem", marginTop: 8 }}>{s}</strong>
-                  <span className="muted" style={{ fontSize: "0.85rem" }}>Resmi Öğretim Programı</span>
-                </label>
-              ))}
-            </div>
-          )}
-        </section>
-      )}
+      {/* Sağ Sütun: Aktif Adım Workspace */}
+      <main style={{ minWidth: 0, padding: 0 }}>
+        <div className="editorial-panel" style={{ padding: "28px" }}>
+          {loadError && <p className="error" role="alert">{loadError}</p>}
 
-      {step === 2 && (
-        <section>
-          <h2>Adım 3 – Tema / Ünite Seçin</h2>
-          <p className="muted" style={{ marginBottom: 16 }}>
-            {classroom?.grade}. sınıf {subject} dersi üniteleri:
-          </p>
-          {!units ? (
-            <p className="muted">Üniteler yükleniyor…</p>
-          ) : (
-            <div className="option-list" role="radiogroup">
-              {units.map((u) => (
-                <label
-                  key={u.unitOrTheme}
-                  className={`option ${u.unitOrTheme === unitOrTheme ? "selected" : ""}`}
-                  style={{ cursor: "pointer" }}
-                >
-                  <input
-                    type="radio"
-                    name="unit"
-                    checked={u.unitOrTheme === unitOrTheme}
-                    onChange={() => pickUnit(u.unitOrTheme)}
-                  />
-                  <div>
-                    <strong style={{ display: "block" }}>{u.unitOrTheme}</strong>
-                    {u.unitOrThemeCode && (
-                      <span className="muted" style={{ fontSize: "0.85rem" }}>Kod: {u.unitOrThemeCode}</span>
-                    )}
-                  </div>
-                </label>
-              ))}
-            </div>
-          )}
-        </section>
-      )}
+          {/* Adım 0: Sınıf Seçimi */}
+          {step === 0 && (
+            <section>
+              <span className="kicker">ADIM 01</span>
+              <h2 style={{ fontSize: "1.35rem", margin: "2px 0 6px" }}>Sınıf / Şube Seçin</h2>
+              <p className="muted" style={{ marginBottom: 20 }}>
+                Görevin atanacağı sınıfı belirleyin. Müfredat kazanımları bu sınıf düzeyine göre filtrelenecektir.
+              </p>
 
-      {step === 3 && (
-        <section>
-          <h2>Adım 4 – MEB Öğrenme Çıktısı (Kazanım)</h2>
-          <p className="muted" style={{ marginBottom: 16 }}>
-            Öğrencilerin derse gelmeden önce hazır olması gereken kazanımı veya kazanımları seçin:
-          </p>
-          {!outcomes ? (
-            <p className="muted">Kazanımlar yükleniyor…</p>
-          ) : (
-            <div className="option-list">
-              {outcomes.map((o) => (
-                <label
-                  key={o.id}
-                  className={`option ${selected.has(o.id) ? "selected" : ""}`}
-                  style={{ cursor: "pointer" }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={selected.has(o.id)}
-                    onChange={() => toggleOutcome(o)}
-                    style={{ marginTop: 4 }}
-                  />
-                  <div style={{ flex: 1 }}>
-                    <div className="row" style={{ gap: 8, marginBottom: 4 }}>
-                      <span className="code" style={{ display: "inline" }}>{o.outcomeCode}</span>
-                      <span className="badge PUBLISHED" style={{ fontSize: "0.75rem" }}>Doğrulanmış MEB Çıktısı</span>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
+                {classrooms.map((c) => (
+                  <label
+                    key={c.id}
+                    className={`option ${c.id === classroomId ? "selected" : ""}`}
+                    style={{ flexDirection: "column", gap: 6, padding: "16px" }}
+                  >
+                    <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+                      <span className="badge">{c.grade}. sınıf</span>
+                      <input
+                        type="radio"
+                        name="classroom"
+                        checked={c.id === classroomId}
+                        onChange={() => pickClassroom(c.id)}
+                      />
                     </div>
-                    <div style={{ fontSize: "0.95rem", lineHeight: 1.5 }}>{o.outcomeText}</div>
-                  </div>
-                </label>
-              ))}
-            </div>
-          )}
-
-          {selectedList.length > 0 && (
-            <div className="info" style={{ marginTop: 18 }}>
-              <strong>Seçilen Kazanımlar ({selectedList.length}):</strong>
-              <ul style={{ margin: "6px 0 0", paddingLeft: 20 }}>
-                {selectedList.map((o) => (
-                  <li key={o.id}>
-                    <strong>{o.outcomeCode}</strong>: {o.outcomeText}
-                  </li>
+                    <strong style={{ fontSize: "1.15rem", marginTop: 4 }}>{c.name}</strong>
+                    <span className="muted" style={{ fontSize: "0.82rem" }}>MEB Müfredat Alanı</span>
+                  </label>
                 ))}
-              </ul>
-            </div>
+              </div>
+            </section>
           )}
-          {errorList("outcomeIds")}
-        </section>
-      )}
 
-      {step === 4 && (
-        <section>
-          <h2>Adım 5 – Görev Detayları & Ayarlar</h2>
-          <div className="card" style={{ background: "var(--surface-subtle)", padding: "16px 20px", marginBottom: 20 }}>
-            <div className="row" style={{ gap: 12 }}>
-              <span className="badge" style={{ background: "var(--accent)", color: "#fff" }}>{classroom?.name} ({classroom?.grade}. sınıf)</span>
-              <span className="badge">{subject}</span>
-              <span className="badge">{unitOrTheme}</span>
-              <span className="badge PUBLISHED">{selected.size} MEB Çıktısı</span>
-            </div>
-          </div>
+          {/* Adım 1: Ders Seçimi */}
+          {step === 1 && (
+            <section>
+              <span className="kicker">ADIM 02</span>
+              <h2 style={{ fontSize: "1.35rem", margin: "2px 0 6px" }}>Ders Seçin</h2>
+              <p className="muted" style={{ marginBottom: 20 }}>
+                {classroom?.grade}. sınıf kademesinde görev hazırlayacağınız branşı seçin:
+              </p>
 
-          <label htmlFor="topic">Görev Başlığı / Konu</label>
-          <input
-            id="topic"
-            type="text"
-            placeholder="Örn. Güneş ve Ay: Temel Hareketler ve Özellikler"
-            value={topic}
-            onChange={(e) => setTopic(e.target.value)}
-            maxLength={200}
-            required
-          />
-          {errorList("topic")}
+              {!subjects ? (
+                <p className="muted">Ders programı yükleniyor…</p>
+              ) : (
+                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
+                  {subjects.map((s) => (
+                    <label
+                      key={s}
+                      className={`option ${s === subject ? "selected" : ""}`}
+                      style={{ flexDirection: "column", gap: 6, padding: "16px" }}
+                    >
+                      <div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
+                        <span className="badge PUBLISHED">MEB</span>
+                        <input
+                          type="radio"
+                          name="subject"
+                          checked={s === subject}
+                          onChange={() => pickSubject(s)}
+                        />
+                      </div>
+                      <strong style={{ fontSize: "1.15rem", marginTop: 4 }}>{s}</strong>
+                      <span className="muted" style={{ fontSize: "0.82rem" }}>Resmi Öğretim Programı</span>
+                    </label>
+                  ))}
+                </div>
+              )}
+            </section>
+          )}
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
-            <div>
-              <label htmlFor="minimumScore">Derse Hazır Olma Eşiği (%)</label>
+          {/* Adım 2: Tema / Ünite Seçimi */}
+          {step === 2 && (
+            <section>
+              <span className="kicker">ADIM 03</span>
+              <h2 style={{ fontSize: "1.35rem", margin: "2px 0 6px" }}>Tema / Ünite Seçin</h2>
+              <p className="muted" style={{ marginBottom: 20 }}>
+                {classroom?.grade}. sınıf {subject} dersi resmi öğretim üniteleri:
+              </p>
+
+              {!units ? (
+                <p className="muted">Üniteler yükleniyor…</p>
+              ) : (
+                <div className="option-list" role="radiogroup">
+                  {units.map((u) => (
+                    <label
+                      key={u.unitOrTheme}
+                      className={`option ${u.unitOrTheme === unitOrTheme ? "selected" : ""}`}
+                      style={{ padding: "14px 18px" }}
+                    >
+                      <input
+                        type="radio"
+                        name="unit"
+                        checked={u.unitOrTheme === unitOrTheme}
+                        onChange={() => pickUnit(u.unitOrTheme)}
+                      />
+                      <div style={{ flex: 1 }}>
+                        <strong style={{ display: "block", fontSize: "1rem" }}>{u.unitOrTheme}</strong>
+                        {u.unitOrThemeCode && (
+                          <span className="muted" style={{ fontSize: "0.82rem" }}>Ünite Kodu: {u.unitOrThemeCode}</span>
+                        )}
+                      </div>
+                    </label>
+                  ))}
+                </div>
+              )}
+            </section>
+          )}
+
+          {/* Adım 3: MEB Öğrenme Çıktısı (Kazanım) Seçimi */}
+          {step === 3 && (
+            <section>
+              <span className="kicker">ADIM 04</span>
+              <h2 style={{ fontSize: "1.35rem", margin: "2px 0 6px" }}>MEB Öğrenme Çıktıları</h2>
+              <p className="muted" style={{ marginBottom: 20 }}>
+                Öğrencilerin derse gelmeden önce ön hazırlık yapacağı kazanımları işaretleyin (birden fazla seçilebilir):
+              </p>
+
+              {!outcomes ? (
+                <p className="muted">Kazanımlar yükleniyor…</p>
+              ) : (
+                <div style={{ display: "grid", gap: 10 }}>
+                  {outcomes.map((o) => (
+                    <label
+                      key={o.id}
+                      className={`option ${selected.has(o.id) ? "selected" : ""}`}
+                      style={{ padding: "14px 18px", alignItems: "flex-start" }}
+                    >
+                      <input
+                        type="checkbox"
+                        checked={selected.has(o.id)}
+                        onChange={() => toggleOutcome(o)}
+                        style={{ marginTop: 3 }}
+                      />
+                      <div style={{ flex: 1 }}>
+                        <div style={{ display: "flex", gap: 8, alignItems: "center", marginBottom: 4 }}>
+                          <span className="code" style={{ fontWeight: 700 }}>{o.outcomeCode}</span>
+                          <span className="badge PUBLISHED" style={{ fontSize: "0.72rem" }}>Doğrulanmış Çıktı</span>
+                        </div>
+                        <div style={{ fontSize: "0.95rem", lineHeight: 1.5, color: "var(--text)" }}>
+                          {o.outcomeText}
+                        </div>
+                      </div>
+                    </label>
+                  ))}
+                </div>
+              )}
+
+              {selectedList.length > 0 && (
+                <div style={{ marginTop: 20, padding: "14px 16px", backgroundColor: "var(--surface-subtle)", border: "1px solid var(--border)", borderRadius: "var(--radius-xs)" }}>
+                  <strong style={{ display: "block", fontSize: "0.9rem", marginBottom: 6 }}>
+                    Seçilen MEB Öğrenme Çıktıları ({selectedList.length}):
+                  </strong>
+                  <ul style={{ margin: 0, paddingLeft: "1.2rem", fontSize: "0.88rem", display: "grid", gap: 4 }}>
+                    {selectedList.map((o) => (
+                      <li key={o.id}>
+                        <strong>{o.outcomeCode}</strong>: {o.outcomeText}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {errorList("outcomeIds")}
+            </section>
+          )}
+
+          {/* Adım 4: Ayarlar & Detaylar */}
+          {step === 4 && (
+            <section>
+              <span className="kicker">ADIM 05</span>
+              <h2 style={{ fontSize: "1.35rem", margin: "2px 0 6px" }}>Görev Başlığı ve Başarı Eşiği</h2>
+              <div style={{ padding: "12px 16px", background: "var(--surface-subtle)", border: "1px solid var(--border)", borderRadius: "var(--radius-xs)", marginBottom: 20 }}>
+                <div className="row" style={{ gap: 10 }}>
+                  <span className="badge">{classroom?.name} ({classroom?.grade}. sınıf)</span>
+                  <span className="badge">{subject}</span>
+                  <span className="badge">{unitOrTheme}</span>
+                  <span className="badge PUBLISHED">{selected.size} MEB Çıktısı</span>
+                </div>
+              </div>
+
+              <label htmlFor="topic">Görev Başlığı / Konu</label>
               <input
-                id="minimumScore"
-                type="number"
-                min={0}
-                max={100}
-                step={1}
-                value={minimumScore}
-                onChange={(e) => setMinimumScore(e.target.value)}
+                id="topic"
+                type="text"
+                placeholder="Örn. Hücrenin Temel Kısımları ve Canlılık Faaliyetleri"
+                value={topic}
+                onChange={(e) => setTopic(e.target.value)}
+                maxLength={200}
+                required
               />
-              <span className="muted" style={{ fontSize: "0.82rem" }}>Öğrencinin &ldquo;Derse Hazırım&rdquo; sayılması için gereken puan (varsayılan %70).</span>
-              {errorList("minimumScore")}
-            </div>
+              {errorList("topic")}
 
-            <div>
-              <label htmlFor="questionCount">Ön Bilgi Soru Sayısı</label>
-              <input
-                id="questionCount"
-                type="number"
-                min={5}
-                max={10}
-                step={1}
-                value={questionCount}
-                onChange={(e) => setQuestionCount(e.target.value)}
-              />
-              <span className="muted" style={{ fontSize: "0.82rem" }}>5–10 soru arası formatif kontrol sorusu.</span>
-              {errorList("questionCount")}
-            </div>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16, marginTop: 12 }}>
+                <div>
+                  <label htmlFor="minimumScore">Derse Hazır Olma Eşiği (%)</label>
+                  <input
+                    id="minimumScore"
+                    type="number"
+                    min={0}
+                    max={100}
+                    step={1}
+                    value={minimumScore}
+                    onChange={(e) => setMinimumScore(e.target.value)}
+                  />
+                  <span className="muted" style={{ fontSize: "0.8rem", display: "block", marginTop: 4 }}>
+                    Öğrencinin &ldquo;Derse Hazırım&rdquo; sayılması için gereken puan (varsayılan %70).
+                  </span>
+                  {errorList("minimumScore")}
+                </div>
 
-            <DeadlinePicker onChange={setDeadline} error={errorList("deadline")} />
-          </div>
+                <div>
+                  <label htmlFor="questionCount">Ön Bilgi Soru Sayısı</label>
+                  <input
+                    id="questionCount"
+                    type="number"
+                    min={5}
+                    max={10}
+                    step={1}
+                    value={questionCount}
+                    onChange={(e) => setQuestionCount(e.target.value)}
+                  />
+                  <span className="muted" style={{ fontSize: "0.8rem", display: "block", marginTop: 4 }}>
+                    5–10 soru arası formatif kontrol sorusu.
+                  </span>
+                  {errorList("questionCount")}
+                </div>
 
-          {errorList("outcomeIds")}
-          {errorList("classroomId")}
-          {errorList("subject")}
-          {errorList("unitOrTheme")}
-          {errorList("_form")}
+                <DeadlinePicker onChange={setDeadline} error={errorList("deadline")} />
+              </div>
 
-          <div className="info" style={{ marginTop: 20 }}>
-            ℹ️ <strong>Taslak Kaydı:</strong> Görev taslak olarak kaydedildikten sonra, doğrudan hazırlık içeriği düzenleyicisine yönlendirileceksiniz. Orada EVREN yapay zekâsıyla özet ve soruları tek tıkla üretebilir ve onaylayıp yayınlayabilirsiniz.
-          </div>
+              {errorList("outcomeIds")}
+              {errorList("classroomId")}
+              {errorList("subject")}
+              {errorList("unitOrTheme")}
+              {errorList("_form")}
 
-          <div style={{ marginTop: 24 }}>
+              <div style={{ marginTop: 20, padding: "12px 16px", backgroundColor: "var(--accent-light)", border: "1px solid var(--accent-border)", borderRadius: "var(--radius-xs)" }}>
+                <span className="kicker" style={{ color: "var(--accent)", margin: 0 }}>SONRAKİ ADIMLAR</span>
+                <p style={{ margin: "4px 0 0", fontSize: "0.88rem", color: "var(--text)" }}>
+                  Görev taslağını kaydettikten sonra doğrudan <strong>Hazırlık İçeriği</strong> alanına geçeceksiniz. Orada EVREN yapay zekâsıyla özet ve soruları tek tıkla üretebilir ve onaylayıp yayınlayabilirsiniz.
+                </p>
+              </div>
+
+              <div style={{ marginTop: 24 }}>
+                <button
+                  type="button"
+                  className="primary"
+                  onClick={save}
+                  disabled={saving || selected.size === 0}
+                  style={{ width: "100%", justifyContent: "center", minHeight: 42, fontSize: "0.95rem" }}
+                >
+                  {saving ? "Kaydediliyor…" : "Taslak Olarak Kaydet ve İçeriğe Geç →"}
+                </button>
+              </div>
+            </section>
+          )}
+
+          {/* Alt Gezinme Butonları */}
+          <div style={{ display: "flex", justifyContent: "space-between", marginTop: 28, paddingTop: 16, borderTop: "1px solid var(--border)" }}>
             <button
               type="button"
-              className="primary"
-              onClick={save}
-              disabled={saving || selected.size === 0}
-              style={{ width: "100%", justifyContent: "center" }}
+              onClick={() => setStep((s) => s - 1)}
+              disabled={step === 0}
             >
-              {saving ? "Kaydediliyor…" : "Taslak Olarak Kaydet ve İçeriğe Geç →"}
+              ← Geri
             </button>
+
+            {step < 4 && (
+              <button
+                type="button"
+                className="primary"
+                onClick={() => setStep((s) => s + 1)}
+                disabled={!canNext}
+              >
+                İleri →
+              </button>
+            )}
           </div>
-        </section>
-      )}
-
-      {/* Navigation Footer */}
-      <div className="row" style={{ marginTop: 28, paddingTop: 16, borderTop: "1px solid var(--border)", justifyContent: "space-between" }}>
-        <button
-          type="button"
-          onClick={() => setStep((s) => s - 1)}
-          disabled={step === 0}
-        >
-          ← Geri
-        </button>
-
-        {step < STEPS.length - 1 && (
-          <button
-            type="button"
-            className="primary"
-            onClick={() => setStep((s) => s + 1)}
-            disabled={!canNext}
-          >
-            İleri →
-          </button>
-        )}
-      </div>
+        </div>
+      </main>
     </div>
   );
 }

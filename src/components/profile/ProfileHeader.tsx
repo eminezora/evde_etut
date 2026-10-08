@@ -9,7 +9,7 @@ export function initials(name: string) {
 export function ProfileHeader({ user }: { user: { name: string; email: string; role: string; createdAt: Date; avatarUrl: string | null; googleLinked: boolean } }) {
   const teacher = user.role === "TEACHER";
   return (
-    <div className="card profile-header">
+    <div className="editorial-panel profile-header">
       {user.avatarUrl ? (
         // eslint-disable-next-line @next/next/no-img-element -- remote Google avatar, tiny, no optimisation needed
         <img src={user.avatarUrl} alt="" className="profile-avatar" referrerPolicy="no-referrer" />
@@ -20,8 +20,8 @@ export function ProfileHeader({ user }: { user: { name: string; email: string; r
         <h1 style={{ margin: "0 0 4px", fontSize: "1.6rem" }}>{user.name}</h1>
         <p className="muted" style={{ margin: "0 0 8px", wordBreak: "break-all" }}>{user.email}</p>
         <div className="row" style={{ gap: 8 }}>
-          <span className="badge" style={teacher ? { background: "var(--accent-light)", color: "var(--accent)", borderColor: "var(--accent-border)" } : { background: "var(--ok-bg)", color: "var(--ok-text)", borderColor: "var(--ok-border)" }}>
-            {teacher ? "👨‍🏫 Öğretmen" : "🎓 Öğrenci"}
+          <span className={`badge ${teacher ? "badge-accent" : "badge-success"}`}>
+            {teacher ? "Öğretmen" : "Öğrenci"}
           </span>
           {user.googleLinked && <span className="badge">Google hesabı bağlı</span>}
           <span className="muted" style={{ fontSize: "0.85rem" }}>Üyelik: {formatDate(user.createdAt)}</span>

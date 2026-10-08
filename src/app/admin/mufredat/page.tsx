@@ -34,70 +34,70 @@ export default async function AdminCurriculumPage() {
 
   return (
     <div>
-      <div style={{ marginBottom: 20 }}>
-        <h1 style={{ margin: "0 0 6px", fontSize: "1.4rem", fontWeight: 700 }}>MEB Müfredat Durumu</h1>
-        <p className="muted" style={{ margin: 0, fontSize: "0.95rem" }}>
+      <div style={{ marginBottom: 24 }}>
+        <div className="editorial-kicker">MÜFREDAT ARŞİVİ & DENETİM</div>
+        <h1 style={{ margin: "4px 0 6px", fontSize: "1.45rem", fontWeight: 700 }}>MEB Müfredat Durumu</h1>
+        <p className="muted" style={{ margin: 0, fontSize: "0.92rem" }}>
           Sistemdeki ortaokul müfredat öğrenme çıktıları, sınıf ve ders bazlı dağılım (Salt Okunur).
         </p>
       </div>
 
       {/* Grade Metrics */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-          gap: 16,
-          marginBottom: 28,
-        }}
-      >
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>5. Sınıf Kazanımları</div>
-          <div style={{ fontSize: "1.8rem", fontWeight: 700, color: "#0f172a", marginTop: 4 }}>{grade5Count}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>Öğrenme çıktısı</div>
+      <div className="editorial-metrics" style={{ marginBottom: 24 }}>
+        <div className="editorial-metric-card">
+          <div className="label">5. Sınıf Kazanımları</div>
+          <div className="value">{grade5Count}</div>
+          <div className="meta">Kayıtlı öğrenme çıktısı</div>
         </div>
 
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>6. Sınıf Kazanımları</div>
-          <div style={{ fontSize: "1.8rem", fontWeight: 700, color: "#0f172a", marginTop: 4 }}>{grade6Count}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>Öğrenme çıktısı</div>
+        <div className="editorial-metric-card">
+          <div className="label">6. Sınıf Kazanımları</div>
+          <div className="value">{grade6Count}</div>
+          <div className="meta">Kayıtlı öğrenme çıktısı</div>
         </div>
 
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>7. Sınıf Kazanımları</div>
-          <div style={{ fontSize: "1.8rem", fontWeight: 700, color: "#0f172a", marginTop: 4 }}>{grade7Count}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>Öğrenme çıktısı</div>
+        <div className="editorial-metric-card">
+          <div className="label">7. Sınıf Kazanımları</div>
+          <div className="value">{grade7Count}</div>
+          <div className="meta">Kayıtlı öğrenme çıktısı</div>
         </div>
 
-        <div style={{ backgroundColor: "#ffffff", padding: "16px 20px", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase" }}>8. Sınıf Kazanımları</div>
-          <div style={{ fontSize: "1.8rem", fontWeight: 700, color: "#0f172a", marginTop: 4 }}>{grade8Count}</div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>Öğrenme çıktısı</div>
+        <div className="editorial-metric-card">
+          <div className="label">8. Sınıf Kazanımları</div>
+          <div className="value">{grade8Count}</div>
+          <div className="meta">Kayıtlı öğrenme çıktısı</div>
         </div>
       </div>
 
       {/* Verification Status */}
-      <div style={{ backgroundColor: "#ffffff", padding: "18px 20px", border: "1px solid #e2e8f0", borderRadius: "10px", marginBottom: 28 }}>
-        <h2 style={{ fontSize: "1.1rem", fontWeight: 600, margin: "0 0 12px" }}>Doğrulama ve Kaynak Durumu</h2>
-        <div style={{ display: "flex", gap: 24, flexWrap: "wrap", fontSize: "0.9rem" }}>
+      <div className="editorial-panel" style={{ padding: "18px 22px", marginBottom: 24 }}>
+        <div style={{ fontSize: "0.95rem", fontWeight: 700, marginBottom: 12, letterSpacing: "-0.01em" }}>Doğrulama ve Kaynak Durumu</div>
+        <div style={{ display: "flex", gap: 24, flexWrap: "wrap", fontSize: "0.88rem" }}>
           <div>
-            Toplam Kayıt: <strong>{totalOutcomes}</strong>
+            Toplam Kayıt: <strong style={{ color: "var(--ink)" }}>{totalOutcomes}</strong>
           </div>
           <div>
-            ✅ Doğrulanmış (VERIFIED): <strong style={{ color: "#059669" }}>{verifiedCount}</strong>
+            <span style={{ display: "inline-block", width: 8, height: 8, borderRadius: "50%", background: "var(--success)", marginRight: 6 }} />
+            Doğrulanmış (VERIFIED): <strong style={{ color: "var(--success)" }}>{verifiedCount}</strong>
           </div>
           <div>
-            ⚠️ İnceleme Bekleyen: <strong style={{ color: "#d97706" }}>{reviewRequiredCount}</strong>
+            <span style={{ display: "inline-block", width: 8, height: 8, borderRadius: "50%", background: "var(--warning)", marginRight: 6 }} />
+            İnceleme Bekleyen: <strong style={{ color: "var(--warning)" }}>{reviewRequiredCount}</strong>
           </div>
           <div>
-            🔗 Kaynak URL Eksik: <strong>{noSourceUrlCount}</strong>
+            <span style={{ display: "inline-block", width: 8, height: 8, borderRadius: "50%", background: "var(--border-strong)", marginRight: 6 }} />
+            Kaynak URL Eksik: <strong style={{ color: "var(--ink-muted)" }}>{noSourceUrlCount}</strong>
           </div>
         </div>
       </div>
 
       {/* Breakdown by Subject and Grade Table */}
-      <div className="card" style={{ padding: 0, overflow: "hidden" }}>
-        <div style={{ padding: "14px 18px", borderBottom: "1px solid #e2e8f0", fontWeight: 600, fontSize: "0.95rem" }}>
-          Ders ve Kademe Bazında Kazanım Dağılımı
+      <div className="editorial-panel" style={{ padding: 0, overflow: "hidden" }}>
+        <div className="editorial-panel-header" style={{ padding: "14px 20px" }}>
+          <div>
+            <h2 style={{ margin: 0, fontSize: "0.95rem", fontWeight: 700 }}>Ders ve Kademe Bazında Kazanım Dağılımı</h2>
+            <p className="muted" style={{ margin: "2px 0 0", fontSize: "0.8rem" }}>Kayıtlı MEB müfredat öğeleri</p>
+          </div>
         </div>
         <div className="table-scroll">
           <table>
@@ -115,9 +115,9 @@ export default async function AdminCurriculumPage() {
                     <strong>{s.subject}</strong>
                   </td>
                   <td>
-                    <span className="badge">{s.grade}. sınıf</span>
+                    <span className="badge badge-accent">{s.grade}. sınıf</span>
                   </td>
-                  <td>{s._count.id} kazanım</td>
+                  <td style={{ color: "var(--ink-muted)", fontVariantNumeric: "tabular-nums" }}>{s._count.id} kazanım</td>
                 </tr>
               ))}
             </tbody>

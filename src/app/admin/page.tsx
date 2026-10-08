@@ -44,148 +44,199 @@ export default async function AdminDashboardPage() {
 
   return (
     <>
-      <div style={{ marginBottom: 28, borderBottom: "1px solid #e2e8f0", paddingBottom: 16 }}>
-        <h1 style={{ margin: "0 0 6px", fontSize: "1.6rem", fontWeight: 700, letterSpacing: "-0.02em" }}>
-          Sistem Genel Bakış
+      <div style={{ marginBottom: 24 }}>
+        <div className="editorial-kicker">SİSTEM KONSOLU · MERKEZİ DENETİM</div>
+        <h1 style={{ margin: "4px 0 6px", fontSize: "1.75rem", fontFamily: "var(--font-serif)" }}>
+          Yönetim & Operasyon Masası
         </h1>
         <p className="muted" style={{ margin: 0, fontSize: "0.95rem" }}>
-          Platform genelindeki kullanıcı, sınıf, görev ve yapay zekâ metriklerinin anlık durumu.
+          Platform genelindeki kullanıcı, sınıf, görev ve yapay zekâ altyapısının anlık durumu.
         </p>
       </div>
 
       {/* Editorial Metrics Grid */}
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: 16,
-          marginBottom: 32,
-        }}
-      >
-        {/* Kullanıcılar */}
-        <div style={{ padding: "18px 20px", backgroundColor: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-            Toplam Kullanıcı
-          </div>
-          <div style={{ fontSize: "2rem", fontWeight: 700, color: "#0f172a", margin: "4px 0" }}>
-            {totalUsers}
-          </div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>
+      <div className="editorial-metrics" style={{ marginBottom: 28 }}>
+        <div className="metric">
+          <span className="metric-label">Toplam Kullanıcı</span>
+          <div className="metric-value">{totalUsers}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>
             <strong>{totalTeachers}</strong> öğretmen · <strong>{totalStudents}</strong> öğrenci
-          </div>
-          <div style={{ fontSize: "0.75rem", color: "#059669", marginTop: 6, fontWeight: 500 }}>
-            +{newUsersLast7Days} son 7 günde kayıt
-          </div>
-        </div>
-
-        {/* Sınıflar */}
-        <div style={{ padding: "18px 20px", backgroundColor: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-            Sınıflar
-          </div>
-          <div style={{ fontSize: "2rem", fontWeight: 700, color: "#0f172a", margin: "4px 0" }}>
-            {activeClassrooms}
-          </div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>
-            Aktif eğitim verilen sınıf
-          </div>
-          <div style={{ fontSize: "0.75rem", color: "#d97706", marginTop: 6, fontWeight: 500 }}>
-            {archivedClassrooms} arşivlenmiş sınıf
+          </span>
+          <div style={{ fontSize: "0.75rem", color: "var(--leaf)", marginTop: 4, fontWeight: 500 }}>
+            +{newUsersLast7Days} son 7 günde yeni kayıt
           </div>
         </div>
 
-        {/* Görevler */}
-        <div style={{ padding: "18px 20px", backgroundColor: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-            Görevler
-          </div>
-          <div style={{ fontSize: "2rem", fontWeight: 700, color: "#0f172a", margin: "4px 0" }}>
-            {activeAssignments}
-          </div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>
-            Yayında olan hazırlık görevi
-          </div>
-          <div style={{ fontSize: "0.75rem", color: "#2563eb", marginTop: 6, fontWeight: 500 }}>
-            {archivedAssignments} arşivlenmiş · +{newAssignmentsLast7Days} yeni (7 gün)
+        <div className="metric">
+          <span className="metric-label">Aktif Sınıflar</span>
+          <div className="metric-value">{activeClassrooms}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>
+            Eğitim verilen şube sayısı
+          </span>
+          <div style={{ fontSize: "0.75rem", color: "var(--amber)", marginTop: 4, fontWeight: 500 }}>
+            {archivedClassrooms} arşivlenmiş şube
           </div>
         </div>
 
-        {/* AI Durumu */}
-        <div style={{ padding: "18px 20px", backgroundColor: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "10px" }}>
-          <div style={{ fontSize: "0.78rem", fontWeight: 600, color: "#64748b", textTransform: "uppercase", letterSpacing: "0.05em" }}>
-            AI Üretim Durumu
+        <div className="metric">
+          <span className="metric-label">Yayındaki Görevler</span>
+          <div className="metric-value">{activeAssignments}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>
+            Öğrencilere açık hazırlık görevi
+          </span>
+          <div style={{ fontSize: "0.75rem", color: "var(--accent)", marginTop: 4, fontWeight: 500 }}>
+            {archivedAssignments} arşiv · +{newAssignmentsLast7Days} yeni (7 gün)
           </div>
-          <div style={{ fontSize: "2rem", fontWeight: 700, color: "#0f172a", margin: "4px 0" }}>
-            {totalAi}
-          </div>
-          <div style={{ fontSize: "0.82rem", color: "#64748b" }}>
-            <span style={{ color: "#059669" }}>{aiSuccessCount} Başarılı</span> · <span style={{ color: "#dc2626" }}>{aiFailedCount} Hata</span>
-          </div>
-          <div style={{ fontSize: "0.75rem", color: "#64748b", marginTop: 6 }}>
+        </div>
+
+        <div className="metric">
+          <span className="metric-label">AI Üretim Hacmi</span>
+          <div className="metric-value">{totalAi}</div>
+          <span className="muted" style={{ fontSize: "0.78rem" }}>
+            <span style={{ color: "var(--leaf)" }}>{aiSuccessCount} Başarılı</span> · <span style={{ color: "var(--crimson)" }}>{aiFailedCount} Hata</span>
+          </span>
+          <div style={{ fontSize: "0.75rem", color: "var(--muted)", marginTop: 4 }}>
             {aiTimeoutCount} zaman aşımı
           </div>
         </div>
       </div>
 
       {/* Quick Access Operational Panels */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 32 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))", gap: 20 }}>
         {/* Hızlı İşlemler */}
-        <div style={{ backgroundColor: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "10px", padding: "20px" }}>
-          <h2 style={{ fontSize: "1.1rem", fontWeight: 600, margin: "0 0 16px" }}>Hızlı Operasyonlar</h2>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div className="editorial-panel">
+          <div className="editorial-panel-header">
+            <div>
+              <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Hızlı Operasyonlar</h2>
+              <span className="muted" style={{ fontSize: "0.82rem" }}>Sık kullanılan yönetim bağlantıları</span>
+            </div>
+          </div>
+          <div style={{ padding: "16px 20px", display: "grid", gap: 8 }}>
             <Link
               href="/admin/davet-kodlari"
-              style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", backgroundColor: "#f8fafc", borderRadius: "8px", textDecoration: "none", color: "#1e293b", border: "1px solid #e2e8f0" }}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "12px 14px",
+                backgroundColor: "var(--surface-subtle)",
+                borderRadius: "var(--radius-xs)",
+                textDecoration: "none",
+                color: "var(--ink)",
+                border: "1px solid var(--border)",
+              }}
             >
-              <span>🎟️ Yeni Öğretmen Davet Kodu Oluştur</span>
-              <span style={{ color: "#2563eb" }}>Yönet →</span>
+              <div>
+                <strong style={{ fontSize: "0.92rem", display: "block" }}>Öğretmen Davet Kodları</strong>
+                <span className="muted" style={{ fontSize: "0.8rem" }}>Yeni okul / zümre kodları üretin</span>
+              </div>
+              <span style={{ color: "var(--accent)", fontSize: "0.88rem", fontWeight: 600 }}>Yönet →</span>
             </Link>
+
             <Link
               href="/admin/kullanicilar"
-              style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", backgroundColor: "#f8fafc", borderRadius: "8px", textDecoration: "none", color: "#1e293b", border: "1px solid #e2e8f0" }}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "12px 14px",
+                backgroundColor: "var(--surface-subtle)",
+                borderRadius: "var(--radius-xs)",
+                textDecoration: "none",
+                color: "var(--ink)",
+                border: "1px solid var(--border)",
+              }}
             >
-              <span>👥 Kullanıcı Durumlarını İncele</span>
-              <span style={{ color: "#2563eb" }}>Görüntüle →</span>
+              <div>
+                <strong style={{ fontSize: "0.92rem", display: "block" }}>Kullanıcı Denetimi</strong>
+                <span className="muted" style={{ fontSize: "0.8rem" }}>Hesapları inceleyin ve askıya alın</span>
+              </div>
+              <span style={{ color: "var(--accent)", fontSize: "0.88rem", fontWeight: 600 }}>Görüntüle →</span>
             </Link>
+
             <Link
               href="/admin/ai-durumu"
-              style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", backgroundColor: "#f8fafc", borderRadius: "8px", textDecoration: "none", color: "#1e293b", border: "1px solid #e2e8f0" }}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "12px 14px",
+                backgroundColor: "var(--surface-subtle)",
+                borderRadius: "var(--radius-xs)",
+                textDecoration: "none",
+                color: "var(--ink)",
+                border: "1px solid var(--border)",
+              }}
             >
-              <span>🤖 AI Üretim Logları ve Kurtarma</span>
-              <span style={{ color: "#2563eb" }}>Kontrol Et →</span>
+              <div>
+                <strong style={{ fontSize: "0.92rem", display: "block" }}>AI Motoru & Log Kurtarma</strong>
+                <span className="muted" style={{ fontSize: "0.8rem" }}>EVREN durumunu ve takılı kalan istekleri çözün</span>
+              </div>
+              <span style={{ color: "var(--accent)", fontSize: "0.88rem", fontWeight: 600 }}>Kontrol Et →</span>
             </Link>
+
             <Link
               href="/admin/ayarlar"
-              style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 14px", backgroundColor: "#f8fafc", borderRadius: "8px", textDecoration: "none", color: "#1e293b", border: "1px solid #e2e8f0" }}
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                padding: "12px 14px",
+                backgroundColor: "var(--surface-subtle)",
+                borderRadius: "var(--radius-xs)",
+                textDecoration: "none",
+                color: "var(--ink)",
+                border: "1px solid var(--border)",
+              }}
             >
-              <span>⚙️ Sistem Ayarlarını Yapılandır</span>
-              <span style={{ color: "#2563eb" }}>Düzenle →</span>
+              <div>
+                <strong style={{ fontSize: "0.92rem", display: "block" }}>Sistem & Posta Ayarları</strong>
+                <span className="muted" style={{ fontSize: "0.8rem" }}>Genel platform parametrelerini düzenleyin</span>
+              </div>
+              <span style={{ color: "var(--accent)", fontSize: "0.88rem", fontWeight: 600 }}>Yapılandır →</span>
             </Link>
           </div>
         </div>
 
         {/* Son Sistem Aktiviteleri */}
-        <div style={{ backgroundColor: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "10px", padding: "20px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-            <h2 style={{ fontSize: "1.1rem", fontWeight: 600, margin: 0 }}>Son Sistem Aktiviteleri</h2>
-            <Link href="/admin/islem-gecmisi" style={{ fontSize: "0.85rem", color: "#2563eb" }}>Tümünü Gör →</Link>
-          </div>
-          {recentAuditLogs.length === 0 ? (
-            <p className="muted" style={{ fontSize: "0.9rem" }}>Henüz kayıtlı bir audit olayı bulunmuyor.</p>
-          ) : (
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              {recentAuditLogs.map((log) => (
-                <div key={log.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: "0.84rem", borderBottom: "1px solid #f1f5f9", paddingBottom: 6 }}>
-                  <div>
-                    <span style={{ fontWeight: 600, color: "#0f172a" }}>{log.action}</span>
-                    <span style={{ color: "#64748b", marginLeft: 6 }}>({log.entityType})</span>
-                    {log.admin && <span style={{ color: "#94a3b8", display: "block", fontSize: "0.78rem" }}>Admin: {log.admin.name}</span>}
-                  </div>
-                  <span style={{ color: "#94a3b8", fontSize: "0.78rem" }}>{formatDate(log.createdAt)}</span>
-                </div>
-              ))}
+        <div className="editorial-panel">
+          <div className="editorial-panel-header">
+            <div>
+              <h2 style={{ margin: 0, fontSize: "1.05rem", fontFamily: "var(--font-serif)" }}>Son Güvenlik & Denetim Logları</h2>
+              <span className="muted" style={{ fontSize: "0.82rem" }}>Yönetimsel işlem geçmişi</span>
             </div>
-          )}
+            <Link href="/admin/islem-gecmisi" style={{ fontSize: "0.82rem", color: "var(--accent)", textDecoration: "none" }}>
+              Tümünü Gör →
+            </Link>
+          </div>
+          <div style={{ padding: "16px 20px" }}>
+            {recentAuditLogs.length === 0 ? (
+              <p className="muted" style={{ fontSize: "0.9rem", margin: 0 }}>Henüz kayıtlı bir denetim olayı bulunmuyor.</p>
+            ) : (
+              <div style={{ display: "grid", gap: 10 }}>
+                {recentAuditLogs.map((log) => (
+                  <div
+                    key={log.id}
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      fontSize: "0.86rem",
+                      borderBottom: "1px solid var(--border)",
+                      paddingBottom: 8,
+                    }}
+                  >
+                    <div>
+                      <span className="code" style={{ marginRight: 6 }}>{log.action}</span>
+                      <span className="muted">({log.entityType})</span>
+                      {log.admin && <span className="muted" style={{ display: "block", fontSize: "0.78rem" }}>Yönetici: {log.admin.name}</span>}
+                    </div>
+                    <span className="muted" style={{ fontSize: "0.78rem" }}>{formatDate(log.createdAt)}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>
