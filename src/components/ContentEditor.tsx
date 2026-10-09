@@ -5,6 +5,7 @@
 
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { UsageMeter, type UsageMeterData } from "./usage/UsageMeter.tsx";
 import { QUESTION_TYPE_LABELS, type QuestionType } from "@/lib/content/question-schema.ts";
 import { QuestionForm, stateFromQuestion, type OutcomeOption } from "./QuestionForm.tsx";
 
@@ -51,7 +52,7 @@ type JobState =
   | { state: "TIMEOUT"; jobId: string; message: string; isStaleRecovered?: boolean }
   | { state: "FAILED"; jobId: string; message: string; reason?: "TIMEOUT" | "INVALID_RESPONSE" | "FAILED"; isStaleRecovered?: boolean };
 /** Generation UI state. Every path out of "generating" ends in success, failed or timeout. */
-type GenState = "idle" | "generating" | "success" | "failed" | "timeout";
+type GenState = "idle" | "generating" | "success" | "failed" | "timeout" | "limit";
 const SLOW_AFTER_S = 30;
 
 const POLL_MS = 2500;
@@ -71,6 +72,7 @@ export function ContentEditor({
   content,
   questions,
   questionsLocked = false,
+  aiQuota = null,
 }: {
   assignmentId: string;
   assignmentStatus: string;
@@ -82,6 +84,8 @@ export function ContentEditor({
   questions: EditorQuestion[];
   /** True once a student has started the check (see content-service QUESTIONS_LOCKED_MESSAGE). */
   questionsLocked?: boolean;
+  /** The teacher's AI_CONTENT_GENERATION quota (null = not limited / unknown). */
+  aiQuota?: UsageMeterData | null;
 }) {
   const router = useRouter();
   const isDraft = assignmentStatus === "DRAFT";
@@ -254,13 +258,22 @@ export function ContentEditor({
     setElapsed(0);
     setRetryScope(null);
     setMessage(null);
-    let started: { ok: boolean; json: { data?: { jobId?: string }; error?: string; errors?: Record<string, string[]> } | null };
+    let started: { ok: boolean; json: { data?: { jobId?: string }; error?: string; code?: string; errors?: Record<string, string[]> } | null };
     try {
       started = await send(`/api/assignments/${assignmentId}/content/generate`, "POST", { scope, questionCount, confirmOverwrite: Boolean(hasExisting) });
     } catch {
       started = { ok: false, json: { error: "Sunucuya ulaşılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin." } };
     }
     const jobId = started.json?.data?.jobId;
+    if (!started.ok && started.json?.code === "USAGE_LIMIT_REACHED") {
+      // Quota used up: a calm notice, no retry button (retrying can't help until the reset).
+      setBusy(null);
+      setGenState("limit");
+      setGenError(started.json.error ?? "Bugünkü yapay zekâ kullanım hakkınızı tamamladınız. Yeni kullanım hakkınız yarın yenilenecek.");
+      setRetryScope(null);
+      router.refresh();
+      return;
+    }
     if (!started.ok || !jobId) {
       const errs = Object.values(started.json?.errors ?? {}).flat();
       endGeneration("failed", scope, errs[0] ?? started.json?.error ?? "İçerik oluşturma başlatılamadı. Lütfen tekrar deneyin.");
@@ -296,6 +309,7 @@ export function ContentEditor({
   }
 
   const working = busy !== null;
+  const quotaEmpty = Boolean(aiQuota && !aiQuota.unlimited && (aiQuota.remaining ?? 0) === 0);
   const generating = busy?.startsWith("gen-") ?? false;
   const hasAnything = Boolean(content) || questions.length > 0;
   const totalPoints = questions.reduce((n, q) => n + q.points, 0);
@@ -328,6 +342,12 @@ export function ContentEditor({
                 Üretilen ders notu ve sorular yalnızca seçtiğiniz MEB kazanımlarına dayanır. Öğretmen onayı verilmeden öğrencilere gösterilmez.
               </p>
 
+              {aiQuota && (
+                <div style={{ maxWidth: 360, marginBottom: 14 }}>
+                  <UsageMeter q={aiQuota} compact />
+                </div>
+              )}
+
               <div style={{ display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap", marginBottom: 14 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <label htmlFor="qc" style={{ margin: 0, fontSize: "0.85rem", whiteSpace: "nowrap" }}>Soru Sayısı (5–10):</label>
@@ -339,18 +359,18 @@ export function ContentEditor({
 
                 <div className="row" style={{ gap: 8 }}>
                   {!hasAnything ? (
-                    <button type="button" className="primary" onClick={() => generate("ALL")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                    <button type="button" className="primary" onClick={() => generate("ALL")} disabled={working || quotaEmpty} style={{ minHeight: 34, fontSize: "0.85rem" }}>
                       {busy === "gen-ALL" ? "Hazırlanıyor…" : "Özet ve Soruları Oluştur"}
                     </button>
                   ) : (
                     <>
-                      <button type="button" onClick={() => generate("ALL")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                      <button type="button" onClick={() => generate("ALL")} disabled={working || quotaEmpty} style={{ minHeight: 34, fontSize: "0.85rem" }}>
                         {busy === "gen-ALL" ? "Hazırlanıyor…" : "Tümünü Yeniden Oluştur"}
                       </button>
-                      <button type="button" onClick={() => generate("SUMMARY")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                      <button type="button" onClick={() => generate("SUMMARY")} disabled={working || quotaEmpty} style={{ minHeight: 34, fontSize: "0.85rem" }}>
                         {busy === "gen-SUMMARY" ? "Hazırlanıyor…" : "Yalnızca Özeti Yenile"}
                       </button>
-                      <button type="button" onClick={() => generate("QUESTIONS")} disabled={working} style={{ minHeight: 34, fontSize: "0.85rem" }}>
+                      <button type="button" onClick={() => generate("QUESTIONS")} disabled={working || quotaEmpty} style={{ minHeight: 34, fontSize: "0.85rem" }}>
                         {busy === "gen-QUESTIONS" ? "Hazırlanıyor…" : "Yalnızca Soruları Yenile"}
                       </button>
                     </>
@@ -368,6 +388,21 @@ export function ContentEditor({
                       {elapsed > 0 ? ` · ${elapsed} sn` : ""} Lütfen sayfayı kapatmayın.
                     </p>
                   </div>
+                </div>
+              )}
+
+              {quotaEmpty && genState !== "limit" && !generating && aiQuota && (
+                <div className="quota-notice" role="status">
+                  <strong>{aiQuota.periodLabel === "Günlük" ? "Bugünkü yapay zekâ kullanım hakkınızı tamamladınız." : `${aiQuota.periodLabel} kullanım hakkınızı tamamladınız.`}</strong>
+                  <p style={{ margin: "4px 0 0", fontSize: "0.85rem" }}>Kotanız {aiQuota.resetHint.replace(/^Yarın/, "yarın").replace(/'da yenilenir$/, "")}&apos;da yenilenecek. Bu sürede içeriği aşağıdan elle hazırlayabilirsiniz.</p>
+                </div>
+              )}
+
+              {genState === "limit" && !generating && (
+                <div className="quota-notice" role="alert">
+                  <strong>Kullanım hakkınız doldu.</strong>
+                  <p style={{ margin: "4px 0 0", fontSize: "0.85rem" }}>{genError}</p>
+                  <p style={{ margin: "4px 0 0", fontSize: "0.82rem" }}>Bu sürede içeriği aşağıdan elle hazırlayabilirsiniz.</p>
                 </div>
               )}
 

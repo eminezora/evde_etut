@@ -6,6 +6,9 @@ import { fromQuestionRow } from "@/lib/content/question-schema.ts";
 import { AI_NOT_CONFIGURED_MESSAGE, isAiConfigured } from "@/lib/ai/index.ts";
 import { formatDate, statusLabel } from "@/lib/assignments/format.ts";
 import { ContentEditor } from "@/components/ContentEditor.tsx";
+import { getQuotaStatus } from "@/lib/usage/usage-quota-service.ts";
+import { toMeterData } from "@/components/usage/UsageMeter.tsx";
+import { prisma } from "@/lib/db.ts";
 import { PolicyForm } from "@/components/teacher/PolicyForm.tsx";
 import { AssignmentActions } from "@/components/teacher/AssignmentActions.tsx";
 import { getEditState } from "@/lib/assignments/assignment-service.ts";
@@ -18,6 +21,7 @@ export default async function AssignmentDetailPage({
   searchParams: Promise<{ tab?: string }>;
 }) {
   const teacher = await requireTeacher();
+  const aiQuota = toMeterData(await getQuotaStatus(prisma, { id: teacher.id, role: "TEACHER" }, "AI_CONTENT_GENERATION"));
   const { id } = await params;
   const requested = (await searchParams).tab;
   const tab = requested === "hazirlik" ? "hazirlik" : "genel";
@@ -170,6 +174,7 @@ export default async function AssignmentDetailPage({
         </div>
       ) : (
         <ContentEditor
+          aiQuota={aiQuota}
           key={`${c?.updatedAt?.getTime() ?? 0}-${a.updatedAt?.getTime() ?? 0}-${a.questions.length}-${a.questions[0]?.id ?? ""}`}
           assignmentId={a.id}
           assignmentStatus={a.status}

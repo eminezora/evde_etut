@@ -71,6 +71,17 @@ const NAV_ITEMS = [
     ),
   },
   {
+    href: "/admin/kullanim-limitleri",
+    label: "Kullanım Limitleri",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 2a10 10 0 1 0 10 10" />
+        <path d="M12 12 19 5" />
+        <path d="M12 6v6h6" />
+      </svg>
+    ),
+  },
+  {
     href: "/admin/davet-kodlari",
     label: "Davet Kodları",
     icon: (

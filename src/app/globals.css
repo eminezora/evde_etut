@@ -1130,3 +1130,46 @@ tr:hover td {
   font-weight: 600;
 }
 
+
+/* Usage quota meter */
+.usage-meter { display: grid; gap: 4px; min-width: 0; }
+.usage-meter-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.usage-meter-label { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.usage-meter-count { font-size: 0.85rem; color: var(--text); font-variant-numeric: tabular-nums; }
+.usage-meter-bar { height: 6px; border-radius: 999px; background: var(--surface-subtle); border: 1px solid var(--border); overflow: hidden; }
+.usage-meter-bar > span { display: block; height: 100%; background: var(--accent); border-radius: inherit; transition: width 0.3s ease; }
+.usage-meter.is-empty .usage-meter-bar > span { background: var(--danger); }
+.usage-meter.is-empty .usage-meter-count { color: var(--danger-text); font-weight: 600; }
+.usage-meter-note { font-size: 0.78rem; color: var(--muted); }
+.usage-meter.compact .usage-meter-label { font-size: 0.82rem; }
+.usage-meter-list { display: grid; gap: 16px; }
+.quota-notice { margin-top: 10px; padding: 12px 14px; border: 1px solid var(--warn-border); border-radius: var(--radius-md); background: var(--warn-bg); color: var(--warn-text); }
+@media (prefers-reduced-motion: reduce) { .usage-meter-bar > span { transition: none; } }
+.override-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; align-items: start; }
+.override-form label { margin-top: 0; }
+
+/* Landing: workflow intro with the studying DersBot illustration */
+.workflow-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+.workflow-mascot {
+  flex: none;
+  width: 240px;
+  height: auto;
+  /* the illustration has a white background: blend it into the light page */
+  mix-blend-mode: multiply;
+}
+@media (max-width: 640px) {
+  .workflow-intro { flex-direction: column-reverse; align-items: flex-start; }
+  .workflow-mascot { width: 200px; align-self: center; }
+}
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: start; }
+.hero-grid > * { min-width: 0; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .hero-grid h1 { font-size: 2rem !important; }
+}

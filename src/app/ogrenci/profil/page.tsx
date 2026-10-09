@@ -5,6 +5,7 @@ import { ProfileHeader } from "@/components/profile/ProfileHeader.tsx";
 import { NameForm, PasswordForm } from "@/components/profile/ProfileForms.tsx";
 import { JoinClassroomForm } from "@/components/student/JoinClassroomForm.tsx";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
+import { UsagePanel } from "@/components/usage/UsagePanel.tsx";
 
 export const metadata = { title: "Profil – DersBot" };
 
@@ -49,6 +50,8 @@ export default async function StudentProfilePage() {
           <span className="muted" style={{ fontSize: "0.78rem" }}>Öğretmen onayı bekleyen</span>
         </div>
       </div>
+
+      <UsagePanel user={{ id: student.id, role: "STUDENT" }} />
 
       {/* Section 01: Hesap */}
       <div className="editorial-panel" style={{ marginBottom: 20 }}>

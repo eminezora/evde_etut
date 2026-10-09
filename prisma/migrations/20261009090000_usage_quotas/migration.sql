@@ -1,0 +1,93 @@
+-- CreateTable
+CREATE TABLE "UsageQuotaPolicy" (
+    "id" TEXT NOT NULL,
+    "role" TEXT NOT NULL,
+    "feature" TEXT NOT NULL,
+    "periodType" TEXT NOT NULL,
+    "limit" INTEGER NOT NULL,
+    "unlimited" BOOLEAN NOT NULL DEFAULT false,
+    "isActive" BOOLEAN NOT NULL DEFAULT true,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "UsageQuotaPolicy_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "UserQuotaOverride" (
+    "id" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "feature" TEXT NOT NULL,
+    "periodType" TEXT NOT NULL,
+    "limit" INTEGER NOT NULL,
+    "unlimited" BOOLEAN NOT NULL DEFAULT false,
+    "validUntil" TIMESTAMP(3),
+    "note" TEXT,
+    "createdById" TEXT,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "UserQuotaOverride_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "UsageCounter" (
+    "id" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "feature" TEXT NOT NULL,
+    "periodType" TEXT NOT NULL,
+    "periodStart" TIMESTAMP(3) NOT NULL,
+    "used" INTEGER NOT NULL DEFAULT 0,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "UsageCounter_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "UsageEvent" (
+    "id" TEXT NOT NULL,
+    "userId" TEXT NOT NULL,
+    "feature" TEXT NOT NULL,
+    "amount" INTEGER NOT NULL DEFAULT 1,
+    "status" TEXT NOT NULL,
+    "correlationId" TEXT NOT NULL,
+    "counterId" TEXT,
+    "remainingAfter" INTEGER,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "UsageEvent_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateIndex
+CREATE UNIQUE INDEX "UsageQuotaPolicy_role_feature_key" ON "UsageQuotaPolicy"("role", "feature");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "UserQuotaOverride_userId_feature_key" ON "UserQuotaOverride"("userId", "feature");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "UsageCounter_userId_feature_periodType_periodStart_key" ON "UsageCounter"("userId", "feature", "periodType", "periodStart");
+
+-- CreateIndex
+CREATE INDEX "UsageEvent_userId_createdAt_idx" ON "UsageEvent"("userId", "createdAt");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "UsageEvent_userId_feature_correlationId_key" ON "UsageEvent"("userId", "feature", "correlationId");
+
+-- AddForeignKey
+ALTER TABLE "UserQuotaOverride" ADD CONSTRAINT "UserQuotaOverride_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "UsageCounter" ADD CONSTRAINT "UsageCounter_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+-- AddForeignKey
+ALTER TABLE "UsageEvent" ADD CONSTRAINT "UsageEvent_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+-- Default role quotas (editable in the admin panel under "Kullanım Limitleri").
+INSERT INTO "UsageQuotaPolicy" ("id", "role", "feature", "periodType", "limit", "unlimited", "isActive", "createdAt", "updatedAt") VALUES
+  ('qp_teacher_content', 'TEACHER', 'AI_CONTENT_GENERATION', 'DAILY', 10, false, true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+  ('qp_teacher_assistant', 'TEACHER', 'AI_ASSISTANT_MESSAGE', 'DAILY', 30, false, true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+  ('qp_student_assistant', 'STUDENT', 'AI_ASSISTANT_MESSAGE', 'DAILY', 20, false, true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+  ('qp_admin_content', 'ADMIN', 'AI_CONTENT_GENERATION', 'DAILY', 0, true, true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+  ('qp_admin_assistant', 'ADMIN', 'AI_ASSISTANT_MESSAGE', 'DAILY', 0, true, true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

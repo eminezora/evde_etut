@@ -18,6 +18,9 @@ interface Message {
   text: string;
 }
 
+/** Idempotency key for one chat message (a resent message is counted once). */
+const newMessageId = () => `m${Date.now().toString(36)}${Math.random().toString(36).slice(2, 10)}`;
+
 export function Mascot() {
   const pathname = usePathname() ?? "/";
   const [pref, setPref] = useState<"on" | "min">("on");
@@ -26,6 +29,9 @@ export function Mascot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  // DersBot quota: when used up the input is disabled; past messages stay visible.
+  const [limitMessage, setLimitMessage] = useState<string | null>(null);
+  const [assistantQuota, setAssistantQuota] = useState<{ remaining: number | null; limit: number; unlimited: boolean; resetHint: string } | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -97,6 +103,24 @@ export function Mascot() {
     });
   }, [isTeacher, isStudent, isAdmin]);
 
+  // Sohbet açılınca (girişli kullanıcı) kalan DersBot hakkını getir.
+  useEffect(() => {
+    if (!isOpen || userRole === "GUEST") return;
+    let cancelled = false;
+    fetch("/api/usage", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((json) => {
+        const q = json?.data?.quotas?.find((x: { feature: string }) => x.feature === "AI_ASSISTANT_MESSAGE");
+        if (cancelled || !q) return;
+        setAssistantQuota({ remaining: q.remaining, limit: q.limit, unlimited: q.unlimited, resetHint: q.resetHint });
+        if (!q.unlimited && q.remaining === 0) setLimitMessage(q.limitMessage);
+      })
+      .catch(() => undefined);
+    return () => {
+      cancelled = true;
+    };
+  }, [isOpen, userRole]);
+
   // Yeni mesajda aşağı kaydır
   useEffect(() => {
     if (isOpen) {
@@ -106,7 +130,7 @@ export function Mascot() {
 
   async function handleSend(textToSend?: string) {
     const query = (textToSend ?? input).trim();
-    if (!query || loading) return;
+    if (!query || loading || limitMessage) return;
 
     idCounterRef.current += 1;
     const userMsg: Message = { id: `u-${idCounterRef.current}`, sender: "user", text: query };
@@ -120,10 +144,20 @@ export function Mascot() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: query,
+          // Same id if this message is ever resent → counted once.
+          messageId: newMessageId(),
           context: { path: pathname, role: userRole },
         }),
       });
       const data = await res.json();
+      if (res.status === 429 && data?.code === "USAGE_LIMIT_REACHED") {
+        setLimitMessage(data.message);
+        setAssistantQuota((q) => (q ? { ...q, remaining: 0 } : q));
+        idCounterRef.current += 1;
+        setMessages((prev) => [...prev, { id: `b-${idCounterRef.current}`, sender: "bot", text: data.message }]);
+        return;
+      }
+      setAssistantQuota((q) => (q && !q.unlimited && q.remaining !== null ? { ...q, remaining: Math.max(0, q.remaining - 1) } : q));
       idCounterRef.current += 1;
       const botMsg: Message = {
         id: `b-${idCounterRef.current}`,
@@ -494,7 +528,7 @@ export function Mascot() {
                 key={chip}
                 type="button"
                 onClick={() => handleSend(chip)}
-                disabled={loading}
+                disabled={loading || Boolean(limitMessage)}
                 style={{
                   fontSize: "0.78rem",
                   padding: "5px 12px",
@@ -512,6 +546,21 @@ export function Mascot() {
               </button>
             ))}
           </div>
+
+          {(limitMessage || (assistantQuota && !assistantQuota.unlimited)) && (
+            <div
+              role={limitMessage ? "alert" : "status"}
+              style={{
+                padding: "6px 12px",
+                fontSize: "0.76rem",
+                borderTop: "1px solid #e2e8f0",
+                background: limitMessage ? "#fffbeb" : "#ffffff",
+                color: limitMessage ? "#92400e" : "#64748b",
+              }}
+            >
+              {limitMessage ?? `${assistantQuota!.remaining} / ${assistantQuota!.limit} mesaj kaldı · ${assistantQuota!.resetHint}`}
+            </div>
+          )}
 
           {/* Soru Gönderme Formu */}
           <form
@@ -532,8 +581,8 @@ export function Mascot() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="DersBot'a bir soru sor…"
-              disabled={loading}
+              placeholder={limitMessage ? "Kullanım hakkınız doldu" : "DersBot'a bir soru sor…"}
+              disabled={loading || Boolean(limitMessage)}
               style={{
                 flex: 1,
                 padding: "8px 14px",
@@ -548,7 +597,7 @@ export function Mascot() {
             />
             <button
               type="submit"
-              disabled={loading || !input.trim()}
+              disabled={loading || !input.trim() || Boolean(limitMessage)}
               style={{
                 width: 38,
                 height: 38,

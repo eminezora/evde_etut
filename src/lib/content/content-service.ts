@@ -10,8 +10,9 @@ import { GENERATION_SCOPES, parseGeneratedContent } from "../ai/response-schema.
 import { questionCountSchema, studyContentSchema } from "./study-content-schema.ts";
 import { questionSchema, toQuestionRow, toStudentQuestion, type ValidQuestion } from "./question-schema.ts";
 import { z } from "zod";
+import { USAGE_LIMIT_REACHED, commitUsage, refundUsage, reserveUsage } from "../usage/usage-quota-service.ts";
 
-type Status = 400 | 403 | 404 | 409 | 502 | 503 | 504;
+type Status = 400 | 403 | 404 | 409 | 429 | 502 | 503 | 504;
 export type ContentResult<T> = { ok: true; data: T } | { ok: false; status: Status; code: string; errors: Record<string, string[]> };
 
 const fail = (status: Status, code: string, message: string, field = "_form"): ContentResult<never> => ({
@@ -151,6 +152,8 @@ export interface GenerateDeps {
   db?: PrismaClient;
   provider?: ContentGenerationProvider | null;
   timeoutMs?: number;
+  /** Role whose usage quota applies (default TEACHER – the generate route is teacher-only). */
+  quotaRole?: string;
 }
 
 /**
@@ -183,10 +186,11 @@ function logLifecycleError(event: string, meta: Record<string, unknown>) {
  */
 export async function recoverAllStaleGenerations(db: PrismaClient = defaultPrisma, timeoutMs = aiTimeoutMs()): Promise<number> {
   const threshold = new Date(Date.now() - staleThresholdMs(timeoutMs));
+  const staleJobs = await db.contentGenerationLog.findMany({ where: { status: "RUNNING", startedAt: { lte: threshold } }, select: { id: true, teacherId: true } });
   const stale = await db.contentGenerationLog.updateMany({
     where: {
+      id: { in: staleJobs.map((j) => j.id) },
       status: "RUNNING",
-      startedAt: { lte: threshold },
     },
     data: {
       status: "TIMEOUT",
@@ -194,6 +198,8 @@ export async function recoverAllStaleGenerations(db: PrismaClient = defaultPrism
       errorMessage: "İşlem süresi aşıldığı için sistem tarafından sonlandırıldı.",
     },
   });
+  // A job that never finished never produced a draft: give its quota unit back.
+  for (const j of staleJobs) await refundUsage(j.teacherId, "AI_CONTENT_GENERATION", j.id, db).catch(() => undefined);
   if (stale.count > 0) {
     logLifecycle("stale_generation_recovered", { count: stale.count });
   }
@@ -232,12 +238,14 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
 
   // Server-side double-click guard with automatic stale recovery:
   const thresholdDate = new Date(Date.now() - staleThresholdMs(timeoutMs));
+  const staleJobIds: string[] = [];
   const lock = await db.$transaction(async (tx) => {
     // 1. Recover any stale RUNNING job for this assignment
     const staleLogs = await tx.contentGenerationLog.findMany({
       where: { assignmentId: a.id, status: "RUNNING", startedAt: { lte: thresholdDate } },
     });
     for (const stale of staleLogs) {
+      staleJobIds.push(stale.id);
       logLifecycle("stale_generation_recovered", { assignment: a.id, jobId: stale.id });
       await tx.contentGenerationLog.update({
         where: { id: stale.id },
@@ -261,8 +269,18 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
     });
   });
 
+  for (const id of staleJobIds) await refundUsage(teacherId, "AI_CONTENT_GENERATION", id, db).catch(() => undefined);
   if (!lock) return fail(409, "IN_PROGRESS", "Bu görev için içerik zaten oluşturuluyor. Lütfen bekleyin.");
   const lockRecord = lock;
+
+  // Usage quota: take one unit before EVREN is called (idempotent per job id). Only a successful
+  // draft keeps it; failures and timeouts give it back (see the run wrapper below).
+  const quotaUser = { id: teacherId, role: deps.quotaRole ?? "TEACHER" };
+  const reservation = await reserveUsage(quotaUser, "AI_CONTENT_GENERATION", lockRecord.id, { db });
+  if (!reservation.ok) {
+    await db.contentGenerationLog.delete({ where: { id: lockRecord.id } }).catch(() => undefined);
+    return { ok: false as const, status: 429 as const, code: USAGE_LIMIT_REACHED, errors: { _form: [reservation.message] } };
+  }
 
   const finish = async (status: string, extra: Prisma.ContentGenerationLogUpdateInput = {}) => {
     try {
@@ -273,7 +291,7 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
     }
   };
 
-  async function run(): Promise<GenerationOutcome> {
+  async function runJob(): Promise<GenerationOutcome> {
     const startedAt = Date.now();
     logLifecycle("generation_started", { assignment: a.id, jobId: lockRecord.id, scope, provider: provider!.name, model: provider!.model });
 
@@ -395,6 +413,19 @@ export async function startStudyContentGeneration(teacherId: string, assignmentI
     }
   }
 
+  const run = async (): Promise<GenerationOutcome> => {
+    let outcome: GenerationOutcome;
+    try {
+      outcome = await runJob();
+    } catch (e) {
+      await refundUsage(teacherId, "AI_CONTENT_GENERATION", lockRecord.id, db).catch(() => undefined);
+      throw e;
+    }
+    if (outcome.ok) await commitUsage(teacherId, "AI_CONTENT_GENERATION", lockRecord.id, db).catch(() => undefined);
+    else await refundUsage(teacherId, "AI_CONTENT_GENERATION", lockRecord.id, db).catch(() => undefined);
+    return outcome;
+  };
+
   return { ok: true, data: { jobId: lock.id, scope, run } } as const;
 }
 
@@ -510,6 +541,7 @@ export async function getGenerationStatus(
         },
       });
       wasStaleRecovered = true;
+      await refundUsage(log.teacherId, "AI_CONTENT_GENERATION", log.id, db).catch(() => undefined);
     } catch (err) {
       logLifecycleError("db_save_failed", { assignment: assignmentId, error: err instanceof Error ? err.message : String(err) });
     }

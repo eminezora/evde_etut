@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getCurrentStudent, getCurrentTeacher } from "@/lib/auth/current-user.ts";
 import { DersBotLogo } from "@/components/brand/DersBotLogo.tsx";
@@ -51,14 +52,14 @@ export default async function HomePage() {
 
       {/* Editorial Lead Section (Two Columns: Manifesto & Worksheet Preview) */}
       <section style={{ maxWidth: 1080, margin: "0 auto", padding: "48px 24px 36px", width: "100%" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 16 }}>
-          <span className="badge" style={{ backgroundColor: "var(--surface-subtle)", color: "var(--accent)", borderColor: "var(--border-strong)" }}>
+        <div style={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
+          <span className="badge" style={{ whiteSpace: "normal", backgroundColor: "var(--surface-subtle)", color: "var(--accent)", borderColor: "var(--border-strong)" }}>
             T.C. Millî Eğitim Bakanlığı Türkiye Yüzyılı Maarif Modeli
           </span>
           <span style={{ fontSize: "0.82rem", color: "var(--muted)" }}>Ortaokul Kademeleri (5, 6, 7, 8. Sınıf)</span>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: 40, alignItems: "start" }}>
+        <div className="hero-grid">
           {/* Sol Sütun: Editoryal Manifesto */}
           <div>
             <h1 style={{ fontSize: "2.75rem", lineHeight: 1.15, marginBottom: 16 }}>
@@ -138,7 +139,7 @@ export default async function HomePage() {
       </section>
 
       {/* Editorial Principles 4-Column Strip */}
-      <section id="pedagoji" style={{ maxWidth: 1080, margin: "0 auto", padding: "20px 24px 40px", width: "1080px" }}>
+      <section id="pedagoji" style={{ maxWidth: 1080, margin: "0 auto", padding: "20px 24px 40px", width: "100%" }}>
         <div style={{ borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)", padding: "28px 0" }}>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: 24 }}>
             <div>
@@ -178,8 +179,23 @@ export default async function HomePage() {
 
       {/* Three Step Workflow */}
       <section id="is-akisi" style={{ maxWidth: 1080, margin: "0 auto", padding: "20px 24px 48px", width: "100%" }}>
-        <span className="kicker">SİSTEMATİK AKIŞ</span>
-        <h2 style={{ fontSize: "1.8rem", marginBottom: 20 }}>3 Adımda Eksiksiz Ders Hazırlığı</h2>
+        <div className="workflow-intro">
+          <div style={{ minWidth: 0 }}>
+            <span className="kicker">SİSTEMATİK AKIŞ</span>
+            <h2 style={{ fontSize: "1.8rem", margin: "4px 0 10px" }}>3 Adımda Eksiksiz Ders Hazırlığı</h2>
+            <p style={{ fontSize: "0.95rem", margin: 0, color: "var(--text-secondary)", maxWidth: 520 }}>
+              DersBot, öğrencinin evde kısa bir çalışmayla derse hazırlanmasına eşlik eder: özeti okur, notlarını alır, ön bilgi kontrolünü çözer ve derse hazır gelir.
+            </p>
+          </div>
+          <Image
+            src="/brand/dersbot-calisiyor.jpg"
+            alt="Gözlüklü DersBot robotu, masasında kitaplarla not alarak derse hazırlanıyor"
+            width={620}
+            height={600}
+            className="workflow-mascot"
+            sizes="(max-width: 640px) 200px, 240px"
+          />
+        </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20 }}>
           <div style={{ border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "20px", background: "var(--surface)" }}>

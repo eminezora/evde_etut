@@ -5,6 +5,7 @@ import { getTeacherProfile } from "@/lib/accounts/profile-service.ts";
 import { ProfileHeader } from "@/components/profile/ProfileHeader.tsx";
 import { NameForm, PasswordForm } from "@/components/profile/ProfileForms.tsx";
 import { LogoutButton } from "@/components/LogoutButton.tsx";
+import { UsagePanel } from "@/components/usage/UsagePanel.tsx";
 
 export const metadata = { title: "Profil & Hesap – DersBot" };
 
@@ -48,6 +49,8 @@ export default async function TeacherProfilePage() {
           <div className="metric-desc">Hazırlık aşamasındaki ödevler</div>
         </div>
       </div>
+
+      <UsagePanel user={{ id: teacher.id, role: "TEACHER" }} />
 
       {/* Section 1: Hesap Bilgileri */}
       <div className="editorial-panel">

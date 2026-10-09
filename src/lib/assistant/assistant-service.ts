@@ -100,13 +100,22 @@ function getDeterministicResponse(message: string, context: AssistantChatContext
   return `Size en iyi şekilde yardımcı olmak isterim! DersBot platformunda görev oluşturma, sınıfa katılma kodları, ders özetleri veya başarı durumları hakkında bana soru sorabilirsiniz.`;
 }
 
-export async function chatWithAssistant(
+export async function chatWithAssistant(message: string, context: AssistantChatContext, env: NodeJS.ProcessEnv = process.env): Promise<string> {
+  return (await chatWithAssistantDetailed(message, context, { env })).text;
+}
+
+/**
+ * Like chatWithAssistant, but also says whether EVREN actually answered (source "ai") – only then
+ * does the message count against the user's DersBot quota. allowAi=false (guests, quota checks
+ * that failed) answers from the local knowledge base without calling EVREN.
+ */
+export async function chatWithAssistantDetailed(
   message: string,
   context: AssistantChatContext,
-  env: NodeJS.ProcessEnv = process.env
-): Promise<string> {
+  { env = process.env, allowAi = true, fetchImpl = fetch }: { env?: NodeJS.ProcessEnv; allowAi?: boolean; fetchImpl?: typeof fetch } = {},
+): Promise<{ text: string; source: "ai" | "fallback" }> {
   const trimmed = message.trim();
-  if (!trimmed) return "Lütfen bir soru yazın.";
+  if (!trimmed) return { text: "Lütfen bir soru yazın.", source: "fallback" };
 
   // Check if we can get a high-quality deterministic response first
   const deterministic = getDeterministicResponse(trimmed, context);
@@ -116,7 +125,7 @@ export async function chatWithAssistant(
   const apiKey = env.EVREN_LLM_API_KEY?.trim() || env.AI_API_KEY?.trim();
   const provider = env.AI_PROVIDER?.trim().toLowerCase();
 
-  if (provider === "evren" && baseUrl && apiKey) {
+  if (allowAi && provider === "evren" && baseUrl && apiKey) {
     try {
       const model = env.EVREN_LLM_MODEL?.trim() || EVREN_FALLBACK_MODEL;
       const effort = env.EVREN_LLM_REASONING_EFFORT?.trim().toLowerCase() || EVREN_DEFAULT_REASONING_EFFORT;
@@ -140,7 +149,7 @@ export async function chatWithAssistant(
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 12_000); // 12 seconds max for chatbot
 
-      const res = await fetch(`${baseUrl.replace(/\/+$/, "")}/chat/completions`, {
+      const res = await fetchImpl(`${baseUrl.replace(/\/+$/, "")}/chat/completions`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -158,7 +167,7 @@ export async function chatWithAssistant(
         if (typeof content === "string" && content.trim().length > 0) {
           // Clean any stray <think> blocks
           const cleaned = content.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
-          if (cleaned.length > 0) return cleaned;
+          if (cleaned.length > 0) return { text: cleaned, source: "ai" };
         }
       }
     } catch {
@@ -167,5 +176,8 @@ export async function chatWithAssistant(
   }
 
   // Resilient fallback (guarantees zero infinite spinner and instant response)
-  return deterministic ?? `Size yardımcı olmak isterim! Görev oluşturma, sınıfa katılma, başarı durumu veya profil ayarları hakkında soru sorabilirsiniz.`;
+  return {
+    text: deterministic ?? `Size yardımcı olmak isterim! Görev oluşturma, sınıfa katılma, başarı durumu veya profil ayarları hakkında soru sorabilirsiniz.`,
+    source: "fallback",
+  };
 }
